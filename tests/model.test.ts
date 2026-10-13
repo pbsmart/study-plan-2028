@@ -1,0 +1,24 @@
+import { describe, expect, it } from 'vitest'
+import { activeSubjects, addSession, canAddSession, defaultData, emptyWeek, loadData, parseBackup, setCompleted, shiftDate, StudyTimer, suggestedHours, validateData, validDate, weekKey } from '../src/model'
+
+describe('plan defaults and date isolation', () => {
+  it('starts with no artificial activity and an unconfirmed third subject', () => { const d = defaultData(); expect(d.weeks).toEqual({}); expect(d.firstCompleted).toEqual([]); expect(d.settings.thirdConfirmed).toBe(false); expect(d.settings.examDate).toBe('2028-06-07') })
+  it('uses exact agreed hours including review and testing', () => { expect(suggestedHours('normal')).toEqual([2,4,3,3,2.5,1.5]); expect(suggestedHours('busy')).toEqual([1,2,1.5,1.5,1,1]); expect(suggestedHours('free')).toEqual([3,5,4,4,3.5,2.5]); expect(suggestedHours('free').reduce((n,s)=>n+s,0)).toBe(22) })
+  it('calculates local Monday keys across year and leap boundaries', () => { expect(weekKey('2028-01-02')).toBe('2027-12-27'); expect(shiftDate('2028-02-28',1)).toBe('2028-02-29'); expect(validDate('2027-02-29')).toBe(false); expect(weekKey('2026-10-13')).toBe('2026-10-12') })
+  it('switches only the third subject', () => { expect(activeSubjects('geography')).toEqual(['chinese','math','english','physics','chemistry','geography']); expect(activeSubjects('politics')).not.toContain('biology') })
+  it('keeps week data and completion independent', () => { const a = emptyWeek('normal'); const b = emptyWeek('busy'); setCompleted(a,'math-core',true); setCompleted(a,'math-core',true); expect(a.completed).toEqual(['math-core']); expect(b.completed).toEqual([]); expect(a.sessions).toEqual([]); setCompleted(a,'math-core',false); expect(a.completed).toEqual([]) })
+  it('rejects duplicate records and over 24 hours of one day', () => { const w = emptyWeek('normal'); const s = { id:'abc',date:'2026-10-12',subject:'math' as const,seconds:3600,source:'manual' as const }; expect(addSession(w,s)).toBe(true); expect(addSession(w,s)).toBe(false); expect(canAddSession(w,s.date,86400)).toBe(false); expect(canAddSession(w,s.date,82800)).toBe(true); expect(canAddSession(w,s.date,0)).toBe(false) })
+})
+describe('backup validation', () => {
+  const fixture = () => { const d = defaultData(); d.weeks['2026-10-12'] = { workload:'normal',completed:['math-core'],sessions:[{id:'abc',date:'2026-10-13',subject:'math',seconds:2400,source:'manual'}] }; return d }
+  it('round trips all settings and records', () => { expect(parseBackup(JSON.stringify(fixture()))).toEqual(fixture()) })
+  it.each([null,[],{}, {version:2},'text'])('rejects a malformed shape %j', (input) => { expect(() => validateData(input)).toThrow() })
+  it('rejects invalid JSON and oversized files without mutating input', () => { expect(() => parseBackup('{')).toThrow('有效 JSON'); expect(() => parseBackup(' '.repeat(5*1024*1024+1))).toThrow('5 MB') })
+  it('rejects unknown keys and prototype pollution', () => { const d = fixture(); expect(() => validateData({...d,extra:true})).toThrow(); expect(() => parseBackup(JSON.stringify(d).replace('"weeks":{','"weeks":{"__proto__":{},'))).toThrow(); expect(({} as Record<string,unknown>).polluted).toBeUndefined() })
+  it('rejects invalid dates, week mismatch, negative time and invalid subject', () => { const d = fixture(); d.weeks['2026-10-12']!.sessions[0]!.date = '2026-10-20'; expect(() => validateData(d)).toThrow(); d.weeks['2026-10-12']!.sessions[0]!.date='2026-10-13'; d.weeks['2026-10-12']!.sessions[0]!.seconds=-1; expect(() => validateData(d)).toThrow(); d.weeks['2026-10-12']!.sessions[0]!.seconds=2400; d.weeks['2026-10-12']!.sessions[0]!.subject='unknown' as never; expect(() => validateData(d)).toThrow() })
+  it('rejects duplicate tasks, IDs, fractional time and excess daily totals', () => { const d = fixture(); const w = d.weeks['2026-10-12']!; w.completed.push('math-core'); expect(() => validateData(d)).toThrow(); w.completed.pop(); w.sessions.push({...w.sessions[0]!}); expect(() => validateData(d)).toThrow(); w.sessions[1]!.id='def'; w.sessions[1]!.seconds=.5; expect(() => validateData(d)).toThrow(); w.sessions[1]!.seconds=86400; expect(() => validateData(d)).toThrow() })
+  it('recovers from corrupt or denied storage with a visible warning', () => { expect(loadData({getItem:()=>'{'}).error).not.toBe(''); expect(loadData({getItem:()=>{throw Error('denied')}}).error).not.toBe(''); expect(loadData({getItem:()=>null}).error).toBe('') })
+})
+describe('timer requires actual elapsed time and explicit saving', () => {
+  it('start is idempotent, pause excludes elapsed breaks, reset cannot double save', () => { let now=0; const t = new StudyTimer(()=>now); t.start(); now=1000; t.start(); now=3500; expect(t.seconds()).toBe(3); t.pause(); now=10000; expect(t.seconds()).toBe(3); t.start(); now=12500; t.pause(); expect(t.seconds()).toBe(6); t.reset(); expect(t.seconds()).toBe(0); expect(t.running).toBe(false) })
+})
