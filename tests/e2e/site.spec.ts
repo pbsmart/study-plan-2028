@@ -1,4 +1,6 @@
 import { test, expect } from '@playwright/test'
+import { readFileSync } from 'node:fs'
+const courseData = JSON.parse(readFileSync(new URL('../../src/curriculum/study-plan-content-v1.json', import.meta.url), 'utf8')) as {contentCoverage:{detailedWeeks:number[];detailedLessons:number;remainingOutlineWeeks:number[]};lessons:{week:number;subject:string;diagnosticTest?:{questions:unknown[]}}[]}
 const key = 'xunxu.gaokao.v1'
 const legacyFixture = { version:1, firstCompleted:['first-1-0','first-4-1'], settings:{theme:'dark',third:'geography',thirdConfirmed:true,examDate:'2028-06-08',workload:'busy'}, weeks:{'2026-10-12':{workload:'normal',completed:['math-core','geography-review'],sessions:[{id:'old-session',date:'2026-10-13',subject:'math',seconds:3600,source:'manual'}]}} }
 test.beforeEach(async ({page}) => { await page.goto('/'); await page.evaluate(()=>localStorage.clear()); await page.reload() })
@@ -80,28 +82,31 @@ test('v1 and v2 backups validate, trap focus, confirm overwrites and preserve mi
   const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'导出 JSON 备份'}).click();expect((await downloadPromise).suggestedFilename()).toBe('xunxu-backup-v2.json')
   await input.setInputFiles({name:'v2.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(stored))});await page.getByRole('button',{name:'确认覆盖并导入'}).click();await page.reload();expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),key)).toEqual(stored)
 })
-test('first four weeks render real original lessons; later outline cannot fake completed content',async({page})=>{
+test('published lessons render real content; later outline cannot fake completed content',async({page})=>{
+  await page.goto('/#overview');await expect(page.getByText(`共 84 个学习周，已有 ${courseData.contentCoverage.detailedWeeks.length} 周八科内容齐全`, {exact:false})).toContainText(`${courseData.contentCoverage.detailedLessons} 个学科课次`)
   await page.goto('/#weekly');await expect(page.locator('.lesson-heading')).toContainText('完整讲解');await expect(page.locator('.knowledge-block')).not.toHaveCount(0)
   await expect(page.locator('.problem-card').first()).toContainText('原创基础例题（非高考原题）');const details=page.locator('.problem-card').first().locator('details');await expect(details).not.toHaveAttribute('open','');await details.locator('summary').click();await expect(details).toHaveAttribute('open','');await expect(details.locator('.solution')).toContainText('答案：')
   await expect(page.locator('.source-panel')).toContainText('往年真题考点参考（查看官方评析）');await expect(page.locator('.source-panel')).toContainText('2025 年 · 全国一卷');await expect(page.locator('.source-panel a').first()).toHaveAttribute('href',/zjzs\.net/)
-  await page.getByLabel('浏览学习周').selectOption('5');await expect(page.locator('.lesson-heading')).toContainText('仅有周纲');await expect(page.locator('.lesson-checkpoints input:enabled')).toHaveCount(0);await expect(page.locator('.problem-card')).toHaveCount(0)
+  const outlineWeek=courseData.contentCoverage.remainingOutlineWeeks[0]
+  if(outlineWeek){await page.getByLabel('浏览学习周').selectOption(String(outlineWeek));await expect(page.locator('.lesson-heading')).toContainText('仅有周纲');await expect(page.locator('.lesson-checkpoints input:enabled')).toHaveCount(0);await expect(page.locator('.problem-card')).toHaveCount(0)}
 })
 test('third subject switches independently between geography and politics without biology lessons',async({page})=>{
   await page.goto('/#settings');await page.getByLabel('第三科参考').selectOption('geography');await page.getByLabel('我已核对官方选科与专业要求').check();await page.goto('/#weekly');await page.locator('.subject-tabs').getByRole('button',{name:'地理',exact:true}).click();await expect(page.locator('.lesson-heading')).toContainText('地图');await expect(page.locator('.lesson-content')).not.toContainText('细胞膜')
   await page.goto('/#settings');await page.getByLabel('第三科参考').selectOption('politics');await page.goto('/#weekly');await page.locator('.subject-tabs').getByRole('button',{name:'政治',exact:true}).click();await expect(page.locator('.lesson-heading')).toContainText('生产力');await expect(page.locator('.lesson-content')).not.toContainText('细胞膜');await expect(page.locator('.source-panel')).toContainText('来源待补充')
 })
-test('every subject in the first four weeks renders knowledge, original solutions and retests',async({page})=>{
-  for(const number of ['1','2','3','4']){
+test('every published subject renders knowledge, original solutions and retests',async({page})=>{
+  test.setTimeout(900000)
+  for(const number of courseData.contentCoverage.detailedWeeks.map(String)){
     await page.goto('/#weekly');await page.getByLabel('浏览学习周').selectOption(number)
     for(const subject of ['语文','数学','英语','物理','化学','第三科 · 待确认']){
       await page.locator('.subject-tabs').getByRole('button',{name:subject,exact:true}).click()
       await expect(page.locator('.lesson-heading')).toContainText('完整讲解')
       await expect(page.locator('.knowledge-block')).not.toHaveCount(0)
-      await expect(page.locator('.problem-card')).toHaveCount(4)
+      await expect(page.locator('.lesson-content > .panel:not(.diagnostic-panel) .problem-card')).toHaveCount(4)
       await expect(page.locator('.lesson-checkpoints input:enabled')).toHaveCount(4)
     }
     for(const [key,label] of [['geography','地理'],['politics','政治']]){
-      await page.goto('/#settings');await page.getByLabel('第三科参考').selectOption(key!);await page.getByLabel('我已核对官方选科与专业要求').check();await page.goto('/#weekly');await page.getByLabel('浏览学习周').selectOption(number);await page.locator('.subject-tabs').getByRole('button',{name:label!,exact:true}).click();await expect(page.locator('.lesson-heading')).toContainText('完整讲解');await expect(page.locator('.problem-card')).toHaveCount(4)
+      await page.goto('/#settings');await page.getByLabel('第三科参考').selectOption(key!);await page.getByLabel('我已核对官方选科与专业要求').check();await page.goto('/#weekly');await page.getByLabel('浏览学习周').selectOption(number);await page.locator('.subject-tabs').getByRole('button',{name:label!,exact:true}).click();await expect(page.locator('.lesson-heading')).toContainText('完整讲解');await expect(page.locator('.lesson-content > .panel:not(.diagnostic-panel) .problem-card')).toHaveCount(4)
     }
     await page.goto('/#settings');await page.getByLabel('第三科参考').selectOption('biology');await page.getByLabel('我已核对官方选科与专业要求').uncheck()
   }

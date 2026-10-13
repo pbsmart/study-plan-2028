@@ -10,7 +10,36 @@ export interface OriginalProblem {
   answer: string
   solution: string[]
   commonErrors?: string[]
+  sourceStory?: string
+  sourcePassage?: string
+  paragraphStarters?: string[]
+  sampleContinuation?: string
+  sampleText?: string
+  sampleWordCount?: number
+  passageWordCount?: number
+  sampleCharacterCount?: number
+  sampleCharacterCountWithPunctuation?: number
+  wordCountNote?: string
+  characterCountNote?: string
+  sources?: string[]
+  quotedSource?: { title: string; author: string; copyrightStatus: string; referenceId: string; text: string }
+  wordRange?: number[]
+  characterRange?: number[]
+  characterLimit?: number
+  points?: number
+  scoring?: { points: number; criterion: string }[]
 }
+export interface DiagnosticTest {
+  title: string
+  totalPoints: number
+  scopeNote: string
+  instructions: string[]
+  questions: OriginalProblem[]
+  scoreInterpretation: string[]
+  remediationMap: { questionId: string; guidance: string[] }[]
+}
+export interface ContentReference { title: string; url: string; note: string }
+
 export interface SubjectWeek {
   status: ContentStatus
   title: string
@@ -23,6 +52,18 @@ export interface SubjectWeek {
   commonErrors?: string[]
   retest: { tasks: string[]; criteria: string[]; problem?: OriginalProblem }
   sourceIds: string[]
+  diagnosticTest?: DiagnosticTest
+  trainingMode?: string
+  audioStatus?: string
+  listeningMasteryStatus?: string
+  materialNote?: string
+  trainingScope?: string
+  masteryStatus?: string
+  progressionNote?: string
+  writingMasteryStatus?: string
+  pendingChecklist?: string[]
+  safetyScope?: string
+  contentReferences?: ContentReference[]
 }
 export interface StudyWeek {
   week: number
