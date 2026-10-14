@@ -65,4 +65,30 @@ export const enrichmentConfigs: EnrichmentConfig[] = [
     ],
     preferDiagramAssets: true,
   },
+  {
+    week: 7, revision: 'week07-enriched-v1', directory: 'enriched-week-07',
+    answerOnlyFigureIds: ['w7-physics-figure4'],
+    figureManifests: [
+      { subject: 'math', file: 'assets/math-figures.json' },
+      { subject: 'physics', file: 'assets/physics-figures.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-figures.json' },
+    ],
+    preferDiagramAssets: true,
+  },
+  {
+    week: 8, revision: 'week08-enriched-v1', directory: 'enriched-week-08',
+    figureManifests: [
+      { subject: 'math', file: 'assets/math-figures.json' },
+      { subject: 'physics', file: 'assets/physics-figures.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-figures.json' },
+    ],
+    preferDiagramAssets: true,
+    reviewMapManifests: [
+      { subject: 'chinese', file: 'assets/chinese-review-map.json' },
+      { subject: 'math', file: 'assets/math-review-map.json' },
+      { subject: 'english', file: 'assets/english-review-map.json' },
+      { subject: 'physics', file: 'assets/physics-review-map.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-review-map.json' },
+    ],
+  },
 ]

@@ -1,0 +1,845 @@
+{
+  "id": "w7-化学",
+  "week": 7,
+  "subject": "化学",
+  "title": "氧化还原反应：先学求价，再分角色与单次电子账",
+  "revision": "week07-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能用明确规则求常见元素化合价，区分单原子离子电荷、多原子离子整体电荷和元素化合价。",
+    "能比较同元素前后升降，区分氧化还原与非氧化还原，理解含氧不是判据。",
+    "能把升失氧、降得还与氧化剂/还原剂及对应产物连成完整证据链。",
+    "能按实际反应mol、变价原子数与变化大小算电子量，并用另一边复核而不双算。",
+    "能结合基础质量、浓度及限量计量，在唯一20分原创短测中达到16分并通过关键条件。"
+  ],
+  "prerequisites": [
+    "第1—2周能分清元素、原子、离子和化学式下标。",
+    "第3—5周能用n=m/M、n=cV并把mL换成L；第4周会比较n/系数。",
+    "第6周能检查原子与电荷守恒；化合价规则不假定已经掌握，本周从前置补起。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "60分钟是忙碌时单次上限，不能只学60分钟就判本周完成。完整150分钟分60+54+36：第1次60=前测6+八节含自检48+例1共6，活动ID：w7-chemistry-diagnostic-1、w7-chemistry-diagnostic-2、w7-chemistry-diagnostic-3、w7-chemistry-section-recall、w7-chemistry-section-rules、w7-chemistry-section-detect、w7-chemistry-section-directions、w7-chemistry-section-roles、w7-chemistry-section-electron-count、w7-chemistry-section-one-ledger、w7-chemistry-section-boundaries、w7-chemistry-example-1。第2次54=例2—5共24+五练30，活动ID：w7-chemistry-example-2、w7-chemistry-example-3、w7-chemistry-example-4、w7-chemistry-example-5、w7-chemistry-practice-1、w7-chemistry-practice-2、w7-chemistry-practice-3、w7-chemistry-practice-4、w7-chemistry-practice-5。第3次36=唯一短测24+订正12，活动ID：w7-chemistry-quiz-1、w7-chemistry-quiz-2、w7-chemistry-quiz-3、w7-chemistry-quiz-4、w7-chemistry-review-corrections。短测保持一次独立完整作答，做完才开答案评分。中断时记活动ID与小问续做，未完成核心与订正不推进；时间是首轮计划，仍卡住则延长本周，不随日期自动跳周。",
+    "segments": [
+      {
+        "id": "w7-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w7-chemistry-diagnostic-1",
+          "w7-chemistry-diagnostic-2",
+          "w7-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w7-chemistry-time-concepts",
+        "title": "八节前置、正文与自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w7-chemistry-section-recall",
+          "w7-chemistry-section-rules",
+          "w7-chemistry-section-detect",
+          "w7-chemistry-section-directions",
+          "w7-chemistry-section-roles",
+          "w7-chemistry-section-electron-count",
+          "w7-chemistry-section-one-ledger",
+          "w7-chemistry-section-boundaries"
+        ]
+      },
+      {
+        "id": "w7-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w7-chemistry-example-1",
+          "w7-chemistry-example-2",
+          "w7-chemistry-example-3",
+          "w7-chemistry-example-4",
+          "w7-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w7-chemistry-time-practice",
+        "title": "五题独立练习，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w7-chemistry-practice-1",
+          "w7-chemistry-practice-2",
+          "w7-chemistry-practice-3",
+          "w7-chemistry-practice-4",
+          "w7-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w7-chemistry-time-quiz",
+        "title": "唯一原创短测，4题20分，每题6分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w7-chemistry-quiz-1",
+          "w7-chemistry-quiz-2",
+          "w7-chemistry-quiz-3",
+          "w7-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w7-chemistry-time-review",
+        "title": "评分与错因订正",
+        "minutes": 12,
+        "activityIds": [
+          "w7-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "用6分钟先独立答3道前测，每题约2分钟。不会的题标出卡在对象、单位、规则还是比例。前测不计入20分短测；按路由进入本课已有的补救和正文时间，不另加一份测验。全对仍需完成各节自检。",
+    "questions": [
+      {
+        "id": "w7-chemistry-diagnostic-1",
+        "title": "前测1：求价而非猜电荷",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "SO₄²⁻中O取−2，求S化合价；SO₄²⁻整体电荷是多少？",
+        "answer": "S为+6；整体电荷−2。",
+        "steps": [
+          "设S为x，x+4×(−2)=−2。",
+          "解得x=+6，与整体−2不同。"
+        ],
+        "commonErrors": [
+          "直接把S写−2。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w7-chemistry-diagnostic-2",
+        "title": "前测2：读正负数方向",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "Fe从+2变+3，Cl从0变−1，分别是升高还是降低，变化大小各多少？",
+        "answer": "Fe升高1；Cl降低1。",
+        "steps": [
+          "比较终点减起点：3−2=+1。",
+          "−1−0=−1，所以降1。"
+        ],
+        "commonErrors": [
+          "因为负号把Cl判升高。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w7-chemistry-diagnostic-3",
+        "title": "前测3：先求反应量",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "2.60 g Zn的M=65.0 g/mol，求n；100 mL、0.300 mol/L Cu²⁺溶液含Cu²⁺多少mol？",
+        "answer": "Zn0.0400 mol；Cu²⁺0.0300 mol。",
+        "steps": [
+          "Zn的n=2.60/65.0=0.0400 mol。",
+          "100 mL=0.100 L，n=0.300×0.100=0.0300 mol。"
+        ],
+        "commonErrors": [
+          "g直接当mol或mL未换L。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1错误。",
+        "action": "先分清整体电荷与元素化合价，再用规则卡列带下标的代数和。",
+        "sectionIds": [
+          "w7-chemistry-section-recall",
+          "w7-chemistry-section-rules"
+        ]
+      },
+      {
+        "when": "前测2正负方向不清。",
+        "action": "将起点和终点写在纸上，用终点减起点辨升降，再连到得失电子。",
+        "sectionIds": [
+          "w7-chemistry-section-directions"
+        ]
+      },
+      {
+        "when": "前测3换算错误，或三题均对。",
+        "action": "换算错误先补单位与实际反应量；全对仍完成全部规则、自检及电子量核对。",
+        "sectionIds": [
+          "w7-chemistry-section-recall",
+          "w7-chemistry-section-one-ledger"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w7-chemistry-section-recall",
+      "title": "先补前置：右上电荷、右下原子数不是同一个数",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。第6周已把SO₄²⁻作为一个硫酸根离子使用。右上2−说的是整个离子的净电荷；右下4说每个硫酸根含4个O原子；系数2SO₄²⁻说有2份这样的离子。这三个位置各管一件事，不能把2−直接当成其中S的化合价。",
+        "化合价是本课判断氧化还原使用的元素记账数。在这种用法中也称氧化数；它不等同于分子中每个原子实际带有的完整电荷。SO₄²⁻的总电荷是−2，但按O通常为−2推得S为+6；不能说离子里真的存在一个游离S⁶⁺。",
+        "对单原子离子，元素化合价与离子电荷数相同：Fe²⁺中的Fe为+2，Fe³⁺中为+3，Cl⁻中Cl为−1。对多原子离子，要把所有原子的化合价按个数相加，和才等于总电荷。先分清单原子还是多原子，再用规则。",
+        "第3—5周的量还要分清：n写mol，N是粒子个数，m写g；n=m/M，n=cV。题目给起始量不自动等于实际反应量；有过量物质时，电子量只由真正参与变价的部分计算。"
+      ],
+      "keyPoints": [
+        "单原子离子：化合价等于电荷数。",
+        "多原子离子：各原子化合价之和等于整体电荷。"
+      ],
+      "checkpoint": {
+        "question": "SO₄²⁻的2−、4分别表示什么？若S为+6、O为−2，怎样回查？",
+        "answer": "2−是整体净电荷，4为每份的O原子数；(+6)+4×(−2)=−2。",
+        "explanation": "化合价账核对的是整体电荷，不能把整体−2直接分给每种元素。"
+      }
+    },
+    {
+      "id": "w7-chemistry-section-rules",
+      "title": "够本周用的化合价规则卡：先固定已知，再解一个未知",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。规则1：单质中的元素化合价为0，例如Fe、Cu、H₂、O₂、Cl₂中的相应元素都是0，不因分子内含2个原子就变成+2。规则2：单原子离子化合价等于所带电荷数，例如Zn²⁺中Zn为+2。",
+        "规则3：本课普通化合物中H通常为+1，O通常为−2，Na/K通常为+1，Ca通常为+2；题给特殊情境时以特殊规则为准。过氧化物如H₂O₂、Na₂O₂中O为−1；金属氢化物中H可为−1，本周不把这类陌生例外作为必做题。不要把“通常”读成“永远”。",
+        "规则4：中性物质所有原子的化合价代数和为0，多原子离子的代数和等于离子总电荷。例如H₂SO₄中设S为x，2×(+1)+x+4×(−2)=0，得x=+6；SO₄²⁻则x+4×(−2)=−2，也得+6。两者整体电荷不同，却可以有相同的S化合价。",
+        "处理顺序是标已知、乘下标、列代数和、解未知、代回检查。NO₃⁻中设N为x，x+3×(−2)=−1，故x=+5。写出这一行比只背“N是+5”更重要，换成NO₂⁻就能重新求，而不乱套。若有多个未知且无其他条件，不硬猜唯一答案。"
+      ],
+      "keyPoints": [
+        "单质0；单原子离子看电荷；中性和0，多原子离子和等于电荷。",
+        "先看特殊题设，再使用H通常+1、O通常−2。"
+      ],
+      "checkpoint": {
+        "question": "求CO₂中的C与H₂O₂中的O，写方程。",
+        "answer": "CO₂：x+2×(−2)=0，C为+4；H₂O₂：2×(+1)+2x=0，O为−1。",
+        "explanation": "过氧化氢必须按其组成得到O为−1，不能先塞进“氧总是−2”。"
+      }
+    },
+    {
+      "id": "w7-chemistry-section-detect",
+      "title": "怎样判断氧化还原：比较同一元素前后的记账数",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。氧化还原反应的判断特征是元素化合价发生变化。先把同一元素在反应前后的存在形式对应起来，再比较数值。不能拿反应前Zn的0与反应后Cu的0作比较，因为这不是同一元素的变化。",
+        "Zn+Cu²⁺→Zn²⁺+Cu中，Zn从0变+2，Cu从+2变0，有升有降，所以是氧化还原反应。式中没有O也可以是氧化还原。“氧化”这个名称不表示必须有氧气参加。",
+        "CaCO₃在题给高温下分解成CaO和CO₂，Ca始终+2、C始终+4、O始终−2，虽然发生化学变化并放出气体，却不是氧化还原。H⁺+OH⁻→H₂O中H仍+1、O仍−2；Ba²⁺+SO₄²⁻→BaSO₄↓中各元素也不变。离子参加、新物质形成、气体或沉淀出现，都不能单独证明有变价。",
+        "本周反应事实与产物由题目给定，不要求仅凭化合价预测所有产物。先确认式子表示题设反应，再逐元素查价；只看一个不变元素就下结论也不够，要检查可能变化的元素。"
+      ],
+      "keyPoints": [
+        "判据是同一元素前后化合价是否改变。",
+        "含氧、生成气体、有沉淀，都不是单独判据。"
+      ],
+      "checkpoint": {
+        "question": "Ag⁺+Cl⁻→AgCl↓是氧化还原吗？",
+        "answer": "不是；Ag始终+1、Cl始终−1。",
+        "explanation": "生成沉淀是存在形式改变，未改变这两种元素的化合价。"
+      }
+    },
+    {
+      "id": "w7-chemistry-section-directions",
+      "title": "升失氧、降得还：先用数轴理解再记词",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。化合价升高意味着按记账规则失去电子，发生氧化；化合价降低意味着得到电子，发生还原。电子带负电，失去负电让数值更正，得到负电让数值更负，所以这两条不是毫无理由的口令。",
+        "例如Fe²⁺→Fe³⁺是+2到+3，升高1，每个发生该变化的Fe失1个电子；Cu²⁺→Cu是+2到0，降低2，每个Cu得2个电子。变化大小用前后差的绝对值，方向用升或降另写清楚。",
+        "负数也照数轴：Cl⁻中的Cl从−1变为Cl₂中的0，是升高1并失电子，不是“数字里没有负号就降低”。反向Cl₂中的Cl从0变−1，是降低1并得电子。先写起点与终点，再算差，避免只看绝对值大小。",
+        "像Zn→Zn²⁺+2e⁻、Cu²⁺+2e⁻→Cu这样的式子可以帮助记电子账，e⁻表示电子。两半过程合起来电子相消，不表示在普通溶液总反应里留下可收集的一瓶电子。本周不展开酸性半反应配平，下一周再学。"
+      ],
+      "keyPoints": [
+        "升高：失电子、氧化；降低：得电子、还原。",
+        "每原子的变化大小和整个粒子的电子数还要区分。"
+      ],
+      "checkpoint": {
+        "question": "I⁻中的I从−1变成I₂中的0，是何过程？每个I变化多少？",
+        "answer": "升高1，失1个电子，发生氧化。",
+        "explanation": "−1→0沿数轴向右；一份I₂含两个I，要算整份时另乘2。"
+      }
+    },
+    {
+      "id": "w7-chemistry-section-roles",
+      "title": "四种名称分两边：反应物叫剂，生成物叫产物",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。还原剂是把电子提供给对方、使对方被还原的反应物；它自己失电子、被氧化。氧化剂是接受电子、使对方被氧化的反应物；它自己得电子、被还原。名称讲它对另一方的作用，自身变化恰好与名称里的词对应到对方。",
+        "在Zn+Cu²⁺→Zn²⁺+Cu中，Zn是还原剂，Cu²⁺是氧化剂。由还原剂Zn变化而来的Zn²⁺叫氧化产物；由氧化剂Cu²⁺变化而来的Cu叫还原产物。先在左侧找“剂”，再沿同一元素箭头到右侧找产物。",
+        "回答要带证据：“Cu²⁺中Cu从+2降为0，得电子被还原，所以Cu²⁺是氧化剂。”只写“氧化剂发生氧化”会把作用对象与自身经历混在一起。四个名词可以画成两条完整链，而不是分别硬背。",
+        "角色属于具体反应，不是永久标签。Fe²⁺在变成Fe³⁺时是还原剂；如果题设让Fe²⁺变成单质Fe，则它接受电子，充当氧化剂。不能因为某物质在上一题被叫氧化剂，这一题不看产物还照搬。"
+      ],
+      "keyPoints": [
+        "反应物：还原剂自己氧化；氧化剂自己还原。",
+        "生成物：沿同一元素分别找氧化产物与还原产物。"
+      ],
+      "checkpoint": {
+        "question": "题给2Fe³⁺+Cu→2Fe²⁺+Cu²⁺，谁是氧化剂，谁是氧化产物？",
+        "answer": "氧化剂Fe³⁺；氧化产物Cu²⁺。",
+        "explanation": "Fe从+3降+2被还原；Cu从0升+2被氧化，生成Cu²⁺。"
+      }
+    },
+    {
+      "id": "w7-chemistry-section-electron-count",
+      "title": "一份还是一个原子：电子量需要乘变价原子数",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。若每个变价原子的化合价变化大小是d，一份反应粒子含a个这样的原子，那么每1 mol这种粒子对应a×d mol电子。写成n(e⁻)=n(实际反应粒子)×a×d。三个因素分别回答“反应了多少份”“每份几个变价原子”“每个变多少”。",
+        "Zn从0变+2，每份Zn只有一个Zn原子，故1 mol Zn失2 mol电子。Cl₂变成2Cl⁻，每个Cl从0降−1，变化1；一份Cl₂却含两个Cl，因此1 mol Cl₂得2 mol电子。忽略下标2会少一半，拿Cl⁻的电荷直接当整份Cl₂的电子量也不对。",
+        "若要求电子物质的量，答案写mol；若要求电子个数，才用N(e⁻)=n(e⁻)N_A，个数本身不带mol。本课若用N_A，会在题内给近似值，不能把0.040 mol电子写成0.040个电子。",
+        "本公式针对所选元素确实都发生同一种给定变价的部分。若同一种物质里同一元素分流到不同价态，必须分别追踪，不能把全部原子都按同一方向乘。这类歧化只在最后一节选读，不作为本周核心门槛。"
+      ],
+      "keyPoints": [
+        "电子mol＝实际反应mol×每份变价原子数×每原子变化大小。",
+        "Cl₂→Cl⁻每份含两个变价Cl，不能漏2。"
+      ],
+      "checkpoint": {
+        "question": "0.0120 mol Cl₂按Cl₂→2Cl⁻完全被还原，得到多少mol电子？",
+        "answer": "0.0240 mol电子。",
+        "explanation": "0.0120×2×1=0.0240 mol；2来自Cl₂内原子数。"
+      }
+    },
+    {
+      "id": "w7-chemistry-section-one-ledger",
+      "title": "得与失是同一批电子：用另一边复核，不能再相加",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。在同一氧化还原总反应中，还原剂失去的电子总量等于氧化剂得到的电子总量。把电子想成从一方交给另一方的同一批计量份额：送出10份、收到10份，转移的是10份，不能算20份。这个类比只帮助计数，不描绘真实反应机理。",
+        "以0.020 mol Zn按Zn+Cu²⁺→Zn²⁺+Cu完全反应为例，Zn失0.040 mol电子，Cu²⁺也得0.040 mol电子，所以转移0.040 mol。写“0.040+0.040=0.080 mol转移电子”是把同一批算了两次。另一方是核验，不是新加项。",
+        "如果从两边算出来不相等，先查实际参与量、每份变价原子数与变化大小，不能把两数取平均来补救。正确配平的系数会让两边电子账相等；若投料不按系数比，先找限制者，再算各自实际反应量。",
+        "从浓度或质量出发仍先搭桥：m/M或cV得到反应物的mol，再用mol系数关系判断消耗，最后乘变价电子数。初始多余且未反应的那部分不转移电子。电子守恒不能代替按反应方程式建立物质计量关系与判断限制者，更不能推出反应前后所有物质的mol之和相同。"
+      ],
+      "keyPoints": [
+        "转移量=失去量=得到量，三者相等，不相加。",
+        "投料量与实际反应量不同，先判断谁耗尽。"
+      ],
+      "checkpoint": {
+        "question": "某反应还原剂失0.060 mol电子，氧化剂也得0.060 mol。总转移电子是多少？若算出得0.050 mol怎么办？",
+        "answer": "转移0.060 mol；得0.050与失0.060不符时应重查量和系数，不能平均或相加。",
+        "explanation": "电子账的两边是同一次转移，必须彼此一致。"
+      }
+    },
+    {
+      "id": "w7-chemistry-section-boundaries",
+      "title": "先守住核心，再认识角色可以变化",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。本周核心检查顺序是：物质身份与题设反应→化合价规则→同元素升降→反应物角色与对应产物→实际反应量→单边电子量→另一边核对。不会时从前面第一处卡点补起，不用多背整串结论掩盖规则不清。",
+        "氧化还原的电子转移可以是完全得失，也可以按共用电子偏移作记账；在含共价键的物质里，化合价并不是每个原子真实整数电荷的照片。本周用化合价变化核算总量，不声称所有反应都有电子先自由游走的独立步骤。",
+        "选读辨识，不要求独立歧化计算：题给2H₂O₂→2H₂O+O₂中，O原来−1，一部分到水中−2，另一部分到O₂中0。故同一反应物H₂O₂可以兼作氧化剂和还原剂；不是说同一个O原子在同一次结果中同时变成两种产物。把这段看懂即可，本周短测不考这一额外模型。",
+        "全课只做纸笔题；Zn、铜盐、银盐、酸、氯气与过氧化物等都不是学习操作清单。不购买、接触、混合、加热或制气，不安排家庭实验。遇到有毒气体或强氧化体系，题给条件只表示理论范围，不是让你验证它。"
+      ],
+      "keyPoints": [
+        "核心先练单一去向、明确反应量，复杂分流不强行套公式。",
+        "角色随反应改变，化合价是记账，不等于真实原子电荷。"
+      ],
+      "checkpoint": {
+        "question": "Fe²⁺在一题变Fe³⁺，另一题变Fe，能一直叫它还原剂吗？",
+        "answer": "不能；前者+2→+3失电子，是还原剂；后者+2→0得电子，是氧化剂。",
+        "explanation": "根据本题产物重新判断，不能给物质永久贴角色标签。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w7-chemistry-example-1",
+      "title": "例1·基础：分别求价，再核对整体电荷",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "按本课规则求HNO₃中N、SO₃²⁻中S、ClO⁻中Cl、Na₂O₂中O的化合价。题给Na为+1，H通常+1，前三者O为−2，Na₂O₂是过氧化物。写出各自代数和。",
+      "answer": "N+5、S+4、Cl+1、过氧化物中的O−1。",
+      "steps": [
+        "HNO₃中性，(+1)+x+3×(−2)=0，N为+5。",
+        "SO₃²⁻带−2，x+3×(−2)=−2，S为+4；不能把离子−2当S的价。",
+        "ClO⁻带−1，x+(−2)=−1，Cl为+1。",
+        "Na₂O₂中性，2×(+1)+2x=0，O为−1；这也与题给过氧化物相符。",
+        "逐个代回：0、−2、−1、0分别对应各整体，说明下标与电荷都用对。"
+      ],
+      "commonErrors": [
+        "离子代数和一律写0。",
+        "Na₂O₂中的O也硬取−2。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-example-2",
+      "title": "例2·基础：有氧不一定氧化还原",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "题给①CaCO₃→CaO+CO₂（高温）；②Zn+Cu²⁺→Zn²⁺+Cu；③H⁺+OH⁻→H₂O。分别判断是否氧化还原，并给全部变价或不变价依据。只作理论分析。",
+      "answer": "①不是；②是，Zn0→+2、Cu+2→0；③不是。",
+      "steps": [
+        "①Ca为+2，CaCO₃中C为+4，产物CO₂中C也+4，O均−2，未变价。",
+        "②Zn由单质0变成离子+2，Cu由+2变单质0，有升有降。",
+        "③H始终+1，O始终−2，虽生成水但不变价。",
+        "因此判断不是看有没有O、有没有气体或有没有新物质，而是同一元素的价是否改变。"
+      ],
+      "commonErrors": [
+        "所有分解都判断为氧化还原。",
+        "无O的②反而判非氧化还原。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-example-3",
+      "title": "例3·应用：四种角色与同一批电子",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题设Zn+Cu²⁺→Zn²⁺+Cu完全进行，Cu²⁺足量，0.0250 mol Zn恰好全部反应，无副反应。写四种角色并求转移电子的mol，用铜一侧复核。",
+      "answer": "还原剂Zn，氧化剂Cu²⁺；氧化产物Zn²⁺，还原产物Cu；转移0.0500 mol电子。",
+      "steps": [
+        "Zn从0升+2，每mol失2 mol电子，自身氧化，所以是还原剂；对应Zn²⁺为氧化产物。",
+        "Cu从+2降0，每mol得2 mol电子，自身还原，所以Cu²⁺是氧化剂，Cu为还原产物。",
+        "Zn实际反应0.0250 mol，失电子0.0250×1×2=0.0500 mol。",
+        "方程式Zn∶Cu²⁺=1∶1，实际还原Cu²⁺0.0250 mol，得电子也0.0500 mol。",
+        "转移量是0.0500 mol，不把两边相加为0.100 mol；总式左右电荷均+2。"
+      ],
+      "commonErrors": [
+        "把还原剂叫作自身还原的物质。",
+        "得失相加。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-example-4",
+      "title": "例4·应用：Cl₂每份有两个变价原子",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "仅纸面题：2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻，题设Fe²⁺足量，0.0150 mol Cl₂全反应，无副反应。找两种剂，求Fe²⁺消耗量、Cl⁻生成量与转移电子mol。氯气有毒，不进行实验。",
+      "answer": "Fe²⁺为还原剂，Cl₂为氧化剂；Fe²⁺消耗0.0300 mol，Cl⁻生成0.0300 mol，转移电子0.0300 mol。",
+      "steps": [
+        "Fe+2→+3升1并氧化，Fe²⁺为还原剂；Cl0→−1降1并还原，Cl₂为氧化剂。",
+        "每份Cl₂含2个Cl，各得1电子，1 mol Cl₂得2 mol电子。",
+        "0.0150×2=0.0300 mol电子；Fe每mol失1 mol电子，消耗Fe²⁺0.0300 mol。",
+        "Cl₂∶Cl⁻=1∶2，生成Cl⁻0.0300 mol。",
+        "复核电子：Fe失0.0300，Cl得0.0300；总式电荷左2×2=+4，右2×3−2=+4。"
+      ],
+      "commonErrors": [
+        "只看到Cl每原子降1，漏掉Cl₂的2。",
+        "把2Fe²⁺中Fe化合价写+4。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-example-5",
+      "title": "例5·迁移：起始量不都参加，先找限制者",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "理论反应Cu+2Ag⁺→Cu²⁺+2Ag。投入0.480 g Cu与100.0 mL、0.200 mol/L Ag⁺溶液，反应至限制者耗尽，无副反应或损失。M(Cu)=64.0 g/mol、M(Ag)=108 g/mol。求限制者、转移电子mol、生成Ag质量及剩余Ag⁺的mol。",
+      "answer": "Cu限制；转移电子0.0150 mol；生成Ag0.0150 mol、1.62 g；剩Ag⁺0.00500 mol。",
+      "steps": [
+        "Cu初n=0.480/64.0=0.00750 mol；Ag⁺初n=0.200×0.1000=0.0200 mol。",
+        "按系数比较Cu的0.00750/1与Ag⁺的0.0200/2=0.0100，Cu先耗尽。",
+        "Cu0→+2，每mol失2 mol电子，所以转移0.00750×2=0.0150 mol。",
+        "Ag⁺+1→0，每mol得1 mol电子，实际消耗Ag⁺并生成Ag0.0150 mol；m(Ag)=0.0150×108=1.62 g。",
+        "剩Ag⁺=0.0200−0.0150=0.00500 mol；未反应部分没有得电子，不能用全部0.0200 mol算转移量。",
+        "这里电子量核算与第4周限制者判断相连，g较小或原液c较大都不能代替n/系数。"
+      ],
+      "commonErrors": [
+        "由全部Ag⁺计算0.0200 mol电子。",
+        "铜与银离子直接比较n而忽略1∶2。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w7-chemistry-practice-1",
+      "title": "独练1：用代数和求价",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "求NO₂⁻中的N、CO₃²⁻中的C、FeCl₃中的Fe与O₂中的O。题给化合物中的O为−2、FeCl₃中Cl为−1。说明NO₂⁻的电荷与N化合价是否相同。",
+      "answer": "N+3、C+4、Fe+3、O₂中的O为0；NO₂⁻整体−1与N+3不同。",
+      "steps": [
+        "NO₂⁻：x−4=−1，x=+3。",
+        "CO₃²⁻：x−6=−2，x=+4。",
+        "FeCl₃：x+3×(−1)=0，x=+3。",
+        "O₂为单质，O取0；不能沿用化合物中通常−2。"
+      ],
+      "commonErrors": [
+        "多原子离子内中心元素直接等于总电荷。",
+        "把O₂的2当化合价。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-practice-2",
+      "title": "独练2：新物质与变价分开判断",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给①CuO+2H⁺→Cu²⁺+H₂O；②Fe+2Ag⁺→Fe²⁺+2Ag。分别判是否氧化还原，并指出②两种剂。本题只作理论模型，不预测其他产物。",
+      "answer": "①不是，Cu保持+2、H+1、O−2；②是，Fe为还原剂，Ag⁺为氧化剂。",
+      "steps": [
+        "CuO中O−2推出Cu+2，变成Cu²⁺仍+2，另外H与O也不变。",
+        "②Fe0→+2升价失电子，是还原剂；Ag+1→0降价得电子，是氧化剂。",
+        "生成水或金属不直接决定分类，必须给出变价依据。"
+      ],
+      "commonErrors": [
+        "①含CuO与水就判氧化还原。",
+        "把②的Fe²⁺写成还原剂。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-practice-3",
+      "title": "独练3：从电子账反求另一方",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给2Fe³⁺+Cu→2Fe²⁺+Cu²⁺，0.0360 mol Fe³⁺实际完全参与，无副反应。求Cu消耗量、转移电子mol并找氧化剂、氧化产物。",
+      "answer": "Cu消耗0.0180 mol；电子0.0360 mol；氧化剂Fe³⁺，氧化产物Cu²⁺。",
+      "steps": [
+        "Fe+3→+2，每mol得1 mol电子，n(e⁻)=0.0360 mol。",
+        "Cu0→+2，每mol失2 mol电子，n(Cu)=0.0360/2=0.0180 mol。",
+        "Fe³⁺自身被还原是氧化剂；Cu²⁺由Cu氧化生成是氧化产物。",
+        "从系数2∶1再查Fe³⁺∶Cu，结果一致。"
+      ],
+      "commonErrors": [
+        "Cu消耗误写0.0360 mol。",
+        "电子转移量写得失合计0.0720 mol。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-practice-4",
+      "title": "独练4：两个原子一起计，最后才换个数",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给Cl₂+2I⁻→2Cl⁻+I₂，0.00800 mol Cl₂实际完全参加，无副反应。求电子mol和I₂生成mol。若N_A≈6.02×10²³ mol⁻¹，电子约多少个？氯气有毒，只作纸面题。",
+      "answer": "电子0.0160 mol；I₂0.00800 mol；电子约9.632×10²¹个。",
+      "steps": [
+        "Cl0→−1，每个得1电子，Cl₂每份含2个，所以0.00800×2=0.0160 mol。",
+        "系数Cl₂∶I₂=1∶1，I₂为0.00800 mol。",
+        "N(e⁻)=0.0160×6.02×10²³=9.632×10²¹个；若按三位有效数字写9.63×10²¹也可。",
+        "I⁻共消耗0.0160 mol，各失1电子，核对同样0.0160 mol，不再相加。"
+      ],
+      "commonErrors": [
+        "漏Cl₂内2个Cl。",
+        "把科学计数结果写mol。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-chemistry-practice-5",
+      "title": "独练5：初始量里找实际变价量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "题给Zn+Cu²⁺→Zn²⁺+Cu。1.30 g Zn与50.0 mL、0.300 mol/L Cu²⁺充分反应至限制者耗尽，无副反应，M(Zn)=65.0 g/mol。求限制者、剩余Zn的mol及质量、转移电子mol。",
+      "answer": "Cu²⁺限制；Zn剩0.00500 mol、0.325 g；电子0.0300 mol。",
+      "steps": [
+        "Zn初n=1.30/65.0=0.0200 mol；Cu²⁺初n=0.300×0.0500=0.0150 mol。",
+        "反应1∶1，Cu²⁺较少先耗尽，实际Zn也消耗0.0150 mol。",
+        "Zn剩0.0200−0.0150=0.00500 mol，质量0.00500×65.0=0.325 g。",
+        "电子量由实际Zn算0.0150×2=0.0300 mol；Cu²⁺得量也相同。"
+      ],
+      "commonErrors": [
+        "把全部0.0200 mol Zn当实际反应量。",
+        "用克数直接按方程式系数相减。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "SO₄²⁻中S的化合价是−2。",
+      "why": "−2是整个多原子离子的净电荷。",
+      "right": "x+4×(−2)=−2，S为+6。"
+    },
+    {
+      "wrong": "有氧元素就一定发生氧化还原。",
+      "why": "名称不能代替前后化合价比较，沉淀和中和也可能含氧而不变价。",
+      "right": "比较同一元素前后的价，给出升降证据。"
+    },
+    {
+      "wrong": "氧化剂自己被氧化。",
+      "why": "剂的名称描述对另一方的作用。",
+      "right": "氧化剂自身得电子、降价、被还原；还原剂相反。"
+    },
+    {
+      "wrong": "1 mol Cl₂变Cl⁻只得1 mol电子。",
+      "why": "每个Cl降1，但一份Cl₂有两个变价Cl。",
+      "right": "1×2×1=2 mol电子。"
+    },
+    {
+      "wrong": "电子总量=失去量+得到量。",
+      "why": "同一批转移在两边被记录了两次。",
+      "right": "转移量=失去量=得到量，另一边用于复核。"
+    },
+    {
+      "wrong": "起始所有物质都可用于电子计算。",
+      "why": "过量未反应部分没有发生本题变价。",
+      "right": "先按反应关系求实际参与量，再乘变价数。"
+    }
+  ],
+  "quiz": {
+    "instructions": "唯一原创短测，共4题、24分钟、20分，每题6分钟5分。先折叠全部答案和评分说明，独立写依据、式子、单位与结果，再逐点评分。每条评分点满足其完整条件才得分，过程分不因只写末尾数值自动获得。允许等值写法和合理末位舍入，计算中间量尽量不提前舍入。前测、正文自检、例题、练习和勾选不并入20分。忙碌路径保留一次完整24分钟短测；首次作答与订正后新尝试分别保留。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w7-chemistry-quiz-1",
+        "title": "短测1：陌生离子也能按规则求价",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "已知下列粒子中O均为−2：SO₃²⁻、NO₂⁻、Cr₂O₇²⁻。求S、N、Cr化合价，写出代数和；说明为什么Cr不能直接取−2，2Cr₂O₇²⁻中前面的2是否改变每个Cr的化合价。",
+        "answer": "S+4、N+3、Cr+6；−2是整个重铬酸根电荷；前面系数2不改变每个Cr化合价。",
+        "steps": [
+          "SO₃²⁻：x+3×(−2)=−2，x=+4。",
+          "NO₂⁻：x+2×(−2)=−1，x=+3。",
+          "Cr₂O₇²⁻：2x+7×(−2)=−2，2x=12，x=+6。",
+          "前面2使粒子数、总原子数和总电荷翻倍，不改变每一份内部的元素化合价。"
+        ],
+        "commonErrors": [
+          "漏掉Cr下标2。",
+          "离子电荷与元素化合价混写。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "S列x−6=−2并得+4。"
+          },
+          {
+            "points": 1,
+            "criterion": "N列x−4=−1并得+3。"
+          },
+          {
+            "points": 1,
+            "criterion": "Cr列2x−14=−2并得+6。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明−2是整个多原子离子的电荷，不是Cr化合价。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明系数2改变份数、不改变每个Cr的+6。"
+          }
+        ]
+      },
+      {
+        "id": "w7-chemistry-quiz-2",
+        "title": "短测2：给定新反应，独立判断角色",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "理论式①CuO+2H⁺→Cu²⁺+H₂O；②2Al+3Cu²⁺→2Al³⁺+3Cu。假定②按题式进行，不考虑表面膜或其他反应。判断各是否氧化还原，说明全部变价元素；写②的氧化剂、还原剂及对应的还原产物、氧化产物。",
+        "answer": "①不是，Cu+2/H+1/O−2均不变。②是，Al0→+3、Cu+2→0；氧化剂Cu²⁺，还原剂Al；还原产物Cu，氧化产物Al³⁺。",
+        "steps": [
+          "先求CuO中Cu：x−2=0，所以+2，与产物Cu²⁺相同。",
+          "②Al单质0变+3升3，Cu由+2变0降2，存在升降。",
+          "自身失电子的Al是还原剂，Al³⁺是氧化产物。",
+          "自身得电子的Cu²⁺是氧化剂，Cu是还原产物；剂从反应物中选。"
+        ],
+        "commonErrors": [
+          "只看①发生化学变化就认定氧化还原。",
+          "把氧化剂写成产物Al³⁺。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①判非氧化还原，指出Cu+2、H+1、O−2均未变。"
+          },
+          {
+            "points": 1,
+            "criterion": "②判氧化还原并完整给Al0→+3与Cu+2→0。"
+          },
+          {
+            "points": 1,
+            "criterion": "还原剂Al，依据是自身升价失电子。"
+          },
+          {
+            "points": 1,
+            "criterion": "氧化剂Cu²⁺，依据是自身降价得电子。"
+          },
+          {
+            "points": 1,
+            "criterion": "对应氧化产物Al³⁺、还原产物Cu均正确。"
+          }
+        ]
+      },
+      {
+        "id": "w7-chemistry-quiz-3",
+        "title": "短测3：纠正同一批电子的双计数",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "题给酸性水溶液中Sn²⁺+2Fe³⁺→Sn⁴⁺+2Fe²⁺充分反应，无副反应；0.0120 mol Sn²⁺实际反应。某同学写“Sn失0.0240 mol，Fe得0.0240 mol，所以共转移0.0480 mol电子”。判断并订正，写变价、Fe³⁺实际消耗量和两种剂。",
+        "answer": "转移0.0240 mol，0.0480为重复计数；Sn+2→+4失2，Fe+3→+2得1；Fe³⁺消耗0.0240 mol；还原剂Sn²⁺、氧化剂Fe³⁺。",
+        "steps": [
+          "Sn+2升+4，变化2，失电子0.0120×2=0.0240 mol。",
+          "每mol Fe³⁺得1 mol，接收0.0240 mol电子需要Fe³⁺0.0240 mol，与1∶2系数一致。",
+          "同一批电子由Sn交给Fe，得到与失去量相等但不相加。",
+          "Sn²⁺自身氧化为还原剂，Fe³⁺自身还原为氧化剂。"
+        ],
+        "commonErrors": [
+          "照抄两边相加。",
+          "认为Sn²⁺电荷为+2所以无论到什么产物都转移2。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "Sn由+2到+4升2失电子，Fe由+3到+2降1得电子。"
+          },
+          {
+            "points": 1,
+            "criterion": "从实际Sn²⁺反应量算电子0.0120×2=0.0240 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe³⁺实际消耗0.0240 mol，有每mol得1或1∶2依据。"
+          },
+          {
+            "points": 1,
+            "criterion": "指出0.0480双算同一批，正确转移量0.0240 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "还原剂Sn²⁺、氧化剂Fe³⁺均正确。"
+          }
+        ]
+      },
+      {
+        "id": "w7-chemistry-quiz-4",
+        "title": "短测4：限量条件下算真正转移量",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "纯理论题：Fe+2H⁺→Fe²⁺+H₂↑，投入0.560 g Fe与0.0180 mol可参加此反应的H⁺，反应至限制者耗尽，无副反应与损失。M(Fe)=56.0 g/mol。求限制者、Fe实际消耗mol、剩Fe质量、H₂生成mol及转移电子mol。不进行制气实验。",
+        "answer": "H⁺限制；Fe实际消耗0.00900 mol；剩Fe0.00100 mol、0.0560 g；H₂0.00900 mol；电子0.0180 mol。",
+        "steps": [
+          "Fe初n=0.560/56.0=0.0100 mol；比较Fe的0.0100/1与H⁺的0.0180/2=0.00900，H⁺限制。",
+          "Fe实际消耗0.00900 mol，剩0.0100−0.00900=0.00100 mol，质量0.0560 g。",
+          "Fe∶H₂=1∶1，生成H₂0.00900 mol。",
+          "Fe0→+2，每mol失2 mol，n(e⁻)=0.00900×2=0.0180 mol。",
+          "H从+1到0，0.0180 mol H⁺各得1 mol份额，得到量也是0.0180 mol；不相加，未反应Fe不计。"
+        ],
+        "commonErrors": [
+          "只看Fe起始n，算电子0.0200 mol。",
+          "把H⁺和Fe按1∶1扣。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "Fe初0.0100 mol，正确比较n/系数并判H⁺限制。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe实际消耗0.00900 mol，比例依据正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "剩Fe0.00100 mol、0.0560 g均正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "H₂生成0.00900 mol，使用正确mol关系。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子0.0180 mol，由实际变价量计算且不将得失相加。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "短测1：多原子离子整体电荷与中心元素化合价分清，Cr₂O₇²⁻必须计入Cr下标2。",
+        "短测2：判断依同元素前后化合价；剂从反应物选，自己升价的是还原剂，自己降价的是氧化剂。",
+        "短测3：必须认出得失电子为同一批，转移量0.0240 mol而非0.0480 mol。",
+        "短测4：必须先按n/系数判H⁺限制，电子量使用Fe实际反应0.00900 mol而非起始0.0100 mol。",
+        "所有计算区分每原子变化、每份原子数、电子mol与粒子个数，不能以错单位或漏倍数过关。",
+        "总分至少16/20，所有关键条件均通过，并完成核心活动与订正，才具备本周推进条件。照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w7-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w7-chemistry-section-recall",
+          "w7-chemistry-section-rules"
+        ],
+        "action": "标注整体电荷，设中心元素为x，逐个下标相乘后列代数和，代回原式。"
+      },
+      {
+        "questionIds": [
+          "w7-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w7-chemistry-section-detect",
+          "w7-chemistry-section-directions",
+          "w7-chemistry-section-roles"
+        ],
+        "action": "为每个变价元素画反应物→生成物箭头，写起末价，沿同一元素确定剂与产物。"
+      },
+      {
+        "questionIds": [
+          "w7-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w7-chemistry-section-electron-count",
+          "w7-chemistry-section-one-ledger"
+        ],
+        "action": "左列失电子、右列得电子，写相等号而非加号；说明同一批电子只计一次。"
+      },
+      {
+        "questionIds": [
+          "w7-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w7-chemistry-section-recall",
+          "w7-chemistry-section-one-ledger"
+        ],
+        "action": "先列起始/消耗/剩余，比较各自n/系数，只有实际变价部分进入电子账。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w7-chemistry-review-corrections",
+    "title": "12分钟：把错因改成下次能执行的检查",
+    "instructions": [
+      "第1—3分钟：按4题逐点计分，记录首次分数；另查关键条件，不用高总分掩盖对象、状态、守恒或单位错误。",
+      "第4—8分钟：选最多两处根本错误，写“原来怎么想—定义或题设哪里不支持—正确依据—下一次先查什么”。按短测补救路由重读相应小节，不能只抄结果。",
+      "第9—12分钟：合上答案，用自己的话讲清一道错题的路线，重新写原错题关键式和单位。看过解析后的订正不替代首次独立作答成绩。",
+      "若12分钟内仍未修复，记录活动ID与卡点，在下一可用时段继续留在本周。独立重做原错题记录为新尝试，不另外新增一套20分测验；不以学习时长或日期自动判定掌握。"
+    ]
+  },
+  "nextStep": "完成本周所有核心并订正后，核对20分短测与关键条件，达标才由学习者手动进入下一周。未达标按路由回到相应小节和例题，下一可用时段独立重做错题并保存新尝试，保留首次成绩。课程顺序按能力推进，不绑定日历或固定下班时刻。",
+  "audioStatus": "未配置音频；全部定义、条件、示例、解析和自检均可直接阅读。",
+  "mastery": [
+    "能独立列代数和求价，不把多原子离子的电荷当作其中元素化合价。",
+    "能解释氧化剂自己还原、还原剂自己氧化，剂与产物不混在同一侧选。",
+    "每次电子量都写实际反应量×变价原子数×变化大小；得失只计一次。",
+    "遇两给量先找限制者，保留未反应量，不把初始全部计入电子转移。",
+    "完成核心、自检、独练及订正，短测至少16/20并满足全部关键条件，再手动推进。"
+  ],
+  "safetyScope": "仅进行纸笔推算、原创示意图阅读与口头解释，所有反应均由题目给定，不作为化学品购买、制备、混合、加热或制气指南。氯气有毒，酸、金属盐、银盐及过氧化物等存在风险，不进行任何家庭化学实验。数量题明确按指定反应、实际反应量、无副反应与题定限量条件计算，不由电子配平断言现实必然发生。H₂O₂歧化仅为选读辨识，不纳入本周必做计算或短测门槛。",
+  "sourcePolicy": {
+    "authorship": "中文解释、规则卡、问题与数据、步骤、评分和图示均针对基础薄弱在职自学者原创；保留原第7周氧化还原范围，先补化合价规则，歧化仅选读辨识。",
+    "examStatus": "全部是原创教学题，非历年真题；不编教材版本章页，不预测2028年考试必考题。pilot-ready为内容试点状态，不表示学习者已掌握。",
+    "externalSources": [
+      {
+        "id": "w7-chemistry-source-redox",
+        "title": "OpenStax Chemistry 2e：4.2 Classifying Chemical Reactions",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+        "kind": "reference",
+        "scopeNote": "已实际打开原发布机构页面核验氧化数、氧化还原定义与电子记账基本原则；本课表述与全部题目独立编写，不复制来源题目。"
+      }
+    ]
+  }
+}

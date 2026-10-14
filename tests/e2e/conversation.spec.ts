@@ -9,7 +9,7 @@ async function open(page: Page) { await page.getByRole('button', { name: '问 AI
 async function fillKey(page: Page) { const details = page.locator('.ai-settings'); if (!await details.evaluate(el => (el as HTMLDetailsElement).open)) await details.locator('summary').click(); await page.getByLabel('DeepSeek API Key', { exact: true }).fill(fakeKey) }
 async function send(page: Page, question: string, answer: string) { await page.getByLabel('你的问题').fill(question); await page.getByRole('button', { name: '发送给 DeepSeek', exact: true }).click(); await expect(page.locator('.ai-answer')).toContainText(answer) }
 async function close(page: Page) { await page.getByRole('button', { name: '关闭 AI 问答', exact: true }).click(); await expect(page.getByRole('dialog')).toHaveCount(0) }
-test.beforeEach(async ({ page }) => { await page.goto('/'); await page.evaluate(() => localStorage.clear()); await page.goto('/#learn/7/math/knowledge') })
+test.beforeEach(async ({ page }) => { await page.goto('/'); await page.evaluate(() => localStorage.clear()); await page.goto('/#learn/9/math/knowledge') })
 
 test('follow-ups send the visible complete pairs and prior material, without automatic calls', async ({ page }) => {
   const payloads: Payload[] = []
@@ -35,14 +35,14 @@ test('follow-ups send the visible complete pairs and prior material, without aut
 test('same-course section changes and reopening restore memory; other courses are isolated; refresh clears', async ({ page }) => {
   const payloads: Payload[] = []
   await page.route(api, async route => { payloads.push(route.request().postDataJSON()); await route.fulfill({ json: response(`课内答案${payloads.length}`) }) })
-  await open(page); await fillKey(page); await send(page, '数学第七周唯一问题', '课内答案1'); await close(page)
-  await open(page); await expect(page.locator('.ai-answer')).toContainText('数学第七周唯一问题'); await close(page)
+  await open(page); await fillKey(page); await send(page, '数学第九周唯一问题', '课内答案1'); await close(page)
+  await open(page); await expect(page.locator('.ai-answer')).toContainText('数学第九周唯一问题'); await close(page)
   await page.getByRole('button', { name: '下一节 →', exact: true }).click(); await open(page)
-  await expect(page.locator('.ai-answer')).toContainText('数学第七周唯一问题'); await expect(page.getByLabel('附带的学习资料（可选）')).toHaveValue('')
-  await close(page); await page.goto('/#learn/8/math/knowledge'); await open(page); await expect(page.locator('.ai-turn')).toHaveCount(0)
-  await fillKey(page); await send(page, '数学第八周唯一问题', '课内答案2'); expect(payloads[1]!.messages).toHaveLength(2)
-  await close(page); await page.goto('/#learn/7/physics/knowledge'); await open(page); await expect(page.locator('.ai-turn')).toHaveCount(0)
-  await close(page); await page.goto('/#learn/7/math/knowledge'); await open(page); await expect(page.locator('.ai-answer')).toContainText('数学第七周唯一问题')
+  await expect(page.locator('.ai-answer')).toContainText('数学第九周唯一问题'); await expect(page.getByLabel('附带的学习资料（可选）')).toHaveValue('')
+  await close(page); await page.goto('/#learn/10/math/knowledge'); await open(page); await expect(page.locator('.ai-turn')).toHaveCount(0)
+  await fillKey(page); await send(page, '数学第十周唯一问题', '课内答案2'); expect(payloads[1]!.messages).toHaveLength(2)
+  await close(page); await page.goto('/#learn/9/physics/knowledge'); await open(page); await expect(page.locator('.ai-turn')).toHaveCount(0)
+  await close(page); await page.goto('/#learn/9/math/knowledge'); await open(page); await expect(page.locator('.ai-answer')).toContainText('数学第九周唯一问题')
   expect(payloads).toHaveLength(2); await page.reload(); await open(page); await expect(page.locator('.ai-turn')).toHaveCount(0)
 })
 
@@ -92,8 +92,8 @@ test('switching courses aborts in-flight requests and backup excludes conversati
   await open(page); await fillKey(page); await page.getByLabel('我了解风险，同意将 Key 保存到当前浏览器').check(); await page.getByRole('button', { name: '保存 Key', exact: true }).click()
   await send(page, 'PRIVATE QUESTION NOT IN BACKUP', 'PRIVATE ANSWER')
   slow = true; await page.getByLabel('你的问题').fill('跨课取消问题'); await page.getByRole('button', { name: '发送给 DeepSeek', exact: true }).click(); await expect.poll(() => payloads.length).toBe(2)
-  await page.evaluate(() => { location.hash = '#learn/8/math/knowledge' }); await expect(page.getByRole('dialog')).toHaveCount(0); await open(page); await expect(page.locator('.ai-turn')).toHaveCount(0)
-  await close(page); await page.goto('/#learn/7/math/knowledge'); await open(page); await expect.poll(() => slowSettled).toBe(1); await expect(page.locator('.ai-turn')).toHaveCount(1)
+  await page.evaluate(() => { location.hash = '#learn/10/math/knowledge' }); await expect(page.getByRole('dialog')).toHaveCount(0); await open(page); await expect(page.locator('.ai-turn')).toHaveCount(0)
+  await close(page); await page.goto('/#learn/9/math/knowledge'); await open(page); await expect.poll(() => slowSettled).toBe(1); await expect(page.locator('.ai-turn')).toHaveCount(1)
   await close(page); await page.goto('/#settings'); const download = page.waitForEvent('download'); await page.getByRole('button', { name: '导出 JSON 备份', exact: true }).click()
   const text = await readFile((await (await download).path())!, 'utf8')
   for (const value of [fakeKey, 'PRIVATE QUESTION', 'PRIVATE ANSWER', '跨课取消问题']) expect(text).not.toContain(value)

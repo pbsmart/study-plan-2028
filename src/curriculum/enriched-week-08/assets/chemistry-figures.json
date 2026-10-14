@@ -1,0 +1,43 @@
+[
+  {
+    "id": "w8-chemistry-figure-acid-steps",
+    "title": "酸性半反应：每次只补一类缺口",
+    "asset": "assets/chemistry-figure1.svg",
+    "altText": "酸性MnO₄⁻到Mn²⁺半反应依次右补4水平氧，左补8H⁺平氢，左补5电子使电荷由+7降到+2。最终MnO₄⁻+8H⁺+5e⁻→Mn²⁺+4H₂O。",
+    "description": "电子加到更正的一侧；化合价变化与电荷差分别支持5个电子，并非凭记忆填数。",
+    "renderingNote": "三层原生文字步骤，严格标补O、补H、补电荷，不用实验装置。",
+    "linkedSectionIds": [
+      "w8-chemistry-section-acid-half",
+      "w8-chemistry-section-recall-redox"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w8-chemistry-figure-merge-ledger",
+    "title": "整条放大，电子相消，再查三本账",
+    "asset": "assets/chemistry-figure2.svg",
+    "altText": "Mn半反应需5电子，Fe半反应整条乘5；相加消去5e⁻后，总式为MnO₄⁻+5Fe²⁺+8H⁺→Mn²⁺+5Fe³⁺+4H₂O。原子Mn1Fe5O4H8，电荷两侧+17，失得电子各5份。",
+    "description": "电子账匹配后，H、O和电荷仍须各自检查。每条半反应整条放大，不能只改电子前的数。",
+    "renderingNote": "两条半反应与总式纵向合并，下方三张独立检查卡；仅通用教学式，不关联测验。",
+    "linkedSectionIds": [
+      "w8-chemistry-section-merge",
+      "w8-chemistry-section-check-boundary"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w8-chemistry-figure-cumulative-route",
+    "title": "把第5—8周接成一条可检查的路线",
+    "asset": "assets/chemistry-figure3.svg",
+    "altText": "第5周先统一n、c、V和单位；第6周检查强弱、溶解性和状态；第7周求价及每份电子量；第8周配电子比、补H/O、消电子并查原子电荷电子。计量必须用实际反应量。",
+    "description": "先定位在哪一步卡住，再回到本周对应补救小节。前周概念与本周配平相互支撑，不能只背一个总式。",
+    "renderingNote": "四张周技能卡与计量回扣，不展示任一累计题答案或分数结果。",
+    "linkedSectionIds": [
+      "w8-chemistry-section-recall-quantity",
+      "w8-chemistry-section-recall-ions",
+      "w8-chemistry-section-recall-redox",
+      "w8-chemistry-section-stoichiometry"
+    ],
+    "linkedQuestionIds": []
+  }
+]

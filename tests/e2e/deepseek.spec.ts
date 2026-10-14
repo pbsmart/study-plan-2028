@@ -9,7 +9,7 @@ const success = { choices: [{ message: { content: '先观察条件，再分两�
 
 async function open(page: Page) { await page.getByRole('button', { name: '问 AI', exact: true }).click(); await expect(page.getByRole('dialog', { name: 'AI 问答' })).toBeVisible() }
 async function fillKey(page: Page) { const details = page.locator('.ai-settings'); if (!await details.evaluate(el => (el as HTMLDetailsElement).open)) await details.locator('summary').click(); await page.getByLabel('DeepSeek API Key', { exact: true }).fill(fakeKey) }
-test.beforeEach(async ({ page }) => { await page.goto('/'); await page.evaluate(() => localStorage.clear()); await page.goto('/#learn/7/math/knowledge') })
+test.beforeEach(async ({ page }) => { await page.goto('/'); await page.evaluate(() => localStorage.clear()); await page.goto('/#learn/9/math/knowledge') })
 
 test('does no API work until an explicit send; selected context and answer stay safe', async ({ page }, info) => {
   const requests: { body: Record<string, unknown>; headers: Record<string, string> }[] = []
@@ -56,7 +56,7 @@ test('explicit save persists only the key, excludes backup, and clear removes it
   const downloadEvent = page.waitForEvent('download'); await page.getByRole('button', { name: '导出 JSON 备份', exact: true }).click()
   const file = await downloadEvent; const content = await readFile((await file.path())!, 'utf8')
   expect(content).not.toContain(fakeKey); expect(content).not.toContain(keySlot); expect(JSON.parse(content).version).toBe(2)
-  await page.goto('/#learn/7/math/knowledge'); await open(page); await page.locator('.ai-settings summary').click()
+  await page.goto('/#learn/9/math/knowledge'); await open(page); await page.locator('.ai-settings summary').click()
   await page.getByRole('button', { name: '清除 Key', exact: true }).click(); await expect(page.getByLabel('DeepSeek API Key', { exact: true })).toHaveValue('')
   expect(await page.evaluate(slot => localStorage.getItem(slot), keySlot)).toBeNull(); expect(calls).toBe(0)
 })
@@ -82,7 +82,7 @@ test('cancel, close, and navigation abort pending work without duplicate submiss
   await page.getByRole('button', { name: '发送给 DeepSeek', exact: true }).click(); await expect.poll(() => requests).toBe(2); await page.getByRole('button', { name: '关闭 AI 问答', exact: true }).click()
   await expect(page.getByRole('dialog')).toHaveCount(0); await open(page); await expect(page.locator('.ai-answer')).toHaveCount(0)
   await fillKey(page); await page.getByLabel('你的问题').fill('切页测试'); await page.getByRole('button', { name: '发送给 DeepSeek', exact: true }).click(); await expect.poll(() => requests).toBe(3)
-  await page.evaluate(() => { location.hash = '#learn/7/math/practice' }); await expect(page.getByRole('dialog')).toHaveCount(0)
+  await page.evaluate(() => { location.hash = '#learn/9/math/practice' }); await expect(page.getByRole('dialog')).toHaveCount(0)
   await expect(page.locator('.focus-section-title')).toBeFocused(); await open(page); await expect(page.locator('.ai-answer')).toHaveCount(0)
   await expect(page.getByLabel('附带的学习资料（可选）')).toHaveValue(''); expect(requests).toBe(3)
 })

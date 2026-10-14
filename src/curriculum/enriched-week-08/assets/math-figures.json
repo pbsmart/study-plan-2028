@@ -1,0 +1,42 @@
+[
+  {
+    "id": "w8-math-exponential-curves",
+    "title": "两类底数：输出都正，单调方向相反",
+    "asset": "assets/math-exponential-curves.svg",
+    "altText": "蓝线y=2^x递增，橙线y=(1/2)^x递减；都过(0,1)且输出永远正。图示只截取−3≤x≤3的一段，完整定义域为R，值域(0,+∞)。",
+    "description": "蓝线y=2^x递增，橙线y=(1/2)^x递减；都过(0,1)且输出永远正。图示只截取−3≤x≤3的一段，完整定义域为R，值域(0,+∞)。",
+    "linkedSectionIds": [
+      "w8-math-s1",
+      "w8-math-s4",
+      "w8-math-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w8-math-compare-two-bases",
+    "title": "同底比较前，先看底数在哪个范围",
+    "asset": "assets/math-compare-two-bases.svg",
+    "altText": "对a>1的递增指数函数，a^u>a^v等价u>v；对0<a<1的递减函数，a^u>a^v等价u<v。比较方向变化来自单调性，不是移项；等号按原题保留。",
+    "description": "对a>1的递增指数函数，a^u>a^v等价u>v；对0<a<1的递减函数，a^u>a^v等价u<v。比较方向变化来自单调性，不是移项；等号按原题保留。",
+    "linkedSectionIds": [
+      "w8-math-s4",
+      "w8-math-s5"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w8-math-substitution-checks",
+    "title": "换元后有三层条件，不能只解一个二次式",
+    "asset": "assets/math-substitution-checks.svg",
+    "altText": "流程：令t=a^x并写t>0；解代数方程或不等式；与t>0筛选；按底数增减还原x；最后与原输入范围取交。同一条件可能跨周，但评分不能重复。",
+    "description": "流程：令t=a^x并写t>0；解代数方程或不等式；与t>0筛选；按底数增减还原x；最后与原输入范围取交。同一条件可能跨周，但评分不能重复。",
+    "linkedSectionIds": [
+      "w8-math-s6",
+      "w8-math-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

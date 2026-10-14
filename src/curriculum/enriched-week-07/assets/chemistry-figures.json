@@ -1,0 +1,41 @@
+[
+  {
+    "id": "w7-chemistry-figure-oxidation-number",
+    "title": "整体电荷 ≠ 元素化合价",
+    "asset": "assets/chemistry-figure1.svg",
+    "altText": "SO₄²⁻中下标4为O个数，上标2−是整个离子电荷。设S为x，x加4乘−2等于−2，解得S为+6。",
+    "description": "先分清整体与元素；只有单原子离子的化合价才可直接按该离子的电荷数读取。",
+    "renderingNote": "紧凑原生文本卡片，标注上下标与代数和；不含题目答案专属数据。",
+    "linkedSectionIds": [
+      "w7-chemistry-section-recall",
+      "w7-chemistry-section-rules"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w7-chemistry-figure-role-chains",
+    "title": "反应物叫“剂”，沿同一元素找产物",
+    "asset": "assets/chemistry-figure2.svg",
+    "altText": "Zn从0升+2，失电子被氧化，是还原剂，Zn²⁺为氧化产物；Cu从+2降0，得电子被还原，反应物Cu²⁺为氧化剂，生成Cu为还原产物。",
+    "description": "先在反应物一侧找剂，再沿同一元素到生成物一侧找对应产物；角色随具体反应判断。",
+    "renderingNote": "两条平行变价链，剂与产物分两侧，不把电子画成真实实验路径。",
+    "linkedSectionIds": [
+      "w7-chemistry-section-directions",
+      "w7-chemistry-section-roles"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w7-chemistry-figure-electron-ledger",
+    "title": "同一批电子：两边相等，只计一次",
+    "asset": "assets/chemistry-figure3.svg",
+    "altText": "电子量等于实际反应粒子mol乘每份变价原子数乘每原子变价大小。还原剂失q mol、氧化剂得同一q mol，总转移q mol，不相加成2q。",
+    "description": "从另一方计算是复核，不是新增一笔。先求真正参加反应的量，再使用变价倍数。",
+    "renderingNote": "公式与同一批计量箭头，非实验电子轨迹；不出现测验给定量。",
+    "linkedSectionIds": [
+      "w7-chemistry-section-electron-count",
+      "w7-chemistry-section-one-ledger"
+    ],
+    "linkedQuestionIds": []
+  }
+]

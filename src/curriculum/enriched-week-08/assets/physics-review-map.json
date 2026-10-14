@@ -1,0 +1,385 @@
+{
+  "lessonId": "w8-物理",
+  "week": 8,
+  "assessmentId": "w8-physics-integrated-review",
+  "title": "第5—8周物理累计诊断技能映射（必要回查第1—4周）",
+  "quizTotalPoints": 20,
+  "quizMinutes": 25,
+  "correctionMinutes": 25,
+  "policy": "映射对应lesson.quiz唯一4题20分累计诊断，替代普通周测，不增加题目或时长。scoringIndex从1计；每评分点只计一次分，多周标签是前置链，不能再按周叠加分数。第1—4周只回查当前诊断需要的技能，不声称全面覆盖。",
+  "weekSkills": [
+    {
+      "week": 1,
+      "skills": [
+        "单位与正方向",
+        "位移/路程区别"
+      ]
+    },
+    {
+      "week": 2,
+      "skills": [
+        "速度变化率",
+        "速度变号"
+      ]
+    },
+    {
+      "week": 3,
+      "skills": [
+        "v-t分段面积",
+        "恒定段与模型边界"
+      ]
+    },
+    {
+      "week": 4,
+      "skills": [
+        "首次触地后停止外推自由落体模型"
+      ]
+    },
+    {
+      "week": 5,
+      "skills": [
+        "图像斜率、带符号面积",
+        "转向和路程"
+      ]
+    },
+    {
+      "week": 6,
+      "skills": [
+        "实际静摩擦与上限",
+        "滑动摩擦",
+        "N的受力依据"
+      ]
+    },
+    {
+      "week": 7,
+      "skills": [
+        "角度基准与方向分量",
+        "斜面重力分解"
+      ]
+    },
+    {
+      "week": 8,
+      "skills": [
+        "分别列方向平衡",
+        "检验静止条件",
+        "静止范围与摩擦反向"
+      ]
+    }
+  ],
+  "scoringMap": [
+    {
+      "questionId": "w8-physics-quiz1",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        2,
+        3,
+        5
+      ],
+      "skill": "v-t直线斜率为加速度，速度差/时间差与单位",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s8"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz1",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        2,
+        5
+      ],
+      "skill": "速度零点两侧变号，定位真正转向",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s8"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz1",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        3,
+        5
+      ],
+      "skill": "正负三角形面积的符号与米单位",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s8"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz1",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        1,
+        3,
+        5
+      ],
+      "skill": "有符号位移与非负路程分别求和",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s8"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz1",
+      "scoringIndex": 5,
+      "points": 1,
+      "weeks": [
+        3,
+        4
+      ],
+      "skill": "首次触地作为模型边界，不外推碰撞后的未知运动",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s3",
+        "w8-physics-s8"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz2",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        6
+      ],
+      "skill": "由静摩擦因数与N求上限7.2 N",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s4",
+        "w8-physics-s5"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz2",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "比较需求与上限，检验静止假设",
+      "sectionIds": [
+        "w8-physics-s3",
+        "w8-physics-s4"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz2",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "实际静摩擦取4 N且方向抵消拉力",
+      "sectionIds": [
+        "w8-physics-s3",
+        "w8-physics-s4"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz2",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "需求10 N超过上限则否定静止",
+      "sectionIds": [
+        "w8-physics-s4",
+        "w8-physics-s5"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz2",
+      "scoringIndex": 5,
+      "points": 1,
+      "weeks": [
+        6
+      ],
+      "skill": "已滑动阶段使用动摩擦因数并反对相对滑动",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s4",
+        "w8-physics-s5"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz3",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        7
+      ],
+      "skill": "角从竖直给出，水平为对边，用sin",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s4"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz3",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        7
+      ],
+      "skill": "竖直为邻边，用cos且方向向上",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s4"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz3",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "重力mg与竖直方向的平衡方程",
+      "sectionIds": [
+        "w8-physics-s2",
+        "w8-physics-s3",
+        "w8-physics-s4"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz3",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "上拉分量使N不同于mg，求N17 N",
+      "sectionIds": [
+        "w8-physics-s3",
+        "w8-physics-s4"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz3",
+      "scoringIndex": 5,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "光滑面无摩擦，水平平衡由指定额外力实现",
+      "sectionIds": [
+        "w8-physics-s2",
+        "w8-physics-s3",
+        "w8-physics-s4"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz4",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        6,
+        7,
+        8
+      ],
+      "skill": "斜面重力分解与无其他法向外力时的法向平衡",
+      "sectionIds": [
+        "w8-physics-s1",
+        "w8-physics-s5"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz4",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        7,
+        8
+      ],
+      "skill": "选上坡正方向，列带符号的所需静摩擦关系",
+      "sectionIds": [
+        "w8-physics-s3",
+        "w8-physics-s5",
+        "w8-physics-s7"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz4",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "所需摩擦大小不超上限，得到包含临界端点的范围",
+      "sectionIds": [
+        "w8-physics-s5",
+        "w8-physics-s7"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz4",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "所需摩擦符号决定上坡、零、下坡三种状态",
+      "sectionIds": [
+        "w8-physics-s5",
+        "w8-physics-s7"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    },
+    {
+      "questionId": "w8-physics-quiz4",
+      "scoringIndex": 5,
+      "points": 1,
+      "weeks": [
+        6,
+        8
+      ],
+      "skill": "把额外给定F代回需求并拒绝超限静止假设",
+      "sectionIds": [
+        "w8-physics-s5",
+        "w8-physics-s7"
+      ],
+      "remediation": "在本周所列小节修复该评分点的条件或计算，遮住答案重做；多周标签只追溯前置，不重复计分。"
+    }
+  ],
+  "passRule": {
+    "minScore": 16,
+    "requiredChecks": [
+      "累计1必须分清负面积、位移与路程，转向查速度变号；触地后不得擅自延长自由落体模型。",
+      "累计2必须区分实际静摩擦、最大值与已滑动摩擦，超限时否定静止。",
+      "累计3角度从竖直量起，两分量不能互换；先列竖直平衡再求N。",
+      "累计4必须同时给静止范围与摩擦反向条件，并排除F=15 N的超限假设。"
+    ]
+  }
+}

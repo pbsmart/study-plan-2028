@@ -1,0 +1,867 @@
+{
+  "id": "w8-化学",
+  "week": 8,
+  "subject": "化学",
+  "title": "氧化还原配平：酸性半反应、三账核查与第5—8周综合诊断",
+  "revision": "week08-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能从每份得失电子量求最小公倍数，先配简单反应，再处理酸性含H/O体系。",
+    "能按非H/O原子→H₂O补O→H⁺补H→e⁻补电荷的顺序写半反应并解释每一步。",
+    "能整条放大、合并消电子、约最简，同时核查原子、电荷和电子。",
+    "能在明确实际反应量与足量条件下，连接质量/浓度、mol系数比、H⁺计量消耗与电子量。",
+    "能完成唯一20分第5—8周累计诊断，真实回查浓度、离子写法、变价/角色、配平与必要前期计量；16分及关键条件同时通过。"
+  ],
+  "prerequisites": [
+    "第3—5周的n=m/M、n=cV、单位、实际反应量与限制者；本周有量的补救节。",
+    "第6周强弱/状态拆写、旁观离子和原子电荷检查；本周有离子补救节。",
+    "第7周化合价规则、升降、两种剂、每份电子数及得失不双计；本周有变价补救节。",
+    "只要求初等整数倍与最小公倍数，不以预先背熟复杂氧化还原方程式为门槛。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "60分钟是忙碌时单次学习上限，不是缩减过关路线。完整150分钟分60+54+36：第1次60=前测6+八节含自检48+例1共6，活动ID：w8-chemistry-diagnostic-1、w8-chemistry-diagnostic-2、w8-chemistry-diagnostic-3、w8-chemistry-section-recall-quantity、w8-chemistry-section-recall-ions、w8-chemistry-section-recall-redox、w8-chemistry-section-electron-ratio、w8-chemistry-section-acid-half、w8-chemistry-section-merge、w8-chemistry-section-stoichiometry、w8-chemistry-section-check-boundary、w8-chemistry-example-1。第2次54=例2—5共24+五练30，活动ID：w8-chemistry-example-2、w8-chemistry-example-3、w8-chemistry-example-4、w8-chemistry-example-5、w8-chemistry-practice-1、w8-chemistry-practice-2、w8-chemistry-practice-3、w8-chemistry-practice-4、w8-chemistry-practice-5。第3次36=唯一累计诊断24+订正12，活动ID：w8-chemistry-quiz-1、w8-chemistry-quiz-2、w8-chemistry-quiz-3、w8-chemistry-quiz-4、w8-chemistry-review-corrections。累计诊断保持一次完整作答，5+5+5+9分钟做4题，结束才开答案与评分；它替代本周普通测验，不另叠加20分。中断记活动ID续做，完成核心与订正并达标才手动推进；不足时延长本周，不绑定日历。",
+    "segments": [
+      {
+        "id": "w8-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w8-chemistry-diagnostic-1",
+          "w8-chemistry-diagnostic-2",
+          "w8-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w8-chemistry-time-concepts",
+        "title": "八节前置、正文与自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w8-chemistry-section-recall-quantity",
+          "w8-chemistry-section-recall-ions",
+          "w8-chemistry-section-recall-redox",
+          "w8-chemistry-section-electron-ratio",
+          "w8-chemistry-section-acid-half",
+          "w8-chemistry-section-merge",
+          "w8-chemistry-section-stoichiometry",
+          "w8-chemistry-section-check-boundary"
+        ]
+      },
+      {
+        "id": "w8-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w8-chemistry-example-1",
+          "w8-chemistry-example-2",
+          "w8-chemistry-example-3",
+          "w8-chemistry-example-4",
+          "w8-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w8-chemistry-time-practice",
+        "title": "五题独立练习，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w8-chemistry-practice-1",
+          "w8-chemistry-practice-2",
+          "w8-chemistry-practice-3",
+          "w8-chemistry-practice-4",
+          "w8-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w8-chemistry-time-quiz",
+        "title": "唯一第5—8周累计诊断，4题20分，5+5+5+9分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w8-chemistry-quiz-1",
+          "w8-chemistry-quiz-2",
+          "w8-chemistry-quiz-3",
+          "w8-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w8-chemistry-time-review",
+        "title": "评分与错因订正",
+        "minutes": 12,
+        "activityIds": [
+          "w8-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "用6分钟先独立答3道前测，每题约2分钟。不会的题标出卡在对象、单位、规则还是比例。前测不计入20分短测；按路由进入本课已有的补救和正文时间，不另加一份测验。全对仍需完成各节自检。",
+    "questions": [
+      {
+        "id": "w8-chemistry-diagnostic-1",
+        "title": "前测1：浓度与状态",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "50.0 mL、0.200 mol/L溶液含溶质多少mol？CH₃COOH是弱酸，写净离子式时能全部拆成H⁺和CH₃COO⁻吗？",
+        "answer": "0.0100 mol；不能，弱酸保留。",
+        "steps": [
+          "50.0 mL=0.0500 L，n=0.200×0.0500。",
+          "可溶不代表强电离，CH₃COOH保留。"
+        ],
+        "commonErrors": [
+          "把mL直接作L。",
+          "弱酸见aq就拆。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w8-chemistry-diagnostic-2",
+        "title": "前测2：每份电子数",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "MnO₄⁻中O为−2，Mn变为Mn²⁺。Mn起始价多少，每份得几个电子？",
+        "answer": "Mn+7，每份得5电子。",
+        "steps": [
+          "x−8=−1，x=+7。",
+          "+7降到+2，差5。"
+        ],
+        "commonErrors": [
+          "把整体−1当Mn价。",
+          "按终态+2只写2电子。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w8-chemistry-diagnostic-3",
+        "title": "前测3：最小电子匹配",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "甲每份失2电子，乙每份得3电子。最小的甲∶乙份数比是多少？转移电子份数6还是12？",
+        "answer": "甲∶乙=3∶2；转移6份。",
+        "steps": [
+          "2与3最小公倍数6。",
+          "甲3份失6，乙2份得6，同一批只计6。"
+        ],
+        "commonErrors": [
+          "份数比写2∶3。",
+          "得失相加成12。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1量或拆写出错。",
+        "action": "先回查第5、6周关键桥：L与mol，最终体积，弱酸/水保留。",
+        "sectionIds": [
+          "w8-chemistry-section-recall-quantity",
+          "w8-chemistry-section-recall-ions"
+        ]
+      },
+      {
+        "when": "前测2求价、价差出错。",
+        "action": "列带电荷的代数和，写清起点终点再算每份电子数。",
+        "sectionIds": [
+          "w8-chemistry-section-recall-redox"
+        ]
+      },
+      {
+        "when": "前测3倍率或双计数出错，或前测全对。",
+        "action": "用最小公倍数配同一批电子；全对也完成三账自检，不跳过核心。",
+        "sectionIds": [
+          "w8-chemistry-section-electron-ratio",
+          "w8-chemistry-section-merge",
+          "w8-chemistry-section-check-boundary"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w8-chemistry-section-recall-quantity",
+      "title": "累计补救1：先确定哪一份、哪个单位，再接计量",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。本周把第5—8周连成一条线，前面量的概念不能丢。第5周c(B)=n(B)/V，V是所追踪那份最终溶液的体积；mol/L要配L，mL先除1000。第3周n=m/M，m用g、M用g/mol，先换mol才能走方程式比例。c不是整瓶的n，也不是质量分数w；w=m溶质/m整个溶液，不能把百分数当mol/L。",
+        "均一取样在无反应、无挥发、无析出时，样品与原液c相同，n按体积分配。稀释则只追踪所取那份溶质，在它不反应、不损失、不析出时n不变，才有c₁V₁=c₂V₂。取出样品再稀释，不能把原瓶全部n带进样品。",
+        "“稀释至100 mL”给最终体积；“加入100 mL水”给溶剂增量，不能互换。混合体积不默认相加，除非题目明确近似可加和或直接给最终体积。本周数量题优先用题给最终液相体积，不把电子记账里的系数理解成体积关系。",
+        "第4周系数比连接实际消耗或生成的mol。若两种都给量，比较n/各自系数判断限制者；过量部分不进入电子转移。题设“酸性”只说明介质，未必说明H⁺足够支持任意投料量；计算完全反应需题给足量或实际反应量保证。"
+      ],
+      "keyPoints": [
+        "质量先转mol，浓度先配L，系数比只连接实际反应mol。",
+        "分清取样与稀释、最终体积与水量、酸性与足量。"
+      ],
+      "checkpoint": {
+        "question": "0.300 mol/L均一溶液取20.0 mL后，无反应无损失稀释至120.0 mL，n样与c后各多少？",
+        "answer": "n样=0.00600 mol；c后=0.0500 mol/L。",
+        "explanation": "0.300×0.0200=0.00600，再除最终0.1200 L；原瓶还有多少溶液与此无关。"
+      }
+    },
+    {
+      "id": "w8-chemistry-section-recall-ions",
+      "title": "累计补救2：离子式先尊重物质形式，再查电荷",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。第6周拆写的条件仍有效：水溶液中实际溶解且按强电解质处理的物质可写离子；弱酸、水、气体、难溶固体及题定未溶解的固体保留。强弱电解质说电离程度，浓稀说含量；可溶弱酸不能因“浓”就整体拆写。",
+        "例如题给某弱一元酸HA(aq)与NaOH(aq)反应，产物NaA为可溶强电解质，则HA+OH⁻→A⁻+H₂O。HA保留，NaA拆，约去Na⁺；符号A代表题给的一价酸根组成，不是让你猜一个元素。左右电荷都−1，说明净式两边不必各0。",
+        "旁观离子仍在溶液，只是从净反应式省略。半反应中的e⁻则是电子收支辅助项，合并时必须相消；它既不是旁观离子，也不是最终溶液里要列一个浓度的溶质。不能把两种“约去”理解成完全同一化学身份。",
+        "最后同时查每种原子总数与电荷代数和。每项电荷=系数×带符号电荷数，再求同侧总和。式子原子、电荷都守恒也只说明记账自洽；反应是否发生、生成什么，还需服从题给条件，不能靠配平凭空预测产物。"
+      ],
+      "keyPoints": [
+        "弱酸与水不拆；可溶盐的写法由题给性质决定。",
+        "原子、电荷都查；旁观项仍在，e⁻在合并总式中消去。"
+      ],
+      "checkpoint": {
+        "question": "CH₃COOH+OH⁻→CH₃COO⁻+H₂O两边电荷是多少？能因为不是0就判错吗？",
+        "answer": "两边均−1；不能因此判错。",
+        "explanation": "旁观阳离子在净式中省略，净式只要求左右总电荷相同。"
+      }
+    },
+    {
+      "id": "w8-chemistry-section-recall-redox",
+      "title": "累计补救3：求价、方向、电子量先过关",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。第7周规则：单质0，单原子离子的元素化合价等于电荷数；中性物质各原子化合价之和为0，多原子离子则等于整体电荷。普通含氧粒子O通常−2，过氧化物O为−1；如MnO₄⁻，设Mn为x，x+4×(−2)=−1，得+7。不能把离子的−1直接当Mn价。",
+        "价升→失电子→氧化，反应物是还原剂；价降→得电子→还原，反应物是氧化剂。Mn从+7降到+2，每个Mn得5个电子，不是2个或7个；Fe从+2升到+3，每个Fe失1个电子。",
+        "电子量=n(实际反应粒子)×每份变价原子数×每原子变价大小。Cr₂O₇²⁻中每个Cr由+6降+3，变化3，但每份有2个Cr，所以每mol重铬酸根得6 mol电子。下标倍数与变价大小各算一次。",
+        "同一总反应失电子量=得电子量=转移量，不能再把两边相加。先从一侧算，再从另一侧复核。只有电子量匹配才谈下一步配平；电子量匹配仍不能代替H、O等原子和电荷检查。"
+      ],
+      "keyPoints": [
+        "Mn+7→+2得5；Fe+2→+3失1；不是看终态数值。",
+        "每份多原子数要乘，得失不双计。"
+      ],
+      "checkpoint": {
+        "question": "每1 mol Cr₂O₇²⁻中Cr都从+6到+3，共得多少mol电子？",
+        "answer": "6 mol电子。",
+        "explanation": "1×2×3=6；另一方失6 mol时总转移仍6，不是12。"
+      }
+    },
+    {
+      "id": "w8-chemistry-section-electron-ratio",
+      "title": "先做没有H、O的简单配平：最小公倍数搭电子桥",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。只改变化学式前的系数，不改元素符号、下标或离子电荷。先找题给反应中变价元素，再写每份粒子需要得失多少电子。如果一种每份失3，另一种每份得2，最小共同电子数是6，于是前者取2份、后者取3份。",
+        "题给Al+Cu²⁺→Al³⁺+Cu。Al0→+3失3，Cu+2→0得2；取最小公倍数6，Al及其产物Al³⁺系数2，Cu²⁺及其产物Cu系数3，得到2Al+3Cu²⁺→2Al³⁺+3Cu。",
+        "这样选系数不是“交叉相乘就算完”：还要看变价元素原子数。若一个粒子含两个变价原子，应先把它每份总电子数算出来，再做公倍数。否则即使形式上交叉，也会漏倍数。",
+        "对上式检查：Al两侧2、Cu两侧3；左3×(+2)=+6，右2×(+3)=+6；电子失2×3=6、得3×2=6。所有系数没有大于1的公因数，才是最简整数比。实际反应能否按这个产物方向进行仍以题设为准。"
+      ],
+      "keyPoints": [
+        "每份电子量→最小公倍数→份数比→原子与电荷复查。",
+        "不能为配平改下标或离子电荷。"
+      ],
+      "checkpoint": {
+        "question": "若A每份失2个电子、B每份得3个电子，最小电子匹配数和A∶B是多少？",
+        "answer": "共同电子数6，A∶B=3∶2。",
+        "explanation": "A取3份失6，B取2份得6；这是给定电子份额的计量练习，不表示任意A、B都会反应。"
+      }
+    },
+    {
+      "id": "w8-chemistry-section-acid-half",
+      "title": "酸性半反应一步步补：先O，再H，最后电荷",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。当题目指定酸性水溶液及明确产物，可以把氧化、还原分开记账。每条半反应先配除H、O外的原子，再在缺O的一侧补H₂O，在缺H的一侧补H⁺，最后用e⁻补电荷。H₂O和H⁺是水溶液与酸性介质允许的辅助粒子，不能拿它们去替换题给的其他物质。",
+        "以MnO₄⁻→Mn²⁺为纸面还原半反应：Mn已各1。左有4个O，右补4H₂O；右多出8个H，左补8H⁺。现在是MnO₄⁻+8H⁺→Mn²⁺+4H₂O，原子已平，但电荷左−1+8=+7、右+2，尚未平。",
+        "电子带−1。向电荷更正的左侧加5e⁻，左+7−5=+2与右+2相等，得到MnO₄⁻+8H⁺+5e⁻→Mn²⁺+4H₂O。Mn+7到+2需要得5电子，与电荷差独立吻合；这不是凭记忆塞入5。",
+        "不要加电子到更负的一侧，那会把差距扩大。也不要为电荷相等改Mn²⁺成Mn⁷⁺，因为产物身份由题目给定。半反应里暂有e⁻是为了收支，合并成总式后必须没有净剩电子。"
+      ],
+      "keyPoints": [
+        "酸性：补H₂O使O相等，补H⁺使H相等，加e⁻使电荷相等。",
+        "加电子到更正的一侧；价差另作复核。"
+      ],
+      "checkpoint": {
+        "question": "MnO₄⁻+8H⁺→Mn²⁺+4H₂O左、右电荷多少？应哪边加几个e⁻？",
+        "answer": "左+7，右+2；左加5e⁻。",
+        "explanation": "电子每个−1，+7−5=+2；同时对应Mn降5价。"
+      }
+    },
+    {
+      "id": "w8-chemistry-section-merge",
+      "title": "合并半反应：整条乘倍数，再消同一批电子",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。另一条Fe²⁺→Fe³⁺+e⁻表示每份Fe失1电子。要与Mn半反应所需5电子配套，把这整条式子的每一项都乘5，得到5Fe²⁺→5Fe³⁺+5e⁻。只把e⁻乘5而不乘Fe会破坏原子与电荷。",
+        "把两半反应左右分别相加：MnO₄⁻+8H⁺+5e⁻+5Fe²⁺→Mn²⁺+4H₂O+5Fe³⁺+5e⁻。两侧相同的5e⁻约去，整理为MnO₄⁻+5Fe²⁺+8H⁺→Mn²⁺+5Fe³⁺+4H₂O。",
+        "电子匹配给出MnO₄⁻∶Fe²⁺=1∶5，H与O原子账再给出8H⁺、4H₂O。查电荷：左−1+5×2+8=+17，右+2+5×3=+17。查原子Mn1、Fe5、O4、H8，两边各自相等。",
+        "最后把全部系数同时约至最简整数比。若从两倍半式起算，可能得到2、10、16、2、10、8，它们全部除2才得最简。不能只约一侧，也不能约掉左右不同物质里碰巧相同的元素。"
+      ],
+      "keyPoints": [
+        "乘倍数要整条乘；相加后电子完全消去。",
+        "电子、原子、电荷三账都过，再约最简比。"
+      ],
+      "checkpoint": {
+        "question": "把Fe²⁺→Fe³⁺+e⁻放大5倍，可以只把e⁻改成5e⁻吗？",
+        "answer": "不可以；应5Fe²⁺→5Fe³⁺+5e⁻。",
+        "explanation": "每份Fe只失1电子，只有5份Fe一起计量才会失5份电子。"
+      }
+    },
+    {
+      "id": "w8-chemistry-section-stoichiometry",
+      "title": "配平后才计算：酸消耗与酸起始量不能混",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。配平系数是实际反应的mol比。以上总式每反应1 mol MnO₄⁻，消耗5 mol Fe²⁺与8 mol H⁺，生成1 mol Mn²⁺、5 mol Fe³⁺；电子转移5 mol。若实际反应0.00100 mol MnO₄⁻，这些量都乘0.00100，而不是把H⁺系数8当作8 mol固定不变。",
+        "于是Fe²⁺消耗0.00500 mol，H⁺按式消耗0.00800 mol，电子转移0.00500 mol。这里8H⁺是反应所需的计量，5e⁻是氧化还原电子账，两者不是同一种东西，不能互相替代。",
+        "“酸足量”保证不由H⁺限制这次给定反应，不告诉你起始到底加了多少酸，也不保证反应后c(H⁺)恰为0。若只给酸性而没给量，不能凭空求剩余H⁺或pH。本课只在题设明确反应量、足量或已给定量条件下做简单计算。",
+        "求反应后的某离子浓度，先从起始扣掉实际消耗，再用最终溶液体积。已生成的离子按生成量计；旁观离子照旧保留。没有反应的理想稀释可以n守恒，参与反应的离子则不能硬套原来c₁V₁=c₂V₂。"
+      ],
+      "keyPoints": [
+        "先配平、确定实际反应量，再用mol比。",
+        "按式消耗H⁺不等于全部起始H⁺；未知过量不能反推。"
+      ],
+      "checkpoint": {
+        "question": "0.00150 mol MnO₄⁻按本节式完全反应，Fe²⁺、H⁺消耗与电子mol各多少？",
+        "answer": "Fe²⁺0.00750 mol，H⁺0.0120 mol，电子0.00750 mol。",
+        "explanation": "分别乘5、8、5；得失电子不再合计成0.0150 mol。"
+      }
+    },
+    {
+      "id": "w8-chemistry-section-check-boundary",
+      "title": "三账终检与介质边界：会配平不等于可以做实验",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。总式终检按三行写：原子行逐元素数，电荷行带符号求和，电子行分别算得与失且相等。再查最简比、e⁻是否消光、题给物质形式是否保留、酸碱条件与式中粒子是否相容。某一行正确不能替其余行过关。",
+        "纯数学上配平，不能保证真实反应在任意环境发生。反应物与产物由题设给定；比如酸性MnO₄⁻到Mn²⁺的式子不能随意套到产物改成MnO₂的情境。不要为了凑系数改产物，也不要凭总式提供现场配液或加料方案。",
+        "选读方法，不纳入累计测：若题设为碱性且产物已确定，可先用酸性方法作记账，再给两边加入相同数量的OH⁻，把H⁺与OH⁻合成水，约去两侧相同水。必须两边同加；最终不能留下与碱性条件不相容的大量H⁺。例如题给冷、稀碱中Cl₂生成Cl⁻与ClO⁻，净式为Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O，两侧电荷−2。此处只辨方法，复杂碱性题以后再练。",
+        "所有例题、独练和综合诊断都只进行纸面推算。高锰酸盐、过氧化物、酸性强氧化体系以及NO/氯气等有危险；不采购、不接触、不混合、不制气、不做家庭实验。图中箭头是计量关系，不是操作流程。"
+      ],
+      "keyPoints": [
+        "原子、电荷、电子分别核查，总式不残留e⁻。",
+        "介质与产物不能偷换；碱性仅选读，不强加新门槛。"
+      ],
+      "checkpoint": {
+        "question": "一条式子电子得失相等，但H原子或电荷未平，能判配平完成吗？",
+        "answer": "不能。",
+        "explanation": "电子平衡只是其中一账；H、O等原子与总电荷也必须逐项相等。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w8-chemistry-example-1",
+      "title": "例1·基础：两种单原子变价先配电子比",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "题给Al+Cu²⁺→Al³⁺+Cu，假定按指定反应进行，不考虑表面膜等影响。配成最简整数式，并独立检查原子、电荷、电子三账。",
+      "answer": "2Al+3Cu²⁺→2Al³⁺+3Cu；原子Al2/Cu3，两侧电荷+6，电子转移6份。",
+      "steps": [
+        "Al0→+3，每份失3电子；Cu+2→0，每份得2电子。",
+        "共同电子份数取6，因此Al取2份、Cu²⁺取3份，对应产物也分别2和3。",
+        "原子账：Al左右2，Cu左右3。",
+        "电荷账：左3×2=+6，右2×3=+6。",
+        "电子账：失2×3=6、得3×2=6，总转移6而非12；系数2、3无共同因数，最简。"
+      ],
+      "commonErrors": [
+        "直接按2与3的顺序给反应物配2∶3却说不出依据。",
+        "改Al³⁺的电荷来凑平衡。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-example-2",
+      "title": "例2·基础：从骨架逐项补出酸性半反应",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "题给酸性水溶液中MnO₄⁻被还原为Mn²⁺。从MnO₄⁻→Mn²⁺骨架出发，依次写补O、补H、补电荷的过程，说明e⁻为什么在左。",
+      "answer": "MnO₄⁻+8H⁺+5e⁻→Mn²⁺+4H₂O；左加电子，因为未补e⁻前左电荷+7大于右+2。",
+      "steps": [
+        "Mn原子已各1，不改MnO₄⁻的下标或Mn²⁺电荷。",
+        "补O：右加4H₂O，使两侧O均4。",
+        "补H：右4H₂O有8H，左加8H⁺。",
+        "未补电子时左−1+8=+7，右+2；电子带−1，在左加5e⁻后左变+2。",
+        "价态另查：Mn从+7降+2得5电子，与电荷差吻合。",
+        "这是单条还原半反应，暂有e⁻；最终总反应还须与某氧化半反应合并消去e⁻。"
+      ],
+      "commonErrors": [
+        "水加错边。",
+        "为电荷平衡改Mn²⁺成Mn⁷⁺。",
+        "电子加右侧扩大电荷差。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-example-3",
+      "title": "例3·应用：合并高锰酸根与亚铁的两半账",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给酸性溶液中MnO₄⁻将Fe²⁺氧化为Fe³⁺，自身变为Mn²⁺。写两条半反应、合并总式并检查三账。若MnO₄⁻实际反应0.00120 mol，转移电子与H⁺计量消耗各多少？",
+      "answer": "MnO₄⁻+5Fe²⁺+8H⁺→Mn²⁺+5Fe³⁺+4H₂O；电子0.00600 mol，H⁺消耗0.00960 mol。",
+      "steps": [
+        "还原半式MnO₄⁻+8H⁺+5e⁻→Mn²⁺+4H₂O。",
+        "氧化半式Fe²⁺→Fe³⁺+e⁻，整条乘5。",
+        "两式相加并约去5e⁻，得所列总式，不在总式留下电子。",
+        "原子Mn1/Fe5/O4/H8；左电荷−1+10+8=+17，右2+15=+17；电子失得均5份。",
+        "由实际MnO₄⁻0.00120 mol，电子=0.00120×5=0.00600 mol，H⁺=0.00120×8=0.00960 mol。",
+        "H⁺与e⁻是不同粒子，倍数8与5不能互换；未给起始酸量不能求余酸。"
+      ],
+      "commonErrors": [
+        "只把Fe半式电子乘5。",
+        "H⁺消耗误用电子倍数5。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-example-4",
+      "title": "例4·应用：过氧化物每份有两个变价氧",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给酸性条件下H₂O₂把I⁻氧化成I₂，自身变H₂O。H₂O₂中O为−1，其他含氧物中O为−2。配平总式；若0.0120 mol H₂O₂实际按此反应完全参与，求I₂生成、电子转移与H⁺消耗的mol。",
+      "answer": "H₂O₂+2I⁻+2H⁺→I₂+2H₂O；I₂0.0120 mol，电子0.0240 mol，H⁺0.0240 mol。",
+      "steps": [
+        "H₂O₂中每个O由−1降−2，得1电子；一份有2个O，所以每份H₂O₂得2。",
+        "还原半式H₂O₂+2H⁺+2e⁻→2H₂O；氧化半式2I⁻→I₂+2e⁻。",
+        "合并约电子，得到总式。",
+        "原子H4/O2/I2；左电荷−2+2=0，右0；电子得失各2份。",
+        "系数H₂O₂∶I₂∶H⁺=1∶1∶2，所以产I₂0.0120、耗H⁺0.0240 mol；电子亦0.0120×2=0.0240 mol。",
+        "这里H₂O₂只作氧化剂，不能因上一周见过歧化就永远称它兼两种角色；题给产物去向决定本题。"
+      ],
+      "commonErrors": [
+        "每份H₂O₂漏乘两个O。",
+        "把弱酸不拆的规则误用为所有含H物质都不参与半反应。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-example-5",
+      "title": "例5·迁移：配平后连接浓度、消耗与余量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "纸面模型：20.0 mL、0.0200 mol/L MnO₄⁻溶液与含0.00300 mol Fe²⁺的酸性溶液按例3反应，H⁺足量，无副反应、无损失，至限制者耗尽。题定反应后再无损失稀释，最终溶液体积为125.0 mL。求限制者、剩余c(Fe²⁺)、电子转移及H⁺计量消耗。",
+      "answer": "MnO₄⁻限制；剩Fe²⁺0.00100 mol，c=0.00800 mol/L；电子0.00200 mol；H⁺消耗0.00320 mol。",
+      "steps": [
+        "先确认总式MnO₄⁻+5Fe²⁺+8H⁺→Mn²⁺+5Fe³⁺+4H₂O。",
+        "MnO₄⁻初n=0.0200×0.0200=0.000400 mol；Fe²⁺初0.00300 mol。",
+        "比较0.000400/1与0.00300/5=0.000600，MnO₄⁻限制；H⁺足量不限制。",
+        "Fe²⁺耗5×0.000400=0.00200 mol，剩0.00100 mol；用最终0.1250 L，c=0.00100/0.1250=0.00800 mol/L。",
+        "电子=0.000400×5=0.00200 mol；H⁺计量消耗=0.000400×8=0.00320 mol。",
+        "反应阶段Fe²⁺不能n守恒，之后理想稀释阶段剩下那份Fe²⁺才n不变；不把125.0 mL当加水量，也无法由未知起始酸量求余酸。"
+      ],
+      "commonErrors": [
+        "直接把0.00300 mol Fe²⁺全用于算电子。",
+        "用原MnO₄⁻20 mL作剩余浓度分母。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w8-chemistry-practice-1",
+      "title": "独练1：一个2电子变化配几个1电子变化",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "题给酸性水溶液中Sn²⁺还原Fe³⁺，生成Sn⁴⁺和Fe²⁺：Sn²⁺+Fe³⁺→Sn⁴⁺+Fe²⁺。配平，列电子与电荷检查。若0.00700 mol Sn²⁺实际反应，Fe³⁺消耗多少mol？",
+      "answer": "Sn²⁺+2Fe³⁺→Sn⁴⁺+2Fe²⁺；两侧电荷+8，电子2份；Fe³⁺消耗0.0140 mol。",
+      "steps": [
+        "Sn+2→+4失2，Fe+3→+2得1，所以Sn∶Fe=1∶2。",
+        "产物Sn⁴⁺、Fe²⁺分别1、2；原子Sn1/Fe2。",
+        "左2+2×3=+8，右4+2×2=+8，电子失2得2。",
+        "由1∶2，Fe³⁺=0.00700×2=0.0140 mol。"
+      ],
+      "commonErrors": [
+        "看见酸性就无理由往原已平式中加H⁺。",
+        "只按原子比1∶1配平。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-practice-2",
+      "title": "独练2：电子比正确，还可能没配平",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "某草稿写MnO₄⁻+5Fe²⁺+6H⁺→Mn²⁺+5Fe³⁺+3H₂O。题给酸性、Mn²⁺与Fe³⁺为指定产物。分别检查原子、电荷、电子，指出错误并改成最简正确式。",
+      "answer": "电子5份已匹配，但O左4右3，H两侧6，电荷左+15右+17；应改为MnO₄⁻+5Fe²⁺+8H⁺→Mn²⁺+5Fe³⁺+4H₂O。",
+      "steps": [
+        "Mn与Fe已平，电子Mn得5、5Fe共失5，也已匹配。",
+        "草稿O左4右3，不守恒；H左6右6只是碰巧平，不能据此判全部原子平。",
+        "草稿左电荷−1+10+6=+15，右2+15=+17，也不守恒。",
+        "右水改4满足O，随之左H⁺改8满足H；电荷左−1+10+8=+17与右相等。"
+      ],
+      "commonErrors": [
+        "电子正确就判全部正确。",
+        "仅改水不再查H⁺。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-practice-3",
+      "title": "独练3：每份两个Cr，电子先乘2",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "题给酸性水溶液中Cr₂O₇²⁻氧化Fe²⁺，产物Cr³⁺、Fe³⁺。已知O为−2。配平Cr₂O₇²⁻+Fe²⁺+H⁺→Cr³⁺+Fe³⁺+H₂O，检查电荷；0.00150 mol Cr₂O₇²⁻实际反应，消耗Fe²⁺和H⁺各多少？",
+      "answer": "Cr₂O₇²⁻+6Fe²⁺+14H⁺→2Cr³⁺+6Fe³⁺+7H₂O；两侧电荷+24；Fe²⁺0.00900 mol，H⁺0.0210 mol。",
+      "steps": [
+        "2x+7×(−2)=−2，Cr为+6，到+3每个得3；每份2Cr得6电子。",
+        "Cr半式先右配2Cr³⁺，补7H₂O、14H⁺和6e⁻。",
+        "Fe半式整条乘6，合并消去6e⁻。",
+        "原子Cr2/Fe6/O7/H14；左电荷−2+12+14=+24，右6+18=+24。",
+        "按1∶6∶14，Fe²⁺消耗0.00150×6=0.00900 mol，H⁺消耗0.00150×14=0.0210 mol。"
+      ],
+      "commonErrors": [
+        "只看Cr降3而漏一个粒子含2Cr。",
+        "产物Cr³⁺系数忘记2。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-practice-4",
+      "title": "独练4：同一过氧化物换一个电子提供者",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给酸性H₂O₂将Fe²⁺变成Fe³⁺，自身变为H₂O，不发生其他反应。配平H₂O₂+Fe²⁺+H⁺→Fe³⁺+H₂O。若Fe²⁺实际消耗0.00600 mol，求H₂O₂消耗、H⁺消耗和转移电子mol。",
+      "answer": "H₂O₂+2Fe²⁺+2H⁺→2Fe³⁺+2H₂O；H₂O₂0.00300 mol、H⁺0.00600 mol、电子0.00600 mol。",
+      "steps": [
+        "H₂O₂每份2O各从−1降−2，得2电子；每份Fe²⁺失1，需要2Fe²⁺。",
+        "补2H⁺、2H₂O，H两侧4、O两侧2、Fe两侧2，电荷两侧+6。",
+        "Fe²⁺与H₂O₂=2∶1，故H₂O₂=0.00600/2=0.00300 mol。",
+        "H⁺与Fe²⁺系数相同，所以H⁺0.00600 mol；每mol Fe²⁺失1mol电子，电子0.00600 mol。"
+      ],
+      "commonErrors": [
+        "只记H₂O₂与I⁻的式子而不会更换半反应。",
+        "从酸性条件直接推出H⁺不需计量。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-chemistry-practice-5",
+      "title": "独练5：量对、式平，还要最简与正确单位",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "有人写2MnO₄⁻+10Fe²⁺+16H⁺→2Mn²⁺+10Fe³⁺+8H₂O，并说“已是最简”。判断并改写；实际反应25.0 mL、0.0240 mol/L MnO₄⁻，Fe²⁺与H⁺均足量，无副反应。求电子转移及H⁺计量消耗，能据此求起始酸总量吗？",
+      "answer": "原式守恒但非最简，应全部除2；MnO₄⁻0.000600 mol，电子0.00300 mol，H⁺消耗0.00480 mol；不能据此求起始酸总量。",
+      "steps": [
+        "所有系数有公因数2，全部同除2得到1、5、8、1、5、4，不改变mol比。",
+        "25.0 mL=0.0250 L，n=0.0240×0.0250=0.000600 mol。",
+        "每mol MnO₄⁻得5 mol电子，n(e⁻)=0.00300 mol。",
+        "每mol MnO₄⁻耗8 mol H⁺，n(H⁺)消耗=0.00480 mol。",
+        "酸足量只说明数量足以支持题给反应，未确定是否有剩余及剩余多少；未给起始酸n，不能把消耗量当作起始总量。"
+      ],
+      "commonErrors": [
+        "只约左侧系数。",
+        "把实际0.000600 mol再无故乘方程式中的2。",
+        "足量酸总量等于按式消耗量。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "酸性反应都必须随便加H⁺。",
+      "why": "H⁺只用于题定介质下补齐实际原子和电荷，原本不缺H时不能凭空添加。",
+      "right": "依原子缺额和半反应步骤决定H⁺系数。"
+    },
+    {
+      "wrong": "Mn从+7到+2只得2电子。",
+      "why": "电子量看变化大小，不看终点本身。",
+      "right": "7−2=5，每份MnO₄⁻得5电子。"
+    },
+    {
+      "wrong": "电子匹配就算配平。",
+      "why": "H、O、其他原子与总电荷可能仍不相等。",
+      "right": "独立核查原子、电荷、电子三账并约最简。"
+    },
+    {
+      "wrong": "Fe²⁺半式只把e⁻乘5。",
+      "why": "电子与实际变价的Fe份数相联，不能单独倍乘。",
+      "right": "半反应每一项都乘5，合并再消电子。"
+    },
+    {
+      "wrong": "酸足量，因此起始H⁺恰等于方程式消耗量。",
+      "why": "足量允许过量，未给起始总量。",
+      "right": "只求计量消耗，不擅自求余酸或pH。"
+    },
+    {
+      "wrong": "碱性条件也直接抄含大量H⁺的酸性式。",
+      "why": "介质不同且产物可能不同，不能仅改标签。",
+      "right": "先服从题给产物，按适当方法消去不相容的H⁺，碱性方法本周只选读。"
+    }
+  ],
+  "quiz": {
+    "instructions": "这是唯一第5—8周累计诊断，替代第8周普通短测，不在150分钟外再叠加测验。4题共24分钟20分：综合1用5分钟5分，综合2用5分钟5分，综合3用5分钟4分，综合4用9分钟6分。先关闭答案与评分说明独立完成，再按每条1分评分点核对；该条所有条件满足才得分，过程分不由仅写最后答案自动获得。前测、自检、例题、独练、订正不计入20分。评分地图只是同一套题的周技能归属，每点只计算一次。保留首次独立分数，补救后新尝试另记。允许等价反应项次序及合理舍入。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w8-chemistry-quiz-1",
+        "title": "综合1·第5周：取样后稀释的对象与分母",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "均一NaCl溶液最终体积150.0 mL，含NaCl0.0300 mol。取出25.0 mL后，在无反应、无损失、无析出条件下稀释至100.0 mL。求原液c、取出瞬间样品c与n、稀释后样品c；某人断言“精确加入75.0 mL水”，判断并给理由。",
+        "answer": "原液与取出瞬间样品c均0.200 mol/L；样品n=0.00500 mol；稀释后c=0.0500 mol/L；不能断言精确水量75.0 mL，未给体积严格可加和。",
+        "steps": [
+          "150.0 mL=0.1500 L，c原=0.0300/0.1500=0.200 mol/L。",
+          "均一取样只分配n与V，不改c，所以c样初=0.200 mol/L。",
+          "n样=0.200×0.0250=0.00500 mol，不能沿用整瓶0.0300 mol。",
+          "仅该样品理想稀释，n样不变，用最终0.1000 L，c后=0.00500/0.1000=0.0500 mol/L。",
+          "100.0−25.0=75.0 mL是体积差，缺可加和条件不能视作精确所加水体积。"
+        ],
+        "commonErrors": [
+          "整瓶n带入样品。",
+          "把V终当所加水量。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "使用最终溶液0.1500 L，c原=0.200 mol/L，单位正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明均一取样c不变，c样初=0.200 mol/L。"
+          },
+          {
+            "points": 1,
+            "criterion": "样品n=0.200×0.0250=0.00500 mol，未用整瓶n。"
+          },
+          {
+            "points": 1,
+            "criterion": "在题给无反应无损失条件下守恒样品n，用最终0.1000 L求c后=0.0500 mol/L。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝精确加水75.0 mL结论，指出未给体积严格可加和。"
+          }
+        ]
+      },
+      {
+        "id": "w8-chemistry-quiz-2",
+        "title": "综合2·第6周：用题给性质改正新弱酸写法",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "题给HClO为弱一元酸，NaOH与NaClO为可溶强电解质，忽略盐类水解。水溶液普通式HClO+NaOH→NaClO+H₂O。某人将净离子式写成H⁺+OH⁻→H₂O。改正净式并说明拆写依据，逐元素和电荷检查，说明被约去的Na⁺是否从溶液消失。不要求预先背HClO性质。",
+        "answer": "HClO+OH⁻→ClO⁻+H₂O；弱HClO与水保留，NaOH/NaClO拆写。两侧H2/Cl1/O2、电荷−1；Na⁺仍在水相。",
+        "steps": [
+          "用题给性质，不把HClO整体拆成H⁺、ClO⁻；水也保留。",
+          "完整式HClO+Na⁺+OH⁻→Na⁺+ClO⁻+H₂O，约去Na⁺得正确净式。",
+          "左H1+1=2、Cl1、O1+1=2；右H2、Cl1、O1+1=2。",
+          "左OH⁻给−1，右ClO⁻给−1，总电荷相等。",
+          "Na⁺是反应前后不变的旁观离子，净式省略，不是溶液中消失。"
+        ],
+        "commonErrors": [
+          "未经题设许可把新弱酸拆写。",
+          "只查原子不查−1电荷。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "明确HClO为题给弱酸、水保留，NaOH与NaClO作为可溶强电解质拆写。"
+          },
+          {
+            "points": 1,
+            "criterion": "正确净式HClO+OH⁻→ClO⁻+H₂O。"
+          },
+          {
+            "points": 1,
+            "criterion": "逐元素给出两侧H2/Cl1/O2。"
+          },
+          {
+            "points": 1,
+            "criterion": "两侧电荷代数和均−1，不强行改为0。"
+          },
+          {
+            "points": 1,
+            "criterion": "指出Na⁺为旁观离子且仍在溶液中。"
+          }
+        ]
+      },
+      {
+        "id": "w8-chemistry-quiz-3",
+        "title": "综合3·第7周：换成新离子仍会辨变价与电子量",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "题给酸性水溶液反应Ce⁴⁺+Fe²⁺→Ce³⁺+Fe³⁺充分进行，无副反应。Ce是铈元素符号，这里均为题给单原子离子；不要求其他铈知识。0.0180 mol Fe²⁺实际反应。写变价、氧化剂与还原剂，算电子转移mol；解释为何不能将Ce所得与Fe所失相加。",
+        "answer": "Ce+4→+3得1，Fe+2→+3失1；氧化剂Ce⁴⁺、还原剂Fe²⁺；电子0.0180 mol，得失是同一批不能相加成0.0360 mol。",
+        "steps": [
+          "单原子离子直接从题给电荷读化合价，不用猜新元素的常见价。",
+          "Ce降低1被还原，所以Ce⁴⁺为氧化剂；Fe升高1被氧化，所以Fe²⁺为还原剂。",
+          "每mol Fe²⁺实际反应失1mol电子，n(e⁻)=0.0180×1=0.0180 mol。",
+          "按1∶1，Ce⁴⁺也得0.0180 mol电子，另一侧是复核同一次转移，不再相加。"
+        ],
+        "commonErrors": [
+          "只因Fe在旧题被还原就一直把含Fe物质叫氧化剂。",
+          "得失各0.0180相加为0.0360。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 4,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "Ce+4→+3得1与Fe+2→+3失1两条均正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "氧化剂Ce⁴⁺、还原剂Fe²⁺，对应自身还原/氧化正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "由实际Fe²⁺量得到转移电子0.0180 mol，单位正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确同一批得失不相加，拒绝0.0360 mol的双计数。"
+          }
+        ]
+      },
+      {
+        "id": "w8-chemistry-quiz-4",
+        "title": "综合4·第8周：新酸性骨架配平并接质量计量",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "纸面理论题：题给酸性水溶液中NO₃⁻把Cu氧化为Cu²⁺，自身产物确定为NO(g)，无其他反应。配平NO₃⁻+Cu+H⁺→NO+Cu²⁺+H₂O，说明每份电子数与最小匹配，逐元素及电荷核查。若1.92 g Cu实际完全反应，NO₃⁻和H⁺足量，M(Cu)=64.0 g/mol，求NO₃⁻、H⁺的计量消耗mol及电子转移mol。NO及其空气氧化产物有毒，不进行实验。",
+        "answer": "2NO₃⁻+3Cu+8H⁺→2NO+3Cu²⁺+4H₂O；NO₃⁻中N+5→NO中+2，每份得3；Cu0→+2每份失2，最小匹配6。两侧N2/Cu3/O6/H8、电荷+6。Cu0.0300 mol；NO₃⁻耗0.0200 mol，H⁺耗0.0800 mol，电子0.0600 mol。",
+        "steps": [
+          "NO₃⁻中N：x−6=−1得+5；NO中N：x−2=0得+2，每份降3得3电子。Cu0→+2，每份失2。",
+          "最小电子数6，所以NO₃⁻取2份、Cu取3份；N、Cu对应产物系数2、3。",
+          "还原半式NO₃⁻+4H⁺+3e⁻→NO+2H₂O，乘2；Cu→Cu²⁺+2e⁻乘3。相加约6e⁻得总式。",
+          "原子N2/Cu3/O6/H8，左右相等；左电荷−2+8=+6，右3×2=+6，电子得失均6份，系数最简。",
+          "n(Cu)=1.92/64.0=0.0300 mol；NO₃⁻消耗=0.0300×2/3=0.0200 mol；H⁺消耗=0.0300×8/3=0.0800 mol。",
+          "电子从Cu侧算0.0300×2=0.0600 mol，从N侧0.0200×3也是0.0600，不相加；足量不代表已知全部起始酸量。"
+        ],
+        "commonErrors": [
+          "把N的终价+2当电子变化2。",
+          "只配NO₃⁻∶Cu，不补H⁺和水。",
+          "按克数直接用2∶3。"
+        ],
+        "estimatedMinutes": 9,
+        "points": 6,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "正确求N+5→+2每份得3、Cu0→+2每份失2。"
+          },
+          {
+            "points": 1,
+            "criterion": "最小匹配6，NO₃⁻∶Cu=2∶3；未改下标或离子电荷。"
+          },
+          {
+            "points": 1,
+            "criterion": "最简总式2NO₃⁻+3Cu+8H⁺→2NO+3Cu²⁺+4H₂O完整正确且无剩e⁻。"
+          },
+          {
+            "points": 1,
+            "criterion": "逐元素N2/Cu3/O6/H8及两边电荷+6全部核查正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "质量先换Cu0.0300 mol，按比得NO₃⁻0.0200 mol、H⁺0.0800 mol，过程和单位均正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子0.0600 mol，按实际变价量求并明确得失不相加。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "综合1：最终溶液体积与L单位正确；取样保浓度、样品稀释保其自身n，不能把整瓶n带入。",
+        "综合1：无体积可加和条件不得断言精确加水75.0 mL。",
+        "综合2：必须依据题给弱酸性质保留HClO与水，正确净式同时通过原子与−1电荷检查；旁观Na⁺未消失。",
+        "综合3：剂按本题升降判断，电子0.0180 mol只计一次，不得相加。",
+        "综合4：NO₃⁻与Cu电子比2∶3正确，H⁺8与水4正确；不改化学式，总式不留e⁻，原子与电荷全部通过。",
+        "综合4：g先转mol；按实际反应量算消耗和电子0.0600 mol，不能按克数直接套系数。",
+        "总分至少16/20，所有关键条件均通过，并完成核心活动与订正，才具备本周推进条件。照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w8-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w8-chemistry-section-recall-quantity",
+          "w8-chemistry-section-stoichiometry"
+        ],
+        "action": "分原瓶、样品、稀释后样品三框，逐框写n、V、c；明确V终不是水量，补mL→L。"
+      },
+      {
+        "questionIds": [
+          "w8-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w8-chemistry-section-recall-ions",
+          "w8-chemistry-section-check-boundary"
+        ],
+        "action": "按题给性质给弱酸、可溶盐和水贴标签，先完整离子式再约旁观项，另列原子与电荷两行。"
+      },
+      {
+        "questionIds": [
+          "w8-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w8-chemistry-section-recall-redox",
+          "w8-chemistry-section-electron-ratio"
+        ],
+        "action": "从题给单原子离子电荷读起末价，写“自身变化→剂的角色”，得失电子用等号连接，不写相加。"
+      },
+      {
+        "questionIds": [
+          "w8-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w8-chemistry-section-recall-quantity",
+          "w8-chemistry-section-recall-redox",
+          "w8-chemistry-section-acid-half",
+          "w8-chemistry-section-merge",
+          "w8-chemistry-section-stoichiometry",
+          "w8-chemistry-section-check-boundary"
+        ],
+        "action": "先列每份3与2电子求最小公倍数6，再分别补水/H⁺/e⁻并整条放大，合并三账终检；最后走g→mol→系数比与电子量。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w8-chemistry-review-corrections",
+    "title": "12分钟累计订正：定位第5—8周哪一座桥未接上",
+    "instructions": [
+      "第1—3分钟：按20个1分点计首次分数，另核关键条件；用累计评分地图定位浓度、离子、变价还是配平，不把同一点重复记入两周。",
+      "第4—8分钟：选最多两处根本错误，回到本周真实补救小节，写“原想法—题设/定义哪里不支持—正确依据—下次先查什么”；量与单位也要补，不只改方程系数。",
+      "第9—12分钟：合上答案，重建一条酸性半反应及一处前周错点的关键式，逐原子/电荷/电子复核。看过答案后的订正不充作首次独立分。",
+      "仍未修复的活动ID留在本周待办，下一可用时段继续补救并独立重做相应题，保留首次分数、记录新尝试；不另生成一套20分测验，不因日期自动推进。"
+    ]
+  },
+  "nextStep": "完成本周所有核心并订正后，核对20分短测与关键条件，达标才由学习者手动进入下一周。未达标按路由回到相应小节和例题，下一可用时段独立重做错题并保存新尝试，保留首次成绩。课程顺序按能力推进，不绑定日历或固定下班时刻。",
+  "audioStatus": "未配置音频；全部定义、条件、示例、解析和自检均可直接阅读。",
+  "mastery": [
+    "能解释每份电子量与最小公倍数如何决定变价粒子比，不靠记整式。",
+    "能说明H₂O、H⁺、e⁻每项的来源，整条半式放大后正确合并。",
+    "总式原子、电荷、电子三账同时通过，系数最简，不残留电子或擅改物质身份。",
+    "能把第5周量、第6周写法、第7周变价与第8周配平接通，缺条件时不硬算。",
+    "唯一累计诊断至少16/20且全部关键条件通过；前周基础错误也须补救，才手动推进。"
+  ],
+  "safetyScope": "全部为纸笔理论计算、文本示意图阅读与口头解释，不提供购买、配制、混合、加热、制气或现场操作流程；不进行家庭化学实验。高锰酸盐、重铬酸盐、过氧化物、酸性强氧化体系和NO/氯气等具风险；反应产物与条件仅按题设讨论。数量题只在题定实际反应量、足量或限制者、无副反应/损失条件下计算，不由配平保证现实反应安全或必然发生。碱性处理仅选读，未纳入核心累计测。",
+  "sourcePolicy": {
+    "authorship": "中文脚手架解释、数据题、错解辨析、逐点评分、累计映射与图示均原创。累计诊断按已发布第5周浓度、第6周离子反应、第7周变价电子量与本周酸性配平的真实技能编写，必要时回查第3—4周计量。",
+    "examStatus": "全部为原创教学题，非历年真题；未编教材版本、章页或日历日期，不预测2028年必考内容。唯一累计诊断替代普通第8周测验，不叠加。",
+    "externalSources": [
+      {
+        "id": "w8-chemistry-source-half-reaction",
+        "title": "OpenStax Chemistry 2e：17.1 Review of Redox Chemistry",
+        "url": "https://openstax.org/books/chemistry-2e/pages/17-1-review-of-redox-chemistry",
+        "kind": "reference",
+        "scopeNote": "已打开原发布机构页面核验氧化数记账、酸性半反应补原子/电荷、合并消电子及碱性两侧同加OH⁻的原则。题中基础反应是通用化学事实；全部题目情境、数值、诊断问题与中文解析独立编写，未复制原书题目。"
+      }
+    ]
+  }
+}

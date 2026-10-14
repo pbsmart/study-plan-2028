@@ -1,0 +1,59 @@
+[
+  {
+    "id": "w8-physics-figure1",
+    "title": "平衡不是没有力，也不是只看一瞬间v=0",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "左侧匀速水平箱子水平拉力与摩擦相反相等，竖直N与G相反相等；右侧刚释放小球v=0且只受向下重力。",
+    "description": "持续静止或匀速直线运动可用合力为0；自由落体刚释放时v=0，并不是平衡。",
+    "renderingNote": "通用教学图。左图四箭头标N,G,F,f；文字“匀速：各方向合力0”。右图球只有G向下，“刚释放v=0，随后速度变化”，不要画释放后仍有手的支持力或速度力。",
+    "linkedSectionIds": [
+      "w8-physics-s2",
+      "w8-physics-s3",
+      "w8-physics-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w8-physics-figure2",
+    "title": "斜拉的两步账：先N，再摩擦上限",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "水平地面箱子右上斜拉F，相对水平角θ；旁边依次写N=mg−Fsinθ，f需=Fcosθ，检验f需≤μ_sN。",
+    "description": "竖直分量会改变支持力，水平方向所需摩擦还要与上限比较。",
+    "renderingNote": "画真实受力G下、N上、F斜右上、静摩擦左，另用细虚线作F的两个分量辅助，不把它们当新增实际力。角θ标在F与水平之间。流程右侧三卡依次条件与式子；必须注明假设静止、保持接触。",
+    "linkedSectionIds": [
+      "w8-physics-s3",
+      "w8-physics-s4"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w8-physics-figure3",
+    "title": "静摩擦方向会随沿坡拉力改变",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "三张独立示意卡：F<A、F=A、F>A；静摩擦分别向上坡、0、向下坡；共同需满足|F−A|≤f最大。",
+    "description": "取上坡正，f=A−F。F小于A时补足上坡，大于A时反对向上趋势，恰等于A时无需摩擦。",
+    "renderingNote": "不使用任何测验数字，不画时间演化。三个小斜面受力趋势示意可简化为沿坡坐标轴，标A为固定向下重力分量；方向以文字+箭头双示。底部写上限检验，等号为题设理想临界静止。",
+    "linkedSectionIds": [
+      "w8-physics-s5",
+      "w8-physics-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w8-physics-figure4",
+    "title": "第5—8周累计检查路线",
+    "asset": "assets/physics-figure4.svg",
+    "altText": "四个卡片分别是第5周图像正负面积，第6周摩擦实际值/上限，第7周角度基准与分量，第8周两方向平衡与静止范围。",
+    "description": "一份20分累计诊断：先看图像，再查力和方向，最后检验平衡模型。每评分点仅计一次。",
+    "renderingNote": "教学复习索引不带任何测验数字、答案或question关联。四卡箭头串联，底部注明必要旧知识：单位/方向、变化量、恒定段、触地等模型边界；仅描述技能不写题解。",
+    "linkedSectionIds": [
+      "w8-physics-s1",
+      "w8-physics-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

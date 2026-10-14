@@ -6,6 +6,11 @@ import LessonDiagram from './LessonDiagram.vue'
 import StaticLessonFigureView from './StaticLessonFigure.vue'
 const props = defineProps<{ lesson: EnrichedLesson; step: string; figures?: StaticLessonFigure[]; reviewMap?: CumulativeReviewMap }>()
 const emit = defineEmits<{ navigate: [step: string] }>()
+// Describe only the weeks actually mapped, rather than assuming every prior week was assessed.
+const reviewWeekRange = computed(() => {
+  const weeks = [...new Set(props.reviewMap?.questions.flatMap(question => question.skills.flatMap(skill => skill.weeks)) || [])].sort((a, b) => a - b)
+  return weeks.length > 1 && weeks.every((week, index) => week === weeks[0]! + index) ? `${weeks[0]}—${weeks[weeks.length - 1]}` : weeks.join('、')
+})
 const section = computed(() => props.lesson.sections.find(section => section.id === props.step))
 const question = computed(() => [...props.lesson.workedExamples, ...props.lesson.practice].find(problem => problem.id === props.step))
 const example = computed(() => props.lesson.workedExamples.some(problem => problem.id === props.step))
@@ -50,8 +55,8 @@ const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram =>
       <h3>{{ lesson.reviewActivity?.title || '按错因订正' }}</h3><ul v-if="lesson.reviewActivity"><li v-for="item in lesson.reviewActivity.instructions" :key="item">{{ item }}</li></ul>
       <article v-for="item in lesson.quiz.remediation" :key="item.questionIds.join('-')" class="remediation-item"><p>{{ item.questionIds.map(questionTitle).join('、') }}：{{ item.action }}</p><button v-for="id in item.sectionIds" :key="id" class="text-button" @click="emit('navigate', id)">回看：{{ sectionTitle(id) }} →</button></article>
       <details class="reading-detail"><summary>检查常见误区</summary><article v-for="item in lesson.misconceptions" :key="item.wrong" class="remediation-item"><h3>{{ item.wrong }}</h3><p>{{ item.why }}</p><p>{{ item.right }}</p></article></details>
-      <details v-if="reviewMap" class="reading-detail cumulative-review-map"><summary>做完累计诊断后，查看第1—{{ lesson.week }}周技能回查</summary>
-        <p class="help">这是本节 {{ reviewMap.totalPoints }} 分累计诊断的回查表，已计入原有 {{ reviewMap.minutes }} 分钟测评安排，不是额外试卷。每项分值只计一次；同一技能关联多个周次，不重复加分。先独立完成并核对答案，再按薄弱项回看本周讲解。</p>
+      <details v-if="reviewMap" class="reading-detail cumulative-review-map"><summary>做完累计诊断后，查看第{{ reviewWeekRange }}周技能回查</summary>
+        <p class="help">这是本节 {{ reviewMap.totalPoints }} 分累计诊断的回查表，已计入原有 {{ reviewMap.minutes }} 分钟测评安排，不是额外试卷。每项分值只计一次；同一技能关联多个周次，不重复加分。先独立完成并核对答案，再按薄弱项回看本周讲解。本表只列本次诊断涉及的技能，不代表对这些周次做了全面测评。</p>
         <article v-for="item in reviewMap.questions" :key="item.questionId" class="remediation-item"><h3>{{ item.title }} · {{ item.points }} 分</h3>
           <ul><li v-for="(skill, index) in item.skills" :key="index"><p>{{ skill.skill }} · {{ skill.points }} 分 · 关联第 {{ skill.weeks.join('、') }} 周</p><button v-for="id in skill.sectionIds" :key="id" class="text-button" @click="emit('navigate', id)">回看：{{ sectionTitle(id) }} →</button></li></ul>
         </article>

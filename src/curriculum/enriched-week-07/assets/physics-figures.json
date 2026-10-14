@@ -1,0 +1,58 @@
+[
+  {
+    "id": "w7-physics-figure1",
+    "title": "直角三角形：角变了，对边与邻边也会变",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "3、4、5直角三角形，底边4、竖边3、斜边5；θ在左下，底边为邻边，竖边为对边。",
+    "description": "先认直角和斜边，再相对题给锐角找对边、邻边。三角比描述边长之比，本身没有单位。",
+    "renderingNote": "画同一3-4-5直角三角形，标直角与θ；右侧列sinθ=3/5，cosθ=4/5，tanθ=3/4。清楚说明斜边对着90°，不是任意一条斜着画的边。通用前置教学图，不关联题目。",
+    "linkedSectionIds": [
+      "w7-physics-s1",
+      "w7-physics-s3",
+      "w7-physics-s4"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w7-physics-figure2",
+    "title": "同一斜力，两种角度基准",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "右上斜力及水平/竖直投影，左图标与水平夹θ、右图标与竖直夹α，θ与α互余。",
+    "description": "角从水平量起，水平是邻边；角从竖直量起，竖直是邻边。先圈角，再选sin或cos。",
+    "renderingNote": "并排两幅一致的右上向量，不用数值；左θ从+x到F，Fx=Fcosθ,Fy=Fsinθ；右α从+y到F，Fx=Fsinα,Fy=Fcosα。用虚线投影但不同色区分原力与分量。",
+    "linkedSectionIds": [
+      "w7-physics-s4",
+      "w7-physics-s5"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w7-physics-figure3",
+    "title": "斜面重力：两个θ来自垂直关系",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "向右上升30度斜面，物块处重力竖直向下；重力分解为左下沿坡和右下法向，两分量共同构成以重力为对角线的平行四边形。",
+    "description": "斜面与水平的夹角，等于重力与向里法线的夹角。法向是邻边，沿坡是对边。",
+    "renderingNote": "几何必须正确：斜面向右上30°，沿坡向下为左下，向里法线为右下；G竖直下。标斜面/水平θ与G/向里法线θ。右侧辅助直角三角形G为斜边，法向Gcosθ、沿坡Gsinθ，避免把N画成重力分量或把实际图再加多余力。",
+    "linkedSectionIds": [
+      "w7-physics-s6",
+      "w7-physics-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w7-physics-figure4",
+    "title": "例4解析：分量先相加，合力再勾股",
+    "asset": "assets/physics-figure4.svg",
+    "altText": "答案图：10牛斜力分解为8牛向右、6牛向上；合上6牛向左后总分量(2,6)牛，合力2√10牛。",
+    "description": "先让水平8 N与向左6 N抵消，留下水平2 N；竖直6 N保留。合力方向在右上。",
+    "renderingNote": "仅展开例4答案时显示，answerOnly=true且不关联section。画两面板：原10N向量(8,6)与左6N，第二合力(2,6)；坐标单位N，方向右偏上θ，tanθ=3。请勿把10N减6N写成4N。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w7-physics-ex4"
+    ],
+    "answerOnly": true
+  }
+]

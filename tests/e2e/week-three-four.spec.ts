@@ -47,6 +47,8 @@ for (const fixture of figures) {
       await expect(disclosure).toHaveAttribute('open', '')
     }
     const image = figure.locator('img')
+    // Loading lazy SVGs requires viewport proximity, including on mobile.
+    await figure.scrollIntoViewIfNeeded()
     await expect(image).toBeVisible()
     await expect.poll(() => image.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0)).toBe(true)
     await expect(image).toHaveAttribute('alt', fixture.altText)

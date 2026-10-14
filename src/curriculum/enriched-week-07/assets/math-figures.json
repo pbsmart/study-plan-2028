@@ -1,0 +1,42 @@
+[
+  {
+    "id": "w7-math-forms-graph",
+    "title": "同一规则：平方形式读顶点，因式形式读零点",
+    "asset": "assets/math-forms-graph.svg",
+    "altText": "教学图：f=x²−2x−3=(x−1)²−4=(x+1)(x−3)，只画定义域[−2,4]。顶点(1,−4)，零点−1、3，端点(−2,5)、(4,5)。实际输出为[−4,5]。",
+    "description": "教学图：f=x²−2x−3=(x−1)²−4=(x+1)(x−3)，只画定义域[−2,4]。顶点(1,−4)，零点−1、3，端点(−2,5)、(4,5)。实际输出为[−4,5]。",
+    "linkedSectionIds": [
+      "w7-math-s2",
+      "w7-math-s3",
+      "w7-math-s4",
+      "w7-math-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w7-math-sign-table",
+    "title": "根切数轴，逐个因子判断正负",
+    "asset": "assets/math-sign-table.svg",
+    "altText": "教学符号表：(x+1)(x−3)在−1与3两根外为正，中间为负，两根处0。整体乘−1后非零符号全部反转。正负源于因子符号，不是无条件记两根之间。",
+    "description": "教学符号表：(x+1)(x−3)在−1与3两根外为正，中间为负，两根处0。整体乘−1后非零符号全部反转。正负源于因子符号，不是无条件记两根之间。",
+    "linkedSectionIds": [
+      "w7-math-s5",
+      "w7-math-s6"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w7-math-square-three-cases",
+    "title": "重根、无根恒正、无根恒负分开判断",
+    "asset": "assets/math-square-three-cases.svg",
+    "altText": "三个函数都定义在R，图示仅截取x从0到4。左图(x−2)²只在2处为0，其余正；中图加1后恒正且无实根；右图−(x−2)²−1恒负且无实根。",
+    "description": "三个函数都定义在R，图示仅截取x从0到4。左图(x−2)²只在2处为0，其余正；中图加1后恒正且无实根；右图−(x−2)²−1恒负且无实根。",
+    "linkedSectionIds": [
+      "w7-math-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

@@ -62,10 +62,10 @@ describe('frozen weeks three and four integration',()=>{
   })
   it('watches all actual review-map and figure files and only places mappings in week four',async()=>{
     const data=await readCurriculumData()
-    expect(data.sourceFiles.filter(file=>file.endsWith('-review-map.json'))).toHaveLength(5)
-    expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(37)
+    expect(data.sourceFiles.filter(file=>file.endsWith('-review-map.json'))).toHaveLength(10)
+    expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(57)
     for(const file of data.sourceFiles)expect((await stat(file)).isFile()).toBe(true)
-    for(const week of data.weeks)for(const lesson of Object.values(week.subjects))if(week.week!==4)expect(lesson?.enrichmentReviewMap).toBeUndefined()
+    for(const week of data.weeks)for(const lesson of Object.values(week.subjects))if(![4,8].includes(week.week))expect(lesson?.enrichmentReviewMap).toBeUndefined()
   })
 })
 

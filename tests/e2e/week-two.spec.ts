@@ -13,6 +13,7 @@ test('four original figures load in light and dark layouts with equivalent text 
   for(const [subject,step,id] of figures){
     await page.goto(`/#learn/2/${subject}/${step}`)
     const figure=page.locator(`[data-figure-id="${id}"]`),image=figure.locator('img')
+    await figure.scrollIntoViewIfNeeded()
     await expect(image).toBeVisible();await expect.poll(()=>image.evaluate((el:HTMLImageElement)=>el.complete&&el.naturalWidth>0)).toBe(true)
     await expect(image).toHaveAttribute('alt',/.{20}/);await expect(figure.locator('figcaption')).not.toBeEmpty();await expect(page.locator('.focus-section svg')).toHaveCount(0)
     for(const theme of ['深色','浅色']){
@@ -41,7 +42,7 @@ test('figures containing results stay inside closed example answers and reset wh
 test('week-two enrichment preserves progress, pending third subject, and later basic courses',async({page})=>{
   await page.goto('/#learn/2/math/prepare');await expect(page.locator('.enriched-content')).toContainText('第2周深化试点')
   await page.getByRole('button',{name:'← 退出专注',exact:true}).click();await expect(page.locator('.topbar')).toContainText('第 1 周');await expect(page.locator('.subject-tabs')).toContainText('第三科 · 待确认')
-  for(const week of [7,40,84]){await page.goto(`/#learn/${week}/math/knowledge`);await expect(page.locator('.knowledge-block')).not.toHaveCount(0);await expect(page.locator('.enriched-content')).toHaveCount(0)}
+  for(const week of [9,40,84]){await page.goto(`/#learn/${week}/math/knowledge`);await expect(page.locator('.knowledge-block')).not.toHaveCount(0);await expect(page.locator('.enriched-content')).toHaveCount(0)}
   await page.goto('/#learn/1/math/prepare');await expect(page.locator('.enriched-content')).toContainText('第1周深化试点')
   const record=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)||'null'),key);if(record){expect(record.currentWeek).toBe(1);expect(record.settings.thirdConfirmed).toBe(false)}
 })

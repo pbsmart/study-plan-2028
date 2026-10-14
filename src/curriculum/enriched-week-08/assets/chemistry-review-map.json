@@ -1,0 +1,465 @@
+{
+  "id": "w8-chemistry-review-map",
+  "week": 8,
+  "lessonId": "w8-化学",
+  "revision": "week08-enriched-v1",
+  "status": "pilot-ready",
+  "title": "第5—8周累计诊断逐点评分与本周补救地图",
+  "assessmentType": "第5—8周累计回顾诊断，替代普通周测，不叠加",
+  "totalPoints": 20,
+  "estimatedMinutes": 24,
+  "scoringIndexConvention": "scoringIndex为对应lesson.quiz.questions中scoring数组的零基索引；每点1分。primaryWeek唯一归属计分，supportingWeeks仅标注前置，不重复计分。",
+  "verifiedPriorSkills": [
+    {
+      "week": 3,
+      "evidenceFile": "week-03-enrichment/lessons/chemistry.json",
+      "skillSummary": "n=m/M，g/mol与mol对象、化学式下标计数，仅作计量前置支持不重复计分。",
+      "verifiedSectionTitles": [
+        "补救：先把数、比例和单位算稳",
+        "从一打到一摩尔：给巨大数目分组",
+        "先给对象贴标签，再区分n、N、m、M",
+        "数目与物质的量：N=nN_A为什么成立",
+        "质量与物质的量：把M看成每摩尔的质量",
+        "化学式下标：换的是计数对象",
+        "NaCl按化学式单元计量，离子数要有前提",
+        "把换算连成一座桥，再检查结果"
+      ]
+    },
+    {
+      "week": 4,
+      "evidenceFile": "week-04-enrichment/lessons/chemistry.json",
+      "skillSummary": "不改下标的配平、系数对应mol与实际反应量，仅作配平计量前置支持。",
+      "verifiedSectionTitles": [
+        "先补前置：物质身份、核内计数和单位不能混",
+        "先守恒再配平：只能改前面的系数",
+        "从一组对应到mol比：系数不是克数",
+        "质量计算只走四步：g→mol→mol→g",
+        "足量CO的意思：由氧化铁定产量",
+        "一种反应物分成两种产物：分别换算，再求和",
+        "先懂“谁先用完”，再学比较式",
+        "两种都给量：先除系数，最后写剩余和总账"
+      ]
+    },
+    {
+      "week": 5,
+      "evidenceFile": "week-05-enrichment/lessons/chemistry.json",
+      "skillSummary": "最终溶液体积、mL/L、均一取样浓度不变、理想稀释样品n守恒及非默认体积可加和。",
+      "verifiedSectionTitles": [
+        "先补前置：先认对象，再搭g与mol的桥",
+        "mL与L：让单位在乘除中对得上",
+        "c=n/V：每升含多少，不是整瓶一共有多少",
+        "质量分数w：比较的是质量，不是mol与L",
+        "稀释公式从哪里来：追踪同一份溶质",
+        "取样不是稀释：被分走的是同样组成的溶液",
+        "两份同溶质混合：先算各份mol",
+        "守恒前先查范围，结果后再查单位与条件"
+      ]
+    },
+    {
+      "week": 6,
+      "evidenceFile": "week-06-enrichment/lessons/chemistry.json",
+      "skillSummary": "按强弱/溶解性/状态拆写；弱酸与水保留，旁观离子仍在；原子和电荷同时核对。",
+      "verifiedSectionTitles": [
+        "先补前置：离子电荷、下标与n=cV",
+        "前置规则卡：能拆必须同时看性质、溶解性和状态",
+        "写、拆、删、查：只删没有变化的离子",
+        "双重检查：原子数相等，电荷代数和也相等",
+        "强酸与弱酸：都是中和，却不能写成同一条式子",
+        "碳酸盐遇酸：既看状态，也看酸是否足量",
+        "反应后求c：先求离子初量，再扣消耗",
+        "把规则串起来：守恒正确还不够，条件也必须正确"
+      ]
+    },
+    {
+      "week": 7,
+      "evidenceFile": "week-07-enrichment/lessons/chemistry.json",
+      "skillSummary": "化合价规则、同元素升降、氧化剂还原剂、实际反应量与每份电子数、得失不双计。",
+      "verifiedSectionTitles": [
+        "先补前置：右上电荷、右下原子数不是同一个数",
+        "够本周用的化合价规则卡：先固定已知，再解一个未知",
+        "怎样判断氧化还原：比较同一元素前后的记账数",
+        "升失氧、降得还：先用数轴理解再记词",
+        "四种名称分两边：反应物叫剂，生成物叫产物",
+        "一份还是一个原子：电子量需要乘变价原子数",
+        "得与失是同一批电子：用另一边复核，不能再相加",
+        "先守住核心，再认识角色可以变化"
+      ]
+    },
+    {
+      "week": 8,
+      "evidenceFile": "week-08-enrichment/lessons/chemistry.json",
+      "skillSummary": "酸性半反应、最小电子匹配、合并消电子、原子电荷核查、配平后的实际mol计量。",
+      "verifiedSectionTitles": [
+        "累计补救1：先确定哪一份、哪个单位，再接计量",
+        "累计补救2：离子式先尊重物质形式，再查电荷",
+        "累计补救3：求价、方向、电子量先过关",
+        "先做没有H、O的简单配平：最小公倍数搭电子桥",
+        "酸性半反应一步步补：先O，再H，最后电荷",
+        "合并半反应：整条乘倍数，再消同一批电子",
+        "配平后才计算：酸消耗与酸起始量不能混",
+        "三账终检与介质边界：会配平不等于可以做实验"
+      ]
+    }
+  ],
+  "pointsByPrimaryWeek": {
+    "5": 5,
+    "6": 5,
+    "7": 4,
+    "8": 6
+  },
+  "questions": [
+    {
+      "questionId": "w8-chemistry-quiz-1",
+      "title": "综合1·第5周：取样后稀释的对象与分母",
+      "points": 5,
+      "estimatedMinutes": 5,
+      "scoringPointMap": [
+        {
+          "id": "w8-chemistry-quiz-1-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "使用最终溶液0.1500 L，c原=0.200 mol/L，单位正确。",
+          "primaryWeek": 5,
+          "skill": "最终溶液体积与mol/L定义",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-stoichiometry"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-1-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "说明均一取样c不变，c样初=0.200 mol/L。",
+          "primaryWeek": 5,
+          "skill": "均一取样c不变",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-stoichiometry"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-1-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "样品n=0.200×0.0250=0.00500 mol，未用整瓶n。",
+          "primaryWeek": 5,
+          "skill": "以样品体积算该份n",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-stoichiometry"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-1-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "在题给无反应无损失条件下守恒样品n，用最终0.1000 L求c后=0.0500 mol/L。",
+          "primaryWeek": 5,
+          "skill": "样品理想稀释守恒及最终V",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-stoichiometry"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-1-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "拒绝精确加水75.0 mL结论，指出未给体积严格可加和。",
+          "primaryWeek": 5,
+          "skill": "体积差非无条件精确水量",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-stoichiometry"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w8-chemistry-quiz-2",
+      "title": "综合2·第6周：用题给性质改正新弱酸写法",
+      "points": 5,
+      "estimatedMinutes": 5,
+      "scoringPointMap": [
+        {
+          "id": "w8-chemistry-quiz-2-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "明确HClO为题给弱酸、水保留，NaOH与NaClO作为可溶强电解质拆写。",
+          "primaryWeek": 6,
+          "skill": "题给弱酸、水、可溶强电解质的写法",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-ions",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-2-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "正确净式HClO+OH⁻→ClO⁻+H₂O。",
+          "primaryWeek": 6,
+          "skill": "改正净离子式",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-ions",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-2-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "逐元素给出两侧H2/Cl1/O2。",
+          "primaryWeek": 6,
+          "skill": "逐元素原子检查",
+          "supportingWeeks": [
+            1
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-ions",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-2-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "两侧电荷代数和均−1，不强行改为0。",
+          "primaryWeek": 6,
+          "skill": "电荷代数和检查",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-ions",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-2-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "指出Na⁺为旁观离子且仍在溶液中。",
+          "primaryWeek": 6,
+          "skill": "旁观离子仍在溶液",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-ions",
+            "w8-chemistry-section-check-boundary"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w8-chemistry-quiz-3",
+      "title": "综合3·第7周：换成新离子仍会辨变价与电子量",
+      "points": 4,
+      "estimatedMinutes": 5,
+      "scoringPointMap": [
+        {
+          "id": "w8-chemistry-quiz-3-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "Ce+4→+3得1与Fe+2→+3失1两条均正确。",
+          "primaryWeek": 7,
+          "skill": "单原子离子起末价与得失方向",
+          "supportingWeeks": [
+            2
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-electron-ratio"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-3-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "氧化剂Ce⁴⁺、还原剂Fe²⁺，对应自身还原/氧化正确。",
+          "primaryWeek": 7,
+          "skill": "反应物两种剂的角色",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-electron-ratio"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-3-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "由实际Fe²⁺量得到转移电子0.0180 mol，单位正确。",
+          "primaryWeek": 7,
+          "skill": "实际反应量与电子mol",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-electron-ratio"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-3-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "明确同一批得失不相加，拒绝0.0360 mol的双计数。",
+          "primaryWeek": 7,
+          "skill": "同一批得失电子不相加",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-electron-ratio"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w8-chemistry-quiz-4",
+      "title": "综合4·第8周：新酸性骨架配平并接质量计量",
+      "points": 6,
+      "estimatedMinutes": 9,
+      "scoringPointMap": [
+        {
+          "id": "w8-chemistry-quiz-4-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "正确求N+5→+2每份得3、Cu0→+2每份失2。",
+          "primaryWeek": 8,
+          "skill": "计算每反应粒子得失电子量",
+          "supportingWeeks": [
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-acid-half",
+            "w8-chemistry-section-merge",
+            "w8-chemistry-section-stoichiometry",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-4-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "最小匹配6，NO₃⁻∶Cu=2∶3；未改下标或离子电荷。",
+          "primaryWeek": 8,
+          "skill": "最小公倍数得到变价粒子比",
+          "supportingWeeks": [
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-acid-half",
+            "w8-chemistry-section-merge",
+            "w8-chemistry-section-stoichiometry",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-4-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "最简总式2NO₃⁻+3Cu+8H⁺→2NO+3Cu²⁺+4H₂O完整正确且无剩e⁻。",
+          "primaryWeek": 8,
+          "skill": "补H/O并合并消电子至最简总式",
+          "supportingWeeks": [
+            4,
+            6
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-acid-half",
+            "w8-chemistry-section-merge",
+            "w8-chemistry-section-stoichiometry",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-4-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "逐元素N2/Cu3/O6/H8及两边电荷+6全部核查正确。",
+          "primaryWeek": 8,
+          "skill": "原子与电荷独立核查",
+          "supportingWeeks": [
+            4,
+            6
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-acid-half",
+            "w8-chemistry-section-merge",
+            "w8-chemistry-section-stoichiometry",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-4-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "质量先换Cu0.0300 mol，按比得NO₃⁻0.0200 mol、H⁺0.0800 mol，过程和单位均正确。",
+          "primaryWeek": 8,
+          "skill": "质量→mol→已配平系数比",
+          "supportingWeeks": [
+            3,
+            4
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-acid-half",
+            "w8-chemistry-section-merge",
+            "w8-chemistry-section-stoichiometry",
+            "w8-chemistry-section-check-boundary"
+          ]
+        },
+        {
+          "id": "w8-chemistry-quiz-4-point-6",
+          "scoringIndex": 5,
+          "points": 1,
+          "criterion": "电子0.0600 mol，按实际变价量求并明确得失不相加。",
+          "primaryWeek": 8,
+          "skill": "按已配平实际反应量核算电子",
+          "supportingWeeks": [
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-chemistry-section-recall-quantity",
+            "w8-chemistry-section-recall-redox",
+            "w8-chemistry-section-acid-half",
+            "w8-chemistry-section-merge",
+            "w8-chemistry-section-stoichiometry",
+            "w8-chemistry-section-check-boundary"
+          ]
+        }
+      ]
+    }
+  ],
+  "passRule": {
+    "minScore": 16,
+    "requiredChecks": [
+      "综合1：最终溶液体积与L单位正确；取样保浓度、样品稀释保其自身n，不能把整瓶n带入。",
+      "综合1：无体积可加和条件不得断言精确加水75.0 mL。",
+      "综合2：必须依据题给弱酸性质保留HClO与水，正确净式同时通过原子与−1电荷检查；旁观Na⁺未消失。",
+      "综合3：剂按本题升降判断，电子0.0180 mol只计一次，不得相加。",
+      "综合4：NO₃⁻与Cu电子比2∶3正确，H⁺8与水4正确；不改化学式，总式不留e⁻，原子与电荷全部通过。",
+      "综合4：g先转mol；按实际反应量算消耗和电子0.0600 mol，不能按克数直接套系数。",
+      "总分至少16/20，所有关键条件均通过，并完成核心活动与订正，才具备本周推进条件。照抄答案不算独立掌握。"
+    ]
+  },
+  "currentWeekRemediationOnly": true,
+  "useNote": "这是同一套4题20分累计诊断的解释地图，不是新增题或新增分数。每个评分点只出现一次，补救只指本周真实小节；保留首次分，订正后另记尝试。"
+}

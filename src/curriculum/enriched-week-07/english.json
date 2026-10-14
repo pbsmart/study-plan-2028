@@ -1,0 +1,851 @@
+{
+  "id": "w7-英语",
+  "week": 7,
+  "subject": "英语",
+  "title": "被动语态：谁做不变，句子的中心可以改变",
+  "revision": "week07-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能先找主动句的施事、动作和受事，再把受事变成被动句主语，保留事件的实际角色与限制。",
+    "掌握一般现在、一般过去和will一般将来的被动结构，理解be分担时态和主语一致，过去分词保持动作形式。",
+    "能处理否定、疑问及by后的代词，按任务决定是否保留施事；不擅自为未知施事编人。",
+    "能区分主动完成、主动进行与本周被动，识别arrive/happen不适用普通被动以及closed等状态/动作歧义。"
+  ],
+  "prerequisites": [
+    "第6周已经学过过去式与过去分词的区别，以及be/have/has的分工；本周先用12分钟补救接上，不背全套新表。",
+    "继续使用第1周句子角色、第3周主语中心和单复数、第4周证据边界、第5周will后原形。",
+    "核心只练一般现在、一般过去、will将来三种被动，不叠加完成被动、进行被动等全部形式。",
+    "全课为原创书面场景，词义和词形卡可查。没有音频，书面成绩不代表真实听辨、发音或口语达标。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "核心180分钟：前测9＋补救12＋七节正文与自检45＋五例30＋五练30＋新短测24＋订正30。忙时两个周期各90分钟，第一周期至例4；第二周期例5、五练、短测、订正。查词、角色卡与回读已计入，无额外选读或背表。超时下一次英语学段接续本周，不自动跳周、不删订正、不占第三科预留。",
+    "segments": [
+      {
+        "id": "w7-en-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w7-en-d1",
+          "w7-en-d2",
+          "w7-en-d3"
+        ]
+      },
+      {
+        "id": "w7-en-time2",
+        "title": "前置补救，已会者在同槽解释理由",
+        "minutes": 12,
+        "activityIds": [
+          "w7-en-r1"
+        ]
+      },
+      {
+        "id": "w7-en-time3",
+        "title": "连贯概念讲解与每节自检",
+        "minutes": 45,
+        "activityIds": [
+          "w7-en-s1",
+          "w7-en-s2",
+          "w7-en-s3",
+          "w7-en-s4",
+          "w7-en-s5",
+          "w7-en-s6",
+          "w7-en-s7"
+        ]
+      },
+      {
+        "id": "w7-en-time4",
+        "title": "五阶完整例题",
+        "minutes": 30,
+        "activityIds": [
+          "w7-en-ex1",
+          "w7-en-ex2",
+          "w7-en-ex3",
+          "w7-en-ex4",
+          "w7-en-ex5"
+        ]
+      },
+      {
+        "id": "w7-en-time5",
+        "title": "五道分层独练",
+        "minutes": 30,
+        "activityIds": [
+          "w7-en-pr1",
+          "w7-en-pr2",
+          "w7-en-pr3",
+          "w7-en-pr4",
+          "w7-en-pr5"
+        ]
+      },
+      {
+        "id": "w7-en-time6",
+        "title": "全新20分短测",
+        "minutes": 24,
+        "activityIds": [
+          "w7-en-quiz1",
+          "w7-en-quiz2",
+          "w7-en-quiz3",
+          "w7-en-quiz4"
+        ]
+      },
+      {
+        "id": "w7-en-time7",
+        "title": "核分、定点回看、遮答订正",
+        "minutes": 30,
+        "activityIds": [
+          "w7-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题各3分钟，不计短测20分。先用中文说明事件，再标英语成分。词形可查；先定位缺口再用12分钟补救槽处理。",
+    "questions": [
+      {
+        "id": "w7-en-d1",
+        "title": "谁做，谁承受",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "“The two helpers carry a box.” 写完整主语、动作和对象，并说谁实际在搬。\n词义：the特指；two两名；helpers帮手；carry搬；a box一个箱子。",
+        "answer": "完整主语The two helpers；动作carry；对象a box；两名帮手搬箱子，箱子是被搬对象。",
+        "steps": [
+          "先按事实角色读句。",
+          "主语包含two，不能只看box单数。"
+        ],
+        "commonErrors": [
+          "箱子在搬人；只写helpers漏完整主语修饰。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w7-en-d2",
+        "title": "接回分词与主语一致",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "①“She has ___ a note.”（write的合适形式，可查write—wrote—written）②“These cards ___ ready now.”（is/are）\n词义：she她；note便条；these这些；cards卡；ready准备好；now现在。",
+        "answer": "①written；②are。①have/has后用过去分词；②cards复数配are。①仍是她写便条的主动完成，不是便条写她。",
+        "steps": [
+          "分别判断两空所在结构。",
+          "第一空第三列written，第二空看复数cards。"
+        ],
+        "commonErrors": [
+          "wrote；is；把has written看成被动。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w7-en-d3",
+        "title": "未来不是已经完成",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创记录：“The team will paint the wall tomorrow.” 能说墙已经刷好了吗？若以墙为话题，刷墙的人是否会变？\n词义：team小组；paint刷漆；wall墙；tomorrow明天；will本课沿用将来表达。",
+        "answer": "不能，刷墙是明天的安排；即使句子先谈墙，实际刷墙者仍是小组，不会变成墙刷人。",
+        "steps": [
+          "用tomorrow定位未来。",
+          "分开句子话题位置与现实动作角色。"
+        ],
+        "commonErrors": [
+          "把将来安排当已完成；认为移到句首就成为实际施事。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "第1题角色不清楚",
+        "action": "先用补救角色卡，读第1、2节，不直接背被动公式。",
+        "sectionIds": [
+          "w7-en-r1",
+          "w7-en-s1",
+          "w7-en-s2"
+        ]
+      },
+      {
+        "when": "第2题分词或一致混淆",
+        "action": "补救槽复查三列词形，再读第3、6节。",
+        "sectionIds": [
+          "w7-en-r1",
+          "w7-en-s3",
+          "w7-en-s6"
+        ]
+      },
+      {
+        "when": "第3题时间与话题混淆",
+        "action": "重点读第2、4、7节，转换后核对时间与施受。",
+        "sectionIds": [
+          "w7-en-s2",
+          "w7-en-s4",
+          "w7-en-s7"
+        ]
+      },
+      {
+        "when": "三题都能解释",
+        "action": "同槽说明错误形式与推断的问题，然后顺序学习。",
+        "sectionIds": [
+          "w7-en-r1",
+          "w7-en-s1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w7-en-r1",
+      "title": "十二分钟补救：角色与分词，不换一套基础",
+      "level": "remediation",
+      "paragraphs": [
+        "先把中文事件写三格：工人—搬—桌子。英语“The worker moves the table”也是这三项。worker工人，move搬动，table桌子。主动句主语是发出动作的工人；若先谈桌子，工人仍发动作，桌子仍承受动作。第6周语文的施受方法在这里也能帮助理解，但英语还要按结构补be和分词。",
+        "词形卡可全程查，顺序为原形—过去式—过去分词：write—wrote—written（写）；make—made—made（制作）；take—took—taken（拍照／拿）；draw—drew—drawn（画）；send—sent—sent（寄／发送）；hold—held—held（举办／拿住）；check—checked—checked（检查）；clean—cleaned—cleaned（打扫）；move—moved—moved（移动）；repair—repaired—repaired（修理）；paint—painted—painted（涂色）；print—printed—printed（印刷）；provide—provided—provided（提供）。",
+        "现在be配I am，he/she/it及单数is，you/we/they及复数are；过去对应was/were。将来will后要原形，所以will be，不是will is。过去分词取词形卡第三列，不能因为yesterday就改成第二列wrote；句子时间不由过去分词这个名称单独决定。",
+        "常用词索引：I我，you你／你们，he他，she她，it它，we我们，they他们；me我、him他、her她、us我们、them他们用于宾语位置；my我的，your你的，his他的，our我们的，their他们的；a/an一个，the特指，this这，these这些，all全部，only只，not不，and并且，but但是，so所以，now现在，yesterday昨天，tomorrow明天，every每一，last上一个，next下一个；in在……里，on在某日/某物上，at在某时/某地，by在被动句中可引出动作发出者，for为了，with与/用。每题另补场景词义。",
+        "前4分钟写角色卡，中间4分钟配be并查write三列，最后4分钟自检。不要把第6周have/has＋分词整套复制过来当被动；同一个written会出现在不同结构，下一节让它们回到真实事件中。"
+      ],
+      "keyPoints": [
+        "施事、动作、受事先明确。",
+        "词形第三列用于本课被动，允许查表。",
+        "先选be的时间与一致，再用不变的分词。"
+      ],
+      "checkpoint": {
+        "question": "“She has written a note”里谁写便条？仅因有written就能说是被动吗？",
+        "answer": "她写便条。has written是主动现在完成，不能只见过去分词就判被动。",
+        "explanation": "看整套结构与角色：have/has＋分词不等于be＋分词。"
+      }
+    },
+    {
+      "id": "w7-en-s1",
+      "title": "读一段展厅记录：为什么让物件先开口",
+      "level": "core",
+      "paragraphs": [
+        "原创短文《Getting the Room Ready》（布置房间）：\nOur community room is used for a small art show every month. The tables are checked by two helpers every Friday. Yesterday, an old shelf was repaired by Bo. Three name cards were written by Mei, and a large map was drawn by her. Tomorrow, the pictures will be placed near the windows. They will not be placed beside the heater. The helpers know their jobs, but the list does not name the person who will move the pictures. We only know the plan.\n这是完整书面训练材料，没有音频。",
+        "场景词义：community room社区活动室；use使用；small art show小型艺术展；month月；tables桌子；two helpers两名帮手；Friday周五；old shelf旧架子；Bo博、Mei梅（人名）；name cards姓名卡；large map大地图；draw画；pictures画作；place放置；near在……附近；windows窗户；beside在……旁边；heater取暖器；know知道；jobs各自任务；list清单；does not name没有写明；person人；who will move the pictures将搬动画作的人；only know the plan只知道计划。其余动词词形见补救卡。",
+        "读意：社区活动室每月用于小型艺术展，桌子每周五由两名帮手检查。昨天博修了旧架，梅写了三张姓名卡，还画了一张大地图。明天画作会放在窗边，不放取暖器旁；清单没有写由谁搬画，材料只给安排。不能把过去修架的博自动补成明天搬画的人。",
+        "这段主要介绍房间里的设施和作品，所以许多句子先说桌子、架子、卡片、地图。被动表达让承受动作的对象成为句子中心，读者更容易跟着物件走。它不是故意把句子弄复杂，也不是表示“消极、被迫”的心理态度。",
+        "先把三组时间列开：every Friday日常检查，yesterday已经修理/写/画，tomorrow计划摆放。被动有自己的时态，不能把所有be＋分词都看成过去；下面先转角色，再学be怎样分工。"
+      ],
+      "keyPoints": [
+        "被动常让受事成为话题。",
+        "日常、过去、未来分别存在。",
+        "未知施事不从前句人物自动补出。"
+      ],
+      "checkpoint": {
+        "question": "谁画了地图？文中明天谁搬画已明确吗？",
+        "answer": "地图由梅画，by her承接Mei；明天搬画者未写明，不能断言博或梅。",
+        "explanation": "已给指代与未给施事要区分，不能因为主语是物就随便猜人。"
+      }
+    },
+    {
+      "id": "w7-en-s2",
+      "title": "转换四步：角色不变，句子重心改变",
+      "level": "core",
+      "paragraphs": [
+        "从主动句“Bo repaired the shelf yesterday”开始。Bo修理，shelf被修理。先找原宾语the shelf，把它移为被动主语；动作改成was repaired；需要完整保留信息时，用by Bo保留施事；yesterday仍在。得到“The shelf was repaired by Bo yesterday”。物件先出现，现实角色没换。",
+        "四步可以写成：圈受事；根据原时间与新主语选be；动作改过去分词；保留施事和其他限制。最后再按原来的“谁对什么做了什么”回译检查。若写“The shelf repaired Bo”，是让架子修博，角色彻底颠倒，不是被动。",
+        "注意be与新主语配对。原句“The two workers repair the shelf”中工人复数；被动“The shelf is repaired by the two workers”中shelf单数，所以is，不用are。反过来，原句“Mei writes three cards”，被动“Three cards are written by Mei”，虽然Mei单数，cards复数仍用are。",
+        "并不是必须把所有主动句改掉。若一段重点讲博怎样工作，主动句很自然；若重点是这只架子如何处理，被动有利于衔接。基本事件可保留，但句子关注点不同。做转换题按指定任务，写实际文章按信息重点选择。"
+      ],
+      "keyPoints": [
+        "圈受事→选be→用分词→保留信息。",
+        "新主语决定be的一致，不看by后人物。",
+        "结构转换不交换真实角色。"
+      ],
+      "checkpoint": {
+        "question": "“One worker checks the two doors every day”改被动，be看worker还是doors？词义：one一名；doors门；every day每天。",
+        "answer": "The two doors are checked by one worker every day. be看新主语doors复数，选are。",
+        "explanation": "施事仍一名工人，被检查的两扇门成为主语。"
+      }
+    },
+    {
+      "id": "w7-en-s3",
+      "title": "be负责什么，过去分词负责什么",
+      "level": "core",
+      "paragraphs": [
+        "一般现在的被动用am/is/are＋过去分词，常见于习惯、流程等。本课“The tables are checked every Friday”中are与tables复数配，checked表示检查动作的被动形式，every Friday说明日常重复。不要因checked看起来像-ed过去式就说整句发生在昨天。",
+        "一般过去用was/were＋过去分词。The shelf was repaired yesterday；The cards were written yesterday。shelf单数用was，cards复数用were；动作分词分别repaired、written。时间换了，write不再从written变成wrote；wrote用于对应主动的一般过去事件。",
+        "可以拿同一个动作作对照：“The card is checked every morning”；“The card was checked yesterday”。两句分词checked不变，变化在is/was及时间语境。card卡；every morning每早。把过去分词当成负责所有时态，会写出is wrote、was wrote等混合形式。",
+        "被动句有时不写by，结构仍成立：“The window was repaired yesterday”。window窗户。谁修的未知或无需说明时可以省。但题目要求保留所有信息，就必须保留原给出的修理者，不能因为日常可省就交不完整答案。",
+        "先把本节两种过去/现在练稳，下一节只加一个will be结构。不需要马上记进行被动、完成被动或各种复杂情态形式；后续新任务再扩展。"
+      ],
+      "keyPoints": [
+        "现在is/are与过去was/were体现时间。",
+        "分词不因过去时再改一次。",
+        "be与新主语配；by可省不代表任何题都可省。"
+      ],
+      "checkpoint": {
+        "question": "为什么“The notices were wrote yesterday”要改成were written，而不是were writing？词义：notices通知。",
+        "answer": "本题通知承受写的动作，需过去被动were＋过去分词written；writing会成为进行形式，不能表达该被动角色。",
+        "explanation": "先看通知被写，再查第三列，不凭ed/ing外观选。"
+      }
+    },
+    {
+      "id": "w7-en-s4",
+      "title": "将来、否定与问句：沿已有辅助词操作",
+      "level": "core",
+      "paragraphs": [
+        "第5周will后用原形，所以将来被动是will be＋过去分词：“The pictures will be moved tomorrow”。pictures画作，move搬动。will体现将来，be保留被动结构需要的be，moved是分词。不能漏成will moved，也不能写will are moved。",
+        "一般现在和过去的否定在be后加not：“The door is not checked every day”；“The cards were not printed yesterday”。door门，cards卡，print印刷。问句把be移到主语前：“Were the cards printed yesterday?” 简答“Yes, they were.”或“No, they weren’t.”。不加did去重复操作。",
+        "将来否定为will not be＋分词，可缩won’t be：“The pictures will not be moved tomorrow”。问句移动will：“Will the pictures be moved tomorrow?”，简答“Yes, they will.”或“No, they won’t.”。问句里的be仍保留，不能随will移动后就忘了它。",
+        "否定和时间范围要同时保留。“The cards were not printed yesterday”只否定昨天印了这批卡，不能推出永远不印。“The cards will not be printed tomorrow”也不是说明已经印好。第5—6周的时间、条件和否定范围在被动里仍有效。"
+      ],
+      "keyPoints": [
+        "将来被动will be＋分词，be不能漏。",
+        "be问句移动be，will问句移动will。",
+        "否定只及句内范围，不能扩大成永远。"
+      ],
+      "checkpoint": {
+        "question": "把“The map will be printed on Friday”改一般疑问与否定。词义：map地图；on Friday周五。",
+        "answer": "Will the map be printed on Friday? The map will not be printed on Friday.",
+        "explanation": "移动will或加not时，be printed保持完整，周五也保留。"
+      }
+    },
+    {
+      "id": "w7-en-s5",
+      "title": "by后谁做：何时保留，何时不猜",
+      "level": "core",
+      "paragraphs": [
+        "主文“A large map was drawn by her”中her指梅，by说明绘图者。介词by后人称代词用宾格：he→him，she→her，we→us，they→them，I→me，you仍you。例如“The card was written by him”＝卡由他写；不写by he。",
+        "转换题若明确要求完整保留，原句“Liu painted the sign”应保留by Liu。sign标牌；Liu刘。若写一则公告只关心标牌已处理，施事已知且不重要，可以不写by。省略不是否定有人做，也不是让读者认定物自己做了动作。",
+        "未知施事更不要硬补。“The old chair was repaired yesterday”只交代旧椅子昨天被修过。不能加by the teacher，除非题内已有证据。如果任务要求改主动，可用Someone repaired the old chair yesterday表达有人修，但someone是一般不定施事，不表示你已知道是谁。someone有人；old chair旧椅。",
+        "工具和施事也不同。“The paper was cut by Mei with scissors”中by Mei说谁剪，with scissors说用剪刀。paper纸；cut剪（此处分词同形）；scissors剪刀。这只是帮助理解角色，不要求本周掌握所有by/with用法。别把工具当执行者，也别把地点或时间都硬塞by后。"
+      ],
+      "keyPoints": [
+        "by后人称用宾格。",
+        "保留要求优先，不因可省就删给定信息。",
+        "未交代施事不编姓名或身份。"
+      ],
+      "checkpoint": {
+        "question": "“They made this model”保留人物改被动应写by they还是by them？词义：model模型。",
+        "answer": "This model was made by them. 用them。",
+        "explanation": "原主语they转到介词by后，角色仍是制作者，但代词形式变宾格。"
+      }
+    },
+    {
+      "id": "w7-en-s6",
+      "title": "先问能否被动，也承认动作与状态可能有歧义",
+      "level": "core",
+      "paragraphs": [
+        "本课普通主动转被动先要求有合适的受事对象。“The bus arrived at six”＝公交车六点到达，arrive在这里不直接带一个被到达的对象，不能写was arrived。“An accident happened yesterday”＝昨天发生一起事故，happen此处也不用was happened。bus公交车；six六；accident事故。",
+        "有动词不等于能套被动。“The soup tastes good”＝汤尝起来味道好，tastes在这里连接状态，不是“某人品尝汤”那个动作句。soup汤，taste尝起来，good好。也不能把“The room is quiet”安静状态强改成被安静。主语与谓语的实际关系比公式先行。",
+        "另一边，看到be加一个看似分词的词也不必立刻做唯一分类。“The door is closed”在许多语境描述门关着的状态；放在每天由人关门的流程里，也可谈被关这一事件。孤立形式不足以告诉我们是谁何时关的。“The door was closed by Ren at eight”则明确给了关门者与时间，事件理解很清楚。Ren任，人名；close关。",
+        "与第6周再对照：“Mei has written the card”是梅写卡的主动完成；“Mei is writing the card”是梅正在写的主动过程；“The card was written by Mei”才是卡作主语、由梅写的过去被动。分词written不是被动标签，have与be也不能随意互换。",
+        "本周只要求识别明显不能套被动的arrive/happen，以及closed这种需要语境的边界；不考动作被动与状态形容词的理论分类全集。没有足够语境时，说明可有不同理解，比强判一个名称更准确。"
+      ],
+      "keyPoints": [
+        "arrive/happen在本课用法不套普通被动。",
+        "has written、is writing、was written看整套结构与角色。",
+        "closed可能描述状态或被关事件，缺语境不强断。"
+      ],
+      "checkpoint": {
+        "question": "孤立句“The shop is closed”能证明商店此刻正在被人关门吗？词义：shop商店。",
+        "answer": "不能。常可理解为店处于关闭/不营业状态；具体关门动作与时间还需上下文，不等于正在关门。",
+        "explanation": "形式与事件信息不能一一硬套，尤其不凭closed推出当前过程。"
+      }
+    },
+    {
+      "id": "w7-en-s7",
+      "title": "把语法放回阅读：角色、时间、范围三次核对",
+      "level": "core",
+      "paragraphs": [
+        "读被动段落先问“被处理的是什么”，再从by或上下文找施事。主文两名帮手日常检查桌子，博昨天修架，梅写卡并画图；这三种人物不可因为连续出现就互相借给别的动作。最后未来搬画者没列，保留未知。",
+        "第二次查时间。每周检查属于日常，昨天已写卡属于过去，明天摆画属于未来计划。“will be placed”中即使有分词placed，整个事件仍在未来；不凭分词外观推断已经摆完。反之“was repaired”也没有说现在仍在修。",
+        "第三次查范围。not be placed beside the heater只排除那个摆放地点，不能推成永远不展示；three cards是三张卡，不是展厅所有卡。转换的验收标准包含这些内容，而不是只有be和分词拼对。",
+        "写答案可用五项自查：受事移为主语了吗；be根据新主语和时间选了吗；动词用了过去分词吗；需要保留的by施事和其他信息还在吗；这个动词的当前意义适合普通被动吗。遇状态歧义，先解释能确认和不能确认的内容。",
+        "本周不另增加一整套复杂被动形式。把三种核心结构在新材料中运用，并在30分钟订正槽针对角色或形式补救，能够比背完总表却读不懂句子走得更稳。"
+      ],
+      "keyPoints": [
+        "角色、时间、范围分三轮读。",
+        "过去分词不代表事件必在过去。",
+        "五项核查比见be/ed猜答案可靠。"
+      ],
+      "checkpoint": {
+        "question": "主文说画明天不放取暖器旁，能否推出“画永远不公开展示”？",
+        "answer": "不能。只是未来摆放地点受限制，文章还提到展览，不能扩大成永不展示。",
+        "explanation": "保留否定范围，不将一个地点排除扩大成所有行为被禁止。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w7-en-ex1",
+      "title": "第一级：一件旧椅子的过去事件",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "将“Two workers repaired the chair yesterday”改被动，保留全部信息。先写谁做什么，再解释be与谁配。\n词义：two workers两名工人；repair修理；chair椅子；yesterday昨天。",
+      "answer": "The chair was repaired by two workers yesterday. 两名工人修椅子；被动主语chair单数且时间过去，用was。工人人数不决定被动句be。",
+      "steps": [
+        "原对象the chair移前。",
+        "过去＋单数chair→was。",
+        "repair分词repaired。",
+        "by two workers、yesterday保留。",
+        "回译仍是两工人修椅子。"
+      ],
+      "commonErrors": [
+        "were因工人复数；椅子修人；漏yesterday或by。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-ex2",
+      "title": "第二级：日常流程里的复数受事",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "把“Mei checks the room keys every morning”改被动；再判断“Every key are checked by Mei”哪里错。\n词义：Mei梅；check检查；room keys房间钥匙；every morning每天早上；every key每把钥匙。",
+      "answer": "The room keys are checked by Mei every morning. 另句应为Every key is checked by Mei. 第一新主语keys复数用are；every key每把钥匙按单数用is。",
+      "steps": [
+        "圈keys为受事，日常用现在被动。",
+        "are配keys，checked分词。",
+        "另句中心key被every逐一限定，按单数。",
+        "不能因为现实钥匙很多就给Every key配are。"
+      ],
+      "commonErrors": [
+        "Mei单数所以keys is；Every key are；把检查改为制作。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-ex3",
+      "title": "第三级：将来被动的否定和问句",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原句：“The team will print the maps on Monday.” 保留施事改被动，再改否定和一般疑问，并给否定简答。\n词义：team小组；print印；maps地图；on Monday在周一。",
+      "answer": "The maps will be printed by the team on Monday. The maps will not be printed by the team on Monday. Will the maps be printed by the team on Monday? No, they won’t. 变否定是按练习要求改变肯否，不代表原题事实本来否定；其他人物、动作、时间不变。",
+      "steps": [
+        "maps移前，未来结构will be printed。",
+        "否定not放will后，be不删。",
+        "疑问移will，maps后仍be printed。",
+        "简答用they与won’t，不用aren’t。"
+      ],
+      "commonErrors": [
+        "will printed；will are printed；No, they aren’t；移动will时漏be。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-ex4",
+      "title": "第四级：已知人物与未知人物分开",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "①“They drew the plan last night.” 完整保留人物改被动。②“The notice was sent yesterday.” 原文未给发送人，有人补成“The manager sent the notice yesterday.” 是否保意？给更稳的主动改写。\n词义：they他们；draw画；plan平面图；last night昨晚；notice通知；send发送；manager经理；someone有人。",
+      "answer": "①The plan was drawn by them last night. ②不能把manager当已知，原文没有身份。可写Someone sent the notice yesterday，保留有人发送而未知其身份。若任务不要求主动，也可保留原被动。",
+      "steps": [
+        "draw第三列drawn，单数plan过去用was。",
+        "they到by后变them。",
+        "②检查新增manager有没有来源。",
+        "用someone表达不定施事，不假装知道具体人。"
+      ],
+      "commonErrors": [
+        "was drew；by they；因为经理常发通知就补经理。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-ex5",
+      "title": "第五级：审一段文字，不给所有动词加被动",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创草稿：“The parcel was arrived at noon. It was checked by Yun. The door was closed.” 第一处有明确错误，请修复。后两句分别能确认什么？最后一句孤立时能否唯一断言某人当时执行了关门？\n词义：parcel包裹；arrive到达；at noon中午；check检查；Yun云；door门；close关。",
+      "answer": "The parcel arrived at noon. arrive此处不套被动。It was checked by Yun明确包裹由云检查。The door was closed可表示门处于关着状态，也可能在具体叙事中表示被关这一事件；孤立时不能补出确定施事或动作发生瞬间。",
+      "steps": [
+        "先判arrive没有这里可移的受事，删was。",
+        "it承parcel，by Yun给检查者。",
+        "closed看语境，区分能读到的关闭与未给的谁何时。",
+        "不把每个-ed都当确定被动动作。"
+      ],
+      "commonErrors": [
+        "把arrived改arriving却保留原到达事实；云被包裹检查；closed必然当前正在关。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w7-en-pr1",
+      "title": "基础：主语中心变化后配be",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "填合适的一般现在被动：①“These two lamps ___ (check) every week.”②“Each lamp ___ (check) every week.” 并解释为什么be不同。\n词义：these这；two两；lamps灯；each每一；check检查；every week每周。",
+      "answer": "①are checked；②is checked。两盏灯复数用are；each lamp按单数用is。动作分词checked不随数量改变。",
+      "steps": [
+        "先圈新主语中心。",
+        "两句都日常，选现在be。",
+        "check改分词checked，固定保留。"
+      ],
+      "commonErrors": [
+        "each现实包括两盏所以are；两句都checked漏be。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-pr2",
+      "title": "应用：读一份修复记录",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创记录：“The old gate was painted by Han on Tuesday. Two signs were made by Lu on Wednesday. They will be placed near the gate tomorrow.”\n①谁制作标牌，什么时候？②they指什么？③能否认定标牌已放好，或明天一定由Lu放？\n词义：old gate旧大门；paint刷漆；Han韩、Lu陆；Tuesday周二；two signs两块标牌；make制作；Wednesday周三；place放置；near在……附近；tomorrow明天。",
+      "answer": "①陆周三制作两块标牌。②they指两块标牌。③不能认定已放好，will be placed是明天安排；也不能确定陆放，末句省略施事，前句制作者不自动等于未来放置者。",
+      "steps": [
+        "分别配paint与make的施事、日期。",
+        "复数they回到two signs。",
+        "未来和施事未知分别说清。"
+      ],
+      "commonErrors": [
+        "韩制作；they指大门；制作者必是摆放者；未来当已完成。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-pr3",
+      "title": "应用：把报告改为以物件为中心",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原报告：“She wrote three labels yesterday. We will send them on Friday.” 改成两句被动，完整保留人物、数量、日期；by后用代词。\n词义：she她；write写；three labels三张标签；yesterday昨天；we我们；send寄；them它们；on Friday周五。",
+      "answer": "Three labels were written by her yesterday. They will be sent by us on Friday. 标签三张复数配were；written/sent取分词；she/we变by her/us。",
+      "steps": [
+        "第一受事three labels移前。",
+        "昨天用were written，by her。",
+        "第二they承标签，will be sent，by us。",
+        "两件事日期不同，不把周五放到第一句。"
+      ],
+      "commonErrors": [
+        "was written因she；by she/by we；will be send；漏数量。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-pr4",
+      "title": "迁移：同一个分词不等于同一个语态",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "三句：A “Jia has made the box.” B “Jia is making the box.” C “The box was made by Jia.”\n分别说明谁制作、句子强调何种时间/动作视角；再改正“An accident was happened outside”。\n词义：Jia佳；make制作；box盒子；accident事故；happen发生；outside外面。",
+      "answer": "A佳制作，主动现在完成，联系当前已有盒子结果；B佳制作，主动现在进行，过程视角；C佳制作、盒子承受，过去被动。错误句改An accident happened outside。happen此处不构成普通被动。",
+      "steps": [
+        "三句现实施事相同，结构与视角不同。",
+        "have＋分词、be＋ing、be＋分词分别看。",
+        "happen不因主语非人就被动。"
+      ],
+      "commonErrors": [
+        "has made被判被动；B说箱子制造佳；事故作主语所以必被动。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w7-en-pr5",
+      "title": "迁移：公告中的已知、未知与问句",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "公告只有“Only the front windows will be cleaned tomorrow.”\n①改一般疑问并给肯定简答。②能否添加by the new worker？③句子能否支持“所有窗户已经清洗完”？说明。\n词义：only只；front前面的；windows窗户；clean清洗；tomorrow明天；new worker新员工。",
+      "answer": "Will only the front windows be cleaned tomorrow? Yes, they will. 不能把新员工当已知清洗者，公告未给；不能说全部已完，only front限制对象，will…tomorrow是未来。若问句将only放在不同自然位置，必须仍只限定前面的窗户。",
+      "steps": [
+        "移will，保留be cleaned。",
+        "简答they will。",
+        "施事未给，不补人。",
+        "对象范围与未来状态分开核对。"
+      ],
+      "commonErrors": [
+        "Will windows cleaned；给Yes, they are；漏only；未来说成完成。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "句首是谁，现实中谁就做动作。",
+      "why": "被动让受事作主语，实际动作角色不互换。",
+      "right": "先写施事—动作—受事，再转换。"
+    },
+    {
+      "wrong": "be仍按by后的原施事单复数配。",
+      "why": "语法一致看当前主语。",
+      "right": "The cards are written by Mei，cards复数用are。"
+    },
+    {
+      "wrong": "过去被动用was/were＋过去式wrote。",
+      "why": "本结构需要过去分词written，时间由be体现。",
+      "right": "was/were written，过去式与分词身份分清。"
+    },
+    {
+      "wrong": "will后只要分词就够了。",
+      "why": "未来被动仍需be。",
+      "right": "will be＋分词，be不能漏也不改is/are。"
+    },
+    {
+      "wrong": "by可以省，所以保留全部信息的题也能删。",
+      "why": "结构许可与题目要求不同。",
+      "right": "任务要求完整保留时，保留已给施事。"
+    },
+    {
+      "wrong": "arrive、happen也能按任何动词套被动；closed必定只一种分析。",
+      "why": "动词搭配与状态/动作语境各有边界。",
+      "right": "先检查受事关系，缺语境的状态/事件歧义不强判。"
+    }
+  ],
+  "quiz": {
+    "instructions": "全新原创展览准备材料，四题各6分钟各5分，共24分钟20分。可查词义与补救词形卡。完整转换要保留所有已给信息；未知施事不编造。状态/动作歧义题按明确给出的信息判断，不伪装唯一分类。无音频与听力评价。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w7-en-quiz1",
+        "title": "新语料：一人制作多张卡",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "将“Nan made four cards last night”改被动，完整保留信息。指出新句主语与实际制作者，并解释be与分词的选择。\n词义：Nan楠；make制作；four cards四张卡；last night昨晚。",
+        "answer": "Four cards were made by Nan last night. 主语Four cards，实际制作者Nan；cards复数且过去时间，所以were；made是make的过去分词。",
+        "steps": [
+          "原对象four cards移前。",
+          "过去复数选were。",
+          "make第三列made。",
+          "by Nan与last night保留。"
+        ],
+        "commonErrors": [
+          "was因Nan单数；card漏复数；卡片制作楠；省施事。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "新主语Four cards，数量与复数正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "were正确并解释依据新主语复数及过去时间。"
+          },
+          {
+            "points": 1,
+            "criterion": "made正确并说明此处为过去分词，不只是说有过去时间。"
+          },
+          {
+            "points": 1,
+            "criterion": "by Nan及last night保留。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确真实制作者仍Nan、卡片为受事，不交换角色。"
+          }
+        ]
+      },
+      {
+        "id": "w7-en-quiz2",
+        "title": "新流程：现在与将来分开",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "①“The two display boards ___ (check) every Tuesday.”按日常被动填空。②“The team will repair one board tomorrow.”保留全部信息改被动。③将②所得被动句改一般疑问并给否定简答。\n词义：two display boards两块展板；check检查；every Tuesday每周二；team小组；repair维修；one board一块展板；tomorrow明天。",
+        "answer": "①are checked。②One board will be repaired by the team tomorrow. ③Will one board be repaired by the team tomorrow? No, it won’t.",
+        "steps": [
+          "日常复数boards配are checked。",
+          "未来受事one board配will be repaired，不用will is。",
+          "问句移动will但保留be，简答it won’t。"
+        ],
+        "commonErrors": [
+          "everyTuesday也用was；will repaired；No,it isn’t。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①are checked正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②will be repaired完整结构。"
+          },
+          {
+            "points": 1,
+            "criterion": "②one board、team、tomorrow信息均保留。"
+          },
+          {
+            "points": 1,
+            "criterion": "③Will one board be repaired by the team tomorrow完整正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "No, it won’t/will not正确。"
+          }
+        ]
+      },
+      {
+        "id": "w7-en-quiz3",
+        "title": "新记录：代词形式与未知施事",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "①“They drew the poster on Sunday.”保留所有人物与时间改被动，by后用代词。②随后一条记录只写“The poster was moved to the hall on Monday.” 能认定还是原来的画海报者搬的吗？为什么？③能把这条过去记录读成“海报明天才搬”吗？\n词义：they他们；draw画；poster海报；Sunday周日；move移动；hall大厅；Monday周一。",
+        "answer": "①The poster was drawn by them on Sunday. ②不能，搬运句未写施事，画海报的人不必是搬的人。③不能，was moved和on Monday在该过去记录中说明已发生搬运，不是明天计划。",
+        "steps": [
+          "poster单数过去was，draw分词drawn。",
+          "they转by them。",
+          "不同动作不能借前句施事填空。",
+          "读整体过去结构，不改时间。"
+        ],
+        "commonErrors": [
+          "was drew；by they；谁画就必谁搬；被动都理解成未来安排。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①was drawn结构正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "①by them宾格正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "①poster与on Sunday完整保留。"
+          },
+          {
+            "points": 1,
+            "criterion": "②拒绝认定相同施事，说明搬运者未给。"
+          },
+          {
+            "points": 1,
+            "criterion": "③拒绝明天计划，联系was moved的过去记录意义。"
+          }
+        ]
+      },
+      {
+        "id": "w7-en-quiz4",
+        "title": "新语料：不机械套被动和事件标签",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "①保留原意修复“The visitors were arrived at nine”。②孤立告示“The room is closed”能否确定有人此刻正在执行关门动作？说明更稳的理解。③“Rui has written the welcome note”是不是被动？说明谁做什么。\n词义：visitors访客；arrive到达；at nine九点；room房间；closed关闭的／关；Rui瑞；write写；welcome note欢迎便条。",
+        "answer": "①The visitors arrived at nine. arrive在此不构成普通被动。②不能确定，告示常描述房间不开放/关闭的状态；具体关门动作和时间未给。③不是本课被动，Rui写便条，has written是主动现在完成，不能只看分词written就判被动。",
+        "steps": [
+          "先看arrive有没有可移受事。",
+          "closed依据告示语境可读状态，不补当前关门过程。",
+          "has＋分词与be＋分词分开，角色验证。"
+        ],
+        "commonErrors": [
+          "arrived改arriving不保意；closed必定正在关；has written必被动。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①删were，保留arrived at nine，句意不变。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明arrive此处不直接带可转换受事，不能套普通被动。"
+          },
+          {
+            "points": 1,
+            "criterion": "②不确定当前关门过程，并说明可描述关闭/不开放状态。"
+          },
+          {
+            "points": 1,
+            "criterion": "③判为主动现在完成，识别has written而非be＋分词。"
+          },
+          {
+            "points": 1,
+            "criterion": "③明确Rui写欢迎便条，角色正确；分词自身不能证明被动。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第1题新主语控制be，实际施受不反转；过去分词身份清楚。",
+        "第2题will be repaired和问答保留be，日常复数are checked正确。",
+        "第3题by them正确，不把前句制作者自动认作后句未知搬运者。",
+        "第4题arrive不强套被动，closed状态歧义与has written主动完成均辨清。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w7-en-quiz1"
+        ],
+        "sectionIds": [
+          "w7-en-r1",
+          "w7-en-s2",
+          "w7-en-s3"
+        ],
+        "action": "重写施事/动作/受事三格，新主语另圈单复数，查第三列分词。"
+      },
+      {
+        "questionIds": [
+          "w7-en-quiz2"
+        ],
+        "sectionIds": [
+          "w7-en-s3",
+          "w7-en-s4"
+        ],
+        "action": "分日常are checked和未来will be repaired两行，移动辅助词后复查be仍在。"
+      },
+      {
+        "questionIds": [
+          "w7-en-quiz3"
+        ],
+        "sectionIds": [
+          "w7-en-s5",
+          "w7-en-s7"
+        ],
+        "action": "by后转宾格，再为每个动作单独找施事与时间；未给的保持未知。"
+      },
+      {
+        "questionIds": [
+          "w7-en-quiz4"
+        ],
+        "sectionIds": [
+          "w7-en-r1",
+          "w7-en-s6"
+        ],
+        "action": "用角色与完整结构判断，不靠-ed或be单独贴标签；分清状态描述与动作信息。"
+      }
+    ]
+  },
+  "mastery": [
+    "能以受事为主语转换现在、过去和will将来被动，并保留角色、时间、数量与施事要求。",
+    "be看新主语和时间，动作取过去分词；问否操作已有辅助词。",
+    "能说明by后代词和未知施事边界，识别明显不适用被动及状态歧义。",
+    "独立短测至少16/20且四项关键检查都过；查词允许，首次成绩与订正成绩分开。",
+    "无音频，不据书面完成推断真实听力、发音、口语达标。"
+  ],
+  "nextStep": "在30分钟预算内完成订正，达到16分与四项关键检查后手动进入第8周名词冠词代词及5—8周整合诊断。未过则下次英语学段续本周，不先堆复杂被动时态。",
+  "reviewActivity": {
+    "id": "w7-en-review",
+    "title": "30分钟订正，已计核心预算",
+    "instructions": [
+      "前5分钟核首次分与关键检查，分别标角色、be一致、分词、问否、证据范围错因。",
+      "接着10分钟回读对应小节，为最弱一题画角色卡并查词形，避免重背全表。",
+      "接着12分钟遮答重做错题；全对者解释新主语复数但by后单数为何仍用were，以及未知施事不能补谁。",
+      "最后3分钟记首次分、订正分和未过项目，下次优先补最弱结构；不另叠加一卷。"
+    ]
+  },
+  "sourcePolicy": {
+    "authorship": "全部英文短文、例练、短测、中文词义解释及评分原创。官方语法参考仅核对被动结构与使用边界，不复制其例句、练习或评论。",
+    "examStatus": "所有题目origin=original，均为原创基础衔接训练，非历年真题。面向河南南阳2028高考备考，但教材版本未核定，不编教材章页，不声称已核验2028题型分值或考试政策；20分为本课自测设计。",
+    "externalSources": [
+      {
+        "id": "w7-en-ref-passives",
+        "title": "British Council LearnEnglish：Passives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/passives",
+        "kind": "reference",
+        "scopeNote": "已实际打开核对be＋分词、话题焦点、施事省略和三种核心时态；不照搬全时态表。"
+      }
+    ]
+  },
+  "audioStatus": "未提供音频。词义、词形卡和译文支持书面自学；本课不测试真实听辨、发音或口语，不能据20分声明这些能力达标。"
+}

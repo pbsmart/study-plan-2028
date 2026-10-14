@@ -1,0 +1,320 @@
+{
+  "week": 8,
+  "subject": "数学",
+  "lessonId": "w8-数学",
+  "quizId": "w8-math-integrated-review",
+  "totalPoints": 20,
+  "minutes": 35,
+  "scoringIndexBase": 0,
+  "budgetPolicy": "Replaces the ordinary week-eight quiz within 240 core minutes; no additional paper. Weeks5–8 covered with necessary weeks1–4 prerequisites. Each actual scoring criterion counted once.",
+  "scoringMap": [
+    {
+      "questionId": "w8-math-quiz1",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "criterion": "值域[−4,0]完整正确",
+          "points": 1,
+          "skill": "值域[−4,0]完整正确",
+          "weeks": [
+            5
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "criterion": "用允许输入2说明输出0可取，不能机械复制输入开端点",
+          "points": 1,
+          "skill": "用允许输入2说明输出0可取，不能机械复制输入开端点",
+          "weeks": [
+            4,
+            5
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "criterion": "既非奇也非偶，并给2与−2不成对的范围理由",
+          "points": 1,
+          "skill": "既非奇也非偶，并给2与−2不成对的范围理由",
+          "weeks": [
+            6
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "criterion": "递减区间(−2,0]",
+          "points": 1,
+          "skill": "递减区间(−2,0]",
+          "weeks": [
+            6
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "criterion": "递增区间[0,2]",
+          "points": 1,
+          "skill": "递增区间[0,2]",
+          "weeks": [
+            6
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s7"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w8-math-quiz2",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "criterion": "分解(x−2)(x+1)",
+          "points": 1,
+          "skill": "分解(x−2)(x+1)",
+          "weeks": [
+            1,
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "criterion": "两个根−1、2正确",
+          "points": 1,
+          "skill": "两个根−1、2正确",
+          "weeks": [
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "criterion": "说明两根间异号乘积负、根处0，得到实数符号范围[−1,2]",
+          "points": 1,
+          "skill": "说明两根间异号乘积负、根处0，得到实数符号范围[−1,2]",
+          "weeks": [
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "criterion": "明确与原定义域[0,3)取交",
+          "points": 1,
+          "skill": "明确与原定义域[0,3)取交",
+          "weeks": [
+            3,
+            4,
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "criterion": "最终解集[0,2]，两端均有允许输入且满足原不等式",
+          "points": 1,
+          "skill": "最终解集[0,2]，两端均有允许输入且满足原不等式",
+          "weeks": [
+            3,
+            4,
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-math-s8",
+            "w8-math-s6"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w8-math-quiz3",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "criterion": "正确取正平方根9",
+          "points": 1,
+          "skill": "正确取正平方根9",
+          "weeks": [
+            1,
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s1",
+            "w8-math-s2",
+            "w8-math-s5"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "criterion": "负指数取倒数得1/9",
+          "points": 1,
+          "skill": "负指数取倒数得1/9",
+          "weeks": [
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s1",
+            "w8-math-s2",
+            "w8-math-s5"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "criterion": "9写成(1/3)⁻²",
+          "points": 1,
+          "skill": "9写成(1/3)⁻²",
+          "weeks": [
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s1",
+            "w8-math-s2",
+            "w8-math-s5"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "criterion": "用递减解释2−x<−2",
+          "points": 1,
+          "skill": "用递减解释2−x<−2",
+          "weeks": [
+            6,
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s1",
+            "w8-math-s2",
+            "w8-math-s5"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "criterion": "解x>4并说明严格不等式排除4",
+          "points": 1,
+          "skill": "解x>4并说明严格不等式排除4",
+          "weeks": [
+            2,
+            3,
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s1",
+            "w8-math-s2",
+            "w8-math-s5"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w8-math-quiz4",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "criterion": "正确令t=3^x>0并用9^x=t²",
+          "points": 1,
+          "skill": "正确令t=3^x>0并用9^x=t²",
+          "weeks": [
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s3",
+            "w8-math-s6",
+            "w8-math-s8"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "criterion": "二次因式(t−3)(t+1)与符号范围[−1,3]",
+          "points": 1,
+          "skill": "二次因式(t−3)(t+1)与符号范围[−1,3]",
+          "weeks": [
+            7
+          ],
+          "remediationSectionIds": [
+            "w8-math-s3",
+            "w8-math-s6",
+            "w8-math-s8"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "criterion": "与t>0取交得到(0,3]",
+          "points": 1,
+          "skill": "与t>0取交得到(0,3]",
+          "weeks": [
+            3,
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s3",
+            "w8-math-s6",
+            "w8-math-s8"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "criterion": "利用底数3递增还原x≤1，未误加x>0",
+          "points": 1,
+          "skill": "利用底数3递增还原x≤1，未误加x>0",
+          "weeks": [
+            6,
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s3",
+            "w8-math-s6",
+            "w8-math-s8"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "criterion": "与原[−2,2]取交，最终[−2,1]",
+          "points": 1,
+          "skill": "与原[−2,2]取交，最终[−2,1]",
+          "weeks": [
+            3,
+            4,
+            8
+          ],
+          "remediationSectionIds": [
+            "w8-math-s3",
+            "w8-math-s6",
+            "w8-math-s8"
+          ]
+        }
+      ]
+    }
+  ]
+}

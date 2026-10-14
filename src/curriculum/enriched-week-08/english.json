@@ -1,0 +1,850 @@
+{
+  "id": "w8-英语",
+  "week": 8,
+  "subject": "英语",
+  "title": "名词、冠词和代词：把人和物说清，再做四周整合",
+  "revision": "week08-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能区分本课常见可数与不可数名词，用单复数、量词和谓语一致把数量说清。",
+    "能依据首音与特指关系选择a/an/the或零冠词，不把字母和提及次数当唯一规则。",
+    "能按句中位置选择主格、宾格、物主形式，理解反身指代以及it同一对象、one同类对象。",
+    "在唯一20分新测中整合第5周未来表达、第6周过程与完成、第7周被动和本周名词代词；词义可查，分项只计一次。"
+  ],
+  "prerequisites": [
+    "回接第1周主语/宾语与词性、第3周中心词一致、第4周全文与指代；第5—7周关键结构在本周补救和第7节有直接回顾。",
+    "本周先学高频基础用法，冠词专名与复杂抽象名词转义不作规则全集；不要求先懂全部音标。",
+    "全课英文情境、中文词义译文与题目原创。词义和复习词形卡可全程查，先独立写再看答案。",
+    "没有音频。a/an的首音用文字提示来学，不把书面选择题当真实听辨或发音测验；不编教材章页。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "核心180分钟：前测9＋补救12＋七节正文/查词/自检45＋四例24＋四练24＋唯一累计短测32＋订正34。为四周新测和订正缩为4例4练；32分钟20分累计卷替换普通周测，不叠卷。忙时两周期各90分钟：第一周期至四例结束；第二周期四练、累计诊断、订正。没有额外选读/背表/听力任务；超时下一次英语学段接续同周，不自动推进、不占第三科预留。",
+    "segments": [
+      {
+        "id": "w8-en-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w8-en-d1",
+          "w8-en-d2",
+          "w8-en-d3"
+        ]
+      },
+      {
+        "id": "w8-en-time2",
+        "title": "前置补救与旧技能接续",
+        "minutes": 12,
+        "activityIds": [
+          "w8-en-r1"
+        ]
+      },
+      {
+        "id": "w8-en-time3",
+        "title": "七节连贯讲解与自检",
+        "minutes": 45,
+        "activityIds": [
+          "w8-en-s1",
+          "w8-en-s2",
+          "w8-en-s3",
+          "w8-en-s4",
+          "w8-en-s5",
+          "w8-en-s6",
+          "w8-en-s7"
+        ]
+      },
+      {
+        "id": "w8-en-time4",
+        "title": "四阶完整例题",
+        "minutes": 24,
+        "activityIds": [
+          "w8-en-ex1",
+          "w8-en-ex2",
+          "w8-en-ex3",
+          "w8-en-ex4"
+        ]
+      },
+      {
+        "id": "w8-en-time5",
+        "title": "四道分层独练",
+        "minutes": 24,
+        "activityIds": [
+          "w8-en-pr1",
+          "w8-en-pr2",
+          "w8-en-pr3",
+          "w8-en-pr4"
+        ]
+      },
+      {
+        "id": "w8-en-time6",
+        "title": "第5—8周唯一累计20分短测",
+        "minutes": 32,
+        "activityIds": [
+          "w8-en-quiz1",
+          "w8-en-quiz2",
+          "w8-en-quiz3",
+          "w8-en-quiz4"
+        ]
+      },
+      {
+        "id": "w8-en-time7",
+        "title": "分项核分、回看与遮答订正",
+        "minutes": 34,
+        "activityIds": [
+          "w8-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题共9分钟，只定位起点。可查词义，不计20分；不能用前测正确抵掉最后独立累计测验。最弱项在12分钟补救槽先处理。",
+    "questions": [
+      {
+        "id": "w8-en-d1",
+        "title": "主语中心与量词",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "选is/are：“The information about the rooms ___ useful.”；“Two bottles of water ___ on the table.” 写两句的主语中心。\n词义：information信息；about关于；rooms房间；useful有用；two两；bottles瓶；water水；table桌子；on在……上。",
+        "answer": "第一is，中心information；第二are，中心bottles。about后rooms不控制第一句，of后water不控制第二句。",
+        "steps": [
+          "主语先找中心，不取最近名词。",
+          "第3周信息不可数、瓶数可数的不同继续用。"
+        ],
+        "commonErrors": [
+          "rooms近所以are；water不可数所以第二is。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w8-en-d2",
+        "title": "代词位置先分清",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "补全：“___ helps ___.”（She/Her；I/me）要表达“她帮助我”。再判断“this is my bag”中my后是否还有名词。\n词义：help帮助；this这；bag包。",
+        "answer": "She helps me. my后有bag，my说明包属于我。主语用she，帮助对象用me。",
+        "steps": [
+          "角色先说她做、我受帮助。",
+          "把主语与宾语形式分开。",
+          "my带名词，与独立替代名词的形式区别。"
+        ],
+        "commonErrors": [
+          "Her helps I；my独立当包使用。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w8-en-d3",
+        "title": "过去分词不自动决定语态",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "“Tao has written the note.”与“The note was written by Tao.” 谁实际写便条？两句语态相同吗？\n词义：Tao涛；write写；note便条；by由。",
+        "answer": "两句都是涛写便条；前句主动现在完成，后句过去被动。不能只因written相同就判同一种结构。",
+        "steps": [
+          "看主语是谁及辅助词has/was。",
+          "再回实际施事涛核对。"
+        ],
+        "commonErrors": [
+          "便条写涛；有分词就全是被动。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "第1题中心或数量不稳",
+        "action": "补救槽先拆名词组，再读第2、3节。",
+        "sectionIds": [
+          "w8-en-r1",
+          "w8-en-s2",
+          "w8-en-s3"
+        ]
+      },
+      {
+        "when": "第2题人称形式不清",
+        "action": "补救按谁做/做给谁写两列，再读第5、6节。",
+        "sectionIds": [
+          "w8-en-r1",
+          "w8-en-s5",
+          "w8-en-s6"
+        ]
+      },
+      {
+        "when": "第3题旧时态/语态混淆",
+        "action": "在补救槽比较辅助结构，再读第7节四周通路。",
+        "sectionIds": [
+          "w8-en-r1",
+          "w8-en-s7"
+        ]
+      },
+      {
+        "when": "三题都能解释",
+        "action": "同槽解释错误选项，然后顺序读核心正文，前测不代替累计测验。",
+        "sectionIds": [
+          "w8-en-r1",
+          "w8-en-s1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w8-en-r1",
+      "title": "十二分钟补救：从名词组和辅助词找起点",
+      "level": "remediation",
+      "paragraphs": [
+        "先找名词中心。“The box near the chairs is mine”谈一个box箱子，near the chairs在椅子附近只是修饰，不让主语变复数。“Two boxes of paper are here”谈两个boxes，of paper说明装纸，不能因为paper不可数就用is。mine我的（东西），here这里。这是本周数量表达与第3周一致的接口。",
+        "第5周未来结构回顾：I will help；She is going to help。will与going to后用原形，be按主语配；已有计划和当场回应有常见选择，也有重叠。If she has time, she will help us中if条件用现在时，she配has。help帮助，time时间，us我们。条件还未确定，不说已发生。",
+        "第6—7周回顾：She is writing是现在过程；She was writing是过去观察点的过程；She has written是从现在看已有结果；The card was written by her是卡承受写这一动作的过去被动。写的实际主体仍是她。未来被动will be written保留be。write写，card卡，by her由她。",
+        "可查词形卡（原形—过去式—过去分词）：write—wrote—written写；make—made—made制作；take—took—taken拿/拍照；draw—drew—drawn画；send—sent—sent发送；check—checked—checked检查；finish—finished—finished完成；print—printed—printed印刷；arrive—arrived—arrived到达（本课用法不套普通被动）。-ing：writing、making、checking。这张卡用来查形式，不替代选择时态的理由。",
+        "常用小词索引：I我，you你，he他，she她，it它，we我们，they他们；me/him/her/us/them为相应宾语形式；my/your/his/her/our/their表示谁的，后接名词。a/an一个，the特指，this这，these这些，some一些，two两，three三，and并且，but但是，so所以，not不，now现在，yesterday昨天，tomorrow明天，every每一，last上一个，next下一个，in在……里，on在某日/某物上，at在某时/某地，for为了/持续，to向/到或结构连接，with与/用，of……的，by由/经。前4分钟拆名词组，接着4分钟读旧结构，最后4分钟完成自检并查词。"
+      ],
+      "keyPoints": [
+        "名词中心决定数量与一致。",
+        "未来、过程、完成、被动看整套结构。",
+        "词形可查，语境关系自己判断。"
+      ],
+      "checkpoint": {
+        "question": "“The two cards in the box ___ checked yesterday”被动空应怎样填？为什么不是was？",
+        "answer": "填were。主语中心two cards复数，且事件在昨天，过去被动用were checked；box只是修饰中的名词。",
+        "explanation": "旧时态与本周名词中心合起来用。"
+      }
+    },
+    {
+      "id": "w8-en-s1",
+      "title": "完整短文：一个盒子里有哪些东西，分别是谁的",
+      "level": "core",
+      "paragraphs": [
+        "原创短文《The Repair Box》（修理工具盒）：\nNing finds a small box in the classroom. The box has a blue lid. Inside it, there are two rulers, a useful torch and some information about a weekend repair class. The information is on one card. “This is my card,” says Yu. “The torch is mine too. Please give the card to me.” Ning checks the rulers. One ruler is broken, so the group needs a new one. Yu moves the tools herself. Later, she asks Ning for two pieces of advice about the box.\n这里只提供书面材料，没有音频。",
+        "场景词义：Ning宁、Yu雨（人名）；finds找到；small小；box盒子；classroom教室；has有；blue蓝色；lid盖子；inside在……里面；there are这里表示有；rulers尺子；useful有用的；torch手电筒；information信息；about关于；weekend周末；repair class维修课；card卡片；says说；mine我的（东西）；too也；please请；give给；checks检查；broken坏的；group小组；needs需要；new新的；moves移动；tools工具；herself她自己；later后来；asks…for向……要；pieces条/件；advice建议。常用小词见补救索引。",
+        "读意：宁在教室发现一个小盒子，再次说到的那个盒子有蓝盖。里面有两把尺、一只手电筒和周末维修课的信息；信息在一张卡上。雨说卡与手电筒属于自己，请宁把卡给她。小组发现一把尺坏了，要另一把；雨亲自搬工具，后来问宁要两条关于盒子的建议。",
+        "短文的语法都围绕人和物：box是一个，rulers是多个；information和advice在普通用法中不直接按个数变复数；a box引入对象，the box接同一盒；my card后有名词，mine独立代同类物；it指同一盒，new one指另一把尺。先读清关系，后面分节把形式解释透。"
+      ],
+      "keyPoints": [
+        "数量、身份、同一/同类对象构成阅读主线。",
+        "先后提及只是线索，关键是能否锁定对象。",
+        "词义全部可查，不增加额外背词任务。"
+      ],
+      "checkpoint": {
+        "question": "主文one card是不是意味着information必须变成informations？",
+        "answer": "不是。一张卡是载体数量，information仍按不可数信息用法，不因信息在一张或多张卡上就自动加s。",
+        "explanation": "现实载体可数与英语名词的可数用法是两层关系。"
+      }
+    },
+    {
+      "id": "w8-en-s2",
+      "title": "可数与不可数：先认识名词的用法，再放数量",
+      "level": "core",
+      "paragraphs": [
+        "可数名词可以按一个个单位说：a box一个盒子、two boxes两个盒子、a ruler一把尺、three rulers三把尺。可数单数普通用法通常需要限定，如a box、the box、my box；不能把“我买了一个盒子”写成I bought box。本句bought表示买的过去动作。",
+        "本课重点的information信息、advice建议、equipment设备在普通用法中为不可数。英语用法不必和中文一条信息、一条建议的直觉相同。要说多条，不写two informations、three advices或an equipment；可以说some information、some advice、some equipment。",
+        "不可数不是现实中永远不能测量或区分，而是这个英语名词的常见语法表达方式。water水可按瓶、杯或升计量；information可用条来分。本节不把所有词永远锁死一种类型，比如有些名词换意义可以变可数，遇到时查具体用法。核心先把三个高频词练稳。",
+        "数量词也要合拍：many用于可数复数，如many rulers很多尺；much用于不可数，如not much water没有很多水；some可用于复数可数与不可数，如some boxes、some advice。中文“很多”不能一律译many。日常肯定句用a lot of也自然，但本周不展开所有量词。"
+      ],
+      "keyPoints": [
+        "可数单数通常需a/the/my等限定。",
+        "information/advice/equipment普通用法不直接加s。",
+        "many配复数可数，much配不可数；some两类都可。"
+      ],
+      "checkpoint": {
+        "question": "“I need two advices”若要保留两条建议，应怎样说？",
+        "answer": "I need two pieces of advice.",
+        "explanation": "给不可数advice增加可数单位piece，数量变化落在单位上。"
+      }
+    },
+    {
+      "id": "w8-en-s3",
+      "title": "量词与一致：数的是piece还是后面的内容",
+      "level": "core",
+      "paragraphs": [
+        "一条建议写a piece of advice，两条写two pieces of advice；一件设备a piece of equipment。变复数的是piece，不是advice/equipment。“These two pieces of advice are useful”中主语中心pieces复数，谓语are；“The advice is useful”中中心advice不可数，谓语is。useful有用的。",
+        "这与第3周two bottles of water一致：bottles瓶是能计的单位，water是所装内容。要问多少瓶，答瓶数；问水的量，还需容量信息，不能看两瓶就猜两升。本课仍守第1周数量与第4周阅读证据边界。",
+        "注意限定词也一起检查。“These advice are useful”若保留多条的意思，可以改“These pieces of advice are useful”；若不指定条数，可说“This advice is useful”。两种修改结构可行，但意义范围不同；题目说保留两条时，就不能改成没有数量的笼统建议。",
+        "不要把单位词当万能替换。两本书通常直接two books，不必写two pieces of book。遇名词先判断可数性，再决定需不需要单位。写句子时按限定—中心—谓语三步走，不只修改最后的is/are就停。"
+      ],
+      "keyPoints": [
+        "数量变化常落在piece等单位中心。",
+        "限定、名词与谓语需要一起检查。",
+        "保留指定数量，不能用删数量修语法。"
+      ],
+      "checkpoint": {
+        "question": "保留“两件设备”修复“Two equipment is ready”。",
+        "answer": "Two pieces of equipment are ready.",
+        "explanation": "pieces变复数并控制are，equipment不加s；数量two保留。"
+      }
+    },
+    {
+      "id": "w8-en-s4",
+      "title": "冠词：a/an看首音，the看能否认出对象",
+      "level": "core",
+      "paragraphs": [
+        "a/an常引入一个尚未锁定的可数单数对象。选哪个看紧接词的第一个声音，而非只看字母：an old box中old以元音开头；a useful tool中useful开头是/j/这个辅音，近似英语you起首的声音；an hour中h不发音，以元音开头。old旧的，tool工具，hour小时。这里只给文字说明，不把认得提示当听辨或发音能力。",
+        "先确认名词允许a/an，再判断首音。information不可数，即使information首音是元音，也不能在本课普通用法前加an。“a useful piece of information”则可，a限定可数单位piece，紧接的useful以辅音开头。不能跳过可数性检查，只在a和an之间选。",
+        "the表示交谈双方或读者能识别那个/那些对象。主文先a box引入盒子，再the box回指同一盒，因前文已锁定。第一次提及也可以用the，如双方站在同一房间、谈那扇唯一门时“Please close the door”；close关，door门。相反第二次提到同类不同对象也未必the，所以不是只数提及次数。",
+        "泛指一类，复数可数与不可数常不加冠词，用Ø记空：“Tools are useful”泛谈工具有用；“Water is important”泛谈水重要。若说“The tools on this table”，则特指这张桌上的工具。important重要；on this table在这张桌上。泛指与特指取决于意思，不是看见复数就永不加the。",
+        "普通搭配中my、this等已有说明，不重复加the：“my box”，不是“the my box”。这里先掌握常用名词组，地名、乐器、固定短语等复杂用法以后按语境学，不在一节塞成例外目录。"
+      ],
+      "keyPoints": [
+        "a/an先看可数单数，再看紧接词首音。",
+        "the表达可识别的特指，不只是第二次提及。",
+        "泛指复数/不可数常零冠词，my前不重复the。"
+      ],
+      "checkpoint": {
+        "question": "“___ useful bag”与“___ hour”若都表示一个，用a还是an？这是不是听力测试？",
+        "answer": "a useful bag；an hour。按useful辅音首音、hour元音首音选择；这里是文字规则与词例运用，没有音频，不是听力测试。",
+        "explanation": "声音规则靠文字支架学习，不能把此题结果当真实听辨证明。"
+      }
+    },
+    {
+      "id": "w8-en-s5",
+      "title": "主格、宾格与谁的：位置不同，形式不同",
+      "level": "core",
+      "paragraphs": [
+        "“She gives me her card”＝她把她的卡给我。she作主语，是给的人；me作接受帮助/物品的宾语；her在card前说明卡属于她。主格常见I/you/he/she/it/we/they，对应宾格me/you/him/her/it/us/them。第7周by后需要宾格，同理to me、with them也看介词后的位置。",
+        "物主形式分两类：my card、your card、his card、her card、our cards、their cards，后面有名词；mine、yours、his、hers、ours、theirs独立代替所属物的名词组。例如“This card is mine”相当于这张卡是我的卡，不写my后空着，也不写mine card。his两种位置拼写一样，要看它后有没有名词。",
+        "主文“This is my card”中my修饰card；“The torch is mine too”中mine独立指我的手电筒。mine并非在所有句子都指卡或书，它替代什么由上下文决定。词形选对之后还要确认所属者，没有说明属于谁时不可替角色决定。",
+        "her尤其要连位置：give her a card中的her是给她，宾语；her card中的her是她的，带名词。不要背成“her永远是她的”。若写“The card was written by her”，her仍是她，表示写卡者；本周代词与上周被动自然衔接。"
+      ],
+      "keyPoints": [
+        "谁做用主格，动作/介词后的对象常用宾格。",
+        "my后接名词，mine独立代所属物。",
+        "同形her/his按位置判断，不只背一个中文义。"
+      ],
+      "checkpoint": {
+        "question": "“This is ___ bag. The red bag is ___.”两空都表示我的，选my/mine。词义：red红色。",
+        "answer": "This is my bag. The red bag is mine.",
+        "explanation": "第一空后有bag，第二空独立代my bag。"
+      }
+    },
+    {
+      "id": "w8-en-s6",
+      "title": "反身代词与it/one：同一个人、同一件物、同一类物",
+      "level": "core",
+      "paragraphs": [
+        "反身形式先学本课需要的myself我自己、yourself你自己、himself他自己、herself她自己、ourselves我们自己、themselves他们自己。主语和宾语同一人时可用：“Yu taught herself”＝雨自学，教的人与受教者同为雨；teach—taught教。不能写She taught her来表达同一人的自学，因为her常被读作另一位女性。",
+        "反身形式还可强调亲自：“Yu moved the tools herself”表示雨亲自搬工具；“Yu moved the tools by herself”通常强调她独自搬、没有别人帮。两种表达有联系但重心不同，原句没有by时，不必额外推出绝无任何人在旁。主文只说herself，因此重点是亲自。",
+        "it常指前面同一件已知物：“I found a key. I put it in my bag.”＝我找到一把钥匙，把那同一把放进包。one可替代同类可数单数对象：“My ruler is broken. I need a new one.”＝我的尺坏了，需要另一把新的。key钥匙，put放，broken坏的，need需要。one此处不必是原先那把。",
+        "不能随意用one代不可数information。想说这些信息本身，可按数与语境用it；想说另一条，可说another piece of information，another另一。读it/one还要看形容词与动作需求：lost it丢的是同一物，need a new one要的是同类另一个。不是凡前文出现过名词就只用it。"
+      ],
+      "keyPoints": [
+        "反身可同指，也可强调亲自；by oneself突出独自。",
+        "it同一物，one常指同类另一件可数物。",
+        "one不可任意替不可数名词。"
+      ],
+      "checkpoint": {
+        "question": "主文“Yu moves the tools herself”能仅凭herself认定她身边没有任何人吗？",
+        "answer": "不能。它强调她亲自搬；不必推出现场无人或绝无任何辅助，若要强调独自可用by herself并结合语境。",
+        "explanation": "形式的强调范围不同，不把亲自扩大成所有外部条件都已知。"
+      }
+    },
+    {
+      "id": "w8-en-s7",
+      "title": "四周合用：名词决定数量，时间与角色决定动词",
+      "level": "core",
+      "paragraphs": [
+        "一段真实文字会同时出现这些问题。先找对象是一个还是多个、同一还是同类，再看谁做或谁承受；接着用时间和过程/结果选结构。不能因为本周学冠词，就忽略第5—7周的辅助词与动作关系。",
+        "第5周可用“I am going to check the box tomorrow”写已有计划，用“I will help you”回应需要；开放语境两种表达有重叠，结构对且解释合适可接受。If the room is free, we will work there中条件is用现在时，不能把如果说成已确定。free空着的，work工作，there那里。",
+        "第6周“Lin is writing a card”在过程，“Lin has written two cards”报告到现在已有两张成品；明确yesterday的过去事件用wrote。过去某时正在做则was/were writing。对象不同，部分完成与另一部分进行可以并存，不能把two扩成all。",
+        "第7周“The cards were written by Lin”让卡为主语，卡复数控制were；分词written保持不变。将来为will be written，不漏be；by them用宾格；arrive/happen的普通用法不因主语非人就套被动。",
+        "累计卷四题各主查一周，每题5分。第8周题综合名词数量、a/an/the与指代；第1周角色、第2周时间、第3周一致、第4周阅读作为必要支撑可交叉标记，但每个实际评分点只计一次。本周唯一累计卷32分钟替换普通卷，接着用34分钟按分项订正，不再额外复习四份试卷。"
+      ],
+      "keyPoints": [
+        "名词组、时间线、语态与指代一起查。",
+        "常见选择不能伪装唯一语法。",
+        "累计四周每周主项5分，不重复计旧技能。"
+      ],
+      "checkpoint": {
+        "question": "“The two boxes near the door will be moved by her tomorrow”谁被搬，谁搬？能说已经搬完吗？",
+        "answer": "两只盒子被搬，她是搬的人；tomorrow与will be说明未来安排，不能说已完成。",
+        "explanation": "完整主语中心、by宾语及未来结构共同确定关系。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w8-en-ex1",
+      "title": "第一级：数量与谓语一起修",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "要保留“两条建议已写在这张卡上”，修复：“Two advices is on this card.” 再说明为何不能只把is改are。\n词义：two两；advice建议；on在……上；this card这张卡。",
+      "answer": "Two pieces of advice are on this card. advice普通用法不可数，不能直接加s；用pieces承载两条，谓语也按pieces复数配are。只改are仍留advices错误。",
+      "steps": [
+        "先认advice不可数用法。",
+        "保留two，补可数单位pieces。",
+        "中心pieces决定are。",
+        "卡的位置范围保留。"
+      ],
+      "commonErrors": [
+        "Two advices are；删two说some advice不保数量；pieces of advices。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-en-ex2",
+      "title": "第二级：首音与特指关系分两次看",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创短文填a/an/the/Ø：“Ke found ___ old ruler. ___ ruler was under a desk. She also found ___ useful lamp. She waited for ___ hour. In general, ___ tools can help people work.”\n词义：Ke可；found找到；old旧的；ruler尺子；under在下面；desk桌子；also也；useful有用；lamp灯；waited等待；hour小时；in general一般而言；tools工具；can能；help帮助；people人们；work工作。",
+      "answer": "an；The；a；an；Ø。第一引入旧尺，old元音开头；第二同一把尺已识别；useful首音辅音/j/；hour首h不发音；最后泛谈工具这一类，用复数零冠词。",
+      "steps": [
+        "先确认前三个物件都为可数单数。",
+        "引入还是已锁定对象分开。",
+        "a/an看紧接词首音，不按字母u/h硬判。",
+        "末句in general明确泛指，不是某套指定工具。"
+      ],
+      "commonErrors": [
+        "a old；an useful；a hour；只按出现次数不看对象。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-en-ex3",
+      "title": "第三级：同一人物的不同位置",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "在小组介绍中按“她给我她的笔；蓝色笔是我的；她亲自做了标签”完成：“___ gives ___ ___ pen. The blue pen is ___. She made the label ___.”（She/Her；I/me；her/hers；my/mine；herself/her）\n词义：give给；pen笔；blue蓝色；make制作；label标签。",
+      "answer": "She；me；her；mine；herself。她给我她的笔；蓝色笔是我的；她亲自做了标签。her前一次需接pen，mine独立代my pen；herself在末尾强调亲自，不必加独自完成的事实。",
+      "steps": [
+        "主语she与接受者me分位。",
+        "her后有pen，mine后无名词。",
+        "末句强调同一主语亲自做，用herself。",
+        "回译时不把亲自扩大为绝无帮助。"
+      ],
+      "commonErrors": [
+        "Her gives I；hers pen；my无名词；把herself解释为另一个女人。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-en-ex4",
+      "title": "第四级：一篇小故事里的同一物与替代物",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创：“Chen bought a cup yesterday. He left ___ on the bus. Now he needs a new ___. His sister says, ‘Use my cup today. The green cup is ___. Please give it back to ___ tomorrow.’”填it/one、my/mine、I/me，并解释指代。\n词义：Chen陈；bought买；cup杯；yesterday昨天；left遗留；bus公交；needs需要；new新的；sister姐姐/妹妹；use使用；today今天；green绿色；give…back归还；tomorrow明天。",
+      "answer": "it；one；mine；me。第一it是昨天买的同一杯；new one是另一个同类杯；mine是姐姐/妹妹在直接引语中说“我的杯子”；me是请归还给说话者本人。不能把mine解释为陈的杯子。",
+      "steps": [
+        "先分遗失的杯与要买的新杯。",
+        "直接引语换说话者，my/mine指说话的姐姐或妹妹本人。",
+        "give back to后用宾格me。",
+        "动作和代词一起查，不只找最近名词。"
+      ],
+      "commonErrors": [
+        "lost one误当同一；new it；mine归陈；to I。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w8-en-pr1",
+      "title": "基础：把中心与单位写清",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "保留数量修复：①“Three equipment are in the room.”②“These information is useful.” ②题未规定条数，可给两种合理改法并说差别。\n词义：three三；equipment设备；room房间；information信息；useful有用。",
+      "answer": "①Three pieces of equipment are in the room. ②This information is useful. 或These pieces of information are useful. 前者笼统指这份信息，后者明确按多条表达；若无条数要求两者均可。",
+      "steps": [
+        "equipment需可数单位pieces。",
+        "information本身不可数，限定与谓语一起配。",
+        "不同保意层级说明，不伪造唯一改法。"
+      ],
+      "commonErrors": [
+        "equipments；These information are；两种句子被说成数量完全相同。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-en-pr2",
+      "title": "应用：冠词要看交谈双方知道什么",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "情境A：桌上只有一把双方都看见的剪刀，说“Please pass me ___ scissors on the table.”；情境B：只是泛谈水对生活重要，“___ water is important for life.”；情境C：从许多盒子中随便找一个，“I need ___ box.” 填a/an/the/Ø并说明。\n词义：please请；pass me递给我；scissors剪刀；table桌子；water水；important重要；life生活/生命；need需要；box盒子。",
+      "answer": "A the，指定桌上双方认得的那把剪刀；B Ø，泛谈水；C a，任一可数单数盒子。A即使此前没提也可特指；不是必须先说过一次。",
+      "steps": [
+        "A用共同现场锁定对象。",
+        "B没有指定某处某份水。",
+        "C只需同类一个，非特定盒。"
+      ],
+      "commonErrors": [
+        "A第一次提所以a；B不可数就永远the；C漏冠词。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-en-pr3",
+      "title": "应用：短消息中的物主与人称视角",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "你正在读Min发来的原话：“This is ___ notebook. The red notebook is ___. Please return it to ___.”三空都指Min本人，填my/mine/I/me合适形式。接着Min写“My ruler is missing. I need another ___.”填it/one。\n词义：Min敏；notebook笔记本；red红色；return归还；ruler尺；missing不见了；need需要；another另一把。",
+      "answer": "my；mine；me；one。直接引语里Min是说话者，所以my/mine/me都归Min；another one指另一把同类尺，未必原来那把。",
+      "steps": [
+        "第一空后有notebook，用my。",
+        "第二独立所属物用mine。",
+        "to后对象用me。",
+        "另一把同类尺用one，不能用another it。"
+      ],
+      "commonErrors": [
+        "把my都换成your；mine notebook；to I；one必是丢失原尺。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w8-en-pr4",
+      "title": "迁移：一段记录连接四周技能",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创：“We are going to repair a chair tomorrow. The chair ___ (check) by Jia yesterday.（一般过去被动）Jia has ___ (write) two short notes about it. Now she ___ (make) a new label.（现在进行）The label will be placed on the chair.”\n补三空；说明it指什么，能否断言椅子已经修好？\n词义：repair修；chair椅子；check检查；Jia佳；yesterday昨天；write写；two两；short notes短便条；about关于；make制作；new label新标签；place放。",
+      "answer": "was checked；written；is making。it指同一把椅子；不能说已修好，修理是明天计划，已完成的是昨天检查与已写便条，现在标签仍在做。",
+      "steps": [
+        "chair单数过去被动was checked。",
+        "has后取written，Jia仍是写者。",
+        "she现在过程is making。",
+        "冠词a chair→the chair及it都锁同一对象。",
+        "把检查完成与修理完成分开。"
+      ],
+      "commonErrors": [
+        "was check；has wrote；is made误作目标过程；因为检查过就判已修好。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "中文能说一条建议，所以英文可以an advice。",
+      "why": "可数性按英文具体名词用法，不能直套中文量词。",
+      "right": "a piece of advice，数量改变piece。"
+    },
+    {
+      "wrong": "a/an只看首字母。",
+      "why": "useful以辅音首音开头，hour的h不发音。",
+      "right": "先判断可数性，再看紧接词首音。"
+    },
+    {
+      "wrong": "首次必a，第二次必the。",
+      "why": "共同现场可首次特指，后续也可能说另一个同类。",
+      "right": "看读者能否识别所说对象。"
+    },
+    {
+      "wrong": "my与mine都译我的，所以随便用。",
+      "why": "my带名词，mine独立代所属物。",
+      "right": "看空后是否有名词并核所属者。"
+    },
+    {
+      "wrong": "herself总证明现场没有任何人。",
+      "why": "无by时可只强调亲自，不排除所有外部帮助。",
+      "right": "区分亲自与独自，按语境解释。"
+    },
+    {
+      "wrong": "it与one都译它，任意替换。",
+      "why": "常分别指同一物与同类另一个，且one有可数性要求。",
+      "right": "跟随对象身份与动作需求，不只看词义。"
+    }
+  ],
+  "quiz": {
+    "instructions": "本周唯一20分累计诊断，四题各8分钟各5分，总32分钟；替换普通周测，没有第二份卷。材料均全新原创；各题词义及本周词形卡可查，不看答案独立答。第1题开放未来表达允许语境相容的替代；其他指定结构按任务作答。第4题10个实际评分点各0.5分，映射只计一次。无音频，不含真实听辨或发音评价。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w8-en-quiz1",
+        "title": "第5周回查：已有打算、回应与条件",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创对话：\nLuo: I chose a route yesterday. I ___ (walk) to the hill on Sunday.\nZhen: Your bag looks heavy. I ___ (carry) it for you.\nLuo: Thank you. If the weather ___ (be) fine, we ___ (eat) outside.\n①前两空从will/be going to中写自然完整形式，各给语境理由；不能声称另一种必然语法错误。②末两空按普通未来条件句完成，主句用will。③能否断定周日一定天气好？\n词义：Luo罗、Zhen珍；chose选定；route路线；yesterday昨天；walk步行；hill山丘；on Sunday周日；bag包；looks看起来；heavy重；carry提；for you帮你；thank you谢谢；if如果；weather天气；fine晴好；eat吃饭；outside户外。",
+        "answer": "常见I am going to walk，昨天选路线支持已有打算；I will carry，看到重包当场提出帮助。will walk可确认未来安排，am going to carry可强调马上帮助的意图，结构与解释相容也可。条件句is；will eat。不能确定周日天气好，if提出条件，尚非已确认事实。",
+        "steps": [
+          "两空各看上下文，不只看周日。",
+          "结构完整：I am…或will＋原形。",
+          "条件weather单数用is，主句will eat。",
+          "保留if的未知前提。"
+        ],
+        "commonErrors": [
+          "漏am；will carries；if weather will be；把常见选择判唯一；天气已定。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "第一空完整正确，并以昨天选路线解释已有打算或确认安排；合理替代可。"
+          },
+          {
+            "points": 1,
+            "criterion": "第二空完整正确，并以重包/回应说明帮助意图；合理替代可，不把另一结构一概判错。"
+          },
+          {
+            "points": 1,
+            "criterion": "条件空is正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "主句will eat结构正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝天气一定好，说明if条件未确认。"
+          }
+        ]
+      },
+      {
+        "id": "w8-en-quiz2",
+        "title": "第6周回查：不同对象的过程与结果",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创记录：“Yesterday, Su ___ (make) a small basket. At eight last night, the two helpers ___ (paint) it.（当时正在涂色）Now Su ___ (write) the price cards.（正在写）She ___ (finish) two cards.（用现在完成时报告当前结果）Those two are ready, but she is still writing the last card.”\n补四空；再说明为什么不能概括“所有卡都已写好”。\n词义：Su苏；make制作；small basket小篮子；at eight last night昨晚八点；two helpers两名帮手；paint涂色；write写；price cards价格卡；finish完成；those two那两张；ready准备好；still仍然；last最后一张。",
+        "answer": "made；were painting；is writing；has finished。明确昨天事件用made，过去复数过程were painting，现在单数过程is writing，当前两张完成结果has finished。不能说全部完成，最后一张仍在写。",
+        "steps": [
+          "给四动作分别标观察时间和阶段。",
+          "be按主语与时间配，write去e加ing。",
+          "has后finished分词。",
+          "two范围与last进行对照。"
+        ],
+        "commonErrors": [
+          "一段全用同一时态；was painting配两人；has finish；两张扩大全部。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "made保留昨天的过去事件。"
+          },
+          {
+            "points": 1,
+            "criterion": "were painting准确表达过去复数主体的过程。"
+          },
+          {
+            "points": 1,
+            "criterion": "is writing准确表达Su现在过程。"
+          },
+          {
+            "points": 1,
+            "criterion": "has finished准确表达当前两张已完成结果。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝全部已好，并据最后一张仍在写说明范围。"
+          }
+        ]
+      },
+      {
+        "id": "w8-en-quiz3",
+        "title": "第7周回查：被动保持角色和辅助词",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "①将“They drew two signs on Monday”改过去被动，保留施事并用代词。②将“The group will print the signs tomorrow”改被动。③保留原意改正“The bus was arrived at ten”。\n词义：they他们；draw画；two signs两块标牌；on Monday周一；group小组；print印；tomorrow明天；bus公交车；arrive到达；at ten十点。",
+        "answer": "①Two signs were drawn by them on Monday. ②The signs will be printed by the group tomorrow. ③The bus arrived at ten. 新主语signs复数控制were；draw用分词drawn，they到by后them；将来被动保留be；arrive此处不套普通被动。",
+        "steps": [
+          "受事signs移前，现实制作者不变。",
+          "过去复数were＋drawn，by them。",
+          "将来will be printed。",
+          "arrive保过去事件而删多余was。"
+        ],
+        "commonErrors": [
+          "was因未看新主语；were drew；by they；will printed；was arrived。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①were drawn结构正确，signs复数控制were。"
+          },
+          {
+            "points": 1,
+            "criterion": "①by them宾格正确，施受不反转。"
+          },
+          {
+            "points": 1,
+            "criterion": "①保留two signs及on Monday。"
+          },
+          {
+            "points": 1,
+            "criterion": "②The signs will be printed by the group tomorrow完整保意，be不漏。"
+          },
+          {
+            "points": 1,
+            "criterion": "③The bus arrived at ten，保留过去到达事实，不强套被动。"
+          }
+        ]
+      },
+      {
+        "id": "w8-en-quiz4",
+        "title": "第8周回查：完整短文里的数量、特指和代词",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "原创短文，在①②⑩填a/an/the/Ø，其余依括号选择或变形：\n“Hua found ①___ old folder. ②___ folder contained two ③___ (piece) of advice about plants. The information ④___ (is/are) useful. ‘This folder is ⑤___ (my/mine),’ said her sister. Hua returned it to ⑥___ (she/her). Her sister carried the folder ⑦___ (herself/her), without anyone helping. Later, Hua bought a pen and put ⑧___ (it/one) in her bag. Her ruler was broken, so she needed a new ⑨___ (it/one). She spent ⑩___ hour choosing one.”\n词义：Hua华；found找到；old旧的；folder文件夹；contained装有；piece条/份；advice建议；about关于；plants植物；information信息；useful有用；said说；sister姐姐或妹妹；returned归还；carried拿着/搬运；without anyone helping没有人帮忙；later后来；bought买；pen笔；put放；bag包；ruler尺；broken坏的；needed需要；new新的；spent花费时间；hour小时；choosing选择。",
+        "answer": "①an；②The；③pieces；④is；⑤mine；⑥her；⑦herself；⑧it；⑨one；⑩an。old元音首音，folder再次指同一个；two后单位pieces复数而advice不变；information不可数配is；mine独立替所属物，to后her；herself同主语并结合语境为自己拿；it同一支买来的笔，new one另把尺；hour首h不发音。",
+        "steps": [
+          "先读完整人物与物件链。",
+          "冠词分别看首音和特指，不只看字母。",
+          "数量落在pieces，information不随前面的植物复数变化。",
+          "直接引语mine指说话的姐姐或妹妹本人，to后宾格her。",
+          "it与one分别跟随笔和尺的身份。"
+        ],
+        "commonErrors": [
+          "a old；an useful式首字母误判；advices；information are；my独立；to she；new it。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 0.5,
+            "criterion": "①an正确。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "②The正确，回指同一个folder。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "③pieces正确，two的数量变化落在单位。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "④is正确，information为主语中心。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑤mine正确，独立代所属文件夹。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑥her正确，to后宾格。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑦herself正确，指同一位sister本人。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑧it正确，指刚买的同一支笔。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑨one正确，指同类另一把尺。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑩an正确，hour以元音首音开头。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第1题未来结构完整，允许合理重叠，条件is与will eat正确且不把条件当事实。",
+        "第2题进行/完成的辅助结构与时间正确，不把两张已完扩成全部。",
+        "第3题被动be/分词与by them正确，未来be不漏，arrive不强套被动。",
+        "第4题可数单位与一致、my/mine/宾格、it/one均理解；①②⑩冠词三项至少两项正确，错项完成定点订正。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w8-en-quiz1"
+        ],
+        "sectionIds": [
+          "w8-en-r1",
+          "w8-en-s7"
+        ],
+        "action": "回读本周未来结构与if回顾，两空各写语境理由；需深补时下次回看第5周，不另加卷。"
+      },
+      {
+        "questionIds": [
+          "w8-en-quiz2"
+        ],
+        "sectionIds": [
+          "w8-en-r1",
+          "w8-en-s7"
+        ],
+        "action": "按四动作画时间线，分别填辅助词和词形；回读本周部分/全部提醒，需深补时下次回第6周。"
+      },
+      {
+        "questionIds": [
+          "w8-en-quiz3"
+        ],
+        "sectionIds": [
+          "w8-en-r1",
+          "w8-en-s5",
+          "w8-en-s7"
+        ],
+        "action": "画施事—动作—受事，be跟新主语、分词查第三列；by宾格回第5节，需深补时下次回第7周。"
+      },
+      {
+        "questionIds": [
+          "w8-en-quiz4"
+        ],
+        "sectionIds": [
+          "w8-en-s2",
+          "w8-en-s3",
+          "w8-en-s4",
+          "w8-en-s5",
+          "w8-en-s6"
+        ],
+        "action": "名词数量与一致回第2/3节，冠词回第4节，所属与人称回第5节，同一/同类和反身回第6节；按错项查，不重刷全卷。"
+      }
+    ]
+  },
+  "mastery": [
+    "能用可数单位保留数量，名词中心与限定/谓语协调，不用删数量修句。",
+    "冠词能区分首音、特指和泛指，已有限定的my等不重复the。",
+    "代词按句位、所有者和同一/同类关系选择，亲自/独自不乱扩大。",
+    "累计独立分至少16/20且四项关键检查全过，各周主技能与首次/订正分分别记录。",
+    "本课没有音频，文字首音提示和书面作答不证明真实听辨、发音或口语达标。"
+  ],
+  "nextStep": "用核心内34分钟完成累计订正，16分且关键检查全过后手动推进下一学习周；某周核心技能未过就下次英语学段定点回看本周补救或对应旧周，不自动跳过，也不再叠普通周测。",
+  "reviewActivity": {
+    "id": "w8-en-review",
+    "title": "34分钟累计订正，已计入核心",
+    "instructions": [
+      "前6分钟核20分及四项关键检查，四题分别主查5/6/7/8周；第4题十项各0.5分逐项记，不把一个错误重复扣到别周。",
+      "接着10分钟按映射回读本周对应节，分清词义没读懂、主语中心错、结构错、指代或证据范围错。",
+      "接着14分钟遮答订正错点并给一句中文理由；全对者解释未来形式替代、过去过程不保证结果、被动主语控制be，以及it/one的不同。",
+      "最后4分钟记录首次分、订正分、未过关键项与下次先补哪一节。映射只是已有分数的说明，不新增第二套题或重复分数。"
+    ]
+  },
+  "sourcePolicy": {
+    "authorship": "全部英文教学短文、四阶例练、四周累计题、词义译文及评分原创。官方语法参考仅核验高频可数性、冠词首音与物主形式，不复制其例句或练习。",
+    "examStatus": "所有设问origin=original，为原创基础训练，非历年真题。面向河南南阳2028高考备考但未核定教材版本，不编章页，不声称已核验2028题型分值或考试安排。20分是本课累计诊断设计。",
+    "externalSources": [
+      {
+        "id": "w8-en-ref-uncount",
+        "title": "British Council LearnEnglish：Uncount nouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/uncount-nouns",
+        "kind": "reference",
+        "scopeNote": "已实际打开核验information/advice/equipment普通不可数用法及可数单位表达；本课句子原创。"
+      },
+      {
+        "id": "w8-en-ref-articles",
+        "title": "British Council LearnEnglish：The indefinite article",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/indefinite-article",
+        "kind": "reference",
+        "scopeNote": "经官方页面链接实际打开，核对a/an依首音及可数单数要求；不把网页音频当本课已提供。"
+      },
+      {
+        "id": "w8-en-ref-possessives",
+        "title": "British Council LearnEnglish：Possessives pronouns",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/possessives-pronouns",
+        "kind": "reference",
+        "scopeNote": "已实际打开核验物主代词独立替代名词组；本课语料与译文原创。"
+      }
+    ]
+  },
+  "audioStatus": "本课没有音频。a/an的首音说明仅为文字学习支架，书面题不能证明真实听辨或发音；累计20分也不评价听力或口语。"
+}

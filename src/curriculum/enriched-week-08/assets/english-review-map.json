@@ -1,0 +1,476 @@
+{
+  "week": 8,
+  "subject": "英语",
+  "lessonId": "w8-英语",
+  "totalPoints": 20,
+  "minutes": 32,
+  "budgetPolicy": "映射已有累计短测，替换普通周测；没有新增题、分数或用时。",
+  "scoringIndexBase": 0,
+  "scoringIndexMeaning": "scoringIndex为question.scoring的0基下标，每个实际评分项仅出现一次；primaryWeek分项计分，weeks仅为交叉技能标签，不另计分。",
+  "firstReadingPolicy": "每道题首次阅读已计在对应题用时内，查词与回查不另加时。",
+  "pointsByPrimaryWeek": {
+    "5": 5,
+    "6": 5,
+    "7": 5,
+    "8": 5
+  },
+  "scoringMap": [
+    {
+      "questionId": "w8-en-quiz1",
+      "points": 5,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 5,
+          "weeks": [
+            5
+          ],
+          "skill": "已有计划的完整未来形式及语境理由",
+          "points": 1,
+          "criterion": "第一空完整正确，并以昨天选路线解释已有打算或确认安排；合理替代可。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 5,
+          "weeks": [
+            5
+          ],
+          "skill": "即时帮助的完整未来形式与重叠边界",
+          "points": 1,
+          "criterion": "第二空完整正确，并以重包/回应说明帮助意图；合理替代可，不把另一结构一概判错。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 5,
+          "weeks": [
+            5,
+            3
+          ],
+          "skill": "未来条件从句的现在形式",
+          "points": 1,
+          "criterion": "条件空is正确。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 5,
+          "weeks": [
+            5,
+            1
+          ],
+          "skill": "主句will＋原形",
+          "points": 1,
+          "criterion": "主句will eat结构正确。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 5,
+          "weeks": [
+            5,
+            4
+          ],
+          "skill": "条件与已确认事实区分",
+          "points": 1,
+          "criterion": "拒绝天气一定好，说明if条件未确认。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-en-r1",
+        "w8-en-s7"
+      ],
+      "remediationAction": "回读本周未来结构与if回顾，两空各写语境理由；需深补时下次回看第5周，不另加卷。"
+    },
+    {
+      "questionId": "w8-en-quiz2",
+      "points": 5,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            2
+          ],
+          "skill": "明确过去事件用过去式",
+          "points": 1,
+          "criterion": "made保留昨天的过去事件。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            3
+          ],
+          "skill": "过去观察点的复数过程",
+          "points": 1,
+          "criterion": "were painting准确表达过去复数主体的过程。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            3
+          ],
+          "skill": "现在观察点的单数过程",
+          "points": 1,
+          "criterion": "is writing准确表达Su现在过程。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 6,
+          "weeks": [
+            6
+          ],
+          "skill": "此前完成与当前结果联系",
+          "points": 1,
+          "criterion": "has finished准确表达当前两张已完成结果。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            4
+          ],
+          "skill": "部分完成与全部范围区分",
+          "points": 1,
+          "criterion": "拒绝全部已好，并据最后一张仍在写说明范围。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-en-r1",
+        "w8-en-s7"
+      ],
+      "remediationAction": "按四动作画时间线，分别填辅助词和词形；回读本周部分/全部提醒，需深补时下次回第6周。"
+    },
+    {
+      "questionId": "w8-en-quiz3",
+      "points": 5,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 7,
+          "weeks": [
+            7,
+            3,
+            6
+          ],
+          "skill": "被动新主语一致及过去分词",
+          "points": 1,
+          "criterion": "①were drawn结构正确，signs复数控制were。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s5",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 7,
+          "weeks": [
+            7,
+            1
+          ],
+          "skill": "by宾格及实际施受保持",
+          "points": 1,
+          "criterion": "①by them宾格正确，施受不反转。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s5",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 7,
+          "weeks": [
+            7,
+            4
+          ],
+          "skill": "数量与过去时间保留",
+          "points": 1,
+          "criterion": "①保留two signs及on Monday。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s5",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 7,
+          "weeks": [
+            7,
+            5
+          ],
+          "skill": "未来被动保留be及事件信息",
+          "points": 1,
+          "criterion": "②The signs will be printed by the group tomorrow完整保意，be不漏。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s5",
+            "w8-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 7,
+          "weeks": [
+            7
+          ],
+          "skill": "不及物arrive不用普通被动",
+          "points": 1,
+          "criterion": "③The bus arrived at ten，保留过去到达事实，不强套被动。",
+          "remediationSectionIds": [
+            "w8-en-r1",
+            "w8-en-s5",
+            "w8-en-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-en-r1",
+        "w8-en-s5",
+        "w8-en-s7"
+      ],
+      "remediationAction": "画施事—动作—受事，be跟新主语、分词查第三列；by宾格回第5节，需深补时下次回第7周。"
+    },
+    {
+      "questionId": "w8-en-quiz4",
+      "points": 5,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 8,
+          "weeks": [
+            8
+          ],
+          "skill": "a/an按紧接词首音",
+          "points": 0.5,
+          "criterion": "①an正确。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            4
+          ],
+          "skill": "同一对象特指the",
+          "points": 0.5,
+          "criterion": "②The正确，回指同一个folder。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            3
+          ],
+          "skill": "不可数内容的单位复数",
+          "points": 0.5,
+          "criterion": "③pieces正确，two的数量变化落在单位。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            3
+          ],
+          "skill": "名词中心与谓语一致",
+          "points": 0.5,
+          "criterion": "④is正确，information为主语中心。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            1
+          ],
+          "skill": "名词性物主代词独立使用",
+          "points": 0.5,
+          "criterion": "⑤mine正确，独立代所属文件夹。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 5,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            1,
+            7
+          ],
+          "skill": "介词后宾格",
+          "points": 0.5,
+          "criterion": "⑥her正确，to后宾格。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 6,
+          "primaryWeek": 8,
+          "weeks": [
+            8
+          ],
+          "skill": "反身同指",
+          "points": 0.5,
+          "criterion": "⑦herself正确，指同一位sister本人。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 7,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            4
+          ],
+          "skill": "it回指同一物",
+          "points": 0.5,
+          "criterion": "⑧it正确，指刚买的同一支笔。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 8,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            4
+          ],
+          "skill": "one替代同类可数物",
+          "points": 0.5,
+          "criterion": "⑨one正确，指同类另一把尺。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        },
+        {
+          "scoringIndex": 9,
+          "primaryWeek": 8,
+          "weeks": [
+            8
+          ],
+          "skill": "hour元音首音与an",
+          "points": 0.5,
+          "criterion": "⑩an正确，hour以元音首音开头。",
+          "remediationSectionIds": [
+            "w8-en-s2",
+            "w8-en-s3",
+            "w8-en-s4",
+            "w8-en-s5",
+            "w8-en-s6"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-en-s2",
+        "w8-en-s3",
+        "w8-en-s4",
+        "w8-en-s5",
+        "w8-en-s6"
+      ],
+      "remediationAction": "名词数量与一致回第2/3节，冠词回第4节，所属与人称回第5节，同一/同类和反身回第6节；按错项查，不重刷全卷。"
+    }
+  ]
+}

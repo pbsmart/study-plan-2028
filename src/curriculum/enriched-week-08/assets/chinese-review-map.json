@@ -1,0 +1,379 @@
+{
+  "week": 8,
+  "subject": "语文",
+  "lessonId": "w8-语文",
+  "totalPoints": 20,
+  "minutes": 28,
+  "budgetPolicy": "映射已有累计短测，替换普通周测；没有新增题、分数或用时。",
+  "scoringIndexBase": 0,
+  "scoringIndexMeaning": "scoringIndex为question.scoring的0基下标，每个实际评分项仅出现一次；primaryWeek分项计分，weeks仅为交叉技能标签，不另计分。",
+  "firstReadingPolicy": "每道题首次阅读已计在对应题用时内，查词与回查不另加时。",
+  "pointsByPrimaryWeek": {
+    "5": 5,
+    "6": 5,
+    "7": 5,
+    "8": 5
+  },
+  "scoringMap": [
+    {
+      "questionId": "w8-cn-quiz1",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 5,
+          "weeks": [
+            5
+          ],
+          "skill": "定位并列动宾不当",
+          "points": 1,
+          "criterion": "①明确指出加宽与座位数量这一组不合适。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 5,
+          "weeks": [
+            5,
+            1
+          ],
+          "skill": "最少必要修改保留两项成效",
+          "points": 1,
+          "criterion": "①保留通道扩大和座位增加两项，修改自然。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 5,
+          "weeks": [
+            5
+          ],
+          "skill": "诊断使令结构外层缺主语",
+          "points": 1,
+          "criterion": "②指出原句外层使缺主语，而非笼统说不通。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 5,
+          "weeks": [
+            5
+          ],
+          "skill": "接受保意修复变式",
+          "points": 1,
+          "criterion": "②一种完整保意改法成立，合理替代可。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 5,
+          "weeks": [
+            5,
+            1
+          ],
+          "skill": "识别形容词状态谓语",
+          "points": 1,
+          "criterion": "③判无需补动词，并说明安静作状态谓语。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-cn-r1",
+        "w8-cn-s7"
+      ],
+      "remediationAction": "逐项配搭并列成分，比较缺外层主语与状态谓语；必要时下次回看第5周。"
+    },
+    {
+      "questionId": "w8-cn-quiz2",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            1
+          ],
+          "skill": "施受与不同动作主体保持",
+          "points": 1,
+          "criterion": "①整理者志愿者、移动者管理员的施受关系正确。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            1
+          ],
+          "skill": "时间数量地点信息不丢",
+          "points": 1,
+          "criterion": "①保留上周/今天两个时间以及一批、二楼。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            1
+          ],
+          "skill": "拆短保留只供现场限制",
+          "points": 1,
+          "criterion": "①保留只供现场阅读，三个短句通顺且指代清楚。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 6,
+          "weeks": [
+            6,
+            4
+          ],
+          "skill": "依引入顺序与具体指代排序",
+          "points": 1,
+          "criterion": "②丙—甲—乙，并准确说明这些目录所指。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 6,
+          "weeks": [
+            6
+          ],
+          "skill": "解释步骤和作用的衔接证据",
+          "points": 1,
+          "criterion": "②解释先编后贴、据目录定位的步骤/作用关系，不只说顺口。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-cn-r1",
+        "w8-cn-s4",
+        "w8-cn-s5",
+        "w8-cn-s7"
+      ],
+      "remediationAction": "用本周角色/限制清单，核两次动作主体与时间；代回目录再排序，必要时下次回看第6周。"
+    },
+    {
+      "questionId": "w8-cn-quiz3",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 7,
+          "weeks": [
+            7,
+            1
+          ],
+          "skill": "意象与状态对应",
+          "points": 1,
+          "criterion": "一组具体意象及状态正确。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 7,
+          "weeks": [
+            7
+          ],
+          "skill": "阅读全文而非套意象固定情感",
+          "points": 1,
+          "criterion": "拒绝枯枝就等于全诗绝望，并联系后文新绿或引光。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 7,
+          "weeks": [
+            7,
+            2
+          ],
+          "skill": "动作作用与有限情感连接",
+          "points": 2,
+          "criterion": "解释开帘让新芽得到光照1分，连接欣喜/关注/珍惜等相容情感1分。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 7,
+          "weeks": [
+            7,
+            1,
+            3
+          ],
+          "skill": "当下状态不扩大为永久保证",
+          "points": 1,
+          "criterion": "拒绝未来永不枯萎的推断，并说明只给当下新芽与照顾，没有永久保证。",
+          "remediationSectionIds": [
+            "w8-cn-r1",
+            "w8-cn-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-cn-r1",
+        "w8-cn-s7"
+      ],
+      "remediationAction": "回读本周诗歌证据提醒，把意象状态、开帘作用与有限情感连接；不把新绿扩大为永久保证，必要时下次回看第7周。"
+    },
+    {
+      "questionId": "w8-cn-quiz4",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            4
+          ],
+          "skill": "非的否定范围落实",
+          "points": 1,
+          "criterion": "译出不是生来就有知识的人，否定范围正确。",
+          "remediationSectionIds": [
+            "w8-cn-s2",
+            "w8-cn-s3",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s6"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            4
+          ],
+          "skill": "好古的实词语境义",
+          "points": 1,
+          "criterion": "译出喜爱古代文化。",
+          "remediationSectionIds": [
+            "w8-cn-s2",
+            "w8-cn-s3",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s6"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            4
+          ],
+          "skill": "勤勉求知与通顺判断句",
+          "points": 1,
+          "criterion": "译出勤勉探求知识，句意自然，者也的判断关系不乱。",
+          "remediationSectionIds": [
+            "w8-cn-s2",
+            "w8-cn-s3",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s6"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            4
+          ],
+          "skill": "两处之指代内容",
+          "points": 1,
+          "criterion": "两处之落实知识/相关道理，而非仅写代词或的。",
+          "remediationSectionIds": [
+            "w8-cn-s2",
+            "w8-cn-s3",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s6"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 8,
+          "weeks": [
+            8,
+            1,
+            3
+          ],
+          "skill": "原文反证错误概括",
+          "points": 1,
+          "criterion": "拒绝天生全知/不必求学，并联系非或勤勉求知给依据。",
+          "remediationSectionIds": [
+            "w8-cn-s2",
+            "w8-cn-s3",
+            "w8-cn-s4",
+            "w8-cn-s5",
+            "w8-cn-s6"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w8-cn-s2",
+        "w8-cn-s3",
+        "w8-cn-s4",
+        "w8-cn-s5",
+        "w8-cn-s6"
+      ],
+      "remediationAction": "落实非、好、敏、求及两处之，按留换补调串译；回查否定和学习过程，不背答案代独立新测。"
+    }
+  ]
+}

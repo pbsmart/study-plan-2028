@@ -52,9 +52,9 @@ test('legacy migration retains every record, old checkoff, theme and original sn
   await page.getByRole('navigation').getByRole('link',{name:'首四周学习'}).click();await expect(page.locator('.legacy-first')).toContainText('2 项')
 })
 test('checkoffs are reversible, survive refresh, and stay isolated by learning week',async({page})=>{
-  await page.goto('/#learn/7/math/knowledge');const task=page.locator('.focus-checkpoint input[type=checkbox]')
+  await page.goto('/#learn/9/math/knowledge');const task=page.locator('.focus-checkpoint input[type=checkbox]')
   await task.check();await page.reload();await expect(task).toBeChecked()
-  await page.goto('/#learn/8/math/knowledge');await expect(task).not.toBeChecked();await page.goto('/#learn/7/math/knowledge');await expect(task).toBeChecked();await task.uncheck()
+  await page.goto('/#learn/10/math/knowledge');await expect(task).not.toBeChecked();await page.goto('/#learn/9/math/knowledge');await expect(task).toBeChecked();await task.uncheck()
   await page.getByRole('button',{name:'← 退出专注',exact:true}).click();await expect(page.locator('.weekly-summary')).toContainText('0 小时')
 })
 
@@ -84,7 +84,7 @@ test('v1 and v2 backups validate, trap focus, confirm overwrites and preserve mi
 })
 test('published lessons render real content and keep official references separate',async({page})=>{
   await page.goto('/#overview');await expect(page.getByText(`共 84 个学习周，已有 ${courseData.contentCoverage.detailedWeeks.length} 周八科内容齐全`, {exact:false})).toContainText(`${courseData.contentCoverage.detailedLessons} 个学科课次`)
-  await page.goto('/#learn/7/math/knowledge');await expect(page.locator('.knowledge-block')).not.toHaveCount(0)
+  await page.goto('/#learn/9/math/knowledge');await expect(page.locator('.knowledge-block')).not.toHaveCount(0)
   await page.getByRole('button',{name:'下一节 →',exact:true}).click();await expect(page.locator('.focus-section .problem-card').first()).toContainText('原创基础例题（非高考原题）');const details=page.locator('.focus-section .problem-card').first().locator('details');await expect(details).not.toHaveAttribute('open','');await details.locator('summary').click();await expect(details).toHaveAttribute('open','');await expect(details.locator('.solution')).toContainText('答案：')
   await page.locator('.focus-source-details > summary').click();await expect(page.locator('.source-panel')).toContainText('往年真题考点参考（查看官方评析）');await expect(page.locator('.source-panel')).toContainText('2025 年 · 全国一卷');await expect(page.locator('.source-panel a').first()).toHaveAttribute('href',/zjzs\.net/)
 })
@@ -96,7 +96,7 @@ test('third subject switches independently between geography and politics withou
 
 test('representative early, middle and final weeks render all eight subjects through focus navigation',async({page})=>{
   test.setTimeout(300000)
-  for(const number of [7,9,24,60,72,84]){
+  for(const number of [9,10,24,60,72,84]){
     for(const subject of ['chinese','math','english','physics','chemistry','biology','geography','politics']){
       if(['biology','geography','politics'].includes(subject)){await page.goto('/#settings');await page.getByLabel('第三科参考').selectOption(subject)}
       await page.goto(`/#learn/${number}/${subject}/knowledge`);await expect(page.locator('.knowledge-block')).not.toHaveCount(0)
