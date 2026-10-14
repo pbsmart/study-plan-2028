@@ -49,7 +49,7 @@ watch(() => props.step, focusHeading)
       <h1>{{ lesson?.enrichment?.title || lesson?.title || '本学科内容待补充' }}</h1>
       <p v-if="status !== 'complete'" class="content-warning">{{ statusNames[status] }}。尚未提供的正文或题目不会被视为已完成。</p>
       <p v-if="lesson?.trainingScope" class="focus-scope">{{ lesson.trainingScope }}</p>
-      <p v-if="lesson?.audioStatus || lesson?.enrichment?.audioStatus" class="focus-scope">听力文字预训练，无音频；完成本页不代表真实听辨达标。</p>
+      <p v-if="subject === 'english' && (lesson?.audioStatus || lesson?.enrichment?.audioStatus)" class="focus-scope">听力文字预训练，无音频；完成本页不代表真实听辨达标。</p>
     </header>
     <div class="focus-position" aria-label="当前阅读位置">
       <span>第 {{ index + 1 }} / {{ steps.length }} 节 · {{ current.title }}</span>
@@ -67,7 +67,7 @@ watch(() => props.step, focusHeading)
       <h2 :id="`focus-step-${current.id}`" ref="heading" tabindex="-1" class="focus-section-title">{{ current.title }}</h2>
       <EnrichedLessonContent v-if="lesson?.enrichment" :lesson="lesson.enrichment" :figures="lesson.enrichmentFigures" :review-map="lesson.enrichmentReviewMap" :step="current.id" @navigate="navigate"/>
       <WeekLesson v-else :week="week" :subject="subject" :lesson="lesson" :completed="completed" :section="current.id as LessonSection" />
-      <label v-if="checkpointId" class="check-row focus-checkpoint"><input type="checkbox" :checked="completed.includes(checkpointId)" @change="emit('complete', checkpointId, ($event.target as HTMLInputElement).checked)"/><span>{{ lesson?.enrichment ? '本周学习打卡 · ' : '我已实际完成' }}{{ checkpointLabel }}<small>{{ lesson?.enrichment ? '沿用本周历史打卡，不代表深化内容已完成，请按新标准重新核对。' : '仅保存打卡，不计时、不判定掌握，也不自动跳周。' }}{{ (lesson?.audioStatus || lesson?.enrichment?.audioStatus) ? '听力打卡仅表示文字预训练。' : '' }}</small></span></label>
+      <label v-if="checkpointId" class="check-row focus-checkpoint"><input type="checkbox" :checked="completed.includes(checkpointId)" @change="emit('complete', checkpointId, ($event.target as HTMLInputElement).checked)"/><span>{{ lesson?.enrichment ? '本周学习打卡 · ' : '我已实际完成' }}{{ checkpointLabel }}<small>{{ lesson?.enrichment ? '沿用本周历史打卡，不代表深化内容已完成，请按新标准重新核对。' : '仅保存打卡，不计时、不判定掌握，也不自动跳周。' }}{{ (subject === 'english' && (lesson?.audioStatus || lesson?.enrichment?.audioStatus)) ? '听力打卡仅表示文字预训练。' : '' }}</small></span></label>
     </section>
     <nav class="focus-pagination" aria-label="课内上一节与下一节">
       <button :disabled="index === 0" @click="navigate(steps[index - 1]!.id)">← 上一节</button>

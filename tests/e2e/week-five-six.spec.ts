@@ -93,6 +93,8 @@ for (const week of [5, 6]) {
       const lesson = lessonFor(week, subject)
       await page.goto(`/#learn/${week}/${subject}/prepare`)
       await expect(page.locator('.enriched-content')).toContainText(lesson.budget.busyPolicy)
+      if (subject === 'english') await expect(page.locator('.focus-title')).toContainText('听力文字预训练，无音频')
+      else await expect(page.locator('.focus-title')).not.toContainText('听力文字预训练，无音频')
       await page.locator('.focus-directory > summary').click()
       await expect(page.locator('.focus-directory button').filter({ hasText: '20 分短测' })).toHaveCount(1)
       await expect(page.locator('.focus-directory button').filter({ hasText: '累计诊断' })).toHaveCount(0)

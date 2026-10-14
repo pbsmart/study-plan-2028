@@ -22,6 +22,21 @@ const renderStep = async(weekNumber:number,subject:SubjectId,step:string,complet
 const escaped = (text:string) => text.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;')
 
 describe('frozen weeks five and six integration',()=>{
+  it.each([5,6])('limits English listening warnings to English in week %i while keeping author audio notes',async(weekNumber)=>{
+    const week=await loadStudyWeek(weekNumber)
+    for(const subject of ['english','physics','chemistry'] as const){
+      const lesson=week.subjects[subject]!,prepare=await renderStep(weekNumber,subject,'prepare')
+      expect(prepare).toContain(escaped(lesson.enrichment!.audioStatus!))
+      const checkpoint=lessonSteps(lesson).find(step=>step.checkpoint)!,study=await renderStep(weekNumber,subject,checkpoint.id)
+      if(subject==='english'){
+        expect(prepare).toContain('听力文字预训练，无音频')
+        expect(study).toContain('听力打卡仅表示文字预训练')
+      }else{
+        expect(prepare).not.toContain('听力文字预训练，无音频')
+        expect(study).not.toContain('听力打卡仅表示文字预训练')
+      }
+    }
+  })
   it('preserves all ten lessons, twenty SVGs and six sidecars author-identically',async()=>{
     expect(integrity).toHaveLength(36);expect(integrity.filter(file=>file.path.endsWith('.svg'))).toHaveLength(20)
     for(const file of integrity){const bytes=await readFile(source(file.path));expect(bytes.length,file.path).toBe(file.bytes);expect(createHash('sha256').update(bytes).digest('hex'),file.path).toBe(file.sha256)}
