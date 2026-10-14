@@ -39,6 +39,8 @@ for (const fixture of figures) {
       await expect(disclosure).toHaveAttribute('open', '')
     }
     const image = figure.locator('img')
+    // Lazy images below a long lesson are visible in layout but load only near the viewport.
+    await figure.scrollIntoViewIfNeeded()
     await expect(image).toBeVisible()
     await expect.poll(() => image.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0)).toBe(true)
     await expect(image).toHaveAttribute('alt', fixture.altText)
