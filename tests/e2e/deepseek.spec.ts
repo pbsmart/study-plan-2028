@@ -90,7 +90,7 @@ test('cancel, close, and navigation abort pending work without duplicate submiss
 test('enhanced quizzes attach only one selected prompt and work in dark mode', async ({ page }, info) => {
   let body = ''
   await page.route(api, async route => { body = route.request().postData() || ''; await route.fulfill({ json: success }) })
-  await page.goto('/#settings'); await page.getByRole('button', { name: '深色', exact: true }).click(); await page.goto('/#learn/4/math/quiz')
+  await page.goto('/#settings'); await page.locator('.theme-options').getByRole('button', { name: '深色', exact: true }).click(); await page.goto('/#learn/4/math/quiz')
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
   const firstPrompt = await page.locator('.focus-section .problem-prompt').first().innerText()
   const secondPrompt = await page.locator('.focus-section .problem-prompt').nth(1).innerText()
