@@ -60,16 +60,24 @@ export function curriculumPlugin(options: CurriculumPluginOptions = {}): Plugin 
   const source = options.sourceFile || sourceFile
   const enrichment = options.enrichmentDirectory || enrichmentDirectory
   let content: ReturnType<typeof readCurriculumData> | undefined
+  async function watchSources(context: { addWatchFile: (path: string) => void }) {
+    context.addWatchFile(source)
+    // Vite's browser import analysis resolves files added during load. A
+    // directory is not an importable module, so register the actual JSON files.
+    let files: string[]
+    try { files = await readdir(enrichment) }
+    catch (error) { if (object(error) && error.code === 'ENOENT') return; throw error }
+    for (const filename of files.filter(name => name.endsWith('.json'))) context.addWatchFile(join(enrichment, filename))
+  }
   return {
     name: 'lazy-study-curriculum',
-    buildStart() { content = undefined; this.addWatchFile(source); this.addWatchFile(enrichment) },
+    async buildStart() { content = undefined; await watchSources(this) },
     resolveId(id) {
       if (id === moduleId || (id.startsWith(weekPrefix) && /^\d+$/.test(id.slice(weekPrefix.length)))) return `\0${id}`
     },
     async load(id) {
       if (id !== resolvedModuleId && !id.startsWith(`\0${weekPrefix}`)) return
-      this.addWatchFile(source)
-      this.addWatchFile(enrichment)
+      await watchSources(this)
       const data = await (content ||= readCurriculumData(options))
       if (id === resolvedModuleId) {
         return [
