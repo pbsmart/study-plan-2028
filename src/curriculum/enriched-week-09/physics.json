@@ -1,0 +1,829 @@
+{
+  "id": "w9-物理",
+  "week": 9,
+  "subject": "物理",
+  "title": "牛顿运动定律：合力改变速度，停止后重判模型",
+  "revision": "week09-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "区分v、a与合力的方向，理解惯性不新增力。",
+    "能分别对一个对象列ΣF=ma，将恒定a接入运动公式。",
+    "用施受力对象区别第三定律力对与平衡力。",
+    "先找停止时刻，区分持续恒力转向与摩擦停车。"
+  ],
+  "prerequisites": [
+    "已读第6—8周受力、摩擦与分解平衡；本课s1提供必要回接。",
+    "第1—5周方向、速度变化和恒定段公式可在s1复习；不引入动量或能量。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "忙碌时把全部180分钟拆成两个90分钟周期。A=诊断10+补救15+正文含自检45+例1—3共20；B=例4—5共15+独练25+唯一测验25+订正25。不是只做一半后自动过周；若未达标，下次继续同一错点订正，不挤占第三科90分钟。",
+    "segments": [
+      {
+        "id": "w9-physics-time1",
+        "title": "闭卷诊断",
+        "minutes": 10,
+        "activityIds": [
+          "w9-physics-d1",
+          "w9-physics-d2",
+          "w9-physics-d3"
+        ]
+      },
+      {
+        "id": "w9-physics-time2",
+        "title": "定向补救和自检",
+        "minutes": 15,
+        "activityIds": [
+          "w9-physics-s1"
+        ]
+      },
+      {
+        "id": "w9-physics-time3",
+        "title": "正文理解与全部自检",
+        "minutes": 45,
+        "activityIds": [
+          "w9-physics-s2",
+          "w9-physics-s3",
+          "w9-physics-s4",
+          "w9-physics-s5",
+          "w9-physics-s6",
+          "w9-physics-s7",
+          "w9-physics-s8"
+        ]
+      },
+      {
+        "id": "w9-physics-time4",
+        "title": "五个扶助例题：先尝试再核对",
+        "minutes": 35,
+        "activityIds": [
+          "w9-physics-ex1",
+          "w9-physics-ex2",
+          "w9-physics-ex3",
+          "w9-physics-ex4",
+          "w9-physics-ex5"
+        ]
+      },
+      {
+        "id": "w9-physics-time5",
+        "title": "五题独立练习",
+        "minutes": 25,
+        "activityIds": [
+          "w9-physics-pr1",
+          "w9-physics-pr2",
+          "w9-physics-pr3",
+          "w9-physics-pr4",
+          "w9-physics-pr5"
+        ]
+      },
+      {
+        "id": "w9-physics-time6",
+        "title": "唯一20分周测",
+        "minutes": 25,
+        "activityIds": [
+          "w9-physics-quiz1",
+          "w9-physics-quiz2",
+          "w9-physics-quiz3",
+          "w9-physics-quiz4"
+        ]
+      },
+      {
+        "id": "w9-physics-time7",
+        "title": "评分、回读与遮答案订正",
+        "minutes": 25,
+        "activityIds": [
+          "w9-physics-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "10分钟闭卷，只定位前置漏洞，不计入20分；全部完成后按错因进入s1，做对也快速复述理由。",
+    "questions": [
+      {
+        "id": "w9-physics-d1",
+        "title": "诊断1｜速度不等于变化方向",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "向右为正，速度由+5 m/s在2 s内均匀变到+1 m/s。求a，判断运动方向与快慢。",
+        "answer": "a=−2 m/s²；仍向右，减速。",
+        "steps": [
+          "a=(1−5)/2=−2 m/s²。",
+          "速度仍为正，大小变小，向右减速。"
+        ],
+        "commonErrors": [
+          "负加速度就说向左运动。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w9-physics-d2",
+        "title": "诊断2｜滑动摩擦条件",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "2 kg物块已在水平地面向右滑，竖直无加速度，g=10 m/s²，μ_k=0.20，无其他竖直力。求N与摩擦方向大小。",
+        "answer": "N=20 N；摩擦4 N向左。",
+        "steps": [
+          "竖直平衡N=mg=20 N。",
+          "已滑动才用f_k=0.20×20=4 N，反对相对地面的右滑。"
+        ],
+        "commonErrors": [
+          "直接把μ当摩擦力。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w9-physics-d3",
+        "title": "诊断3｜一段公式有结束点",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "题设某物体v₀=+4 m/s、a=−2 m/s²仅持续到首次停止，此后静止。求3 s内位移。",
+        "answer": "4 m。",
+        "steps": [
+          "首次停下历时4/2=2 s。",
+          "前2 s位移(4+0)×2/2=4 m，后1 s为0。"
+        ],
+        "commonErrors": [
+          "把a=−2延长到3 s。"
+        ],
+        "estimatedMinutes": 4
+      }
+    ],
+    "routes": [
+      {
+        "when": "诊断1中把负a误当向左运动。",
+        "action": "回s1复习末减初，再在s4比较v与a的方向。",
+        "sectionIds": [
+          "w9-physics-s1",
+          "w9-physics-s4"
+        ]
+      },
+      {
+        "when": "诊断2支持力、摩擦条件或方向错误。",
+        "action": "回s1重列竖直受力与已滑动条件，在s3/s6分方向列合力。",
+        "sectionIds": [
+          "w9-physics-s1",
+          "w9-physics-s3",
+          "w9-physics-s6"
+        ]
+      },
+      {
+        "when": "诊断3延长停车前公式；全对者也复述边界。",
+        "action": "回s1确认阶段历时，再在s7比较持续恒力与仅摩擦停车。",
+        "sectionIds": [
+          "w9-physics-s1",
+          "w9-physics-s7"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w9-physics-s1",
+      "title": "补救：把第1—8周工具接到同一条链",
+      "level": "remediation",
+      "paragraphs": [
+        "第1—2周把位置、速度和加速度分开：v的正负说运动方向，a的正负说速度变化方向；位移有方向，路程不小于0。统一kg、m、s后再计算。",
+        "第3、5周给出恒定加速度段的v=v₀+aΔt、Δx=(v₀+v)Δt/2；Δt是这一段历时。v-t斜率给a，带符号面积给位移；转向须看速度变号。",
+        "第6—8周先隔离对象，再找重力、接触力、摩擦和给定外力。N不是总等于mg；本周水平无竖直外力且竖直不变速时才用N=mg。已滑动用μ_kN，停下后检查是否还能静止。",
+        "第4周触地边界与第3周停车边界提醒：公式不会自动知道物体已经换了状态。先标事件，再决定旧式能用到哪。"
+      ],
+      "keyPoints": [
+        "先统一量、单位、正方向。",
+        "先看运动与接触状态，再定摩擦。"
+      ],
+      "checkpoint": {
+        "question": "向右滑行时a向左，速度一定已向左吗？",
+        "answer": "不一定；可能仍向右减速。",
+        "explanation": "只有速度变成负值才说明向左运动。"
+      }
+    },
+    {
+      "id": "w9-physics-s2",
+      "title": "第一定律：保持运动不用补一个“惯性力”",
+      "level": "core",
+      "paragraphs": [
+        "以地面为近似惯性参考系，物体若合外力为0，就保持原速度：原来静止仍静止，原来运动则匀速直线运动。这把“力维持速度”的错误直觉改成“合力改变速度”。",
+        "滑行物体在地面上会慢下来，原因是存在摩擦等阻力，不是运动本身会耗尽。光滑模型明确忽略摩擦时，撤去唯一水平拉力后，原有水平速度不会立即变0。",
+        "惯性是保持运动状态的性质，经典恒质量模型用质量度量其大小。惯性不是另一个施力者，不能在受力图多画一个向前的“惯性力”；也不因速度大就说质量变大。"
+      ],
+      "keyPoints": [
+        "合力0对应速度不变。",
+        "惯性不是额外的力。"
+      ],
+      "checkpoint": {
+        "question": "光滑水平面小车原来v=+3 m/s，唯一水平拉力撤去，之后怎样？",
+        "answer": "保持+3 m/s匀速。",
+        "explanation": "撤力使水平合力成为0，而不是抹掉已有速度。"
+      }
+    },
+    {
+      "id": "w9-physics-s3",
+      "title": "第二定律：先合力，再除质量",
+      "level": "core",
+      "paragraphs": [
+        "对于本课恒质量质点，在同一参考系中ΣF=ma。Σ读作求和：把这个对象受到的所有外力按方向合成。它连接的是合力与加速度，不是某个拉力与速度。",
+        "一维取向右正，右拉F、左摩擦f，则ΣF_x=F−f=ma_x。先列式再代数；质量m>0，所以a的方向一定与合外力相同。1 N=1 kg·m/s²，N除kg给m/s²。",
+        "竖直没有加速度仍列ΣF_y=0；水平可以同时有非零a。不能因为物体没有竖直运动就认为它整体合力为0，也不能把mg与水平拉力的数值直接相加。",
+        "同一合力作用下质量大者a小；同一质量下合力大者a大。比较只在其他条件一致时成立，不能只看外加拉力大小就判断谁a大。"
+      ],
+      "keyPoints": [
+        "ΣF而非单个F决定a。",
+        "每个方向分别列式。"
+      ],
+      "checkpoint": {
+        "question": "m=3 kg，右拉11 N、左摩擦5 N，求a。",
+        "answer": "a=+2 m/s²。",
+        "explanation": "水平合力+6 N，a=6/3=2 m/s²。"
+      }
+    },
+    {
+      "id": "w9-physics-s4",
+      "title": "三个箭头：v告诉去哪，a与合力告诉怎样改变",
+      "level": "core",
+      "paragraphs": [
+        "合力与a必同向；v与它们没有固定方向关系。若此刻v与a同向且v≠0，速度大小在增大；若反向，速度大小在减小。此判据限于本周一维直线运动。",
+        "例如向右运动而受到向左合力，下一小段时间速度变小，但不意味着立刻向左。把v=+6 m/s、a=−2 m/s²写进v=6−2t，可以看到3 s才到0。",
+        "到v=0的那一瞬间，a仍可非零。是否转向由零点之后的真实受力决定：恒力继续则可反向，只有摩擦减速则须重新判定。不能仅凭v=0就宣布合力0，也不能仅凭a≠0就说速率此刻很大。"
+      ],
+      "keyPoints": [
+        "合力与a同向，v可同向也可反向。",
+        "v=0是重查条件的节点。"
+      ],
+      "checkpoint": {
+        "question": "v=−4 m/s、a=+1 m/s²的此刻，向哪走、变快还是慢？",
+        "answer": "向左走，减速。",
+        "explanation": "v负表示向左；a与v反向，速度大小减小。"
+      }
+    },
+    {
+      "id": "w9-physics-s5",
+      "title": "第三定律：先写“谁对谁”再配对",
+      "level": "core",
+      "paragraphs": [
+        "A对B的力和B对A的力是一对相互作用力：同时存在，大小相等，方向相反，属于同一种相互作用。两物体质量不同、是否加速，都不破坏这对力等大反向。",
+        "两力的受力者不同，所以不能放进A一个物体的受力方程相互抵消。A的图只画B对A，B的图只画A对B；这与同一物体上等大反向的平衡力不同。",
+        "书静放桌面：桌面对书的支持力与书对桌面的压力是一对相互作用力；书的重力与桌面对书的支持力都作用于书，是该静止条件下的一对平衡力。重力的反作用力是书对地球的引力，不能拿支持力冒充。",
+        "对相互推开的两车分别用F=ma。力一样大不代表a一样大，质量小的车加速度可以较大；这里不引入动量公式。"
+      ],
+      "keyPoints": [
+        "相互作用力在两个对象上。",
+        "平衡力在同一对象上，成立还需受力条件。"
+      ],
+      "checkpoint": {
+        "question": "A对B为8 N向右，m_A=2 kg、m_B=4 kg，水平仅相互作用。各a？",
+        "answer": "A为4 m/s²向左；B为2 m/s²向右。",
+        "explanation": "B对A为8 N向左，分别除各自质量。"
+      }
+    },
+    {
+      "id": "w9-physics-s6",
+      "title": "把动力学接到运动学：从力求出每秒变化量",
+      "level": "core",
+      "paragraphs": [
+        "先写参考系、对象与正方向，找全实际力；再从各方向方程求a。只有合力和质量在本阶段不变，才可把刚求出的a作为恒量使用匀变速公式。",
+        "运动关系不是另一套孤立口诀。v=v₀+aΔt表示原速度加上累积变化；Δx=(v₀+v)Δt/2是直线v-t图的梯形面积。也可用Δx=v₀Δt+aΔt²/2。",
+        "每次算出末速度还要回查滑动方向。若它跨过0而摩擦方向、接触条件或外力会变化，则原先“恒定a”的假设不能覆盖全段。先求首次到0的时间，分段再算。",
+        "例如2 kg物块右滑，10 N右拉、4 N左摩擦，a=3 m/s²，v₀=2 m/s。3 s末v=11 m/s始终为正，故摩擦方向保持左，位移19.5 m自洽。"
+      ],
+      "keyPoints": [
+        "受力→a→v与位移→条件核查。",
+        "Δt是该段历时。"
+      ],
+      "checkpoint": {
+        "question": "已知v₀=1 m/s、a=2 m/s²且保持2 s，位移多少？",
+        "answer": "6 m。",
+        "explanation": "末速度5 m/s，平均(1+5)/2=3 m/s，乘2 s。"
+      }
+    },
+    {
+      "id": "w9-physics-s7",
+      "title": "两个停止结局：持续恒力可掉头，只有摩擦则停住",
+      "level": "core",
+      "paragraphs": [
+        "光滑面上，一个恒定向左外力在物体停下后仍存在，则合力和a仍向左。速度可从正变0再变负；同一个恒定a公式可跨零求位移，路程仍要按方向分段。",
+        "粗糙水平面仅有摩擦使物体向右滑行减速，则到0时原来的滑动摩擦模型结束。没有其他水平外力、也无相对滑动趋势时，摩擦为0，物体保持静止，不会被旧的向左摩擦自动推着倒滑。",
+        "若停止后仍有外力，须先求静止所需摩擦再比上限。所需≤上限可停住；超限才继续分析新的滑动阶段。方向由新的相对运动或趋势决定，不能靠上一段照抄。",
+        "这也是“停止不等于一定转向”的根源：同样v=0，可以接恒力反向、静止或新的接触状态。题目不给足条件时说明不能确定，不能补造条件。"
+      ],
+      "keyPoints": [
+        "先找t停，再看零点后的受力。",
+        "摩擦停止后换模型。"
+      ],
+      "checkpoint": {
+        "question": "水平右滑物体停下，仍有2 N右拉，最大静摩擦3 N，能停住吗？",
+        "answer": "能；静摩擦2 N向左，a=0。",
+        "explanation": "所需2≤3，不能延用原滑动摩擦。"
+      }
+    },
+    {
+      "id": "w9-physics-s8",
+      "title": "读题到验收：把条件写进答案",
+      "level": "core",
+      "paragraphs": [
+        "每题用短链记录：研究对象→正方向→实际力→合外力→a→所问时间是否仍在本段→运动量。画箭头时说明是力还是速度，不能把速度箭头算成力。",
+        "结果检查四项：合力与a同向；单位N/kg=m/s²；路程≥位移大小；到停止、受力改变或接触改变处有无更新模型。符号不是装饰，必须对应一开始的正方向。",
+        "唯一20分周测分别查方向、第三定律、动力学计算与停车。先按评分表查错因，再回本周对应节；旧知识只回查实际卡住的部分，不另开一套复习卷。"
+      ],
+      "keyPoints": [
+        "方向、单位、阶段条件与数值一起验。",
+        "唯一20分测与订正都在180分钟内。"
+      ],
+      "checkpoint": {
+        "question": "a与合力反向但计算数字一样大，能算正确吗？",
+        "answer": "不能。",
+        "explanation": "m>0时ΣF=ma要求两者同向，方向错误意味着列式或解释有误。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w9-physics-ex1",
+      "title": "例1｜先删“运动力”再求a",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "3 kg箱子在水平面向右滑，g=10 m/s²、μ_k=0.20，右拉12 N；无其他外力。有人又加一个“惯性向前力”。列真实力并求a。",
+      "answer": "真实力G30 N下、N30 N上、拉力12 N右、摩擦6 N左；a=+2 m/s²。",
+      "steps": [
+        "先问每个力的施力者，惯性不是额外力。",
+        "竖直a=0，N=30 N。",
+        "f_k=0.20×30=6 N向左。",
+        "水平12−6=3a，a=+2 m/s²。",
+        "核对：合力向右，a向右，v也向右，速度增大。"
+      ],
+      "commonErrors": [
+        "把12 N直接除3。",
+        "添加惯性力。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-physics-ex2",
+      "title": "例2｜相同受力，不同速度",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "2 kg质点水平合力恒为4 N向右。甲此刻v=+3 m/s，乙此刻v=−3 m/s；两种情况分别保持1 s，取右正。求a、末v、位移并比较速率变化。",
+      "answer": "均a=+2 m/s²；甲v=+5、Δx=+4 m，变快；乙v=−1、Δx=−2 m，变慢。",
+      "steps": [
+        "合力与质量相同，a=4/2=+2。",
+        "甲v=3+2=5，位移(3+5)/2×1=4 m。",
+        "乙v=−3+2=−1，位移(−3−1)/2×1=−2 m。",
+        "乙在这1 s未到停止点1.5 s，所以始终左移；不能因a向右就写右移。"
+      ],
+      "commonErrors": [
+        "把a与v方向绑定。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w9-physics-ex3",
+      "title": "例3｜推开的两车：两张受力图",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "光滑水平面上两车A、B相互推开，m_A=1 kg、m_B=3 kg。某瞬间A对B为12 N向右，无其他水平外力。求反作用力和各加速度，指出在哪张图画哪个力。",
+      "answer": "B对A为12 N向左；a_A=12 m/s²向左，a_B=4 m/s²向右。",
+      "steps": [
+        "第三定律先配谁对谁：A对B与B对A。",
+        "A图仅画B给A的12 N左力，a_A=−12/1=−12 m/s²。",
+        "B图仅画A给B的12 N右力，a_B=+12/3=+4 m/s²。",
+        "两力等大反向但不同受力者，不能在A的方程消掉；质量差使a不同。"
+      ],
+      "commonErrors": [
+        "说大车给力更大。",
+        "同一图加两力抵消。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w9-physics-ex4",
+      "title": "例4｜持续恒力过零，位移和路程分开",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "5 kg物体在光滑水平面v₀=+6 m/s，恒受20 N向左力至t=2 s。求a、首次停下时刻、2 s速度、位移与路程。",
+      "answer": "a=−4 m/s²；1.5 s停下并转向；v₂=−2 m/s；位移+4 m，路程5 m。",
+      "steps": [
+        "a=−20/5=−4。",
+        "0=6−4t，t停=1.5 s；恒力继续，允许反向。",
+        "v₂=6−8=−2，Δx=6×2−4×4/2=4 m。",
+        "前段路程(6+0)×1.5/2=4.5 m。",
+        "后0.5 s左移(0+2)×0.5/2=0.5 m；路程5 m，位移4.5−0.5=4 m。"
+      ],
+      "commonErrors": [
+        "取总位移绝对值当路程。",
+        "把停下当永远静止。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w9-physics-ex5",
+      "title": "例5｜摩擦停车，3 s不全是减速段",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "4 kg小块以3 m/s在水平面向右滑，无其他水平外力；μ_k=0.25、g=10 m/s²。求停前a、停车时间和3 s内位移，说明停止后的摩擦。",
+      "answer": "停前a=−2.5 m/s²；1.2 s停下；位移+1.8 m；停后摩擦0。",
+      "steps": [
+        "N=40 N，滑动摩擦10 N向左，a=−10/4=−2.5。",
+        "停车历时3/2.5=1.2 s，早于所问3 s。",
+        "减速段位移(3+0)×1.2/2=1.8 m。",
+        "停止后无水平外力和滑动趋势，f=0、a=0，剩余1.8 s不位移。",
+        "如果错误延用a到3 s会给负速度，这是模型错误而非真实倒滑。"
+      ],
+      "commonErrors": [
+        "把a停前延长3 s。"
+      ],
+      "estimatedMinutes": 8
+    }
+  ],
+  "practice": [
+    {
+      "id": "w9-physics-pr1",
+      "title": "独练1｜负速度也可加速",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "向右正，m=2 kg，水平合力6 N向左，当前v=−2 m/s。若保持1 s，求a与末速度，说明速率。",
+      "answer": "a=−3 m/s²，v=−5 m/s，速率增大。",
+      "steps": [
+        "a=−6/2=−3。",
+        "v=−2−3=−5；v与a同向，所以速率增大。"
+      ],
+      "commonErrors": [
+        "负a一律当减速。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w9-physics-pr2",
+      "title": "独练2｜书和桌面到底是哪一对",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "书静止在桌面，重力8 N，桌面对书支持8 N。写支持力的反作用力；说明支持力与重力的关系，并写重力的反作用力。",
+      "answer": "支持力的反作用力是书对桌面8 N向下压力；支持力与重力是书上的平衡力；重力反作用力是书对地球的引力。",
+      "steps": [
+        "先锁定支持力为桌面对书，交换施受者得书对桌面。",
+        "支持与重力同作用于书且静止平衡。",
+        "地球对书的引力对应书对地球的引力。"
+      ],
+      "commonErrors": [
+        "把等大反向都叫反作用力。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w9-physics-pr3",
+      "title": "独练3｜从运动反求恒拉力",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "2 kg物块在水平面向右滑，初速度2 m/s，在恒定水平向右拉力作用下，3 s后速度8 m/s。μ_k=0.20、g=10 m/s²，无其他外力。求a、恒拉力和这3 s位移，并核对滑动阶段。",
+      "answer": "a=2 m/s²向右；恒拉力8 N向右；位移15 m向右，全程右滑。",
+      "steps": [
+        "由速度变化求a=(8−2)/3=2 m/s²向右。",
+        "竖直N=20 N，动摩擦4 N向左。",
+        "右为正，F−4=2×2，故F=8 N，不可把ma=4 N当拉力。",
+        "位移(2+8)×3/2=15 m；速度从正2增至正8，全程右滑，摩擦方向成立。"
+      ],
+      "commonErrors": [
+        "把合力4 N直接当外加拉力。",
+        "省掉摩擦或只背例题正向运算。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w9-physics-pr4",
+      "title": "独练4｜持续恒力反向",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "2 kg物体在光滑水平面v₀=+4 m/s，持续受4 N向左恒力3 s。求停止时刻、末v、位移与路程。",
+      "answer": "2 s停下；v₃=−2 m/s；位移+3 m，路程5 m。",
+      "steps": [
+        "a=−4/2=−2；0=4−2t得2 s。",
+        "3 s速度−2；前段4 m，后段左移1 m。",
+        "位移4−1=3 m；路程4+1=5 m。"
+      ],
+      "commonErrors": [
+        "停后不查恒力是否还在。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w9-physics-pr5",
+      "title": "独练5｜相同初速，不同停后状态",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "3 kg物体在水平粗糙面v₀=4 m/s向右，μ_k=0.20、g=10 m/s²，起初无水平拉力。（1）4 s内位移？（2）若恰在停下时另加3 N向右力，最大静摩擦为7 N，此后能静止吗？",
+      "answer": "（1）4 m；（2）能，静摩擦3 N向左。",
+      "steps": [
+        "N=30、f_k=6 N，a=−2，2 s停止。",
+        "停车位移(4+0)×2/2=4 m，余时静止。",
+        "新外力出现后重查所需静摩擦3 N≤7 N，可保持静止，不能延用6 N动摩擦。"
+      ],
+      "commonErrors": [
+        "停下还用μ_kN。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "运动就一定有向前合力。",
+      "why": "速度和速度变化是两个量。",
+      "right": "合力决定a；匀速时合力可为0。"
+    },
+    {
+      "wrong": "第三定律让一个物体所受力总相消。",
+      "why": "力对作用于不同对象。",
+      "right": "只把当前对象真正受到的力放入它的方程。"
+    },
+    {
+      "wrong": "停下后摩擦仍恒定并使物体倒滑。",
+      "why": "已不满足相对滑动条件。",
+      "right": "停止点重判静摩擦与后续模型。"
+    }
+  ],
+  "quiz": {
+    "instructions": "闭卷25分钟，四题共20分，均为原创教学题、非历年真题。按rubric逐点评分，达到16分且关键条件全部通过才算掌握。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w9-physics-quiz1",
+        "title": "周测1｜方向与惯性",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "向右为正，2 kg质点此刻v=−3 m/s，水平合力4 N向右；保持0.5 s。求a、末v与速率变化。若此后合力变为0，说明后续速度；需不需要惯性力？",
+        "answer": "a=+2 m/s²，末v=−2 m/s，减速；随后保持−2 m/s，无需惯性力。",
+        "steps": [
+          "a=4/2=+2。",
+          "v=−3+2×0.5=−2，速率3变2。",
+          "合力0后a=0，保持已有−2 m/s，惯性非额外力。"
+        ],
+        "commonErrors": [
+          "合力0就瞬时停止。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "a=+2 m/s²且与合力同向。"
+          },
+          {
+            "points": 1,
+            "criterion": "末v=−2 m/s。"
+          },
+          {
+            "points": 1,
+            "criterion": "向左运动且速率减小，区分v与a。"
+          },
+          {
+            "points": 1,
+            "criterion": "合力0后保持−2 m/s匀速。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确惯性不是新增实际力。"
+          }
+        ]
+      },
+      {
+        "id": "w9-physics-quiz2",
+        "title": "周测2｜第三定律与平衡",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "光滑水平面两车A、B某瞬间相互推开，m_A=2 kg、m_B=6 kg。A对B为18 N向右，无其他水平力。求B对A的力、两车a；这对力为何不能让A的合力为0？书静止桌面时，书的G与桌面对书N又是哪类力？",
+        "answer": "B对A18 N左；a_A=9 m/s²左，a_B=3 m/s²右；相互作用力作用于不同对象；书上G与N是平衡力。",
+        "steps": [
+          "交换施受者，力18 N等大反向。",
+          "分别除各质量得9与3，方向各随所受力。",
+          "A不受A对B的力，不能在A图中抵消。",
+          "书上两力同受力者，静止条件下平衡。"
+        ],
+        "commonErrors": [
+          "力相等就a相等。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "B对A18 N向左。"
+          },
+          {
+            "points": 1,
+            "criterion": "A加速度9 m/s²向左。"
+          },
+          {
+            "points": 1,
+            "criterion": "B加速度3 m/s²向右。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释两力受力者不同，不能在A方程抵消。"
+          },
+          {
+            "points": 1,
+            "criterion": "书的G与N为同一物体上的平衡力。"
+          }
+        ]
+      },
+      {
+        "id": "w9-physics-quiz3",
+        "title": "周测3｜受力接运动",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "4 kg物块在水平面以1 m/s向右滑，受12 N向右水平力；μ_k=0.20、g=10 m/s²。无其他外力，求N、摩擦、a及2 s末v与位移，并核对阶段。",
+        "answer": "N=40 N，摩擦8 N左；a=+1 m/s²，v=+3 m/s，位移+4 m；全程右滑。",
+        "steps": [
+          "竖直N=40，f=0.20×40=8 N。",
+          "12−8=4a，a=1。",
+          "v=1+1×2=3，位移(1+3)×2/2=4。",
+          "v始终正，原左摩擦方向成立。"
+        ],
+        "commonErrors": [
+          "省略竖直条件。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "N=40 N且说明竖直无加速度。"
+          },
+          {
+            "points": 1,
+            "criterion": "摩擦8 N向左，采用滑动条件。"
+          },
+          {
+            "points": 1,
+            "criterion": "列12−8=4a得a=+1 m/s²。"
+          },
+          {
+            "points": 1,
+            "criterion": "2 s末v=+3 m/s。"
+          },
+          {
+            "points": 1,
+            "criterion": "位移+4 m且速度始终向右，阶段自洽。"
+          }
+        ]
+      },
+      {
+        "id": "w9-physics-quiz4",
+        "title": "周测4｜停车以后不能自动倒滑",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "2 kg物块在水平地面v₀=5 m/s向右，无其他水平外力；μ_k=0.25、g=10 m/s²。求停前a、停止时刻和4 s内位移/路程；解释为何不能把停前a一直代到4 s。",
+        "answer": "a=−2.5 m/s²；2 s停；4 s位移+5 m、路程5 m；停后f=0、a=0。",
+        "steps": [
+          "N=20，f_k=5 N向左，a=−5/2=−2.5。",
+          "t停=5/2.5=2 s。",
+          "前2 s位移(5+0)×2/2=5 m。",
+          "后2 s无水平力与相对滑动趋势，静止。",
+          "没有反向，路程5 m；原动摩擦在停止点失效。"
+        ],
+        "commonErrors": [
+          "公式算出负v便宣称向左倒滑。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "停前a=−2.5 m/s²并有受力依据。"
+          },
+          {
+            "points": 1,
+            "criterion": "首次停止时刻2 s。"
+          },
+          {
+            "points": 1,
+            "criterion": "4 s总位移+5 m。"
+          },
+          {
+            "points": 1,
+            "criterion": "路程5 m，未虚构反向。"
+          },
+          {
+            "points": 1,
+            "criterion": "停后摩擦0、a0并明确停止为滑动模型边界。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "周测1必须把速度方向与加速度方向分开，不能添加惯性力。",
+        "周测2必须以受力者区分相互作用力与平衡力。",
+        "周测3必须使用合力而不是拉力直接除质量。",
+        "周测4必须在2 s停止后更新模型，不能虚构反向。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w9-physics-quiz1"
+        ],
+        "sectionIds": [
+          "w9-physics-s1",
+          "w9-physics-s2",
+          "w9-physics-s3",
+          "w9-physics-s4"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w9-physics-quiz2"
+        ],
+        "sectionIds": [
+          "w9-physics-s3",
+          "w9-physics-s5"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w9-physics-quiz3"
+        ],
+        "sectionIds": [
+          "w9-physics-s1",
+          "w9-physics-s3",
+          "w9-physics-s6"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w9-physics-quiz4"
+        ],
+        "sectionIds": [
+          "w9-physics-s1",
+          "w9-physics-s7",
+          "w9-physics-s8"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      }
+    ]
+  },
+  "mastery": [
+    "能在地面近似惯性参考系中写清对象、正方向、受力及模型条件。",
+    "能先求合力和加速度，再接运动公式；数值、单位、方向同时正确。",
+    "遇停止、转向、脱离接触或连接变化先重判模型，不能自动延长旧式。",
+    "唯一20分测验至少16分，所有关键条件检查通过，订正后手动推进。"
+  ],
+  "nextStep": "按本课唯一测验完成订正后手动推进；数值对但条件或方向错仍需回读。未完成时保留本周，不自动升周。",
+  "sourcePolicy": {
+    "authorship": "全部讲解与题目为原创教学内容；保留原84周路线的模型，独立逐题复算。",
+    "examStatus": "非历年真题；未据此声称河南或南阳指定教材版本、页码。",
+    "externalSources": [
+      {
+        "title": "NASA Glenn：Newton’s Laws of Motion",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+        "id": "w9-physics-source1",
+        "kind": "reference",
+        "scopeNote": "核验三定律的基础含义；本课限定恒质量、近似惯性参考系，无逐字长引。"
+      },
+      {
+        "title": "OpenStax University Physics 1：6.1 Solving Problems with Newton’s Laws",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+        "id": "w9-physics-source2",
+        "kind": "reference",
+        "scopeNote": "原发布机构教材，核验受力—动力学—运动学与连接体分析框架；题目独立创作。"
+      },
+      {
+        "title": "OpenStax University Physics 1：6.2 Friction",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+        "id": "w9-physics-source3",
+        "kind": "reference",
+        "scopeNote": "核验静摩擦上限和滑动摩擦模型条件。"
+      }
+    ]
+  },
+  "audioStatus": "未生成配音；正文可独立学习。",
+  "reviewActivity": {
+    "id": "w9-physics-review",
+    "title": "25分钟逐点评分与订正",
+    "instructions": [
+      "前5分钟按唯一20分评分表自评并逐项检查关键条件；映射不是另一份考试。",
+      "中间10分钟按错因回所列正文，先改对象、方向和阶段条件，再复算。",
+      "最后10分钟遮住答案重做失分步骤，说明为什么要换模型；仍未过关下次续做。"
+    ]
+  }
+}

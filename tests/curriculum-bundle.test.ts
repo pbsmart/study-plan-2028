@@ -3,13 +3,13 @@ import { fileURLToPath } from 'node:url'
 import { gzipSync } from 'node:zlib'
 import { build } from 'vite'
 
-const expectedFigures = new Map([[2, 4], [3, 6], [4, 7], [5, 10], [6, 10], [7, 10], [8, 10]])
+const expectedFigures = new Map([[2, 4], [3, 6], [4, 7], [5, 10], [6, 10], [7, 10], [8, 10], [9, 8], [10, 7]])
 
 describe('production curriculum bundle', () => {
   // Vite's production flag follows NODE_ENV; Vitest normally sets it to test.
   beforeEach(() => vi.stubEnv('NODE_ENV', 'production'))
   afterEach(() => vi.unstubAllEnvs())
-  it.each(['/study-plan-2028/', '/nested/learning/'])('keeps 84 weeks and all 57 SVGs lazy and within budget under %s', async base => {
+  it.each(['/study-plan-2028/', '/nested/learning/'])('keeps 84 weeks and all 72 SVGs lazy and within budget under %s', async base => {
     const root = fileURLToPath(new URL('..', import.meta.url))
     const result = await build({ root, base, logLevel: 'silent', build: { write: false } })
     if (!('output' in result)) throw new Error('Expected a single browser build')
@@ -32,8 +32,8 @@ describe('production curriculum bundle', () => {
     expect(initialChunks.reduce((sum, chunk) => sum + gzipSync(chunk.code).length, 0)).toBeLessThan(110_000)
 
     const figures = result.output.filter((item): item is Extract<typeof item, { type: 'asset' }> => item.type === 'asset' && item.fileName.endsWith('.svg'))
-    expect(figures).toHaveLength(57)
-    expect(new Set(figures.map(figure => figure.fileName)).size).toBe(57)
+    expect(figures).toHaveLength(72)
+    expect(new Set(figures.map(figure => figure.fileName)).size).toBe(72)
     for (const figure of figures) {
       expect(Buffer.byteLength(figure.source)).toBeLessThan(50_000)
       expect(initialChunks.some(chunk => chunk.code.includes(figure.fileName))).toBe(false)
@@ -48,7 +48,7 @@ describe('production curriculum bundle', () => {
       expect(ownedFigures).toHaveLength(expectedCount)
       expect(ownedFigures.reduce((sum, figure) => sum + Buffer.byteLength(figure.source), 0)).toBeLessThan(75_000)
     }
-    expect(figures.reduce((sum, figure) => sum + Buffer.byteLength(figure.source), 0)).toBeLessThan(325_000)
+    expect(figures.reduce((sum, figure) => sum + Buffer.byteLength(figure.source), 0)).toBeLessThan(372_328)
     for (const chunk of chunks) expect(chunk.code.includes('/workspace/'), chunk.fileName).toBe(false)
     for (const chunk of weeks) {
       expect(Buffer.byteLength(chunk.code)).toBeLessThan(450_000)

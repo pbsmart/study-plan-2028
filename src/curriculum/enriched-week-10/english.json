@@ -1,0 +1,819 @@
+{
+  "id": "w10-英语",
+  "week": 10,
+  "subject": "英语",
+  "title": "介词搭配与时间地点：把时刻、期限和方向说清",
+  "revision": "week10-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "在完整语境中选择常见时间与地点介词，不把中文“在”逐字替换。",
+    "区分截止by、持续until、时长for、起点since及将来起始in，能回译并检验时间线。",
+    "辨目的地、进入内部和所在位置，掌握arrive in/at与go home等常见结构。",
+    "连同搭配记介词，正确接宾格或-ing；独立20分至少16分且关键项全过。"
+  ],
+  "prerequisites": [
+    "第1周主语谓语与修饰语，第2周一般现在/过去，第5周未来结构，第6周完成时与for/since，第8周介词后宾格已学；本课前置补救提供直接回顾。",
+    "词义卡全程可查，不额外安排词表或音频任务；题目均原创，非真题，不指定未经核验的教材章页。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "所有核心活动只在下面一个预算槽出现。忙时两周期各90分钟：第一周期前测、前置补救、七节正文和四例；第二周期四练、唯一20分周测与订正。首次读题、查词、自检及答案核对均已包含；超时下一英语学段接续本周，不删核心、不自动跳周、不挤第三科预留。",
+    "segments": [
+      {
+        "id": "w10-en-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w10-en-d1",
+          "w10-en-d2",
+          "w10-en-d3"
+        ]
+      },
+      {
+        "id": "w10-en-time2",
+        "title": "前置补救与旧技能接续",
+        "minutes": 12,
+        "activityIds": [
+          "w10-en-r1"
+        ]
+      },
+      {
+        "id": "w10-en-time3",
+        "title": "七节连贯讲解、词义与自检",
+        "minutes": 45,
+        "activityIds": [
+          "w10-en-s1",
+          "w10-en-s2",
+          "w10-en-s3",
+          "w10-en-s4",
+          "w10-en-s5",
+          "w10-en-s6",
+          "w10-en-s7"
+        ]
+      },
+      {
+        "id": "w10-en-time4",
+        "title": "四阶完整例题",
+        "minutes": 24,
+        "activityIds": [
+          "w10-en-ex1",
+          "w10-en-ex2",
+          "w10-en-ex3",
+          "w10-en-ex4"
+        ]
+      },
+      {
+        "id": "w10-en-time5",
+        "title": "四道独立练习",
+        "minutes": 24,
+        "activityIds": [
+          "w10-en-pr1",
+          "w10-en-pr2",
+          "w10-en-pr3",
+          "w10-en-pr4"
+        ]
+      },
+      {
+        "id": "w10-en-time6",
+        "title": "唯一20分迁移周测",
+        "minutes": 26,
+        "activityIds": [
+          "w10-en-quiz1",
+          "w10-en-quiz2",
+          "w10-en-quiz3",
+          "w10-en-quiz4"
+        ]
+      },
+      {
+        "id": "w10-en-time7",
+        "title": "定点回读、订正与出口验证",
+        "minutes": 40,
+        "activityIds": [
+          "w10-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题各3分钟，独立完成并说理由；只定位，不计入20分。查场景词允许，先不看答案。",
+    "questions": [
+      {
+        "id": "w10-en-d1",
+        "title": "前测：起点还是长度",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "I have lived here ___ three years / ___ 2023. 分别选for/since，并说两处数字的不同作用。词义：live居住；here这里；years年。两个短语独立判断，不需按当前年份换算。",
+        "answer": "for three years；since 2023。前者是持续长度，后者是起点。",
+        "steps": [
+          "先判断时长还是时间点。",
+          "have lived说明延续到现在。"
+        ],
+        "commonErrors": [
+          "只看到数字都选for。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w10-en-d2",
+        "title": "前测：介词后的代词",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "This card was written by ___ (she/her). Please give it to ___ (I/me). 词义：card卡片；written写的过去分词；give给。",
+        "answer": "her；me。by和to在此是介词，后面用宾格。",
+        "steps": [
+          "找介词by、to。",
+          "保持实际人物不变，只改句位形式。"
+        ],
+        "commonErrors": [
+          "by she或to I。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w10-en-d3",
+        "title": "前测：未来不漏结构",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "补全：She ___ (be going to) visit the library tomorrow. 把tomorrow译成中文，判断是否已经去过。词义：visit去访；library图书馆。",
+        "answer": "is going to；tomorrow明天，句子说计划，不说明已去过。",
+        "steps": [
+          "she配is。",
+          "going to后已有visit原形。",
+          "用明天检验事件状态。"
+        ],
+        "commonErrors": [
+          "漏is。",
+          "将计划读成已完成。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "d1错或起点/时长说不清",
+        "action": "先读r1完成时间线，再读s4；保留完成时结构，不另加试卷。",
+        "sectionIds": [
+          "w10-en-r1",
+          "w10-en-s4"
+        ]
+      },
+      {
+        "when": "d2错",
+        "action": "r1回看主宾格，s6把代词放入完整搭配。",
+        "sectionIds": [
+          "w10-en-r1",
+          "w10-en-s6"
+        ]
+      },
+      {
+        "when": "d3错",
+        "action": "r1回顾未来结构，在s3/s4分清将来的截止、持续与开始时间。",
+        "sectionIds": [
+          "w10-en-r1",
+          "w10-en-s3",
+          "w10-en-s4"
+        ]
+      },
+      {
+        "when": "三题都对",
+        "action": "在同一补救槽解释为什么另一个答案不合本题语境，再按序正文。",
+        "sectionIds": [
+          "w10-en-r1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w10-en-r1",
+      "title": "前置补救：先有主干，再安放时间和对象",
+      "level": "remediation",
+      "paragraphs": [
+        "“We read books after work”主干是We read books（我们读书），after work（下班后）补充时间。介词短语不是无意义的小尾巴，换before work（上班前）会改变安排；却不把work变成read的宾语。第1周找主干的方法仍有用。",
+        "第6周回顾：“She has worked here for two years”表示工作状态延续到现在；for two years给长度。“She has worked here since March”从三月开始延续到现在；since March给起点。明确结束的过去事件则可说“She worked here last summer”（她去年夏天在这里工作），不是见for就一律完成时。",
+        "第5周未来结构：We will meet；She is going to help。will和going to后用原形，be按主语配。第8周介词后用宾格：with her与她一起，to me给/向我，by them由他们。介词后若表达一项活动，本周学常见-ing结构，不把to后任何动词都变-ing，因为不定式to＋原形是另一结构。",
+        "词卡：at在某时/点，on在某日/表面，in在内部/某时段，by不迟于/由，until直到，for持续/为，since自从，to到/向，into进入，from从，with与/用，of……的；I我，he他，she她，we我们，they他们；me/him/her/us/them相应宾格；today今天，tomorrow明天，yesterday昨天，next下一个，last上一个，every每一，hour小时，minute分钟，day天，week周，month月，year年。前4分钟拆主干，接着4分钟画起点/时长，最后4分钟读词卡和自检。"
+      ],
+      "keyPoints": [
+        "时间词要与整个事件核对。",
+        "介词宾格与不定式to不同。"
+      ],
+      "checkpoint": {
+        "question": "“I worked there for two days last month”有for，必须改have worked吗？词义：there那里；last month上月。",
+        "answer": "不用。for说明两天时长；last month明确结束的过去时间，此处worked正确。",
+        "explanation": "介词提供关系，不能单独决定全部时态。"
+      }
+    },
+    {
+      "id": "w10-en-s1",
+      "title": "读活动安排：同一个晚上有四种时间信息",
+      "level": "core",
+      "paragraphs": [
+        "原创通知《The Repair Evening》：Our repair group will meet at the community centre at six on Friday evening. Please send the list of broken items by Thursday at noon. We will work until eight. The tools are in a box, and the list is on the lid. Meet at the main entrance, then go into Room 2. Lian has helped the group since March. She is good at repairing lamps and is interested in teaching new members. After the meeting, we will go home. This is a plan; the work is not finished yet. 这是书面通知，没有音频。",
+        "词义：repair维修；community centre社区中心；list清单；broken items坏物件；Thursday周四；noon中午；tools工具；box盒；lid盖；main entrance正门入口；then然后；Room 2二号房间；Lian莲；helped帮助；March三月；good at擅长；repairing lamps修灯；interested in对……感兴趣；teaching教；new members新成员；meeting聚会；finished完成；yet还。",
+        "读意：周五晚六点在社区中心见面，坏物件清单最迟周四中午发送。工作持续到八点。工具在盒内，清单在盖上；先在正门集合，再进二号房。莲从三月起一直帮小组，擅长修灯并愿意教新人。结束回家。这些未来工作没有已经完成。",
+        "先分栏：活动在何时何地，材料最迟何时交，工作持续到何时，人物从何时开始参与。中文都可能说“到”，英语却有by、until、to、into等不同关系。本节7分钟包括通读、查词、回译与自检。"
+      ],
+      "keyPoints": [
+        "期限、持续、地点和方向分别判断。",
+        "计划不是完成报告。"
+      ],
+      "checkpoint": {
+        "question": "通知要求周四中午才开始一直发送清单吗？",
+        "answer": "不是。by Thursday at noon是发送完成的截止时间，允许更早发送。",
+        "explanation": "不能把截止误读成持续到该点。"
+      }
+    },
+    {
+      "id": "w10-en-s2",
+      "title": "at、on、in：先辨时间单位，再看特殊表达",
+      "level": "core",
+      "paragraphs": [
+        "时间at常接钟点与固定时刻：at six（六点）、at noon（中午）、at night（在夜间，一般说法）。on常接具体某日或该日的一段：on Friday、on Friday evening、on a cold morning（在一个寒冷的早晨）。in常接月、年、季节或一般早中晚：in March、in 2028、in winter、in the evening。",
+        "“in the evening”泛指晚间，“on Friday evening”锁定某个星期五晚间；决定因素是完整时间短语，不是最后看到evening就选in。at six on Friday evening可同时出现，因为一个说明钟点，一个说明具体哪晚，两者并不冲突。",
+        "带this、next、last、every的普通时间短语常直接作状语：this Friday、next week、last night、every morning；本课用Ø表示不填介词。“We meet every Friday”不用on every Friday作为核心答案。today、tomorrow、yesterday也可直接使用。",
+        "这些是高频基础用法，不是所有时间表达的万能规则。英美的at the weekend/on the weekend有差异，不在无语境题中把其中一个判死错。本节7分钟分类主文时间、自检并解释完整短语。"
+      ],
+      "keyPoints": [
+        "具体某日早晚用on。",
+        "next/last/this/every常不用at/on/in。",
+        "时间短语可叠加，但关系不同。"
+      ],
+      "checkpoint": {
+        "question": "填空：The club meets ___ seven ___ Tuesday morning, and it meets again ___ next Tuesday. club俱乐部；again再次。",
+        "answer": "at；on；Ø。",
+        "explanation": "七点是时刻，周二上午是具体时段，next Tuesday直接作时间状语。"
+      }
+    },
+    {
+      "id": "w10-en-s3",
+      "title": "by与until：一个要求已完成，一个描画持续",
+      "level": "core",
+      "paragraphs": [
+        "“Send the list by noon”要求发送这件事不迟于中午完成，可更早完成；“Stay here until noon”说留在这里的状态延续到中午。把事件想成点或线：发送完成有截止点，停留有持续线。选择取决于句义，不是看后面同为noon就任意换。",
+        "主文发送清单用by，工作延续用until。若写“Finish the list until noon”来表达最迟中午完成，普通肯定截止语境不合适，应为by noon。“Work until noon”并不直接承诺中午前所有清单已做完，只给工作持续界限。",
+        "“not…until”另有“直到……才”的意义，例如“The room will not open until six”（房间直到六点才开放），不能按肯定句简单解释成“开放持续到六点”。本课用这一个对照避免把否定漏掉；不展开所有until从句。",
+        "by Friday若没有具体钟点，不能自行定成周五某一时刻；要办实际任务需澄清。教学题写明by Friday at 17:00就有清楚截止。until/till在本课持续用法可互换。某人stays until six通常提示持续至六点，但不据此编出更早何时到达。本节7分钟含画点/线与自检。"
+      ],
+      "keyPoints": [
+        "by=不迟于，允许提前。",
+        "until=持续到；不等于任务全部完成。",
+        "not…until需保留否定。"
+      ],
+      "checkpoint": {
+        "question": "A notice says: Return the key by 18:00. 能17:30归还吗？是否必须18:00才还？词义：return归还；key钥匙。",
+        "answer": "17:30可以；不是必须18:00才还。",
+        "explanation": "截止给最晚界限，不指定唯一归还时刻。"
+      }
+    },
+    {
+      "id": "w10-en-s4",
+      "title": "for、since与in：时长、起点和以后何时开始",
+      "level": "core",
+      "paragraphs": [
+        "for＋时长回答多久：for thirty minutes（持续30分钟）。since＋起点回答从何时起：since March。延续到现在时常用have/has＋过去分词：Lian has helped since March；She has worked here for two years。但for也可配过去或将来，不能只看for判完成时。",
+        "在将来开始的语境：“The class will start in two days”表示两天后开始；“The class will last for two days”表示课持续两天。start开始与last持续的动作意义不同，in与for不是互换。“We finished it in two days”在完成任务语境则可表示用了两天完成，本周不把in永远等同将来。",
+        "起点与长度可相互说明，但需要已知观察时间。若今天是周四同一时刻，从周二持续到现在可表达for two days；若只给since March，没有具体日期，别武断换成精确天数。第6周用完成时讲的连续状态仍要考虑能否延续，例如“have kept the book for three days”表示书一直在手，不机械写have borrowed。",
+        "本节6分钟把三种关系画成文字时间线：起点→现在；一段长度；现在→未来开始。小词卡：start开始，last持续，keep保留/拿着，borrow借到，worked工作过。"
+      ],
+      "keyPoints": [
+        "for是长度，since是起点。",
+        "in在将来start语境表示多久后。",
+        "介词和动词、时态一起确定意义。"
+      ],
+      "checkpoint": {
+        "question": "“The course will start in three days”能翻成“课程持续三天”吗？",
+        "answer": "不能，是三天后开课；持续三天可用The course will last for three days。",
+        "explanation": "不要把起始时间间隔当成课程时长。"
+      }
+    },
+    {
+      "id": "w10-en-s5",
+      "title": "位置与方向：所在、目的地、跨进内部",
+      "level": "core",
+      "paragraphs": [
+        "空间in常强调内部或区域：in the box、in Nanyang；on常强调与表面接触：on the lid、on the wall；at常把地点看作活动点：at the entrance、at the station。不能把“大地方in、小地方at”当唯一规律：一个很大的车站仍可作为会面点，一间小屋也可强调内部。",
+        "“Meet at the centre”把中心当集合地点，不保证人已进建筑内部；“Wait in the centre”强调在里面。开放语境in/at the library都可能合适，不能缺少内部/集合点信息还把一个答案唯一化。作题时按题给视角解释。",
+        "go to the room说朝房间这个目的地去；go into the room强调跨入内部；be in the room说已经在里面。进入可由其他结构表达，但题目明确练into时，用into呈现方向。arrive in常接城市/国家，arrive at常接车站/具体到达点；不用arrive to。",
+        "home、here、there作地点副词时通常不加to：go home、come here、go there。可是at home表示在家，home不是在所有结构中都禁介词。本节6分钟先分位置/方向，再完成自检。词义：wall墙，station车站，wait等，entrance入口。"
+      ],
+      "keyPoints": [
+        "at/in选择也看说话视角。",
+        "to目的地，into跨进内部，in所在。",
+        "go home不加to，但at home成立。"
+      ],
+      "checkpoint": {
+        "question": "①The tools are ___ the closed box.（盒内）②She walked ___ the room from the corridor.（明确强调跨入）③She went ___ home. corridor走廊。",
+        "answer": "①in；②into；③Ø。",
+        "explanation": "分别是内部位置、进入方向与地点副词home。"
+      }
+    },
+    {
+      "id": "w10-en-s6",
+      "title": "搭配整块记，后面的名词、宾格与-ing也检查",
+      "level": "core",
+      "paragraphs": [
+        "look at看着，look for寻找，listen to听，depend on依靠；be interested in对……感兴趣，be good at擅长，be different from与……不同。换介词有时会换意思：look at a key是看钥匙，look for a key是找钥匙；别只按中文“对、在”决定。different from是本课常用形式，不否认其他语域/地区的different to/than。",
+        "介词后可接名词或代词宾格：“listen to the teacher”；“listen to her”。若接一项活动，常用-ing：“interested in learning”；“good at repairing”。repair修理→repairing；take拿/记→taking，去不发音e；read读→reading。表达“擅长修理灯”时，不能写good at repair lamps，应用good at repairing lamps；若repair作名词则须另按名词结构判断。表达对学习感兴趣时，不写interested in to learn。",
+        "辨别to的两种工作：“I listen to her”中的to为介词；“I want to learn”中的to帮助组成不定式，后用原形learn。不能背成“to后永远原形”，也不能把to后永远加-ing。want想要，learn学习。本周只分给定的常用搭配。",
+        "一个自然的记忆单位是“词＋介词＋对象＋情境”：She is good at repairing lamps；She listens to the new member。既能记形式也能回译意义。本节6分钟含搭配辨义与自检。"
+      ],
+      "keyPoints": [
+        "连同上游词记搭配。",
+        "介词后代词宾格，活动常用-ing。",
+        "介词to与不定式to分开。"
+      ],
+      "checkpoint": {
+        "question": "改正：He is interested in learn and wants to practising. 词义：practise练习。",
+        "answer": "He is interested in learning and wants to practise.",
+        "explanation": "in介词后learning，want to的不定式后practise原形。"
+      }
+    },
+    {
+      "id": "w10-en-s7",
+      "title": "用一条通知同时检验时间、空间与任务",
+      "level": "core",
+      "paragraphs": [
+        "填空顺序不是把at/on/in到处试：先判断问时间、空间还是固定搭配；时间再分时点、具体日、截止、持续、长度、起点；空间再问静态位置还是运动方向；搭配则一起读前面的动词/形容词。最后回译整段，核实际安排是否仍成立。",
+        "主文最重要的行动区别是：交清单的截止早于活动；集合地点不等于已经在房间内；计划修理不等于已完成。读懂介词能防止把周四中午当成必须开始发送，把周五八点当作保证所有物件都已修完。",
+        "订正用具体标签：时间单位、截止/持续、起点/长度、静态/进入、搭配、宾格/-ing、证据范围。一个答案对但解释乱猜，先标待确认；不要把所有错误写“介词不会”。",
+        "本节6分钟含整合自检。周测换成展览运输与课程安排，要求可否提前、是否已进入、能否推出完成等新判断，检验关系迁移。"
+      ],
+      "keyPoints": [
+        "先分类关系，后选词。",
+        "用回译检查有没有改动任务要求。",
+        "有形式依据，也有证据范围。"
+      ],
+      "checkpoint": {
+        "question": "“We will work until eight”能保证八点前所有灯都修好？",
+        "answer": "不能，只给工作延续到八点，未给全部完成的保证。",
+        "explanation": "若要明确完成期限，应另有finish all the lamps by eight这类要求；要求仍不等于已完成事实。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w10-en-ex1",
+      "title": "第1阶：拆开三个时间层",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "填at/on/in/Ø：The workshop starts ___ 9:00 ___ Saturday morning ___ November. It meets again ___ next Saturday. 词义：workshop工作坊；starts开始；November十一月；meets again再次活动。",
+      "answer": "at；on；in；Ø。",
+      "steps": [
+        "9:00钟点→at。",
+        "Saturday morning具体某日上午→on。",
+        "November月份→in。",
+        "next Saturday整个短语直接作时间状语。"
+      ],
+      "commonErrors": [
+        "只盯morning用in。",
+        "on next Saturday。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-en-ex2",
+      "title": "第2阶：把期限与持续变成可执行安排",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "A poster says: Please submit the form ___ 12:00 on Tuesday. Staff will stay ___ 13:00. ①选by/until。②11:30提交合要求吗？③能推职员12:00才到吗？词义：poster海报；submit提交；form表格；staff工作人员；stay停留。",
+      "answer": "①by；until/till。②合要求，在12:00截止前。③不能，留到13:00未给到达时间。",
+      "steps": [
+        "提交完成受截止约束。",
+        "stay持续状态受终点约束。",
+        "将11:30放在截止线前。",
+        "不要从终点逆推出起点。"
+      ],
+      "commonErrors": [
+        "把by理解成必须该时刻。",
+        "until给出了到达时间。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-en-ex3",
+      "title": "第3阶：同一地点可有不同观察角度",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "已知：Yun还在博物馆正门外等人，之后跨入大厅；她把票放在桌面上。分别完成：①Yun is waiting ___ the museum entrance. ②Then she walks ___ the hall.（强调从外进入）③The ticket is ___ the desk. ④活动结束go ___ home。词义：museum博物馆；entrance入口；hall大厅；ticket票；desk桌。",
+      "answer": "①at；②into；③on；④Ø。",
+      "steps": [
+        "①地点作为集合点，并非内部位置。",
+        "②跨越边界用into。",
+        "③表面接触用on。",
+        "④home地点副词不用to。"
+      ],
+      "commonErrors": [
+        "把所有建筑都机械选in。",
+        "to home。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-en-ex4",
+      "title": "第4阶：连时态、时长与搭配一起读",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创记录：Ming joined the team in May and still helps now. He has helped ___ May. Tomorrow he will work ___ two hours. A new course will start ___ two days. He is interested ___ ___ (learn) to repair chairs. 逐空填，并指出“明天只工作两小时”能否推出课程也只有两小时。词义：joined加入；still仍；course课程；repair chairs修椅。",
+      "answer": "since；for；in；in learning。不能，工作时长与课程的起始间隔不是课程总长度。",
+      "steps": [
+        "May是延续到现在的起点。",
+        "two hours给明天工作长度，for不限完成时。",
+        "start in two days为两天后开课。",
+        "interested in＋learning，且不把工作与课程混为一项。"
+      ],
+      "commonErrors": [
+        "since two hours。",
+        "in two days等于持续两天。",
+        "interested in learn。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w10-en-pr1",
+      "title": "独练1：时间不只看最后一个词",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "填at/on/in/Ø：①___ a rainy evening ②___ the evening ③___ night ④___ last Friday ⑤___ 7:45 ⑥___ April。给①②区别一句理由。词义：rainy下雨的；evening晚间；night夜间；April四月。",
+      "answer": "①on；②in；③at；④Ø；⑤at；⑥in。①限定某个下雨的晚间，②一般晚间时段。",
+      "steps": [
+        "按完整短语归类。",
+        "检查last直接作状语。",
+        "用①②对照说明。"
+      ],
+      "commonErrors": [
+        "evening前都选in。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-en-pr2",
+      "title": "独练2：关系先于介词",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①Finish the drawing ___ Friday at noon.（最迟完成）②The shop stays open ___ nine.（营业持续到九点）③I have kept the tool ___ Monday.（从周一起至今）④I used it ___ twenty minutes yesterday.（昨天用了20分钟）⑤The bus will leave ___ ten minutes.（十分钟后发车）词义：drawing图；shop商店；kept拿着/保留；tool工具；leave发车。",
+      "answer": "①by；②until/till；③since；④for；⑤in。",
+      "steps": [
+        "先写截止、持续、起点、长度、以后开始五种中文标签。",
+        "再填对应介词。",
+        "④过去时不用为for改完成时。"
+      ],
+      "commonErrors": [
+        "by/until互换。",
+        "for一律要求完成时。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-en-pr3",
+      "title": "独练3：位置、到达与搭配",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①We arrived ___ Nanyang. ②We arrived ___ the bus station. ③We are looking ___ a lost key.（寻找）④Please listen ___ him. ⑤She is good at ___ (take) notes. ⑥She wants to ___ (learn). 词义：arrived到达；bus station汽车站；lost丢失的；key钥匙；notes笔记。",
+      "answer": "①in；②at；③for；④to；⑤taking；⑥learn。",
+      "steps": [
+        "城市与到达点区分。",
+        "look for与listen to整块读。",
+        "at介词后taking，不定式to后learn。"
+      ],
+      "commonErrors": [
+        "arrive to。",
+        "listen him。",
+        "to learning机械类推。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-en-pr4",
+      "title": "独练4：解释两句都可能成立",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "①We will meet at the library. ②We will meet in the library. 两句是否都可能成立？各强调什么？只凭①能确定已进入馆内吗？再修复③She is interested in to read, and she will go to home after class. 词义：library图书馆；class课。",
+      "answer": "①②均可能。at把馆作会面地点，in强调内部；①不足以确定已在内部。③She is interested in reading, and she will go home after class.",
+      "steps": [
+        "不要无语境强判at/in唯一。",
+        "分清活动点与内部。",
+        "介词in后reading；go home无to。"
+      ],
+      "commonErrors": [
+        "at就一定在门外，或一定在内部。",
+        "保留in to read。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "evening一律in，小地点一律at。",
+      "why": "完整时间短语和空间观察角度不同。",
+      "right": "on Friday evening；in a small box也成立。"
+    },
+    {
+      "wrong": "by six等于必须六点；until six等于全部六点完成。",
+      "why": "混淆截止与持续，也添加未给完成事实。",
+      "right": "by允许更早，until说明持续界限。"
+    },
+    {
+      "wrong": "for出现就一定完成时，in two days永远指两天后。",
+      "why": "忽略动词和整个时间语境。",
+      "right": "worked for two days可过去；will start in two days是未来起始。"
+    },
+    {
+      "wrong": "to后永远原形，或介词前动词靠中文猜。",
+      "why": "介词to与不定式to混淆，搭配有独立用法。",
+      "right": "listen to her；want to learn；interested in learning。"
+    }
+  ],
+  "quiz": {
+    "instructions": "26分钟唯一20分迁移测，首次读情境、查词与作答都已计时。四题各5分，逐评分点核，不额外叠加小测。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w10-en-quiz1",
+        "title": "迁移1：展览收件通知",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "An exhibition will open ___(1) 10:00 ___(2) Monday morning ___(3) June. Please deliver the pictures ___(4) Sunday at 17:00.（不迟于该时刻）We will check them ___(5) next Monday. 各填一个介词或Ø。词义：exhibition展览；open开放；June六月；deliver送达；pictures画；check检查。",
+        "answer": "①at；②on；③in；④by；⑤Ø。",
+        "steps": [
+          "分辨时刻、具体日上午、月份。",
+          "送达以截止约束，by。",
+          "next Monday不用on。"
+        ],
+        "commonErrors": [
+          "in Monday morning。",
+          "until表示交件截止。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①at正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②on正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③in正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "④by正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤Ø正确。"
+          }
+        ]
+      },
+      {
+        "id": "w10-en-quiz2",
+        "title": "迁移2：期限、状态与提前归还",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "原创借用条款：Return the camera by 16:00 on Friday. The desk will be open until 17:00. ①用中文解释by 16:00。②15:30归还是否符合？③16:30归还是否符合第一句？④第二句描述什么持续到17:00？⑤能否据desk开放到17:00把归还截止改成17:00？词义：return归还；camera相机；desk服务台；open开放。",
+        "answer": "①不迟于周五16:00归还。②符合。③不符合第一句截止。④服务台开放状态持续到17:00。⑤不能，服务台开放终点与归还期限是不同约束。",
+        "steps": [
+          "独立画16:00归还截止、17:00服务状态终点。",
+          "把15:30与16:30分别放到归还截止线。",
+          "不让另一条时间覆盖第一条要求。"
+        ],
+        "commonErrors": [
+          "开放时间等于归还截止。",
+          "by理解成必须16:00整。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①说明最迟16:00，保留周五。"
+          },
+          {
+            "points": 1,
+            "criterion": "②判15:30可以。"
+          },
+          {
+            "points": 1,
+            "criterion": "③判16:30超归还截止。"
+          },
+          {
+            "points": 1,
+            "criterion": "④明确是服务台开放状态持续。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤拒绝改截止并区分两种约束。"
+          }
+        ]
+      },
+      {
+        "id": "w10-en-quiz3",
+        "title": "迁移3：志愿者的时间记录",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "A volunteer has worked here ___(1) September. She worked ___(2) three hours yesterday. A training session will start ___(3) two days. She is interested ___(4) ___(5) (learn) new skills. 词义：volunteer志愿者；September九月；training session培训活动；skills技能。再说明第3处是“持续两天”还是“两天后开始”（计入该项）。",
+        "answer": "①since；②for；③in，表示两天后开始；④in；⑤learning。",
+        "steps": [
+          "九月为过去至今的起点。",
+          "昨日工作时长可用for而不改过去时。",
+          "将来start in给开始间隔。",
+          "interested in后接learning。"
+        ],
+        "commonErrors": [
+          "since three hours。",
+          "in two days等于课程时长。",
+          "in learn。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①since正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②for正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③in并解释两天后开始；填词和含义各0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "④in正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤learning正确。"
+          }
+        ]
+      },
+      {
+        "id": "w10-en-quiz4",
+        "title": "迁移4：不要把会面点当成已进入",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "完整情境：Noa arrived ___(1) Zhengzhou yesterday. Today she is waiting at the museum. The message does not say whether she is inside. She will walk ___(2) the hall when the doors open.（第2处明确强调从外跨入）She will put her bag ___(3) a table.（桌面上）Then she will go ___(4) home. ⑤仅凭waiting at the museum能断言她已经在馆内吗？词义：arrived到达；museum博物馆；whether是否；inside内部；hall大厅；doors门；bag包；table桌。",
+        "answer": "①in；②into；③on；④Ø；⑤不能，at标会面/活动地点，不独自说明是否在建筑内部，文中也说未明确。",
+        "steps": [
+          "城市到达用arrive in。",
+          "进入用into，表面用on。",
+          "go home无to。",
+          "未知位置关系不补成事实。"
+        ],
+        "commonErrors": [
+          "arrive to。",
+          "to home。",
+          "at必定在内或必定在外。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①in正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②into呈现进入内部。"
+          },
+          {
+            "points": 1,
+            "criterion": "③on表示表面。"
+          },
+          {
+            "points": 1,
+            "criterion": "④Ø，go home。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤拒绝断言内部并解释at/未明确的证据。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "quiz1具体日时段on、截止by与next零介词均理解；错项必须定点订正。",
+        "quiz2归还截止与开放终点清楚，不能把16:30判合约。",
+        "quiz3能区分for/since/in并解释第3处非持续长度，介词后learning正确。",
+        "quiz4into与go home正确，且不从at强推已在内部。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w10-en-quiz1"
+        ],
+        "sectionIds": [
+          "w10-en-s2",
+          "w10-en-s3"
+        ],
+        "action": "把每个时间短语完整圈出，并单标交件截止。"
+      },
+      {
+        "questionIds": [
+          "w10-en-quiz2"
+        ],
+        "sectionIds": [
+          "w10-en-s3",
+          "w10-en-s7"
+        ],
+        "action": "画两条不同关系的线，把归还点逐个放入；不把服务时间替换任务期限。"
+      },
+      {
+        "questionIds": [
+          "w10-en-quiz3"
+        ],
+        "sectionIds": [
+          "w10-en-r1",
+          "w10-en-s4",
+          "w10-en-s6"
+        ],
+        "action": "先写起点/长度/未来开始标签，再还原interested in learning整块。"
+      },
+      {
+        "questionIds": [
+          "w10-en-quiz4"
+        ],
+        "sectionIds": [
+          "w10-en-s5",
+          "w10-en-s7"
+        ],
+        "action": "逐空分城市/跨入/表面/地点副词，最后标馆内位置为未知。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w10-en-review",
+    "title": "40分钟订正与关系迁移，已计入核心",
+    "instructions": [
+      "前6分钟按评分项核首次20分，另记关键项；解释缺失先写待确认。",
+      "接着10分钟按路由回读相关节，不重刷整课；全对者比较by/until与at/in边界。",
+      "接着12分钟遮答改错，每项写“我原来错把什么关系当什么”。",
+      "再8分钟完成新出口题：A notice says “Bring the boxes by 09:00. We will stay until 10:00.” 若09:30送箱，是否守约？原句有无说明大家几点到？再补He is good at ___ (make) signs; He wants to ___ (help). 词义：bring带来；boxes箱；make signs制作标牌；help帮助。答案：未守09:00截止；没说明到达起点；making；help。只检验迁移，不再计分或加第二套测验。",
+      "最后4分钟记录首次/订正分与未过关键项；下一英语学段只接续对应补救，不能用总分掩盖deadline关系错误。"
+    ]
+  },
+  "mastery": [
+    "用完整短语判断at/on/in和零介词。",
+    "能解释截止、持续、长度、起点与多久后开始，允许提前而不改期限。",
+    "能区分在内、会面点、目的地和跨入，不把at的位置说死。",
+    "搭配后宾格/-ing与不定式原形正确；至少16/20且关键项全过。",
+    "没有音频，本课不证明真实听力、发音或口语掌握。"
+  ],
+  "nextStep": "完成订正并通过关键项后再手动进入第11周句子结构；未过则下一英语学段接续本周补救，不另叠周测。",
+  "sourcePolicy": {
+    "authorship": "英文情境、说明、例题、独练和评分原创；官方资料只核对语法边界，没有复制其句子或题库。",
+    "examStatus": "全部origin=original，非历年真题。面向河南南阳2028高考备考，不编教材章页，不宣称已核验2028题型分值；20分是教学诊断。",
+    "externalSources": [
+      {
+        "id": "w10-en-ref-time",
+        "title": "British Council: Prepositions of time — at, in, on",
+        "url": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar/prepositions-of-time-at-in-on",
+        "kind": "reference",
+        "scopeNote": "已检索官方正文，核验时间单位与常用表达；教学例句原创。"
+      },
+      {
+        "id": "w10-en-ref-until",
+        "title": "Cambridge Dictionary: Until",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/until",
+        "kind": "reference",
+        "scopeNote": "已检索官方正文，核验持续until与完成截止by的边界。"
+      },
+      {
+        "id": "w10-en-ref-collocation",
+        "title": "British Council: Adjectives and prepositions",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/adjectives-prepositions?page=1",
+        "kind": "reference",
+        "scopeNote": "已检索官方正文，核验interested in/good at与介词后活动-ing。"
+      }
+    ]
+  },
+  "audioStatus": "没有音频；listen to仅是书面搭配，不能据书面答题判定真实听辨、发音或口语达标。"
+}

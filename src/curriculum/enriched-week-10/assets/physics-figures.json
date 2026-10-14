@@ -1,0 +1,44 @@
+[
+  {
+    "id": "w10-physics-figure1",
+    "title": "沿坡与法向分开，不能把整个mg塞进沿坡式",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "左图斜面向右升高，G竖直下；沿坡分量向左下、法向分量向右下，二者平行四边形合成G。右图列保持接触法向平衡与下滑沿坡方程。θ是斜面与水平的夹角。",
+    "description": "左图斜面向右升高，G竖直下；沿坡分量向左下、法向分量向右下，二者平行四边形合成G。右图列保持接触法向平衡与下滑沿坡方程。θ是斜面与水平的夹角。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。通用概念图，不含测验答案。",
+    "linkedSectionIds": [
+      "w10-physics-s1",
+      "w10-physics-s2",
+      "w10-physics-s4"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w10-physics-figure2",
+    "title": "水平面斜力：先算N，再算摩擦",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "两卡比较斜上拉N等于mg减Fsinθ与斜下压N等于mg加Fsinθ；条件为角从水平量起且保持接触。上拉算出负N应否定接触假设。",
+    "description": "两卡比较斜上拉N等于mg减Fsinθ与斜下压N等于mg加Fsinθ；条件为角从水平量起且保持接触。上拉算出负N应否定接触假设。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。通用概念图，不含测验答案。",
+    "linkedSectionIds": [
+      "w10-physics-s2",
+      "w10-physics-s3"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w10-physics-figure3",
+    "title": "答案图：粗糙上滑—停止—下滑",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "例3上坡为正，v-t点依次(0秒,4米每秒)、(0.5秒,0)、(1.5秒,负4米每秒)。上滑a负8，停点静摩擦所需6牛超过4牛，开始下滑后a负4。",
+    "description": "例3上坡为正，v-t点依次(0秒,4米每秒)、(0.5秒,0)、(1.5秒,负4米每秒)。上滑a负8，停点静摩擦所需6牛超过4牛，开始下滑后a负4。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。本图仅随所关联题目答案展开。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w10-physics-ex3"
+    ],
+    "answerOnly": true
+  }
+]

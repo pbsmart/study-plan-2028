@@ -1,0 +1,17 @@
+[
+  {
+    "id": "w10-chemistry-figure-concept",
+    "title": "同一Cl₂，电子账看产物去向",
+    "asset": "assets/chemistry-concept-w10.svg",
+    "altText": "三卡依次表示先读条件、再分辨Cl去向、最后计算电子。氯水用可逆符号⇌；冷稀碱中Cl分别变−1与+1，每mol实际Cl₂转移1 mol电子；若Cl₂全还原成Cl⁻，每mol接受2 mol电子。",
+    "description": "三张等大概念卡横向排列，连接线表示读图顺序，不表示速率、距离或实际装置。没有测验数字答案。",
+    "linkedSectionIds": [
+      "w10-chemistry-section-water",
+      "w10-chemistry-section-split",
+      "w10-chemistry-section-alkali",
+      "w10-chemistry-section-reduction"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+<title id="title">CO₂随累计H⁺量变化的三阶段图</title>
+<desc id="desc">仅限题定先全部碳酸根转为碳酸氢根再放出二氧化碳的理想模型，初始碳酸根0.040 mol。横轴累计H⁺的物质的量，单位mol，范围0到0.120。纵轴累计生成CO₂的物质的量，单位mol。折线依次连接(0,0)、(0.040,0)、(0.080,0.040)、(0.120,0.040)。第一段CO₂为0，第二段为x减0.040，第三段平台0.040 mol。虚线标记两个酸量阈值0.040与0.080 mol，非实验数据。</desc>
+<rect width="1000" height="570" fill="#f7fafc"/>
+<g font-family="Noto Sans CJK SC, sans-serif" fill="#183047">
+<text x="40" y="48" font-size="28" font-weight="700">CO₂—累计H⁺：两道阈值，三段结果</text>
+<text x="40" y="86" font-size="20">初始CO₃²⁻为0.040 mol；题定先全部成HCO₃⁻，再放CO₂</text>
+<text x="76" y="137" font-size="20">n(CO₂) / mol</text>
+<g stroke="#cbd6de" stroke-width="1"><line x1="130" y1="300" x2="850" y2="300"/><line x1="130" y1="180" x2="850" y2="180"/></g>
+<g stroke="#7992a5" stroke-width="2" stroke-dasharray="7 6"><line x1="370" y1="180" x2="370" y2="420"/><line x1="610" y1="180" x2="610" y2="420"/></g>
+<g stroke="#334d62" stroke-width="2"><line x1="130" y1="420" x2="902" y2="420"/><line x1="130" y1="420" x2="130" y2="154"/></g>
+<polygon points="910,420 899,414 899,426" fill="#334d62"/><polygon points="130,146 124,158 136,158" fill="#334d62"/>
+<polyline points="130,420 370,420 610,180 850,180" fill="none" stroke="#047a87" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#047a87"><circle cx="370" cy="420" r="5"/><circle cx="610" cy="180" r="5"/></g>
+<g font-size="20" text-anchor="end"><text x="111" y="427">0</text><text x="111" y="307">0.020</text><text x="111" y="187">0.040</text></g>
+<g font-size="20" text-anchor="middle"><text x="130" y="455">0</text><text x="370" y="455">0.040</text><text x="610" y="455">0.080</text><text x="850" y="455">0.120</text></g>
+<text x="565" y="493" font-size="21">累计加入 n(H⁺) / mol</text>
+<g font-size="21" fill="#006e7b"><text x="186" y="390">CO₂ = 0</text><text x="390" y="238">CO₂ = x−0.040</text><text x="657" y="158">CO₂ = 0.040</text></g>
+<text x="40" y="541" font-size="19">x为累计H⁺的mol数；图为限定纸面模型，不代表任意混合次序或真实实验数据。</text>
+</g></svg>

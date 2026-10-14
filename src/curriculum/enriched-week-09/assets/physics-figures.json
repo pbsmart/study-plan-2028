@@ -1,0 +1,44 @@
+[
+  {
+    "id": "w9-physics-figure1",
+    "title": "三个箭头不要混：v、a与合力",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "三卡分别为v右a右的加速、v右a左的减速、v为0但a左；合力均与a同向。箭长仅表示方向，不跨量比较大小。",
+    "description": "三卡分别为v右a右的加速、v右a左的减速、v为0但a左；合力均与a同向。箭长仅表示方向，不跨量比较大小。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。通用概念图，不含测验答案。",
+    "linkedSectionIds": [
+      "w9-physics-s2",
+      "w9-physics-s3",
+      "w9-physics-s4"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w9-physics-figure2",
+    "title": "先写“谁对谁”，再决定两力是哪一对",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "左A所受B力向左，B所受A力向右，两箭头等长；右同一个静止书受等长向上N和向下G。两幅图不共用力比例尺。",
+    "description": "左A所受B力向左，B所受A力向右，两箭头等长；右同一个静止书受等长向上N和向下G。两幅图不共用力比例尺。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。通用概念图，不含测验答案。",
+    "linkedSectionIds": [
+      "w9-physics-s5"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w9-physics-figure3",
+    "title": "答案图：同样到v=0，两种后续模型",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "左例4速度折线点为(0秒,6米每秒)、(1.5秒,0)、(2秒,负2米每秒)，位移4米路程5米；右例5从(0秒,3)到(1.2秒,0)，此后到3秒保持0，位移路程均1.8米。",
+    "description": "左例4速度折线点为(0秒,6米每秒)、(1.5秒,0)、(2秒,负2米每秒)，位移4米路程5米；右例5从(0秒,3)到(1.2秒,0)，此后到3秒保持0，位移路程均1.8米。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。本图仅随所关联题目答案展开。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w9-physics-ex4",
+      "w9-physics-ex5"
+    ],
+    "answerOnly": true
+  }
+]

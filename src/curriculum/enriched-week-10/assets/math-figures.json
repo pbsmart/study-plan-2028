@@ -1,0 +1,40 @@
+[
+  {
+    "id": "w10-math-zero-counterexamples",
+    "title": "三个图提醒：触轴、缺口和跳跃各有不同结论",
+    "asset": "assets/math-zero-counterexamples.svg",
+    "altText": "左图y=(x−1)²在[0,2]端点都正，但零点1存在。中图1/x跨0处无定义，端点异号不能保证有零点。右图x<0时−1、x≥0时1，在0有跳跃，每处有定义但无零点。",
+    "description": "左图y=(x−1)²在[0,2]端点都正，但零点1存在。中图1/x跨0处无定义，端点异号不能保证有零点。右图x<0时−1、x≥0时1，在0有跳跃，每处有定义但无零点。",
+    "linkedSectionIds": [
+      "w10-math-s2",
+      "w10-math-s4",
+      "w10-math-s5"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w10-math-bisection-brackets",
+    "title": "二分保留的是仍然异号的一半",
+    "asset": "assets/math-bisection-brackets.svg",
+    "altText": "教学例f(x)=2^x+x−4：初始[1,2]端值−1、2；中点1.5函数值约0.3284正，保留[1,1.5]；新中点1.25函数值约−0.3716负，保留[1.25,1.5]。只定位范围，不宣布中点为准确根。",
+    "description": "教学例f(x)=2^x+x−4：初始[1,2]端值−1、2；中点1.5函数值约0.3284正，保留[1,1.5]；新中点1.25函数值约−0.3716负，保留[1.25,1.5]。只定位范围，不宣布中点为准确根。",
+    "linkedSectionIds": [
+      "w10-math-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w10-math-absolute-levels",
+    "title": "水平线改变高度，距离图给出解数",
+    "asset": "assets/math-absolute-levels.svg",
+    "altText": "函数y=|x−1|定义在R，图仅截取一段。a<0无交点，a=0在顶点(1,0)只有一个交点，a>0与左右两支相交，横坐标1−a和1+a。若另有限制区间，仍需筛选这些输入。",
+    "description": "函数y=|x−1|定义在R，图仅截取一段。a<0无交点，a=0在顶点(1,0)只有一个交点，a>0与左右两支相交，横坐标1−a和1+a。若另有限制区间，仍需筛选这些输入。",
+    "linkedSectionIds": [
+      "w10-math-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

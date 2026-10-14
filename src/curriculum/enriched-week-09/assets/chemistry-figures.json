@@ -1,0 +1,28 @@
+[
+  {
+    "id": "w9-chemistry-figure-concept",
+    "title": "酸量分段：每份酸只记一次",
+    "asset": "assets/chemistry-concept-w09.svg",
+    "altText": "题定先全部转为碳酸氢根再放气的模型。设初始碳酸根a mol，累计H⁺为x mol。三卡依次为0≤x≤a、a<x≤2a、x>2a。第一段CO₂为0，第二段为x−a，第三段为a；过量段余H⁺为x−2a。",
+    "description": "三张等大概念卡横向排列，连接线表示读图顺序，不表示速率、距离或实际装置。没有测验数字答案。",
+    "linkedSectionIds": [
+      "w9-chemistry-section-acid-stages",
+      "w9-chemistry-section-acid-after"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w9-chemistry-figure-acid-graph",
+    "title": "固定碳酸根0.040 mol的酸量分段图",
+    "asset": "assets/chemistry-acid-stages-w09.svg",
+    "altText": "题定先全部转为HCO₃⁻再放气，初始CO₃²⁻0.040 mol。横轴累计H⁺量x/mol，纵轴生成CO₂量/mol。折线节点(0,0)、(0.040,0)、(0.080,0.040)、(0.120,0.040)：先0，再x−0.040，后平台0.040。",
+    "description": "横纵轴均按线性刻度；阈值0.040与0.080 mol；无短测答案，虚线帮助读阶段边界。",
+    "linkedSectionIds": [
+      "w9-chemistry-section-acid-stages",
+      "w9-chemistry-section-acid-after"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

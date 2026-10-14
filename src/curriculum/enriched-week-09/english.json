@@ -1,0 +1,805 @@
+{
+  "id": "w9-英语",
+  "week": 9,
+  "subject": "英语",
+  "title": "形容词副词与比较：先说比什么，再检查比谁",
+  "revision": "week09-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "根据名词性质、系表状态与动作方式解释形容词或副词的选择，辨认look与look at的不同作用。",
+    "在两者、明确多者范围及同级比较中正确选形，掌握高频规则和不规则变化。",
+    "比较同类对象，保留人数、范围、时间与证据边界，不从一个指标推出全面优劣。",
+    "独立完成20分迁移测，至少16分且所有关键检查过关，再按错因订正。"
+  ],
+  "prerequisites": [
+    "已读第1周主谓宾、主系表和careful/carefully，以及第3周主语中心；第8周名词组与it/one为比较对象提供基础。",
+    "本周前置补救重讲所需旧技能；词义提示全程可查，不另列背词任务。",
+    "英文材料与题目均原创，没有音频，不把书面辨形计为听力或发音掌握；不指定未核验教材章页。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "按下列七个唯一预算槽完成。忙时拆两个90分钟学习周期：第一周期前测、补救、七节正文与四例；第二周期四练、新周测、订正。首次阅读、查词、每节自检与核答案均已包含；不会英语词时可回查本课词卡。超时在下一英语学段接续本周，不自动跳周、不省核心、不占第三科预留。",
+    "segments": [
+      {
+        "id": "w9-en-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w9-en-d1",
+          "w9-en-d2",
+          "w9-en-d3"
+        ]
+      },
+      {
+        "id": "w9-en-time2",
+        "title": "前置补救，已会者解释规则",
+        "minutes": 12,
+        "activityIds": [
+          "w9-en-r1"
+        ]
+      },
+      {
+        "id": "w9-en-time3",
+        "title": "七节正文、词义与自检",
+        "minutes": 45,
+        "activityIds": [
+          "w9-en-s1",
+          "w9-en-s2",
+          "w9-en-s3",
+          "w9-en-s4",
+          "w9-en-s5",
+          "w9-en-s6",
+          "w9-en-s7"
+        ]
+      },
+      {
+        "id": "w9-en-time4",
+        "title": "四阶完整例题",
+        "minutes": 24,
+        "activityIds": [
+          "w9-en-ex1",
+          "w9-en-ex2",
+          "w9-en-ex3",
+          "w9-en-ex4"
+        ]
+      },
+      {
+        "id": "w9-en-time5",
+        "title": "四道独立练习",
+        "minutes": 24,
+        "activityIds": [
+          "w9-en-pr1",
+          "w9-en-pr2",
+          "w9-en-pr3",
+          "w9-en-pr4"
+        ]
+      },
+      {
+        "id": "w9-en-time6",
+        "title": "唯一20分迁移周测",
+        "minutes": 26,
+        "activityIds": [
+          "w9-en-quiz1",
+          "w9-en-quiz2",
+          "w9-en-quiz3",
+          "w9-en-quiz4"
+        ]
+      },
+      {
+        "id": "w9-en-time7",
+        "title": "核分、错因定位与遮答订正",
+        "minutes": 40,
+        "activityIds": [
+          "w9-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "先独立作答三题，每题3分钟含读题。仅定位，不计周测20分；答案正确但说不出理由也按对应路线补救。",
+    "questions": [
+      {
+        "id": "w9-en-d1",
+        "title": "前测：修饰谁",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "①The map is ___ (clear/clearly). ②Rui reads it ___ (careful/carefully). 找出两空说明的对象。词义：map地图；clear清楚的；Rui瑞；reads读。",
+        "answer": "①clear，说明map的性质；②carefully，说明reads怎样进行。",
+        "steps": [
+          "圈is和reads。",
+          "is连接地图与特点；reads是动作。"
+        ],
+        "commonErrors": [
+          "只看词尾，不问修饰对象。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w9-en-d2",
+        "title": "前测：找名词中心",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "The price of these bags ___ low. (is/are) 写出真正主语中心。词义：price价格；bags包；low低的。",
+        "answer": "is；中心price单数，of these bags只说明哪批包的价格。",
+        "steps": [
+          "暂时括起of these bags。",
+          "保留The price is low。"
+        ],
+        "commonErrors": [
+          "让最近的bags控制are。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w9-en-d3",
+        "title": "前测：同一物与同类物",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "I have a pen. I use it every day. The pen is old, so I need a new one. 写出it与one各指什么。词义：pen笔；use用；old旧；need需要；new新。",
+        "answer": "it指原来那同一支笔；one指同类另一支新笔。",
+        "steps": [
+          "顺着物件身份读。",
+          "新旧关系说明不是把原笔变新。"
+        ],
+        "commonErrors": [
+          "看到前文pen，就把one也认成同一支。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "d1错或无法解释",
+        "action": "读r1的词性/成分接口，再在s2比较系动词与动作；不另加题。",
+        "sectionIds": [
+          "w9-en-r1",
+          "w9-en-s2"
+        ]
+      },
+      {
+        "when": "d2或d3错",
+        "action": "在r1重新圈主语中心与指代，再读s6的同类比较。",
+        "sectionIds": [
+          "w9-en-r1",
+          "w9-en-s6"
+        ]
+      },
+      {
+        "when": "三题都对且能解释",
+        "action": "仍用补救槽说明每个干扰答案错在哪里，随后按序读正文。",
+        "sectionIds": [
+          "w9-en-r1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w9-en-r1",
+      "title": "前置补救：词性、句位与比较对象",
+      "level": "remediation",
+      "paragraphs": [
+        "第1周学过词性与句子成分不是一回事。“The careful worker checks the list carefully.”中careful修饰worker工人，carefully修饰checks检查；主语The careful worker，宾语the list清单。“The worker is careful.”中careful在is后说明工人的特点，是表语，不是动作对象。",
+        "第3周主语中心回顾：“The cost of the rooms is high.”谈的是cost费用，不是rooms房间，所以is。第8周one可替代同类可数名词；本周再用that代前面的单数比较对象，避免把费用直接和房间比。that在不同句子有不同功能，本课只练明确的替代。",
+        "常用词卡：I我，she她，he他，we我们，they他们；it它，one同类一个；a/an一个，the特指；this这，that那/前述对象；is/are是，was/were过去的“是”；has/have有；and并且，but但是，so所以；than比，as…as和……一样，not不；of……的，in在……里，on在……上；two两，three三，all全部，only只，every每一，last上一个，now现在，before以前。场景词在题内补充。",
+        "本槽前4分钟拆careful/carefully两句，接着4分钟圈cost中心并复述it/one，最后4分钟自检和查词；已会者解释为何不能用carefully作此处表语。"
+      ],
+      "keyPoints": [
+        "先找修饰对象，再谈词形。",
+        "比较要先确定双方是什么。"
+      ],
+      "checkpoint": {
+        "question": "填空并解释：The two workers are ___ (careful/carefully).",
+        "answer": "careful。说明两名工人的特点；are是系动词，workers复数只决定are，不把形容词变副词。",
+        "explanation": "词数、人称与词性选择不是同一个问题。"
+      }
+    },
+    {
+      "id": "w9-en-s1",
+      "title": "读完整情境：活动室没有一个指标能决定全部",
+      "level": "core",
+      "paragraphs": [
+        "原创短文《Choosing a Room》：Our reading group can use three rooms on Saturday. Room A has twenty seats, Room B has thirty, and Room C has thirty too. Room B is quieter than Room A. Room C is as quiet as Room B, but it costs more. The price of Room B is lower than that of Room C. Jia checks the prices carefully. Room B looks useful, but Jia looks carefully at the opening times. Room A opens earlier than the other two rooms. The group has not chosen a room yet. 本课只有书面材料，没有音频。",
+        "词义：reading group阅读小组；can use可以使用；rooms房间；Saturday周六；seats座位；twenty二十；thirty三十；too也；quieter更安静；costs more花费更多；price价格；lower较低；Jia佳；checks检查；carefully仔细地；looks useful看起来适用；looks at查看；opening times开放时间；opens开放；earlier较早；other另外的；has not chosen…yet还没有选定。",
+        "读意：三间可选活动室，A有20座，B、C各30座；B比A安静，C与B一样安静但更贵。佳细查价格与开放时间。A比其余两间早开，组员还未作出选择。没有说A最差，也没有说B在所有方面最好。",
+        "同一短文同时比较座位、安静程度、价格与时间。每读一处比较，都写“对象—指标—范围”：例如B与C、安静、两间相等。先明确关系，后面词形才有依据。本节7分钟包括读文、查词、回译与自检。"
+      ],
+      "keyPoints": [
+        "每个比较只针对给定指标。",
+        "保留尚未决定的状态。"
+      ],
+      "checkpoint": {
+        "question": "有人说“B肯定最早开放，所以小组已选B”，有哪两处越界？",
+        "answer": "最早开放的是A；小组还未决定，不能把适合或较便宜当作已选定。",
+        "explanation": "把时间信息与决定状态分开核对。"
+      }
+    },
+    {
+      "id": "w9-en-s2",
+      "title": "形容词还是副词：看性质，还是看动作方式",
+      "level": "core",
+      "paragraphs": [
+        "形容词可在名词前或系动词后：“a quiet room”安静的房间；“The room is quiet”房间安静。quiet说明room；若写“The group works quietly”，quietly说明works工作怎样进行。不是词紧挨哪个词就一定修饰哪个词，要问它补充谁的性质或方式。",
+        "look、sound、feel等可作系动词。“Room B looks useful”表示B看起来适用，useful形容词作表语；“Jia looks carefully at the times”则是佳主动查看，carefully副词修饰look at动作。相同拼写look，实际作用不同；不能背“look后永远形容词”。sound听起来；feel感觉。",
+        "许多副词由形容词加-ly，如careful→carefully。但fast既可说a fast bus快车，也可说The bus moves fast车行驶快；friendly通常是形容词，a friendly helper友善的帮手。不是所有-ly都是副词，也不是所有副词都加-ly。good形容词与well表示“做得好”的副词要分开；well还可表示健康，本周不把它锁定为唯一词性。",
+        "本节7分钟先定位主文两个look，再对比quiet/quietly与fast，最后完成自检。选择题可以问“这个词说明谁？”，不要只凭中文“地、的”猜。"
+      ],
+      "keyPoints": [
+        "系动词后性质常用形容词。",
+        "动作方式常用副词。",
+        "词尾只能提供线索。"
+      ],
+      "checkpoint": {
+        "question": "The helper seems ___ (friendly/friendlily). She works ___ (fast/fastly). 词义：helper帮手；seems似乎；works工作。",
+        "answer": "friendly；fast。seems连接人物与性质；fast本身可作方式副词。",
+        "explanation": "两项都不能机械加-ly。"
+      }
+    },
+    {
+      "id": "w9-en-s3",
+      "title": "词形为什么这样变：先确定原词，再选比较方式",
+      "level": "core",
+      "paragraphs": [
+        "两者有差别时常用比较级。许多短词加-er，最高程度加-est：short—shorter—shortest（短）；结尾已有e加-r/-st：large—larger—largest（大）；辅音字母+y常变i：easy—easier—easiest（容易）。本课big—bigger—biggest（大）双写g；不要把这一拼写扩成所有辅音结尾都双写。",
+        "许多较长词用more/most：useful—more useful—most useful；careful—more careful—most careful。carefully的比较为more carefully，不能写carefullier。两音节词有不同习惯，遇陌生词查可靠词典；本周只用给定高频词，不要求按字母数发明规则。",
+        "词卡：good/well—better—best（好/做得好）；bad/badly—worse—worst（坏/做得差）；early—earlier—earliest（早）；fast—faster—fastest（快）；quiet—quieter—quietest（安静；more quiet在部分语境也可，指定词形练习用quieter）。",
+        "比较信息只能编码一次：“more cheaper”把more与-er重复，应为cheaper；much cheaper则可以，much强调便宜的幅度，不再另造比较级。much more useful也可。没有数字依据时可说cheaper，不宜额外加much断言差距很大。本节7分钟含词卡与自检。"
+      ],
+      "keyPoints": [
+        "原级、比较级、最高级分别检查。",
+        "不规则形式整组可查。",
+        "much强调程度，不等于重复比较。"
+      ],
+      "checkpoint": {
+        "question": "保留“比昨天好”修复：The machine works more better than yesterday. 词义：machine机器；yesterday昨天。",
+        "answer": "The machine works better than yesterday. 不擅加much；题目未给改善幅度。",
+        "explanation": "well→better已完成比较，不需more。"
+      }
+    },
+    {
+      "id": "w9-en-s4",
+      "title": "两者与相等：than和as的工作不同",
+      "level": "core",
+      "paragraphs": [
+        "“B is quieter than A”说B的安静程度高于A。than后是比较另一方；“C is as quiet as B”说两者在安静这一指标相等，as之间用原级quiet，不用quieter。动作方式也一样：“Jia checks as carefully as Bo”佳与博检查得一样仔细。",
+        "“A is not as quiet as B”表示A不及B安静，即B更安静；not so quiet as也可以。不要漏not把不等改成相等，不要把两端交换却保留原方向。反写为“B is quieter than A”保意；“A is quieter than B”则倒了。",
+        "两者明确选择时本课使用“the quieter of the two rooms”。the并不自动要求最高级，它在此锁定两间中较安静的一间。自然语言在特定两者语境也能出现最高级；本课按基础规范练比较级，不声称所有其他说法在任何语境都不合语法。",
+        "本节6分钟读两种关系、做方向复述与自检。先用中文箭头写“B更安静”或“B=C”，再回填英语形式。"
+      ],
+      "keyPoints": [
+        "as…as中间用原级。",
+        "否定不及要保留方向。",
+        "明确两者中较……用the＋比较级。"
+      ],
+      "checkpoint": {
+        "question": "“Room X is not as large as Room Y”是否等于“Room Y is larger than Room X”？",
+        "answer": "是。X不及Y大，等价于Y比X大。",
+        "explanation": "不能因两个句子的主语不同就误判，必须检查关系方向。"
+      }
+    },
+    {
+      "id": "w9-en-s5",
+      "title": "最高级要有范围，比较结论不能偷换指标",
+      "level": "core",
+      "paragraphs": [
+        "在明确三者或更多对象中找某指标最高/最低可用最高级：“A is the smallest of the three rooms”表示三间中A最小。形容词最高级在这个结构中用the；若已有物主限定可说my best choice（我的最佳选择），不再叠the my。",
+        "最高级不负责提供范围，范围由of the three、in this building（在这栋楼里）或上下文给出。三个房间中最便宜，不能扩成全市最便宜。并列最高也可能：“B and C are the largest of the three”可表达B、C并列最大，不必强选唯一一个。",
+        "副词最高级用于动作：“Jia arrived earliest of the three helpers”三位帮手中佳最早到；也可用the earliest。副词前the常可省，不能把形容词定语的规则原样搬来扣分。arrive到达；helpers帮手。",
+        "数量最大、费用最低、时间最早是不同指标。主文B、C座位并列最多，并不推出两间面积一定最大；座位数不能自动等同面积。本节6分钟含范围判断与自检。"
+      ],
+      "keyPoints": [
+        "最高级锁定指标和范围。",
+        "并列最高允许多个对象。",
+        "副词最高级the有可省用法。"
+      ],
+      "checkpoint": {
+        "question": "三位帮助者中Bo到得最早，写Bo arrived (the) earliest可否？是否意味着Bo做事最好？",
+        "answer": "可以，副词最高级这里the可有可无；只证明到达时间最早，不能推出做事最好。",
+        "explanation": "语法形式与评价证据分开。"
+      }
+    },
+    {
+      "id": "w9-en-s6",
+      "title": "比较要同类：价格比价格，不拿价格比房间",
+      "level": "core",
+      "paragraphs": [
+        "“The price of B is lower than Room C”把价格与房间直接比较，双方不是同类。改成“The price of B is lower than the price of C”，或用that替代已出现的单数price：“…lower than that of C”。这里that替代的是价格，不是房间。",
+        "也可改变整句主语：“Room B is cheaper than Room C”，使房间与房间比较。两种句法都表达B费用较低，但lower常说价格，cheaper常说物或服务便宜，不能只换一个词却不看整句。",
+        "第8周one替代可数同类物：“This room is quieter than the other one”。one=room；而that of C的that=price。复数对象可用those：“The chairs in B are newer than those in A”；those=chairs椅子。本周只练明确单复数替代，不展开所有代词用法。",
+        "时间自身也能成为比较标准：“Jia checks more carefully than before”比较同一个人现在与以前的检查方式，不是两个人。保留than before，不可改成“比所有人”。本节6分钟做同类检查与自检。"
+      ],
+      "keyPoints": [
+        "把两边比较中心分别说出来。",
+        "that/those看前述对象的数。",
+        "改整句可以，不能丢范围或指标。"
+      ],
+      "checkpoint": {
+        "question": "修复“The opening time of A is earlier than B”。词义：opening time开放时间。",
+        "answer": "The opening time of A is earlier than that of B. 或Room A opens earlier than Room B.",
+        "explanation": "前者时间比时间；后者比较两间房的开放动作时间。"
+      }
+    },
+    {
+      "id": "w9-en-s7",
+      "title": "把句法、比较与阅读证据连起来",
+      "level": "core",
+      "paragraphs": [
+        "实作顺序是四步：先圈说明对象；再写“谁和谁，比什么”；接着认than、as…as或明确范围；最后检查词形与结论。它比见than立刻写-er可靠，因为carefully需要more，well需要better，than两边还可能不是同类。",
+        "阅读时再加一问：“原文只说明哪些维度？”主文给B较安静、C较贵、A更早开；没有说学习效果或服务态度。即使某选项语法正确，“B is the best room for everyone”也缺证据，不能用语法正确代替阅读正确。",
+        "订正标具体错因：修饰对象、比较词形、关系方向、范围、对象不对等、证据扩大。一个句子可有多项错误，但周测按评分点分开，不把同一错再扣两次；首次分与订正分分开记。",
+        "本节6分钟含综合自检。例题看完整推理；独练先遮答案；周测使用新情境和新任务，不是把房间名字换掉重做原题。"
+      ],
+      "keyPoints": [
+        "先意义，再关系，后词形。",
+        "语法通顺不代表结论有证据。"
+      ],
+      "checkpoint": {
+        "question": "“A opens earlier, so A is the best choice for every group”能从主文推出吗？",
+        "answer": "不能。开放早只是一个指标，各组需求和最终选择都未给。",
+        "explanation": "把earlier的局部比较扩大成best for every group是证据范围错误。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w9-en-ex1",
+      "title": "第1阶：同一动词的两种工作",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "The soup smells ___ (good/well). Yu smells the soup ___ (careful/carefully) before serving it. 说明每空作用。词义：soup汤；smells闻起来/闻；before在……之前；serving上菜。",
+      "answer": "good；carefully。第一句汤闻起来好，good说明汤的性质；第二句Yu主动闻汤，carefully说明动作方式。",
+      "steps": [
+        "第一句主语是汤，不是主动闻的人。",
+        "smells在此连接汤与气味评价。",
+        "第二句Yu为动作发出者，soup为闻的对象。",
+        "按两种作用分别选形，并回译。"
+      ],
+      "commonErrors": [
+        "见smell就一律选形容词。",
+        "把good机械加-ly。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-en-ex2",
+      "title": "第2阶：从数据建立比较关系",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创建档：三条路线完成同一送书任务所需时间分别为River用18分钟、Garden用25分钟、Hill用25分钟。完成：①River is ___ (fast) than Garden. ②Garden is as ___ (slow) as Hill. ③Of the three routes, River is the ___ (fast). ④能否说River在全市最快？词义：route路线；fast快；slow慢。",
+      "answer": "①faster；②slow；③fastest；④不能，只给三条路线。",
+      "steps": [
+        "先比较完成同一任务所需时间：用时更短表示完成更快，不据此比较单位时间经过的路程或物理速度。",
+        "River和Garden两者，用faster than。",
+        "Garden/Hill用时相同，用as slow as。",
+        "三条中最快用fastest；范围不能扩大到全市。"
+      ],
+      "commonErrors": [
+        "as slower as。",
+        "只见最高级就忘记范围。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-en-ex3",
+      "title": "第3阶：保持原意修句",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "校对原创建议：“The cost of the online class is more lower than the evening class. The online class is not as expensive than the evening class.” 两句都表示网络课费用更低，不添加差距大小，给出完整修复与理由。词义：cost费用；online class网络课；evening class晚间课；expensive昂贵的。",
+      "answer": "The cost of the online class is lower than that of the evening class. The online class is not as expensive as the evening class. 也可首句改The online class is cheaper than the evening class.",
+      "steps": [
+        "先保留“网络课便宜”的方向。",
+        "lower已是比较级，删more，不擅加much。",
+        "把cost与cost对比，用that of补同类。",
+        "not as…as成对且用原级expensive。"
+      ],
+      "commonErrors": [
+        "只删more，仍价格与课程比较。",
+        "漏not，改成费用相等。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-en-ex4",
+      "title": "第4阶：语法正确还要信息成立",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创通知：Three helpers packed the same number of books. Ana packed them fastest. Ben checked the labels more carefully than Ana. Chen checked as carefully as Ben. The notice does not compare the number of mistakes.（pack打包；same number相同数量；labels标签；compare比较；mistakes错误。）①改写Ben句为Ana开头的not as…as句。②能否据此写“Ana made the fewest mistakes”？③若说两位Ben/Chen中Ben更仔细，证据是否支持？",
+      "answer": "①Ana did not check the labels as carefully as Ben. ②不能，原文未比较错误数量；最快不等于错误最少。③不支持，Chen与Ben同样仔细。",
+      "steps": [
+        "区分打包速度、核对方式和错误数量三个指标。",
+        "转换比较方向，保留过去动作did not check。",
+        "同级比较用carefully原级。",
+        "按原文证据拒绝两种扩大或矛盾说法。"
+      ],
+      "commonErrors": [
+        "写Ana checked not as…但漏助动词。",
+        "fastest等于best或fewest mistakes。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w9-en-pr1",
+      "title": "独练1：说明性质与动作",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "补全并写依据：①The guide sounds ___ (patient/patiently). ②She explains the rules ___ (patient/patiently). ③She is a ___ (friendly/friendlily) guide. ④Our bus moves ___ (fast/fastly). 词义：guide向导；patient耐心的；explains解释；rules规则；bus公交车；moves行进。",
+      "answer": "①patient；②patiently；③friendly；④fast。①表语说向导的性质，②副词说解释方式，③形容词修饰guide，④fast可作副词。",
+      "steps": [
+        "逐句圈说明对象。",
+        "判断系表、名词修饰或动作方式。",
+        "用完整短语复核。"
+      ],
+      "commonErrors": [
+        "把所有-ly当副词或所有副词都造-ly。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-en-pr2",
+      "title": "独练2：不同结构用同一规则",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①This task is ___ than that one. (easy) ②The machine works ___ than before. (well) ③Of the two boxes, this is the ___ one. (heavy) ④Of all four boxes, this is the ___. (heavy) ⑤The plan is as ___ as ours. (useful) 词义：task任务；machine机器；box箱；heavy重；plan计划；ours我们的计划。",
+      "answer": "①easier；②better；③heavier；④heaviest；⑤useful。",
+      "steps": [
+        "确认两者/多者/相等。",
+        "再查easy/heavy的y变化和well的不规则。",
+        "the不能独自决定最高级。"
+      ],
+      "commonErrors": [
+        "the后全部填最高级。",
+        "写more better。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-en-pr3",
+      "title": "独练3：完整修复与保意",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①The price of this lamp is lower than the other lamp. ②The new instructions are more clearer. ③Of the two bags, mine is the lighter.（判断是否必须改成lightest。）词义：lamp灯；instructions说明；bags包；mine我的包；light轻。",
+      "answer": "①The price of this lamp is lower than that of the other lamp. 或This lamp is cheaper than the other lamp. ②The new instructions are clearer. ③无需改，明确两者中较轻者用the lighter。",
+      "steps": [
+        "列出①比较中心。",
+        "②去掉重复比较，不自加幅度。",
+        "③依据两者范围解释the的作用。"
+      ],
+      "commonErrors": [
+        "价格比灯。",
+        "见the误改最高级。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-en-pr4",
+      "title": "独练4：受限证据写短结论",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创记录：On the same task, Lei finished in twelve minutes, Mo in fifteen and Su in twelve. Lei wrote more clearly than Mo. The record says nothing about Su’s handwriting.（same task同一任务；finished完成；minutes分钟；record记录；handwriting字迹。）用2—3句英语说清①谁并列最早完成；②Lei/Mo谁写得更清楚；再用中文解释能否给三人书写质量排序。",
+      "answer": "Lei and Su finished earliest. / Lei and Su were the fastest to finish. Lei wrote more clearly than Mo. 无法给三人完整排序，Su字迹没有信息；允许同义且范围不扩大。",
+      "steps": [
+        "完成时间有并列，不能只写Lei一人。",
+        "书写清楚用副词more clearly修饰wrote。",
+        "把未提供信息标为未知，不编排序。"
+      ],
+      "commonErrors": [
+        "并列只留一个。",
+        "以完成快推字迹好。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "系动词look和look at动作一概接形容词。",
+      "why": "词的实际工作不同，不能只看拼写。",
+      "right": "先判说明主语性质还是动作方式。"
+    },
+    {
+      "wrong": "more easier、as faster as。",
+      "why": "重复比较或破坏同级结构。",
+      "right": "easier；as fast as。"
+    },
+    {
+      "wrong": "价格比另一物、两者见the就最高级。",
+      "why": "忽略对象类型与比较范围。",
+      "right": "price比price；明确两者较……用the＋比较级。"
+    },
+    {
+      "wrong": "最快等于最好，三者最便宜等于全市最便宜。",
+      "why": "把单项及小范围扩大。",
+      "right": "保留指标与原文范围，未知就说明未知。"
+    }
+  ],
+  "quiz": {
+    "instructions": "唯一20分新迁移周测，26分钟含首次阅读与词卡。先独立写再看解答；四题各5分，评分项不重复扣分。不是高考真题或官方分值。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w9-en-quiz1",
+        "title": "迁移1：维修观察记录",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创记录：The engine sounds (1) ___ (smooth/smoothly). The mechanic listens (2) ___ (careful/carefully). She is (3) ___ (good/well) at finding faults. After repair, the engine runs (4) ___ than before. (well) 写出第1、2空为什么不同（两点合计1分）。词义：engine发动机；smooth平稳的；mechanic维修工；listens聆听；good at擅长；finding faults找故障；repair修理；runs运转。这里只读文字，无音频。",
+        "answer": "①smooth；②carefully；③good；④better。sounds为系动词，smooth说发动机运转声音给人的性质；listens是人的动作，carefully说聆听方式。",
+        "steps": [
+          "定位句法功能。",
+          "good at为形容词短语。",
+          "well比较级better，保留than before。"
+        ],
+        "commonErrors": [
+          "sound后误选副词。",
+          "more better。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5.0,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①smooth正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②carefully正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③good正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "④better正确。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "指出sounds连接主语与性质。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "指出carefully修饰listens动作。"
+          }
+        ]
+      },
+      {
+        "id": "w9-en-quiz2",
+        "title": "迁移2：相同工作量的三次测试",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "同一机器处理同样一批材料：Test P用8分钟，Test Q用11分钟，Test R用11分钟。①P finishes ___ than Q. (early) ②Q finishes as ___ as R. (early) ③P is the ___ of the three tests. (fast) ④仅比较Q和P，补完整短语：P is ___ of the two. (fast) ⑤写出“P is the fastest test in every factory”为什么不能推出。词义：test测试；finishes完成；factory工厂。",
+        "answer": "①earlier；②early；③fastest；④the faster；⑤只比较这三次测试，没有所有工厂的数据。",
+        "steps": [
+          "相同任务下先比较完成时间。",
+          "两者、相等和三者各选结构。",
+          "保留范围，拒绝every factory。"
+        ],
+        "commonErrors": [
+          "as earlier as。",
+          "两者写the fastest。",
+          "三次推广到所有工厂。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①earlier正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②early正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③fastest正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "④the faster完整正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤指出原文只给三次测试，不能扩所有工厂。"
+          }
+        ]
+      },
+      {
+        "id": "w9-en-quiz3",
+        "title": "迁移3：为采购说明保留关系",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "修改下列两句，均不增加原文没有的幅度：①The weight of Box M is more lower than Box N. ②Box N is not as light than Box M. 然后回答③这两句都说哪箱更轻？词义：weight重量；box箱；light轻。①必须保留weight作主语。",
+        "answer": "①The weight of Box M is lower than that of Box N. ②Box N is not as light as Box M. ③M更轻。",
+        "steps": [
+          "①lower已比较，删more。",
+          "①重量与重量比较，that of承接weight。",
+          "②恢复not as…as，保留否定和主客顺序。",
+          "两句回译核同一方向。"
+        ],
+        "commonErrors": [
+          "只改more，仍重量比箱。",
+          "漏not，把不等改相等。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①删more，保留lower且不擅加much。"
+          },
+          {
+            "points": 1,
+            "criterion": "①用that of Box N或the weight of Box N形成同类比较。"
+          },
+          {
+            "points": 1,
+            "criterion": "②第二个than改as，light原级保留。"
+          },
+          {
+            "points": 1,
+            "criterion": "②保留not及N对M的方向。"
+          },
+          {
+            "points": 1,
+            "criterion": "③明确M比N轻。"
+          }
+        ]
+      },
+      {
+        "id": "w9-en-quiz4",
+        "title": "迁移4：读维修报告，拒绝错结论",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "原创报告：Three teams repaired the same kind of chair. Team Red worked faster than Team Blue. Team Green worked as fast as Team Red. Team Blue checked the chairs more carefully than Team Red. The report does not compare Green’s checking or the final quality of the chairs. 词义：teams队；repaired修理；same kind同一种；report报告；checking检查；final quality最终质量。①用一句英语写出Red与Green的速度关系。②用Red开头的not as…as句表达Blue检查更仔细。③“Green checked most carefully”有证据吗？④“Red made the best chairs”有证据吗？后两项各给理由。",
+        "answer": "①Team Green worked as fast as Team Red.（反向同级等价可。）②Team Red did not check the chairs as carefully as Team Blue. ③无，Green的检查未比较。④无，速度不等于最终质量，报告未比较质量。",
+        "steps": [
+          "分清速度、检查方式、成品质量。",
+          "①同级fast原级。",
+          "②过去否定did not check，carefully原级。",
+          "③④只依据明确给出的证据。"
+        ],
+        "commonErrors": [
+          "as faster as。",
+          "not as carefully than。",
+          "更快等于最好。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①完整同级句，fast原级且双方关系正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②did not check谓语完整，过去否定正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②as carefully as及Red不及Blue方向正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③否定推断并指出Green检查未给。"
+          },
+          {
+            "points": 1,
+            "criterion": "④否定推断并指出速度不能证明质量或质量未比较。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "quiz1能正确区分系表性质与动作方式；两条理由均能说明。",
+        "quiz2的同级原级与两者比较正确，并保留三次测试范围。",
+        "quiz3比较同类对象且方向不反转。",
+        "quiz4不从速度推出质量，不把Green未给的检查结果补成事实。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w9-en-quiz1"
+        ],
+        "sectionIds": [
+          "w9-en-r1",
+          "w9-en-s2",
+          "w9-en-s3"
+        ],
+        "action": "先圈说明对象，再重写完整短语；把词性误判与不规则词形分开。"
+      },
+      {
+        "questionIds": [
+          "w9-en-quiz2"
+        ],
+        "sectionIds": [
+          "w9-en-s3",
+          "w9-en-s4",
+          "w9-en-s5"
+        ],
+        "action": "写两者/相等/三者三种关系，检查词形与范围。"
+      },
+      {
+        "questionIds": [
+          "w9-en-quiz3"
+        ],
+        "sectionIds": [
+          "w9-en-s4",
+          "w9-en-s6"
+        ],
+        "action": "两边各写被比较中心，再用中文核M更轻是否保留。"
+      },
+      {
+        "questionIds": [
+          "w9-en-quiz4"
+        ],
+        "sectionIds": [
+          "w9-en-s4",
+          "w9-en-s5",
+          "w9-en-s7"
+        ],
+        "action": "分别列速度、检查、质量已知和未知，再遮答修复句子。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w9-en-review",
+    "title": "40分钟定点订正，已计入核心",
+    "instructions": [
+      "前6分钟逐评分点核首次20分及关键项；正确无理由记待确认，不改首次分。",
+      "接着10分钟按错因路由只读相关节；全部正确者解释一处词性、一处关系和一处证据边界。",
+      "接着12分钟遮答案重做错点，写一条“说明谁—比什么—范围”的理由。",
+      "再8分钟做新出口题：A printer is ___ than B (quiet); C is as quiet as A; The price of A is lower than ___ of C; 据此能判A打印质量最好吗？词义printer打印机、quality质量。答案：quieter，that；不能，只有安静与价格数据。全对者把A/C安静关系改写成not…比较是否保意并解释：not as quiet as会变成不相等，不保意。此题只检验订正迁移，不另计20分。",
+      "最后4分钟记录首次分、订正分、未过关键项与下次先补的本周section；未过者下一英语学段接续，不加第二张周测。"
+    ]
+  },
+  "mastery": [
+    "能解释形容词/副词的具体修饰对象，不只看-ly。",
+    "能在新材料中区分两者差异、多者范围与同级相等。",
+    "能修复不对等比较并保留方向、数量及范围。",
+    "首次至少16/20且关键项全过；首次、订正与出口题结果分别记录。",
+    "没有音频，本课不评价听力、发音或口语水平。"
+  ],
+  "nextStep": "完成本周核心订正后，关键项全过再手动推进第10周介词；若未过，下一英语学段先回本周对应节，不自动前进。",
+  "sourcePolicy": {
+    "authorship": "全部情境、英文句子、例练、测评及答案由本课原创；参考仅核验高频语法边界，不复制网页例题。",
+    "examStatus": "origin均为original，非历年真题。面向河南南阳2028高考备考；未声称已核验2028考试题型分值或教材章页，20分为教学诊断。",
+    "externalSources": [
+      {
+        "id": "w9-en-ref-adj",
+        "title": "British Council: Comparative and superlative adjectives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/comparative-superlative-adjectives",
+        "kind": "reference",
+        "scopeNote": "已检索官方正文，核验比较级、最高级与高频词形；课堂语料原创。"
+      },
+      {
+        "id": "w9-en-ref-adv",
+        "title": "British Council: Comparative and superlative adverbs",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/comparative-superlative-adverbs",
+        "kind": "reference",
+        "scopeNote": "已检索官方页面核验well/better/best与副词比较；不用该站音频冒充本课材料。"
+      }
+    ]
+  },
+  "audioStatus": "没有音频；smell、sound、listen等仅出现在书面情境中。文字作答不能证明真实听辨、发音或口语达标。"
+}

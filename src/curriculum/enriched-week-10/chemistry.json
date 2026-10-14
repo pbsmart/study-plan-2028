@@ -1,0 +1,889 @@
+{
+  "id": "w10-化学",
+  "week": 10,
+  "subject": "化学",
+  "title": "氯及其化合物：可逆氯水、冷稀条件与电子分流",
+  "revision": "week10-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "从化学式推出Cl₂、Cl⁻、ClO⁻、HClO中Cl价，区分物种。",
+    "能解释氯水⇌及实际转化量的必要性，正确保留弱HClO。",
+    "能在冷稀碱限定条件下算限量、产物、余量与歧化电子。",
+    "能对比Cl₂全还原与歧化两条路线，认识清洁剂混用风险。"
+  ],
+  "prerequisites": [
+    "第3—5周n=m/M、n=cV、mol系数比、限制者及最终溶液体积；本周补救重新搭桥。",
+    "第6—8周按性质拆写、原子电荷与电子守恒；引用的旧技能均已读原增强课确认。",
+    "不以课外背反应或开展实验为前提；反应身份、条件与新规则均在正文和题设说明。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "60分钟是忙碌时单次上限，不是缩减过关路线。完整150分钟分60+54+36。第1次60=前测6+八节含自检48+例1共6，活动ID：w10-chemistry-diagnostic-1、w10-chemistry-diagnostic-2、w10-chemistry-diagnostic-3、w10-chemistry-section-recall、w10-chemistry-section-water、w10-chemistry-section-split、w10-chemistry-section-alkali、w10-chemistry-section-hclo、w10-chemistry-section-reduction、w10-chemistry-section-risk、w10-chemistry-section-audit、w10-chemistry-example-1。第2次54=例2—5共24+独练30，活动ID：w10-chemistry-example-2、w10-chemistry-example-3、w10-chemistry-example-4、w10-chemistry-example-5、w10-chemistry-practice-1、w10-chemistry-practice-2、w10-chemistry-practice-3、w10-chemistry-practice-4、w10-chemistry-practice-5。第3次36=唯一短测24+订正12，活动ID：w10-chemistry-quiz-1、w10-chemistry-quiz-2、w10-chemistry-quiz-3、w10-chemistry-quiz-4、w10-chemistry-review-corrections。短测保持完整一次独立作答，完成后才打开答案；中断记录活动ID续做。所有核心与订正完成、16分及关键条件同时达标，才手动推进；不足则延长本周，不绑定日历。",
+    "segments": [
+      {
+        "id": "w10-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w10-chemistry-diagnostic-1",
+          "w10-chemistry-diagnostic-2",
+          "w10-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w10-chemistry-time-concepts",
+        "title": "八节含随堂自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w10-chemistry-section-recall",
+          "w10-chemistry-section-water",
+          "w10-chemistry-section-split",
+          "w10-chemistry-section-alkali",
+          "w10-chemistry-section-hclo",
+          "w10-chemistry-section-reduction",
+          "w10-chemistry-section-risk",
+          "w10-chemistry-section-audit"
+        ]
+      },
+      {
+        "id": "w10-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w10-chemistry-example-1",
+          "w10-chemistry-example-2",
+          "w10-chemistry-example-3",
+          "w10-chemistry-example-4",
+          "w10-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w10-chemistry-time-practice",
+        "title": "五道独练，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w10-chemistry-practice-1",
+          "w10-chemistry-practice-2",
+          "w10-chemistry-practice-3",
+          "w10-chemistry-practice-4",
+          "w10-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w10-chemistry-time-quiz",
+        "title": "唯一20分短测，每题6分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w10-chemistry-quiz-1",
+          "w10-chemistry-quiz-2",
+          "w10-chemistry-quiz-3",
+          "w10-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w10-chemistry-time-review",
+        "title": "评分、关键条件核查与订正",
+        "minutes": 12,
+        "activityIds": [
+          "w10-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "6分钟独立答三题，每题2分钟，不计入20分；按错因路由进入已有补救时间，全对也完成正文自检。",
+    "questions": [
+      {
+        "id": "w10-chemistry-diagnostic-1",
+        "title": "前测1：多原子离子价态",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "ClO⁻中O−2，Cl为几价？右上−1又是什么？",
+        "answer": "Cl+1；−1是整体电荷。",
+        "steps": [
+          "x−2=−1得+1。",
+          "整体电荷不是每个元素的价。"
+        ],
+        "commonErrors": [
+          "把Cl直接记−1。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w10-chemistry-diagnostic-2",
+        "title": "前测2：弱酸保留",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "题给HClO弱酸、NaOH强碱，写HClO与OH⁻中和净式。",
+        "answer": "HClO+OH⁻→ClO⁻+H₂O。",
+        "steps": [
+          "HClO和水保留。",
+          "电荷左右−1，H2/O2/Cl1。"
+        ],
+        "commonErrors": [
+          "把弱HClO全部拆。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w10-chemistry-diagnostic-3",
+        "title": "前测3：实际电子",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "Cl₂+2e⁻→2Cl⁻。0.00300 mol Cl₂全部按此被还原，接受多少mol电子？",
+        "answer": "0.00600 mol。",
+        "steps": [
+          "每份2个Cl各降1。",
+          "0.00300×2=0.00600。"
+        ],
+        "commonErrors": [
+          "漏Cl下标2。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w10-chemistry-section-recall",
+          "w10-chemistry-section-split"
+        ]
+      },
+      {
+        "when": "前测2错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w10-chemistry-section-hclo",
+          "w10-chemistry-section-water"
+        ]
+      },
+      {
+        "when": "前测3错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w10-chemistry-section-split",
+          "w10-chemistry-section-reduction"
+        ]
+      },
+      {
+        "when": "前测全对。",
+        "action": "仍完成八节自检与核心任务，不以猜对跳过条件说明。",
+        "sectionIds": [
+          "w10-chemistry-section-recall",
+          "w10-chemistry-section-water",
+          "w10-chemistry-section-split",
+          "w10-chemistry-section-alkali",
+          "w10-chemistry-section-hclo",
+          "w10-chemistry-section-reduction",
+          "w10-chemistry-section-risk",
+          "w10-chemistry-section-audit"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w10-chemistry-section-recall",
+      "title": "先补前置：氯元素相同，粒子与价态不同",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。Cl₂是一份含两个Cl原子的单质分子；Cl⁻是一个氯离子；ClO⁻是一份次氯酸根离子。下标、离子电荷和化合价各管一件事，不能把ClO⁻整体−1直接当其中Cl的价。",
+        "单质Cl₂中Cl为0；Cl⁻中Cl为−1；ClO⁻中O通常−2，设Cl为x，x−2=−1得+1。HClO中H+1、O−2，Cl也+1。从0降−1得电子，从0升+1失电子。",
+        "第3—5周仍先n=m/M或n=cV，mol/L配L；1 mol Cl₂含2 mol Cl原子，但最终电子量还要看这些Cl分别去向哪里。不能看到Cl₂下标2就对所有反应固定乘2。",
+        "氯气有毒，食盐中的Cl⁻不能因此被说成“具有氯气相同毒性”；同元素不等于同物质。全课只读纸面模型，不制备、收集或闻嗅氯气。"
+      ],
+      "keyPoints": [
+        "Cl₂中0、Cl⁻中−1、ClO⁻中+1。",
+        "每份原子数与每个原子变价分别核算。"
+      ],
+      "checkpoint": {
+        "question": "求ClO⁻中Cl价，并比较Cl₂→2Cl⁻每mol Cl₂得电子多少。",
+        "answer": "Cl为+1；Cl₂全变Cl⁻时每mol得2 mol电子。",
+        "explanation": "前者x−2=−1；后者2个Cl各降1，仅适用于这条全还原去向。"
+      }
+    },
+    {
+      "id": "w10-chemistry-section-water",
+      "title": "氯水的⇌：反应发生不等于全部转化",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。氯水是氯溶于水形成的混合体系，纸面式Cl₂+H₂O⇌HCl+HClO。符号⇌表示同一条件下正、逆反应都可进行；它不表示两方向速率始终相等，也不意味着反应物、生成物的量各占一半。达到平衡时正逆速率相等，数量不必相等。",
+        "HCl为强酸，在水中按H⁺、Cl⁻理解；HClO为弱酸，不能默认全部变H⁺和ClO⁻。净离子表达Cl₂+H₂O⇌H⁺+Cl⁻+HClO，左右Cl2/H2/O1，电荷右+1−1=0。",
+        "氯水中可含溶解Cl₂、HClO、水及H⁺、Cl⁻、少量ClO⁻、OH⁻等。列这些物种是说明混合体系，不要求本周计算它们的平衡浓度。氯水不是纯液态氯，也不是只有HCl的溶液。",
+        "仅知道投入多少Cl₂，不能按水解式强行认为全部化成HClO；需要反应程度或更充分条件。若题目直接给“实际按该式转化了多少”，可以计算该实际转化对应的量，但仍不能把它偷换成全部投入。"
+      ],
+      "keyPoints": [
+        "氯水写⇌，不能默认Cl₂全部水解。",
+        "HCl强酸拆写，HClO弱酸保留。"
+      ],
+      "checkpoint": {
+        "question": "0.0200 mol Cl₂溶于水，未给平衡或转化程度，能断言生成0.0200 mol HClO吗？",
+        "answer": "不能。",
+        "explanation": "水解可逆，投入量不等于实际水解量；也不能自定转化一半。"
+      }
+    },
+    {
+      "id": "w10-chemistry-section-split",
+      "title": "同一反应物分两条路：歧化的电子只算一边",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。氯水水解中，Cl₂的一个Cl由0到HCl中−1，另一Cl由0到HClO中+1。降低那份接受电子，升高那份失电子，因此Cl₂在该反应兼作氧化剂和还原剂，这称为歧化。",
+        "按每1 mol Cl₂实际水解计，有1 mol Cl原子降1价，另1 mol升1价；转移量=得=失=1 mol电子。不能把2 mol Cl原子全按得电子处理，也不能把得1与失1加成2。",
+        "与“Cl₂完全还原为2Cl⁻”对比：那里2个Cl都从0降−1，每mol Cl₂得2 mol电子。两个场景的粒子同名，产物去向不同，所以不能把电子倍数当永久性质背。",
+        "价态分流图是氧化数记账图，不意味着一个真实Cl原子同时成为两种产物，也不画出反应的微观机理。先写本题终态，再算份数和价差。"
+      ],
+      "keyPoints": [
+        "水解或冷稀碱歧化：每mol实际Cl₂转移1 mol电子。",
+        "全还原成Cl⁻：每mol Cl₂接受2 mol电子。"
+      ],
+      "checkpoint": {
+        "question": "若题给实际有0.00600 mol Cl₂按水解式转化，电子量多少？能说投入也必为0.00600吗？",
+        "answer": "转移0.00600 mol电子；不能确定投入总量。",
+        "explanation": "每份分两路各一个Cl，单边计1；溶液可能仍有未水解Cl₂。"
+      }
+    },
+    {
+      "id": "w10-chemistry-section-alkali",
+      "title": "冷、稀碱：把条件写在反应式旁",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。冷、稀NaOH水溶液中采用Cl₂+2NaOH→NaCl+NaClO+H₂O。净离子式Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O。碱把水解产生的酸性物种转成盐，题定足量且完全反应时可按总式算实际消耗。",
+        "检查Cl左右2，O左2、右1+1=2，H左右2；电荷左−2、右−1−1=−2。Na⁺未改变，是旁观离子，不是从溶液消失。此时两种含氯盐的生成mol比1∶1，不是质量比1∶1。",
+        "每1 mol Cl₂需要2 mol OH⁻，生成Cl⁻和ClO⁻各1 mol。若两种反应物都给量且题定只按该总式进行，比较n(Cl₂)/1与n(OH⁻)/2。冷稀与足量分别管产物和反应程度，不能只写其中一个。",
+        "热、浓碱时可有不同产物，不能无条件沿用ClO⁻。本周不学习该路线的定量配平，只把“条件改变，原模型需重判”作为边界；也不把纸面吸收式当作清洁剂混用办法。"
+      ],
+      "keyPoints": [
+        "冷、稀条件决定此处ClO⁻产物；足量/限量决定实际反应量。",
+        "Cl₂∶OH⁻∶Cl⁻∶ClO⁻=1∶2∶1∶1。"
+      ],
+      "checkpoint": {
+        "question": "冷稀且足量NaOH中0.0150 mol Cl₂完全反应，OH⁻耗、两产物、电子各多少？",
+        "answer": "OH⁻0.0300 mol；Cl⁻与ClO⁻各0.0150 mol；电子0.0150 mol。",
+        "explanation": "一个Cl升，一个Cl降，各1 mol份额；不按全还原电子倍数2。"
+      }
+    },
+    {
+      "id": "w10-chemistry-section-hclo",
+      "title": "HClO的弱酸性和氧化性，是两个问题",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。弱酸指HClO在水中不完全电离，不等于“浓度一定低”，也不等于“不能氧化别的物质”。酸碱与氧化还原是两种判断维度。HClO+OH⁻→ClO⁻+H₂O是中和，Cl始终+1，没有氯变价。",
+        "次氯酸的氧化性可使某些有色物质发生化学变化；颜色消失不能孤立证明只有一个特定反应。新制与久置氯水组成会受光照等条件影响，不能一概视为完全相同，也不能由“久置”直接得到精确各物种浓度。",
+        "高中纸面光照总式为2HClO→2HCl+O₂↑，条件为光照。这里只在题给按这条总式发生的模型中计算，现实光化学可有更复杂过程。Cl从+1到−1，每个Cl得2电子；部分O从−2到0提供电子。",
+        "反应总式不等于每一步机理，亦不是让学习者把含氯物品放在光下试验。弱酸保留、光照条件和实际反应量分别检查。"
+      ],
+      "keyPoints": [
+        "HClO是弱酸，在净式保留；弱酸性与氧化性不矛盾。",
+        "光照总式用于题给模型，不用“久置”猜精确组成。"
+      ],
+      "checkpoint": {
+        "question": "HClO+OH⁻→ClO⁻+H₂O是否氧化还原？两边电荷多少？",
+        "answer": "不是，Cl均+1；电荷均−1。",
+        "explanation": "H/O也不变价；弱HClO与水不拆。"
+      }
+    },
+    {
+      "id": "w10-chemistry-section-reduction",
+      "title": "Cl₂只走还原路线：连接下周铁离子",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。题给2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻，在指定条件下充分反应且无副反应。这里两个Cl都从0到−1，Cl₂只作氧化剂；Fe从+2到+3，Fe²⁺为还原剂。不要把歧化角色照搬。",
+        "每1 mol Cl₂需2 mol Fe²⁺，接受2 mol电子；每mol Fe²⁺失1 mol电子。原子Fe2/Cl2，电荷左+4，右+6−2=+4。总式没有游离电子，电子账在旁边核查即可。",
+        "当Fe²⁺初量大于2n(Cl₂)且Cl₂限制，生成Fe³⁺=2n(Cl₂)，剩Fe²⁺=初量−2n(Cl₂)。剩下的亚铁未变价，不能也计入电子量。",
+        "本周只把题给铁离子反应当氯的单一还原去向，不扩展铁的全部性质；下一周再系统学习Fe、Fe²⁺、Fe³⁺与酸、氧化剂和沉淀条件。"
+      ],
+      "keyPoints": [
+        "按本题产物判角色，Cl₂在这里只作氧化剂。",
+        "电子来自实际被氧化的Fe²⁺，不是全部初量。"
+      ],
+      "checkpoint": {
+        "question": "0.0220 mol Fe²⁺与0.00800 mol Cl₂按题给式反应，剩Fe²⁺与电子量？",
+        "answer": "Fe²⁺余0.00600 mol；电子0.0160 mol。",
+        "explanation": "Cl₂需Fe²⁺0.0160，小于0.0220；2×0.00800电子。"
+      }
+    },
+    {
+      "id": "w10-chemistry-section-risk",
+      "title": "酸化次氯酸盐：只解释风险，不转成操作",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。风险解释式ClO⁻+Cl⁻+2H⁺→Cl₂+H₂O。ClO⁻中Cl从+1降0，Cl⁻中Cl从−1升0；氧化剂ClO⁻、还原剂Cl⁻。两种反应物各贡献一个Cl，组成一份Cl₂。",
+        "原子Cl2/O1/H2，电荷左−1−1+2=0、右0。每份ClO⁻得1电子、Cl⁻失1电子，同一批转移1份，不能说两个Cl都被还原。酸在此既是条件又进入计量，式中需要2份H⁺。",
+        "这条式子解释含次氯酸盐漂白剂与酸性物质混用可能释放有毒氯气，不是允许配制或混合的方法。CDC明确提示漂白剂不要与其他清洁剂或消毒剂混用；含氨物质也有危险，不能因未在此式出现就认定安全。",
+        "本课只作反应识别及纸面记账，不给任何家庭配比、制气或验证步骤。看到未知清洁剂成分，不能依单条方程自行判安全。"
+      ],
+      "keyPoints": [
+        "风险式里ClO⁻得电子，Cl⁻失电子。",
+        "含氯清洁剂不与酸性、氨类或其他清洁剂混用。"
+      ],
+      "checkpoint": {
+        "question": "风险式为何生成1份Cl₂而不是2份？",
+        "answer": "两个反应物各提供1个Cl，共2个Cl，只组成1份Cl₂。",
+        "explanation": "系数按原子守恒；该解释不提供实际混合许可。"
+      }
+    },
+    {
+      "id": "w10-chemistry-section-audit",
+      "title": "条件、符号、分流三道关",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。第一关读条件：水中写可逆水解；冷稀碱中用题定歧化总式；与Fe²⁺反应用题定全还原式；酸化次氯酸盐只解释危险。热浓或未知条件不能自动套其中一条。",
+        "第二关查符号：⇌表示可逆，→用于题定的总转化模型；弱HClO保留，ClO⁻不是HClO；Na⁺若为旁观只从净式省略。式子少写一个H、水或OH⁻，原子或电荷就可能不平。",
+        "第三关查分流：Cl₂到Cl⁻全还原每mol得2电子；Cl₂分到Cl⁻和ClO⁻每mol只转移1电子。先算实际反应mol再乘该路线的电子数，拿另一侧核查而不相加。",
+        "数量题最后检Cl原子总量以及最终溶液体积。可逆氯水不能从投入量直接推生成量；气体体积、pH或平衡常数未给就不自行增加专题。本周全部纸面分析。"
+      ],
+      "keyPoints": [
+        "相同Cl₂在不同路线电子倍数不同。",
+        "条件和⇌是答案一部分，不能省。"
+      ],
+      "checkpoint": {
+        "question": "有人说“0.0100 mol Cl₂不论参加哪种反应都转移0.0200 mol电子”，如何反驳？",
+        "answer": "冷稀碱歧化若完全反应只转移0.0100 mol；全还原成Cl⁻才是0.0200 mol。",
+        "explanation": "两种情境分别有一半或全部Cl原子走得电子路线。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w10-chemistry-example-1",
+      "title": "例1·基础：从组成推出价态",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "分别写Cl₂、Cl⁻、ClO⁻、HClO中Cl价，解释ClO⁻与HClO能否因都含Cl而与Cl₂等同。",
+      "answer": "依次0、−1、+1、+1；不能等同，粒子组成、电荷与性质不同。",
+      "steps": [
+        "Cl₂为单质，Cl0。",
+        "Cl⁻单原子离子，Cl−1。",
+        "ClO⁻：x−2=−1得+1；HClO：1+x−2=0得+1。",
+        "同元素或同价也不表示同物质；弱酸HClO与离子ClO⁻写法不同。"
+      ],
+      "commonErrors": [
+        "整体电荷当Cl价。",
+        "同价即同物质。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-example-2",
+      "title": "例2·纠错：氯水不允许直接当完全反应",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "某人称“0.0400 mol Cl₂溶于水后，只剩0.0400 mol HCl和0.0400 mol HClO”。未给转化程度，指出错误并写正确可逆式、净离子式。",
+      "answer": "不能断言完全水解或只剩两种溶质；Cl₂+H₂O⇌HCl+HClO；Cl₂+H₂O⇌H⁺+Cl⁻+HClO。",
+      "steps": [
+        "氯水水解为可逆，不由投入量决定实际转化量。",
+        "保留⇌；不能改成→来获得定量结果。",
+        "强HCl拆，弱HClO与水保留。",
+        "物种可含Cl₂/HClO及相关离子，组成须结合条件；不要求平衡计算。",
+        "原子Cl2/H2/O1，电荷0。"
+      ],
+      "commonErrors": [
+        "把⇌当一半反应。",
+        "净式把HClO拆尽。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-example-3",
+      "title": "例3·应用：冷稀碱的限量模型",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题定冷、稀NaOH与Cl₂仅按Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O进行，无副反应。Cl₂初0.0240 mol、OH⁻初0.0600 mol，至Cl₂用尽。求余OH⁻、两种含氯离子及电子mol。",
+      "answer": "OH⁻剩0.0120 mol；Cl⁻与ClO⁻各0.0240 mol；电子0.0240 mol。",
+      "steps": [
+        "比较0.0240/1与0.0600/2=0.0300，Cl₂限制，碱足够。",
+        "OH⁻耗2×0.0240=0.0480，剩0.0120。",
+        "1∶1分别生成Cl⁻、ClO⁻各0.0240。",
+        "Cl₂每mol分两路，各一个Cl，电子单边0.0240 mol。",
+        "氯账初2×0.0240=0.0480，产物0.0240+0.0240=0.0480 mol Cl。"
+      ],
+      "commonErrors": [
+        "产物质量比写1∶1。",
+        "电子乘2。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-example-4",
+      "title": "例4·对比：同是Cl₂，铁离子让它全被还原",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "题给2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻，0.0500 mol Fe²⁺与0.0180 mol Cl₂充分反应，无副反应。求Fe²⁺剩、Fe³⁺产、电子量，比较例3的电子倍数。",
+      "answer": "Fe²⁺余0.0140 mol，Fe³⁺0.0360 mol，电子0.0360 mol；此处每mol Cl₂得2 mol电子。",
+      "steps": [
+        "比较Fe²⁺0.0500/2=0.0250与Cl₂0.0180，Cl₂限制。",
+        "Fe²⁺耗0.0360，余0.0140 mol。",
+        "Fe³⁺生成与Fe²⁺消耗同量0.0360。",
+        "电子从Fe侧0.0360×1，从Cl₂侧0.0180×2，相同不相加。",
+        "两Cl都到−1，区别于冷稀碱的一升一降。"
+      ],
+      "commonErrors": [
+        "把全部初始Fe²⁺当变价量。",
+        "沿用歧化电子倍数1。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-example-5",
+      "title": "例5·反向辨析：从风险式找氧化剂",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "只分析给定风险式ClO⁻+Cl⁻+2H⁺→Cl₂+H₂O，不进行实物混合。标出氧化剂、还原剂，查原子、电荷与每份电子；说明为什么含氯清洁剂不应和其他清洁剂混用。",
+      "answer": "氧化剂ClO⁻，还原剂Cl⁻；原子Cl2/H2/O1、电荷0，转移1份电子；混用可能释放有毒气体。",
+      "steps": [
+        "ClO⁻中Cl+1→0，得1电子，因此氧化剂。",
+        "Cl⁻中Cl−1→0，失1电子，因此还原剂。",
+        "每侧2个Cl，电荷左−1−1+2=0，右0。",
+        "转移=得=失=1，不能两边相加。",
+        "式子解释酸化含次氯酸盐的风险；其他清洁剂尤其酸性和氨类也不能混用。"
+      ],
+      "commonErrors": [
+        "把Cl⁻永远当惰性旁观。",
+        "从教材式推出家庭可操作。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w10-chemistry-practice-1",
+      "title": "独练1：符号和物种",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "改正：“氯水=盐酸；Cl₂+H₂O→2HCl；HClO浓时可全拆。”写正确水解净式并解释。",
+      "answer": "Cl₂+H₂O⇌H⁺+Cl⁻+HClO；氯水是混合体系；HClO弱酸不因较浓而全拆。",
+      "steps": [
+        "原错式还丢了O，不能成立。",
+        "水解生成HCl和HClO，使用⇌。",
+        "HCl拆、HClO与水保留，电荷0、原子Cl2/H2/O1。",
+        "浓度与电离强弱不同。"
+      ],
+      "commonErrors": [
+        "只改产物不改可逆符号。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-practice-2",
+      "title": "独练2：冷稀碱的剩余浓度",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "纸面模型：0.0100 mol Cl₂与含0.0300 mol OH⁻的冷稀碱按正文总式完全反应，无其他反应。最终液相体积题给200.0 mL，求余c(OH⁻)、生成ClO⁻及电子mol。",
+      "answer": "OH⁻余0.0100 mol，c=0.0500 mol/L；ClO⁻0.0100 mol，电子0.0100 mol。",
+      "steps": [
+        "需OH⁻0.0200，碱足量。",
+        "余0.0300−0.0200=0.0100 mol。",
+        "除最终0.2000 L得到0.0500 mol/L。",
+        "歧化每mol Cl₂转移1 mol电子，产ClO⁻等量。"
+      ],
+      "commonErrors": [
+        "初始OH⁻直接除体积。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-practice-3",
+      "title": "独练3：给实际水解量才计量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "题给氯水体系中有0.00750 mol Cl₂实际按水解式正向净转化，未给总投入量，忽略后续反应对本段账目的影响。求本段HClO形成量和电子转移量；可否确定剩Cl₂？",
+      "answer": "本段HClO0.00750 mol，电子0.00750 mol；剩Cl₂不能确定。",
+      "steps": [
+        "按水解式1∶1，实际净转化对应HClO。",
+        "一份Cl₂分两路，单边电子倍数1。",
+        "剩Cl₂需初始总量等信息；不把实际转化当总投入。"
+      ],
+      "commonErrors": [
+        "以为题给实际量就改写水解为不可逆。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-practice-4",
+      "title": "独练4：氯气为过量时只算实际消耗",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "给定反应2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻。0.0160 mol Fe²⁺与0.0120 mol Cl₂反应，题定只按此式，无副反应；求Cl₂在该反应中的消耗、Fe³⁺生成、电子量。",
+      "answer": "Cl₂消耗0.00800 mol，Fe³⁺0.0160 mol，电子0.0160 mol。",
+      "steps": [
+        "比较0.0160/2=0.00800与0.0120，Fe²⁺限制。",
+        "实际Cl₂用0.00800，题给过量不等于都参与本反应。",
+        "Fe³⁺等于实际Fe²⁺0.0160；电子0.0160 mol。",
+        "此为限定模型，不推断真实氯水所有副反应。"
+      ],
+      "commonErrors": [
+        "按全部Cl₂0.0120乘2。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-chemistry-practice-5",
+      "title": "独练5：光照总式的计量与边界",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "仅按题定光照总式2HClO→2HCl+O₂，有0.0300 mol HClO实际分解，求本段O₂、HCl及电子mol；“久置氯水必有相同结果”对吗？",
+      "answer": "O₂0.0150 mol，HCl0.0300 mol，电子0.0600 mol；不能由久置二字推精确量。",
+      "steps": [
+        "HClO∶HCl∶O₂=2∶2∶1。",
+        "Cl+1→−1，每个降2，电子0.0300×2=0.0600。",
+        "O₂含0.0300 mol O原子，−2→0失0.0600 mol电子，复核相等。",
+        "条件和实际分解量均需给定；现实过程可能更复杂。"
+      ],
+      "commonErrors": [
+        "把本式电子按水解倍数1。",
+        "久置当定量条件。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "氯水只含盐酸。",
+      "why": "可逆水解仍可有Cl₂、HClO及相关离子。",
+      "right": "氯水是多物种混合体系。"
+    },
+    {
+      "wrong": "Cl₂每mol总转移2mol电子。",
+      "why": "歧化只有一半Cl走还原路线。",
+      "right": "按本题去向分别算，歧化1、全还原2。"
+    },
+    {
+      "wrong": "冷稀条件可省。",
+      "why": "条件改变可能改变产物。",
+      "right": "把条件与总式一起写。"
+    },
+    {
+      "wrong": "HClO弱酸，所以无氧化性。",
+      "why": "酸电离与电子转移是两个维度。",
+      "right": "分别判断弱酸性与氧化性。"
+    }
+  ],
+  "quiz": {
+    "instructions": "这是本周唯一计分短测。四题24分钟20分。先关闭答案独立作答，再按20条各1分评分；每条全部条件满足才得分，等价表达和合理舍入可接受，单写末答案不自动获得过程分。前测、自检、例题、独练和订正不计入20分。首次分数保留，补救后另记尝试。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w10-chemistry-quiz-1",
+        "title": "短测1：氯水的条件与写法",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "写氯水水解的化学方程式（分子反应方程式）与净离子式，并对净离子式逐元素及电荷核查；说明仅知0.0250 mol Cl₂溶于水，能否认定HClO为0.0250 mol；列出至少三种可存在的非水粒子。",
+        "answer": "Cl₂+H₂O⇌HCl+HClO；Cl₂+H₂O⇌H⁺+Cl⁻+HClO；两侧Cl2/H2/O1，电荷均0；不能认定完全水解；如Cl₂、HClO、H⁺、Cl⁻。",
+        "steps": [
+          "使用⇌。",
+          "HCl拆、弱HClO保留。",
+          "可逆反应需要实际转化信息，不能把投入量直接等于产物量。",
+          "Cl₂、HClO和相关离子组成混合体系。",
+          "逐元素Cl左2右1+1=2，H左2右1+1=2，O各1；左电荷0，右+1−1=0。"
+        ],
+        "commonErrors": [
+          "把⇌写→。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "正确分子式，必须使用可逆符号⇌。"
+          },
+          {
+            "points": 1,
+            "criterion": "正确净离子式，保留HClO与水、HCl拆写。"
+          },
+          {
+            "points": 1,
+            "criterion": "给原子Cl2/H2/O1与两侧电荷0检查。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝断言HClO0.0250 mol，说明未给实际水解程度。"
+          },
+          {
+            "points": 1,
+            "criterion": "至少列Cl₂、HClO、H⁺、Cl⁻中的三种，说明氯水非纯HCl溶液。"
+          }
+        ]
+      },
+      {
+        "id": "w10-chemistry-quiz-2",
+        "title": "短测2：冷稀碱与歧化电子",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "0.0350 mol Cl₂与0.0900 mol OH⁻在冷、稀条件下，按正文总式完全反应，无其他反应。写净式，求余OH⁻、Cl⁻与ClO⁻及电子mol，说明Cl₂角色，并核查净式两侧原子、电荷与初末Cl原子总量。",
+        "answer": "Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O；余OH⁻0.0200 mol；两产物各0.0350 mol；电子0.0350 mol，Cl₂兼两种剂。净式两侧Cl2/O2/H2，电荷均−2；初末Cl原子总量均0.0700 mol。",
+        "steps": [
+          "比较0.0350与0.0450，Cl₂限制。",
+          "OH⁻耗0.0700，余0.0200。",
+          "两产物1∶1各0.0350。",
+          "一个Cl0→−1得1，另一个0→+1失1，兼角色。",
+          "单边0.0350 mol电子，不乘2或双计。",
+          "净式左右Cl2/O2/H2，电荷左−2右−1−1=−2；Cl初量2×0.0350=0.0700 mol，末量0.0350+0.0350=0.0700 mol。"
+        ],
+        "commonErrors": [
+          "条件漏冷稀。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "冷、稀条件和正确净式同时写出，原子、电荷−2通过。"
+          },
+          {
+            "points": 1,
+            "criterion": "以n/系数判断Cl₂限制，OH⁻余0.0200 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "Cl⁻、ClO⁻各0.0350 mol，氯原子总量0.0700 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释Cl0分别到−1、+1，Cl₂兼氧化剂还原剂。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子0.0350 mol，按单边分流计、不双计。"
+          }
+        ]
+      },
+      {
+        "id": "w10-chemistry-quiz-3",
+        "title": "短测3：同样Cl₂换路线",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "题给2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻，0.0420 mol Fe²⁺与0.0150 mol Cl₂充分反应且无其他反应。求限制者、Fe²⁺余、Fe³⁺产、电子量，并写Cl₂与Fe²⁺各自的角色，核查Fe总量。",
+        "answer": "Cl₂限制；Fe²⁺余0.0120、Fe³⁺0.0300、电子0.0300 mol；Cl₂只作氧化剂。Fe²⁺为还原剂；初末Fe总量均0.0420 mol。",
+        "steps": [
+          "比较0.0420/2=0.0210与0.0150。",
+          "Fe²⁺实际耗0.0300，余0.0120。",
+          "Fe³⁺产0.0300 mol。",
+          "Cl₂两个Cl都0→−1，每mol得2 mol电子，合0.0300。",
+          "Fe²⁺失0.0300 mol电子，作为复核。",
+          "Fe²⁺中Fe+2→+3失1，所以Fe²⁺为还原剂；末铁量0.0120+0.0300=0.0420 mol与初量相同。"
+        ],
+        "commonErrors": [
+          "套上题歧化1倍。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "按n/系数比较判Cl₂限制。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe²⁺余0.0120 mol，有扣实际消耗过程。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe³⁺生成0.0300 mol，Fe总量回查0.0420 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "Cl₂两个Cl均0→−1，只作氧化剂，Fe²⁺是还原剂。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子0.0300 mol，从两边复核相等不相加。"
+          }
+        ]
+      },
+      {
+        "id": "w10-chemistry-quiz-4",
+        "title": "短测4：弱酸与危险边界",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "写HClO与OH⁻中和净式，判断是否氧化还原，并核查电荷。再对风险式ClO⁻+Cl⁻+2H⁺→Cl₂+H₂O判断两种剂并逐元素核对原子及电荷，说明能否据此在家混合含氯清洁剂与酸或氨类清洁剂。",
+        "answer": "HClO+OH⁻→ClO⁻+H₂O，非氧化还原；风险式氧化剂ClO⁻、还原剂Cl⁻，电荷两侧0；不能混用，可能产生有毒气体。中和净式电荷两侧−1；风险式原子两侧Cl2/H2/O1。",
+        "steps": [
+          "弱HClO保留，Cl中和前后+1。",
+          "风险式ClO⁻中Cl+1→0得1，Cl⁻中Cl−1→0失1。",
+          "左−1−1+2=0，右0。",
+          "题给式只解释风险；氨类可能走其他危险反应，不能由本式未列就判安全。",
+          "中和式电荷左OH⁻为−1，右ClO⁻为−1；风险式原子Cl左右2、H左右2、O左右1。"
+        ],
+        "commonErrors": [
+          "弱酸当弱氧化剂。",
+          "把反应式当操作许可。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "HClO中和净式正确且弱酸、水保留。"
+          },
+          {
+            "points": 1,
+            "criterion": "中和Cl保持+1，说明非氧化还原；电荷均−1。"
+          },
+          {
+            "points": 1,
+            "criterion": "风险式两种剂正确，并给+1→0与−1→0依据。"
+          },
+          {
+            "points": 1,
+            "criterion": "风险式原子Cl2/H2/O1、电荷0核对正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确不混用含氯清洁剂与酸、氨类或其他清洁剂，可能释放有毒气体；纸面式不授予实测许可。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "短测1：氯水必须用⇌，弱HClO保留，不以投入量冒充实际水解量。",
+        "短测2：冷稀条件、正确净式与单边歧化电子倍数1均通过。",
+        "短测3：限制者先判断；Cl₂全还原时电子倍数2，不能照搬歧化。",
+        "短测4：弱酸性与氧化性分清，风险式两种剂与禁混用边界正确。",
+        "总分至少16/20，所有关键条件通过并完成核心和订正，才手动推进。保留首次独立分数；照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w10-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w10-chemistry-section-recall",
+          "w10-chemistry-section-water",
+          "w10-chemistry-section-split",
+          "w10-chemistry-section-alkali",
+          "w10-chemistry-section-hclo",
+          "w10-chemistry-section-reduction",
+          "w10-chemistry-section-risk",
+          "w10-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w10-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w10-chemistry-section-recall",
+          "w10-chemistry-section-water",
+          "w10-chemistry-section-split",
+          "w10-chemistry-section-alkali",
+          "w10-chemistry-section-hclo",
+          "w10-chemistry-section-reduction",
+          "w10-chemistry-section-risk",
+          "w10-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w10-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w10-chemistry-section-recall",
+          "w10-chemistry-section-water",
+          "w10-chemistry-section-split",
+          "w10-chemistry-section-alkali",
+          "w10-chemistry-section-hclo",
+          "w10-chemistry-section-reduction",
+          "w10-chemistry-section-risk",
+          "w10-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w10-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w10-chemistry-section-recall",
+          "w10-chemistry-section-water",
+          "w10-chemistry-section-split",
+          "w10-chemistry-section-alkali",
+          "w10-chemistry-section-hclo",
+          "w10-chemistry-section-reduction",
+          "w10-chemistry-section-risk",
+          "w10-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w10-chemistry-review-corrections",
+    "title": "12分钟评分与错因订正",
+    "instructions": [
+      "第1—3分钟：逐条计首次分数，单独核关键条件；分够但关键条件错仍未过关。",
+      "第4—8分钟：挑最多两个根本错点，写“原想法—缺少的条件或规则—正确依据—下次先查什么”，回对应本周小节。",
+      "第9—12分钟：关答案重建关键反应和一组量，用元素、电荷、电子或阶段总账复核。",
+      "12分钟内未解决的卡点记录活动ID，下一可用时段继续补救并独立重做，保留首次成绩和新尝试；不新增第二套20分测，不自动推进。"
+    ]
+  },
+  "nextStep": "完整核心与订正完成，唯一20分短测至少16分且全部关键条件通过后，学习者手动进入下一周。未达标按路由补救、另记重做尝试，不因日历换周自动跳过。",
+  "audioStatus": "未配置音频；概念、题设、解析、图替代文本均可直接阅读。",
+  "mastery": [
+    "从化学式推出Cl₂、Cl⁻、ClO⁻、HClO中Cl价，区分物种。",
+    "能解释氯水⇌及实际转化量的必要性，正确保留弱HClO。",
+    "能在冷稀碱限定条件下算限量、产物、余量与歧化电子。",
+    "能对比Cl₂全还原与歧化两条路线，认识清洁剂混用风险。",
+    "能够说明模型边界；首次分与补救后尝试分开，达标再手动推进。"
+  ],
+  "safetyScope": "全部是纸笔理论、给定数据分析与示意图阅读。钠、过氧化钠、氯气、酸、强氧化体系与铁盐不作为购买、混合、加热、制气或检验操作清单；不开展家庭实验。现实反应可能有平衡、传质、空气氧化等影响；定量结果仅在题设理想条件下成立。含氯清洁剂不得与酸性、氨类或其他清洁剂混用。",
+  "sourcePolicy": {
+    "authorship": "全部中文解释、情境、数字、题目、评分与图示原创；沿既定周路线深化，不挪入后续新专题。",
+    "examStatus": "全部为原创教学题，非历年真题；不编教材版本或页码，不预测2028必考内容。",
+    "externalSources": [
+      {
+        "id": "w10-chemistry-source-chlorine",
+        "title": "CCEA：AS 1 Chemistry eGuide（Halogens）",
+        "url": "https://ccea.org.uk/downloads/docs/Support/eGuide/2020/AS%201%20Chemistry%20eGuide:%20Basic%20Concepts%20in%20Physical%20and%20Inorganic%20Chemistry.pdf",
+        "kind": "reference",
+        "scopeNote": "仅核验冷稀NaOH形成氯化物/次氯酸盐、热浓条件不同以及歧化价态；不使用该资料简写单向水解符号，水解可逆性另据EPA核验。"
+      },
+      {
+        "id": "w10-chemistry-source-equilibrium",
+        "title": "US EPA：Development Document, Steam Electric（1982）",
+        "url": "https://www.epa.gov/sites/default/files/2015-07/documents/steam-electric_dd_1982.pdf",
+        "kind": "reference",
+        "scopeNote": "核验Cl₂+H₂O⇌HOCl+HCl的可逆性及次氯酸弱酸性质；本课用HClO与HOCl表示同一物质，不做水处理指导。"
+      },
+      {
+        "id": "w10-chemistry-source-photolysis",
+        "title": "RSC：Chlorine photolysis in drinking water treatment（2016）",
+        "url": "https://pubs.rsc.org/en/content/articlehtml/2016/ew/c6ew00029k",
+        "kind": "reference",
+        "scopeNote": "核验实际光化学随条件变化且比高中总式复杂，因此定量光照题明确只按题给总反应。"
+      },
+      {
+        "id": "w10-chemistry-source-safety",
+        "title": "CDC：Cleaning and Disinfecting with Bleach",
+        "url": "https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html",
+        "kind": "reference",
+        "scopeNote": "仅用于核验不得与其他清洁剂/消毒剂混用的安全边界；不复制该页操作步骤。"
+      }
+    ]
+  }
+}

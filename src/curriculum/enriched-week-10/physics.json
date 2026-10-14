@@ -1,0 +1,840 @@
+{
+  "id": "w10-物理",
+  "week": 10,
+  "subject": "物理",
+  "title": "动力学基本模型：先选轴，再守住每个阶段的边界",
+  "revision": "week10-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能选择水平/竖直或沿坡/法向轴并解释法向a=0条件。",
+    "斜拉斜压先更新N，再用摩擦和合力求a。",
+    "粗糙上滑停止时先查静摩擦，真正下滑后重算a。",
+    "处理光滑转向和竖直上抛，区别速度0与合力0。"
+  ],
+  "prerequisites": [
+    "第9周ΣF=ma及恒定段运动公式；第6—8周接触、摩擦、分量与平衡。",
+    "三角比由题给；不引入二维抛体、能量或复杂可动斜面。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "忙碌时把全部180分钟拆成两个90分钟周期。A=诊断10+补救15+正文含自检45+例1—3共20；B=例4—5共15+独练25+唯一测验25+订正25。不是只做一半后自动过周；若未达标，下次继续同一错点订正，不挤占第三科90分钟。",
+    "segments": [
+      {
+        "id": "w10-physics-time1",
+        "title": "闭卷诊断",
+        "minutes": 10,
+        "activityIds": [
+          "w10-physics-d1",
+          "w10-physics-d2",
+          "w10-physics-d3"
+        ]
+      },
+      {
+        "id": "w10-physics-time2",
+        "title": "定向补救和自检",
+        "minutes": 15,
+        "activityIds": [
+          "w10-physics-s1"
+        ]
+      },
+      {
+        "id": "w10-physics-time3",
+        "title": "正文理解与全部自检",
+        "minutes": 45,
+        "activityIds": [
+          "w10-physics-s2",
+          "w10-physics-s3",
+          "w10-physics-s4",
+          "w10-physics-s5",
+          "w10-physics-s6",
+          "w10-physics-s7",
+          "w10-physics-s8"
+        ]
+      },
+      {
+        "id": "w10-physics-time4",
+        "title": "五个扶助例题：先尝试再核对",
+        "minutes": 35,
+        "activityIds": [
+          "w10-physics-ex1",
+          "w10-physics-ex2",
+          "w10-physics-ex3",
+          "w10-physics-ex4",
+          "w10-physics-ex5"
+        ]
+      },
+      {
+        "id": "w10-physics-time5",
+        "title": "五题独立练习",
+        "minutes": 25,
+        "activityIds": [
+          "w10-physics-pr1",
+          "w10-physics-pr2",
+          "w10-physics-pr3",
+          "w10-physics-pr4",
+          "w10-physics-pr5"
+        ]
+      },
+      {
+        "id": "w10-physics-time6",
+        "title": "唯一20分周测",
+        "minutes": 25,
+        "activityIds": [
+          "w10-physics-quiz1",
+          "w10-physics-quiz2",
+          "w10-physics-quiz3",
+          "w10-physics-quiz4"
+        ]
+      },
+      {
+        "id": "w10-physics-time7",
+        "title": "评分、回读与遮答案订正",
+        "minutes": 25,
+        "activityIds": [
+          "w10-physics-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "10分钟闭卷，只定位前置漏洞，不计入20分；全部完成后按错因进入s1，做对也快速复述理由。",
+    "questions": [
+      {
+        "id": "w10-physics-d1",
+        "title": "诊断1｜角度先认轴",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "10 N力斜向右下，与水平夹θ，sinθ=0.6、cosθ=0.8。右+x、上+y，求分量。",
+        "answer": "F_x=+8 N、F_y=−6 N。",
+        "steps": [
+          "水平邻边10×0.8=8。",
+          "竖直向下，对边10×0.6=6，记−6 N。"
+        ],
+        "commonErrors": [
+          "只算大小不写下方向。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w10-physics-d2",
+        "title": "诊断2｜法向不是合运动方向",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "2 kg物块沿固定直斜面滑动，g=10 m/s²、cosθ=0.8，无其他法向力，保持接触。N多少？沿坡有加速度会否使N=0？",
+        "answer": "N=16 N；不会，法向a=0不等于沿坡a=0。",
+        "steps": [
+          "保持平直斜面接触，法向a=0，N=mgcosθ。",
+          "沿坡运动变化由另一方向方程处理。"
+        ],
+        "commonErrors": [
+          "把N当mg。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w10-physics-d3",
+        "title": "诊断3｜跨零计算和模型条件",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "光滑直线上v₀=+6 m/s、a=−2 m/s²恒定4 s。求停时、末v、位移和路程。",
+        "answer": "3 s停；v₄=−2 m/s；位移+8 m、路程10 m。",
+        "steps": [
+          "停止历时3 s，前段9 m。",
+          "后1 s反向1 m，位移8、路程10；末v=−2。"
+        ],
+        "commonErrors": [
+          "路程取位移绝对值。"
+        ],
+        "estimatedMinutes": 4
+      }
+    ],
+    "routes": [
+      {
+        "when": "诊断1混淆角度基准或分量方向。",
+        "action": "回s1认对边邻边，再在s3把向上拉和向下压分开。",
+        "sectionIds": [
+          "w10-physics-s1",
+          "w10-physics-s3"
+        ]
+      },
+      {
+        "when": "诊断2把法向与沿坡混成一个方程。",
+        "action": "回s2说明保持接触为何法向a为0，在s4分别列沿坡与法向。",
+        "sectionIds": [
+          "w10-physics-s1",
+          "w10-physics-s2",
+          "w10-physics-s4"
+        ]
+      },
+      {
+        "when": "诊断3跨零后混淆位移/路程；全对者也做简短核查。",
+        "action": "回s1画正负面积，再在s7说明光滑模型何时可跨零。",
+        "sectionIds": [
+          "w10-physics-s1",
+          "w10-physics-s7"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w10-physics-s1",
+      "title": "补救：先把上周a接到方向和区间",
+      "level": "remediation",
+      "paragraphs": [
+        "第9周告诉我们ΣF=ma；第7周让斜力在选定轴上分解，第8周提醒静止和接触假设必须检验。先画对象的真实力，再投影，不把分量当额外力。",
+        "角从水平量起时水平分量Fcosθ、竖直Fsinθ；角从竖直量起要互换。符号由方向决定；向下分量在上为正时为负。所有三角比由题目给出。",
+        "第3、5周公式只用于同一恒定a段：v=v₀+aΔt，Δx=(v₀+v)Δt/2。到v=0时先问真实受力是否改变；a仍恒定可跨零求位移，路程却应分段。",
+        "第6周静摩擦需求与上限、动摩擦μ_kN不能混用。粗糙斜面上滑停止后，不先检查静止条件便宣布下滑，会漏掉一种完全可能的结局。"
+      ],
+      "keyPoints": [
+        "方向先分开，时间先分段。",
+        "转向前后重查摩擦。"
+      ],
+      "checkpoint": {
+        "question": "斜面沿坡重力6 N、最大静摩擦7 N，物块上滑停下后能否保持静止？",
+        "answer": "能，静摩擦6 N沿坡向上。",
+        "explanation": "所需6≤7；停止后不再使用滑动摩擦。"
+      }
+    },
+    {
+      "id": "w10-physics-s2",
+      "title": "建模清单：每个理想词都承担一项工作",
+      "level": "core",
+      "paragraphs": [
+        "本课以地面为近似惯性参考系，把物体看作恒质量质点，g按题给，不计空气阻力。题说光滑才忽略摩擦，题说固定斜面才把斜面视为不动，不能擅自把所有地面都当光滑。",
+        "固定、平直斜面上保持接触且沿面运动，法向速度不变为0，所以法向a=0；沿坡可以加速。水平面保持接触时，竖直a=0但水平可不为0。",
+        "接触约束有边界：普通支持面只能推，不能拉。若按保持接触假设算出N<0，说明假设失效；需设脱离后N=0重新列方程，不把负N代进摩擦。",
+        "只在题目明确的新阶段内计算。碰到斜面端点、地面或障碍物时，本课直线无碰撞模型结束；不给后续条件就不能外推。"
+      ],
+      "keyPoints": [
+        "光滑、固定、保持接触各有具体含义。",
+        "N≥0是检验，不是可随意修改的结果。"
+      ],
+      "checkpoint": {
+        "question": "算得N=−2 N时，能写摩擦μ_k×(−2 N)吗？",
+        "answer": "不能。",
+        "explanation": "接触假设已失效，先重新判定支持力与接触状态。"
+      }
+    },
+    {
+      "id": "w10-physics-s3",
+      "title": "斜拉与斜压：先更新N，再求摩擦",
+      "level": "core",
+      "paragraphs": [
+        "水平右滑物块受F斜向右上，与水平θ，竖直仍无加速度，则N+Fsinθ−mg=0，N=mg−Fsinθ。上拉分担重量，支持力和动摩擦通常减小。",
+        "若F改斜向右下，竖直式N−mg−Fsinθ=0，N=mg+Fsinθ。下压增加法向挤压，使μ_kN增大；水平分量依旧为Fcosθ。",
+        "然后列水平Fcosθ−μ_kN=ma，前提是仍向右滑且保持接触。两种方向的斜力不能只改变图上箭头却继续用同一N。",
+        "若F的向上分量超过mg，按N=mg−F_y会得负值。这告诉我们物块会离开面；脱离时N=0、摩擦也0。本课只要求认出边界，不把后续二维运动混进核心。"
+      ],
+      "keyPoints": [
+        "竖直算N→动摩擦→水平算a。",
+        "斜压增加N，斜拉减小N。"
+      ],
+      "checkpoint": {
+        "question": "G=20 N，右下力分量水平8 N、竖直6 N，μ_k=0.25。右滑时合力水平多少？",
+        "answer": "N=26 N，摩擦6.5 N左，合力1.5 N右。",
+        "explanation": "不能用原来的N=20 N得到错误摩擦5 N。"
+      }
+    },
+    {
+      "id": "w10-physics-s4",
+      "title": "固定斜面：沿坡和法向各列一行",
+      "level": "core",
+      "paragraphs": [
+        "取沿坡向下正、法向向外正。重力沿坡为+mg sinθ、法向为−mg cosθ；保持接触且无别的法向力时，N−mgcosθ=0。重力始终竖直向下，分量只是同一力的投影。",
+        "已下滑时，摩擦沿坡向上，沿坡式mg sinθ−μ_kN=ma。a为正表示下坡加速，为负则下坡减速；正负不能直接等同于快慢。",
+        "若物块上滑，摩擦沿坡向下，重力沿坡分量也向下。若仍取下坡正，合力为mg sinθ+μ_kN，a向下，与上滑速度反向。",
+        "也可取上坡正，此时上滑阶段a=−g(sinθ+μ_kcosθ)。选哪条正方向都可以，但同一方程要一致，不能换轴后只改一项。"
+      ],
+      "keyPoints": [
+        "支持力由法向a=0得出。",
+        "上滑时重力沿坡分量与摩擦同向。"
+      ],
+      "checkpoint": {
+        "question": "m=2 kg，g=10、sinθ=0.6、cosθ=0.8、μ_k=0.25，已下滑，求a。",
+        "answer": "N=16 N，摩擦4 N向上坡，a=4 m/s²向下坡。",
+        "explanation": "沿坡合力12−4=8 N，再除2 kg。"
+      }
+    },
+    {
+      "id": "w10-physics-s5",
+      "title": "粗糙上滑的停止点：不是自动开始下滑",
+      "level": "core",
+      "paragraphs": [
+        "上滑过程摩擦向下，与重力沿坡分量共同减速。先用这一段a求到v=0的时刻和上滑距离；旧滑动阶段到此结束。",
+        "停住后先假设能静止：若无其他沿坡外力，所需静摩擦是mg sinθ向上坡；再与题给f_s,max或μ_sN比较。所需不超过上限，便可留在原处。",
+        "若所需超过上限，才会开始下滑。进入下滑后摩擦改向上坡，用μ_kN列新的a；不能沿用上滑时向下的摩擦。μ_s与μ_k通常不同，题没给就不能自行替代。",
+        "例如沿坡重力6 N、动摩擦2 N、最大静摩擦4 N：上滑时总阻力8 N；停后需要6 N但上限4 N，不足；下滑时合力是4 N向下。这三个阶段分别算，绝不“一个a走到底”。"
+      ],
+      "keyPoints": [
+        "停点先比静摩擦需求与上限。",
+        "真正下滑后摩擦换向、a重算。"
+      ],
+      "checkpoint": {
+        "question": "沿坡重力6 N、动摩擦2 N，最大静摩擦改为8 N，停后怎么办？",
+        "answer": "静止，静摩擦6 N向上；不再下滑。",
+        "explanation": "6≤8，能抵消下滑趋势；2 N只属于原滑动段。"
+      }
+    },
+    {
+      "id": "w10-physics-s6",
+      "title": "竖直上抛：最高点也只受重力",
+      "level": "core",
+      "paragraphs": [
+        "物体离手后竖直上抛，不计空气阻力且尚未碰撞时，只受重力。上为正，−mg=ma，故a=−g；无论上升、最高点、下降，重力都不消失。",
+        "由v=v₀−gt找最高点：v=0给t顶=v₀/g。最高点瞬时速度0，但a仍−g。上升减速和下降加速是同一向下a配合不同方向v的结果。",
+        "这一段a跨最高点不变，可用y=v₀t−gt²/2求有符号位移。若求路程且已下降，先算上升高度，再加从最高点降下的距离，不能直接取y的绝对值。",
+        "自由落体“从静止”简式v=gt不能从上抛出发点直接用。它可用于最高点之后的下降小段，但要重新设该段时间0，并受首次碰撞边界限制。"
+      ],
+      "keyPoints": [
+        "最高点v=0，a=−g。",
+        "上抛不从静止，不乱套自由落体初值。"
+      ],
+      "checkpoint": {
+        "question": "0.2 kg球以20 m/s上抛，g=10，最高点G、a、v？",
+        "answer": "G=2 N向下，a=10 m/s²向下，v=0。",
+        "explanation": "质量与速度不让重力在最高点消失。"
+      }
+    },
+    {
+      "id": "w10-physics-s7",
+      "title": "光滑转向与阶段切换：速度接续，加速度重查",
+      "level": "core",
+      "paragraphs": [
+        "固定光滑斜面上滑时，若一直保持接触且未到端点，沿坡力始终只有重力分量。上坡正，a=−g sinθ；到最高位置后自然下滑，a仍相同，不因速度反向而反向。",
+        "粗糙上滑转下滑与此不同：摩擦方向会变，a一般也变。不要把“速度0”一律当公式断点，也不要一律认为可以跨过；决定因素是力和约束是否改变。",
+        "外力在题给时刻撤去，若无碰撞或额外冲量，速度不会突然跳成0。新段用旧段末速度作初速度；把总时刻t与新段历时τ=t−t节点分清。",
+        "支持力降到0、绳松弛、到达边缘等也是模型条件的变化。先更新实际力和约束，再决定是否还适用本周的一维公式；信息不足应说明不足。"
+      ],
+      "keyPoints": [
+        "速度连续不等于加速度连续。",
+        "是否跨零要看真实受力是否不变。"
+      ],
+      "checkpoint": {
+        "question": "t=2 s撤力前v=5 m/s，撤力无冲量，新段初速度多少？",
+        "answer": "5 m/s。",
+        "explanation": "撤力可改变a，但不瞬间清空v。"
+      }
+    },
+    {
+      "id": "w10-physics-s8",
+      "title": "一页核对：从条件回到结果",
+      "level": "core",
+      "paragraphs": [
+        "把题目拆成“对象/轴/受力/约束/a/历时/结果”七栏。斜拉斜压先看法向，斜面先分解重力，上抛先删去离手后的手力。",
+        "每到停止或条件变化，问四句：接触还在吗？摩擦是哪一种、向哪？绳是否绷紧？外力是否仍存在？只有条件相同，才沿用同一a。",
+        "最终用v-t面积或首尾平均做第二种位移核查，再检查路程≥位移大小。唯一20分周测把这些条件和数字一起计分，不以背出最终答案代替模型说明。"
+      ],
+      "keyPoints": [
+        "先判断模型边界，再算未知数。",
+        "第二算法核对的是同一阶段。"
+      ],
+      "checkpoint": {
+        "question": "物块上滑到0后，上滑动摩擦公式能直接用来判它会不会下滑吗？",
+        "answer": "不能，先判断静止所需与最大静摩擦。",
+        "explanation": "停下时进入新的接触运动状态，动摩擦模型已到边界。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w10-physics-ex1",
+      "title": "例1｜下压增加摩擦",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "5 kg小块初速2 m/s向右滑，恒力25 N斜右下，与水平37°；μ_k=0.20、g=10、sin37°=0.6、cos37°=0.8。求a与5 s末v、位移。",
+      "answer": "N=65 N，f=13 N左，a=1.4 m/s²右；v=9 m/s，位移27.5 m右。",
+      "steps": [
+        "F_x=20 N、F_y=−15 N。",
+        "竖直N−50−15=0，N=65。",
+        "右滑摩擦0.20×65=13，合力20−13=7 N。",
+        "a=7/5=1.4，v=2+1.4×5=9，Δx=(2+9)×5/2=27.5。",
+        "全程右滑，N>0，原模型自洽。"
+      ],
+      "commonErrors": [
+        "斜压仍用N=mg−F_y的大小减法。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w10-physics-ex2",
+      "title": "例2｜下滑斜面两方向分开",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "2 kg小块在固定37°斜面下滑，初速1 m/s；μ_k=0.25、g=10、sin=0.6、cos=0.8。求N、f、a及2 s内位移与末v。",
+      "answer": "N=16 N、f=4 N上坡、a=4 m/s²下坡、位移10 m下坡、v=9 m/s下坡。",
+      "steps": [
+        "下坡正，法向N=20×0.8=16。",
+        "沿坡重力12 N、摩擦4 N向上。",
+        "12−4=2a，a=4。",
+        "v=1+4×2=9，位移(1+9)×2/2=10。",
+        "正v继续增大，无停止或换摩擦阶段。"
+      ],
+      "commonErrors": [
+        "N取20 N。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w10-physics-ex3",
+      "title": "例3｜粗糙上滑后真的会下滑吗",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "1 kg小块沿固定斜面上滑，v₀=4 m/s；g=10、sinθ=0.6、cosθ=0.8、μ_k=0.25，最大静摩擦4 N，无其他力。求上滑a、停车历时/距离；判断停后状态，求重新下滑1 s的速度。",
+      "answer": "上坡正a上=−8 m/s²，0.5 s停、上滑1 m；所需6 N>4 N，开始下滑；下滑a=4 m/s²，1 s速度4 m/s下坡。",
+      "steps": [
+        "N=8，动摩擦2 N。",
+        "上滑时沿坡合力为−6−2=−8 N，a=−8。",
+        "t停=4/8=0.5，距离(4+0)×0.5/2=1 m。",
+        "停后需6 N上坡静摩擦但上限4，不足。",
+        "进入下滑，摩擦2 N上坡，新合力4 N下坡，a=4；从该段静止过1 s得4 m/s。"
+      ],
+      "commonErrors": [
+        "上滑a沿用到下滑。",
+        "不查静摩擦上限。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w10-physics-ex4",
+      "title": "例4｜最高点前后同一重力",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "0.20 kg小球以20 m/s竖直上抛，g=10，空气阻力忽略。取上正，0—3 s均未碰撞。求1 s时v、位移；最高点时v、合力和a；3 s位移与路程。",
+      "answer": "1 s：v=+10 m/s、y=+15 m；最高点2 s，v0、合力2 N下、a10 m/s²下；3 s位移+15 m，路程25 m。",
+      "steps": [
+        "离手后只受重力，a=−10。",
+        "v₁=20−10=10，y₁=(20+10)/2=15。",
+        "t顶=20/10=2，最高高度20 m；最高点重力仍2 N。",
+        "3 s末v=−10，y₃=20×3−10×9/2=15。",
+        "从顶降5 m，路程20+5=25 m；位移20−5=15。"
+      ],
+      "commonErrors": [
+        "最高点加速度0。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w10-physics-ex5",
+      "title": "例5｜光滑斜面可以跨零，但路程另算",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "物体以10 m/s沿固定光滑30°斜面上滑，g=10、sin30°=0.5，斜面足够长且保持接触。上坡正，求停时、上滑距离及3 s末v、位移、路程。",
+      "answer": "a=−5 m/s²；2 s停，上滑10 m；3 s末v=−5 m/s，位移+7.5 m，路程12.5 m。",
+      "steps": [
+        "沿坡合力只有−mg×0.5，a=−5。",
+        "停时10/5=2 s，上滑(10+0)×2/2=10 m。",
+        "无摩擦，转向前后受力不变，所以v₃=10−15=−5。",
+        "位移10×3−5×9/2=7.5 m。",
+        "末1 s从静止下滑2.5 m，路程10+2.5=12.5 m。"
+      ],
+      "commonErrors": [
+        "速度反向就把a也反向。"
+      ],
+      "estimatedMinutes": 8
+    }
+  ],
+  "practice": [
+    {
+      "id": "w10-physics-pr1",
+      "title": "独练1｜斜向上拉",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "2 kg物块初速1 m/s向右滑，10 N斜右上力与水平θ，sin=0.6、cos=0.8，μ_k=0.25、g=10。求N、f与a。",
+      "answer": "N=14 N，f=3.5 N左，a=2.25 m/s²右。",
+      "steps": [
+        "N+6−20=0，N14。",
+        "摩擦3.5 N；水平合力8−3.5=4.5 N，a=4.5/2=2.25。"
+      ],
+      "commonErrors": [
+        "斜拉不更新N。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w10-physics-pr2",
+      "title": "独练2｜接触假设失败",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "1 kg物块原在水平面，随后受向上分量12 N的斜力，g=10，无粘接。有人算N=−2 N且摩擦为负。解释错误，并给脱离后竖直a。",
+      "answer": "N不能负；脱离后N=0、摩擦0，竖直a=2 m/s²向上。",
+      "steps": [
+        "保持接触假设要求N+12−10=0，却得−2，违背普通面只能推。",
+        "脱离后竖直合力12−10=2 N，除1 kg得2。",
+        "不再对脱离后套“竖直a=0”。"
+      ],
+      "commonErrors": [
+        "把负N当可实现支持。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w10-physics-pr3",
+      "title": "独练3｜粗糙上滑可能停住",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "1 kg小块上滑，v₀=6 m/s，g=10、sin=0.6、cos=0.8、μ_k=0.25，最大静摩擦7 N。求首次停止时间、上滑距离和停止后的状态。",
+      "answer": "0.75 s停，上滑2.25 m；停后静止，静摩擦6 N上坡。",
+      "steps": [
+        "N8，动摩擦2 N，下坡阻力8 N，所以上坡正a=−8。",
+        "t=6/8=0.75，位移(6+0)×0.75/2=2.25。",
+        "停止所需6≤7，静止可行。"
+      ],
+      "commonErrors": [
+        "静止仍用2 N动摩擦。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w10-physics-pr4",
+      "title": "独练4｜上抛跨最高点",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "球以10 m/s竖直上抛，g=10，取上正，1.5 s内未碰撞。求最高点时刻、1.5 s速度与位移和路程。",
+      "answer": "最高点1 s；v=−5 m/s；位移+3.75 m、路程6.25 m。",
+      "steps": [
+        "a=−10，1 s到0，上升5 m。",
+        "后0.5 s下降1.25 m，末v−5。",
+        "位移5−1.25=3.75，路程5+1.25=6.25。"
+      ],
+      "commonErrors": [
+        "a在最高点变0。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w10-physics-pr5",
+      "title": "独练5｜撤力后用哪一个时间",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "光滑水平面2 kg物块初静止，0—2 s受4 N右拉，2 s时撤力且无冲量，之后无水平力。求3 s末速度与总位移，说明第二段历时。",
+      "answer": "3 s末v=4 m/s；总位移8 m；第二段历时1 s。",
+      "steps": [
+        "首段a=2，2 s末v4、位移4 m。",
+        "撤力速度仍4，新段a0。",
+        "3−2=1 s，后段位移4 m，总8。"
+      ],
+      "commonErrors": [
+        "撤力把速度清零。",
+        "第二段再用3 s。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "水平面任何时候N=mg。",
+      "why": "斜拉或斜压有竖直分量。",
+      "right": "由竖直方程求N并检验接触。"
+    },
+    {
+      "wrong": "上滑停止必立即下滑。",
+      "why": "静摩擦可能足以保持静止。",
+      "right": "停点先求需要再比上限。"
+    },
+    {
+      "wrong": "最高点速度0说明重力和a都0。",
+      "why": "瞬时速度不决定受力。",
+      "right": "上抛未接触阶段始终只受重力。"
+    },
+    {
+      "wrong": "分段公式中的时间都是总时刻。",
+      "why": "每段初始状态和计时起点不同。",
+      "right": "新段历时=总时刻−节点时刻。"
+    }
+  ],
+  "quiz": {
+    "instructions": "闭卷25分钟，四题共20分，均为原创教学题、非历年真题。按rubric逐点评分，达到16分且关键条件全部通过才算掌握。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w10-physics-quiz1",
+        "title": "周测1｜斜压与接触边界",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "2 kg物块向右滑，受10 N斜右下恒力，与水平θ，sin=0.6、cos=0.8，μ_k=0.25、g=10。求N、f与a。另一个无粘接物块若按接触假设算出N<0，应怎样处理？",
+        "answer": "N=26 N、f=6.5 N左、a=0.75 m/s²右；负N表示接触假设失败，脱离后N=f=0并重列式。",
+        "steps": [
+          "F_x8、F_y下6。",
+          "N=20+6=26，f6.5左。",
+          "8−6.5=2a，a0.75。",
+          "负N不能实现，需重新判定脱离接触。"
+        ],
+        "commonErrors": [
+          "不考虑支持力变化。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "水平分量8 N、下分量6 N。"
+          },
+          {
+            "points": 1,
+            "criterion": "竖直列N−20−6=0得26 N。"
+          },
+          {
+            "points": 1,
+            "criterion": "滑动摩擦6.5 N向左。"
+          },
+          {
+            "points": 1,
+            "criterion": "水平列8−6.5=2a得0.75 m/s²右。"
+          },
+          {
+            "points": 1,
+            "criterion": "N<0须否定接触假设，脱离后N和摩擦为0并重列式。"
+          }
+        ]
+      },
+      {
+        "id": "w10-physics-quiz2",
+        "title": "周测2｜粗糙上滑到停止",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "1 kg物块沿固定斜面上滑，v₀=4 m/s，g=10、sinθ=0.6、cosθ=0.8、μ_k=0.25，无其他外力。求N、上滑a、停车历时/距离；要停后维持静止，最大静摩擦至少多大？若μ_s=0.80，能否保持静止，实际摩擦多少、向哪？",
+        "answer": "N=8 N；上坡正a=−8 m/s²；0.5 s停、上滑1 m。最大静摩擦至少6 N；μ_s=0.80时上限6.4 N，能静止，实际6 N向上坡。",
+        "steps": [
+          "N=mgcosθ=8 N，上滑动摩擦2 N向下坡。",
+          "上坡正，−6−2=1a，a=−8 m/s²。",
+          "停车t=4/8=0.5 s，位移(4+0)×0.5/2=1 m。",
+          "停后要抵消沿坡重力6 N，故最大静摩擦至少6 N。",
+          "若μ_s=0.80，上限0.80×8=6.4 N≥6 N，静止可行；实际摩擦按所需取6 N向上坡。"
+        ],
+        "commonErrors": [
+          "停后仍用2 N动摩擦。",
+          "把最大值6.4 N误作实际静摩擦。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "N=8 N、滑动摩擦2 N向下坡。"
+          },
+          {
+            "points": 1,
+            "criterion": "上滑a=−8 m/s²（上坡正）。"
+          },
+          {
+            "points": 1,
+            "criterion": "首次停下历时0.5 s。"
+          },
+          {
+            "points": 1,
+            "criterion": "上滑距离1 m。"
+          },
+          {
+            "points": 1,
+            "criterion": "反推最大静摩擦至少6 N；μ_s=0.80时上限6.4 N≥6 N，判断可静止且实际6 N向上坡。"
+          }
+        ]
+      },
+      {
+        "id": "w10-physics-quiz3",
+        "title": "周测3｜光滑斜面反向",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "固定光滑斜面sinθ=0.5、g=10，物体初速6 m/s沿坡向上，3 s内始终保持接触且斜面足够长。取上坡正，求a、停时、3 s末v、位移和路程。",
+        "answer": "a=−5 m/s²；1.2 s停；v₃=−9 m/s；位移−4.5 m，路程11.7 m。",
+        "steps": [
+          "a=−g sinθ=−5。",
+          "停时6/5=1.2，上滑距离3.6 m。",
+          "3 s末v=6−15=−9；位移18−22.5=−4.5。",
+          "后1.8 s下滑8.1 m，路程3.6+8.1=11.7。",
+          "光滑无摩擦，转向不改变a。"
+        ],
+        "commonErrors": [
+          "总位移负就把路程也写负。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "a=−5 m/s²且说明转向前后受力不变。"
+          },
+          {
+            "points": 1,
+            "criterion": "停时1.2 s，上滑距离3.6 m。"
+          },
+          {
+            "points": 1,
+            "criterion": "3 s速度−9 m/s。"
+          },
+          {
+            "points": 1,
+            "criterion": "3 s位移−4.5 m。"
+          },
+          {
+            "points": 1,
+            "criterion": "后段下滑8.1 m并得到路程11.7 m。"
+          }
+        ]
+      },
+      {
+        "id": "w10-physics-quiz4",
+        "title": "周测4｜竖直抛体最高点与阶段时间",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "0.50 kg球以12 m/s竖直上抛，g=10，无空气阻力且前2 s不碰撞。取上正，求最高点时刻、该点速度/合力/a；再求2 s速度、位移和路程。解释能否从抛出点直接用v=gt。",
+        "answer": "1.2 s最高点；v0、合力5 N下、a−10 m/s²；2 s速度−8 m/s，位移+4 m，路程10.4 m；不能从抛出点套从静止下落式。",
+        "steps": [
+          "a=−10，0=12−10t得1.2。",
+          "最高点只有重力5 N，速度0不意味着a0。",
+          "v₂=−8，位移12×2−10×4/2=4。",
+          "上升7.2 m，下降0.8 s走3.2 m，路程10.4。",
+          "抛出初速12非0；最高点后另设历时可用自由落体关系。"
+        ],
+        "commonErrors": [
+          "最高点把G或a清零。",
+          "把下降历时写2 s。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "最高点时刻1.2 s且速度0。"
+          },
+          {
+            "points": 1,
+            "criterion": "最高点合力5 N向下、a=−10 m/s²。"
+          },
+          {
+            "points": 1,
+            "criterion": "2 s速度−8 m/s、位移+4 m。"
+          },
+          {
+            "points": 1,
+            "criterion": "上升7.2 m加下降3.2 m，路程10.4 m。"
+          },
+          {
+            "points": 1,
+            "criterion": "不能从抛出点直接用v=gt；初速非0，另设最高点后历时才适用从静止下落。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "周测1必须先更新N；负N不得作为真实支持力继续算。",
+        "周测2必须用停后静摩擦上限判断，不准自动下滑。",
+        "周测3必须区分带符号位移与累计路程。",
+        "周测4必须保留最高点非零重力和a，并明确初速度/历时条件。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w10-physics-quiz1"
+        ],
+        "sectionIds": [
+          "w10-physics-s1",
+          "w10-physics-s2",
+          "w10-physics-s3"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w10-physics-quiz2"
+        ],
+        "sectionIds": [
+          "w10-physics-s1",
+          "w10-physics-s4",
+          "w10-physics-s5"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w10-physics-quiz3"
+        ],
+        "sectionIds": [
+          "w10-physics-s4",
+          "w10-physics-s7",
+          "w10-physics-s8"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w10-physics-quiz4"
+        ],
+        "sectionIds": [
+          "w10-physics-s1",
+          "w10-physics-s6",
+          "w10-physics-s7"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      }
+    ]
+  },
+  "mastery": [
+    "能在地面近似惯性参考系中写清对象、正方向、受力及模型条件。",
+    "能先求合力和加速度，再接运动公式；数值、单位、方向同时正确。",
+    "遇停止、转向、脱离接触或连接变化先重判模型，不能自动延长旧式。",
+    "唯一20分测验至少16分，所有关键条件检查通过，订正后手动推进。"
+  ],
+  "nextStep": "按本课唯一测验完成订正后手动推进；数值对但条件或方向错仍需回读。未完成时保留本周，不自动升周。",
+  "sourcePolicy": {
+    "authorship": "全部讲解与题目为原创教学内容；保留原84周路线的模型，独立逐题复算。",
+    "examStatus": "非历年真题；未据此声称河南或南阳指定教材版本、页码。",
+    "externalSources": [
+      {
+        "title": "NASA Glenn：Newton’s Laws of Motion",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+        "id": "w10-physics-source1",
+        "kind": "reference",
+        "scopeNote": "核验三定律的基础含义；本课限定恒质量、近似惯性参考系，无逐字长引。"
+      },
+      {
+        "title": "OpenStax University Physics 1：6.1 Solving Problems with Newton’s Laws",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+        "id": "w10-physics-source2",
+        "kind": "reference",
+        "scopeNote": "原发布机构教材，核验受力—动力学—运动学与连接体分析框架；题目独立创作。"
+      },
+      {
+        "title": "OpenStax University Physics 1：6.2 Friction",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+        "id": "w10-physics-source3",
+        "kind": "reference",
+        "scopeNote": "核验静摩擦上限和滑动摩擦模型条件。"
+      }
+    ]
+  },
+  "audioStatus": "未生成配音；正文可独立学习。",
+  "reviewActivity": {
+    "id": "w10-physics-review",
+    "title": "25分钟逐点评分与订正",
+    "instructions": [
+      "前5分钟按唯一20分评分表自评并逐项检查关键条件；映射不是另一份考试。",
+      "中间10分钟按错因回所列正文，先改对象、方向和阶段条件，再复算。",
+      "最后10分钟遮住答案重做失分步骤，说明为什么要换模型；仍未过关下次续做。"
+    ]
+  }
+}

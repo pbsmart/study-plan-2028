@@ -1,0 +1,45 @@
+[
+  {
+    "id": "w9-math-log-curves",
+    "title": "真数在横轴：同过(1,0)，方向随底数改变",
+    "asset": "assets/math-log-curves.svg",
+    "altText": "蓝线y=log₂x递增，橙线y=log_(1/2)x递减。两者定义域x>0，值域R，均过(1,0)。图示仅取1/8≤x≤5；靠近y轴不表示x=0允许。",
+    "description": "蓝线y=log₂x递增，橙线y=log_(1/2)x递减。两者定义域x>0，值域R，均过(1,0)。图示仅取1/8≤x≤5；靠近y轴不表示x=0允许。",
+    "linkedSectionIds": [
+      "w9-math-s2",
+      "w9-math-s5",
+      "w9-math-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w9-math-log-original-domain",
+    "title": "合并不能把原来无定义的输入补回来",
+    "asset": "assets/math-log-original-domain.svg",
+    "altText": "原式log₂(x−1)+log₂(x−3)要求x>3。合并后乘积(x−1)(x−3)>0还包含x<1，但该支两个原真数都负，不能加入原定义域。",
+    "description": "原式log₂(x−1)+log₂(x−3)要求x>3。合并后乘积(x−1)(x−3)>0还包含x<1，但该支两个原真数都负，不能加入原定义域。",
+    "linkedSectionIds": [
+      "w9-math-s3",
+      "w9-math-s4",
+      "w9-math-s6"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w9-math-log-solution-route",
+    "title": "每次解题保留三个对象",
+    "asset": "assets/math-log-solution-route.svg",
+    "altText": "原条件栏包括合法底数、每个原真数正与题给x区间。变形栏处理等价方程或依底数单调比较。最终栏取交并代回原式，负x不自动删、真数0必排除。",
+    "description": "原条件栏包括合法底数、每个原真数正与题给x区间。变形栏处理等价方程或依底数单调比较。最终栏取交并代回原式，负x不自动删、真数0必排除。",
+    "linkedSectionIds": [
+      "w9-math-s4",
+      "w9-math-s6",
+      "w9-math-s7",
+      "w9-math-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

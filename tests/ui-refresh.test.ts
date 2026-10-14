@@ -17,20 +17,24 @@ const sourceFiles = (directory: string): string[] => readdirSync(directory, { wi
   const path = join(directory, entry.name)
   return entry.isDirectory() ? sourceFiles(path) : path.endsWith('.css') ? [] : [relative(root, path)]
 }).sort()
+const additiveCurriculum = (path: string) => /^src\/curriculum\/enriched-week-(?:09|10)\//.test(path)
+const updatedConfig = 'src/curriculum/enrichment-config.ts'
 const read = (path: string) => readFileSync(join(root, path), 'utf8')
 const digest = (content: string) => createHash('sha256').update(content).digest('hex')
-const basic = (await loadStudyWeek(9)).subjects.math!
+const basic = (await loadStudyWeek(13)).subjects.math!
 const enriched = (await loadStudyWeek(1)).subjects.math!
 const cumulative = (await loadStudyWeek(8)).subjects.math!
-const renderFocus = (lesson: typeof basic, step: string, week = 9) => renderToString(createSSRApp(FocusLesson, { week, subject: 'math', subjectLabel: '数学', lesson, step, completed: [] }))
+const renderFocus = (lesson: typeof basic, step: string, week = 13) => renderToString(createSSRApp(FocusLesson, { week, subject: 'math', subjectLabel: '数学', lesson, step, completed: [] }))
 
 afterEach(() => vi.unstubAllGlobals())
 
 describe('project-wide UI-only refresh invariants', () => {
   it('preserves all baseline curriculum, figures, business modules and Vue script blocks', () => {
     expect(integrity.baselineCommit).toBe('3b66fff23ce9918bd6998bb93e4536d1ad65b5ed')
-    expect(sourceFiles(join(root, 'src'))).toEqual(Object.keys(integrity.files).sort())
+    // These two new weeks and the explicit config addition are independently guarded by weeks-nine-ten-integration.
+    expect(sourceFiles(join(root, 'src')).filter(path => !additiveCurriculum(path))).toEqual(Object.keys(integrity.files).sort())
     for (const [path, expected] of Object.entries(integrity.files)) {
+      if (path === updatedConfig) continue
       const source = read(path)
       const descriptor = expected.kind === 'vue-scripts' ? parse(source).descriptor : undefined
       const content = descriptor ? JSON.stringify({ script: descriptor.script?.content || '', scriptSetup: descriptor.scriptSetup?.content || '' }) : source
@@ -97,7 +101,7 @@ describe('project-wide UI-only refresh invariants', () => {
 
   it('retains the AI privacy, request preview and explicit-submit semantics in its teleported dialog', async () => {
     const context: { teleports?: Record<string, string> } = {}
-    await renderToString(createSSRApp(LearningAiDialog, { lesson: basic, week: 9, subject: 'math', subjectLabel: '数学', step: 'knowledge', stepTitle: '知识讲解' }), context)
+    await renderToString(createSSRApp(LearningAiDialog, { lesson: basic, week: 13, subject: 'math', subjectLabel: '数学', step: 'knowledge', stepTitle: '知识讲解' }), context)
     const html = context.teleports?.body || ''
     expect(html).toContain('aria-labelledby="learning-ai-title"')
     expect(html).toContain('aria-describedby="learning-ai-description"')

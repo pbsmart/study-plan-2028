@@ -1,0 +1,885 @@
+{
+  "id": "w9-化学",
+  "week": 9,
+  "subject": "化学",
+  "title": "钠及其化合物：先认身份，再算限量与酸量分段",
+  "revision": "week09-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "区分Na、Na₂O、Na₂O₂的身份、价态、水反应产物与电子量。",
+    "能在题定Na₂O₂总反应中判断限量、按实际mol算产物。",
+    "能解释CO₃²⁻与HCO₃⁻为何耗酸不同。",
+    "能在明确逐量加酸模型下分三段求含碳物种、余酸及浓度。"
+  ],
+  "prerequisites": [
+    "第3—5周n=m/M、n=cV、mol系数比、限制者及最终溶液体积；本周补救重新搭桥。",
+    "第6—8周按性质拆写、原子电荷与电子守恒；引用的旧技能均已读原增强课确认。",
+    "不以课外背反应或开展实验为前提；反应身份、条件与新规则均在正文和题设说明。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "60分钟是忙碌时单次上限，不是缩减过关路线。完整150分钟分60+54+36。第1次60=前测6+八节含自检48+例1共6，活动ID：w9-chemistry-diagnostic-1、w9-chemistry-diagnostic-2、w9-chemistry-diagnostic-3、w9-chemistry-section-recall、w9-chemistry-section-sodium、w9-chemistry-section-oxides、w9-chemistry-section-peroxide-co2、w9-chemistry-section-carbonates、w9-chemistry-section-acid-stages、w9-chemistry-section-acid-after、w9-chemistry-section-audit、w9-chemistry-example-1。第2次54=例2—5共24+独练30，活动ID：w9-chemistry-example-2、w9-chemistry-example-3、w9-chemistry-example-4、w9-chemistry-example-5、w9-chemistry-practice-1、w9-chemistry-practice-2、w9-chemistry-practice-3、w9-chemistry-practice-4、w9-chemistry-practice-5。第3次36=唯一短测24+订正12，活动ID：w9-chemistry-quiz-1、w9-chemistry-quiz-2、w9-chemistry-quiz-3、w9-chemistry-quiz-4、w9-chemistry-review-corrections。短测保持完整一次独立作答，完成后才打开答案；中断记录活动ID续做。所有核心与订正完成、16分及关键条件同时达标，才手动推进；不足则延长本周，不绑定日历。",
+    "segments": [
+      {
+        "id": "w9-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w9-chemistry-diagnostic-1",
+          "w9-chemistry-diagnostic-2",
+          "w9-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w9-chemistry-time-concepts",
+        "title": "八节含随堂自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w9-chemistry-section-recall",
+          "w9-chemistry-section-sodium",
+          "w9-chemistry-section-oxides",
+          "w9-chemistry-section-peroxide-co2",
+          "w9-chemistry-section-carbonates",
+          "w9-chemistry-section-acid-stages",
+          "w9-chemistry-section-acid-after",
+          "w9-chemistry-section-audit"
+        ]
+      },
+      {
+        "id": "w9-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w9-chemistry-example-1",
+          "w9-chemistry-example-2",
+          "w9-chemistry-example-3",
+          "w9-chemistry-example-4",
+          "w9-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w9-chemistry-time-practice",
+        "title": "五道独练，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w9-chemistry-practice-1",
+          "w9-chemistry-practice-2",
+          "w9-chemistry-practice-3",
+          "w9-chemistry-practice-4",
+          "w9-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w9-chemistry-time-quiz",
+        "title": "唯一20分短测，每题6分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w9-chemistry-quiz-1",
+          "w9-chemistry-quiz-2",
+          "w9-chemistry-quiz-3",
+          "w9-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w9-chemistry-time-review",
+        "title": "评分、关键条件核查与订正",
+        "minutes": 12,
+        "activityIds": [
+          "w9-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "6分钟独立答三题，每题2分钟，不计入20分；按错因路由进入已有补救时间，全对也完成正文自检。",
+    "questions": [
+      {
+        "id": "w9-chemistry-diagnostic-1",
+        "title": "前测1：换量与价态",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "1.56 g Na₂O₂，M=78.0 g/mol，物质的量多少？其中O为几价？",
+        "answer": "0.0200 mol；O−1。",
+        "steps": [
+          "n=1.56/78.0。",
+          "2×(+1)+2x=0，x=−1。"
+        ],
+        "commonErrors": [
+          "把g直接当mol。",
+          "O永远写−2。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w9-chemistry-diagnostic-2",
+        "title": "前测2：足量酸",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "CO₃²⁻+2H⁺→CO₂+H₂O中，0.0100 mol CO₃²⁻完全反应耗H⁺多少？电荷平吗？",
+        "answer": "0.0200 mol；两边0。",
+        "steps": [
+          "按1∶2。",
+          "左−2+2=0，右0。"
+        ],
+        "commonErrors": [
+          "把两边各项电荷都要求0。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w9-chemistry-diagnostic-3",
+        "title": "前测3：限量与实际反应",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "2Na+2H₂O→2NaOH+H₂中，0.0400 mol Na与足量水反应，H₂多少？",
+        "answer": "0.0200 mol。",
+        "steps": [
+          "Na∶H₂=2∶1。",
+          "足量水使Na全部计入实际反应。"
+        ],
+        "commonErrors": [
+          "按2∶2误把H₂算0.0400。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w9-chemistry-section-recall",
+          "w9-chemistry-section-sodium"
+        ]
+      },
+      {
+        "when": "前测2错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w9-chemistry-section-carbonates",
+          "w9-chemistry-section-acid-stages"
+        ]
+      },
+      {
+        "when": "前测3错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w9-chemistry-section-sodium",
+          "w9-chemistry-section-audit"
+        ]
+      },
+      {
+        "when": "前测全对。",
+        "action": "仍完成八节自检与核心任务，不以猜对跳过条件说明。",
+        "sectionIds": [
+          "w9-chemistry-section-recall",
+          "w9-chemistry-section-sodium",
+          "w9-chemistry-section-oxides",
+          "w9-chemistry-section-peroxide-co2",
+          "w9-chemistry-section-carbonates",
+          "w9-chemistry-section-acid-stages",
+          "w9-chemistry-section-acid-after",
+          "w9-chemistry-section-audit"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w9-chemistry-section-recall",
+      "title": "先补前置：同一个Na字样，不是同一种物质",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。第3—5周先认对象再换量：Na是单质，Na⁺是离子，Na₂O和Na₂O₂是不同化合物。1 mol Na₂O₂按化学式单元计量，含2 mol Na原子和2 mol O原子；不能叫它1 mol氧气。质量用n=m/M，浓度用n=cV，mol/L配L。",
+        "第7周的化合价代数和仍适用。Na单质0价，常见钠化合物中Na为+1。Na₂O中2×(+1)+x=0，所以O为−2；Na₂O₂中2×(+1)+2x=0，所以O为−1。过氧化物是“氧通常−2”的明确例外。",
+        "第6周净离子式不把水、气体或题定固体拆成离子；可溶强电解质在水溶液中才按离子写。一个式子原子和电荷相等只证明账平，不能证明现实必然生成你猜的产物。",
+        "所有本周数量题先读足量、实际反应量和模型，算mol后用系数比；图中箭头只表示纸面转化，绝不是操作步骤。"
+      ],
+      "keyPoints": [
+        "对象先贴标签，再用n=m/M或cV。",
+        "Na₂O中O−2，Na₂O₂中O−1。"
+      ],
+      "checkpoint": {
+        "question": "0.780 g Na₂O₂，M=78.0 g/mol，含多少mol Na₂O₂和Na原子？",
+        "answer": "Na₂O₂为0.0100 mol，Na原子为0.0200 mol。",
+        "explanation": "0.780/78.0=0.0100；下标2只在换Na原子对象时乘。"
+      }
+    },
+    {
+      "id": "w9-chemistry-section-sodium",
+      "title": "钠与水：产物来自谁，电子交给谁",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。题给纸面总反应2Na+2H₂O→2NaOH+H₂↑。Na从0升到+1，每mol Na失1 mol电子；变成H₂的那部分H从+1降0。水既参与反应又是溶剂，不能因为液态就删去。",
+        "水溶液净式写2Na+2H₂O→2Na⁺+2OH⁻+H₂↑。Na固体、水和气体保留，NaOH按可溶强碱拆。两边Na2、O2、H4；右电荷+2−2=0与左相同。每2 mol Na生成1 mol H₂，不是2 mol。",
+        "Na投入盐的水溶液，常先与水反应，随后生成的OH⁻可能与金属离子反应。不能只按金属活动性就写“Na从CuSO₄水溶液直接置换出Cu”。若题给只考虑水反应，就仅按该模型计量，不猜未给副反应。",
+        "现实钠遇水剧烈放热且可能着火。我们只用反应式解释物质变化和计量，不安排接触、切割或试验钠。"
+      ],
+      "keyPoints": [
+        "每2 mol Na对应1 mol H₂和2 mol NaOH。",
+        "Na与水中的H变价，Na是还原剂。"
+      ],
+      "checkpoint": {
+        "question": "0.0300 mol Na按上述模型全部与足量水反应，H₂和电子量各多少？",
+        "answer": "H₂0.0150 mol；电子0.0300 mol。",
+        "explanation": "H₂系数是Na的一半；每mol Na失1 mol电子，二者不能混。"
+      }
+    },
+    {
+      "id": "w9-chemistry-section-oxides",
+      "title": "氧化钠与过氧化钠：多一个O改变了反应账",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。Na₂O+H₂O→2NaOH中Na仍+1、O仍−2、H仍+1，没有元素变价，是氧化物与水形成碱的反应，不是看到有氧就叫氧化还原。",
+        "本课采用题定放氧总反应2Na₂O₂+2H₂O→4NaOH+O₂↑。每2 mol Na₂O₂生成4 mol NaOH及1 mol O₂。Na₂O与Na₂O₂每mol都生成2 mol NaOH，但只有后者在此总反应生成氧气；相同碱量不能推出相同气量。",
+        "过氧化物中O−1，一部分到O₂为0，另一部分到含氧产物为−2。按总反应的氧化数记账，2 mol Na₂O₂对应2 mol电子转移，因此每mol Na₂O₂对应1 mol电子；不能把全部过氧化物氧都按同一方向变化。这个记账不声称给每个真实O原子贴了可跟踪标签。",
+        "现实过氧化钠与水体系可经历中间物种，条件会影响过程。本课只有在“按所给放氧总式完全进行”时使用上述定量；不把总式当一步机理，也不在家验证。NOAA资料指出其强氧化性及遇水危险。"
+      ],
+      "keyPoints": [
+        "Na₂O与水不变价；Na₂O₂放氧总式有变价。",
+        "按所给总式，n(O₂)=n(Na₂O₂)/2。"
+      ],
+      "checkpoint": {
+        "question": "各0.0100 mol Na₂O、Na₂O₂分别按所给总式与足量水反应，NaOH相同吗？O₂相同吗？",
+        "answer": "NaOH都0.0200 mol；O₂前者0、后者0.00500 mol。",
+        "explanation": "共同的2Na下标支持2NaOH，是否放氧还需正确物质身份与反应式。"
+      }
+    },
+    {
+      "id": "w9-chemistry-section-peroxide-co2",
+      "title": "过氧化钠与CO₂：先配平，再找真正变价元素",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。采用给定完全反应2Na₂O₂+2CO₂→2Na₂CO₃+O₂。Na左右4，C左右2，O左4+4=8、右6+2=8；全部中性，电荷两边0。",
+        "CO₂中C为+4，CO₃²⁻中设C为x，x−6=−2，所以仍+4。CO₂参加反应不等于其中C被还原。变价来自过氧化物中的O−1分流到0与−2，Na保持+1。",
+        "系数Na₂O₂∶CO₂∶Na₂CO₃∶O₂=2∶2∶2∶1。若两种反应物都给量，比较n/2，先定实际反应量；没反应的部分不生成盐、气体或电子转移。",
+        "不引入气体摩尔体积公式。题问质量时把所求气体mol乘题给M；题问mol就停在mol。该式只作供氧原理的纸面理解，不设计任何装置。"
+      ],
+      "keyPoints": [
+        "CO₂中C仍+4，不能把参与等同变价。",
+        "两反应物都给量先找限制者。"
+      ],
+      "checkpoint": {
+        "question": "0.0160 mol Na₂O₂与足量CO₂按总式反应，盐、O₂各多少？",
+        "answer": "Na₂CO₃0.0160 mol，O₂0.00800 mol。",
+        "explanation": "系数2∶2∶1；实际Na₂O₂量决定结果。"
+      }
+    },
+    {
+      "id": "w9-chemistry-section-carbonates",
+      "title": "碳酸根与碳酸氢根：酸需求为何差一份",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。Na₂CO₃水溶液含CO₃²⁻，NaHCO₃水溶液含HCO₃⁻。每份都含1个C，完全转为CO₂时碳的mol相同；但前者要接受2份H⁺，后者已自带1个H，只再需1份H⁺。",
+        "足量强酸条件：CO₃²⁻+2H⁺→CO₂↑+H₂O；HCO₃⁻+H⁺→CO₂↑+H₂O。第一式电荷−2+2=0，第二式−1+1=0；两式原子都平。Na⁺只作旁观，不决定耗酸。",
+        "若含a mol CO₃²⁻及b mol HCO₃⁻，在足量强酸、只发生所给反应的模型中，总耗H⁺=2a+b，总生成CO₂=a+b。两种量不能互换；碳守恒检查的是a+b，不是耗酸量。",
+        "NaHCO₃在题给加热模型中按2NaHCO₃→Na₂CO₃+CO₂↑+H₂O分解；Na₂CO₃在通常高中加热条件下较稳定。此为理论区别，不要求动手加热；后续计算须注明水和CO₂是否离开固体残余。"
+      ],
+      "keyPoints": [
+        "足量酸：每mol碳酸根耗2 mol H⁺，碳酸氢根耗1 mol。",
+        "生成CO₂的mol由最终转出的C总量核查。"
+      ],
+      "checkpoint": {
+        "question": "0.0100 mol CO₃²⁻与0.00600 mol HCO₃⁻遇足量强酸，总耗酸与CO₂各多少？",
+        "answer": "耗H⁺0.0260 mol，CO₂0.0160 mol。",
+        "explanation": "2×0.0100+0.00600与0.0100+0.00600分别记账。"
+      }
+    },
+    {
+      "id": "w9-chemistry-section-acid-stages",
+      "title": "逐量加酸的第一阶段：先补成HCO₃⁻",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。现在把条件收紧：向含a mol CO₃²⁻的溶液逐步加总量x mol H⁺，题定充分混合并采用“先全部变HCO₃⁻、再生成CO₂”的理想分阶段模型，忽略平衡与局部浓度效应。该模型不是对任意倒入次序的承诺。",
+        "当0≤x≤a，按CO₃²⁻+H⁺→HCO₃⁻。每消耗1 mol H⁺只把1 mol碳酸根变碳酸氢根，所以CO₃²⁻剩a−x，HCO₃⁻生成x，模型中CO₂为0。",
+        "在x=a时，第一阶段刚好结束：CO₃²⁻为0，HCO₃⁻为a，CO₂仍0。不要把累计加酸a立即除2算出a/2气体，那等于跳过题定中间状态。",
+        "每一步都能查碳：剩CO₃²⁻+HCO₃⁻+已生成CO₂中的C量始终a。H⁺的累计投入先被第一阶段花掉；第二阶段不能重新把x全部拿来用。"
+      ],
+      "keyPoints": [
+        "0≤x≤a：CO₃²⁻=a−x，HCO₃⁻=x，CO₂=0。",
+        "x=a是第一阶段终点，尚未按模型放气。"
+      ],
+      "checkpoint": {
+        "question": "a=0.0400 mol、x=0.0250 mol时，三种含碳粒子的量？",
+        "answer": "CO₃²⁻0.0150 mol，HCO₃⁻0.0250 mol，CO₂0。",
+        "explanation": "酸未达到第一阈值0.0400；碳总量0.0400 mol。"
+      }
+    },
+    {
+      "id": "w9-chemistry-section-acid-after",
+      "title": "第二阶段与过量酸：累计量只能花一次",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。当a<x≤2a，先花a mol H⁺完成第一阶段，剩酸x−a才参与HCO₃⁻+H⁺→CO₂+H₂O。因此CO₂=x−a，HCO₃⁻=a−(x−a)=2a−x，CO₃²⁻为0。",
+        "在x=2a时，两阶段都完成，CO₂达到a、HCO₃⁻为0。若x>2a，碳已经用尽，CO₂仍a，余H⁺=x−2a；额外酸不会凭空制造额外碳。",
+        "横轴若是累计H⁺量，CO₂曲线先水平、再斜升、最后平台。若改用酸体积作横轴，需通过x=cV换算，阈值V=a/c及2a/c，V必须以L与mol/L配套；不能照抄mol数作mL数。",
+        "真正混合可能出现局部过酸、气体逸出和平衡等，向酸中加入碳酸盐也不能默认同一路线。没有明确题定模型时，不仅凭总投料量硬套这一分段图。"
+      ],
+      "keyPoints": [
+        "a<x≤2a：CO₂=x−a，HCO₃⁻=2a−x。",
+        "x>2a：CO₂=a，H⁺剩x−2a。"
+      ],
+      "checkpoint": {
+        "question": "a=0.0300 mol，累计H⁺0.0750 mol，CO₂及剩H⁺多少？",
+        "answer": "CO₂0.0300 mol，H⁺0.0150 mol。",
+        "explanation": "总需2a=0.0600，碳先用尽，余酸才是0.0750−0.0600。"
+      }
+    },
+    {
+      "id": "w9-chemistry-section-audit",
+      "title": "把物质、阶段和守恒串起来",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。整题顺序固定：①圈物质和条件；②写该阶段的配平式；③把g、mL转成mol；④比较n/系数或酸阈值；⑤列消耗、生成、剩余；⑥换所求单位，做守恒。条件不是答案后的装饰，它决定从哪条式子出发。",
+        "Na与水看Na从0升+1，水中转成H₂的那部分H从+1降0；Na₂O与水无变价；Na₂O₂总反应看O−1分流。碳酸盐与强酸C仍+4，并非所有气体都由氧化还原产生。电子量与气体mol不能只因数值偶尔相等就互换。",
+        "碳酸盐分阶段用C总量回查；Na的题用Na总量回查；离子式另查带符号电荷。反应后浓度用剩余n除最终溶液V，不默认混合体积可加和，也不把加入水量当最终体积。",
+        "本周没有家庭实验。资料提及危险反应只用于说明为何不能实测；图示只展示模型。若模型外缺少酸量、反应程度或最终体积，合理答案可能是“信息不足”，而不是随意补条件。"
+      ],
+      "keyPoints": [
+        "先条件后方程，先mol后比例，先余量后浓度。",
+        "元素、电荷、电子分别核查，不能互相替代。"
+      ],
+      "checkpoint": {
+        "question": "只知道加了0.0100 mol酸，不知碳酸盐初量及加料模型，能唯一求CO₂吗？",
+        "answer": "不能。",
+        "explanation": "初始碳量、酸所在阶段及模型都可能影响终态。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w9-chemistry-example-1",
+      "title": "例1·基础：Na的mol、氢气与电子分别算",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "纸面模型：0.920 g Na与足量水按2Na+2H₂O→2NaOH+H₂完全反应，无其他反应。M(Na)=23.0 g/mol。求NaOH、H₂及电子转移mol。",
+      "answer": "NaOH0.0400 mol，H₂0.0200 mol，电子0.0400 mol。",
+      "steps": [
+        "先把0.920/23.0=0.0400 mol Na写在反应物下。",
+        "按2∶2∶1，NaOH等量，H₂减半。",
+        "Na0→+1，每mol实际Na失1 mol电子，得0.0400 mol。",
+        "H₂含0.0400 mol H原子，+1→0也对应0.0400 mol电子；同一批不相加。",
+        "Na账前后0.0400 mol；实际只是题定模型，不把Na放入水中验证。"
+      ],
+      "commonErrors": [
+        "把H₂系数看作2。",
+        "电子得失相加。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-example-2",
+      "title": "例2·比较：相同碱量不代表相同气量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "各0.0200 mol Na₂O、Na₂O₂分别与足量水，按正文两条总式完全反应。求各NaOH与O₂的mol，并判断是否氧化还原。",
+      "answer": "两者NaOH均0.0400 mol；Na₂O无O₂且非氧化还原，Na₂O₂产O₂0.0100 mol且为氧化还原。",
+      "steps": [
+        "第一式Na₂O+H₂O→2NaOH，1∶2且无变价。",
+        "第二式2Na₂O₂+2H₂O→4NaOH+O₂，2∶4∶1。",
+        "0.0200×4/2=0.0400 mol NaOH，0.0200/2=0.0100 mol O₂。",
+        "过氧化物O−1分到−2和0，Na始终+1。",
+        "两次Na总量均0.0400 mol，但氧身份和总反应不同。"
+      ],
+      "commonErrors": [
+        "把Na₂O₂当Na₂O。",
+        "因两次NaOH相同判所有产物相同。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-example-3",
+      "title": "例3·应用：Na₂O₂与CO₂谁先用完",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "纸面模型：0.0500 mol Na₂O₂与0.0320 mol CO₂按2Na₂O₂+2CO₂→2Na₂CO₃+O₂充分反应，无副反应。求限制者、盐、O₂及剩Na₂O₂。",
+      "answer": "CO₂限制；Na₂CO₃0.0320 mol，O₂0.0160 mol，Na₂O₂剩0.0180 mol。",
+      "steps": [
+        "比较0.0500/2=0.0250与0.0320/2=0.0160，CO₂限制。",
+        "实际Na₂O₂消耗0.0320 mol，不能用全部初量。",
+        "盐=0.0320 mol，O₂=0.0320/2=0.0160 mol。",
+        "Na₂O₂余0.0500−0.0320=0.0180 mol。",
+        "C前后0.0320 mol；C价仍+4，不能称CO₂被还原。"
+      ],
+      "commonErrors": [
+        "按初始Na₂O₂全反应求气。",
+        "参与反应就判C变价。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-example-4",
+      "title": "例4·脚手架：酸在第二段，只用剩下那份酸",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "含0.0600 mol Na₂CO₃的溶液逐量加入0.0950 mol H⁺，题定先全变HCO₃⁻再放CO₂，忽略平衡。求最终HCO₃⁻、CO₂，写两阶段。",
+      "answer": "HCO₃⁻0.0250 mol，CO₂0.0350 mol；CO₃²⁻已耗尽。",
+      "steps": [
+        "第一阈值a=0.0600、第二阈值2a=0.120，0.0950落第二段。",
+        "第一段CO₃²⁻+H⁺→HCO₃⁻，用酸0.0600，得到HCO₃⁻0.0600 mol。",
+        "剩酸0.0950−0.0600=0.0350 mol。",
+        "第二段HCO₃⁻+H⁺→CO₂+H₂O，产气0.0350，HCO₃⁻余0.0600−0.0350=0.0250 mol。",
+        "碳账0.0250+0.0350=0.0600；不能把总酸除2得0.0475。"
+      ],
+      "commonErrors": [
+        "总酸直接除2。",
+        "第二段重新使用0.0950 mol酸。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-example-5",
+      "title": "例5·迁移：酸体积找阶段，再求剩余浓度",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "50.0 mL、0.400 mol/L Na₂CO₃逐量加150.0 mL、0.200 mol/L HCl，题定先全变HCO₃⁻再放CO₂、无损失并忽略平衡。最终溶液体积题给为200.0 mL。求CO₂及c(HCO₃⁻)。",
+      "answer": "CO₂0.0100 mol，HCO₃⁻剩0.0100 mol，c=0.0500 mol/L。",
+      "steps": [
+        "碳酸根初n=0.400×0.0500=0.0200 mol。",
+        "H⁺总n=0.200×0.1500=0.0300 mol。",
+        "0.0200<0.0300<0.0400，在第二段；扣第一段酸后剩0.0100。",
+        "CO₂0.0100，HCO₃⁻=0.0400−0.0300=0.0100 mol。",
+        "用题给最终0.2000 L，c=0.0100/0.2000=0.0500 mol/L；不是默认体积相加。"
+      ],
+      "commonErrors": [
+        "mL直接乘mol/L。",
+        "用酸体积作最终浓度分母。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w9-chemistry-practice-1",
+      "title": "独练1：净式与电子",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "纸面模型：0.0690 g Na按正文总式与足量水完全反应，M(Na)=23.0 g/mol。写净离子式，求H₂和电子mol。",
+      "answer": "2Na+2H₂O→2Na⁺+2OH⁻+H₂；H₂0.00150 mol，电子0.00300 mol。",
+      "steps": [
+        "n(Na)=0.0690/23.0=0.00300 mol。",
+        "NaOH拆为Na⁺与OH⁻，Na、水、H₂保留。",
+        "H₂为Na一半；Na失1电子故电子等于实际Na量。",
+        "原子Na2/H4/O2，电荷左右0。"
+      ],
+      "commonErrors": [
+        "漏水。",
+        "把气体mol当电子mol。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-practice-2",
+      "title": "独练2：过氧化物的盐、气、电子",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "0.0240 mol Na₂O₂与足量CO₂按正文总式完全反应。求盐、O₂、电子转移mol，并判断C价。",
+      "answer": "Na₂CO₃0.0240 mol，O₂0.0120 mol，电子0.0240 mol；C始终+4。",
+      "steps": [
+        "系数2∶2∶2∶1。",
+        "每2 mol Na₂O₂对应O−1向0的氧2 mol，转移2 mol电子。",
+        "Na₂O₂每mol对应1 mol电子，得0.0240 mol。",
+        "C在CO₂及CO₃²⁻中均+4；碳账0.0240 mol。"
+      ],
+      "commonErrors": [
+        "电子按所有过氧氧都同向变算0.0480。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-practice-3",
+      "title": "独练3：足量酸混合盐",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "混合溶液含0.0120 mol CO₃²⁻、0.00800 mol HCO₃⁻，与足量强酸完全反应。求H⁺耗量、CO₂质量；M(CO₂)=44.0 g/mol。",
+      "answer": "H⁺0.0320 mol，CO₂0.0200 mol即0.880 g。",
+      "steps": [
+        "分别用每mol耗酸2和1。",
+        "耗酸2×0.0120+0.00800=0.0320 mol。",
+        "CO₂碳总量0.0120+0.00800=0.0200 mol。",
+        "m=0.0200×44.0=0.880 g。"
+      ],
+      "commonErrors": [
+        "把耗酸量当CO₂量。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-practice-4",
+      "title": "独练4：第一段和平台",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "两份各含0.0250 mol CO₃²⁻，均用先全转HCO₃⁻再放气的逐量加酸模型。A加H⁺0.0150 mol，B加0.0650 mol。分别求含碳粒子余量、CO₂和剩H⁺。",
+      "answer": "A：CO₃²⁻0.0100、HCO₃⁻0.0150、CO₂0、H⁺0 mol；B：两碳酸根物种均0，CO₂0.0250、H⁺0.0150 mol。",
+      "steps": [
+        "A的x<a，先做1∶1成HCO₃⁻。",
+        "B的x>2a=0.0500，碳全部成为CO₂。",
+        "B余酸0.0650−0.0500=0.0150 mol。",
+        "每份碳总量均0.0250 mol，不能将两份混为同一体系。"
+      ],
+      "commonErrors": [
+        "A少酸仍直接放气。",
+        "B过量酸继续增加CO₂。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w9-chemistry-practice-5",
+      "title": "独练5：热分解的固体残余",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "纸面模型：12.6 g纯NaHCO₃按2NaHCO₃→Na₂CO₃+CO₂+H₂O完全分解，CO₂与水全部离开，只有Na₂CO₃留作固体。M(NaHCO₃)=84.0，M(Na₂CO₃)=106，单位g/mol。求固体残余质量。",
+      "answer": "7.95 g Na₂CO₃。",
+      "steps": [
+        "NaHCO₃=12.6/84.0=0.150 mol。",
+        "产Na₂CO₃=0.150/2=0.0750 mol。",
+        "m=0.0750×106=7.95 g。",
+        "残余仅盐由题设保证；方程式系数是mol比不是g比。"
+      ],
+      "commonErrors": [
+        "原质量直接除2。",
+        "把水计入残余固体。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "过氧化钠的O也是−2。",
+      "why": "中性式中2Na为+2，两个O总共−2。",
+      "right": "每个O平均−1。"
+    },
+    {
+      "wrong": "含CO₂参与必有C被还原。",
+      "why": "参与与变价不是同一回事。",
+      "right": "逐物种算C价，CO₂和碳酸根中均+4。"
+    },
+    {
+      "wrong": "任意酸量都除2求CO₂。",
+      "why": "足量总式不能替代题定分阶段过程。",
+      "right": "先比x与a、2a，再扣前段耗酸。"
+    },
+    {
+      "wrong": "反应后n还是初始n。",
+      "why": "参与反应的物种会被消耗。",
+      "right": "先余量，再用最终体积求浓度。"
+    }
+  ],
+  "quiz": {
+    "instructions": "这是本周唯一计分短测。四题24分钟20分。先关闭答案独立作答，再按20条各1分评分；每条全部条件满足才得分，等价表达和合理舍入可接受，单写末答案不自动获得过程分。前测、自检、例题、独练和订正不计入20分。首次分数保留，补救后另记尝试。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w9-chemistry-quiz-1",
+        "title": "短测1：身份、净式和电子",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "纸面模型：1.38 g Na与足量水按正文总式完全反应，M(Na)=23.0 g/mol。写净离子式，求H₂及电子mol；说明为何不能据此宣称Na在CuSO₄水溶液直接置换出Cu。",
+        "answer": "2Na+2H₂O→2Na⁺+2OH⁻+H₂；Na0.0600 mol，H₂0.0300 mol，电子0.0600 mol；水溶液要考虑Na先与水反应。",
+        "steps": [
+          "n=1.38/23.0=0.0600 mol。",
+          "按2∶1得H₂0.0300。",
+          "Na0→+1失1，电子0.0600，不双计。",
+          "净式原子Na2/O2/H4，电荷0。",
+          "盐溶液含水，不能机械套金属置换。"
+        ],
+        "commonErrors": [
+          "缺条件猜产物。",
+          "错用2倍电子。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "净式正确且保留Na、水、H₂，原子电荷均平。"
+          },
+          {
+            "points": 1,
+            "criterion": "n(Na)=0.0600 mol，有g÷g/mol过程。"
+          },
+          {
+            "points": 1,
+            "criterion": "H₂=0.0300 mol，按2∶1说明。"
+          },
+          {
+            "points": 1,
+            "criterion": "Na0→+1，电子0.0600 mol且不双计。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确盐的水溶液中Na常先与水反应，不能直接套置换Cu。"
+          }
+        ]
+      },
+      {
+        "id": "w9-chemistry-quiz-2",
+        "title": "短测2：Na₂O₂限量及C价",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "0.0360 mol Na₂O₂与0.0280 mol CO₂按2Na₂O₂+2CO₂→2Na₂CO₃+O₂完全反应，无副反应。求限制者、剩Na₂O₂、盐及O₂；说明C是否变价。",
+        "answer": "CO₂限制；Na₂O₂剩0.00800 mol；盐0.0280 mol，O₂0.0140 mol；C始终+4。",
+        "steps": [
+          "比较0.0180与0.0140，取小者。",
+          "Na₂O₂耗0.0280，余0.00800 mol。",
+          "产盐0.0280，O₂0.0140 mol。",
+          "C在两处均+4，变价是过氧O。"
+        ],
+        "commonErrors": [
+          "按投入Na₂O₂全算气。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "以n/系数比较0.0180与0.0140，判CO₂限制。"
+          },
+          {
+            "points": 1,
+            "criterion": "实际Na₂O₂耗0.0280、剩0.00800 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "Na₂CO₃=0.0280 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "O₂=0.0140 mol且单位正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "C在CO₂与CO₃²⁻中均+4，明确并非C被还原。"
+          }
+        ]
+      },
+      {
+        "id": "w9-chemistry-quiz-3",
+        "title": "短测3：有限酸必须分段",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "含0.0450 mol CO₃²⁻的溶液逐量加0.0700 mol H⁺，题定先全部变HCO₃⁻再放CO₂的理想模型，忽略平衡。写两阶段，求最终HCO₃⁻、CO₂并以碳守恒检查。",
+        "answer": "HCO₃⁻0.0200 mol，CO₂0.0250 mol；先用酸0.0450，再用0.0250 mol。",
+        "steps": [
+          "0.0450<0.0700<0.0900，在第二阶段。",
+          "第一式CO₃²⁻+H⁺→HCO₃⁻，先耗0.0450。",
+          "第二式HCO₃⁻+H⁺→CO₂+H₂O，用余酸0.0250。",
+          "HCO₃⁻余0.0450−0.0250=0.0200，CO₂0.0250 mol。",
+          "碳0.0200+0.0250=0.0450 mol。"
+        ],
+        "commonErrors": [
+          "总酸除2得0.0350。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "明确题定逐量两阶段模型，比较a与2a判第二段。"
+          },
+          {
+            "points": 1,
+            "criterion": "两条阶段净式均正确，电荷分别−1与0。"
+          },
+          {
+            "points": 1,
+            "criterion": "第一段耗酸0.0450、可供第二段0.0250 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "HCO₃⁻0.0200、CO₂0.0250 mol均正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "碳守恒0.0200+0.0250=0.0450 mol，拒绝总酸直接除2。"
+          }
+        ]
+      },
+      {
+        "id": "w9-chemistry-quiz-4",
+        "title": "短测4：足量酸与最终体积",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "40.0 mL、0.300 mol/L Na₂CO₃与含0.0300 mol H⁺的强酸完全反应，只有正文酸盐反应，忽略水解等；最终液相体积题给为100.0 mL。判断酸是否足量，写完全放气净式，求CO₂与剩H⁺浓度。",
+        "answer": "CO₃²⁻0.0120 mol，需H⁺0.0240 mol，酸足量；CO₂0.0120 mol；H⁺余0.00600 mol，c=0.0600 mol/L。",
+        "steps": [
+          "n=0.300×0.0400=0.0120。",
+          "需酸2×0.0120=0.0240<0.0300。",
+          "CO₃²⁻+2H⁺→CO₂+H₂O，电荷0。",
+          "CO₂0.0120，余酸0.00600 mol。",
+          "除最终0.1000 L得0.0600 mol/L。"
+        ],
+        "commonErrors": [
+          "未判断足量。",
+          "用原碳酸盐体积作分母。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "把40.0 mL换0.0400 L，得碳酸根0.0120 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "算需H⁺0.0240 mol，小于0.0300，酸足量。"
+          },
+          {
+            "points": 1,
+            "criterion": "完全放气净式正确且两侧电荷0。"
+          },
+          {
+            "points": 1,
+            "criterion": "CO₂0.0120 mol、余H⁺0.00600 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "使用题给最终0.1000 L得c(H⁺)=0.0600 mol/L。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "短测1：Na与水净式正确，Na∶H₂=2∶1，电子只计一次，不能默认水溶液直接置换金属。",
+        "短测2：限制者依据正确；Na₂O₂与Na₂O身份不能混，C保持+4。",
+        "短测3：必须先扣第一段酸，再算第二段；碳守恒通过，不能总酸除2。",
+        "短测4：先核足量酸、余酸再除题给最终L体积，单位完整。",
+        "总分至少16/20，所有关键条件通过并完成核心和订正，才手动推进。保留首次独立分数；照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w9-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w9-chemistry-section-recall",
+          "w9-chemistry-section-sodium",
+          "w9-chemistry-section-oxides",
+          "w9-chemistry-section-peroxide-co2",
+          "w9-chemistry-section-carbonates",
+          "w9-chemistry-section-acid-stages",
+          "w9-chemistry-section-acid-after",
+          "w9-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w9-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w9-chemistry-section-recall",
+          "w9-chemistry-section-sodium",
+          "w9-chemistry-section-oxides",
+          "w9-chemistry-section-peroxide-co2",
+          "w9-chemistry-section-carbonates",
+          "w9-chemistry-section-acid-stages",
+          "w9-chemistry-section-acid-after",
+          "w9-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w9-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w9-chemistry-section-recall",
+          "w9-chemistry-section-sodium",
+          "w9-chemistry-section-oxides",
+          "w9-chemistry-section-peroxide-co2",
+          "w9-chemistry-section-carbonates",
+          "w9-chemistry-section-acid-stages",
+          "w9-chemistry-section-acid-after",
+          "w9-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w9-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w9-chemistry-section-recall",
+          "w9-chemistry-section-sodium",
+          "w9-chemistry-section-oxides",
+          "w9-chemistry-section-peroxide-co2",
+          "w9-chemistry-section-carbonates",
+          "w9-chemistry-section-acid-stages",
+          "w9-chemistry-section-acid-after",
+          "w9-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w9-chemistry-review-corrections",
+    "title": "12分钟评分与错因订正",
+    "instructions": [
+      "第1—3分钟：逐条计首次分数，单独核关键条件；分够但关键条件错仍未过关。",
+      "第4—8分钟：挑最多两个根本错点，写“原想法—缺少的条件或规则—正确依据—下次先查什么”，回对应本周小节。",
+      "第9—12分钟：关答案重建关键反应和一组量，用元素、电荷、电子或阶段总账复核。",
+      "12分钟内未解决的卡点记录活动ID，下一可用时段继续补救并独立重做，保留首次成绩和新尝试；不新增第二套20分测，不自动推进。"
+    ]
+  },
+  "nextStep": "完整核心与订正完成，唯一20分短测至少16分且全部关键条件通过后，学习者手动进入下一周。未达标按路由补救、另记重做尝试，不因日历换周自动跳过。",
+  "audioStatus": "未配置音频；概念、题设、解析、图替代文本均可直接阅读。",
+  "mastery": [
+    "区分Na、Na₂O、Na₂O₂的身份、价态、水反应产物与电子量。",
+    "能在题定Na₂O₂总反应中判断限量、按实际mol算产物。",
+    "能解释CO₃²⁻与HCO₃⁻为何耗酸不同。",
+    "能在明确逐量加酸模型下分三段求含碳物种、余酸及浓度。",
+    "能够说明模型边界；首次分与补救后尝试分开，达标再手动推进。"
+  ],
+  "safetyScope": "全部是纸笔理论、给定数据分析与示意图阅读。钠、过氧化钠、氯气、酸、强氧化体系与铁盐不作为购买、混合、加热、制气或检验操作清单；不开展家庭实验。现实反应可能有平衡、传质、空气氧化等影响；定量结果仅在题设理想条件下成立。含氯清洁剂不得与酸性、氨类或其他清洁剂混用。",
+  "sourcePolicy": {
+    "authorship": "全部中文解释、情境、数字、题目、评分与图示原创；沿既定周路线深化，不挪入后续新专题。",
+    "examStatus": "全部为原创教学题，非历年真题；不编教材版本或页码，不预测2028必考内容。",
+    "externalSources": [
+      {
+        "id": "w9-chemistry-source-sodium",
+        "title": "RSC / Royal Institution：The Modern Alchemist",
+        "url": "https://edu.rsc.org/download?ac=13383",
+        "kind": "reference",
+        "scopeNote": "核验Na与水总反应及剧烈反应风险，仅取化学事实，不引用演示操作。"
+      },
+      {
+        "id": "w9-chemistry-source-peroxide",
+        "title": "NOAA CAMEO：Sodium peroxide",
+        "url": "https://cameochemicals.noaa.gov/chemical/1516",
+        "kind": "reference",
+        "scopeNote": "核验过氧化钠强氧化性、遇水危险及形成碱和氧气的总结果；不将总式等同一步机理。"
+      },
+      {
+        "id": "w9-chemistry-source-stoichiometry",
+        "title": "OpenStax Chemistry 2e：Reaction Stoichiometry",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+        "kind": "reference",
+        "scopeNote": "按已配平方程的mol比计算；本课数字与分阶段模型全部原创，不复制原书习题。"
+      }
+    ]
+  }
+}

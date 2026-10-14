@@ -93,9 +93,9 @@ describe('frozen weeks seven and eight integration',()=>{
     }finally{await rm(directory,{recursive:true,force:true})}
   })
   it('watches only actual source files and keeps new resources out of other weeks',async()=>{
-    const data=await readCurriculumData();expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(57)
+    const data=await readCurriculumData();expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(72)
     for(const file of data.sourceFiles)expect((await stat(file)).isFile()).toBe(true)
-    for(const week of data.weeks.filter(week=>week.week>8))for(const lesson of Object.values(week.subjects)){expect(lesson?.enrichment).toBeUndefined();expect(lesson?.enrichmentFigures).toBeUndefined()}
+    for(const week of data.weeks.filter(week=>week.week>10))for(const lesson of Object.values(week.subjects)){expect(lesson?.enrichment).toBeUndefined();expect(lesson?.enrichmentFigures).toBeUndefined()}
   })
 })
 

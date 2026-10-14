@@ -75,7 +75,7 @@ for (const [theme, label] of themes) {
     test.setTimeout(90000)
     await setTheme(page, label, theme)
     const lessons = [
-      ['basic-knowledge', '9/math/knowledge'], ['basic-practice', '9/math/practice'],
+      ['basic-knowledge', '13/math/knowledge'], ['basic-practice', '13/math/practice'],
       ['enriched-knowledge', '1/math/w1-math-s1'], ['enriched-practice', '1/math/w1-math-pr1'],
       ['cumulative-quiz', '8/math/quiz'],
       ['basic-listening-material', '69/english/prepare'], ['basic-source-material', '60/chinese/prepare'],
@@ -124,7 +124,7 @@ for (const [theme, label] of themes) {
       await route.fulfill({ json: { choices: [{ message: { content: `UI 测试回答 ${requests.length}：先独立尝试，再按条件分步分析。` }, finish_reason: 'stop' }] } })
     })
     await setTheme(page, label, theme)
-    await page.goto('/#learn/9/math/knowledge')
+    await page.goto('/#learn/13/math/knowledge')
     const studyBefore = await page.evaluate(() => localStorage.getItem('xunxu.gaokao.v1'))
     await page.getByRole('button', { name: '问 AI', exact: true }).click()
     const dialog = page.getByRole('dialog', { name: 'AI 问答' })
