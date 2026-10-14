@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, ref, shallowRef, watch } from 'vue'
+import type { Component } from 'vue'
 import type { SubjectId } from '../model'
 import type { SubjectWeek } from '../curriculum/types'
 import { effectiveStatus, statusNames } from '../curriculum/types'
@@ -15,6 +16,21 @@ const index = computed(() => Math.max(0, steps.value.findIndex(step => step.id =
 const current = computed(() => steps.value[index.value]!)
 const heading = ref<HTMLElement | null>(null)
 const directory = ref<HTMLDetailsElement | null>(null)
+const aiComponent = shallowRef<Component | null>(null)
+const aiOpen = ref(false), aiLoading = ref(false), aiLoadError = ref('')
+const aiTrigger = ref<HTMLButtonElement | null>(null)
+async function openAi() {
+  if (aiLoading.value) return
+  aiLoading.value = true; aiLoadError.value = ''
+  const route = `${props.week}/${props.subject}/${props.step}`
+  try {
+    aiComponent.value ||= (await import('./LearningAiDialog.vue')).default
+    if (route === `${props.week}/${props.subject}/${props.step}` && aiTrigger.value?.isConnected) aiOpen.value = true
+  } catch { aiLoadError.value = 'AI 问答加载失败，请检查网络后再次点击。课程仍可照常阅读。' }
+  finally { aiLoading.value = false }
+}
+async function closeAi() { aiOpen.value = false; await nextTick(); aiTrigger.value?.focus() }
+watch(() => `${props.week}/${props.subject}/${props.step}`, () => { aiOpen.value = false; aiLoadError.value = '' })
 const checkpointLabels = { knowledge: '知识学习', example: '例题学习', practice: '练习与订正', retest: '复测与订正' }
 const checkpointLabel = computed(() => current.value.checkpoint ? checkpointLabels[current.value.checkpoint] : '')
 const externalSources = computed(() => props.lesson?.enrichment?.sourcePolicy.externalSources.filter(source => /^https?:\/\//.test(source.url)) || [])
@@ -44,6 +60,9 @@ watch(() => props.step, focusHeading)
       <summary>本课目录</summary>
       <nav aria-label="本课目录"><button v-for="(item, i) in steps" :key="item.id" :aria-current="current.id === item.id ? 'step' : undefined" @click="navigate(item.id)"><span>{{ String(i + 1).padStart(2, '0') }}</span>{{ item.title }}</button></nav>
     </details>
+    <div class="focus-ai-entry"><button ref="aiTrigger" type="button" :disabled="aiLoading" aria-haspopup="dialog" @click="openAi">{{ aiLoading ? '正在打开…' : '问 AI' }}</button></div>
+    <p v-if="aiLoadError" class="focus-ai-load-error" role="alert">{{ aiLoadError }}</p>
+    <component :is="aiComponent" v-if="aiOpen && aiComponent" :lesson="lesson" :step="current.id" :week="week" :subject-label="subjectLabel" @close="closeAi"/>
     <section :key="current.id" class="focus-section" :aria-labelledby="`focus-step-${current.id}`">
       <h2 :id="`focus-step-${current.id}`" ref="heading" tabindex="-1" class="focus-section-title">{{ current.title }}</h2>
       <EnrichedLessonContent v-if="lesson?.enrichment" :lesson="lesson.enrichment" :figures="lesson.enrichmentFigures" :review-map="lesson.enrichmentReviewMap" :step="current.id" @navigate="navigate"/>
