@@ -1,0 +1,432 @@
+{
+  "week": 12,
+  "subject": "英语",
+  "lessonId": "w12-英语",
+  "totalPoints": 20,
+  "minutes": 32,
+  "budgetPolicy": "映射已有第9—12周唯一累计短测，替换普通周测；没有新增题、分数或用时。",
+  "scoringIndexBase": 0,
+  "scoringIndexMeaning": "scoringIndex为question.scoring的0基下标，每个实际评分项仅出现一次；primaryWeek分项计分，weeks仅为交叉技能标签，不另计分。",
+  "firstReadingPolicy": "每题首次阅读、词义查阅与作答包含在题内8分钟；映射不是再次阅读任务。",
+  "pointsByPrimaryWeek": {
+    "9": 5,
+    "10": 5,
+    "11": 5,
+    "12": 5
+  },
+  "scoringMap": [
+    {
+      "questionId": "w12-en-quiz1",
+      "points": 5,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            1
+          ],
+          "skill": "动作方式的比较副词",
+          "points": 1,
+          "criterion": "①more carefully完整正确，比较动作方式。",
+          "remediationSectionIds": [
+            "w12-en-r9"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            1
+          ],
+          "skill": "系表性质的比较形容词",
+          "points": 1,
+          "criterion": "②clearer正确，不重复more。",
+          "remediationSectionIds": [
+            "w12-en-r9"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 9,
+          "weeks": [
+            9
+          ],
+          "skill": "同级否定转比较且方向不反转",
+          "points": 1,
+          "criterion": "③The old leaflet was longer than the new one，或等义完整的than比较级句；保留过去时间，且旧版比新版长的方向正确。",
+          "remediationSectionIds": [
+            "w12-en-r9"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            8
+          ],
+          "skill": "费用与费用的同类替代",
+          "points": 1,
+          "criterion": "④that at Shop Q或the cost at Shop Q，同类费用比较。",
+          "remediationSectionIds": [
+            "w12-en-r9"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            4
+          ],
+          "skill": "费用不推出质量的证据边界",
+          "points": 1,
+          "criterion": "⑤拒绝质量推断，指出只给费用而未给质量。",
+          "remediationSectionIds": [
+            "w12-en-r9"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-en-r9"
+      ],
+      "remediationAction": "按词性、关系方向、同类中心与证据范围四步订正；需要深补再在下一学段回第9周。"
+    },
+    {
+      "questionId": "w12-en-quiz2",
+      "points": 5.0,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 10,
+          "weeks": [
+            10
+          ],
+          "skill": "具体日时段on",
+          "points": 0.5,
+          "criterion": "①on正确。",
+          "remediationSectionIds": [
+            "w12-en-r10"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 10,
+          "weeks": [
+            10
+          ],
+          "skill": "钟点at",
+          "points": 0.5,
+          "criterion": "②at正确。",
+          "remediationSectionIds": [
+            "w12-en-r10"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 10,
+          "weeks": [
+            10,
+            4
+          ],
+          "skill": "by完成截止并允许提前",
+          "points": 1,
+          "criterion": "③by且解释不迟于18:00、可提前。",
+          "remediationSectionIds": [
+            "w12-en-r10"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 10,
+          "weeks": [
+            10,
+            4
+          ],
+          "skill": "until持续不覆盖另一截止",
+          "points": 1,
+          "criterion": "④until/till且解释服务台持续开放至19:00，不改交表期限。",
+          "remediationSectionIds": [
+            "w12-en-r10"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 10,
+          "weeks": [
+            10,
+            5
+          ],
+          "skill": "未来start in表示多久后开始",
+          "points": 1,
+          "criterion": "⑤in正确，表达三天后开始。",
+          "remediationSectionIds": [
+            "w12-en-r10"
+          ]
+        },
+        {
+          "scoringIndex": 5,
+          "primaryWeek": 10,
+          "weeks": [
+            10
+          ],
+          "skill": "go home地点副词零介词",
+          "points": 1,
+          "criterion": "⑥Ø，go home。",
+          "remediationSectionIds": [
+            "w12-en-r10"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-en-r10"
+      ],
+      "remediationAction": "按具体日/钟点、截止/持续、未来开始与go home分别定位；不重刷整卷。"
+    },
+    {
+      "questionId": "w12-en-quiz3",
+      "points": 5,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            2,
+            3
+          ],
+          "skill": "复数过去状态的完整系表",
+          "points": 1,
+          "criterion": "①were补完整过去复数系表。",
+          "remediationSectionIds": [
+            "w12-en-r11"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            1
+          ],
+          "skill": "双宾的接收者与给予内容",
+          "points": 1,
+          "criterion": "②SVOO并正确标us/a task两个宾语。",
+          "remediationSectionIds": [
+            "w12-en-r11"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            1,
+            9
+          ],
+          "skill": "宾补描述宾语状态",
+          "points": 1,
+          "criterion": "③SVOC并正确标the task/useful的宾语宾补关系。",
+          "remediationSectionIds": [
+            "w12-en-r11"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            4
+          ],
+          "skill": "因果保意与单套合法连接",
+          "points": 1,
+          "criterion": "④保留因果且只用一套连接，句界合法。",
+          "remediationSectionIds": [
+            "w12-en-r11"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            2
+          ],
+          "skill": "but连接完整过去分句",
+          "points": 1,
+          "criterion": "⑤but连接两个完整过去分句，保持难却完成。",
+          "remediationSectionIds": [
+            "w12-en-r11"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-en-r11"
+      ],
+      "remediationAction": "先标主谓，再用给谁什么/对象怎样检验，最后只留一套连接。"
+    },
+    {
+      "questionId": "w12-en-quiz4",
+      "points": 5.0,
+      "estimatedMinutes": 8,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            2
+          ],
+          "skill": "明确过去事件joined",
+          "points": 0.5,
+          "criterion": "①joined完整过去式正确。",
+          "remediationSectionIds": [
+            "w12-en-r12a"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            2,
+            3
+          ],
+          "skill": "现在习惯checks与主语一致",
+          "points": 0.5,
+          "criterion": "②checks为第三人称单数现在习惯。",
+          "remediationSectionIds": [
+            "w12-en-r12a"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            6,
+            2
+          ],
+          "skill": "过去观察点过程was reading",
+          "points": 0.5,
+          "criterion": "③was reading完整过去进行正确。",
+          "remediationSectionIds": [
+            "w12-en-r12a"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            6,
+            3
+          ],
+          "skill": "当前结果has written及分词",
+          "points": 0.5,
+          "criterion": "④has written完整现在完成正确。",
+          "remediationSectionIds": [
+            "w12-en-r12a"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            7,
+            3,
+            2
+          ],
+          "skill": "过去复数被动were checked",
+          "points": 0.5,
+          "criterion": "⑤were checked完整过去复数被动正确。",
+          "remediationSectionIds": [
+            "w12-en-r12a"
+          ]
+        },
+        {
+          "scoringIndex": 5,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            8
+          ],
+          "skill": "不可数advice的可数单位pieces",
+          "points": 0.5,
+          "criterion": "⑥pieces，数量two落在单位复数。",
+          "remediationSectionIds": [
+            "w12-en-r12b"
+          ]
+        },
+        {
+          "scoringIndex": 6,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            8
+          ],
+          "skill": "an hour按首音且可数单位",
+          "points": 0.5,
+          "criterion": "⑦an，依据hour元音首音。",
+          "remediationSectionIds": [
+            "w12-en-r12b"
+          ]
+        },
+        {
+          "scoringIndex": 7,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            8
+          ],
+          "skill": "hers独立表达所属",
+          "points": 0.5,
+          "criterion": "⑧hers，独立代Fen的notebook。",
+          "remediationSectionIds": [
+            "w12-en-r12b"
+          ]
+        },
+        {
+          "scoringIndex": 8,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            5,
+            3
+          ],
+          "skill": "未来if条件现在单数has",
+          "points": 0.5,
+          "criterion": "⑨has，未来条件从句现在单数形式。",
+          "remediationSectionIds": [
+            "w12-en-r12a"
+          ]
+        },
+        {
+          "scoringIndex": 9,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            5
+          ],
+          "skill": "未来主句will加原形",
+          "points": 0.5,
+          "criterion": "⑩will practise，will后原形。",
+          "remediationSectionIds": [
+            "w12-en-r12a"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-en-r12a",
+        "w12-en-r12b"
+      ],
+      "remediationAction": "①—⑤⑨⑩回r12a核时间/主语/施受；⑥—⑧回r12b核数量/首音/所属。旧周只作必要溯源，不重复计分。"
+    }
+  ]
+}

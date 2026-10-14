@@ -1,0 +1,40 @@
+[
+  {
+    "id": "w12-math-composition-conditions",
+    "title": "复合表达式有两道门，化简后仍要守住原条件",
+    "asset": "assets/math-composition-conditions.svg",
+    "altText": "第一道门是g(x)存在；第二道门是g(x)属于外层f的定义域。并列运算还要同时满足分母不为零、偶次根号内非负、对数真数正，以及题给范围。",
+    "description": "第一道门是g(x)存在；第二道门是g(x)属于外层f的定义域。并列运算还要同时满足分母不为零、偶次根号内非负、对数真数正，以及题给范围。",
+    "linkedSectionIds": [
+      "w12-math-s2",
+      "w12-math-s3"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w12-math-nearest-vertex",
+    "title": "闭区间最小点：在允许输入里找离顶点最近的点",
+    "asset": "assets/math-nearest-vertex.svg",
+    "altText": "三幅画的是平方距离项y=(x−a)²。蓝线表示抛物线，橙线表示允许区间[0,2]上的部分。a为−1、1、3时，最近允许输入分别0、1、2。加与x无关的常数不改变最小点；一般区间按顶点与L、R的位置分类。",
+    "description": "三幅画的是平方距离项y=(x−a)²。蓝线表示抛物线，橙线表示允许区间[0,2]上的部分。a为−1、1、3时，最近允许输入分别0、1、2。加与x无关的常数不改变最小点；一般区间按顶点与L、R的位置分类。",
+    "linkedSectionIds": [
+      "w12-math-s5",
+      "w12-math-s6"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w12-math-exp-absolute",
+    "title": "答案图：绝对值指数的两支与允许端点",
+    "asset": "assets/math-exp-absolute.svg",
+    "altText": "对应例4：g(x)=2^|x|−2，定义域[−2,2]，图中左右端点(−2,2)、(2,2)包含；最低点(0,−1)；与x轴交点(−1,0)、(1,0)，零点是横坐标−1和1。左支递减、右支递增。",
+    "description": "对应例4：g(x)=2^|x|−2，定义域[−2,2]，图中左右端点(−2,2)、(2,2)包含；最低点(0,−1)；与x轴交点(−1,0)、(1,0)，零点是横坐标−1和1。左支递减、右支递增。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w12-math-ex4"
+    ],
+    "answerOnly": true
+  }
+]

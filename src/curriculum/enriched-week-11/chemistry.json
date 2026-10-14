@@ -1,0 +1,880 @@
+{
+  "id": "w11-化学",
+  "week": 11,
+  "subject": "化学",
+  "title": "铁及其化合物：酸与氧化剂条件、三价态和限量账本",
+  "revision": "week11-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "建立Fe、Fe²⁺、Fe³⁺的有条件转化与电子倍数。",
+    "根据酸的性质、氧化剂和限量决定适用反应，拒绝无条件产氢。",
+    "能处理Fe或Cu还原Fe³⁺的限制者、产物与剩余量并核总铁。",
+    "能按价态算沉淀耗碱，解释空气氧化和显色证据的边界。"
+  ],
+  "prerequisites": [
+    "第3—5周n=m/M、n=cV、mol系数比、限制者及最终溶液体积；本周补救重新搭桥。",
+    "第6—8周按性质拆写、原子电荷与电子守恒；引用的旧技能均已读原增强课确认。",
+    "不以课外背反应或开展实验为前提；反应身份、条件与新规则均在正文和题设说明。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "60分钟是忙碌时单次上限，不是缩减过关路线。完整150分钟分60+54+36。第1次60=前测6+八节含自检48+例1共6，活动ID：w11-chemistry-diagnostic-1、w11-chemistry-diagnostic-2、w11-chemistry-diagnostic-3、w11-chemistry-section-recall、w11-chemistry-section-states、w11-chemistry-section-acid、w11-chemistry-section-metal-ferric、w11-chemistry-section-other-redox、w11-chemistry-section-precipitation、w11-chemistry-section-evidence、w11-chemistry-section-audit、w11-chemistry-example-1。第2次54=例2—5共24+独练30，活动ID：w11-chemistry-example-2、w11-chemistry-example-3、w11-chemistry-example-4、w11-chemistry-example-5、w11-chemistry-practice-1、w11-chemistry-practice-2、w11-chemistry-practice-3、w11-chemistry-practice-4、w11-chemistry-practice-5。第3次36=唯一短测24+订正12，活动ID：w11-chemistry-quiz-1、w11-chemistry-quiz-2、w11-chemistry-quiz-3、w11-chemistry-quiz-4、w11-chemistry-review-corrections。短测保持完整一次独立作答，完成后才打开答案；中断记录活动ID续做。所有核心与订正完成、16分及关键条件同时达标，才手动推进；不足则延长本周，不绑定日历。",
+    "segments": [
+      {
+        "id": "w11-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w11-chemistry-diagnostic-1",
+          "w11-chemistry-diagnostic-2",
+          "w11-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w11-chemistry-time-concepts",
+        "title": "八节含随堂自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w11-chemistry-section-recall",
+          "w11-chemistry-section-states",
+          "w11-chemistry-section-acid",
+          "w11-chemistry-section-metal-ferric",
+          "w11-chemistry-section-other-redox",
+          "w11-chemistry-section-precipitation",
+          "w11-chemistry-section-evidence",
+          "w11-chemistry-section-audit"
+        ]
+      },
+      {
+        "id": "w11-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w11-chemistry-example-1",
+          "w11-chemistry-example-2",
+          "w11-chemistry-example-3",
+          "w11-chemistry-example-4",
+          "w11-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w11-chemistry-time-practice",
+        "title": "五道独练，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w11-chemistry-practice-1",
+          "w11-chemistry-practice-2",
+          "w11-chemistry-practice-3",
+          "w11-chemistry-practice-4",
+          "w11-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w11-chemistry-time-quiz",
+        "title": "唯一20分普通周测，四题5+6+6+7分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w11-chemistry-quiz-1",
+          "w11-chemistry-quiz-2",
+          "w11-chemistry-quiz-3",
+          "w11-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w11-chemistry-time-review",
+        "title": "评分、关键条件核查与订正",
+        "minutes": 12,
+        "activityIds": [
+          "w11-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "6分钟独立答三题，每题2分钟，不计入20分；按错因路由进入已有补救时间，全对也完成正文自检。",
+    "questions": [
+      {
+        "id": "w11-chemistry-diagnostic-1",
+        "title": "前测1：价差和角色",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "Fe²⁺→Fe³⁺与Fe³⁺→Fe²⁺分别失或得几个电子？",
+        "answer": "前者失1，后者得1。",
+        "steps": [
+          "比较+2与+3之差。",
+          "角色分别为还原剂与氧化剂。"
+        ],
+        "commonErrors": [
+          "终态+3就算3电子。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w11-chemistry-diagnostic-2",
+        "title": "前测2：两种量同时给",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "Fe+2Fe³⁺→3Fe²⁺，Fe0.0200 mol、Fe³⁺0.0300 mol，谁限制？",
+        "answer": "Fe³⁺限制。",
+        "steps": [
+          "比较0.0200/1与0.0300/2=0.0150。",
+          "小者Fe³⁺决定实际反应。"
+        ],
+        "commonErrors": [
+          "仅比较mol小者。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w11-chemistry-diagnostic-3",
+        "title": "前测3：沉淀净式",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "补齐Fe³⁺+?OH⁻→Fe(OH)₃↓，为何沉淀不拆？",
+        "answer": "OH⁻系数3，题定难溶固体保留。",
+        "steps": [
+          "左+3−3=0与右0。",
+          "Fe1/O3/H3左右相等。"
+        ],
+        "commonErrors": [
+          "沉淀拆回离子全约掉。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w11-chemistry-section-recall",
+          "w11-chemistry-section-states"
+        ]
+      },
+      {
+        "when": "前测2错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w11-chemistry-section-metal-ferric",
+          "w11-chemistry-section-other-redox"
+        ]
+      },
+      {
+        "when": "前测3错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w11-chemistry-section-recall",
+          "w11-chemistry-section-precipitation"
+        ]
+      },
+      {
+        "when": "前测全对。",
+        "action": "仍完成八节自检与核心任务，不以猜对跳过条件说明。",
+        "sectionIds": [
+          "w11-chemistry-section-recall",
+          "w11-chemistry-section-states",
+          "w11-chemistry-section-acid",
+          "w11-chemistry-section-metal-ferric",
+          "w11-chemistry-section-other-redox",
+          "w11-chemistry-section-precipitation",
+          "w11-chemistry-section-evidence",
+          "w11-chemistry-section-audit"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w11-chemistry-section-recall",
+      "title": "先补前置：铁元素守恒，不等于Fe²⁺量不变",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。Fe是单质，Fe²⁺和Fe³⁺是不同价态的离子。下标2、3若在右上角，是离子电荷，不是“两个铁”“三个铁”。每1 mol Fe、Fe²⁺、Fe³⁺各含1 mol Fe元素；跨物种可查总铁，但不能因此说每一种铁离子的mol始终不变。",
+        "从质量开始用n=m/M，从浓度开始用n=cV，mL先换L。两反应物给量时仍比较n/系数，不能以质量小或mol小直接判限制者；算电子只取实际变价部分。",
+        "净离子式按第6周规则：可溶铁盐按离子写，水、气体、单质固体与氢氧化物沉淀保留。Fe³⁺+3OH⁻→Fe(OH)₃↓两边电荷0，不可把固体再拆回Fe³⁺与OH⁻抵消。",
+        "本周按题定反应充分进行、无副反应或相关平衡影响的纸面模型计算。现实溶液酸度、氧化剂、空气与试剂干扰会改变过程，计算前要查这些条件是否已明确。"
+      ],
+      "keyPoints": [
+        "总铁守恒可跨物种；某一种铁离子未必守恒。",
+        "两种都给量比较n/系数。"
+      ],
+      "checkpoint": {
+        "question": "0.0300 mol Fe²⁺中有0.0120 mol被氧化为Fe³⁺，两种铁离子各多少？",
+        "answer": "Fe²⁺0.0180 mol，Fe³⁺0.0120 mol。",
+        "explanation": "总铁0.0300守恒，但Fe²⁺已消耗，不能两种各写0.0300。"
+      }
+    },
+    {
+      "id": "w11-chemistry-section-states",
+      "title": "三种价态两条方向：Fe²⁺不是永久还原剂",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。Fe单质0价。Fe→Fe²⁺+2e⁻为失2电子的氧化；Fe²⁺→Fe³⁺+e⁻为再失1电子的氧化。反方向各为得电子的还原。半反应只是电子记账，总反应合并后不能有剩余e⁻。",
+        "Fe²⁺处于0和+3之间，若变Fe³⁺就是还原剂；题设若让它变Fe，则是氧化剂。Fe³⁺在本课常见反应中得电子到Fe²⁺，作为氧化剂。角色需按当前反应判断，不靠“铁盐”两个字。",
+        "电子倍数不相同：Fe0→+2每mol失2，Fe0→+3每mol失3，Fe+2→+3每mol失1。先写起点终点再求差，不能看见Fe³⁺就一律算3。",
+        "反应方向还需对象和条件。只凭“最高价有氧化性”无法保证与任意物质都反应，更不能由配平创造反应；本课具体转化均在正文或题中提供。"
+      ],
+      "keyPoints": [
+        "先起末价，再算电子数与剂的角色。",
+        "Fe²⁺可被氧化，也可被还原。"
+      ],
+      "checkpoint": {
+        "question": "题给Fe²⁺分别变Fe³⁺和Fe，前者、后者各是何剂？",
+        "answer": "前者还原剂；后者氧化剂。",
+        "explanation": "前者+2→+3失1，后者+2→0得2，角色跟着变化走。"
+      }
+    },
+    {
+      "id": "w11-chemistry-section-acid",
+      "title": "铁遇酸：先问酸是哪一种、有没有别的氧化剂",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。足量稀盐酸等本课非氧化性酸条件下，若无其他氧化剂，铁按Fe+2H⁺→Fe²⁺+H₂↑反应。Fe0→+2失2电子，2个H由+1到0共得2电子，产物是Fe²⁺而非Fe³⁺。",
+        "“非氧化性酸”是高中对酸性与酸根强氧化性的区分用语，不是说H⁺绝不能得电子。这里H⁺恰是接受电子生成H₂的一方。Cl⁻作为旁观离子不改变价态。",
+        "铁与足量氯气在题给反应条件下可按2Fe+3Cl₂→2FeCl₃生成+3价铁化合物。与稀盐酸不同，是氧化剂与反应条件不同；不能把铁的终价永久设为+2或+3。",
+        "硝酸等氧化性酸和浓硫酸体系不能照抄产H₂式，还可能有浓度、温度、钝化等影响；本周只要求识别旧式不适用，不新增其配平或产物计算。题未交代必要条件时应指出无法直接确定。"
+      ],
+      "keyPoints": [
+        "稀盐酸、无其他氧化剂：生成Fe²⁺和H₂。",
+        "非氧化性酸一词不否认H⁺在此得电子。"
+      ],
+      "checkpoint": {
+        "question": "某题仅写“铁与酸”，能断言Fe³⁺和H₂同时生成吗？",
+        "answer": "不能。",
+        "explanation": "须明确酸的种类、浓度与其他氧化剂；稀盐酸给Fe²⁺，氧化性酸另判。"
+      }
+    },
+    {
+      "id": "w11-chemistry-section-metal-ferric",
+      "title": "Fe+2Fe³⁺→3Fe²⁺：第三份铁从金属来",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。题定只发生Fe+2Fe³⁺→3Fe²⁺，充分反应且无其他酸或氧化剂参与。Fe0→+2每份失2电子，两个Fe³⁺各+3→+2得1电子，所以Fe与Fe³⁺系数1∶2。",
+        "产物系数为什么是3？两个Fe³⁺变成两份Fe²⁺，还有一份金属Fe进入溶液成为Fe²⁺，总共三份。左总铁1+2=3；左电荷+6，右3×2=+6。只写2Fe²⁺会同时丢铁、丢电荷。",
+        "设实际消耗金属Fe为t mol，则耗Fe³⁺2t、产Fe²⁺3t、电子2t。求t要比较n初(Fe)/1和n初(Fe³⁺)/2；铁不是永远过量，Fe³⁺也不是永远过量。",
+        "若充分反应后仍有金属Fe，按本模型Fe³⁺应已耗尽；不能同时保留可继续反应的大量Fe和Fe³⁺。若金属Fe先耗尽，则Fe²⁺与剩余Fe³⁺可以共存。"
+      ],
+      "keyPoints": [
+        "产Fe²⁺同时计来自金属和Fe³⁺的铁。",
+        "充分反应、有Fe剩余时不保留大量Fe³⁺。"
+      ],
+      "checkpoint": {
+        "question": "0.0100 mol Fe与0.0300 mol Fe³⁺按该式反应，Fe²⁺和剩Fe³⁺多少？",
+        "answer": "Fe²⁺0.0300 mol，Fe³⁺剩0.0100 mol。",
+        "explanation": "Fe限制，耗Fe³⁺0.0200；总铁0.0400=0.0300+0.0100。"
+      }
+    },
+    {
+      "id": "w11-chemistry-section-other-redox",
+      "title": "换反应物仍用同一本电子账",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。第10周题给2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻，每mol Fe²⁺失1，Cl₂每mol得2。Cl₂足量才可能按该模型把全部Fe²⁺氧化；限量Cl₂会留下Fe²⁺与新生成Fe³⁺共存。",
+        "另一个本周给定反应2Fe³⁺+Cu→2Fe²⁺+Cu²⁺。Fe³⁺降1，Cu0→+2升2，所以系数2∶1；原子Fe2/Cu1，电荷左+6，右+4+2=+6。这里Fe³⁺作氧化剂，Cu作还原剂。",
+        "铜投入质量需先除题给M(Cu)得到mol，然后比较n/系数；铜足量时Fe³⁺定消耗，铜限量时仍会剩Fe³⁺。生成Fe²⁺等于实际消耗Fe³⁺，本式没有额外金属铁进入，因此别套上一节的3倍。",
+        "把相似方程并排看，问“金属本身含不含Fe？”Fe与Fe³⁺反应的总铁包括固体Fe；Cu与Fe³⁺反应的总铁只来自原铁离子。守恒对象一旦说清，系数不必硬背。"
+      ],
+      "keyPoints": [
+        "Fe金属与Cu金属贡献的元素不同，不能混用产Fe²⁺系数。",
+        "Cl₂限量决定有多少Fe²⁺变为Fe³⁺。"
+      ],
+      "checkpoint": {
+        "question": "0.00600 mol Cu与足量Fe³⁺按给定式反应，Fe²⁺和电子多少？",
+        "answer": "Fe²⁺0.0120 mol，电子0.0120 mol。",
+        "explanation": "Cu每份失2，需两份Fe³⁺得电子，不能产3份Fe²⁺。"
+      }
+    },
+    {
+      "id": "w11-chemistry-section-precipitation",
+      "title": "价态决定耗OH⁻量，空气又可能改变价态",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。题给定量沉淀模型：Fe²⁺+2OH⁻→Fe(OH)₂↓，Fe³⁺+3OH⁻→Fe(OH)₃↓。铁离子所带正电分别+2、+3，需要对应个数−1的OH⁻使沉淀中性；不是看哪个名字长就多耗碱。",
+        "Fe(OH)₂初生沉淀易受空气O₂氧化，纸面总式4Fe(OH)₂+O₂+2H₂O→4Fe(OH)₃。Fe从+2升+3，每4份失4电子；O₂中的两个O从0降−2，共得4电子。不能忽略水而使H、O不守恒。",
+        "Fe(OH)₃常呈红褐色；实际颜色还受浓度、时间和杂质影响，不能仅凭一眼颜色绝对断定全部组成。计算混合两种沉淀时必须有隔绝空气、无进一步氧化等假设，否则原Fe²⁺可能继续变化。",
+        "若已知Fe²⁺为a mol、Fe³⁺为b mol且都定量沉淀，OH⁻总耗2a+3b。若体系另有剩酸，OH⁻还会被中和，不能只计铁；本周单纯沉淀题明确没有其他耗OH⁻物种。",
+        "逆向题可用同一账本：若已知总铁n mol和总耗OH⁻为q mol，设Fe²⁺为a mol、Fe³⁺为b mol，则a+b=n、2a+3b=q。第二式减第一式的2倍，先得b=q−2n，再用a=n−b；这是已有两种沉淀反应加初等消元，不是新反应。结果都应非负，且仅在无其他耗碱或氧化的题定模型中成立。"
+      ],
+      "keyPoints": [
+        "沉淀耗碱按价态分别2倍、3倍。",
+        "保留Fe(OH)₂需题定隔绝空气等边界。"
+      ],
+      "checkpoint": {
+        "question": "0.00400 mol Fe²⁺与0.00600 mol Fe³⁺都定量沉淀，隔绝空气、无其他耗碱物，共耗OH⁻多少？",
+        "answer": "0.0260 mol。",
+        "explanation": "2×0.00400+3×0.00600=0.0260；不能把全部铁按3倍。"
+      }
+    },
+    {
+      "id": "w11-chemistry-section-evidence",
+      "title": "检验数据要连着条件读：不显色不等于含Fe²⁺",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。在合适条件下，Fe³⁺与SCN⁻形成红色显色体系，可作为Fe³⁺的检验证据。本周不要求记复杂配合物组成或平衡常数，只分析题给可靠显色数据，不配制或使用检验试剂。",
+        "若候选范围已限定为“每份只含Fe²⁺或Fe³⁺之一”，且浓度足以显色、无干扰，显红色支持Fe³⁺；不显色排除可检出的Fe³⁺后，结合仅有两个候选才推Fe²⁺。",
+        "未知样品中不显红色也可能是没有任何铁、Fe³⁺太稀、受干扰或检测不适用，所以不能单靠阴性结果断言含Fe²⁺。结论强度不能超过题设的证据范围。",
+        "如果先给氧化前后显色的对照数据，仍应核对氧化步骤是否可靠、是否引入干扰、候选是否限定。这里训练证据推理，不提供实际检测操作方案。"
+      ],
+      "keyPoints": [
+        "阳性/阴性结论依检测条件和候选范围。",
+        "未知样品“不显色”不能单独证明Fe²⁺。"
+      ],
+      "checkpoint": {
+        "question": "未知溶液与SCN⁻不显红色，能证明其中一定有Fe²⁺吗？",
+        "answer": "不能。",
+        "explanation": "阴性本身既不能证明Fe²⁺存在，也不能无条件排除痕量或受干扰Fe³⁺。"
+      }
+    },
+    {
+      "id": "w11-chemistry-section-audit",
+      "title": "从条件到余量，再查总铁",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。做铁题先圈四个条件：酸是否非氧化性、氧化剂是否足量、金属是否剩余、沉淀阶段是否隔绝空气。哪个条件变了，原产物和计量关系都可能要重判。",
+        "每段写反应前、消耗、生成、剩余。Fe+Fe³⁺一段要把来自金属的铁计入液相；Cl₂+Fe²⁺一段只把被氧化部分转成Fe³⁺；进入沉淀时分别按现有Fe²⁺和Fe³⁺分配OH⁻。",
+        "总铁用mol Fe元素相加，电子用实际变价量乘价差，净离子电荷单独算。最后所求若是质量乘对应沉淀M，若是浓度除题给最终液相V；总铁守恒不等于所有铁始终都溶解。",
+        "所有模型和检测数据只用于纸面学习。涉及酸、氯、铜盐、铁盐或强氧化剂时，不把条件当操作许可；超出题设的竞争反应和氧化性酸计算留待后续，不为完成题目自行补猜。"
+      ],
+      "keyPoints": [
+        "条件→已配平式→mol→限制者→余量→三账。",
+        "铁总量包含溶液和未反应固体，按阶段分清。"
+      ],
+      "checkpoint": {
+        "question": "有人在Fe充分还原Fe³⁺后同时算出Fe余0.0100 mol、Fe³⁺余0.0200 mol，何处可疑？",
+        "answer": "按仅该反应充分进行的模型，这两者还能继续反应，不能同时有这两份剩余。",
+        "explanation": "应重新比较n/系数并扣到限制者用尽。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w11-chemistry-example-1",
+      "title": "例1·基础：稀盐酸只用给定产物",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "纸面模型：1.12 g Fe与足量稀盐酸反应，无其他氧化剂，按Fe+2H⁺→Fe²⁺+H₂，M(Fe)=56.0 g/mol。求Fe²⁺、H₂、耗H⁺和电子mol。",
+      "answer": "Fe²⁺及H₂各0.0200 mol，H⁺耗0.0400 mol，电子0.0400 mol。",
+      "steps": [
+        "n(Fe)=1.12/56.0=0.0200 mol。",
+        "条件明确稀盐酸、无其他氧化剂，产Fe²⁺。",
+        "系数1∶2∶1∶1，Fe²⁺、H₂等于Fe量，H⁺两倍。",
+        "Fe0→+2失2，电子0.0400；H⁺得电子侧同量。",
+        "电荷左+2右+2，Fe/H原子相等；不推广到硝酸。"
+      ],
+      "commonErrors": [
+        "把Fe终价写+3。",
+        "任何酸都套产氢。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-example-2",
+      "title": "例2·应用：铁少时，第三份亚铁不能漏",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题定只发生Fe+2Fe³⁺→3Fe²⁺。Fe初0.0180 mol，Fe³⁺初0.0500 mol，充分反应。求各剩余、Fe²⁺生成及电子量。",
+      "answer": "Fe无剩余，Fe³⁺余0.0140 mol，Fe²⁺0.0540 mol，电子0.0360 mol。",
+      "steps": [
+        "比较0.0180与0.0500/2=0.0250，Fe限制。",
+        "耗Fe³⁺2×0.0180=0.0360，余0.0140 mol。",
+        "产Fe²⁺3×0.0180=0.0540，来自金属0.0180和原Fe³⁺0.0360。",
+        "电子按Fe失2：0.0360 mol，也等于Fe³⁺得电子。",
+        "总铁初0.0680，末0.0540+0.0140=0.0680 mol。"
+      ],
+      "commonErrors": [
+        "Fe²⁺只算0.0360。",
+        "电子按Fe²⁺产量0.0540。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-example-3",
+      "title": "例3·对照：铁过量，Fe³⁺必须用尽",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "相同限定模型中Fe初0.0400 mol，Fe³⁺初0.0600 mol，充分反应。求剩Fe、剩Fe³⁺、生成Fe²⁺及总铁检查。",
+      "answer": "Fe余0.0100 mol，Fe³⁺0，Fe²⁺0.0900 mol；总铁0.100 mol。",
+      "steps": [
+        "比较0.0400与0.0600/2=0.0300，Fe³⁺限制。",
+        "Fe实际耗0.0300，余0.0100；Fe³⁺用尽。",
+        "产Fe²⁺3×0.0300=0.0900 mol。",
+        "末总铁包括固体0.0100+溶液0.0900=0.100 mol。",
+        "不能漏未溶解固体，也不能在有Fe剩余时仍保留大量Fe³⁺。"
+      ],
+      "commonErrors": [
+        "以为总铁都进入溶液。",
+        "Fe和Fe³⁺同时剩。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-example-4",
+      "title": "例4·连接：先氧化定价态，再定沉淀",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "题定0.0100 mol Fe²⁺被恰好0.00500 mol Cl₂按2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻完全氧化，无其他反应。随后足量OH⁻将Fe³⁺定量沉淀，体系无其他耗OH⁻物质。M[Fe(OH)₃]=107 g/mol。求电子、OH⁻消耗和沉淀质量。",
+      "answer": "电子0.0100 mol；OH⁻0.0300 mol；Fe(OH)₃为1.07 g。",
+      "steps": [
+        "Cl₂需Fe²⁺0.0100，恰好相配，铁全部为Fe³⁺。",
+        "电子=0.0100×1=0.0100 mol，与Cl₂0.00500×2相等。",
+        "第二式Fe³⁺+3OH⁻→Fe(OH)₃↓。",
+        "铁为0.0100 mol，沉淀同量；OH⁻需0.0300 mol。",
+        "质量0.0100×107=1.07 g；不能仍用Fe(OH)₂。"
+      ],
+      "commonErrors": [
+        "第二段沿用初始Fe²⁺身份。",
+        "OH⁻按2倍。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-example-5",
+      "title": "例5·证据：限定候选与未知样品分开",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "题设A、B各只含Fe²⁺或Fe³⁺中的一种，浓度足够显色、无干扰。给定SCN⁻显色数据A红、B不红。判断两者；若撤销所有候选与检测保证，只保留B不红，结论如何？",
+      "answer": "限定条件下A为Fe³⁺、B为Fe²⁺；撤销条件后不能断言B含Fe²⁺或绝无Fe³⁺。",
+      "steps": [
+        "显红符合题给Fe³⁺可靠检验。",
+        "B不红，结合浓度足够无干扰可排除本题Fe³⁺候选。",
+        "只剩Fe²⁺一个候选，因此原题B为Fe²⁺。",
+        "未知样品可能无铁、太稀或受干扰；阴性不是Fe²⁺存在的直接证据。"
+      ],
+      "commonErrors": [
+        "阴性单独证明亚铁。",
+        "把纸面数据变成实物操作。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w11-chemistry-practice-1",
+      "title": "独练1：酸条件纠错",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "改正：“铁遇任何酸都会形成Fe³⁺并放H₂。”用足量稀盐酸、无其他氧化剂的纸面模型，算0.0280 g Fe完全反应的H₂与电子mol；M(Fe)=56.0 g/mol。",
+      "answer": "稀盐酸生成Fe²⁺，氧化性酸另判；Fe0.000500 mol，H₂0.000500 mol，电子0.00100 mol。",
+      "steps": [
+        "Fe+2H⁺→Fe²⁺+H₂。",
+        "n=0.0280/56.0=0.000500。",
+        "H₂等量、电子2倍。",
+        "酸种类与条件不可省，不能推广到硝酸。"
+      ],
+      "commonErrors": [
+        "Fe³⁺和H₂无条件并列。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-practice-2",
+      "title": "独练2：铜与Fe³⁺的限量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "2Fe³⁺+Cu→2Fe²⁺+Cu²⁺，Fe³⁺初0.0450 mol，Cu初0.960 g，M(Cu)=64.0 g/mol；只发生该反应。求限制者、Fe³⁺余、Fe²⁺产和电子mol。",
+      "answer": "Cu限制；Fe³⁺余0.0150 mol，Fe²⁺0.0300 mol，电子0.0300 mol。",
+      "steps": [
+        "Cu=0.960/64.0=0.0150 mol。",
+        "比较0.0450/2=0.0225与0.0150。",
+        "耗Fe³⁺0.0300、余0.0150，产Fe²⁺0.0300 mol。",
+        "Cu每mol失2，电子0.0300。"
+      ],
+      "commonErrors": [
+        "把Fe²⁺产量套3倍。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-practice-3",
+      "title": "独练3：混合价态的耗碱",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题定Fe²⁺0.00800 mol、Fe³⁺0.0120 mol，在隔绝空气、无其他耗碱物种条件下均被足量OH⁻定量沉淀。求耗OH⁻及两种沉淀mol。",
+      "answer": "OH⁻0.0520 mol；Fe(OH)₂0.00800，Fe(OH)₃0.0120 mol。",
+      "steps": [
+        "分别写Fe²⁺+2OH⁻与Fe³⁺+3OH⁻两式。",
+        "耗OH⁻0.0160+0.0360=0.0520 mol。",
+        "每个沉淀含1个Fe，沉淀mol等于各自铁离子mol。",
+        "隔绝空气保证此模型中Fe(OH)₂不继续氧化。"
+      ],
+      "commonErrors": [
+        "总铁全按三价耗碱。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-practice-4",
+      "title": "独练4：空气氧化也要补水",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "按题定总反应4Fe(OH)₂+O₂+2H₂O→4Fe(OH)₃，有0.0240 mol Fe(OH)₂完全转化。求O₂消耗及电子mol，核H、O原子。",
+      "answer": "O₂0.00600 mol，电子0.0240 mol；左右H12/O12。",
+      "steps": [
+        "4∶1，O₂=0.0240/4。",
+        "Fe+2→+3，每mol失1，电子0.0240。",
+        "左H8+4=12，O8+2+2=12，右H12/O12。",
+        "不能漏2H₂O，O₂每mol得4mol电子作复核。"
+      ],
+      "commonErrors": [
+        "漏水导致H/O不平。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-chemistry-practice-5",
+      "title": "独练5：可靠数据才支持排除",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "已知某样品只可能含Fe²⁺或Fe³⁺之一，却未保证浓度足够显色，也未排除干扰。SCN⁻数据“不显红”，是否足以确定Fe²⁺？请补出原题还缺的两类条件。",
+      "answer": "不足；还需浓度达到可靠检出要求，以及无干扰/检测适用并可靠。",
+      "steps": [
+        "候选限定只是一个条件。",
+        "阴性若因过稀或干扰，Fe³⁺仍可能存在。",
+        "补全可靠检出和无干扰等条件后才可按排除法推Fe²⁺。"
+      ],
+      "commonErrors": [
+        "只有限定候选就忽略检验可靠性。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "铁与所有酸都生成H₂。",
+      "why": "氧化性酸可能有不同还原产物或钝化等条件。",
+      "right": "只在明确稀非氧化性酸模型下用给定式。"
+    },
+    {
+      "wrong": "Fe+2Fe³⁺只生成2Fe²⁺。",
+      "why": "漏掉金属Fe进入溶液的一份。",
+      "right": "产3Fe²⁺并核总铁、电荷。"
+    },
+    {
+      "wrong": "Fe³⁺变Fe²⁺得3电子。",
+      "why": "电子看价差不是起点或终点。",
+      "right": "+3到+2只得1。"
+    },
+    {
+      "wrong": "SCN⁻不红必有Fe²⁺。",
+      "why": "阴性受候选、浓度与干扰等影响。",
+      "right": "只有题给可靠条件与限定候选才能进一步排除推断。"
+    }
+  ],
+  "quiz": {
+    "instructions": "这是本周唯一普通计分短测，四题用5+6+6+7=24分钟，共20分。先关闭答案独立作答，再按20条各1分评分；每条全部条件满足才得分，等价表达和合理舍入可接受，单写末答案不自动获得过程分。前测、自检、例题、独练和订正不计入20分。首次分数保留，补救后另记尝试。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w11-chemistry-quiz-1",
+        "title": "短测1：酸的性质与电子",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "0.840 g Fe与足量稀盐酸反应，无其他氧化剂、无副反应，M(Fe)=56.0 g/mol。写净式并核查原子、电荷，求H₂及电子mol；解释不能把此式无条件用于硝酸。",
+        "answer": "Fe+2H⁺→Fe²⁺+H₂；Fe0.0150 mol，H₂0.0150 mol，电子0.0300 mol；硝酸是氧化性酸，产物与条件须另判。",
+        "steps": [
+          "0.840/56.0=0.0150。",
+          "稀盐酸给Fe²⁺，原子及电荷+2守恒。",
+          "H₂1∶1；Fe0→+2每mol失2。",
+          "硝酸体系不能套产H₂式，亦可能涉及钝化等条件。"
+        ],
+        "commonErrors": [
+          "终价盲写Fe³⁺。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "净式正确，保留Fe和H₂，原子/电荷+2通过。"
+          },
+          {
+            "points": 1,
+            "criterion": "n(Fe)=0.0150 mol且写质量换mol过程。"
+          },
+          {
+            "points": 1,
+            "criterion": "H₂=0.0150 mol，依据1∶1。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe0→+2，电子0.0300 mol不双计。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明酸种类与条件重要，硝酸不可无条件套稀盐酸产氢式。"
+          }
+        ]
+      },
+      {
+        "id": "w11-chemistry-quiz-2",
+        "title": "短测2：金属铁的一份不能漏",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "题定只发生Fe+2Fe³⁺→3Fe²⁺，Fe初0.0240 mol，Fe³⁺初0.0400 mol，充分反应。求限制者、剩余和Fe²⁺，检查总铁与电子。",
+        "answer": "Fe³⁺限制；Fe余0.00400 mol、Fe³⁺0；Fe²⁺0.0600 mol；总铁0.0640 mol；电子0.0400 mol。",
+        "steps": [
+          "比较0.0240与0.0400/2=0.0200。",
+          "Fe实际耗0.0200、余0.00400 mol。",
+          "Fe²⁺3×0.0200=0.0600，包含金属贡献。",
+          "总铁初0.0640，末0.00400+0.0600=0.0640。",
+          "电子=0.0200×2=0.0400，从Fe³⁺侧复核同量。"
+        ],
+        "commonErrors": [
+          "Fe²⁺漏金属。",
+          "铁与Fe³⁺同时剩。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "用n/系数判断Fe³⁺限制。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe实际耗0.0200、余0.00400 mol且Fe³⁺用尽。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe²⁺0.0600 mol，明确包括金属转入的一份。"
+          },
+          {
+            "points": 1,
+            "criterion": "总铁0.0640 mol，包含剩余固体和溶液。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子0.0400 mol，Fe失/Fe³⁺得相等且不双计。"
+          }
+        ]
+      },
+      {
+        "id": "w11-chemistry-quiz-3",
+        "title": "短测3：铜耗量与浓度的桥",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "题给2Fe³⁺+Cu→2Fe²⁺+Cu²⁺；100.0 mL、0.240 mol/L Fe³⁺溶液与足量Cu仅按此式反应。M(Cu)=64.0 g/mol，最终液相体积题给120.0 mL。求Cu质量损失、生成c(Fe²⁺)及电子mol。",
+        "answer": "Fe³⁺0.0240 mol；Cu耗0.0120 mol即0.768 g；Fe²⁺0.0240 mol，c=0.200 mol/L；电子0.0240 mol。",
+        "steps": [
+          "n=0.240×0.1000=0.0240。",
+          "足量Cu使Fe³⁺耗尽，Cu为一半0.0120 mol。",
+          "m=0.0120×64.0=0.768 g。",
+          "Fe²⁺0.0240/最终0.1200=0.200 mol/L。",
+          "每Fe³⁺降1，电子0.0240 mol，Cu侧0.0120×2复核。"
+        ],
+        "commonErrors": [
+          "Cu生成Fe²⁺套3倍。",
+          "用原体积除。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "mL换L并得Fe³⁺0.0240 mol，明确足量Cu使其耗尽。"
+          },
+          {
+            "points": 1,
+            "criterion": "Cu耗0.0120 mol，按2∶1而非质量比。"
+          },
+          {
+            "points": 1,
+            "criterion": "Cu质量损失0.768 g，单位正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe²⁺0.0240 mol，除题给最终0.1200 L得0.200 mol/L。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子0.0240 mol，两个反应侧核验相等不双计。"
+          }
+        ]
+      },
+      {
+        "id": "w11-chemistry-quiz-4",
+        "title": "短测4：由耗碱量反推铁价态组成",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "纸面模型：某溶液仅含Fe²⁺、Fe³⁺两种铁离子，总铁为0.0100 mol；无其他耗OH⁻物种。沉淀期间隔绝空气、无其他氧化剂且无进一步氧化，两种铁均定量沉淀，恰好共消耗OH⁻0.0260 mol。已知Fe²⁺+2OH⁻→Fe(OH)₂↓，Fe³⁺+3OH⁻→Fe(OH)₃↓，M[Fe(OH)₂]=90.0、M[Fe(OH)₃]=107，单位g/mol。设两种铁离子为a、b mol，列总铁与耗碱两式并用消元反求a、b，回代两式核验，再求混合沉淀总质量。另有未知样品与SCN⁻不显红色，能否仅凭此断言一定含Fe²⁺？说明本题为何必须保留隔绝空气、无进一步氧化条件。",
+        "answer": "a+b=0.0100，2a+3b=0.0260；Fe²⁺为0.00400 mol，Fe³⁺为0.00600 mol；两沉淀质量0.360 g和0.642 g，总1.002 g（合理舍入1.00 g可）。未知样品SCN⁻阴性不能证明Fe²⁺存在；Fe(OH)₂易被空气氧化，需题设保证价态不再变化。",
+        "steps": [
+          "每种离子和对应沉淀每份均含一个Fe，列a+b=0.0100。",
+          "两种沉淀分别耗2份、3份OH⁻，且没有其他耗碱，列2a+3b=0.0260。",
+          "第二式减第一式的2倍：(2a+3b)−2(a+b)=0.0260−0.0200，得b=0.00600 mol；a=0.0100−0.00600=0.00400 mol。",
+          "回代：总铁0.00400+0.00600=0.0100；耗OH⁻0.00800+0.0180=0.0260 mol，两账均通过。",
+          "混合沉淀质量分别为0.00400×90.0=0.360 g、0.00600×107=0.642 g；合1.002 g，按合理有效数字可写1.00 g。",
+          "未知样品可能无铁、Fe³⁺太稀或受干扰；未给候选和可靠检测条件，阴性不能单独证明Fe²⁺。",
+          "若Fe(OH)₂继续被空气或其他氧化剂氧化，二价/三价沉淀组成及质量会改变，不能把现有沉淀账直接反推初始组成；题设隔绝空气、无进一步氧化保证本题模型。"
+        ],
+        "commonErrors": [
+          "只列总铁一式却猜两种各一半。",
+          "把0.0260 mol OH⁻当成铁的总量或电子量。",
+          "全部沉淀乘同一个摩尔质量。",
+          "阴性直接当Fe²⁺存在证据，或忽略空气氧化边界。"
+        ],
+        "estimatedMinutes": 7,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "列出总铁a+b=0.0100及耗碱2a+3b=0.0260两式，依据无其他耗碱的题定模型。"
+          },
+          {
+            "points": 1,
+            "criterion": "展示消元得到b=0.00600 mol、a=0.00400 mol，回代两账均成立。"
+          },
+          {
+            "points": 1,
+            "criterion": "两沉淀分别算0.360 g与0.642 g，合1.002 g；合理舍入1.00 g可。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明未知样品SCN⁻阴性不直接证明Fe²⁺，需候选、浓度可靠及干扰等条件。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明Fe(OH)₂易被氧化，隔绝空气、无其他氧化或进一步转化条件保证组成与质量账可用于反推。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "短测1：稀盐酸模型生成Fe²⁺，不能无条件扩展到所有酸。",
+        "短测2：Fe²⁺必须包含金属贡献，总铁含剩余固体；充分反应时不同时留大量Fe与Fe³⁺。",
+        "短测3：按实际Fe³⁺量与2∶1系数，浓度用最终体积，电子不双计。",
+        "短测4：按总铁a+b及耗碱2a+3b两式消元，沉淀分别计质量；阴性不直接证明Fe²⁺，反推组成必须保留无其他耗碱和无进一步氧化条件。",
+        "总分至少16/20，所有关键条件通过并完成核心和订正，才手动推进。保留首次独立分数；照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w11-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w11-chemistry-section-recall",
+          "w11-chemistry-section-states",
+          "w11-chemistry-section-acid",
+          "w11-chemistry-section-metal-ferric",
+          "w11-chemistry-section-other-redox",
+          "w11-chemistry-section-precipitation",
+          "w11-chemistry-section-evidence",
+          "w11-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w11-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w11-chemistry-section-recall",
+          "w11-chemistry-section-states",
+          "w11-chemistry-section-acid",
+          "w11-chemistry-section-metal-ferric",
+          "w11-chemistry-section-other-redox",
+          "w11-chemistry-section-precipitation",
+          "w11-chemistry-section-evidence",
+          "w11-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w11-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w11-chemistry-section-recall",
+          "w11-chemistry-section-states",
+          "w11-chemistry-section-acid",
+          "w11-chemistry-section-metal-ferric",
+          "w11-chemistry-section-other-redox",
+          "w11-chemistry-section-precipitation",
+          "w11-chemistry-section-evidence",
+          "w11-chemistry-section-audit"
+        ],
+        "action": "按本题解析找到第一处条件、物质身份、方程式或量的断点，回查相应小节，合上答案重建过程；不把重做分冒充首次分。"
+      },
+      {
+        "questionIds": [
+          "w11-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w11-chemistry-section-precipitation",
+          "w11-chemistry-section-evidence",
+          "w11-chemistry-section-audit"
+        ],
+        "action": "用总铁与OH⁻两行列a+b和2a+3b，第二式减第一式两倍，回代验证后分别乘沉淀M；另检查阴性证据和空气边界。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w11-chemistry-review-corrections",
+    "title": "12分钟评分与错因订正",
+    "instructions": [
+      "第1—3分钟：逐条计首次分数，单独核关键条件；分够但关键条件错仍未过关。",
+      "第4—8分钟：挑最多两个根本错点，写“原想法—缺少的条件或规则—正确依据—下次先查什么”，回对应本周小节。",
+      "第9—12分钟：关答案重建关键反应和一组量，用元素、电荷、电子或阶段总账复核。",
+      "12分钟内未解决的卡点记录活动ID，下一可用时段继续补救并独立重做，保留首次成绩和新尝试；不新增第二套20分测，不自动推进。"
+    ]
+  },
+  "nextStep": "完整核心与订正完成，唯一20分短测至少16分且全部关键条件通过后，学习者手动进入下一周。未达标按路由补救、另记重做尝试，不因日历换周自动跳过。",
+  "audioStatus": "未配置音频；概念、题设、解析、图替代文本均可直接阅读。",
+  "mastery": [
+    "建立Fe、Fe²⁺、Fe³⁺的有条件转化与电子倍数。",
+    "根据酸的性质、氧化剂和限量决定适用反应，拒绝无条件产氢。",
+    "能处理Fe或Cu还原Fe³⁺的限制者、产物与剩余量并核总铁。",
+    "能按价态算沉淀耗碱，解释空气氧化和显色证据的边界。",
+    "能够说明模型边界；首次分与补救后尝试分开，达标再手动推进。"
+  ],
+  "safetyScope": "全部是纸笔理论、给定数据分析与示意图阅读。钠、过氧化钠、氯气、酸、强氧化体系与铁盐不作为购买、混合、加热、制气或检验操作清单；不开展家庭实验。现实反应可能有平衡、传质、空气氧化等影响；定量结果仅在题设理想条件下成立。含氯清洁剂不得与酸性、氨类或其他清洁剂混用。",
+  "sourcePolicy": {
+    "authorship": "全部中文解释、情境、数字、题目、评分与图示原创；沿既定周路线深化，不挪入后续新专题。",
+    "examStatus": "全部为原创教学题，非历年真题；不编教材版本或页码，不预测2028必考内容。",
+    "externalSources": [
+      {
+        "id": "w11-chemistry-source-transition",
+        "title": "OpenStax Chemistry 2e：Transition metals and their compounds",
+        "url": "https://openstax.org/books/chemistry-2e/pages/19-1-occurrence-preparation-and-properties-of-transition-metals-and-their-compounds",
+        "kind": "reference",
+        "scopeNote": "原发布机构用于核验过渡金属多价态及化合物性质的概念；具体纸面反应、数值与条件在本课完整给定。"
+      },
+      {
+        "id": "w11-chemistry-source-evidence",
+        "title": "RSC Education：Transition elements and complex compounds",
+        "url": "https://edu.rsc.org/experiments/transition-elements-and-complex-compounds-microscale-experiment-16-18-years/518.article",
+        "kind": "reference",
+        "scopeNote": "核验铁离子氧化态变化及Fe³⁺/SCN⁻显色依据，仅取化学事实和证据条件，不复制或要求开展页面实验。"
+      },
+      {
+        "id": "w11-chemistry-source-redox",
+        "title": "OpenStax Chemistry 2e：Review of Redox Chemistry",
+        "url": "https://openstax.org/books/chemistry-2e/pages/17-1-review-of-redox-chemistry",
+        "kind": "reference",
+        "scopeNote": "用于电子、原子与电荷核算原则；本课按实际反应量复核，不将配平当作任意条件下反应保证。"
+      }
+    ]
+  }
+}

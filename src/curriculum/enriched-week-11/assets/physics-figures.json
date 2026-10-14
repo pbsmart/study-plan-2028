@@ -1,0 +1,43 @@
+[
+  {
+    "id": "w11-physics-figure1",
+    "title": "四种运动状态：超重、失重看a方向",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "四卡为向上加速a上超重、向上减速a下失重、向下加速a下失重、向下减速a上超重。N大于mg为超重，小于mg为失重；mg保持不变。",
+    "description": "四卡为向上加速a上超重、向上减速a下失重、向下加速a下失重、向下减速a上超重。N大于mg为超重，小于mg为失重；mg保持不变。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。通用概念图，不含测验答案。",
+    "linkedSectionIds": [
+      "w11-physics-s1",
+      "w11-physics-s2",
+      "w11-physics-s3"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w11-physics-figure2",
+    "title": "答案图：整体求a，隔离求T，再回代",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "例3A质量2千克、B3千克，B受20牛向右，整体加速度4米每二次方秒。A受8牛向右张力；B受8牛向左张力与20牛向右外力。水平力箭长5像素每牛，张力40像素、外力100像素。",
+    "description": "例3A质量2千克、B3千克，B受20牛向右，整体加速度4米每二次方秒。A受8牛向右张力；B受8牛向左张力与20牛向右外力。水平力箭长5像素每牛，张力40像素、外力100像素。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。本图仅随所关联题目答案展开。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w11-physics-ex3"
+    ],
+    "answerOnly": true
+  },
+  {
+    "id": "w11-physics-figure3",
+    "title": "答案图：两端等张力，a大小相同但方向相反",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "例4两张隔离图，1千克物体受15牛上张力与10牛下重力；3千克受15牛上张力与30牛下重力，力箭均4像素每牛。共同加速度大小5米每二次方秒，轻物上、重物下。",
+    "description": "例4两张隔离图，1千克物体受15牛上张力与10牛下重力；3千克受15牛上张力与30牛下重力，力箭均4像素每牛。共同加速度大小5米每二次方秒，轻物上、重物下。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。本图仅随所关联题目答案展开。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w11-physics-ex4"
+    ],
+    "answerOnly": true
+  }
+]

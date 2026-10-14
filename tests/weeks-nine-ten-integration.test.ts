@@ -28,7 +28,7 @@ describe('frozen weeks nine and ten integration',()=>{
     expect(protectedFiles.baselineCommit).toBe('a989283eda06186bf1ffd0f959e57325b162406e')
     for(const file of protectedFiles.files){const bytes=await readFile(new URL(`../${file.path}`,import.meta.url));expect(bytes.length,file.path).toBe(file.bytes);expect(createHash('sha256').update(bytes).digest('hex'),file.path).toBe(file.sha256)}
     const config=await readFile(source('enrichment-config.ts'),'utf8');expect(config.startsWith(protectedFiles.priorConfigPrefix)).toBe(true)
-    expect(enrichmentConfigs.map(config=>config.week)).toEqual([1,2,3,4,5,6,7,8,9,10])
+    expect(enrichmentConfigs.map(config=>config.week)).toEqual([1,2,3,4,5,6,7,8,9,10,11,12])
     for(const week of [9,10]){const config=enrichmentConfigs.find(config=>config.week===week)!;expect(config.reviewMapManifests).toBeUndefined();expect(config.answerOnlyFigureIds).toEqual([`w${week}-physics-figure3`])}
   })
   it('loads only the 31 runtime author files, with no author QA, rubric, handouts or extra review map',async()=>{
@@ -110,9 +110,9 @@ describe('frozen weeks nine and ten integration',()=>{
     }finally{await rm(directory,{recursive:true,force:true})}
   })
   it('watches only actual source files and keeps new resources out of other weeks',async()=>{
-    const data=await readCurriculumData();expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(72)
+    const data=await readCurriculumData();expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(87)
     for(const file of data.sourceFiles)expect((await stat(file)).isFile()).toBe(true)
-    for(const week of data.weeks.filter(week=>week.week>10))for(const lesson of Object.values(week.subjects)){expect(lesson?.enrichment).toBeUndefined();expect(lesson?.enrichmentFigures).toBeUndefined()}
+    for(const week of data.weeks.filter(week=>week.week>12))for(const lesson of Object.values(week.subjects)){expect(lesson?.enrichment).toBeUndefined();expect(lesson?.enrichmentFigures).toBeUndefined()}
   })
 })
 

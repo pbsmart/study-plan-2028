@@ -111,4 +111,31 @@ export const enrichmentConfigs: EnrichmentConfig[] = [
     ],
     preferDiagramAssets: true,
   },
+  {
+    week: 11, revision: 'week11-enriched-v1', directory: 'enriched-week-11',
+    answerOnlyFigureIds: ['w11-physics-figure2', 'w11-physics-figure3'],
+    figureManifests: [
+      { subject: 'math', file: 'assets/math-figures.json' },
+      { subject: 'physics', file: 'assets/physics-figures.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-figures.json' },
+    ],
+    preferDiagramAssets: true,
+  },
+  {
+    week: 12, revision: 'week12-enriched-v1', directory: 'enriched-week-12',
+    answerOnlyFigureIds: ['w12-math-exp-absolute', 'w12-physics-figure2', 'w12-physics-figure3', 'w12-physics-figure4'],
+    figureManifests: [
+      { subject: 'math', file: 'assets/math-figures.json' },
+      { subject: 'physics', file: 'assets/physics-figures.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-figures.json' },
+    ],
+    preferDiagramAssets: true,
+    reviewMapManifests: [
+      { subject: 'chinese', file: 'assets/chinese-review-map.json' },
+      { subject: 'math', file: 'assets/math-review-map.json' },
+      { subject: 'english', file: 'assets/english-review-map.json' },
+      { subject: 'physics', file: 'assets/physics-review-map.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-review-map.json' },
+    ],
+  },
 ]

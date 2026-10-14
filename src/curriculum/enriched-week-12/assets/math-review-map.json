@@ -1,0 +1,347 @@
+{
+  "week": 12,
+  "subject": "数学",
+  "title": "第9—12周关键技能累计回查（含必要前置，非全面测评）",
+  "totalPoints": 20,
+  "minutes": 35,
+  "replacesRegularQuiz": true,
+  "note": "每条对应原题的一个评分项，只计原20分一次；周次标签不增加时间和题量。",
+  "scoringMap": [
+    {
+      "questionId": "w12-math-quiz1",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "写x²−4>0及完整原定义域",
+          "weeks": [
+            9,
+            12,
+            7
+          ],
+          "skill": "写x²−4>0及完整原定义域",
+          "remediationSectionIds": [
+            "w12-math-s2",
+            "w12-math-s3"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "以(1/2)^(−2)=4得到比较阈值4",
+          "weeks": [
+            9,
+            12,
+            8
+          ],
+          "skill": "以(1/2)^(−2)=4得到比较阈值4",
+          "remediationSectionIds": [
+            "w12-math-s2",
+            "w12-math-s3"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "由递减得到x²−4≤4，并保留>0",
+          "weeks": [
+            9,
+            12
+          ],
+          "skill": "由递减得到x²−4≤4，并保留>0",
+          "remediationSectionIds": [
+            "w12-math-s2",
+            "w12-math-s3"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "完整解集[−2√2,−2)∪(2,2√2]",
+          "weeks": [
+            4,
+            7,
+            9,
+            12
+          ],
+          "skill": "完整解集[−2√2,−2)∪(2,2√2]",
+          "remediationSectionIds": [
+            "w12-math-s2",
+            "w12-math-s3"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "说明±2因真数0排除、±2√2因等号且合法保留",
+          "weeks": [
+            4,
+            9,
+            12
+          ],
+          "skill": "说明±2因真数0排除、±2√2因等号且合法保留",
+          "remediationSectionIds": [
+            "w12-math-s2",
+            "w12-math-s3"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-math-s2",
+        "w12-math-s3"
+      ]
+    },
+    {
+      "questionId": "w12-math-quiz2",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "说明D不关于0对称，因此该函数不是偶函数",
+          "weeks": [
+            6,
+            12
+          ],
+          "skill": "说明D不关于0对称，因此该函数不是偶函数",
+          "remediationSectionIds": [
+            "w12-math-s4"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "两段严格单调区间及方向都正确",
+          "weeks": [
+            6,
+            8,
+            12
+          ],
+          "skill": "两段严格单调区间及方向都正确",
+          "remediationSectionIds": [
+            "w12-math-s4"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "用|x−1|范围[0,2]推得值域[−1,2]",
+          "weeks": [
+            5,
+            8,
+            12
+          ],
+          "skill": "用|x−1|范围[0,2]推得值域[−1,2]",
+          "remediationSectionIds": [
+            "w12-math-s4"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "零点方程化为|x−1|=1并求得0与2",
+          "weeks": [
+            8,
+            10,
+            12
+          ],
+          "skill": "零点方程化为|x−1|=1并求得0与2",
+          "remediationSectionIds": [
+            "w12-math-s4"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "核0、2均在题给域，零点写输入而非交点坐标",
+          "weeks": [
+            4,
+            10,
+            12
+          ],
+          "skill": "核0、2均在题给域，零点写输入而非交点坐标",
+          "remediationSectionIds": [
+            "w12-math-s4"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-math-s4"
+      ]
+    },
+    {
+      "questionId": "w12-math-quiz3",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "说明x−1在[1,3]，故该闭区间内h连续",
+          "weeks": [
+            9,
+            10,
+            12
+          ],
+          "skill": "说明x−1在[1,3]，故该闭区间内h连续",
+          "remediationSectionIds": [
+            "w12-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "端点−2与log₂3异号，得至少一个零点",
+          "weeks": [
+            10,
+            12
+          ],
+          "skill": "端点−2与log₂3异号，得至少一个零点",
+          "remediationSectionIds": [
+            "w12-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "用两项随x增加的理由证明严格递增，从而至多一个零点",
+          "weeks": [
+            6,
+            9,
+            10,
+            12
+          ],
+          "skill": "用两项随x增加的理由证明严格递增，从而至多一个零点",
+          "remediationSectionIds": [
+            "w12-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "计算中点3并验证h(3)=0",
+          "weeks": [
+            9,
+            10,
+            12
+          ],
+          "skill": "计算中点3并验证h(3)=0",
+          "remediationSectionIds": [
+            "w12-math-s7"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "结合存在/至多一个得唯一根3，说明中点已为精确根无需再二分",
+          "weeks": [
+            10,
+            12
+          ],
+          "skill": "结合存在/至多一个得唯一根3，说明中点已为精确根无需再二分",
+          "remediationSectionIds": [
+            "w12-math-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-math-s7"
+      ]
+    },
+    {
+      "questionId": "w12-math-quiz4",
+      "points": 5,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "points": 0.5,
+          "criterion": "正确配方(x−a)²+2−a²",
+          "weeks": [
+            7,
+            12
+          ],
+          "skill": "正确配方(x−a)²+2−a²",
+          "remediationSectionIds": [
+            "w12-math-s5",
+            "w12-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "points": 0.5,
+          "criterion": "顶点横坐标a，并按a<1、1≤a≤3、a>3分类",
+          "weeks": [
+            7,
+            12
+          ],
+          "skill": "顶点横坐标a，并按a<1、1≤a≤3、a>3分类",
+          "remediationSectionIds": [
+            "w12-math-s5",
+            "w12-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "points": 1.5,
+          "criterion": "三段最小值及取得位置均正确，每段0.5分",
+          "weeks": [
+            5,
+            7,
+            12
+          ],
+          "skill": "三段最小值及取得位置均正确，每段0.5分",
+          "remediationSectionIds": [
+            "w12-math-s5",
+            "w12-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "逐段与原分类范围联立后合并a≤√2，边界允许",
+          "weeks": [
+            11,
+            12
+          ],
+          "skill": "逐段与原分类范围联立后合并a≤√2，边界允许",
+          "remediationSectionIds": [
+            "w12-math-s5",
+            "w12-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "否定为存在x∈[1,3]使q_a(x)<0，量词/定义域/严格不等号齐全",
+          "weeks": [
+            11,
+            12
+          ],
+          "skill": "否定为存在x∈[1,3]使q_a(x)<0，量词/定义域/严格不等号齐全",
+          "remediationSectionIds": [
+            "w12-math-s5",
+            "w12-math-s6"
+          ]
+        },
+        {
+          "scoringIndex": 5,
+          "points": 0.5,
+          "criterion": "a=3/2给合法输入x=3/2算出−1/4，否定仅验两端就足够的推断",
+          "weeks": [
+            11,
+            12
+          ],
+          "skill": "a=3/2给合法输入x=3/2算出−1/4，否定仅验两端就足够的推断",
+          "remediationSectionIds": [
+            "w12-math-s5",
+            "w12-math-s6"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-math-s5",
+        "w12-math-s6"
+      ]
+    }
+  ]
+}

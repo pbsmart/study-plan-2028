@@ -1,0 +1,61 @@
+[
+  {
+    "id": "w12-physics-figure1",
+    "title": "第9—12周累计路线：条件→受力→运动→核验",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "四张复习卡依次为9周合力与a、10周阶段边界、11周视重与连接、12周连续初值与互查。必要回查旧工具；唯一20分累计替代普通周测，不展示测验数值答案。",
+    "description": "四张复习卡依次为9周合力与a、10周阶段边界、11周视重与连接、12周连续初值与互查。必要回查旧工具；唯一20分累计替代普通周测，不展示测验数值答案。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。通用概念图，不含测验答案。",
+    "linkedSectionIds": [
+      "w12-physics-s1",
+      "w12-physics-s2",
+      "w12-physics-s3",
+      "w12-physics-s4",
+      "w12-physics-s5",
+      "w12-physics-s6",
+      "w12-physics-s7",
+      "w12-physics-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w12-physics-figure2",
+    "title": "答案图：拉动—撤力—停止，一张v-t图核对总账",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "例1速度图节点(0秒,0)、(3秒,6米每秒)、(6秒,0)，之后到8秒恒0。前后两个三角形面积各9米，总位移与路程18米。撤力不使速度跳变，停后不倒滑。",
+    "description": "例1速度图节点(0秒,0)、(3秒,6米每秒)、(6秒,0)，之后到8秒恒0。前后两个三角形面积各9米，总位移与路程18米。撤力不使速度跳变，停后不倒滑。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。本图仅随所关联题目答案展开。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w12-physics-ex1"
+    ],
+    "answerOnly": true
+  },
+  {
+    "id": "w12-physics-figure3",
+    "title": "答案图：断绳只解除约束，不抹去原速度",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "例3速度图两者共同从(0秒,0)到(2秒,4米每秒)；断绳后A到(3秒,7)，B到(3秒,4)。A后段a3，B为0；3秒累计位移A9.5米、B8米。",
+    "description": "例3速度图两者共同从(0秒,0)到(2秒,4米每秒)；断绳后A到(3秒,7)，B到(3秒,4)。A后段a3，B为0；3秒累计位移A9.5米、B8米。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。本图仅随所关联题目答案展开。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w12-physics-ex3"
+    ],
+    "answerOnly": true
+  },
+  {
+    "id": "w12-physics-figure4",
+    "title": "答案图：从视重读数反推速度，两次转向分开计路程",
+    "asset": "assets/physics-figure4.svg",
+    "altText": "累计4向上为正，速度折线为(0秒,正1)、(2秒,负1)、(4秒,负1)、(6秒,正1)，在1秒与5秒变号转向。三段位移0、负2、0米，三段路程1、2、1米，总位移向下2米而路程4米。",
+    "description": "累计4向上为正，速度折线为(0秒,正1)、(2秒,负1)、(4秒,负1)、(6秒,正1)，在1秒与5秒变号转向。三段位移0、负2、0米，三段路程1、2、1米，总位移向下2米而路程4米。",
+    "renderingNote": "安全原生文本SVG；请保留原始文字。本图仅随所关联题目答案展开。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w12-physics-quiz4"
+    ],
+    "answerOnly": true
+  }
+]

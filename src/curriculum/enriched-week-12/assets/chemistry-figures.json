@@ -1,0 +1,16 @@
+[
+  {
+    "id": "w12-chemistry-figure-concept",
+    "title": "连续反应：把上一段终点交给下一段",
+    "asset": "assets/chemistry-concept-w12.svg",
+    "altText": "三卡依次为第一段氧化、第二段沉淀、最后质量与浓度。第一段先算Fe²⁺初量与限制者，得到剩Fe²⁺和生成Fe³⁺；第二段在Cl₂与酸均无剩余、隔绝空气且无其他耗碱反应的题定模型中，分别按二价耗2份OH⁻、三价耗3份OH⁻；最后各沉淀分别算质量，余OH⁻除最终液相体积。图中无任何累计题数值答案。",
+    "description": "三张等大概念卡横向排列，连接线表示读图顺序，不表示速率、距离或实际装置。没有测验数字答案。",
+    "linkedSectionIds": [
+      "w12-chemistry-section-stage-ledger",
+      "w12-chemistry-section-conservation",
+      "w12-chemistry-section-final-quantity"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

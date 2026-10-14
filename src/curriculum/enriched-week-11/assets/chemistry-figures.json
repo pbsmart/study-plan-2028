@@ -1,0 +1,16 @@
+[
+  {
+    "id": "w11-chemistry-figure-concept",
+    "title": "铁的转化：先写终价，再核条件",
+    "asset": "assets/chemistry-concept-w11.svg",
+    "altText": "三卡按读图顺序说明Fe单质0价在稀盐酸且无其他氧化剂时变Fe²⁺，每mol失2mol电子；Fe²⁺在题给Cl₂氧化下变Fe³⁺，每mol失1mol；Fe³⁺在题给Cu还原下变Fe²⁺，每mol得1mol。卡间箭头只表示阅读顺序，不是三步实物流程。",
+    "description": "三张等大概念卡横向排列，连接线表示读图顺序，不表示速率、距离或实际装置。没有测验数字答案。",
+    "linkedSectionIds": [
+      "w11-chemistry-section-states",
+      "w11-chemistry-section-acid",
+      "w11-chemistry-section-other-redox"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

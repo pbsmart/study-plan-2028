@@ -1,0 +1,41 @@
+[
+  {
+    "id": "w11-math-condition-sets",
+    "title": "包含关系把充分和必要放在正确方向",
+    "asset": "assets/math-condition-sets.svg",
+    "altText": "在同一范围D内，P的真值集合A真包含于Q的真值集合B。A内的每个对象都在B中，所以P推出Q，P是Q的充分条件，Q是P的必要条件。B中A外的对象使Q真P假，阻止逆向推出。",
+    "description": "在同一范围D内，P的真值集合A真包含于Q的真值集合B。A内的每个对象都在B中，所以P推出Q，P是Q的充分条件，Q是P的必要条件。B中A外的对象使Q真P假，阻止逆向推出。",
+    "linkedSectionIds": [
+      "w11-math-s3",
+      "w11-math-s4"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w11-math-quantifier-negation",
+    "title": "量词否定的三格检查：范围不动",
+    "asset": "assets/math-quantifier-negation.svg",
+    "altText": "全称命题“对所有x属于D，P(x)”的否定为“存在x属于同一D，使非P(x)”。存在命题的否定为同域全称且谓词取反。量词交换，范围保留，谓词取反。大于与小于等于互补，大于等于与小于互补，等于与不等于互补。",
+    "description": "全称命题“对所有x属于D，P(x)”的否定为“存在x属于同一D，使非P(x)”。存在命题的否定为同域全称且谓词取反。量词交换，范围保留，谓词取反。大于与小于等于互补，大于等于与小于互补，等于与不等于互补。",
+    "linkedSectionIds": [
+      "w11-math-s5",
+      "w11-math-s6"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w11-math-linear-degeneration",
+    "title": "ax + b = 0：除法前先检查 a",
+    "asset": "assets/math-linear-degeneration.svg",
+    "altText": "本图限定a、b为实数，未知数x在实数域R。a非零时唯一解负b除以a。a等于0且b等于0时，所有实数均为解。a等于0且b不等于0时，无解。三分覆盖所有参数；若x另有限制范围D，非零分支还须筛选候选，恒等式的解集改为D。",
+    "description": "本图限定a、b为实数，未知数x在实数域R。a非零时唯一解负b除以a。a等于0且b等于0时，所有实数均为解。a等于0且b不等于0时，无解。三分覆盖所有参数；若x另有限制范围D，非零分支还须筛选候选，恒等式的解集改为D。",
+    "linkedSectionIds": [
+      "w11-math-s7",
+      "w11-math-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

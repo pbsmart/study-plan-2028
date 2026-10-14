@@ -1,0 +1,254 @@
+[
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "lessons/chemistry.json",
+    "path": "enriched-week-11/chemistry.json",
+    "sha256": "0ad1ccec6017e4f075e8b70a232b73f02be5c9d23ff626df73e23511d8940a24",
+    "bytes": 45924
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "lessons/chinese.json",
+    "path": "enriched-week-11/chinese.json",
+    "sha256": "afed6dd3aa5309a96ba2f5edd61c8a4bc8562a855669a49037e4cd2b389d98a7",
+    "bytes": 38078
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "lessons/english.json",
+    "path": "enriched-week-11/english.json",
+    "sha256": "7b4837987f2044d4d45a184fbde8ffec31e7d4239859778a69bb932ba2dc1ac3",
+    "bytes": 42685
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "lessons/math.json",
+    "path": "enriched-week-11/math.json",
+    "sha256": "e49236df0688e892f0cf3d74bc3c758623e531c1ac3cfe5aae9330b417934c31",
+    "bytes": 49764
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "lessons/physics.json",
+    "path": "enriched-week-11/physics.json",
+    "sha256": "2435c4f25a5b7aca9d39b1f9181f8efb02043e80d4189ee5d114fe84e488371e",
+    "bytes": 36534
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/chemistry-concept-w11.svg",
+    "path": "enriched-week-11/assets/chemistry-concept-w11.svg",
+    "sha256": "8ab0c00fc515921d9f67756d90d1a2e59078d531067b8ef8816b4f32e855907b",
+    "bytes": 2327
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/chemistry-figures.json",
+    "path": "enriched-week-11/assets/chemistry-figures.json",
+    "sha256": "d10c4927ca179d9f842b2065fca302b75529db0723348d622d2a51943c94051c",
+    "bytes": 829
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/math-condition-sets.svg",
+    "path": "enriched-week-11/assets/math-condition-sets.svg",
+    "sha256": "e45668988f291b6e725e38c5ffc8e9fbd4c1a649b5a2b9bb07be7565d9f13202",
+    "bytes": 2267
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/math-figures.json",
+    "path": "enriched-week-11/assets/math-figures.json",
+    "sha256": "006cb925a07ec1f31394454b9a4a58c541391925745660859beedf715031bc21",
+    "bytes": 2559
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/math-linear-degeneration.svg",
+    "path": "enriched-week-11/assets/math-linear-degeneration.svg",
+    "sha256": "954bd4ed7b4569637ec4ffaa99a3e95790a746a46cb82bb1db4553adb2a957a3",
+    "bytes": 2639
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/math-quantifier-negation.svg",
+    "path": "enriched-week-11/assets/math-quantifier-negation.svg",
+    "sha256": "979e4ad8262ed778092d2e28cd3863f0b5f703dd6d7716546cd3a399f5159ba4",
+    "bytes": 2014
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/physics-figure1.svg",
+    "path": "enriched-week-11/assets/physics-figure1.svg",
+    "sha256": "3841f1af594012e755c967b5096dda1292456d9fc2f2ab0e8068d654a5fec336",
+    "bytes": 2892
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/physics-figure2.svg",
+    "path": "enriched-week-11/assets/physics-figure2.svg",
+    "sha256": "7ec594d0c8038bd17ae57f6867fa689f6954cae2dac2f35c7a448f302559edb2",
+    "bytes": 3140
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/physics-figure3.svg",
+    "path": "enriched-week-11/assets/physics-figure3.svg",
+    "sha256": "7cb90b01f1bd7990d79de530191ab37b7fbedf3655d2ea6abe8abca54b456cba",
+    "bytes": 2836
+  },
+  {
+    "sourcePackage": "gaokao-week-11-enrichment",
+    "sourcePath": "assets/physics-figures.json",
+    "path": "enriched-week-11/assets/physics-figures.json",
+    "sha256": "f0c8c7bd6a674647d3c4068c4f6d4982999ab7dbfacf7068b563d810765137db",
+    "bytes": 2491
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "lessons/chemistry.json",
+    "path": "enriched-week-12/chemistry.json",
+    "sha256": "5b5771eb9584d88d5387b51f0dbde0f1888359681fb29cf3cdc2b54fa0c03da2",
+    "bytes": 47887
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "lessons/chinese.json",
+    "path": "enriched-week-12/chinese.json",
+    "sha256": "798f6c190c02b79747918b5f7eb22d6aa31379b9f2fb194b30c3040716b11614",
+    "bytes": 38491
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "lessons/english.json",
+    "path": "enriched-week-12/english.json",
+    "sha256": "2291684ba0da3c9f5dbbb96016d406fb7f18c24a4a8c8284c599d28bfe2958db",
+    "bytes": 49192
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "lessons/math.json",
+    "path": "enriched-week-12/math.json",
+    "sha256": "2d66f1756e6f28d0797b8505c1a1029eb56178114b3a01c2e4368e606652936f",
+    "bytes": 41310
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "lessons/physics.json",
+    "path": "enriched-week-12/physics.json",
+    "sha256": "7c2eca061772fcd3101333b4cd90c56679f5848d2b3b2d8d48d078188d75be01",
+    "bytes": 38828
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/chemistry-concept-w12.svg",
+    "path": "enriched-week-12/assets/chemistry-concept-w12.svg",
+    "sha256": "b6532fdea80f040c4009e7252b881ad71cb109d5ad15ef589d5e1f572284b039",
+    "bytes": 2490
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/chemistry-figures.json",
+    "path": "enriched-week-12/assets/chemistry-figures.json",
+    "sha256": "713b3cae55fcf68758a2b542b394c5ff7674ab95a59e7cbd1293f85fa519276c",
+    "bytes": 967
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/chemistry-review-map.json",
+    "path": "enriched-week-12/assets/chemistry-review-map.json",
+    "sha256": "e4bd855715cf52dd456a5ddd63e7c67e2f94478c432db5d665fe867e0d3ef0b4",
+    "bytes": 20370
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/chinese-review-map.json",
+    "path": "enriched-week-12/assets/chinese-review-map.json",
+    "sha256": "dd8cb26e6da39822c9585ac639e9ca87ac19a5de237d829ab9c1b24b08b04377",
+    "bytes": 10742
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/english-review-map.json",
+    "path": "enriched-week-12/assets/english-review-map.json",
+    "sha256": "07d14834e87e0fdff1959e27a7607fbaa05a80218765dc753af0547384773946",
+    "bytes": 11574
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/math-composition-conditions.svg",
+    "path": "enriched-week-12/assets/math-composition-conditions.svg",
+    "sha256": "5c095e91b4683218d75ca72825344825884aa997d7eef7b87321aeca37d152be",
+    "bytes": 1667
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/math-exp-absolute.svg",
+    "path": "enriched-week-12/assets/math-exp-absolute.svg",
+    "sha256": "aa2c18220000f778bd3c30d9a304938ac352187df2c8b959239c1dfb8745cef4",
+    "bytes": 3739
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/math-figures.json",
+    "path": "enriched-week-12/assets/math-figures.json",
+    "sha256": "777555d0d37ab815146ef7e714007957e38a4405a66cf752c8ec081a90b571f5",
+    "bytes": 2305
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/math-nearest-vertex.svg",
+    "path": "enriched-week-12/assets/math-nearest-vertex.svg",
+    "sha256": "d4460350ed9bb5db0caac1c954b502f8e815a5c37c933be283c05c370d3bbfe8",
+    "bytes": 9043
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/math-review-map.json",
+    "path": "enriched-week-12/assets/math-review-map.json",
+    "sha256": "86dbbeae101cf8ab9bbd781f9aa117518b3db5c09129528d9baee4a134dec2ee",
+    "bytes": 9197
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/physics-figure1.svg",
+    "path": "enriched-week-12/assets/physics-figure1.svg",
+    "sha256": "2aad870907a6f0b56b1a4c3cdde259d6b81e1f70ad1dd9aaa575517ac70e2ef8",
+    "bytes": 2810
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/physics-figure2.svg",
+    "path": "enriched-week-12/assets/physics-figure2.svg",
+    "sha256": "fac2a6866971447e8627c65d7cfef90b0477fc8ed862651f4fa16099fd0c0338",
+    "bytes": 2581
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/physics-figure3.svg",
+    "path": "enriched-week-12/assets/physics-figure3.svg",
+    "sha256": "907984b00c1a7e1499e65ddd32f851d2eafd35256180cbcfe6ba8a8ec735ac5a",
+    "bytes": 2491
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/physics-figure4.svg",
+    "path": "enriched-week-12/assets/physics-figure4.svg",
+    "sha256": "c92747ac6affd49c31e8c2cda1afe0eba98ca928832a2edc40892f0b91a95446",
+    "bytes": 4030
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/physics-figures.json",
+    "path": "enriched-week-12/assets/physics-figures.json",
+    "sha256": "901c5276bbf53d3d38a41f89483e4b63b2fb2a0f69a8d840ceccac161e41f988",
+    "bytes": 3408
+  },
+  {
+    "sourcePackage": "gaokao-week-12-enrichment",
+    "sourcePath": "assets/physics-review-map.json",
+    "path": "enriched-week-12/assets/physics-review-map.json",
+    "sha256": "a9f58f5fcef8923d3637966b5b1a6224b52bbc9f9995f3eba19fc40af68af6f1",
+    "bytes": 16097
+  }
+]

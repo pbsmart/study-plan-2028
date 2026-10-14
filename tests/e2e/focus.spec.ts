@@ -50,14 +50,14 @@ test('invalid section deep links recover to lesson preparation without marking p
   await page.goto('/#learn/85/math/prepare');await expect(page.getByRole('heading',{name:'学习概览',exact:true})).toBeVisible()
 })
 
-test('first ten weeks of enhanced lessons expose the diagnostic, small sections, quiz and honest limits',async({page})=>{
+test('first twelve weeks of enhanced lessons expose the diagnostic, small sections, quiz and honest limits',async({page})=>{
   test.setTimeout(240000)
-  for(const week of [1,2,3,4,5,6,7,8,9,10])for(const subject of ['chinese','math','english','physics','chemistry']){
+  for(const week of [1,2,3,4,5,6,7,8,9,10,11,12])for(const subject of ['chinese','math','english','physics','chemistry']){
     await page.goto(`/#learn/${week}/${subject}/prepare`);await expect(page.locator('.enriched-content')).toContainText(`第${week}周深化试点`)
     await page.getByRole('button',{name:'下一节 →',exact:true}).click();await expect(page.locator('.focus-section-title')).toHaveText('课前自测')
     await expect(page.locator('.focus-section .problem-card')).not.toHaveCount(0);await expect(page.locator('.focus-section details[open]')).toHaveCount(0)
     await page.getByRole('button',{name:'下一节 →',exact:true}).click();await expect(page.locator('.lesson-checkpoint-question')).toBeVisible();await expect(page.locator('.lesson-checkpoint-question details')).not.toHaveAttribute('open','')
-    await page.locator('.focus-directory > summary').click();await page.locator('.focus-directory button').filter({hasText:[4,8].includes(week)?'20 分累计诊断':'20 分短测'}).click();await expect(page.locator('.enriched-content')).toContainText('页面不提供自动评分')
+    await page.locator('.focus-directory > summary').click();await page.locator('.focus-directory button').filter({hasText:[4,8,12].includes(week)?'20 分累计诊断':'20 分短测'}).click();await expect(page.locator('.enriched-content')).toContainText('页面不提供自动评分')
     if(subject==='english')await expect(page.locator('.focus-title')).toContainText('无音频')
   }
 })

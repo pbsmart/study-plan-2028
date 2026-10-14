@@ -60,12 +60,12 @@ describe('frozen weeks three and four integration',()=>{
     expect(subjects.reduce((sum,subject)=>sum+week.subjects[subject]!.enrichment!.budget.coreMinutes,0)).toBe(870)
     for(const subject of ['biology','geography','politics'] as const){expect(week.subjects[subject]?.enrichment).toBeUndefined();expect(week.subjects[subject]?.enrichmentReviewMap).toBeUndefined()}
   })
-  it('watches all actual review-map and figure files and only places mappings in week four',async()=>{
+  it('watches all actual review-map and figure files and only places mappings in configured cumulative weeks',async()=>{
     const data=await readCurriculumData()
-    expect(data.sourceFiles.filter(file=>file.endsWith('-review-map.json'))).toHaveLength(10)
-    expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(72)
+    expect(data.sourceFiles.filter(file=>file.endsWith('-review-map.json'))).toHaveLength(15)
+    expect(data.sourceFiles.filter(file=>file.endsWith('.svg'))).toHaveLength(87)
     for(const file of data.sourceFiles)expect((await stat(file)).isFile()).toBe(true)
-    for(const week of data.weeks)for(const lesson of Object.values(week.subjects))if(![4,8].includes(week.week))expect(lesson?.enrichmentReviewMap).toBeUndefined()
+    for(const week of data.weeks)for(const lesson of Object.values(week.subjects))if(![4,8,12].includes(week.week))expect(lesson?.enrichmentReviewMap).toBeUndefined()
   })
 })
 

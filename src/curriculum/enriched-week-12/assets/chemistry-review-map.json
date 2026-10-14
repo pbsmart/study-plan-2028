@@ -1,0 +1,506 @@
+{
+  "id": "w12-chemistry-review-map",
+  "week": 12,
+  "lessonId": "w12-化学",
+  "revision": "week12-enriched-v1",
+  "status": "pilot-ready",
+  "title": "第9—12周唯一累计复测逐点评分与补救地图",
+  "assessmentType": "第9—12周累计复测，替代普通周测，不叠加",
+  "totalPoints": 20,
+  "estimatedMinutes": 24,
+  "scoringIndexConvention": "scoringIndex为lesson.quiz.questions中scoring数组的零基索引。每rubric只映射一次，主要周primaryWeek计分，supportingWeeks只表真实前置而不重复计分。",
+  "verifiedPriorSkills": [
+    {
+      "week": 3,
+      "evidenceFile": "week-03-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "4b0a13b50e3394fc2809776a1fce5d25c51e162e459954be2de7b1fa16d215f1",
+      "skillSummary": "n=m/M及对象/单位；只作为质量换量前置。",
+      "verifiedSectionTitles": [
+        "补救：先把数、比例和单位算稳",
+        "从一打到一摩尔：给巨大数目分组",
+        "先给对象贴标签，再区分n、N、m、M",
+        "数目与物质的量：N=nN_A为什么成立",
+        "质量与物质的量：把M看成每摩尔的质量",
+        "化学式下标：换的是计数对象",
+        "NaCl按化学式单元计量，离子数要有前提",
+        "把换算连成一座桥，再检查结果"
+      ]
+    },
+    {
+      "week": 4,
+      "evidenceFile": "week-04-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "63ee06abeabad3b09e751fd38f978c04b0d212ac482152891bb84aa0cc4e0cc9",
+      "skillSummary": "系数是实际反应mol比，比较n/系数找限制者。",
+      "verifiedSectionTitles": [
+        "先补前置：物质身份、核内计数和单位不能混",
+        "先守恒再配平：只能改前面的系数",
+        "从一组对应到mol比：系数不是克数",
+        "质量计算只走四步：g→mol→mol→g",
+        "足量CO的意思：由氧化铁定产量",
+        "一种反应物分成两种产物：分别换算，再求和",
+        "先懂“谁先用完”，再学比较式",
+        "两种都给量：先除系数，最后写剩余和总账"
+      ]
+    },
+    {
+      "week": 5,
+      "evidenceFile": "week-05-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "4dc97569db27a8bfa2da63017f87711ea996ca09dfccefc8c59c23cd227157c7",
+      "skillSummary": "n=cV、mL/L和最终溶液体积；反应前后n不能无条件守恒。",
+      "verifiedSectionTitles": [
+        "先补前置：先认对象，再搭g与mol的桥",
+        "mL与L：让单位在乘除中对得上",
+        "c=n/V：每升含多少，不是整瓶一共有多少",
+        "质量分数w：比较的是质量，不是mol与L",
+        "稀释公式从哪里来：追踪同一份溶质",
+        "取样不是稀释：被分走的是同样组成的溶液",
+        "两份同溶质混合：先算各份mol",
+        "守恒前先查范围，结果后再查单位与条件"
+      ]
+    },
+    {
+      "week": 6,
+      "evidenceFile": "week-06-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "6c45228e941511845afe0a2ad6e2925b818ddaa4572d6cb69d3d46eed22fa1dc",
+      "skillSummary": "按强弱与状态拆写，弱酸/水/沉淀保留，净式原子电荷核查。",
+      "verifiedSectionTitles": [
+        "先补前置：离子电荷、下标与n=cV",
+        "前置规则卡：能拆必须同时看性质、溶解性和状态",
+        "写、拆、删、查：只删没有变化的离子",
+        "双重检查：原子数相等，电荷代数和也相等",
+        "强酸与弱酸：都是中和，却不能写成同一条式子",
+        "碳酸盐遇酸：既看状态，也看酸是否足量",
+        "反应后求c：先求离子初量，再扣消耗",
+        "把规则串起来：守恒正确还不够，条件也必须正确"
+      ]
+    },
+    {
+      "week": 7,
+      "evidenceFile": "week-07-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "b6f52c0a09ccf4abc09caf8615c7585b342044eb6662435928a52d9eb0a54b70",
+      "skillSummary": "按起末价判断角色，实际反应量与单边电子，不重复计得失。",
+      "verifiedSectionTitles": [
+        "先补前置：右上电荷、右下原子数不是同一个数",
+        "够本周用的化合价规则卡：先固定已知，再解一个未知",
+        "怎样判断氧化还原：比较同一元素前后的记账数",
+        "升失氧、降得还：先用数轴理解再记词",
+        "四种名称分两边：反应物叫剂，生成物叫产物",
+        "一份还是一个原子：电子量需要乘变价原子数",
+        "得与失是同一批电子：用另一边复核，不能再相加",
+        "先守住核心，再认识角色可以变化"
+      ]
+    },
+    {
+      "week": 8,
+      "evidenceFile": "week-08-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "87d1f111d886b2e40518c481d4508f07d65798b806ef4b6352a8ca1f0ad5ec37",
+      "skillSummary": "配平总式的原子、电荷、电子三账终检；不新增复杂半反应题。",
+      "verifiedSectionTitles": [
+        "累计补救1：先确定哪一份、哪个单位，再接计量",
+        "累计补救2：离子式先尊重物质形式，再查电荷",
+        "累计补救3：求价、方向、电子量先过关",
+        "先做没有H、O的简单配平：最小公倍数搭电子桥",
+        "酸性半反应一步步补：先O，再H，最后电荷",
+        "合并半反应：整条乘倍数，再消同一批电子",
+        "配平后才计算：酸消耗与酸起始量不能混",
+        "三账终检与介质边界：会配平不等于可以做实验"
+      ]
+    },
+    {
+      "week": 9,
+      "evidenceFile": "week-09-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "3b56b675ff72529875f0e1790f120ccff16ea20509357b1780f051611643612b",
+      "skillSummary": "Na/Na₂O/Na₂O₂身份和给定总反应；CO₃²⁻酸量a、2a的分段模型。",
+      "verifiedSectionTitles": [
+        "先补前置：同一个Na字样，不是同一种物质",
+        "钠与水：产物来自谁，电子交给谁",
+        "氧化钠与过氧化钠：多一个O改变了反应账",
+        "过氧化钠与CO₂：先配平，再找真正变价元素",
+        "碳酸根与碳酸氢根：酸需求为何差一份",
+        "逐量加酸的第一阶段：先补成HCO₃⁻",
+        "第二阶段与过量酸：累计量只能花一次",
+        "把物质、阶段和守恒串起来"
+      ]
+    },
+    {
+      "week": 10,
+      "evidenceFile": "week-10-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "2cfb60eae35f75bd68094c407338bd0fd2bdf9873de3e9189c5e2bdf50b7ede9",
+      "skillSummary": "氯水⇌、HClO弱酸保留、冷稀碱歧化和Cl₂全还原的电子倍数区别。",
+      "verifiedSectionTitles": [
+        "先补前置：氯元素相同，粒子与价态不同",
+        "氯水的⇌：反应发生不等于全部转化",
+        "同一反应物分两条路：歧化的电子只算一边",
+        "冷、稀碱：把条件写在反应式旁",
+        "HClO的弱酸性和氧化性，是两个问题",
+        "Cl₂只走还原路线：连接下周铁离子",
+        "酸化次氯酸盐：只解释风险，不转成操作",
+        "条件、符号、分流三道关"
+      ]
+    },
+    {
+      "week": 11,
+      "evidenceFile": "week-11-enrichment/lessons/chemistry.json",
+      "evidenceSha256": "0ad1ccec6017e4f075e8b70a232b73f02be5c9d23ff626df73e23511d8940a24",
+      "skillSummary": "Fe/Fe²⁺/Fe³⁺条件、金属Fe贡献、限量、两种沉淀及空气氧化边界。",
+      "verifiedSectionTitles": [
+        "先补前置：铁元素守恒，不等于Fe²⁺量不变",
+        "三种价态两条方向：Fe²⁺不是永久还原剂",
+        "铁遇酸：先问酸是哪一种、有没有别的氧化剂",
+        "Fe+2Fe³⁺→3Fe²⁺：第三份铁从金属来",
+        "换反应物仍用同一本电子账",
+        "价态决定耗OH⁻量，空气又可能改变价态",
+        "检验数据要连着条件读：不显色不等于含Fe²⁺",
+        "从条件到余量，再查总铁"
+      ]
+    }
+  ],
+  "pointsByPrimaryWeek": {
+    "9": 5,
+    "10": 5,
+    "11": 4,
+    "12": 6
+  },
+  "questions": [
+    {
+      "questionId": "w12-chemistry-quiz-1",
+      "title": "累计1·第9周：由气体反推酸量，平台为何不唯一",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "scoringPointMap": [
+        {
+          "id": "w12-chemistry-quiz-1-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "mL换L得初CO₃²⁻0.0300 mol，以0<0.0180<0.0300判断第二段。",
+          "primaryWeek": 9,
+          "skill": "初碳量与气量反向定位第二阶段",
+          "supportingWeeks": [
+            5
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-quantity",
+            "w12-chemistry-section-recall-sodium"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-1-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "两条阶段净式正确，分别为CO₃²⁻+H⁺→HCO₃⁻与HCO₃⁻+H⁺→CO₂+H₂O。",
+          "primaryWeek": 9,
+          "skill": "碳酸根与碳酸氢根两阶段净式",
+          "supportingWeeks": [
+            6
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-sodium"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-1-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "由已生CO₂反求第二段耗酸0.0180，加第一段0.0300得累计H⁺0.0480 mol。",
+          "primaryWeek": 9,
+          "skill": "累计酸包含第一段与已放气所耗酸",
+          "supportingWeeks": [
+            4
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-sodium",
+            "w12-chemistry-section-stage-ledger"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-1-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "剩HCO₃⁻0.0120 mol，碳守恒0.0120+0.0180=0.0300 mol。",
+          "primaryWeek": 9,
+          "skill": "剩余含碳物种与C守恒",
+          "supportingWeeks": [
+            4
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-sodium",
+            "w12-chemistry-section-conservation"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-1-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "平台CO₂0.0300 mol只能推出累计H⁺≥0.0600 mol，不能唯一反推，说明过量酸也给相同气量。",
+          "primaryWeek": 9,
+          "skill": "平台的多对一关系与只能给出酸量下界",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-sodium"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w12-chemistry-quiz-2",
+      "title": "累计2·第10周：符号、条件和两条电子路线",
+      "points": 5,
+      "estimatedMinutes": 5,
+      "scoringPointMap": [
+        {
+          "id": "w12-chemistry-quiz-2-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "氯水净式正确，保留⇌和弱HClO。",
+          "primaryWeek": 10,
+          "skill": "氯水可逆净式与弱HClO保留",
+          "supportingWeeks": [
+            6
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-chlorine"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-2-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "指出氯水实际水解程度未给，不能由投入量唯一确定HClO。",
+          "primaryWeek": 10,
+          "skill": "投入量不同于实际水解量",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-chlorine"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-2-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "冷、稀条件与正确净式同时给出，原子Cl2/O2/H2和电荷−2核查正确。",
+          "primaryWeek": 10,
+          "skill": "冷稀碱条件与原子电荷核查",
+          "supportingWeeks": [
+            6,
+            8
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-chlorine",
+            "w12-chemistry-section-conservation"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-2-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "Cl⁻与ClO⁻各0.0200 mol，系数1∶1。",
+          "primaryWeek": 10,
+          "skill": "Cl⁻/ClO⁻的生成系数关系",
+          "supportingWeeks": [
+            4
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-chlorine"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-2-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "Cl分别0→−1与0→+1，电子0.0200 mol且得失不相加。",
+          "primaryWeek": 10,
+          "skill": "Cl歧化分流与单边电子量",
+          "supportingWeeks": [
+            7
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-chlorine",
+            "w12-chemistry-section-conservation"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w12-chemistry-quiz-3",
+      "title": "累计3·第11周：一份金属铁进入总账",
+      "points": 4,
+      "estimatedMinutes": 4,
+      "scoringPointMap": [
+        {
+          "id": "w12-chemistry-quiz-3-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "按n/系数判断Fe限制，金属Fe无剩，Fe³⁺余0.0100 mol。",
+          "primaryWeek": 11,
+          "skill": "Fe还原Fe³⁺的限量与剩余",
+          "supportingWeeks": [
+            4
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-iron"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-3-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "Fe²⁺0.0450 mol，指出金属0.0150与原Fe³⁺0.0300两个来源。",
+          "primaryWeek": 11,
+          "skill": "Fe²⁺包含金属铁贡献",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-iron"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-3-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "总铁初末均0.0550 mol，核算式正确。",
+          "primaryWeek": 11,
+          "skill": "总铁范围与元素核查",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-iron",
+            "w12-chemistry-section-conservation"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-3-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "电子0.0300 mol，按实际Fe失2与Fe³⁺得1复核相等且不双计。",
+          "primaryWeek": 11,
+          "skill": "实际Fe变价与电子不双计",
+          "supportingWeeks": [
+            7,
+            8
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-iron",
+            "w12-chemistry-section-conservation"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w12-chemistry-quiz-4",
+      "title": "累计4·第12周：连续反应、沉淀与最终浓度",
+      "points": 6,
+      "estimatedMinutes": 9,
+      "scoringPointMap": [
+        {
+          "id": "w12-chemistry-quiz-4-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "n初(Fe²⁺)=0.0300 mol，mL→L正确；以n/系数判Cl₂限制。",
+          "primaryWeek": 12,
+          "skill": "连续账本入口的cV与限制者",
+          "supportingWeeks": [
+            4,
+            5,
+            10
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-recall-quantity",
+            "w12-chemistry-section-stage-ledger"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-4-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "氧化后Fe²⁺0.0100、Fe³⁺0.0200 mol，明确这两份是沉淀段初量。",
+          "primaryWeek": 12,
+          "skill": "氧化段终点传递为沉淀段初量",
+          "supportingWeeks": [
+            10,
+            11
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-stage-ledger",
+            "w12-chemistry-section-recall-iron"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-4-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "氧化段电子0.0200 mol，从Fe与Cl₂两侧复核相等，不给无变价沉淀段另加电子。",
+          "primaryWeek": 12,
+          "skill": "连续模型只对变价段计电子",
+          "supportingWeeks": [
+            7,
+            10
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-stage-ledger",
+            "w12-chemistry-section-conservation"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-4-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "两条沉淀净式正确；按隔绝空气、无其他耗碱模型分别算OH⁻0.0200+0.0600=0.0800 mol。",
+          "primaryWeek": 12,
+          "skill": "两价态分别沉淀并核总耗碱与条件",
+          "supportingWeeks": [
+            6,
+            11
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-stage-ledger",
+            "w12-chemistry-section-recall-iron"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-4-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "两沉淀质量分别0.900和2.14 g，合3.04 g；总铁0.0300 mol核查通过。",
+          "primaryWeek": 12,
+          "skill": "两种真实沉淀分别计质量并核Fe",
+          "supportingWeeks": [
+            3,
+            11
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-final-quantity",
+            "w12-chemistry-section-conservation"
+          ]
+        },
+        {
+          "id": "w12-chemistry-quiz-4-point-6",
+          "scoringIndex": 5,
+          "points": 1,
+          "criterion": "OH⁻余0.0100 mol，除题给最终液相0.2000 L得0.0500 mol/L；说明无余酸/其他耗碱条件必要。",
+          "primaryWeek": 12,
+          "skill": "完整扣耗碱后用最终液相体积",
+          "supportingWeeks": [
+            5,
+            6,
+            11
+          ],
+          "remediationSectionIds": [
+            "w12-chemistry-section-final-quantity",
+            "w12-chemistry-section-stage-ledger"
+          ]
+        }
+      ]
+    }
+  ],
+  "passRule": {
+    "minScore": 16,
+    "requiredChecks": [
+      "累计1：明确逐量两阶段模型，由气量反推时补回第一段耗酸；C守恒与L单位正确，平台只能给累计酸下界，不能当唯一值。",
+      "累计2：氯水⇌、弱HClO保留，冷稀条件与歧化电子倍数1不能错。",
+      "累计3：Fe²⁺必须包含金属Fe来源，总铁和电子量分别核查，不按产物总量误算电子。",
+      "累计4：氧化后两种价态才是沉淀段初量；Cl₂先用尽、无余酸/其他耗碱、隔绝空气等条件不能省。",
+      "累计4：两种沉淀分别乘M、OH⁻先扣消耗再除最终液相L体积，不能套单一价态或初始量。",
+      "总分至少16/20，所有关键条件通过并完成核心和订正，才手动推进。保留首次独立分数；照抄答案不算独立掌握。"
+    ]
+  },
+  "currentWeekRemediationOnly": true,
+  "useNote": "同一套4题20分的逐点评分解释，不新增考试。所有补救只指向本周存在小节，累计替代普通测；保留首次分数与之后独立尝试。"
+}

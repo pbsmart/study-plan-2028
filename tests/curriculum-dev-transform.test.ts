@@ -17,7 +17,7 @@ it('transforms all enhanced weeks and their SVG URLs through real browser import
       expect(index?.code).toContain('week-01')
       expect(index?.code).toContain('week-84')
       expect(index?.code).not.toContain('.svg')
-      for (const [week, figureCount] of [[1, 0], [2, 4], [3, 6], [4, 7], [5, 10], [6, 10], [7, 10], [8, 10], [9, 8], [10, 7]]) {
+      for (const [week, figureCount] of [[1, 0], [2, 4], [3, 6], [4, 7], [5, 10], [6, 10], [7, 10], [8, 10], [9, 8], [10, 7], [11, 7], [12, 8]]) {
         const number = String(week).padStart(2, '0')
         const transformed = await server.transformRequest(`virtual:study-curriculum/week-${number}`)
         expect(transformed?.code).toContain(`week${number}-enriched-v1`)
@@ -34,7 +34,7 @@ it('transforms all enhanced weeks and their SVG URLs through real browser import
           expect(asset?.code).toContain(`export default "${base}src/curriculum/enriched-week-${number}/assets/`)
           expect(asset?.code).not.toContain('/workspace/')
         }
-        if (week === 4 || week === 8) expect(transformed?.code).toContain('enrichmentReviewMap')
+        if (week === 4 || week === 8 || week === 12) expect(transformed?.code).toContain('enrichmentReviewMap')
       }
       const final = await server.transformRequest('virtual:study-curriculum/week-84')
       expect(final?.code).toContain('自主验收')

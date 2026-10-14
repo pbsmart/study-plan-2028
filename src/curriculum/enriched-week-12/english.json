@@ -1,0 +1,837 @@
+{
+  "id": "w12-英语",
+  "week": 12,
+  "subject": "英语",
+  "title": "基础语法诊断：用完整语境整合第9—12周",
+  "revision": "week12-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "以语境→主干→时间/角色→局部形式的顺序完成综合诊断，不用单词触发口诀替代理解。",
+    "整合第9周比较、第10周介词、第11周句型与第12周综合校验；必要回查第1—8周真实已学技能。",
+    "用具体错因选择本周补救节，完成遮答订正与新情境迁移，区分首次分、订正分和未确认项。",
+    "写45—65词练习短文，覆盖过去困难、现在习惯、下周计划及if条件；累计20分至少16分且四组关键项全过。"
+  ],
+  "prerequisites": [
+    "已核对原路线第1—8周及第7—8周增强：主干/词性、一般现在过去、主谓一致、阅读证据、未来、进行/完成、被动、名词冠词代词。本周直接补救这些接口，不要求先重刷八套课。",
+    "第9—11周本批已学比较、介词、简单句/并列句；缺口按本周r9/r10/r11补救，所需词义与词形可查。",
+    "只有一个累计20分测验，替换普通周测；例练与出口题不另计分，没有音频，不把文字首音或书面理解当听说认证。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "唯一预算按七槽列出。忙时两个90分钟周期：第一周期前测、前置补救、七节诊断教学与四例；第二周期四练、32分钟唯一累计测、34分钟订正。累计测替换普通周测，不叠卷、不加分；词义查阅、首读、自检及短文词数检查都已包含。超时下一英语学段接续本周，不删写作或订正、不自动推进、不占第三科预留。",
+    "segments": [
+      {
+        "id": "w12-en-time1",
+        "title": "三题入口定位",
+        "minutes": 9,
+        "activityIds": [
+          "w12-en-d1",
+          "w12-en-d2",
+          "w12-en-d3"
+        ]
+      },
+      {
+        "id": "w12-en-time2",
+        "title": "前置旧技能接口",
+        "minutes": 12,
+        "activityIds": [
+          "w12-en-r1"
+        ]
+      },
+      {
+        "id": "w12-en-time3",
+        "title": "七节诊断教学与真实补救",
+        "minutes": 45,
+        "activityIds": [
+          "w12-en-s1",
+          "w12-en-r9",
+          "w12-en-r10",
+          "w12-en-r11",
+          "w12-en-r12a",
+          "w12-en-r12b",
+          "w12-en-s2"
+        ]
+      },
+      {
+        "id": "w12-en-time4",
+        "title": "四阶完整诊断例题",
+        "minutes": 24,
+        "activityIds": [
+          "w12-en-ex1",
+          "w12-en-ex2",
+          "w12-en-ex3",
+          "w12-en-ex4"
+        ]
+      },
+      {
+        "id": "w12-en-time5",
+        "title": "四道独立练习，含45—65词写作",
+        "minutes": 24,
+        "activityIds": [
+          "w12-en-pr1",
+          "w12-en-pr2",
+          "w12-en-pr3",
+          "w12-en-pr4"
+        ]
+      },
+      {
+        "id": "w12-en-time6",
+        "title": "第9—12周唯一累计20分测验",
+        "minutes": 32,
+        "activityIds": [
+          "w12-en-quiz1",
+          "w12-en-quiz2",
+          "w12-en-quiz3",
+          "w12-en-quiz4"
+        ]
+      },
+      {
+        "id": "w12-en-time7",
+        "title": "核分、定点订正与迁移验证",
+        "minutes": 34,
+        "activityIds": [
+          "w12-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题各3分钟只定位，不占累计20分；先写答案与依据，词义可查，答案后看。",
+    "questions": [
+      {
+        "id": "w12-en-d1",
+        "title": "入口1：比较与动作",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "She checks the names more ___ (careful/carefully) than before. 说明空格修饰谁，more是否还要改成-er。词义：checks检查；names姓名；before以前。",
+        "answer": "carefully，修饰checks动作；more carefully已是比较结构，不另加-er。",
+        "steps": [
+          "圈checks及方式。",
+          "比较副词carefully用more。"
+        ],
+        "commonErrors": [
+          "more careful修饰动作；more carefullier重复。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w12-en-d2",
+        "title": "入口2：期限和句界",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "The report must be ready ___ noon, we will discuss it at one. 先填“最迟中午”的介词，再用句号修复边界。词义：report报告；must必须；ready准备好；noon中午；discuss讨论。",
+        "answer": "by。The report must be ready by noon. We will discuss it at one.",
+        "steps": [
+          "最迟完成用by。",
+          "两套独立主谓不可只逗号粘连。"
+        ],
+        "commonErrors": [
+          "until完成期限；只填介词漏句界。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w12-en-d3",
+        "title": "入口3：完整被动结构",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "Two cards ___ (write) by her yesterday. 要用被动，写完整动词组并说明谁写。可查：write—wrote—written。词义：cards卡片。",
+        "answer": "were written；她写，两张卡承受写的动作。",
+        "steps": [
+          "cards复数＋yesterday过去→were。",
+          "被动be＋过去分词written；by her施事。"
+        ],
+        "commonErrors": [
+          "was wrote；把卡说成写的人。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "d1错",
+        "action": "r1回看修饰对象，r9完成比较定点补救。",
+        "sectionIds": [
+          "w12-en-r1",
+          "w12-en-r9"
+        ]
+      },
+      {
+        "when": "d2错",
+        "action": "by期限回r10，句界回r11；两个错误分别记录。",
+        "sectionIds": [
+          "w12-en-r10",
+          "w12-en-r11"
+        ]
+      },
+      {
+        "when": "d3错",
+        "action": "r1画施受，r12a按新主语配be与分词。",
+        "sectionIds": [
+          "w12-en-r1",
+          "w12-en-r12a"
+        ]
+      },
+      {
+        "when": "全部正确",
+        "action": "在前置槽说明错选项的错误依据；正文仍完成诊断流程与自检。",
+        "sectionIds": [
+          "w12-en-r1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w12-en-r1",
+      "title": "前置接口：从四种关系找到缺口",
+      "level": "remediation",
+      "paragraphs": [
+        "第1/3周接口：先找主语中心与谓语。“The box of tools is heavy”中box箱子是中心，tools工具只是内容；heavy重说明box性质。“The workers check it carefully”中carefully说明检查动作。数量与词性需要分别判断，不能因为修饰语里tools复数就改are。",
+        "第5—7周接口：We will check（未来）；We are checking（现在过程）；We were checking（过去观察点过程）；We have checked（到现在已有结果）；The box was checked by us（箱子承受过去检查）。查整套结构，checked这个词形本身不能单独告诉时态、完成或被动。",
+        "第8周接口：information/advice普通用法不可数，可说two pieces of advice；my card后有名词，The card is mine中mine独立；by her介词后宾格；it同一物，a new one同类另一物。冠词a/an按紧接首音，an hour因h不发音；文字说明不等于真实听辨。",
+        "可查词形：write—wrote—written写，give—gave—given给，find—found—found发现，make—made—made制作/使，keep—kept—kept保持，join—joined—joined加入，check—checked—checked检查，read—read—read读（拼写同形），finish—finished—finished完成。I/he/she/we/they＝我/他/她/我们/他们；me/him/her/us/them对应宾格；my/his/her/our/their后接名词；mine/his/hers/ours/theirs独立表所属。now现在，yesterday昨天，tomorrow明天，every每一，last上一个，next下一个；than比，as…as和……一样，by不迟于/由，until持续到，for时长/为了，since起点。前4分钟主干与角色，接着4分钟动词组与名词，最后4分钟词卡及自检。"
+      ],
+      "keyPoints": [
+        "主语中心、时间、施受、名词指代分别查。",
+        "词形卡可用，语境依据要自己给。"
+      ],
+      "checkpoint": {
+        "question": "“The two notes in the box were written by her”谁写，be为什么were？notes便条。",
+        "answer": "她写；被写的two notes是复数主语，过去被动用were written，box不是主语中心。",
+        "explanation": "把数量、时间与现实角色同时保留。"
+      }
+    },
+    {
+      "id": "w12-en-s1",
+      "title": "先读一段工作交接，再启动四层检查",
+      "level": "core",
+      "paragraphs": [
+        "原创短文《A Clearer Handover》：Last month, Wen joined an evening repair group. She now checks the handover notes carefully after work. The new notes are clearer than the old ones, but the report does not compare every group in town. The team meets at seven on Thursday evening. Wen sends her questions by Wednesday at noon. The helpers stay until nine. Yesterday, two short guides were checked by her partner. Wen has already written one new guide, and she is writing another now. If the room is free next week, they will practise there. 只有书面材料，没有音频。",
+        "词义：Wen文；joined加入；evening repair group晚间维修小组；handover notes交接便条；carefully仔细地；clearer更清楚；old ones旧便条；report报告；compare比较；town镇/城；meets聚会；Thursday周四；sends发送；questions问题；Wednesday周三；noon中午；helpers帮手；stay停留；guides指南；checked检查；partner搭档；already已经；written已写；another另一份；free空着；practise练习。",
+        "读意：文上月加入小组，现在下班后细查交接便条。新便条较清楚，但不能说全城最好。周四晚七点聚会，文通常不迟于周三中午发送问题，帮手留到九点；昨天搭档检查两份指南，文已有一份新指南完成，另一份正在写。如果下周房间空着，他们就会在那里练习；这不是已确认房间可用。",
+        "四层检查：先列人物/事件/时间；再找主干及句界；再决定时间、主语一致与施受；最后看比较、介词、名词和指代。每层都回到原文，不见Friday就猜未来，不见分词就猜被动。本节7分钟含通读、查词、自检。"
+      ],
+      "keyPoints": [
+        "意义先于局部空格。",
+        "一段中可有过去、习惯、结果、过程和未来条件。"
+      ],
+      "checkpoint": {
+        "question": "主文能推出所有指南都写完、下周房间肯定空着吗？",
+        "answer": "不能。另一份仍在写；if给的是条件，房间是否空着尚未确定。",
+        "explanation": "必要回查第4周部分/全部与计划/事实边界。"
+      }
+    },
+    {
+      "id": "w12-en-r9",
+      "title": "第9周补救：比较对象、词形与证据同查",
+      "level": "remediation",
+      "paragraphs": [
+        "第一问“说谁怎样”：The notes are clear用形容词说明便条；Wen writes clearly用副词说明写的方式。look作系动词可接clear，look carefully at the notes中的look at是动作。friendly常为形容词；fast可形容词或副词，不能只按-ly。",
+        "第二问“关系是什么”：clear—clearer—clearest；easy—easier—easiest；carefully—more carefully—most carefully；good/well—better—best。than常接比较另一方；as carefully as中间原级；not as clear as表示前者不及后者清楚。more clearer重复，much clearer只是强化，但没有幅度依据不擅加much。",
+        "第三问“双方同类、范围多大”：The cost of Plan A is lower than that of Plan B中that代cost，不能拿费用比Plan B。表达“两者中较……的那个”可用the＋比较级，如This is the cheaper of the two plans（这是两个方案中较便宜的一个）；普通A is cheaper than B（A比B便宜）不因此加the。不能一见the就填最高级；多者最高保留范围，副词最高级the可省。",
+        "主文只比较新旧便条，不支持全城所有组的排序；更清楚也不能自动推出维修质量最好。评分中的证据边界在本节直接补救，不需跳到旧周才能订正。本节7分钟依次查说明对象、关系、对象与范围。词义：cost费用；plan方案；quality质量。"
+      ],
+      "keyPoints": [
+        "性质/方式先定词性。",
+        "原级、比较级、最高级与关系匹配。",
+        "同类对象与范围都要保留。"
+      ],
+      "checkpoint": {
+        "question": "“The cost of A is more lower than B”保留cost作主语修复；能补much吗？",
+        "answer": "The cost of A is lower than that of B. 没有差距依据不擅加much。",
+        "explanation": "删重复more，同时补同类cost；只改一处还不够。"
+      }
+    },
+    {
+      "id": "w12-en-r10",
+      "title": "第10周补救：把时间线与空间关系说清",
+      "level": "remediation",
+      "paragraphs": [
+        "at seven是钟点；on Thursday evening是具体日时段；in March是月份；next week直接作时间状语，Ø记不填介词。选择依据是完整短语，不能只看到evening就用in。",
+        "by noon要求不迟于中午完成，可提前；until nine给持续到九点，不能替换交件截止，也不保证所有工作已完成。for two hours给长度，since March给延续起点；The course will start in two days表示两天后开始，不能改读课程持续两天。for本身不限完成时，worked for two hours yesterday成立。",
+        "in the box内部；on the lid盖面；at the entrance活动点；walk into the hall强调跨入。at the library和in the library视角不同，前者本身不证明已在内，也不证明一定在外。go home不加to，但at home在家成立；arrive in Nanyang、arrive at the station是常见搭配。",
+        "look at看、look for寻找、listen to听、depend on依靠；interested in learning、good at taking notes介词后活动用-ing；listen to her用宾格；want to learn里的to是不定式，后原形。本节7分钟含关系分类与自检。词义：lid盖；entrance入口；hall大厅；station车站；course课程。"
+      ],
+      "keyPoints": [
+        "截止与持续的约束不同。",
+        "起点、长度和多久后开课分开。",
+        "位置、方向、搭配各有判断依据。"
+      ],
+      "checkpoint": {
+        "question": "工具须by 17:00送回，服务台open until 18:00。17:30送回是否满足第一项？",
+        "answer": "不满足，服务台开放终点并未把工具归还截止延后。",
+        "explanation": "同时存在的两个时间不能互相覆盖。"
+      }
+    },
+    {
+      "id": "w12-en-r11",
+      "title": "第11周补救：句子站稳以后再连接",
+      "level": "remediation",
+      "paragraphs": [
+        "五种本课基础骨架：They waited（SV）；They checked the list（SVO）；The room was quiet（SVC）；She gave us a map（SVOO，us接收者，a map给予物）；We found the map useful（SVOC，useful说明map）。给谁什么与让/发现对象怎样，关系不同。",
+        "“The room quiet yesterday”需补was；“They working now”需are working。主语和整套谓语缺一不可（常见祈使句可省you）。简单句本课不含从属分句；and连主语或共享主语的谓语仍可简单，两个独立主谓经and/but/so等相连才是相应并列结构。",
+        "and连接并列/顺承，but转折，so前因后果，or可为选择或否则。若只给两个事实，不擅自加so创造原因。两个独立分句不只用逗号粘连；可加合适连词或断句。because原因从句与so并列结果选一套；although与but同理；However可另起一句并加逗号。",
+        "本节6分钟先找主干，辨双宾/宾补，再修句界与连词。例：“Because the room was dark, so we used a lamp”可改Because the room was dark, we used a lamp，或The room was dark, so we used a lamp；保留“暗→用灯”的方向。"
+      ],
+      "keyPoints": [
+        "完整谓语、成分关系和句界分别看。",
+        "连接词必须保意。"
+      ],
+      "checkpoint": {
+        "question": "“The teacher gave us confidence”与“The news made us confident”后半分别什么作用？confidence信心；news消息。",
+        "answer": "前句us接收者、confidence给予内容，为双宾；后句us宾语、confident说明us状态，为宾补。",
+        "explanation": "抽象名词与形容词的实际语义关系不同。"
+      }
+    },
+    {
+      "id": "w12-en-r12a",
+      "title": "综合动词补救：时间、主语与施受三次核对",
+      "level": "remediation",
+      "paragraphs": [
+        "第2/3周：明确last month/yesterday的结束过去事件用过去式joined/checked；习惯now/every day仍可用一般现在checks，第三人称单数需-s。now不必总进行，题目说“现在的习惯”就按习惯判断。",
+        "第6周：过去某时正在读was/were reading；现在正在读am/is/are reading；到现在已有结果have/has written。write分词written，不能把wrote当第三列。has written two guides只给两份完成，不证明所有都完。词形卡在r1可查。",
+        "第7周：Two guides were checked by her partner中guides承受检查，复数与过去决定were；by后人物才是检查者。将来被动will be checked保留be；arrive/happen普通不及物用法不强套被动。完成主动has written与被动was written看整套，不能看written一词判。",
+        "第5周：已有计划可用am/is/are going to＋原形，will＋原形也有合理用途和语用重叠。明确未来if条件从句用现在形式：If she has time, she will practise；has随she，主句will practise不加-s。条件不是事实。开放表达不能只凭用了will就一概判错。本节6分钟含时间线、角色图与自检。"
+      ],
+      "keyPoints": [
+        "时间和观察角度决定结构。",
+        "主语决定辅助词的数。",
+        "被动看承受者，未来条件不变成事实。"
+      ],
+      "checkpoint": {
+        "question": "填完整结构：The two notices ___ (write) yesterday.（被动）If Rui ___ (have) time tomorrow, she ___ (check) them.（主句用will）notices通知。",
+        "answer": "were written；has；will check。",
+        "explanation": "过去被动按复数notices，条件从句现在has，主句will后原形。"
+      }
+    },
+    {
+      "id": "w12-en-r12b",
+      "title": "综合名词补救：数量、限定与指代一起查",
+      "level": "remediation",
+      "paragraphs": [
+        "第8周：advice/information/equipment普通用法不可数，需要计条/件时用piece：two pieces of advice are useful。不能只把are改is而留下two advice；指定两条时也不能删two把原意缩掉。名词中心pieces复数决定are；the advice is useful则看不可数advice。",
+        "冠词先看可数用法，再看首音：a useful guide（useful起首/j/辅音），an hour（h不发音），an old notebook；泛指不可数information不直接an information。the让读者识别对象；my等已限定不叠the my。这里的首音是文字支架，没有音频。",
+        "my notes后有名词；The notes are mine用独立所属代词。my/mine、her/hers、our/ours、their/theirs按位置选；his两类同形。by her/to me介词后宾格；it常指同一物，a new one同类另一可数单数物；别用one任意替不可数information。",
+        "读所有关系时确认谁拥有、谁收到、是不是同一件，不用最近一个人名自动定指代。本节6分钟含名词组重建、自检。词义：piece条/件；useful有用；guide指南；notebook笔记本；old旧。"
+      ],
+      "keyPoints": [
+        "保留数量，不用删信息修语法。",
+        "a/an先可数再首音。",
+        "所属形式看位置与实际所有者。"
+      ],
+      "checkpoint": {
+        "question": "保留“两条建议”修正“Two advice is useful”；再填“This is her notebook. The notebook is ___.”",
+        "answer": "Two pieces of advice are useful. hers。",
+        "explanation": "pieces控制are；hers独立代her notebook。"
+      }
+    },
+    {
+      "id": "w12-en-s2",
+      "title": "诊断结果怎样变成下一步，避免重复计分",
+      "level": "core",
+      "paragraphs": [
+        "本周唯一累计测四题各5分：第一题主查第9周，第二题第10周，第三题第11周，第四题第12周整合旧基础。第4题十个半分项分别记录；交叉用到第1—8周只作技能标签，不再给旧周重复加分或扣分。总分始终20。",
+        "每个评分点对应本周真实补救节：r9比较与证据，r10介词，r11句界与成分，r12a动词，r12b名词组。先按这些节订正，仍不理解才在下一英语学段回旧课；不要求现在额外读完十二周。",
+        "错因要可操作：“carefully错判形容词”“by误读持续”“双宾/宾补关系错”“were written漏be/分词错”“advice缺单位”等。答案对但不能说明依据记待确认；认为是抄写失误也要重读并在新出口题验证，不直接归为粗心。首次分不要被订正分覆盖。",
+        "本节6分钟含自检。45—65词写作在四例与四练内训练时间线和结构，未额外加到20分；累计映射只是说明已有分数，也不是另一活动。至少16分且关键项过关再手动推进；未过则下一英语学段先补具体节。"
+      ],
+      "keyPoints": [
+        "一项实际评分只出现一次。",
+        "先定点补救，再用新题验证。",
+        "分数与关键条件同时看。"
+      ],
+      "checkpoint": {
+        "question": "累计17分，但把by截止理解成直到该时刻才交，能直接推进吗？",
+        "answer": "不能。总分过线但关键时间关系未过，应先读r10并完成定点订正/迁移验证。",
+        "explanation": "关键项用于防止高总分遮住会误读任务的漏洞。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w12-en-ex1",
+      "title": "第1阶：先建立时间与角色地图",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "原创片段：Yesterday, two forms were checked by Luo. Now Luo is writing a clearer guide. She has already finished one page, but the next page is not ready. ①谁检查了表格？②正在写与已写好能同时成立吗？③能否说指南全部写完？词义：forms表格；guide指南；page页；next下一；ready完成/准备好。",
+      "answer": "①Luo检查，two forms承受检查。②能，整体写作正在进行，已有一页完成。③不能，下一页未好。",
+      "steps": [
+        "yesterday与now分开。",
+        "were checked被动找by施事。",
+        "过程与部分结果可并存。",
+        "but与not ready限制全部完成推断。"
+      ],
+      "commonErrors": [
+        "看到分词就把所有事件读成完成。",
+        "一页完成→全部完成。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-en-ex2",
+      "title": "第2阶：局部形式也要服从整段意思",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "填空并解释：The old instructions were hard to read. The new ones are ___ (clear) than the old ones. Rui reads them as ___ (careful) as Lan. The cost of printing them is lower than ___ of printing the old ones. We must send them ___ Friday at 18:00.（不迟于）词义：instructions说明；hard难；printing印刷；cost费用。",
+      "answer": "clearer；carefully；that；by。原级比较as carefully as；that代cost；by给完成发送期限。",
+      "steps": [
+        "先定新旧比较关系。",
+        "are后形容词clear，than→clearer；reads方式副词。",
+        "费用与费用比较。",
+        "最后把发送放在截止前或截止时。"
+      ],
+      "commonErrors": [
+        "as more carefully as。",
+        "cost比old ones。",
+        "until表示截止。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-en-ex3",
+      "title": "第3阶：多处改错仍保留同一信息",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "保留两条建议和过去事实修正：Two advice was given to us yesterday. The advice useful, we used it.（第二句表达因果）说明修复要联动哪些部分。词义：advice建议；given给的分词；useful有用；used使用。",
+      "answer": "Two pieces of advice were given to us yesterday. The advice was useful, so we used it. 第一句pieces复数控制were，given保留被动；第二句advice不可数用was，补完整谓语，用so连接因果。",
+      "steps": [
+        "数量保留两条，用pieces。",
+        "新主语中心pieces复数，过去被动were given。",
+        "第二句主语是advice整体，状态was useful。",
+        "因果用so，不只逗号粘连。"
+      ],
+      "commonErrors": [
+        "只改was→were还留two advice。",
+        "第二句跟着上句pieces错用are。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-en-ex4",
+      "title": "第4阶：把诊断规则写成短计划",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "写45—65词的练习角色短文：过去常忘生词；现在用笔记本、每天晚间复习；下周与朋友练习；含一次比较、but或so和if条件句。词义：forget忘（过去forgot）；notebook笔记本；review复习；clear清楚；practise练习；rush匆忙。",
+      "answer": "参考（55词）：Last month, I often forgot new words after work. Now I keep a small notebook and review it carefully for ten minutes every evening. My notes are clearer than before. Next week, I am going to practise with a friend. If we finish early, we will check each other’s answers, but we will not rush.\n读意：过去忘词，现在记录复习，便条更清晰；下周计划和朋友练习，若提前完成就互查答案但不急赶。each other’s互相的。",
+      "steps": [
+        "先搭过去forgot、现在keep/review、未来am going to practise三段。",
+        "it同一本笔记，carefully方式，for时长，every evening无介词。",
+        "clearer than before保留比较标准。",
+        "if用finish原形随we，主句will check；but补转折，最后数词并核45—65。"
+      ],
+      "commonErrors": [
+        "把if写will finish。",
+        "为追求复杂句漏谓语。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w12-en-pr1",
+      "title": "独练1：比较、介词与未知信息",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创记录：Kit A costs less than Kit B. Their instructions are equally clear. The shop asks users to return both kits by Friday at noon. It says nothing about which kit works faster. ①用as…as写说明同样清楚。②用cost作主语比较费用。③周五10:00归还能否满足期限？④能断言A更快吗？词义：kit工具套装；cost费用/花费；equally同样；instructions说明；return归还；users使用者。",
+      "answer": "①The instructions for Kit A are as clear as those for Kit B.（或Kit A’s instructions are as clear as Kit B’s.）②The cost of Kit A is lower than that of Kit B. ③可以。④不能，未比较工作速度。",
+      "steps": [
+        "形容词同级用clear原级。",
+        "复数instructions用those、单数cost用that。",
+        "10:00早于中午截止。",
+        "便宜不等于更快。"
+      ],
+      "commonErrors": [
+        "as clearer as。",
+        "cost比kit。",
+        "较便宜推出快。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w12-en-pr2",
+      "title": "独练2：动词、名词与句界一起修",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "修复并写错因：①The two notices was wrote yesterday.（被动；write—wrote—written）②This is mine notebook. ③She have worked here since three years.（延续至今三年）④Although we were tired, but we checked the forms. 词义：notices通知；notebook笔记本；forms表格。",
+      "answer": "①The two notices were written yesterday.（复数be＋分词）②This is my notebook.（名词前物主）③She has worked here for three years.（she配has，时长for）④Although we were tired, we checked the forms. 或We were tired, but we checked the forms.（一套让步）",
+      "steps": [
+        "逐项找主语中心与动词组。",
+        "名词前与独立所属分开。",
+        "起点/时长与人称同时改。",
+        "最后核连接与保意。"
+      ],
+      "commonErrors": [
+        "只改一个错误就停。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w12-en-pr3",
+      "title": "独练3：基础句型与事件是否已发生",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①The coach gave us a short plan. ②We found the plan useful. 标句型及后两成分。再看③If the room is free tomorrow, we will meet there. 是否已确认房间空、是否已开会？词义：coach指导者；plan计划；useful有用；free空着；meet会面。",
+      "answer": "①SVOO，us接收者、a short plan给予物。②SVOC，the plan宾语、useful宾补。③两项都未确认；if房间空是条件，will meet是条件成立时的未来安排。",
+      "steps": [
+        "先比较给谁什么/对象怎样。",
+        "条件is不代表已经确认的现实状态。",
+        "未来will与tomorrow不等于过去完成。"
+      ],
+      "commonErrors": [
+        "useful当第二宾语。",
+        "一般现在时is就当已确认事实。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w12-en-pr4",
+      "title": "独练4：换一种困难写学习计划",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "写45—65词练习角色短文，三层内容：过去常看错活动时间；现在先读完整通知再标日期和时刻；下周计划参加练习组；至少but或so一次和一个if条件句。可自由表达，不捏造真实成绩。词义：notice通知；mark标记；date日期；time时刻；join参加；study group学习小组；room房间；free空着；library图书馆；check核查。",
+      "answer": "参考（54词）：Last month, I often read meeting times wrongly, so I missed one activity. Now I read each whole notice and mark its date and time carefully. Next week, I am going to join a study group. If the library room is free, we will meet there, but we will check the opening times first.\n词义：wrongly错误地；missed错过；activity活动；whole完整；its它的；opening times开放时间；first先。其他符合条件的原创短文可。",
+      "steps": [
+        "先分过去、现在习惯、下周计划。",
+        "每句有完整主干，代词有明确前文。",
+        "if条件用现在is，主句will meet，but保留先核时间的安排。",
+        "数词核45—65，并检查没写成真实经历陈述给第三方。"
+      ],
+      "commonErrors": [
+        "先堆词无主谓。",
+        "if will be。",
+        "只写未来遗漏过去/现在。"
+      ],
+      "estimatedMinutes": 9
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "now就一定进行；有分词就是被动；Friday就一定将来。",
+      "why": "单词不能替代整个事件和句法。",
+      "right": "先读完整语境，再定观察点、施受与整套结构。"
+    },
+    {
+      "wrong": "只改一处看起来最明显的错，剩下数量/谓语不管。",
+      "why": "名词单位、主语一致与词形会联动。",
+      "right": "改完重读全句，保留原数量和事实。"
+    },
+    {
+      "wrong": "累计测试要把四周普通测再做一遍，或同一点算到多个周。",
+      "why": "重复增加时间与分数，掩盖真实缺口。",
+      "right": "唯一20分替代普通测，每项有一个主归属。"
+    },
+    {
+      "wrong": "总分16就全部掌握；记“粗心”即可。",
+      "why": "关键语义漏洞可被其他分数遮住，粗心不可操作。",
+      "right": "关键条件也须过，具体归因并用新出口验证。"
+    }
+  ],
+  "quiz": {
+    "instructions": "第9—12周唯一累计20分测验，32分钟，替换普通周测，不叠加例题/出口题分数。四题各8分钟含首次阅读、查词与作答，各5分；词义和r1词形卡可查，答案遮住。交叉旧技能只标记不重复计分。首次分、订正分分别记。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w12-en-quiz1",
+        "title": "累计第1题：第9周比较与证据",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "原创校对记录：Two editors checked the same leaflet. Ren checked it ___(1) than Tao. (carefully，表达更仔细) The final leaflet was ___(2) than the first version. (clear) ③另有关于篇幅的新信息：The new leaflet was not as long as the old one. 将这句改写为以The old leaflet开头、含than的比较级句，保持原意。 Printing Shop P charges less than Shop Q. ④补全：The cost at Shop P is lower than ___. ⑤能据此判Shop P印刷质量一定更好？词义：editors编辑；leaflet传单；final最后的；first version初版；printing印刷；charges收费；cost费用；quality质量。 new新版的；old旧版的；long长的（此处指篇幅）。",
+        "answer": "①more carefully；②clearer；③The old leaflet was longer than the new one.（新版不如旧版长，因此旧版更长。） ④that at Shop Q / the cost at Shop Q。⑤不能，材料只比较费用，未比较印刷质量。",
+        "steps": [
+          "①动作方式比较，carefully用more。",
+          "②was后形容词clear，than→clearer。",
+          "③先独立读新版不如旧版长，确定旧版更长；再以The old leaflet为主语，用was longer than the new one保留过去时间与比较方向，不复制①。",
+          "④费用比费用；⑤费用与质量不混同。"
+        ],
+        "commonErrors": [
+          "more carefullier；more clearer；③把旧版写成更短、继续抄Ren句而没比较篇幅；费用比店；低费=高质量。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①more carefully完整正确，比较动作方式。"
+          },
+          {
+            "points": 1,
+            "criterion": "②clearer正确，不重复more。"
+          },
+          {
+            "points": 1,
+            "criterion": "③The old leaflet was longer than the new one，或等义完整的than比较级句；保留过去时间，且旧版比新版长的方向正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "④that at Shop Q或the cost at Shop Q，同类费用比较。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤拒绝质量推断，指出只给费用而未给质量。"
+          }
+        ]
+      },
+      {
+        "id": "w12-en-quiz2",
+        "title": "累计第2题：第10周安排的不同约束",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "原创取件通知：The meeting starts ___(1) Tuesday afternoon ___(2) 14:00. Send your form ___(3) Monday at 18:00.（不迟于）The help desk stays open ___(4) 19:00 that Monday. A new course will start ___(5) three days.（三天后开始）After the meeting, go ___(6) home. 各空填介词或Ø；再用中文解释第3、4两空的时间关系（纳入各空该项评分，不另加分）。词义：meeting会；form表格；help desk服务台；stays open保持开放；course课程。",
+        "answer": "①on；②at；③by，表格最迟周一18:00发送，可提前；④until/till，服务台开放持续到19:00，未延后交表截止；⑤in；⑥Ø。",
+        "steps": [
+          "具体某日时段on，钟点at。",
+          "发送完成与持续营业分开画线。",
+          "start in three days为多久后开始。",
+          "go home中home地点副词。"
+        ],
+        "commonErrors": [
+          "in Tuesday afternoon；by/until互换；用服务台时间覆盖交表截止；to home。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5.0,
+        "scoring": [
+          {
+            "points": 0.5,
+            "criterion": "①on正确。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "②at正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③by且解释不迟于18:00、可提前。"
+          },
+          {
+            "points": 1,
+            "criterion": "④until/till且解释服务台持续开放至19:00，不改交表期限。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤in正确，表达三天后开始。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑥Ø，go home。"
+          }
+        ]
+      },
+      {
+        "id": "w12-en-quiz3",
+        "title": "累计第3题：第11周主干与连接",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "修复或分析：①The two volunteers ready yesterday.（补完整过去状态）②The organiser gave us a task. 标句型及两个宾语。③We found the task useful. 标句型及宾语/宾补。④Because the gate was closed, so we waited. 保留因果修复。⑤用but合成两个完整分句：The task was hard. We completed it. 词义：volunteers志愿者；organiser组织者；task任务；useful有用；gate门；closed关闭；waited等；hard难；completed完成。",
+        "answer": "①The two volunteers were ready yesterday. ②SVOO，us接收者、a task给予内容。③SVOC，the task宾语、useful宾补。④Because the gate was closed, we waited. 或The gate was closed, so we waited. ⑤The task was hard, but we completed it.",
+        "steps": [
+          "①复数主语与过去状态决定were。",
+          "②给谁什么，③任务怎样。",
+          "④because/so只保留一套，主句完整。",
+          "⑤转折两边保留各自主谓。"
+        ],
+        "commonErrors": [
+          "①was；③useful第二宾语；④只删两词仍逗号粘连；⑤遗漏we/谓语。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①were补完整过去复数系表。"
+          },
+          {
+            "points": 1,
+            "criterion": "②SVOO并正确标us/a task两个宾语。"
+          },
+          {
+            "points": 1,
+            "criterion": "③SVOC并正确标the task/useful的宾语宾补关系。"
+          },
+          {
+            "points": 1,
+            "criterion": "④保留因果且只用一套连接，句界合法。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤but连接两个完整过去分句，保持难却完成。"
+          }
+        ]
+      },
+      {
+        "id": "w12-en-quiz4",
+        "title": "累计第4题：第12周综合旧基础",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "原创学习记录，每项填完整形式：Last month, Fen (1) ___ (join) a repair class. Now she (2) ___ (check) her notes every day.（习惯）At eight last night, she (3) ___ (read) a guide.（当时正在）She (4) ___ (write) two summaries, so she can discuss them now.（用现在完成时）Two pages (5) ___ (check) by her partner yesterday.（被动）The partner gave her two (6) ___ (piece) of advice. Fen studies for (7) ___ hour on Sundays.（a/an；hour的h不发音）This is Fen’s notebook; the notebook is (8) ___ (her/hers). If Fen (9) ___ (have) time tomorrow, she (10) ___ (practise) with the group.（第10用will）\n词义：Fen芬；repair class维修课；notes笔记；guide指南；summaries总结；discuss讨论；pages页；partner搭档；piece条；advice建议；hour小时；Sundays每个周日；notebook笔记本；practise练习。可查r1词形卡。",
+        "answer": "①joined；②checks；③was reading；④has written；⑤were checked；⑥pieces；⑦an；⑧hers；⑨has；⑩will practise。\n过去加入、现在习惯、过去观察点过程、当前已有总结结果分别判断；pages是过去被检查的复数承受者；建议按pieces数；hour元音首音；hers独立指Fen的笔记本；未来条件从句现在has，主句will＋原形。",
+        "steps": [
+          "先划Last month、every day、at eight last night、now、yesterday、tomorrow。",
+          "逐句圈Fen/she或two pages，确定数与施受。",
+          "用整套动词结构填①—⑤，不只写分词或-ing。",
+          "⑥—⑧检查数量单位、首音和独立所属。",
+          "⑨⑩条件/主句分开，计划不能读成已经练习。"
+        ],
+        "commonErrors": [
+          "has wrote；was checked控制者错；two piece/advice；a hour；her独立；if will have；will practises。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5.0,
+        "scoring": [
+          {
+            "points": 0.5,
+            "criterion": "①joined完整过去式正确。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "②checks为第三人称单数现在习惯。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "③was reading完整过去进行正确。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "④has written完整现在完成正确。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑤were checked完整过去复数被动正确。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑥pieces，数量two落在单位复数。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑦an，依据hour元音首音。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑧hers，独立代Fen的notebook。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑨has，未来条件从句现在单数形式。"
+          },
+          {
+            "points": 0.5,
+            "criterion": "⑩will practise，will后原形。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第1题动作/性质、同级转换方向与费用同类比较均说得清，不能从便宜推出质量最好。",
+        "第2题by截止与until持续不混淆，服务台开放不延后交表期限；go home不多to。",
+        "第3题双宾/宾补关系正确，完整谓语及合法连接都过关。",
+        "第4题③④⑤整套进行/完成/被动结构、⑨⑩未来条件与主句均过关；名词单位、冠词、所属错项必须完成定点订正并解释。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w12-en-quiz1"
+        ],
+        "sectionIds": [
+          "w12-en-r9"
+        ],
+        "action": "按词性、关系方向、同类中心与证据范围四步订正；需要深补再在下一学段回第9周。"
+      },
+      {
+        "questionIds": [
+          "w12-en-quiz2"
+        ],
+        "sectionIds": [
+          "w12-en-r10"
+        ],
+        "action": "按具体日/钟点、截止/持续、未来开始与go home分别定位；不重刷整卷。"
+      },
+      {
+        "questionIds": [
+          "w12-en-quiz3"
+        ],
+        "sectionIds": [
+          "w12-en-r11"
+        ],
+        "action": "先标主谓，再用给谁什么/对象怎样检验，最后只留一套连接。"
+      },
+      {
+        "questionIds": [
+          "w12-en-quiz4"
+        ],
+        "sectionIds": [
+          "w12-en-r12a",
+          "w12-en-r12b"
+        ],
+        "action": "①—⑤⑨⑩回r12a核时间/主语/施受；⑥—⑧回r12b核数量/首音/所属。旧周只作必要溯源，不重复计分。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w12-en-review",
+    "title": "34分钟累计订正，已计入核心",
+    "instructions": [
+      "前6分钟逐实际评分项核首次20分与四组关键条件；第4题十项各0.5分，分项不重复扣到旧周。",
+      "接着10分钟按review map回本周r9/r10/r11/r12a/r12b真实补救节；全部正确者解释一项多解/边界与一项结构原因。",
+      "接着10分钟遮答案订正错项并写一句具体错因；保留首次分，另记订正分。",
+      "再5分钟做新出口：A notice must be sent by 15:00; the office is open until 16:00，15:30发送是否守约？修复Two notes was wrote by him yesterday；把The notes were short. They were useful.用but连接。词义notice通知、office办公室、notes便条、useful有用。答案：不守15:00截止；Two notes were written by him yesterday；The notes were short, but they were useful. 本出口只检验迁移，不另加分或另加卷。",
+      "最后3分钟记录首次分、订正分、仍未过关键项与下次要补的本周section。映射只是已有20分说明，不新增活动或时间。"
+    ]
+  },
+  "mastery": [
+    "能先读完整语境再处理词形，说明至少一处时间、角色、比较与连接依据。",
+    "能独立完成45—65词练习短文，覆盖过去/现在/计划，if条件和but/so连接成立。",
+    "唯一累计测至少16/20且四组关键条件全部通过；分数与订正记录不互相覆盖。",
+    "实际评分点只计一次；下一次按具体漏洞补救，不笼统从第1周全部重来。",
+    "没有音频，书面诊断不能证明真实听辨、发音或口语水平。"
+  ],
+  "nextStep": "完成唯一累计测及核心内订正后，16分且关键条件过关再手动推进原84周路线下一周。未过则下一英语学段按本周真实补救节定点接续，必要才回相应旧周；不叠普通周测或自动跳周。",
+  "sourcePolicy": {
+    "authorship": "全课语篇、例练、45—65词短文、累计题和评分原创；诊断步骤为本课教学设计，参考只核语法边界，不复制网页练习。",
+    "examStatus": "全部origin=original，非历年真题。面向河南南阳2028高考备考；20分是本课累计诊断，未声称2028官方分值、题型或核验教材章页。",
+    "externalSources": [
+      {
+        "id": "w12-en-ref-comparison",
+        "title": "British Council: Comparative and superlative adjectives",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/comparative-superlative-adjectives",
+        "kind": "reference",
+        "scopeNote": "本批已检索官方正文核验高频比较形式；本课句子和试题原创。"
+      },
+      {
+        "id": "w12-en-ref-until",
+        "title": "Cambridge Dictionary: Until",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/until",
+        "kind": "reference",
+        "scopeNote": "本批已检索官方正文核验截止by与持续until。"
+      },
+      {
+        "id": "w12-en-ref-clauses",
+        "title": "Cambridge Dictionary: Clauses and sentences",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/clauses-and-sentences",
+        "kind": "reference",
+        "scopeNote": "本批已检索官方正文核验独立/从属分句的边界。"
+      }
+    ]
+  },
+  "audioStatus": "没有音频。hour首音、listen等文字说明不算真实听辨材料；本课45—65词写作及累计20分均不评价听力、发音或口语。"
+}

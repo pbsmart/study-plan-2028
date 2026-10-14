@@ -17,7 +17,7 @@ const sourceFiles = (directory: string): string[] => readdirSync(directory, { wi
   const path = join(directory, entry.name)
   return entry.isDirectory() ? sourceFiles(path) : path.endsWith('.css') ? [] : [relative(root, path)]
 }).sort()
-const additiveCurriculum = (path: string) => /^src\/curriculum\/enriched-week-(?:09|10)\//.test(path)
+const additiveCurriculum = (path: string) => /^src\/curriculum\/enriched-week-(?:09|10|11|12)\//.test(path)
 const updatedConfig = 'src/curriculum/enrichment-config.ts'
 const read = (path: string) => readFileSync(join(root, path), 'utf8')
 const digest = (content: string) => createHash('sha256').update(content).digest('hex')
@@ -31,7 +31,7 @@ afterEach(() => vi.unstubAllGlobals())
 describe('project-wide UI-only refresh invariants', () => {
   it('preserves all baseline curriculum, figures, business modules and Vue script blocks', () => {
     expect(integrity.baselineCommit).toBe('3b66fff23ce9918bd6998bb93e4536d1ad65b5ed')
-    // These two new weeks and the explicit config addition are independently guarded by weeks-nine-ten-integration.
+    // These additive weeks and the explicit config addition are independently guarded by weeks-nine-ten-integration and weeks-eleven-twelve-integration.
     expect(sourceFiles(join(root, 'src')).filter(path => !additiveCurriculum(path))).toEqual(Object.keys(integrity.files).sort())
     for (const [path, expected] of Object.entries(integrity.files)) {
       if (path === updatedConfig) continue

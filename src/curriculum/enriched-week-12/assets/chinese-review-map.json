@@ -1,0 +1,380 @@
+{
+  "week": 12,
+  "subject": "语文",
+  "lessonId": "w12-语文",
+  "totalPoints": 20,
+  "minutes": 28,
+  "budgetPolicy": "映射已有唯一累计诊断，替换普通周测；没有新增题、分数或用时。",
+  "scoringIndexBase": 0,
+  "scoringIndexMeaning": "scoringIndex为question.scoring的0基下标，每个实际评分项仅出现一次；primaryWeek分项计分，weeks仅为交叉技能标签，不另计分。",
+  "firstReadingPolicy": "首次阅读、题注查看与理解已计在各题7分钟内；映射与订正不新增卷。",
+  "pointsByPrimaryWeek": {
+    "9": 5,
+    "10": 5,
+    "11": 5,
+    "12": 5
+  },
+  "scoringMap": [
+    {
+      "questionId": "w12-cn-quiz1",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            1
+          ],
+          "skill": "说明对象与分流特征",
+          "points": 1,
+          "criterion": "概括资料修订分流流程，且说明按问题性质分交不同人员。",
+          "remediationSectionIds": [
+            "w12-cn-r1",
+            "w12-cn-r2"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 9,
+          "weeks": [
+            9
+          ],
+          "skill": "分类标准与路径作用",
+          "points": 1,
+          "criterion": "分类标准为内容错误/页面缺损，作用落实对应接收路径。",
+          "remediationSectionIds": [
+            "w12-cn-r2"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            3
+          ],
+          "skill": "举例具体作用",
+          "points": 1,
+          "criterion": "举例作用落实缺页须登记位置后送印制查验，不只报具体形象。",
+          "remediationSectionIds": [
+            "w12-cn-r2"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            1
+          ],
+          "skill": "条件频率与样本范围",
+          "points": 1,
+          "criterion": "保留本次、有引导、多数，指出所有人/无引导等扩大。",
+          "remediationSectionIds": [
+            "w12-cn-r1",
+            "w12-cn-r2"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 9,
+          "weeks": [
+            9,
+            1,
+            3
+          ],
+          "skill": "信息结果不扩大为最终效果",
+          "points": 1,
+          "criterion": "区分找到接收人与处理好全部问题，不扩大成最终效果保证。",
+          "remediationSectionIds": [
+            "w12-cn-r2"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-cn-r1",
+        "w12-cn-r2"
+      ],
+      "remediationAction": "重写对象、分类与例子作用；找到人与解决分开，保试用条件。"
+    },
+    {
+      "questionId": "w12-cn-quiz2",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 10,
+          "weeks": [
+            10,
+            1
+          ],
+          "skill": "身份读者与提纲交付",
+          "points": 1,
+          "criterion": "身份讲解者、读者新志愿者准确，交齐中心和两分论点且每句≤60字。",
+          "remediationSectionIds": [
+            "w12-cn-r3"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 10,
+          "weeks": [
+            10,
+            3
+          ],
+          "skill": "关系型中心判断",
+          "points": 1,
+          "criterion": "中心明确连接忠实内容和适应听众，非只话题或赞一方。",
+          "remediationSectionIds": [
+            "w12-cn-r3"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 10,
+          "weeks": [
+            10
+          ],
+          "skill": "第一分论点相关完整",
+          "points": 1,
+          "criterion": "第一分论点是服务中心的完整判断。",
+          "remediationSectionIds": [
+            "w12-cn-r3"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 10,
+          "weeks": [
+            10
+          ],
+          "skill": "第二分论点分工",
+          "points": 1,
+          "criterion": "第二分论点服务中心且与第一角度实质不同。",
+          "remediationSectionIds": [
+            "w12-cn-r3"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 10,
+          "weeks": [
+            10,
+            9
+          ],
+          "skill": "立意与知识准确边界",
+          "points": 1,
+          "criterion": "保核心内容准确，不因适应听众任意改变知识，也不把照稿当唯一方式。",
+          "remediationSectionIds": [
+            "w12-cn-r3"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-cn-r3"
+      ],
+      "remediationAction": "核身份读者，用两端关系改中心，给分论点贴不同标签。"
+    },
+    {
+      "questionId": "w12-cn-quiz3",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            10,
+            3
+          ],
+          "skill": "段落观点回应关系",
+          "points": 1,
+          "criterion": "观点为共享促进理解、不能仅复制。",
+          "remediationSectionIds": [
+            "w12-cn-r4"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            3
+          ],
+          "skill": "相关题给证据与身份",
+          "points": 1,
+          "criterion": "准确采用复制后不会判断与后续解释/另题检验的证据，不编结果。",
+          "remediationSectionIds": [
+            "w12-cn-r4"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            3
+          ],
+          "skill": "例后具体解释机制",
+          "points": 1,
+          "criterion": "解释说明依据如何把结论与适用条件连接，非只复述。",
+          "remediationSectionIds": [
+            "w12-cn-r4"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            9
+          ],
+          "skill": "迁移检验与效果边界",
+          "points": 1,
+          "criterion": "说明新题/接收者解释的检验作用，保仍需讨论缺口的边界。",
+          "remediationSectionIds": [
+            "w12-cn-r4"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 11,
+          "weeks": [
+            11,
+            10
+          ],
+          "skill": "回扣及短段交付",
+          "points": 1,
+          "criterion": "回扣共享包含理由/检验，段落连贯且80—130字，不另起新大主张。",
+          "remediationSectionIds": [
+            "w12-cn-r4"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-cn-r4"
+      ],
+      "remediationAction": "从复制失败到说明依据补支持关系，保新题作用与仍需讨论。"
+    },
+    {
+      "questionId": "w12-cn-quiz4",
+      "points": 5.0,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            1
+          ],
+          "skill": "身份与登记条件",
+          "points": 0.5,
+          "criterion": "①条件完整为本校已登记者。",
+          "remediationSectionIds": [
+            "w12-cn-r1",
+            "w12-cn-r5"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            1
+          ],
+          "skill": "确认期限对应事件",
+          "points": 0.5,
+          "criterion": "①期限保周五17时前，不误作活动时间。",
+          "remediationSectionIds": [
+            "w12-cn-r5"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            5
+          ],
+          "skill": "外层主语残缺病因",
+          "points": 0.5,
+          "criterion": "②指出外层使缺主语，不泛称不通。",
+          "remediationSectionIds": [
+            "w12-cn-r5"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            5,
+            6
+          ],
+          "skill": "保意修复病句",
+          "points": 0.5,
+          "criterion": "②一种保意完整修法成立。",
+          "remediationSectionIds": [
+            "w12-cn-r5"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            4,
+            8
+          ],
+          "skill": "承前主体、承接语气与否定通译",
+          "points": 1,
+          "criterion": "③连贯译文承前补出学员，乃译于是/就/便等承接义0.5分；未录全篇译没有抄整篇0.5分。以/之的工具与指代义仅在下一评分项计分，不重复计。",
+          "remediationSectionIds": [
+            "w12-cn-r5"
+          ]
+        },
+        {
+          "scoringIndex": 5,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            4,
+            8
+          ],
+          "skill": "以的工具关系与之指代",
+          "points": 1,
+          "criterion": "③单独词义：以为用、引工具0.5分；之落实刚发现的一处错误0.5分。",
+          "remediationSectionIds": [
+            "w12-cn-r5"
+          ]
+        },
+        {
+          "scoringIndex": 6,
+          "primaryWeek": 12,
+          "weeks": [
+            12,
+            8
+          ],
+          "skill": "具体错因和遮答补救动作",
+          "points": 1,
+          "criterion": "④错因定位机械词义/指代0.5分，给本周旧基础补救入口及记什么/前文谁承接等遮答自检0.5分；不重复奖译文。",
+          "remediationSectionIds": [
+            "w12-cn-r6",
+            "w12-cn-r5"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w12-cn-r1",
+        "w12-cn-r5",
+        "w12-cn-r6"
+      ],
+      "remediationAction": "条件分项；查使主语；翻译核角色动作否定，再问以引什么/之代什么，给错因及遮答动作。"
+    }
+  ]
+}

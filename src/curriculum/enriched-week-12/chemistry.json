@@ -1,0 +1,870 @@
+{
+  "id": "w12-化学",
+  "week": 12,
+  "subject": "化学",
+  "title": "基础计量与反应阶段复测：第9—12周唯一累计诊断",
+  "revision": "week12-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "把第9周酸量分段、第10周氯水/电子分流、第11周铁价态与限量串成可解释的账本。",
+    "连续反应每段写前、耗、产、余，用上一段终点作为下一段起点。",
+    "逐段核原子与电荷，氧化还原段核电子，跨阶段核C或Fe总量。",
+    "完成唯一20分累计复测且至少16分与关键条件均通过，按真实错因补救后再手动推进。"
+  ],
+  "prerequisites": [
+    "第3—5周n=m/M、n=cV、mol系数比、限制者及最终溶液体积；本周补救重新搭桥。",
+    "第6—8周按性质拆写、原子电荷与电子守恒；引用的旧技能均已读原增强课确认。",
+    "不以课外背反应或开展实验为前提；反应身份、条件与新规则均在正文和题设说明。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "60分钟是忙碌时单次上限，不是缩减过关路线。完整150分钟分60+54+36。第1次60=前测6+八节含自检48+例1共6，活动ID：w12-chemistry-diagnostic-1、w12-chemistry-diagnostic-2、w12-chemistry-diagnostic-3、w12-chemistry-section-recall-quantity、w12-chemistry-section-recall-sodium、w12-chemistry-section-recall-chlorine、w12-chemistry-section-recall-iron、w12-chemistry-section-stage-ledger、w12-chemistry-section-conservation、w12-chemistry-section-final-quantity、w12-chemistry-section-review-route、w12-chemistry-example-1。第2次54=例2—5共24+独练30，活动ID：w12-chemistry-example-2、w12-chemistry-example-3、w12-chemistry-example-4、w12-chemistry-example-5、w12-chemistry-practice-1、w12-chemistry-practice-2、w12-chemistry-practice-3、w12-chemistry-practice-4、w12-chemistry-practice-5。第3次36=唯一短测24+订正12，活动ID：w12-chemistry-quiz-1、w12-chemistry-quiz-2、w12-chemistry-quiz-3、w12-chemistry-quiz-4、w12-chemistry-review-corrections。短测保持完整一次独立作答，完成后才打开答案；中断记录活动ID续做。所有核心与订正完成、16分及关键条件同时达标，才手动推进；不足则延长本周，不绑定日历。本次第9—12周累计复测替代普通周测，不另叠加20分或额外考试时间。",
+    "segments": [
+      {
+        "id": "w12-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w12-chemistry-diagnostic-1",
+          "w12-chemistry-diagnostic-2",
+          "w12-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w12-chemistry-time-concepts",
+        "title": "八节含随堂自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w12-chemistry-section-recall-quantity",
+          "w12-chemistry-section-recall-sodium",
+          "w12-chemistry-section-recall-chlorine",
+          "w12-chemistry-section-recall-iron",
+          "w12-chemistry-section-stage-ledger",
+          "w12-chemistry-section-conservation",
+          "w12-chemistry-section-final-quantity",
+          "w12-chemistry-section-review-route"
+        ]
+      },
+      {
+        "id": "w12-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w12-chemistry-example-1",
+          "w12-chemistry-example-2",
+          "w12-chemistry-example-3",
+          "w12-chemistry-example-4",
+          "w12-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w12-chemistry-time-practice",
+        "title": "五道独练，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w12-chemistry-practice-1",
+          "w12-chemistry-practice-2",
+          "w12-chemistry-practice-3",
+          "w12-chemistry-practice-4",
+          "w12-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w12-chemistry-time-quiz",
+        "title": "唯一20分短测，含本周要求的累计复测",
+        "minutes": 24,
+        "activityIds": [
+          "w12-chemistry-quiz-1",
+          "w12-chemistry-quiz-2",
+          "w12-chemistry-quiz-3",
+          "w12-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w12-chemistry-time-review",
+        "title": "评分、关键条件核查与订正",
+        "minutes": 12,
+        "activityIds": [
+          "w12-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "6分钟独立答三题，每题2分钟，不计入20分；按错因路由进入已有补救时间，全对也完成正文自检。",
+    "questions": [
+      {
+        "id": "w12-chemistry-diagnostic-1",
+        "title": "前测1：换量",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "60.0 mL、0.250 mol/L溶液，目标溶质n多少？",
+        "answer": "0.0150 mol。",
+        "steps": [
+          "60.0 mL=0.0600 L。",
+          "n=0.250×0.0600。"
+        ],
+        "commonErrors": [
+          "mL直接当L。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w12-chemistry-diagnostic-2",
+        "title": "前测2：氯的两种路线",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "Cl₂在冷稀碱歧化与全被还原成Cl⁻，每mol实际Cl₂的电子量是否都2 mol？",
+        "answer": "不是；歧化1 mol，全还原2 mol。",
+        "steps": [
+          "歧化只1个Cl降价、另1个升价。",
+          "全还原两个Cl都降1。"
+        ],
+        "commonErrors": [
+          "看到下标2就固定电子2倍。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w12-chemistry-diagnostic-3",
+        "title": "前测3：铁的来源",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "Fe+2Fe³⁺→3Fe²⁺中，第三份Fe²⁺来自哪里？若产3 mol Fe²⁺，电子转移是不是3 mol？",
+        "answer": "来自金属Fe；电子为2 mol，不是3 mol。",
+        "steps": [
+          "1 mol Fe失2电子，2 mol Fe³⁺各得1。",
+          "三个产物铁的来源和价变不同。"
+        ],
+        "commonErrors": [
+          "按总产Fe²⁺量直接算电子。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w12-chemistry-section-recall-quantity"
+        ]
+      },
+      {
+        "when": "前测2错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w12-chemistry-section-recall-chlorine",
+          "w12-chemistry-section-conservation"
+        ]
+      },
+      {
+        "when": "前测3错误或不确定。",
+        "action": "先读对应补救和正文，逐句解释依据，再完成其自检；均计入已有48分钟。",
+        "sectionIds": [
+          "w12-chemistry-section-recall-iron",
+          "w12-chemistry-section-stage-ledger",
+          "w12-chemistry-section-conservation"
+        ]
+      },
+      {
+        "when": "前测全对。",
+        "action": "仍完成八节自检与核心任务，不以猜对跳过条件说明。",
+        "sectionIds": [
+          "w12-chemistry-section-recall-quantity",
+          "w12-chemistry-section-recall-sodium",
+          "w12-chemistry-section-recall-chlorine",
+          "w12-chemistry-section-recall-iron",
+          "w12-chemistry-section-stage-ledger",
+          "w12-chemistry-section-conservation",
+          "w12-chemistry-section-final-quantity",
+          "w12-chemistry-section-review-route"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w12-chemistry-section-recall-quantity",
+      "title": "累计补救1：先把对象、mol与体积接起来",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。本周沿第9—11周钠、氯、铁做基础计量与反应阶段复测，不另开新元素或复杂平衡专题。第3周n=m/M、第4周系数mol比、第5周n=cV依然是入口：质量先除g/mol，浓度mol/L必须配L，不能把mL直接乘进去。",
+        "每个n写清对象，例如n(Fe²⁺初)、n(Fe²⁺耗)、n(Fe³⁺产)是三个不同的量。反应只改变参与者的身份和量，总铁元素仍可守恒；“总铁不变”不能替代每个物种的消耗账。",
+        "反应后浓度先求剩余n，再除题给最终液相V。反应前原液体积不一定是最后分母；“稀释至”给最终体积，“加了多少水”不能无条件当体积增量精确相加。",
+        "前测错在换量就从本节补起，不必重新通读前八周。必要回查只限已学n、系数、离子与电子规则；本周不增加气体摩尔体积、平衡常数或新氧化性酸计算。"
+      ],
+      "keyPoints": [
+        "每个n带物种和阶段标签。",
+        "先求余量再除最终V，mol/L配L。"
+      ],
+      "checkpoint": {
+        "question": "80.0 mL、0.250 mol/L Fe²⁺中实际氧化0.0120 mol，最终溶液200.0 mL，剩c(Fe²⁺)多少？",
+        "answer": "0.0400 mol/L。",
+        "explanation": "初量0.250×0.0800=0.0200，余0.00800，除最终0.2000。"
+      }
+    },
+    {
+      "id": "w12-chemistry-section-recall-sodium",
+      "title": "累计补救2：第9周的身份和酸量阈值",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。钠与水模型2Na+2H₂O→2NaOH+H₂，Na∶H₂=2∶1；Na₂O与水不放氧，Na₂O₂按题给放氧总式每2 mol生成1 mol O₂。过氧化物O−1，不能与普通氧化物O−2混同。",
+        "Na₂O₂与CO₂按2Na₂O₂+2CO₂→2Na₂CO₃+O₂，C始终+4。数量必须由实际反应量决定；若前一步留下过氧化物，后一步不能假装只有碳酸钠，题目必须明确如何隔离或限定物种。本周不引入这种复杂混合竞争。",
+        "碳酸根逐量加酸只在题给“先全部成HCO₃⁻再放CO₂”模型中用三段：初CO₃²⁻为a、累计H⁺为x；0≤x≤a时气体0，a<x≤2a时气体x−a，x>2a时气体a且余酸x−2a。",
+        "两步分别为CO₃²⁻+H⁺→HCO₃⁻及HCO₃⁻+H⁺→CO₂+H₂O。足量酸总式需2H⁺，不能把有限酸总量直接除2。每段都查CO₃²⁻、HCO₃⁻和已生CO₂所含C量之和。"
+      ],
+      "keyPoints": [
+        "Na、两种氧化物不能混身份。",
+        "碳酸根先比x与a、2a，酸只花一次。"
+      ],
+      "checkpoint": {
+        "question": "初0.0500 mol CO₃²⁻，按限定模型逐量加0.0800 mol H⁺，HCO₃⁻与CO₂多少？",
+        "answer": "HCO₃⁻0.0200 mol，CO₂0.0300 mol。",
+        "explanation": "第一段用0.0500，余酸0.0300进第二段；碳总0.0500。"
+      }
+    },
+    {
+      "id": "w12-chemistry-section-recall-chlorine",
+      "title": "累计补救3：第10周的可逆性和分流",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。氯水式Cl₂+H₂O⇌HCl+HClO必须保留⇌，净式Cl₂+H₂O⇌H⁺+Cl⁻+HClO。HCl强酸拆写，HClO弱酸保留；投入Cl₂不等于全部水解量，没有转化程度不能硬算精确HClO。",
+        "冷、稀且题定按总式反应时，Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O。一个Cl0→−1，另一Cl0→+1，Cl₂兼两种剂；每mol实际Cl₂只转移1 mol电子，得失不相加。",
+        "若Cl₂按2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻被全还原，两个Cl都0→−1，每mol Cl₂接受2 mol电子，Cl₂只作氧化剂。相同物质在不同路线的电子倍数不同。",
+        "条件卡必须随反应保留：氯水可逆，冷稀碱定产物，足量或限量定实际消耗。热浓碱不无条件套ClO⁻；清洁剂禁混用是现实边界，全部仍只作纸面学习。"
+      ],
+      "keyPoints": [
+        "水解⇌、冷稀、弱酸保留都是核心条件。",
+        "歧化每mol Cl₂转移1，全还原接受2。"
+      ],
+      "checkpoint": {
+        "question": "同为0.00400 mol Cl₂实际反应，冷稀碱与Fe²⁺两条路线电子量各多少？",
+        "answer": "分别0.00400 mol、0.00800 mol。",
+        "explanation": "前者一半Cl被还原，后者全部Cl被还原。"
+      }
+    },
+    {
+      "id": "w12-chemistry-section-recall-iron",
+      "title": "累计补救4：第11周的铁来源与产物条件",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。Fe、Fe²⁺、Fe³⁺中的Fe价依次0、+2、+3。稀盐酸、无其他氧化剂时Fe+2H⁺→Fe²⁺+H₂；氧化性酸不能照搬，铁的终价还取决于氧化剂与具体条件。",
+        "Fe+2Fe³⁺→3Fe²⁺中，Fe²⁺来自两份Fe³⁺和一份金属Fe。比较n(Fe)与n(Fe³⁺)/2后，实际反应t mol金属便产3t mol Fe²⁺、转移2t mol电子。总铁需包括未反应金属。",
+        "Fe²⁺、Fe³⁺分别沉淀为Fe(OH)₂、Fe(OH)₃时，OH⁻系数分别2、3。保留二价沉淀要有隔绝空气、无其他氧化剂或无进一步氧化的模型；否则Fe(OH)₂可再变为Fe(OH)₃。",
+        "SCN⁻显红可在合适条件支持Fe³⁺；阴性不能单独证明Fe²⁺。候选范围、浓度足以检出、无干扰缺一项，结论就要收窄。复测以题给数据为据，不自行做检测。"
+      ],
+      "keyPoints": [
+        "Fe+Fe³⁺的3份产物包含金属铁。",
+        "沉淀按实际价态分配OH⁻，证据依条件。"
+      ],
+      "checkpoint": {
+        "question": "0.0120 mol Fe与0.0200 mol Fe³⁺按唯一反应充分进行，剩Fe与生成Fe²⁺多少？",
+        "answer": "Fe剩0.00200 mol，Fe²⁺0.0300 mol。",
+        "explanation": "Fe³⁺限制，金属耗0.0100；末总铁0.00200+0.0300=0.0320。"
+      }
+    },
+    {
+      "id": "w12-chemistry-section-stage-ledger",
+      "title": "连续反应账本：上一段终点才是下一段起点",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。把一题分成有边界的阶段，并在每段写四行：反应前、实际消耗、生成、反应后。下一段只能接上一段的剩余和生成物；不能把第一段已消耗的Fe²⁺再原封不动带入沉淀。",
+        "例如初有a mol Fe²⁺、b mol Cl₂，题定仅按2Fe²⁺+Cl₂反应且2b≤a。氧化后Fe²⁺=a−2b，Fe³⁺=2b，Cl₂已用尽；电子=2b。这里a、b表示起始量，2b表示实际转化，不是任何新公式。",
+        "随后隔绝空气、无其他耗OH⁻物种，足量OH⁻定量沉淀两种铁离子：耗OH⁻=2(a−2b)+3(2b)。把上一段的两份铁逐个带入，能看清为什么不能全按2a或3a算。",
+        "若题给2b>a，Cl₂可能有剩余，后续加碱会牵涉新的反应；不可照用上面的简化段账。为守住基础，本周连续铁题均明确Cl₂先用尽、没有其他耗OH⁻反应，避免未教竞争反应。"
+      ],
+      "keyPoints": [
+        "段1末的Fe²⁺与Fe³⁺分别成为段2初量。",
+        "剩余氧化剂或酸可能改变后段，必须读条件。"
+      ],
+      "checkpoint": {
+        "question": "初Fe²⁺0.0250 mol、Cl₂0.00500 mol按上述模型反应，沉淀前两种铁多少？",
+        "answer": "Fe²⁺0.0150 mol，Fe³⁺0.0100 mol。",
+        "explanation": "先扣2×0.00500；不能再把原0.0250全部按二价沉淀。"
+      }
+    },
+    {
+      "id": "w12-chemistry-section-conservation",
+      "title": "三本守恒账互相核验，却不能互相代替",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。元素账：跨阶段先选追踪元素。铁总量等于各铁离子、铁沉淀和剩余金属所含Fe的mol之和；碳酸盐题总C等于剩CO₃²⁻、HCO₃⁻与生成CO₂中的C。离开溶液的气体或固体仍属于总账。",
+        "电荷账：每条净离子式左右的带符号电荷代数和相等，如2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻为+4=+6−2。不是要求两侧都0，也不能把右上电荷当作右下原子数。",
+        "电子账：氧化还原段用实际变价mol×每份原子数×价差，得=失=转移；中和和定量沉淀段若无变价就没有净电子转移，不能把所有阶段机械相加一个“电子量”。",
+        "原子、电荷平衡只是必要检查。若把氧化剂条件弄错或无视氯水可逆性，账平仍可能不是题设反应。先确认反应身份与条件，再把守恒作为独立复核，不靠守恒预测一切产物。"
+      ],
+      "keyPoints": [
+        "元素跨阶段，电荷逐净式，电子只算变价段。",
+        "守恒正确不替代反应条件。"
+      ],
+      "checkpoint": {
+        "question": "Fe³⁺+3OH⁻→Fe(OH)₃↓中，Fe变价吗？需计3 mol电子吗？",
+        "answer": "Fe始终+3，不变价，不产生该意义的电子转移。",
+        "explanation": "3是中和Fe³⁺电荷所需OH⁻份数，不是Fe得到3电子。"
+      }
+    },
+    {
+      "id": "w12-chemistry-section-final-quantity",
+      "title": "质量与浓度：最后一步也要跟着新物种",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。若混合沉淀含u mol Fe(OH)₂、v mol Fe(OH)₃，质量应分别乘题给M后相加。不能把总铁u+v全部乘同一个M，除非两种沉淀确实相同；两种物质不能因为都含Fe就混为一项。",
+        "剩余OH⁻先用加入量减各真实反应消耗。若有酸存在还需计中和；本周限定无其他耗OH⁻物种时才只扣沉淀所需。剩余量小于0说明足量假设或计算有矛盾，不能写负浓度。",
+        "最后浓度分母是题给最终液相溶液体积，沉淀体积不额外加入，也不默认各原液体积严格相加。若题未给最终V或允许近似的条件，可以求mol而不能唯一求mol/L。",
+        "结果量纲自查：g÷(g/mol)=mol，(mol/L)×L=mol，mol×(g/mol)=g，mol÷L=mol/L。带单位做每一步，能在最后前发现数量级错1000倍。"
+      ],
+      "keyPoints": [
+        "不同沉淀分别乘M后求和。",
+        "OH⁻先扣完整消耗，再除最终液相V。"
+      ],
+      "checkpoint": {
+        "question": "Fe(OH)₂0.0100 mol、Fe(OH)₃0.0100 mol，M分别90.0、107 g/mol，总质量多少？",
+        "answer": "1.97 g。",
+        "explanation": "0.0100×90.0+0.0100×107=0.900+1.07=1.97 g。"
+      }
+    },
+    {
+      "id": "w12-chemistry-section-review-route",
+      "title": "唯一累计复测：分数、关键条件和补救一起看",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核查与随堂自检。本周唯一20分累计复测覆盖第9周酸量分段、第10周氯水与冷稀分流、第11周铁的来源与限量、第12周连续账本。4题用6+5+4+9=24分钟，替代普通周测，不再叠加另一套考试。",
+        "每条评分点只有1分，逐点地图给出主要周技能与必要前置；同一点不会因为同时用了单位和电子就重复计两次。前测、正文自检、例题、独练与订正均不纳入20分。",
+        "首次独立作答后，先计分，再核全部关键条件。总分至少16分但关键条件错仍需补救：单位错误回本周量节，碳酸盐回酸量节，氯的符号/分流回氯节，铁来源回铁节，阶段错回账本节。",
+        "12分钟订正先抓最早断点，重写依据再关答案重建。未能修复的部分留到下一可用时段独立重做并另记尝试，首次分保留；不会因日历跨周自动推进，也不声称一道题猜对便已熟练。"
+      ],
+      "keyPoints": [
+        "唯一20分替代普通测，不叠加。",
+        "16分且关键条件通过、订正完成，才能手动推进。"
+      ],
+      "checkpoint": {
+        "question": "累计复测17分，但把氯水写→并默认完全水解，可直接进入下一周吗？",
+        "answer": "不能，必须先补可逆性关键条件。",
+        "explanation": "总分与关键条件是同时满足的门槛，不是相互抵消。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w12-chemistry-example-1",
+      "title": "例1·基础：把mL、阶段与碳守恒连起来",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "40.0 mL、0.500 mol/L Na₂CO₃中逐量加0.0320 mol H⁺，题定先全成HCO₃⁻再放CO₂的理想模型。求最终HCO₃⁻、CO₂并查C。",
+      "answer": "HCO₃⁻0.00800 mol，CO₂0.0120 mol。",
+      "steps": [
+        "n(CO₃²⁻)=0.500×0.0400=0.0200 mol。",
+        "第一阈值0.0200、第二阈值0.0400；0.0320在第二段。",
+        "先耗0.0200酸，余0.0120用于HCO₃⁻转CO₂。",
+        "HCO₃⁻余0.0200−0.0120=0.00800 mol。",
+        "碳0.00800+0.0120=0.0200，不能直接0.0320/2。"
+      ],
+      "commonErrors": [
+        "忽略题定两阶段。",
+        "混淆投入酸与剩余酸。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-example-2",
+      "title": "例2·应用：先反应后稀释，不能守恒初始OH⁻",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "0.0120 mol Cl₂在含0.0400 mol OH⁻的冷稀碱中按Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O完全反应，无副反应。反应后无损失稀释至250.0 mL，求最终c(OH⁻)及电子mol。",
+      "answer": "OH⁻余0.0160 mol，c=0.0640 mol/L；电子0.0120 mol。",
+      "steps": [
+        "先判碱需0.0240<0.0400，Cl₂耗尽。",
+        "反应段OH⁻量不守恒，剩0.0160。",
+        "随后理想稀释才保持这份剩余OH⁻的n，V终0.2500 L。",
+        "c=0.0160/0.2500=0.0640 mol/L。",
+        "冷稀歧化每mol实际Cl₂转移1mol电子，非全还原2倍。"
+      ],
+      "commonErrors": [
+        "拿初始0.0400直接除最终V。",
+        "把稀释n不变套到反应段。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-example-3",
+      "title": "例3·应用：金属进入溶液，液相铁会增加",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "0.0160 mol Fe与0.0500 mol Fe³⁺只按Fe+2Fe³⁺→3Fe²⁺充分反应，最终液相体积题给200.0 mL。求Fe³⁺余、Fe²⁺产、总溶液铁量与c(Fe²⁺)。",
+      "answer": "Fe³⁺余0.0180 mol；Fe²⁺0.0480 mol；溶液总铁0.0660 mol；c(Fe²⁺)=0.240 mol/L。",
+      "steps": [
+        "比较0.0160与0.0250，Fe限制且全进入溶液。",
+        "耗Fe³⁺0.0320、余0.0180，产Fe²⁺0.0480。",
+        "原溶液铁0.0500加金属0.0160=0.0660，末0.0180+0.0480相等。",
+        "c=0.0480/0.2000=0.240 mol/L。",
+        "体系总铁守恒但液相铁量比开始增大，不能把“溶液总铁”固定为0.0500。"
+      ],
+      "commonErrors": [
+        "产Fe²⁺漏金属份额。",
+        "溶液与整个体系范围混同。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-example-4",
+      "title": "例4·脚手架：氧化后有两种铁，分别沉淀",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "100.0 mL、0.200 mol/L Fe²⁺与0.00400 mol Cl₂仅按2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻反应，Cl₂用尽。随后在隔绝空气、无其他氧化剂或耗OH⁻物种的模型中，用足量OH⁻使两种铁定量沉淀。求氧化后两种铁及沉淀总耗OH⁻。",
+      "answer": "Fe²⁺0.0120 mol、Fe³⁺0.00800 mol；OH⁻总耗0.0480 mol。",
+      "steps": [
+        "初Fe²⁺=0.200×0.1000=0.0200 mol。",
+        "0.00400 mol Cl₂耗Fe²⁺0.00800，生成Fe³⁺0.00800。",
+        "旧Fe²⁺余0.0120，作为第二段初量。",
+        "Fe(OH)₂耗OH⁻2×0.0120=0.0240；Fe(OH)₃耗3×0.00800=0.0240。",
+        "合计0.0480 mol；既不是全按2倍0.0400，也不是全按3倍0.0600。",
+        "铁总量0.0120+0.00800=0.0200，沉淀阶段无进一步变价。"
+      ],
+      "commonErrors": [
+        "把第一段初量直接带到第二段。",
+        "忽略隔绝空气。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-example-5",
+      "title": "例5·迁移：连续账本末端再求质量与余碱浓度",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "纸面限定模型：氧化结束后Fe²⁺0.00600 mol、Fe³⁺0.0140 mol，Cl₂及酸均无剩余。再加含0.0700 mol OH⁻的溶液，隔绝空气且无其他反应，两种铁定量沉淀，最终液相200.0 mL。M[Fe(OH)₂]=90.0、M[Fe(OH)₃]=107，单位g/mol。求混合沉淀质量和剩c(OH⁻)。",
+      "answer": "沉淀质量2.038 g，约2.04 g；OH⁻耗0.0540、余0.0160 mol，c=0.0800 mol/L。",
+      "steps": [
+        "两种沉淀mol分别0.00600、0.0140。",
+        "质量分别0.540和1.498 g，相加2.038 g，按合理有效数字约2.04 g。",
+        "OH⁻分别耗0.0120和0.0420，合0.0540 mol，小于投入0.0700，足量成立。",
+        "余OH⁻0.0700−0.0540=0.0160，除最终0.2000 L为0.0800 mol/L。",
+        "无余酸、余Cl₂及空气氧化由题设保证，不能在现实混合中擅自省略。"
+      ],
+      "commonErrors": [
+        "总铁全乘107。",
+        "不扣消耗直接求c。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w12-chemistry-practice-1",
+      "title": "独练1：过氧化物仍先看实际量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "0.0300 mol Na₂O₂与0.0220 mol CO₂只按2Na₂O₂+2CO₂→2Na₂CO₃+O₂充分反应。求盐、O₂、剩Na₂O₂与电子mol，说明C价。",
+      "answer": "盐0.0220、O₂0.0110、Na₂O₂余0.00800、电子0.0220 mol；C始终+4。",
+      "steps": [
+        "比较0.0150与0.0110，CO₂限制。",
+        "Na₂O₂实际耗0.0220，余0.00800。",
+        "盐等量、O₂一半；每mol实际Na₂O₂对应1mol电子。",
+        "C在反应两侧均+4，不参加变价。"
+      ],
+      "commonErrors": [
+        "按初始过氧化物全反应。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-practice-2",
+      "title": "独练2：改变酸量仍要重新定位",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "含0.0300 mol CO₃²⁻，按先全成HCO₃⁻再放气模型逐量加入0.0750 mol H⁺。求CO₂、剩H⁺；若最终液相150.0 mL且忽略平衡，剩c(H⁺)多少？",
+      "answer": "CO₂0.0300 mol，H⁺余0.0150 mol，c=0.100 mol/L。",
+      "steps": [
+        "2a=0.0600<0.0750，进入平台。",
+        "碳全变气，CO₂=a。",
+        "酸余0.0750−0.0600=0.0150。",
+        "除最终0.1500 L得0.100。"
+      ],
+      "commonErrors": [
+        "平台仍让气体线性增加。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-practice-3",
+      "title": "独练3：水解量不足信息与冷稀计量分开",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "A：0.0100 mol Cl₂溶于水，未给转化程度，能否求精确HClO？B：0.0100 mol Cl₂在足量冷稀碱中按正文总式完全反应，OH⁻耗、ClO⁻产、电子各多少？",
+      "answer": "A不能；B耗OH⁻0.0200、ClO⁻0.0100、电子0.0100 mol。",
+      "steps": [
+        "A用⇌，缺实际转化不能当全反应。",
+        "B条件与完全程度明确，用1∶2∶1。",
+        "歧化分流单边电子倍数1。",
+        "相同投入Cl₂，反应条件不同，不可将B结论倒套A。"
+      ],
+      "commonErrors": [
+        "看到同样投入量就两题同解。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-practice-4",
+      "title": "独练4：铜还原铁与金属铁反应不混",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "含0.0600 mol Fe³⁺的溶液与1.28 g Cu仅按2Fe³⁺+Cu→2Fe²⁺+Cu²⁺反应，M(Cu)=64.0 g/mol。求Fe³⁺余、Fe²⁺产、电子mol；为何不按3倍产亚铁？",
+      "answer": "Fe³⁺余0.0200，Fe²⁺0.0400，电子0.0400 mol；Cu不贡献铁，不能套Fe+2Fe³⁺→3Fe²⁺。",
+      "steps": [
+        "Cu0.0200 mol，需Fe³⁺0.0400<0.0600，Cu限制。",
+        "余Fe³⁺0.0200，产Fe²⁺0.0400 mol。",
+        "电子Cu0→+2共0.0400，Fe³⁺侧相同。",
+        "总铁初末0.0600，铜进入的是Cu²⁺不是Fe²⁺。"
+      ],
+      "commonErrors": [
+        "相似反应都乘3。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w12-chemistry-practice-5",
+      "title": "独练5：新数值连续反应全账",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "0.0240 mol Fe²⁺与0.00700 mol Cl₂仅按2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻反应，Cl₂用尽；随后加入0.0800 mol OH⁻，隔绝空气、无其他耗碱或氧化反应，两种铁定量沉淀。最终液相300.0 mL。求两种沉淀mol、电子mol、剩c(OH⁻)。",
+      "answer": "Fe(OH)₂0.0100、Fe(OH)₃0.0140、电子0.0140 mol；OH⁻耗0.0620、余0.0180 mol，c=0.0600 mol/L。",
+      "steps": [
+        "第一段Fe²⁺耗0.0140、余0.0100，Fe³⁺产0.0140。",
+        "实际变价Fe²⁺0.0140，所以电子同量。",
+        "沉淀mol各等于相应铁离子，OH⁻=2×0.0100+3×0.0140=0.0620。",
+        "OH⁻余0.0800−0.0620=0.0180，除0.3000 L得0.0600。",
+        "铁0.0100+0.0140=0.0240，沉淀后不再另计电子。"
+      ],
+      "commonErrors": [
+        "给沉淀反应乱加电子。",
+        "把Fe²⁺初量当余量。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "上一段反应了但下一段仍用最初全部量。",
+      "why": "反应已改变物种及数量。",
+      "right": "将上一段剩余/生成逐项带到下一段。"
+    },
+    {
+      "wrong": "总铁守恒，所以Fe²⁺也不变。",
+      "why": "总元素与特定粒子不是同一个对象。",
+      "right": "分别记Fe、Fe²⁺、Fe³⁺和沉淀中的Fe。"
+    },
+    {
+      "wrong": "每段都要另加电子量。",
+      "why": "沉淀/中和段可无变价。",
+      "right": "电子只由实际氧化还原段计算。"
+    },
+    {
+      "wrong": "有17分就算全部掌握。",
+      "why": "关键条件错误可能使模型整体失效。",
+      "right": "分数门槛与全部关键条件同时通过。"
+    }
+  ],
+  "quiz": {
+    "instructions": "这是唯一第9—12周累计复测，替代第12周普通短测，不叠加测验。4题用6+5+4+9=24分钟，分值5+5+4+6=20分。先关闭答案与评分，独立作答后逐条各1分核对；该条所有条件满足才得分，过程分不由末答案自动获得。允许等价反应项顺序与合理舍入。前测、自检、例题、独练和订正不计入20分。累计地图只解释同一20分的来源，不增加题目或分数；保留首次独立分，补救后的尝试另记。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w12-chemistry-quiz-1",
+        "title": "累计1·第9周：由气体反推酸量，平台为何不唯一",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "50.0 mL、0.600 mol/L Na₂CO₃采用题定“先全部转为HCO₃⁻再放CO₂”的逐量加酸理想模型，忽略平衡、局部浓度与其他反应。已知累计生成CO₂为0.0180 mol。先求初CO₃²⁻量并判断所处阶段，写两条阶段净式，反求累计投入H⁺与剩余HCO₃⁻，核查C守恒。另一个同初量、同模型的记录只知累计CO₂达到0.0300 mol，能否唯一反推累计H⁺？给出能确定的范围并解释。",
+        "answer": "初CO₃²⁻0.0300 mol；0<CO₂0.0180<0.0300，处于第二段。累计H⁺=0.0300+0.0180=0.0480 mol，剩HCO₃⁻=0.0120 mol，C总0.0300 mol。另一个记录CO₂到0.0300 mol时已到平台，只能知累计H⁺≥0.0600 mol，不能唯一反推，可能恰好也可能过量。",
+        "steps": [
+          "初量a=0.600×0.0500=0.0300 mol；已生气体0.0180介于0和a之间，唯一落在模型第二段。",
+          "第一段CO₃²⁻+H⁺→HCO₃⁻；第二段HCO₃⁻+H⁺→CO₂+H₂O。",
+          "生成0.0180 mol CO₂说明第二段已用H⁺0.0180 mol；之前第一段已耗a=0.0300，累计酸x=0.0300+0.0180=0.0480 mol。",
+          "剩HCO₃⁻=a−n(CO₂)=0.0300−0.0180=0.0120 mol；C核查0.0120+0.0180=0.0300，CO₃²⁻已为0。",
+          "另一个记录CO₂=a=0.0300 mol，至少需要2a=0.0600 mol H⁺。当x≥0.0600时CO₂都维持0.0300，额外酸只剩在体系；所以只能给下界，不能把平台气量唯一反解成恰好0.0600 mol酸。"
+        ],
+        "commonErrors": [
+          "把第二段用酸等同累计酸，漏第一段0.0300 mol。",
+          "见平台CO₂就断定酸恰好2a，忽略过量酸给出相同气量。",
+          "反向求解时忘记先把mL换L确定初碳量。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "mL换L得初CO₃²⁻0.0300 mol，以0<0.0180<0.0300判断第二段。"
+          },
+          {
+            "points": 1,
+            "criterion": "两条阶段净式正确，分别为CO₃²⁻+H⁺→HCO₃⁻与HCO₃⁻+H⁺→CO₂+H₂O。"
+          },
+          {
+            "points": 1,
+            "criterion": "由已生CO₂反求第二段耗酸0.0180，加第一段0.0300得累计H⁺0.0480 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "剩HCO₃⁻0.0120 mol，碳守恒0.0120+0.0180=0.0300 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "平台CO₂0.0300 mol只能推出累计H⁺≥0.0600 mol，不能唯一反推，说明过量酸也给相同气量。"
+          }
+        ]
+      },
+      {
+        "id": "w12-chemistry-quiz-2",
+        "title": "累计2·第10周：符号、条件和两条电子路线",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "写氯水水解的净离子式，说明只知投入0.0200 mol Cl₂为何不能唯一确定HClO量。再写冷稀碱中的净式并查原子、电荷；若0.0200 mol Cl₂实际在足量冷稀碱中完全反应，求Cl⁻、ClO⁻及电子mol，说明Cl价去向。",
+        "answer": "氯水Cl₂+H₂O⇌H⁺+Cl⁻+HClO，缺转化程度不能定HClO；冷稀碱Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O，原子Cl2/O2/H2、电荷−2；两离子各0.0200、电子0.0200 mol。",
+        "steps": [
+          "水解可逆，HCl强拆、HClO弱保留。",
+          "未给平衡或实际转化，投入不是产量。",
+          "冷稀条件下按所给完全反应，总式左右原子Cl2/O2/H2，电荷−2。",
+          "两产物各1份，量各0.0200。",
+          "Cl一个0→−1、一个0→+1，单边转移0.0200 mol，得失不相加。"
+        ],
+        "commonErrors": [
+          "氯水默认全水解。",
+          "歧化电子倍数2。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "氯水净式正确，保留⇌和弱HClO。"
+          },
+          {
+            "points": 1,
+            "criterion": "指出氯水实际水解程度未给，不能由投入量唯一确定HClO。"
+          },
+          {
+            "points": 1,
+            "criterion": "冷、稀条件与正确净式同时给出，原子Cl2/O2/H2和电荷−2核查正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "Cl⁻与ClO⁻各0.0200 mol，系数1∶1。"
+          },
+          {
+            "points": 1,
+            "criterion": "Cl分别0→−1与0→+1，电子0.0200 mol且得失不相加。"
+          }
+        ]
+      },
+      {
+        "id": "w12-chemistry-quiz-3",
+        "title": "累计3·第11周：一份金属铁进入总账",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "纸面模型仅发生Fe+2Fe³⁺→3Fe²⁺，Fe初0.0150 mol、Fe³⁺初0.0400 mol，充分反应。求限制者、两种反应物剩余、Fe²⁺生成及电子mol；指出亚铁的两个来源并查总铁。",
+        "answer": "Fe限制且无剩，Fe³⁺余0.0100 mol；Fe²⁺0.0450 mol，电子0.0300 mol；总铁0.0550 mol。",
+        "steps": [
+          "比较0.0150与0.0400/2=0.0200，Fe限制。",
+          "Fe³⁺耗0.0300、余0.0100；金属全部消耗。",
+          "Fe²⁺来自金属0.0150与Fe³⁺0.0300，共0.0450。",
+          "末铁0.0450+0.0100=0.0550等于初0.0150+0.0400。",
+          "电子从Fe0→+2得0.0150×2=0.0300，Fe³⁺得电子侧同量。"
+        ],
+        "commonErrors": [
+          "产亚铁漏金属份额。",
+          "按产Fe²⁺0.0450算电子。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 4,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "按n/系数判断Fe限制，金属Fe无剩，Fe³⁺余0.0100 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "Fe²⁺0.0450 mol，指出金属0.0150与原Fe³⁺0.0300两个来源。"
+          },
+          {
+            "points": 1,
+            "criterion": "总铁初末均0.0550 mol，核算式正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子0.0300 mol，按实际Fe失2与Fe³⁺得1复核相等且不双计。"
+          }
+        ]
+      },
+      {
+        "id": "w12-chemistry-quiz-4",
+        "title": "累计4·第12周：连续反应、沉淀与最终浓度",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "60.0 mL、0.500 mol/L Fe²⁺与0.0100 mol Cl₂仅按2Fe²⁺+Cl₂→2Fe³⁺+2Cl⁻充分反应。随后加入含0.0900 mol OH⁻的溶液，题定Cl₂先用尽、无剩酸及其他耗OH⁻物种，沉淀期间隔绝空气、无进一步氧化，两种铁分别定量沉淀为Fe(OH)₂与Fe(OH)₃。最终液相体积200.0 mL；M[Fe(OH)₂]=90.0、M[Fe(OH)₃]=107，单位g/mol。求初Fe²⁺和限制者、氧化后两种铁、电子mol；写两条沉淀净式，求总耗OH⁻、混合沉淀质量并核总铁，最后求剩OH⁻及c(OH⁻)。说明无余酸/其他耗碱与隔绝空气、无进一步氧化假设为何重要。",
+        "answer": "初Fe²⁺0.0300 mol，Cl₂限制；氧化后Fe²⁺0.0100、Fe³⁺0.0200 mol；电子0.0200 mol；OH⁻耗0.0800、余0.0100 mol，c=0.0500 mol/L；沉淀总3.04 g。",
+        "steps": [
+          "初Fe²⁺=0.500×0.0600=0.0300 mol；比较0.0300/2=0.0150与0.0100，Cl₂限制并用尽。",
+          "Fe²⁺耗0.0200、余0.0100；Fe³⁺产0.0200，作为下一段初量。",
+          "电子=0.0200×1=0.0200 mol，Cl₂侧0.0100×2相同，不加两边。",
+          "Fe²⁺+2OH⁻→Fe(OH)₂↓；Fe³⁺+3OH⁻→Fe(OH)₃↓；两式电荷均0，OH⁻耗0.0200+0.0600=0.0800 mol。",
+          "两沉淀质量0.0100×90.0=0.900 g与0.0200×107=2.14 g，共3.04 g；Fe总0.0100+0.0200=0.0300 mol。",
+          "OH⁻余0.0900−0.0800=0.0100 mol，除题给最终0.2000 L，c=0.0500 mol/L；题设保证没有额外耗碱和氧化。若有余酸会额外消耗OH⁻；若有进一步氧化，Fe(OH)₂与Fe(OH)₃的分配和质量可能改变。"
+        ],
+        "commonErrors": [
+          "第二段仍把全部铁当初始Fe²⁺。",
+          "把全部沉淀乘107。",
+          "忽略最终体积或余酸条件。"
+        ],
+        "estimatedMinutes": 9,
+        "points": 6,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "n初(Fe²⁺)=0.0300 mol，mL→L正确；以n/系数判Cl₂限制。"
+          },
+          {
+            "points": 1,
+            "criterion": "氧化后Fe²⁺0.0100、Fe³⁺0.0200 mol，明确这两份是沉淀段初量。"
+          },
+          {
+            "points": 1,
+            "criterion": "氧化段电子0.0200 mol，从Fe与Cl₂两侧复核相等，不给无变价沉淀段另加电子。"
+          },
+          {
+            "points": 1,
+            "criterion": "两条沉淀净式正确；按隔绝空气、无其他耗碱模型分别算OH⁻0.0200+0.0600=0.0800 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "两沉淀质量分别0.900和2.14 g，合3.04 g；总铁0.0300 mol核查通过。"
+          },
+          {
+            "points": 1,
+            "criterion": "OH⁻余0.0100 mol，除题给最终液相0.2000 L得0.0500 mol/L；说明无余酸/其他耗碱条件必要。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "累计1：明确逐量两阶段模型，由气量反推时补回第一段耗酸；C守恒与L单位正确，平台只能给累计酸下界，不能当唯一值。",
+        "累计2：氯水⇌、弱HClO保留，冷稀条件与歧化电子倍数1不能错。",
+        "累计3：Fe²⁺必须包含金属Fe来源，总铁和电子量分别核查，不按产物总量误算电子。",
+        "累计4：氧化后两种价态才是沉淀段初量；Cl₂先用尽、无余酸/其他耗碱、隔绝空气等条件不能省。",
+        "累计4：两种沉淀分别乘M、OH⁻先扣消耗再除最终液相L体积，不能套单一价态或初始量。",
+        "总分至少16/20，所有关键条件通过并完成核心和订正，才手动推进。保留首次独立分数；照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w12-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w12-chemistry-section-recall-quantity",
+          "w12-chemistry-section-recall-sodium"
+        ],
+        "action": "先算初碳量a，由0<CO₂<a定位第二段，累计酸=a+已生CO₂；到平台CO₂=a只能知酸≥2a。回查两段净式与C总账。"
+      },
+      {
+        "questionIds": [
+          "w12-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w12-chemistry-section-recall-chlorine",
+          "w12-chemistry-section-conservation"
+        ],
+        "action": "把氯水⇌与冷稀碱→并排，给弱酸圈保留，逐个Cl标去向后单边计电子。"
+      },
+      {
+        "questionIds": [
+          "w12-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w12-chemistry-section-recall-iron",
+          "w12-chemistry-section-conservation"
+        ],
+        "action": "先比较Fe与Fe³⁺的n/系数，标金属贡献，再分开总铁与电子两本账。"
+      },
+      {
+        "questionIds": [
+          "w12-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w12-chemistry-section-recall-quantity",
+          "w12-chemistry-section-recall-iron",
+          "w12-chemistry-section-stage-ledger",
+          "w12-chemistry-section-conservation",
+          "w12-chemistry-section-final-quantity"
+        ],
+        "action": "逐段列前、耗、产、余；把氧化段的两种铁带入两条沉淀式，分别算质量和OH⁻，最后除最终V。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w12-chemistry-review-corrections",
+    "title": "12分钟评分与错因订正",
+    "instructions": [
+      "第1—3分钟：逐条计首次分数，单独核关键条件；分够但关键条件错仍未过关。",
+      "第4—8分钟：挑最多两个根本错点，写“原想法—缺少的条件或规则—正确依据—下次先查什么”，回对应本周小节。",
+      "第9—12分钟：关答案重建关键反应和一组量，用元素、电荷、电子或阶段总账复核。",
+      "12分钟内未解决的卡点记录活动ID，下一可用时段继续补救并独立重做，保留首次成绩和新尝试；不新增第二套20分测，不自动推进。"
+    ]
+  },
+  "nextStep": "完整核心与订正完成，唯一20分短测至少16分且全部关键条件通过后，学习者手动进入下一周。未达标按路由补救、另记重做尝试，不因日历换周自动跳过。",
+  "audioStatus": "未配置音频；概念、题设、解析、图替代文本均可直接阅读。",
+  "mastery": [
+    "把第9周酸量分段、第10周氯水/电子分流、第11周铁价态与限量串成可解释的账本。",
+    "连续反应每段写前、耗、产、余，用上一段终点作为下一段起点。",
+    "逐段核原子与电荷，氧化还原段核电子，跨阶段核C或Fe总量。",
+    "完成唯一20分累计复测且至少16分与关键条件均通过，按真实错因补救后再手动推进。",
+    "能够说明模型边界；首次分与补救后尝试分开，达标再手动推进。"
+  ],
+  "safetyScope": "全部是纸笔理论、给定数据分析与示意图阅读。钠、过氧化钠、氯气、酸、强氧化体系与铁盐不作为购买、混合、加热、制气或检验操作清单；不开展家庭实验。现实反应可能有平衡、传质、空气氧化等影响；定量结果仅在题设理想条件下成立。含氯清洁剂不得与酸性、氨类或其他清洁剂混用。",
+  "sourcePolicy": {
+    "authorship": "全部中文解释、情境、数字、题目、评分与图示原创；沿既定周路线深化，不挪入后续新专题。",
+    "examStatus": "全部为原创教学题，非历年真题；不编教材版本或页码，不预测2028必考内容。",
+    "externalSources": [
+      {
+        "id": "w12-chemistry-source-moles",
+        "title": "OpenStax Chemistry 2e：Reaction Stoichiometry",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+        "kind": "reference",
+        "scopeNote": "核验已配平系数的mol比、质量和浓度换量原则；所有连续段账、数值、题目及评分原创。"
+      },
+      {
+        "id": "w12-chemistry-source-redox",
+        "title": "OpenStax Chemistry 2e：Review of Redox Chemistry",
+        "url": "https://openstax.org/books/chemistry-2e/pages/17-1-review-of-redox-chemistry",
+        "kind": "reference",
+        "scopeNote": "核验原子、电荷与电子核算原则；不引入超出第9—12周的电化学或复杂介质。"
+      },
+      {
+        "id": "w12-chemistry-source-chlorine",
+        "title": "US EPA：Controlling Disinfection By-Products and Microbial Contaminants",
+        "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=30002I5A.TXT",
+        "kind": "reference",
+        "scopeNote": "核验氯水体系及弱酸/平衡背景；本课只复习第10周已有的可逆性，不指导消毒处理。"
+      }
+    ]
+  }
+}

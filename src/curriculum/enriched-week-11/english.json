@@ -1,0 +1,802 @@
+{
+  "id": "w11-英语",
+  "week": 11,
+  "subject": "英语",
+  "title": "简单句与并列句：先把一句站稳，再把两句接好",
+  "revision": "week11-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "识别本课五种基础句型，区别主语表语、双宾语与宾语补足语。",
+    "把完整主干与修饰语分开，辨一个简单句中的并列成分与多个独立分句。",
+    "依语义用and/but/or/so连接分句，修复缺谓语、逗号粘连与重复连接。",
+    "在新语境写结构完整、时间一致、逻辑自然的短段；20分至少16分且关键条件全过。"
+  ],
+  "prerequisites": [
+    "已学第1周三种基础主干、第2—3周时态与一致、第9周性质/方式、第10周介词短语；本课r1重讲所需接口。",
+    "词义卡可查；所有材料原创，非真题；没有音频，不宣称听力或口语掌握，也不编教材章页。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "七槽核心活动不重复预算。忙时拆两个90分钟周期：先前测、补救、正文与四例，再四练、唯一周测、订正。首读、词义、自检、完整答案核对都已计入；超时下一英语学段接续本周，不跳过短文写作/订正、不自动推进、不占第三科预留。",
+    "segments": [
+      {
+        "id": "w11-en-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w11-en-d1",
+          "w11-en-d2",
+          "w11-en-d3"
+        ]
+      },
+      {
+        "id": "w11-en-time2",
+        "title": "前置主干补救",
+        "minutes": 12,
+        "activityIds": [
+          "w11-en-r1"
+        ]
+      },
+      {
+        "id": "w11-en-time3",
+        "title": "七节正文、词义与自检",
+        "minutes": 45,
+        "activityIds": [
+          "w11-en-s1",
+          "w11-en-s2",
+          "w11-en-s3",
+          "w11-en-s4",
+          "w11-en-s5",
+          "w11-en-s6",
+          "w11-en-s7"
+        ]
+      },
+      {
+        "id": "w11-en-time4",
+        "title": "四阶完整例题",
+        "minutes": 24,
+        "activityIds": [
+          "w11-en-ex1",
+          "w11-en-ex2",
+          "w11-en-ex3",
+          "w11-en-ex4"
+        ]
+      },
+      {
+        "id": "w11-en-time5",
+        "title": "四道分层独练",
+        "minutes": 24,
+        "activityIds": [
+          "w11-en-pr1",
+          "w11-en-pr2",
+          "w11-en-pr3",
+          "w11-en-pr4"
+        ]
+      },
+      {
+        "id": "w11-en-time6",
+        "title": "唯一20分迁移周测",
+        "minutes": 26,
+        "activityIds": [
+          "w11-en-quiz1",
+          "w11-en-quiz2",
+          "w11-en-quiz3",
+          "w11-en-quiz4"
+        ]
+      },
+      {
+        "id": "w11-en-time7",
+        "title": "核分、错因回读、订正与出口",
+        "minutes": 40,
+        "activityIds": [
+          "w11-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题各3分钟含读题，只定位不计入20分；每题至少说一个结构理由。",
+    "questions": [
+      {
+        "id": "w11-en-d1",
+        "title": "前测：主干不一定有宾语",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "分别圈主干并判断有无宾语：①The visitors waited outside. ②The room was quiet. ③Bo checked the door. 词义：visitors访客；waited等；outside外面；room房间；quiet安静；checked检查；door门。",
+        "answer": "①The visitors waited，outside补地点，无宾语。②The room was quiet，quiet为表语，无宾语。③Bo checked the door，the door为宾语。",
+        "steps": [
+          "找谓语waited/was/checked。",
+          "分清状态与动作对象。"
+        ],
+        "commonErrors": [
+          "把quiet、outside都当宾语。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w11-en-d2",
+        "title": "前测：时间和中心词",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "The list of jobs ___ ready yesterday. (is/was/were) 词义：list清单；jobs工作；ready准备好的。",
+        "answer": "was。中心list单数，yesterday过去。",
+        "steps": [
+          "括起of jobs。",
+          "单数和过去同时决定was。"
+        ],
+        "commonErrors": [
+          "近处jobs控制were。",
+          "只看单数忘记时间。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w11-en-d3",
+        "title": "前测：性质与方式",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "①The room looks ___ (safe/safely). ②The helpers work ___ (safe/safely). 写两空说明谁。词义：safe安全的；helpers帮手；work工作。",
+        "answer": "safe说明room的性质；safely说明work的方式。",
+        "steps": [
+          "looks在①是系动词。",
+          "②work是动作。"
+        ],
+        "commonErrors": [
+          "两个位置都填副词。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "d1或d2错",
+        "action": "读r1重建主干，在s2核谓语与五种骨架。",
+        "sectionIds": [
+          "w11-en-r1",
+          "w11-en-s2"
+        ]
+      },
+      {
+        "when": "d3错",
+        "action": "r1回顾系表与动作方式，再读s3理解描述对象。",
+        "sectionIds": [
+          "w11-en-r1",
+          "w11-en-s3"
+        ]
+      },
+      {
+        "when": "全部正确",
+        "action": "仍在补救槽解释宾语和表语不同，随后按顺序正文。",
+        "sectionIds": [
+          "w11-en-r1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w11-en-r1",
+      "title": "前置补救：完整意思需要怎样的主干",
+      "level": "remediation",
+      "paragraphs": [
+        "先读三句：“The child sleeps”（孩子睡觉）、“The child reads a book”（孩子读一本书）、“The child is tired”（孩子累）。sleep在此不需要宾语，read有读的对象，is把孩子与tired状态相连。不要为了套主谓宾给每个动词后都硬找宾语。",
+        "普通陈述句需要能承担谓语工作的动词。“The child tired”若想说孩子累，在本课现在状态需补is；“The child reading a book”若想说现在正在读，需is reading。is reading是一整套谓语，不因为里面两个动词词形就数成两个分句。祈使句“Please sit down”（请坐）通常省略可理解的you，这是常见规则，不属漏主语。",
+        "时态和一致仍要检查：The children are tired（复数现在）；The child was tired yesterday（单数过去）。完整主语可能较长，The child near the door中中心仍child。near the door（门旁）不另构成一个句子，不能只按出现多少名词数分句。",
+        "词卡：subject主语S；verb谓语动词V；object宾语O；complement补足成分C；I我，he他，she她，we我们，they他们；me/him/her/us/them相应宾格；and并且，but但是，or或者/否则，so所以；because因为，although尽管；is/are现在系词，was/were过去系词；yesterday昨天，now现在，tomorrow明天，every每一，after在……后，in在……里，at在某时地。前4分钟分三种主干，中4分钟补谓语，后4分钟词卡与自检。"
+      ],
+      "keyPoints": [
+        "谓语可由多个词组成。",
+        "陈述句与祈使句的主语规则不同。"
+      ],
+      "checkpoint": {
+        "question": "“The two workers in the hall working now”若表达现在正在工作，最小修复是什么？hall大厅。",
+        "answer": "The two workers in the hall are working now.",
+        "explanation": "workers复数用are；in the hall是修饰信息，are working合成一套进行谓语。"
+      }
+    },
+    {
+      "id": "w11-en-s1",
+      "title": "完整情境：一次临时搬到室内的读书活动",
+      "level": "core",
+      "paragraphs": [
+        "原创短文《The Reading Corner》：Our team planned a reading corner outside. At six, rain started. The helpers were ready, but the ground was wet. A neighbour gave us a room. We found the room quiet. Lin carried the books and checked the list. The rain became heavier, so we moved indoors. We kept the floor dry. Although the space was small, everyone had a seat. Please bring a lamp, or the back corner will be too dark. 只有书面材料，没有音频。",
+        "词义：team小组；planned计划了；reading corner阅读角；outside外面；rain雨；started开始；helpers帮手；ready准备好；ground地面；wet湿；neighbour邻居；gave给；room房间；found发现/觉得；quiet安静；carried搬；checked检查；list清单；became变得；heavier更大；moved indoors搬到室内；kept保持；floor地板；dry干；although尽管；space空间；everyone每个人；seat座位；lamp灯；back corner后角；dark暗。",
+        "读意：本来要在户外办活动，六点下雨。人已准备好但地面湿；邻居提供房间，大家觉得房间安静。林搬书并核清单，雨变大所以进室内，保持地板干燥。空间虽小仍人人有座。最后请求带灯，否则后角会太暗。过去的安排与最后的未来提醒需要分开。",
+        "这段不是靠长句显得高级：先用短主干把人、动作与状态说清，再用but表示准备好却遇湿地，so表示雨大导致移入，although表达空间小仍坐得下，or提醒不带灯的后果。本节7分钟含读意与自检。"
+      ],
+      "keyPoints": [
+        "句型服务具体事件。",
+        "连词表达事件关系。"
+      ],
+      "checkpoint": {
+        "question": "“A neighbour gave us a room”与“We found the room quiet”中，room和quiet都属于收到的物吗？",
+        "answer": "不是。前句us是接收者、a room是给予物；后句the room是被评价对象，quiet说明房间的状态。",
+        "explanation": "语义关系是分双宾与宾补的入口。"
+      }
+    },
+    {
+      "id": "w11-en-s2",
+      "title": "五种基础骨架：先检查必要位置",
+      "level": "core",
+      "paragraphs": [
+        "本课练五种常见骨架，不把它们说成所有英语结构的全集。SV主谓：“Rain started”（雨开始下）。SVO主谓宾：“Lin checked the list”（林查清单）。SVC主系表：“The ground was wet”（地面湿）。V是谓语位置的简称，具体可为was checking等动词组；SVC中系动词连接主语与表语。",
+        "SVOO主谓双宾：“A neighbour gave us a room”，us为间接宾语（接受者），a room为直接宾语（给出的东西）。SVOC主谓宾宾补：“We kept the floor dry”，the floor为宾语，dry为宾语补足语，说明地板保持什么状态。O与C不是两件被给予的东西。",
+        "先找动词意义，再问它需要哪些关系。sleep此处自己可以完整；give通常需交代给谁/什么的关系，具体宾语可由上下文省略，教学分析用完整句；keep the floor若想表达保持干燥，dry不能丢，否则原意没讲完。不能只看动词后有几个词就判两个宾语。",
+        "许多时间、地点、方式补充不改变本课主干类型：“Lin carefully checked the list after work”仍SVO。但不是所有地点都能随意删，某些动词（如put放置）需要位置补充，本周不把这种结构硬塞五类。本节7分钟含骨架对照与自检。"
+      ],
+      "keyPoints": [
+        "五种骨架是本课基础范围。",
+        "数成分关系，不数单词个数。",
+        "必要补充不能随意删。"
+      ],
+      "checkpoint": {
+        "question": "“The tired helper gave us two heavy boxes”是双宾还是宾补？tired累的；heavy重。",
+        "answer": "SVOO双宾。us接收者，two heavy boxes给予物；tired/heavy修饰名词，不另充当宾语。",
+        "explanation": "长名词组仍可只占一个成分位置。"
+      }
+    },
+    {
+      "id": "w11-en-s3",
+      "title": "双宾和宾补：用两个问题分开",
+      "level": "core",
+      "paragraphs": [
+        "问“谁收到了什么？”适合give us a room：我们获得房间。问“宾语怎样/是什么？”适合find the room quiet：房间安静。可作语义小检验：the room is quiet成立；us is a room不成立。这个检验用于本课明确例句，不替代所有复杂动词分析。",
+        "比较“He gave me a useful tool”（他给我有用工具）与“He made the tool useful”（他使工具变有用）。前者me与tool分别是接收者、物；后者useful描述tool。词卡：tool工具；useful有用；make—made使/制作；give—gave—given给；find—found—found发现；keep—kept—kept保持。",
+        "SVC的表语说明主语，SVOC的宾补说明宾语：“The room became quiet”中quiet说room主语；“We found the room quiet”中quiet说room宾语。不能因为同为quiet就把句型判断相同；先找谁占主语。",
+        "give的双宾句可改“give a room to us”，意思接近但表面结构不再两个裸宾语。不是所有双宾动词都能照搬to，有的需for，有的限制更多；本周不要求背转换全集。学习目标是保留实际给予或状态关系。本节7分钟含自检。"
+      ],
+      "keyPoints": [
+        "双宾：谁收到什么。",
+        "宾补：宾语是什么/怎样。",
+        "表语与宾补看描述对象的句位。"
+      ],
+      "checkpoint": {
+        "question": "判断并解释：①The news made us happy. ②The teacher gave us good news. news消息；happy高兴。",
+        "answer": "①SVOC，happy描述宾语us的状态。②SVOO，us接收者，good news所给消息。",
+        "explanation": "抽象的news也可作给予内容；happy不是收到的第二件物品。"
+      }
+    },
+    {
+      "id": "w11-en-s4",
+      "title": "简单与并列：不要把and当作自动计数器",
+      "level": "core",
+      "paragraphs": [
+        "本课简单句含一个独立分句且没有从属分句，可以有长主语、修饰语或并列成分。“Lin and Bo checked the list”一个复数主语；“Lin carried the books and checked the list”共享一个主语的并列谓语，按本课基础分析仍作简单句。and连接什么，必须看两边结构。",
+        "“Lin carried the books, and Bo checked the list”两边各有自己的主语和完整谓语，两个独立分句由and连接，是并列句。“The helpers near the door were checking the long list carefully”虽然长，仍只有一个主语—谓语关系，没有从属分句，仍简单。",
+        "限定谓语会表达时态/与主语配合；is checking中is与checking合成一套，不数作两个分句。反过来，名词很多不表示分句很多。实际分析先找谁做什么，再标有没有新的独立主谓关系；不要机械数动词字面数量。",
+        "“Although the space was small, everyone had a seat”有从属分句和主句，是复合结构，不算两个并列分句。本周只借because/although说明连接边界，不扩展从句分类全集。本节6分钟含分类自检。"
+      ],
+      "keyPoints": [
+        "and可连词、短语或分句。",
+        "共享主语的并列谓语按本课归简单句。",
+        "独立分句与从属分句不同。"
+      ],
+      "checkpoint": {
+        "question": "①Mei and Yu smiled. ②Mei smiled and waved. ③Mei smiled, and Yu waved. 哪个是并列句？waved挥手。",
+        "answer": "③。①并列主语，②共享主语并列谓语，均按本课归简单句；③两套独立主谓。",
+        "explanation": "出现and本身不够，须看连接单位。"
+      }
+    },
+    {
+      "id": "w11-en-s5",
+      "title": "and、but、or、so：连词由关系决定",
+      "level": "core",
+      "paragraphs": [
+        "and常连接并列事实或顺承：“We checked the chairs, and we opened the door”。but说明与预期相反：“The space was small, but everyone had a seat”。so表示前因后果：“The ground was wet, so we moved indoors”。不能把so方向倒转却说原意不变。",
+        "or既可选一：“We can meet here, or we can meet at the gate”（可在这里或门口见）；也可在提醒后表示否则：“Bring a lamp, or the corner will be dark”（带灯，否则角落会暗）。第二句前面是祈使句，省略you并不缺主语。can可以，gate大门。",
+        "语境有时允许不同连词表达不同重点。题目明确“表达转折”时用but；若未指定，不能把合理的and一概当错。但若写“The ground was wet, so we moved indoors”，就声称因果；原文只是两件同时发生的事时，不能擅自加so制造因果。",
+        "本周分句连接先用最清楚的“完整分句，连词＋完整分句”写法。英语短小并列分句有时可不加逗号，本课练习要求保留逗号主要为看清边界，不据此断言所有无逗号并列句都错。本节6分钟做逻辑自检。"
+      ],
+      "keyPoints": [
+        "and并列/顺承，but转折，so结果。",
+        "or按情境可为选择或否则。",
+        "连接会增加逻辑承诺，不能乱加因果。"
+      ],
+      "checkpoint": {
+        "question": "事实：The bus stopped. We got off. 若题目只给这两件顺承事，and与so哪个更少添加未给因果？stopped停；got off下车。",
+        "answer": "and更少添加因果，只连接顺承；so把停车说成下车原因，需要相应语境。",
+        "explanation": "连词不仅补语法，也界定意义。"
+      }
+    },
+    {
+      "id": "w11-en-s6",
+      "title": "把错句修成完整句：每次只保留一套连接",
+      "level": "core",
+      "paragraphs": [
+        "“The room small”想描述房间小，需“The room is small”或过去语境was。形容词不是本课句子中的限定谓语。“We moving inside”描述正在搬入需are moving或过去were moving；不要用加连词掩盖缺谓语。",
+        "“It rained, we moved inside”在本课规范书面表达中只用逗号粘连两个独立分句，应改“It rained, so we moved inside”，或分成“It rained. We moved inside.”；若只需连接事实也可and，是否因果看题义。分号也能连接相关独立分句，但本周先练句号/连词。",
+        "because使原因分句从属于主句：“Because it rained, we moved inside”；或独立原因接so：“It rained, so we moved inside”。不要在标准目标结构中同时写Because…, so…；although同理：“Although it rained, we stayed”或“It rained, but we stayed”。删连接词后要确保句子完整，不能只剩Because it rained当完整书面回答。",
+        "however（然而）不是本课and/but那样可单靠一个逗号连接独立分句的连词。可写“It was late. However, we continued.”（晚了，然而我们继续）。也可分号加however；本课选择句号方案，不用标点堆复杂句。本节6分钟含修复自检。"
+      ],
+      "keyPoints": [
+        "先补必要谓语，再处理连接。",
+        "逗号本身不承担规范独立分句连接。",
+        "because/so与although/but保留一套。"
+      ],
+      "checkpoint": {
+        "question": "修复“Although the room was small, but we used it”，保留让步关系并给两种方案。",
+        "answer": "Although the room was small, we used it. 或The room was small, but we used it.",
+        "explanation": "两种都保留“小却使用”；不同时堆although和but。"
+      }
+    },
+    {
+      "id": "w11-en-s7",
+      "title": "写完再读四遍：主干、关系、时间、证据",
+      "level": "core",
+      "paragraphs": [
+        "第一遍圈每个分句主语与整套谓语，注意祈使句可省you。第二遍检查动词后对象：接收者/给予物，还是宾语/状态。第三遍检查连词是否合逻辑以及时态是否与语境一致。第四遍核对是否添加原文没有的原因或结论。",
+        "例如“Room A was smaller, but we used it”表达小却使用；改成“Room A was smaller, so we used it”就说小是选择的原因，未必符合材料。“The guide gave us a map”也不能修成“The guide made us a map”而仍声称没改事件，gave给与made制作不同。",
+        "订正标签写具体：“形容词前漏be”“进行谓语漏be”“双宾/宾补关系错”“把并列谓语数成两句”“逗号粘连”“因果反转”“连接标记重复”。一个修改正确还需能说明保留了什么事实，不能只背删but口诀。",
+        "本节6分钟完成综合自检；随后例题、独练、周测中的写作都可用短句。只要信息、结构、关系完整，不要求为“高级”硬塞复杂从句。"
+      ],
+      "keyPoints": [
+        "句子完整是第一关。",
+        "连词会改变逻辑。",
+        "修改必须保留事件与时间。"
+      ],
+      "checkpoint": {
+        "question": "把“The door was locked, so we waited outside”改为because开头，不能保留哪个词？locked锁住；waited等。",
+        "answer": "Because the door was locked, we waited outside. 不再保留so。",
+        "explanation": "because引原因从句，主句we waited outside保持完整，因果方向不变。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w11-en-ex1",
+      "title": "第1阶：同一场景三种骨架",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "判断并标主干：①The audience waited quietly. ②The guide checked the tickets. ③The hall became quiet. 词义：audience观众；quietly安静地；guide引导员；tickets票；hall大厅；became变得。",
+      "answer": "①SV：The audience / waited，quietly方式状语。②SVO：The guide / checked / the tickets。③SVC：The hall / became / quiet，quiet表语。",
+      "steps": [
+        "圈waited/checked/became。",
+        "问动词是否有动作对象。",
+        "became连接大厅与状态，quiet不是被“变”的物。",
+        "去掉方式修饰再验骨架。"
+      ],
+      "commonErrors": [
+        "quietly当宾语。",
+        "quiet当checked式对象。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-en-ex2",
+      "title": "第2阶：词数相似，关系不同",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "分析①Mara sent the visitors a clear message. ②The message made the visitors calm. ③The visitors became calm. 指出句型及calm/两个宾语各说明什么。词义：sent发送；visitors访客；clear清楚；message消息；calm镇定。",
+      "answer": "①SVOO，the visitors接收者，a clear message发送内容。②SVOC，the visitors为宾语，calm描述他们。③SVC，calm描述主语visitors。",
+      "steps": [
+        "①问谁收到什么。",
+        "②检验visitors were calm语义。",
+        "③看visitors已转主语位置。",
+        "calm作用随被描述对象句位变化。"
+      ],
+      "commonErrors": [
+        "看到动词后两组词都判双宾。",
+        "两个calm都说宾补。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-en-ex3",
+      "title": "第3阶：and连接单位与逻辑",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①Ava and Ken carried the chairs. ②Ava carried the chairs and opened the gate. ③Ava carried the chairs, but Ken checked the lights. 判断简单/并列。再把“Rain started. The team went indoors.”按结果关系合成一句。词义：carried搬；chairs椅；gate门；lights灯；indoors室内。",
+      "answer": "①简单句并列主语。②简单句共享主语的并列谓语。③并列句，两套独立主谓并用but突出不同任务。合并：Rain started, so the team went indoors.",
+      "steps": [
+        "找到每个and/but两端的单位。",
+        "①主语并列不等于分句并列。",
+        "②共享主语按本课简单句处理。",
+        "合并保留原因在前、结果在后。"
+      ],
+      "commonErrors": [
+        "看到两个动词就判两句。",
+        "so因果倒置。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-en-ex4",
+      "title": "第4阶：保留信息修复一段说明",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创待修文字：The helpers ready yesterday. The room was dark, we brought two lamps. Although the space was small, but everyone had a seat. 要求①过去状态；②第二句明确因果；③最后保留让步。写完整修订段并解释三处改动。词义：ready就绪；dark暗；brought带来；lamps灯；space空间；seat座位。",
+      "answer": "The helpers were ready yesterday. The room was dark, so we brought two lamps. Although the space was small, everyone had a seat. 最后也可The space was small, but everyone had a seat.",
+      "steps": [
+        "helpers复数＋过去→were。",
+        "第二句两个主谓，因果用so连接。",
+        "第三句although与but保留一套。",
+        "重读保证两盏灯、昨天、每人有座未删。"
+      ],
+      "commonErrors": [
+        "第一句补is忘记过去复数。",
+        "因果改and且未满足指定关系。",
+        "删although和but后仍只逗号粘连。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w11-en-pr1",
+      "title": "独练1：五种骨架齐练",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "标句型：①The baby smiled. ②We opened the box. ③The water feels cold. ④Our friend offered us a seat. ⑤We kept the door open. 词义：baby婴儿；smiled微笑；box盒；water水；feels感觉；cold冷；offered提供；seat座位；kept保持。",
+      "answer": "①SV；②SVO；③SVC；④SVOO；⑤SVOC。④us接收者/a seat所给；⑤open说明door状态。",
+      "steps": [
+        "先主语谓语。",
+        "再问有无对象，及对象后是给予物还是状态。",
+        "③表语与⑤宾补比较。"
+      ],
+      "commonErrors": [
+        "④⑤混淆。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-en-pr2",
+      "title": "独练2：不靠长短和and判句子",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "判断：①The workers near the station checked every box carefully. ②The workers checked the boxes and closed the gate. ③The workers checked the boxes, and the driver waited. ④Because the road was closed, the driver waited. 词义：station车站；gate门；driver司机；road路；closed关闭。",
+      "answer": "①简单；②简单（共享主语并列谓语）；③并列；④复合结构，because从属原因＋主句，不是并列。",
+      "steps": [
+        "暂时括起修饰语。",
+        "确认and左右单位。",
+        "because使一边从属。"
+      ],
+      "commonErrors": [
+        "长句必并列。",
+        "because两边都可找到主谓所以并列。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-en-pr3",
+      "title": "独练3：修句与连接关系",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①The room very warm now. ②We were late, we called the guide.（结果so）③Although the road was long, but we kept walking. ④Take a map, ___ you may get lost.（否则）词义：warm暖；late迟；guide向导；road路；kept walking继续走；map地图；may可能；get lost迷路。",
+      "answer": "①The room is very warm now. ②We were late, so we called the guide. ③Although the road was long, we kept walking. 或The road was long, but we kept walking. ④or。",
+      "steps": [
+        "①补现在单数be。",
+        "②连接两个独立分句。",
+        "③保留一套让步。",
+        "④or提醒否则后果。"
+      ],
+      "commonErrors": [
+        "缺谓语只改标点。",
+        "because…so式重复。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-en-pr4",
+      "title": "独练4：按给定事实写3句",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "把三组事实写成3句完整英语，不增添原因：①昨天车站很忙。②我朋友给我一张地图。③外面下雨，但我们仍等在那里。第②用双宾；第③用but。可用词：station车站，busy忙，friend朋友，give给（过去gave），map地图，rain下雨（过去rained），still仍，wait等（过去waited），there那里。",
+      "answer": "The station was busy yesterday. My friend gave me a map. It rained outside, but we still waited there. 等义且三项事实与指定结构保留可。",
+      "steps": [
+        "①SVC补was。",
+        "②接收者me＋物a map。",
+        "③两个过去主谓用but呈转折。",
+        "检查没有新增因果、未用逗号直接粘连。"
+      ],
+      "commonErrors": [
+        "The station busy。",
+        "me map漏a。",
+        "雨→等写so改变关系。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "一句有and或两个动词就一定并列句。",
+      "why": "and可连主语或共享主语的谓语；动词组也可能由多词构成。",
+      "right": "看是否有两套独立分句与连接单位。"
+    },
+    {
+      "wrong": "动词后两部分都是两个宾语。",
+      "why": "后半也可能描述宾语的状态。",
+      "right": "give me a map双宾；make me happy宾补。"
+    },
+    {
+      "wrong": "中文“人很累”英文可不写be。",
+      "why": "普通状态陈述仍需限定谓语。",
+      "right": "The worker is/was tired，按时间选。"
+    },
+    {
+      "wrong": "逗号可万能接句；because和so一起才完整。",
+      "why": "独立分句有规范连接，从属/并列连接不能机械重复。",
+      "right": "because＋原因，主句；或原因，so＋结果。"
+    }
+  ],
+  "quiz": {
+    "instructions": "唯一20分迁移周测26分钟，首次阅读、词义与作答已计入；四题各5分，按给定关系评分，等义合法答案可。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w11-en-quiz1",
+        "title": "迁移1：辨成分关系",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "写出句型：①The children laughed. ②The leader checked the route. ③The route looked safe. ④The leader gave them a map. ⑤The map made them confident. 并在④标两个宾语、⑤标宾语和宾补。词义：children孩子们；laughed笑；leader带队者；route路线；safe安全；confident有信心。",
+        "answer": "①SV；②SVO；③SVC；④SVOO，them接收者、a map给予物；⑤SVOC，them宾语、confident宾补说明他们有信心。",
+        "steps": [
+          "圈每句谓语。",
+          "前三项辨对象与表语。",
+          "后两项用接收者/状态检验。"
+        ],
+        "commonErrors": [
+          "⑤confident当第二件给予物。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①SV正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②SVO正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③SVC正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "④SVOO且them/a map两宾语标对。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤SVOC且them/confident宾语宾补标对。"
+          }
+        ]
+      },
+      {
+        "id": "w11-en-quiz2",
+        "title": "迁移2：同一个and连接了什么",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "判断简单/并列/含从属结构，并写理由：①The painter and the helper cleaned the wall. ②The painter cleaned the wall and opened the paint tin. ③The painter cleaned the wall, and the helper opened the paint tin. 另完成④The painter ___ working now. ⑤Because the wall was wet, they waited. 属于并列句吗？词义：painter油漆工；helper帮手；wall墙；paint tin油漆罐；wet湿。",
+        "answer": "①简单，and连主语；②简单，共享主语并列谓语；③并列，两个独立主谓；④is（is working一套现在进行谓语）；⑤不是，并含because原因从句与主句。",
+        "steps": [
+          "分析and连接单位。",
+          "now和单数painter确定is。",
+          "because使原因部分从属。"
+        ],
+        "commonErrors": [
+          "两个动词必两分句。",
+          "漏is。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①简单并指出并列主语。"
+          },
+          {
+            "points": 1,
+            "criterion": "②简单并指出共享主语并列谓语。"
+          },
+          {
+            "points": 1,
+            "criterion": "③并列并指出两套独立主谓。"
+          },
+          {
+            "points": 1,
+            "criterion": "④is正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤非并列，辨because从属原因。"
+          }
+        ]
+      },
+      {
+        "id": "w11-en-quiz3",
+        "title": "迁移3：修复天气通知",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "把各项写成完整句并保意：①The roads slippery yesterday.（slippery湿滑）②The bridge was closed, we took another road.（明确结果，用so；bridge桥，another另一）③Although the journey was longer, but we arrived on time.（journey路程；arrived到达；on time准时）④Leave now, ___ you may miss the train.（否则；miss错过）⑤It was cold, however we stayed outside.（用句号修复，保留however；cold冷）",
+        "answer": "①The roads were slippery yesterday. ②The bridge was closed, so we took another road. ③Although the journey was longer, we arrived on time. 或The journey was longer, but we arrived on time. ④Leave now, or you may miss the train. ⑤It was cold. However, we stayed outside.",
+        "steps": [
+          "①过去复数be。",
+          "②因果连接不只逗号。",
+          "③只保留一套让步，且两事件完整。",
+          "④or否则，⑤however用独立句号方案。"
+        ],
+        "commonErrors": [
+          "①was；③删两词却只逗号；⑤仍逗号粘连。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①were，完整保留过去湿滑状态。"
+          },
+          {
+            "points": 1,
+            "criterion": "②so连接且因果、another road保留。"
+          },
+          {
+            "points": 1,
+            "criterion": "③合法一套让步，长路程与准时均保留。"
+          },
+          {
+            "points": 1,
+            "criterion": "④or表达否则。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤句号断开并用However,连接意义。"
+          }
+        ]
+      },
+      {
+        "id": "w11-en-quiz4",
+        "title": "迁移4：从四条事实写一段简讯",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "写3—4句英语，描述练习角色I，不代表真实经历：昨天活动室很吵；朋友给我一个安静房间；我发现这个房间有用；我很累，但完成了报告。要求用一次SVOO、一次SVOC和一次but并列句；不能编成绩或额外因果。词义：activity room活动室；noisy吵；friend朋友；quiet安静；give—gave给；find—found发现/觉得；useful有用；tired累；finish—finished完成；report报告。",
+        "answer": "示例：The activity room was noisy yesterday. My friend gave me a quiet room. I found the room useful. I was tired, but I finished the report. 允许同义合法表达；3句时可合理合并，但不得漏事实、改时间或写逗号粘连。",
+        "steps": [
+          "先列四条事实。",
+          "状态was；give me a room双宾；find the room useful宾补。",
+          "疲累与完成用but连接两个完整分句。",
+          "重读整段检查过去与证据。"
+        ],
+        "commonErrors": [
+          "I tired。",
+          "把gave改made凭空变成建房。",
+          "把but改so新增因果。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "完整表达昨天活动室很吵，过去系表正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "SVOO完整表达朋友给我安静房间，me与a quiet room正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "SVOC完整表达发现房间有用，the room/useful关系正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "完整表达疲累与完成报告，均过去主谓。"
+          },
+          {
+            "points": 1,
+            "criterion": "but正确连接转折，段内无逗号粘连或新增因果。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "quiz1双宾与宾补关系都能解释，不能只猜缩写。",
+        "quiz2区别并列成分/独立分句，进行谓语不漏be。",
+        "quiz3缺谓语、逗号粘连与重复连接均订正，so/or关系正确。",
+        "quiz4两种目标句型与but并列句完整，过去事实不改写成未来或凭空加原因。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w11-en-quiz1"
+        ],
+        "sectionIds": [
+          "w11-en-s2",
+          "w11-en-s3"
+        ],
+        "action": "分别问谁收到什么、宾语是什么状态，并圈出描述对象。"
+      },
+      {
+        "questionIds": [
+          "w11-en-quiz2"
+        ],
+        "sectionIds": [
+          "w11-en-r1",
+          "w11-en-s4"
+        ],
+        "action": "给每个主语配整套谓语，给and左右标连接单位。"
+      },
+      {
+        "questionIds": [
+          "w11-en-quiz3"
+        ],
+        "sectionIds": [
+          "w11-en-s5",
+          "w11-en-s6"
+        ],
+        "action": "先补限定谓语，再用一套连接保留原因/转折/否则关系。"
+      },
+      {
+        "questionIds": [
+          "w11-en-quiz4"
+        ],
+        "sectionIds": [
+          "w11-en-s2",
+          "w11-en-s3",
+          "w11-en-s5",
+          "w11-en-s7"
+        ],
+        "action": "四条事实逐项核对，标SVOO/SVOC/but主谓，最后查时间与证据。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w11-en-review",
+    "title": "40分钟结构订正，已计入核心",
+    "instructions": [
+      "前6分钟核首次20分与关键项；正确却不能标结构的记待确认。",
+      "接着10分钟按错因回读对应节，全部正确者解释双宾/宾补及and的三种连接单位。",
+      "接着12分钟遮答修复错句，并用中文说明改后保留的事件关系。",
+      "再8分钟完成新出口题：The guide gave us a key. The key made us hopeful. 指出两句型与后两成分；修复Because the path was blocked, so we waited. 词义guide向导、key钥匙、hopeful有希望、path小路、blocked堵塞。答案：SVOO，us接收者/a key给予物；SVOC，us宾语/hopeful宾补；Because the path was blocked, we waited. 或The path was blocked, so we waited. 这只是订正迁移，不新增20分。",
+      "最后4分钟记首次/订正分与仍未过结构项，下一英语学段接续该项，不靠高总分跳过关键漏洞。"
+    ]
+  },
+  "mastery": [
+    "五种基础结构可用成分关系解释，不靠字数或动词后词数。",
+    "并列主语、并列谓语与独立分句能区分。",
+    "连接词与标点合逻辑，because/although不机械重复so/but。",
+    "新段落保留完整谓语、过去时间与事实；至少16/20且关键项全过。",
+    "无音频，书面结构表现不代表听说达标。"
+  ],
+  "nextStep": "通过本周关键项后手动进入第12周基础诊断；该周累计20分替换普通周测，不再叠本周额外复测。未过先在下一英语学段补本周路由。",
+  "sourcePolicy": {
+    "authorship": "所有英文情境、语法例句、练习与评分原创；参考只用于核验分句和连接单位，未复制练习。",
+    "examStatus": "所有origin=original，非历年真题；面向河南南阳2028高考备考，不编教材章页，不声称已核验2028题型或分值。",
+    "externalSources": [
+      {
+        "id": "w11-en-ref-clause",
+        "title": "Cambridge Dictionary: Clauses and sentences",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/clauses-and-sentences",
+        "kind": "reference",
+        "scopeNote": "已检索官方正文，核验主句/从属分句和句子范围；本课缩写为基础教学用法。"
+      },
+      {
+        "id": "w11-en-ref-conj",
+        "title": "Cambridge Dictionary: Conjunctions",
+        "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions-subordinating",
+        "kind": "reference",
+        "scopeNote": "已检索官方正文，核验连接可作用于词、短语或分句；课堂句子原创。"
+      }
+    ]
+  },
+  "audioStatus": "没有音频；仅进行书面句型、阅读和写作训练，不能据此认定听力、发音或口语已掌握。"
+}

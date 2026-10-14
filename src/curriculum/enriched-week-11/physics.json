@@ -1,0 +1,833 @@
+{
+  "id": "w11-物理",
+  "week": 11,
+  "subject": "物理",
+  "title": "超重失重与连接体：先问加速度，再查绳和接触约束",
+  "revision": "week11-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "用a方向判断视重，区分N/T与真实mg。",
+    "能由读数求a，但不凭读数擅自判断运动方向。",
+    "水平连接体先整体求共同a，再隔离求内力。",
+    "理想滑轮明确两端a大小相等而方向相反；负T、负N重建模型。"
+  ],
+  "prerequisites": [
+    "第9—10周受力、ΣF=ma、方向与阶段更新。",
+    "沿用第3周恒定a运动公式；不引入非惯性系惯性力或复杂滑轮组。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "忙碌时把全部180分钟拆成两个90分钟周期。A=诊断10+补救15+正文含自检45+例1—3共20；B=例4—5共15+独练25+唯一测验25+订正25。不是只做一半后自动过周；若未达标，下次继续同一错点订正，不挤占第三科90分钟。",
+    "segments": [
+      {
+        "id": "w11-physics-time1",
+        "title": "闭卷诊断",
+        "minutes": 10,
+        "activityIds": [
+          "w11-physics-d1",
+          "w11-physics-d2",
+          "w11-physics-d3"
+        ]
+      },
+      {
+        "id": "w11-physics-time2",
+        "title": "定向补救和自检",
+        "minutes": 15,
+        "activityIds": [
+          "w11-physics-s1"
+        ]
+      },
+      {
+        "id": "w11-physics-time3",
+        "title": "正文理解与全部自检",
+        "minutes": 45,
+        "activityIds": [
+          "w11-physics-s2",
+          "w11-physics-s3",
+          "w11-physics-s4",
+          "w11-physics-s5",
+          "w11-physics-s6",
+          "w11-physics-s7",
+          "w11-physics-s8"
+        ]
+      },
+      {
+        "id": "w11-physics-time4",
+        "title": "五个扶助例题：先尝试再核对",
+        "minutes": 35,
+        "activityIds": [
+          "w11-physics-ex1",
+          "w11-physics-ex2",
+          "w11-physics-ex3",
+          "w11-physics-ex4",
+          "w11-physics-ex5"
+        ]
+      },
+      {
+        "id": "w11-physics-time5",
+        "title": "五题独立练习",
+        "minutes": 25,
+        "activityIds": [
+          "w11-physics-pr1",
+          "w11-physics-pr2",
+          "w11-physics-pr3",
+          "w11-physics-pr4",
+          "w11-physics-pr5"
+        ]
+      },
+      {
+        "id": "w11-physics-time6",
+        "title": "唯一20分周测",
+        "minutes": 25,
+        "activityIds": [
+          "w11-physics-quiz1",
+          "w11-physics-quiz2",
+          "w11-physics-quiz3",
+          "w11-physics-quiz4"
+        ]
+      },
+      {
+        "id": "w11-physics-time7",
+        "title": "评分、回读与遮答案订正",
+        "minutes": 25,
+        "activityIds": [
+          "w11-physics-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "10分钟闭卷，只定位前置漏洞，不计入20分；全部完成后按错因进入s1，做对也快速复述理由。",
+    "questions": [
+      {
+        "id": "w11-physics-d1",
+        "title": "诊断1｜向下减速的a",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "电梯向下运动但速度大小从4 m/s在2 s内均匀降到0。取向上正，求a。",
+        "answer": "a=+2 m/s²，向上。",
+        "steps": [
+          "初速度−4、末速度0，a=(0−(−4))/2=+2。",
+          "减速的a与当时向下v相反。"
+        ],
+        "commonErrors": [
+          "向下运动就写向下a。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w11-physics-d2",
+        "title": "诊断2｜谁对人的力",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "人站在电梯地板上，忽略空气。研究对象是人，列竖直实际力；人的压力是否也画在人身上？",
+        "answer": "人受重力和地板支持力；人对地板压力不画在人身上。",
+        "steps": [
+          "按施受者识别：地球对人重力、地板对人支持。",
+          "人给地板的力受力者是地板。"
+        ],
+        "commonErrors": [
+          "把压力与支持一起加在人上。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w11-physics-d3",
+        "title": "诊断3｜力改变a而非瞬间v",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "光滑面物体以3 m/s向右运动，原有水平拉力突然撤去，无碰撞或冲量。撤去后a、v怎样？",
+        "answer": "a=0，v保持3 m/s向右。",
+        "steps": [
+          "撤力后合外力0，所以a0。",
+          "速度不瞬间清零，之后匀速。"
+        ],
+        "commonErrors": [
+          "撤力等于停车。"
+        ],
+        "estimatedMinutes": 4
+      }
+    ],
+    "routes": [
+      {
+        "when": "诊断1混淆下行减速的a方向。",
+        "action": "回s1按带符号速度末减初，在s3核对四种运动状态。",
+        "sectionIds": [
+          "w11-physics-s1",
+          "w11-physics-s3"
+        ]
+      },
+      {
+        "when": "诊断2把压力加在人身上。",
+        "action": "回s1标施受者，再读s2区分人受支持与人压地板。",
+        "sectionIds": [
+          "w11-physics-s1",
+          "w11-physics-s2"
+        ]
+      },
+      {
+        "when": "诊断3撤力后把速度清零；全对者也复述理由。",
+        "action": "回s6/s8比较节点前后的力与速度，明确无冲量时速度接续。",
+        "sectionIds": [
+          "w11-physics-s1",
+          "w11-physics-s6",
+          "w11-physics-s8"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w11-physics-s1",
+      "title": "补救：先分清速度、加速度和受力对象",
+      "level": "remediation",
+      "paragraphs": [
+        "第9周ΣF=ma中的a是速度的变化率，方向不一定与v相同。电梯向下但减速，a向上；向上但减速，a向下。把速度写成有符号数后末减初最稳妥。",
+        "第6、8周受力清单只列别人对研究对象的力：研究人时列G与地板N，不把人对地板的压力再画在人身上。压力与支持力是作用于不同对象的相互作用力。",
+        "第10周提醒接触与约束有适用条件。地板只能推不能拉，绳只能拉不能推；若算出负支持力或负张力，要否定原约束假设，而非接受负的大小。",
+        "本周以地面近似惯性系、恒质量质点模型分析。用地面观察电梯内物体，不额外添加“惯性力”；所需运动关系仍是第3周同一恒定a阶段公式。"
+      ],
+      "keyPoints": [
+        "向下减速的a向上。",
+        "负N或负T先查模型。"
+      ],
+      "checkpoint": {
+        "question": "取上正，物体v由+5在1 s变成+3 m/s，a方向？",
+        "answer": "a=−2 m/s²，向下。",
+        "explanation": "仍向上运动但减速，v与a反向。"
+      }
+    },
+    {
+      "id": "w11-physics-s2",
+      "title": "视重是什么：秤量的是接触力，不是重力变化",
+      "level": "core",
+      "paragraphs": [
+        "人的真实重力为mg，近地面本课取g不变，质量不变时mg不变。站立式秤响应人压秤的力，其大小等于秤对人的支持力N；测力计悬挂物体则响应张力T。",
+        "为避免把kg显示误当力，本课读数统一用N。若实际秤以kg显示，那是按某标定g把力换算成质量刻度，不能据此说人的真实质量随电梯加速变化。",
+        "人始终与地板接触且相对电梯静止，才与电梯有相同竖直a。取向上正，对人列N−mg=ma，得到N=m(g+a)，其中a必须有符号。",
+        "N>mg叫超重，0<N<mg叫失重，N=mg既不超重也不失重。名称说的是视重，不是地球引力真的改变，也不是直接描述上行或下行。"
+      ],
+      "keyPoints": [
+        "视重看N或T，真实重力看mg。",
+        "先确认人与电梯共同加速度。"
+      ],
+      "checkpoint": {
+        "question": "60 kg人g=10，a=+1 m/s²，N多少，mg多少？",
+        "answer": "N=660 N，mg=600 N。",
+        "explanation": "N−600=60×1；增加的是支持力。"
+      }
+    },
+    {
+      "id": "w11-physics-s3",
+      "title": "四种运动状态，判断只盯a方向",
+      "level": "core",
+      "paragraphs": [
+        "向上加速：v上、a上，所以N>mg超重。向上减速：v上、a下，所以N<mg失重。两种情况都在上行，视重却相反。",
+        "向下加速：v下、a下，失重；向下减速：v下、a上，超重。可见“往下就是失重”的口号失效，正确依据是加速度方向。",
+        "匀速上行、匀速下行或持续静止都有a=0，所以N=mg。只有一个读数，一般只能推出a，不能唯一确定v方向；还需要初速度或位置随时间的记录。",
+        "也可向下正，方程mg−N=ma下，得到N=m(g−a下)。这与上为正完全一致，不要取向下正却继续把向下a当成上正公式中的正数。"
+      ],
+      "keyPoints": [
+        "超重a上，失重a下。",
+        "读数不能单独决定运动方向。"
+      ],
+      "checkpoint": {
+        "question": "50 kg人向下以2 m/s²减速，g=10，N多少？",
+        "answer": "600 N，超重。",
+        "explanation": "a实际向上，N=50×(10+2)。"
+      }
+    },
+    {
+      "id": "w11-physics-s4",
+      "title": "完全失重与脱离接触：零和负数不是一回事",
+      "level": "core",
+      "paragraphs": [
+        "若人和地板一起以g向下加速，N−mg=m(−g)，得N=0，称完全失重；重力仍是mg。这个结论是理论模型，不安排乘电梯或坠落体验。",
+        "若强令人与地板共同向下加速且加速度大小大于g，算出N<0，普通地板无法提供向下拉力，人将脱离地板。脱离后只受重力时人的a为向下g，不能继续假定等于地板a。",
+        "绳也有类似单向约束。测力计或绳读数T≥0；绳松弛时T=0，原来由绳保证的共同运动可能失效。负T不是“反向推力”，而是绷紧假设不成立。",
+        "N=0或T=0时是约束临界或已解除，后续是否保持几何接触要看相对运动。不能只见等于0就断言已经发生有限间隙；明确新阶段条件再算。"
+      ],
+      "keyPoints": [
+        "完全失重时重力仍在。",
+        "负支持/张力需改模型。"
+      ],
+      "checkpoint": {
+        "question": "地板向下a=12 m/s²，g=10，无绑缚的人能靠地板一起获得12吗？",
+        "answer": "不能；会脱离，若只受重力，人向下a=10 m/s²。",
+        "explanation": "地板不能向下拉人，负N不可实现。"
+      }
+    },
+    {
+      "id": "w11-physics-s5",
+      "title": "水平连接体：整体法为什么能先求a",
+      "level": "core",
+      "paragraphs": [
+        "A、B在同一水平直线上由轻且不可伸长的绳连接，绳绷紧且几何约束保证距离不变时，它们具有同向同大小a。先看整体A+B，水平合外力等于(m_A+m_B)a。",
+        "为什么不把两端张力另加？它们是整体内部作用：绳质量忽略且理想时传递等大张力，对所含两物体的作用在总方程相加时抵消。整体图只保留外界作用，不能加一次T又加“内部反T”。",
+        "整体法只能直接求共同运动；想求T，仍必须把A或B单独隔离。注意把两物体并起来不等于可以自动假定共同a，必须先核查绳绷紧和连接方向。",
+        "本课先处理光滑水平面。如果粗糙面题给明确摩擦条件，整体外力也要扣除两物体受到的外部摩擦；不能因为研究整体就把地面摩擦也当内力。"
+      ],
+      "keyPoints": [
+        "共同a有绳约束前提。",
+        "整体只列外力，内部张力不重复计。"
+      ],
+      "checkpoint": {
+        "question": "A、B质量2和3 kg，整体右外力20 N且约束成立，共同a？",
+        "answer": "4 m/s²向右。",
+        "explanation": "20=(2+3)a。"
+      }
+    },
+    {
+      "id": "w11-physics-s6",
+      "title": "再隔离：张力不是把总外力平分",
+      "level": "core",
+      "paragraphs": [
+        "设A在左、B在右，绳绷紧；右端B受向右外力F。A水平方向只有向右T，所以T=m_Aa；B则F−T=m_Ba。把所得T代回另一对象，是检验漏力和质量用错的好办法。",
+        "不能把F除2就说每个物体受F/2，尤其质量不同。总外力是在B上施加，绳只把使A加速所需的那部分传给A；两物体a相同不意味着它们的合力相同。",
+        "若外力改为推动左边A向右，使A趋于靠近B，绳不能被当成刚杆推B。强套共同a可能得到负T；这时绳松弛，分开列两物体方程，直到发生新的事件。",
+        "题说绳断且无额外冲量时，张力立刻为0，而原有速度接续；共同a约束取消。后续若不碰撞，分别计算，不沿用原总质量。"
+      ],
+      "keyPoints": [
+        "整体求a，隔离求T，再另一物体验算。",
+        "绳只能拉不能推；断后分开。"
+      ],
+      "checkpoint": {
+        "question": "A1 kg在左，B2 kg在右；B受9 N右拉，光滑且绷紧，T多少？",
+        "answer": "3 N。",
+        "explanation": "共同a=9/3=3，T=m_Aa=1×3。"
+      }
+    },
+    {
+      "id": "w11-physics-s7",
+      "title": "跨固定滑轮：等的是大小，方向分别选",
+      "level": "core",
+      "paragraphs": [
+        "一根不可伸长轻绳跨固定光滑轻滑轮，两端都悬挂物体且绳绷紧。理想绳/滑轮保证两侧张力大小相等；绳总长度不变，使两端加速度大小相等、方向相反。",
+        "设m重>m轻，重物向下为正、轻物向上为正，各自把同一个非负大小记作a：m重g−T=m重a，T−m轻g=m轻a。相加消T得a=(m重−m轻)g/(m重+m轻)。",
+        "这里相加的是各自方向约定下的标量方程，不能说两个物体在同一个竖直正方向下有相同有向a。若统一上为正，则重物a为−a、轻物为+a。",
+        "求T时回代任一个单物体方程，结果应在两重力大小之间；还需绷紧、未触地/未碰滑轮。碰撞、松绳、滑轮不理想或绳有不可忽略质量，均不能直接沿用本式。"
+      ],
+      "keyPoints": [
+        "两端a大小相同、方向相反。",
+        "等张力由轻绳和理想滑轮条件保证。"
+      ],
+      "checkpoint": {
+        "question": "m轻=1 kg、m重=3 kg、g=10，a、T多少？",
+        "answer": "a=5 m/s²，重物下轻物上；T=15 N。",
+        "explanation": "a=(30−10)/4=5；T=10+1×5=15。"
+      }
+    },
+    {
+      "id": "w11-physics-s8",
+      "title": "把约束和读数当成可检查的条件",
+      "level": "core",
+      "paragraphs": [
+        "解电梯题先对人或悬挂物体列力，再根据a方向解释视重，最后才用已有v谈快慢；没有v信息不猜运动方向。",
+        "解连接体题先确认绳是否绷紧、共同运动的方向关系，再整体或相加求a，隔离求内力，回代另一方程。至少检查T≥0、N≥0和可能碰撞的边界。",
+        "从绳断、松弛或脱离接触开始，旧约束不再使用。无冲量的节点速度连续，受力和a可突变；新段时间必须从节点重新计。",
+        "唯一20分测验分别检查视重、整体隔离、滑轮方向和约束失败。数值16分之外，这几项条件也都必须通过；所有订正安排在本周180分钟中。"
+      ],
+      "keyPoints": [
+        "读数给a，不单独给v。",
+        "约束失败后分别建模。"
+      ],
+      "checkpoint": {
+        "question": "两车断绳后还能只因以前同速就一直用共同a吗？",
+        "answer": "不能。",
+        "explanation": "断绳解除约束；之后各自a由各自外力决定。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w11-physics-ex1",
+      "title": "例1｜下行减速却超重",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "50 kg人始终站在电梯地板上并相对它静止，电梯向下运动但以2 m/s²减速，g=10。求N、判断视重并说明mg。",
+      "answer": "N=600 N，超重；mg始终500 N。",
+      "steps": [
+        "先译状态：v下、a上。",
+        "取上正，N−50×10=50×2。",
+        "N=600>500，超重。",
+        "支持增加不等于质量或重力增加。"
+      ],
+      "commonErrors": [
+        "根据v下判断失重。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w11-physics-ex2",
+      "title": "例2｜测力计读数不足以判断方向",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "2 kg物体悬挂在随电梯运动的轻测力计下，相对电梯静止，读数16 N、g=10。求a；能否单凭读数判断v？若原v=3 m/s向上且状态保持1 s，求末v、位移。",
+      "answer": "a=2 m/s²向下，不能单凭读数定v；末v=1 m/s上、位移2 m上。",
+      "steps": [
+        "上正，T−mg=ma，16−20=2a，a=−2。",
+        "读数决定a；同一a可对应向上减速或向下加速等状态。",
+        "加入v₀=+3后，v=3−2×1=1。",
+        "位移(3+1)×1/2=2 m，1 s内尚未转向。"
+      ],
+      "commonErrors": [
+        "失重便认定向下。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w11-physics-ex3",
+      "title": "例3｜整体求a，再单独求T",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "A左B右，m_A=2 kg、m_B=3 kg，在光滑水平面由绷紧不可伸长轻绳连接。B受20 N向右恒力，忽略绳重。求共同a、T并用B核对。",
+      "answer": "a=4 m/s²向右；T=8 N。",
+      "steps": [
+        "整体水平外力20 N，20=(2+3)a得4。",
+        "隔离A，仅T向右，T=2×4=8。",
+        "隔离B，20−8=3×4=12 N，正确。",
+        "T为正、绳受拉，模型符合；不是20/2=10。"
+      ],
+      "commonErrors": [
+        "用总质量求T。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w11-physics-ex4",
+      "title": "例4｜滑轮两端不能写同一有向a",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "1 kg和3 kg物体由不可伸长轻绳跨固定光滑轻滑轮连接，绳绷紧，由静止释放。g=10，短时间内不触地、不撞滑轮。求a、T及1 s后两者速率。",
+      "answer": "a大小5 m/s²，3 kg下、1 kg上；T=15 N；1 s速率均5 m/s。",
+      "steps": [
+        "3 kg向下正：30−T=3a；1 kg向上正：T−10=a。",
+        "相加20=4a，a5。",
+        "T=10+5=15 N，用重物30−15=3×5验算。",
+        "由静止1 s，速率a×1=5，方向分别下与上。"
+      ],
+      "commonErrors": [
+        "统一上正却把两a都写+5。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w11-physics-ex5",
+      "title": "例5｜绳不能推：负T意味着松弛",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "光滑水平面，A在B左，质量1 kg与2 kg，初静止，间距5 m，由恰绷直但未伸长的轻绳连接。只对左边A施6 N向右恒力。物体按质点，前1 s不碰撞。检验能否共同a，求真实前1 s各运动。",
+      "answer": "共同a假设会给T=−4 N，不可实现；绳松弛，A的a=6 m/s²、1 s末v6 m/s、位移3 m向右；B静止。",
+      "steps": [
+        "若强令共同a，整体6=3a得a=2。",
+        "B受绳应向左，右正−T=2a，得T=−4，违背绳只能拉。",
+        "去掉松绳T，A受6 N所以a6；B无水平力a0。",
+        "A由静止1 s，v6、位移3 m；B位移0，间距仍2 m，未碰撞。",
+        "模型失败改变的是约束，不能把负T改成正4后照算。"
+      ],
+      "commonErrors": [
+        "把绳当杆推B。"
+      ],
+      "estimatedMinutes": 8
+    }
+  ],
+  "practice": [
+    {
+      "id": "w11-physics-pr1",
+      "title": "独练1｜上行减速",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "40 kg人相对电梯静止，电梯向上以3 m/s²减速，g=10。求N、状态、mg。",
+      "answer": "N=280 N，失重；mg=400 N。",
+      "steps": [
+        "上正a=−3，N−400=40×(−3)。",
+        "N280<400，失重但仍可上行。"
+      ],
+      "commonErrors": [
+        "向上就是超重。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w11-physics-pr2",
+      "title": "独练2｜完全失重和负N",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "2 kg无绑缚物体在电梯地板上，g=10。（1）若共同向下a=10，N与mg？（2）若地板向下a=12，能否仍共同加速？",
+      "answer": "（1）N0、mg20 N；（2）不能，负N假设失败；脱离后若只受重力a向下10。",
+      "steps": [
+        "上正代a−10得N−20=−20，N0。",
+        "强令a−12得N−20=−24、N−4，普通地板不能提供。",
+        "脱离后N0，−mg=ma给a−10。"
+      ],
+      "commonErrors": [
+        "完全失重说没有重力。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w11-physics-pr3",
+      "title": "独练3｜换受力端再算张力",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "A左B右，m_A=1 kg、m_B=2 kg，光滑水平面轻绳绷紧。对左边A施9 N向左拉力。求a方向和T；用两个单物体方程核对。",
+      "answer": "a=3 m/s²向左，T=6 N。",
+      "steps": [
+        "取左正，整体9=3a，a3。",
+        "B只受向左T，T=2×3=6。",
+        "A上9−6=1×3，成立。"
+      ],
+      "commonErrors": [
+        "无论拉哪端都用m_Aa。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w11-physics-pr4",
+      "title": "独练4｜另一组滑轮质量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "两物体2 kg与3 kg跨固定光滑轻滑轮，由不可伸长轻绳连接且绷紧，g=10；运动阶段未碰撞。求a与T。",
+      "answer": "a=2 m/s²，3 kg下、2 kg上；T=24 N。",
+      "steps": [
+        "重端30−T=3a；轻端T−20=2a。",
+        "相加10=5a，a2；T20+2×2=24。"
+      ],
+      "commonErrors": [
+        "T等于两个重量平均25。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w11-physics-pr5",
+      "title": "独练5｜断绳不让速度归零",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "A右B左，在光滑面以4 m/s共同向右运动，m_A=2 kg、m_B=1 kg，绷紧轻绳连接，A受6 N右拉。某瞬间绳断且无冲量，前1 s不碰撞。求断后a及1 s后各v。",
+      "answer": "a_A=3 m/s²右、a_B=0；1 s后v_A=7 m/s右、v_B=4 m/s右。",
+      "steps": [
+        "断后T0，A单独a6/2=3，B无水平力a0。",
+        "两者在节点速度均仍4。",
+        "1 s后A4+3=7，B仍4。"
+      ],
+      "commonErrors": [
+        "断后仍用总质量3 kg求a。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "向下运动就是失重。",
+      "why": "视重取决于a，不由v独自决定。",
+      "right": "先译加速/减速，再按a方向判断。"
+    },
+    {
+      "wrong": "完全失重意味着重力消失。",
+      "why": "N0与mg0不是同一回事。",
+      "right": "N0时可仍受mg并向下以g加速。"
+    },
+    {
+      "wrong": "两个物体相连就必有共同a。",
+      "why": "绳可能松弛，几何约束也可能反向。",
+      "right": "先检验绷紧和方向，再使用约束。"
+    },
+    {
+      "wrong": "张力等于总拉力平均分。",
+      "why": "内力取决于被它加速的对象及外力。",
+      "right": "整体求a、隔离求T、另一物体验证。"
+    }
+  ],
+  "quiz": {
+    "instructions": "闭卷25分钟，四题共20分，均为原创教学题、非历年真题。按rubric逐点评分，达到16分且关键条件全部通过才算掌握。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w11-physics-quiz1",
+        "title": "周测1｜视重、速度和真实重力",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "60 kg人站电梯内随它向上运动，但以2 m/s²减速，g=10。取上正，列人受力方程求N，判断超/失重、给mg。若只知此N而不知道速度，能否推出电梯正在上行？",
+        "answer": "N−600=60×(−2)，N=480 N；失重，mg=600 N；单凭N不能定v方向。",
+        "steps": [
+          "向上减速给a=−2。",
+          "N=m(g+a)=60×8=480。",
+          "N<mg说明失重，mg本身仍600。",
+          "向下加速也可有同样a与N，读数不足以确定v。"
+        ],
+        "commonErrors": [
+          "把上行当超重。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "a=−2 m/s²，正确区分速度与加速度。"
+          },
+          {
+            "points": 1,
+            "criterion": "列N−600=60×(−2)。"
+          },
+          {
+            "points": 1,
+            "criterion": "N=480 N且判断失重。"
+          },
+          {
+            "points": 1,
+            "criterion": "真实重力仍600 N向下。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明仅凭N不能判断v方向，可举向下加速同样读数。"
+          }
+        ]
+      },
+      {
+        "id": "w11-physics-quiz2",
+        "title": "周测2｜整体与隔离",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "A左B右，在光滑水平面由绷紧不可伸长轻绳连接，m_A=2 kg、m_B=4 kg。B受18 N右拉。先说明取共同a所需的绳约束；求共同a、T，用B式复核，并解释整体方程为何不另加T。",
+        "answer": "轻绳绷紧且不可伸长，两物体沿同一直线的距离不变，故可取共同加速度。a=3 m/s²右；T=6 N；B上18−6=4×3；整体内力不重复计。",
+        "steps": [
+          "轻绳绷紧且不可伸长，两物体沿同一直线的距离不变，故可取共同加速度。",
+          "整体18=6a，a3。",
+          "隔离A，T=2×3=6。",
+          "B验证12=12。",
+          "绳传递力在整体内，整体仅列外界18 N。"
+        ],
+        "commonErrors": [
+          "T=18/2。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "说明绳绷紧且不可伸长才能取共同a。"
+          },
+          {
+            "points": 1,
+            "criterion": "整体18=(2+4)a得3 m/s²右。"
+          },
+          {
+            "points": 1,
+            "criterion": "隔离A得T=2×3=6 N。"
+          },
+          {
+            "points": 1,
+            "criterion": "用B：18−6=4×3复核。"
+          },
+          {
+            "points": 1,
+            "criterion": "整体方程不重复加内部张力，指出内外力区别。"
+          }
+        ]
+      },
+      {
+        "id": "w11-physics-quiz3",
+        "title": "周测3｜跨滑轮的方向约束",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "2 kg与6 kg物体由不可伸长轻绳跨固定光滑轻滑轮连接，绳绷紧，g=10；当前阶段无碰撞。说明等张力与等大加速度所用的理想约束条件；求a大小方向、T，并把T代回另一物体方程验证，说明两个物体的有向a是否相同。",
+        "answer": "a大小5 m/s²，6 kg下、2 kg上；T=30 N；同一竖直轴下有向a相反。",
+        "steps": [
+          "轻绳跨固定光滑轻滑轮且绷紧，保证两侧张力大小相等、两端加速度大小相同而方向相反。",
+          "重端下正60−T=6a；轻端上正T−20=2a。",
+          "相加40=8a，a5。",
+          "T=20+2×5=30 N；代回重物方程：60−30=6×5=30 N，验证成立。",
+          "绳长约束等大小，两个正方向各自不同；统一上正为−5和+5。"
+        ],
+        "commonErrors": [
+          "不写理想条件就声称两侧T总相等。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "写明轻绳、固定光滑轻滑轮且绷紧的适用条件。"
+          },
+          {
+            "points": 1,
+            "criterion": "分别列60−T=6a与T−20=2a。"
+          },
+          {
+            "points": 1,
+            "criterion": "a=5 m/s²，重物下轻物上。"
+          },
+          {
+            "points": 1,
+            "criterion": "T=30 N且回代成立。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明同一轴下两有向a相反，仅大小相同。"
+          }
+        ]
+      },
+      {
+        "id": "w11-physics-quiz4",
+        "title": "周测4｜外力反向后的绳约束与连续初速度",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "光滑水平面A在B左，m_A=2 kg、m_B=1 kg，初间距4 m，以2 m/s共同向右运动，轻绳原先绷紧。t=0时B所受外力改为6 N向左，此后除绳力外只有B受到这个水平外力；方向改变不产生额外冲量，物体按质点。取右正。（1）若仍假设共同a，求a及从A式得到的T。（2）判断真实绳状态，求各a并说明节点初速度。（3）求0.5 s后各v，并检查这一时段是否发生碰撞。",
+        "answer": "假共同a=−2 m/s²，A式T=2a得T=−4 N，不可实现；绳松弛，A的a=0，B的a=−6 m/s²，节点v均保持+2 m/s。0.5 s后v_A=+2 m/s、v_B=−1 m/s；A位移1 m、B位移+0.25 m，间距3.25 m，尚未碰撞。",
+        "steps": [
+          "先检验旧约束：整体−6=(2+1)a，假共同a=−2 m/s²。",
+          "A所受绳力应向右，T=2a=−4 N；绳不能向左推A，故原绷紧约束失败，不能对负T取绝对值。",
+          "真实T=0，A无水平力故a_A=0；B单独受−6 N，a_B=−6/1=−6 m/s²。",
+          "无额外冲量，节点两者初速度仍为+2 m/s。0.5 s后A仍+2；B为2−6×0.5=−1 m/s，B已转为向左。",
+          "A位移2×0.5=1 m，B位移(2−1)×0.5/2=+0.25 m；间距4+0.25−1=3.25 m。相对距离在这段单调减小且末值仍正，前0.5 s没有碰撞。"
+        ],
+        "commonErrors": [
+          "外力反向时把已有速度也反向或清零。",
+          "把负张力取绝对值，继续假设绷紧。",
+          "B的末速度向左就把整个0.5 s位移也写成向左。"
+        ],
+        "estimatedMinutes": 8,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "在共同a假设下由−6=(2+1)a算得a=−2 m/s²。"
+          },
+          {
+            "points": 1,
+            "criterion": "A的绳力方向应向右，由T=2a得−4 N，指出负T不可实现并判绳松弛。"
+          },
+          {
+            "points": 1,
+            "criterion": "真实T=0，分别列式得a_A=0、a_B=−6 m/s²。"
+          },
+          {
+            "points": 1,
+            "criterion": "节点无冲量，两者初速度均接续为+2 m/s。"
+          },
+          {
+            "points": 1,
+            "criterion": "0.5 s后v_A=+2、v_B=−1 m/s；用位移1 m与+0.25 m得间距3.25 m，确认尚未碰撞。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "周测1必须看a判断失重，mg不变且读数不能唯一给v方向。",
+        "周测2必须先说明绳约束，再整体—隔离，不重复计内力。",
+        "周测3必须注明两端a大小相等而方向相反和理想条件。",
+        "周测4必须否定负T并解除绷紧约束；外力反向时节点速度接续，不可自动清零或反向，且所求时段未碰撞。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w11-physics-quiz1"
+        ],
+        "sectionIds": [
+          "w11-physics-s1",
+          "w11-physics-s2",
+          "w11-physics-s3"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w11-physics-quiz2"
+        ],
+        "sectionIds": [
+          "w11-physics-s5",
+          "w11-physics-s6"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w11-physics-quiz3"
+        ],
+        "sectionIds": [
+          "w11-physics-s5",
+          "w11-physics-s7"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      },
+      {
+        "questionIds": [
+          "w11-physics-quiz4"
+        ],
+        "sectionIds": [
+          "w11-physics-s1",
+          "w11-physics-s4",
+          "w11-physics-s6",
+          "w11-physics-s8"
+        ],
+        "action": "先按本题评分点定位错因，回读所列小节，遮答案重做失分步骤；不新增计分卷。"
+      }
+    ]
+  },
+  "mastery": [
+    "能在地面近似惯性参考系中写清对象、正方向、受力及模型条件。",
+    "能先求合力和加速度，再接运动公式；数值、单位、方向同时正确。",
+    "遇停止、转向、脱离接触或连接变化先重判模型，不能自动延长旧式。",
+    "唯一20分测验至少16分，所有关键条件检查通过，订正后手动推进。"
+  ],
+  "nextStep": "按本课唯一测验完成订正后手动推进；数值对但条件或方向错仍需回读。未完成时保留本周，不自动升周。",
+  "sourcePolicy": {
+    "authorship": "全部讲解与题目为原创教学内容；保留原84周路线的模型，独立逐题复算。",
+    "examStatus": "非历年真题；未据此声称河南或南阳指定教材版本、页码。",
+    "externalSources": [
+      {
+        "title": "NASA Glenn：Newton’s Laws of Motion",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+        "id": "w11-physics-source1",
+        "kind": "reference",
+        "scopeNote": "核验三定律的基础含义；本课限定恒质量、近似惯性参考系，无逐字长引。"
+      },
+      {
+        "title": "OpenStax University Physics 1：6.1 Solving Problems with Newton’s Laws",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws",
+        "id": "w11-physics-source2",
+        "kind": "reference",
+        "scopeNote": "原发布机构教材，核验受力—动力学—运动学与连接体分析框架；题目独立创作。"
+      },
+      {
+        "title": "OpenStax University Physics 1：6.2 Friction",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+        "id": "w11-physics-source3",
+        "kind": "reference",
+        "scopeNote": "核验静摩擦上限和滑动摩擦模型条件。"
+      }
+    ]
+  },
+  "audioStatus": "未生成配音；正文可独立学习。",
+  "reviewActivity": {
+    "id": "w11-physics-review",
+    "title": "25分钟逐点评分与订正",
+    "instructions": [
+      "前5分钟按唯一20分评分表自评并逐项检查关键条件；映射不是另一份考试。",
+      "中间10分钟按错因回所列正文，先改对象、方向和阶段条件，再复算。",
+      "最后10分钟遮住答案重做失分步骤，说明为什么要换模型；仍未过关下次续做。"
+    ]
+  }
+}
