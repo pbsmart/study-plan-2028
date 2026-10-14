@@ -3,9 +3,11 @@ import { createSSRApp } from 'vue'
 import { renderToString } from '@vue/server-renderer'
 import WeekLesson from '../src/components/WeekLesson.vue'
 import OriginalProblem from '../src/components/OriginalProblem.vue'
-import { curriculum } from '../src/curriculum'
+import { curriculum as curriculumIndex, loadStudyWeek } from '../src/curriculum'
 import { adaptCurriculum } from '../src/curriculum/adapter'
 import type { SubjectId } from '../src/model'
+
+const curriculum = await Promise.all(curriculumIndex.map(week => loadStudyWeek(week.week)))
 
 const renderLesson = (week:number,subject:SubjectId) => renderToString(createSSRApp(WeekLesson,{week,subject,lesson:curriculum.find(w=>w.week===week)!.subjects[subject],completed:[]}))
 describe('complete teaching content rendering',()=>{

@@ -1,0 +1,833 @@
+{
+  "id": "w1-物理",
+  "week": 1,
+  "subject": "物理",
+  "title": "单位、位置、位移与路程：先画出运动，再动手计算",
+  "revision": "week01-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能说明数值与单位共同组成物理量，按等量关系换算长度、时间和速度单位。",
+    "能在一维坐标轴上标出正方向、原点和初末位置。",
+    "能用末位置减初位置求位移，并用各段长度相加求路程。",
+    "能用带方向的完整句子报告位移，区分负号与大小。"
+  ],
+  "prerequisites": [
+    "能做整数加减，知道绝对值表示到原点的距离；前测不通过时本课含补救。",
+    "不要求已会速度、加速度公式，本周先把位置和单位学稳。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 10,
+    "busyPolicy": "忙碌时每次投入90分钟，同一学习周可拆成两个可用学习周期。做到哪里记录到哪里，未学完或未达标都留在第1周；不靠跳过订正把180分钟强压成90分钟。",
+    "segments": [
+      {
+        "id": "w1-physics-time1",
+        "title": "前测：找单位、负数和坐标的卡点",
+        "minutes": 10,
+        "activityIds": [
+          "w1-physics-d1",
+          "w1-physics-d2",
+          "w1-physics-d3"
+        ]
+      },
+      {
+        "id": "w1-physics-time2",
+        "title": "按前测补救，或用语言复述基础理由",
+        "minutes": 20,
+        "activityIds": [
+          "w1-physics-s1"
+        ]
+      },
+      {
+        "id": "w1-physics-time3",
+        "title": "读懂坐标、参考系、位移与路程，结合图回答自检",
+        "minutes": 50,
+        "activityIds": [
+          "w1-physics-s2",
+          "w1-physics-s3",
+          "w1-physics-s4",
+          "w1-physics-s5",
+          "w1-physics-s6",
+          "w1-physics-s7"
+        ]
+      },
+      {
+        "id": "w1-physics-time4",
+        "title": "四个例题：先画简图再看步骤",
+        "minutes": 40,
+        "activityIds": [
+          "w1-physics-ex1",
+          "w1-physics-ex2",
+          "w1-physics-ex3",
+          "w1-physics-ex4"
+        ]
+      },
+      {
+        "id": "w1-physics-time5",
+        "title": "六题独立练习，含单位检查",
+        "minutes": 30,
+        "activityIds": [
+          "w1-physics-pr1",
+          "w1-physics-pr2",
+          "w1-physics-pr3",
+          "w1-physics-pr4",
+          "w1-physics-pr5",
+          "w1-physics-pr6"
+        ]
+      },
+      {
+        "id": "w1-physics-time6",
+        "title": "15分钟闭卷短测",
+        "minutes": 15,
+        "activityIds": [
+          "w1-physics-quiz1",
+          "w1-physics-quiz2",
+          "w1-physics-quiz3",
+          "w1-physics-quiz4"
+        ]
+      },
+      {
+        "id": "w1-physics-time7",
+        "title": "逐点评分与错因订正",
+        "minutes": 15,
+        "activityIds": [
+          "w1-physics-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "用10分钟独立做。算错与不会说理由都值得记录；本前测不计入短测分数。随后20分钟补救按routes选择，不再额外加时。",
+    "questions": [
+      {
+        "id": "w1-physics-d1",
+        "title": "长度和时间单位",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "填空：0.8 km=（ ）m；2 min=（ ）s。",
+        "answer": "800 m；120 s。",
+        "steps": [
+          "1 km=1000 m，因此0.8 km=0.8×1000 m=800 m。",
+          "1 min=60 s，因此2 min=2×60 s=120 s。"
+        ],
+        "commonErrors": [
+          "把km到m的倍数写成100。",
+          "把min当成百分制。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w1-physics-d2",
+        "title": "负数相减",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "计算3−(−2)，并说明从数轴−2走到3，向正方向走了几格。",
+        "answer": "5；向正方向5格。",
+        "steps": [
+          "减去负数等于加上它的相反数：3−(−2)=3+2=5。",
+          "数轴上从−2到0走2格，再从0到3走3格，总共5格。"
+        ],
+        "commonErrors": [
+          "把3−(−2)算成1。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w1-physics-d3",
+        "title": "读位置不是读路程",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "在向右为正的数轴上，点A坐标−4 m，点B坐标2 m。A在原点哪边？A、B相距多少？",
+        "answer": "A在原点左侧4 m；A、B相距6 m。",
+        "steps": [
+          "坐标负号表示在所选正方向的反侧，所以A在左侧。",
+          "从−4 m到0是4 m，从0到2 m是2 m，间距共6 m。"
+        ],
+        "commonErrors": [
+          "把−4 m理解成走了负的路。",
+          "跨原点时用4−2。"
+        ],
+        "estimatedMinutes": 4
+      }
+    ],
+    "routes": [
+      {
+        "when": "d1出错",
+        "action": "读s1单位补救，照着“1大单位=多少小单位”写完整等量关系。",
+        "sectionIds": [
+          "w1-physics-s1"
+        ]
+      },
+      {
+        "when": "d2或d3出错",
+        "action": "读s2，用纸画从−4到4的等间隔数轴；先数格，再用减法。",
+        "sectionIds": [
+          "w1-physics-s2"
+        ]
+      },
+      {
+        "when": "三题都对",
+        "action": "在补救时段各口述一次单位换算与负号含义，再开始核心；无需另加机械练习。",
+        "sectionIds": [
+          "w1-physics-s1",
+          "w1-physics-s2"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w1-physics-s1",
+      "title": "补救：单位就是测量用的尺子",
+      "level": "remediation",
+      "paragraphs": [
+        "“这条路长5”信息不够，5米与5千米差得很大。物理量通常要写数值和单位，例如5 m。单位像一把固定长度的尺子：尺子变小，同一段路需要的尺子数量就更多；实际长度没有因换单位而改变。",
+        "先记本课用得上的等量关系：1 km=1000 m，1 m=100 cm；1 min=60 s，1 h=60 min=3600 s。由大单位换成小单位，数值相应增大；反过来相应减小。例如250 cm=250÷100 m=2.5 m。这个直觉只是检查，运算依据仍是等量关系。",
+        "把换算写出来比“乘还是除”猜答案可靠：0.6 km=0.6×1000 m=600 m；90 s=90÷60 min=1.5 min。物理中常用米m和秒s作为长度、时间的国际单位制单位；千米和小时并非不能用，只是同一计算里的单位必须相互匹配。"
+      ],
+      "keyPoints": [
+        "数值和单位一起写。",
+        "换算改变数值，不改变实际物理量。"
+      ],
+      "checkpoint": {
+        "question": "300 cm等于3 m还是30000 m？为什么？",
+        "answer": "3 m。",
+        "explanation": "100 cm拼成1 m，300 cm中有3个100 cm。"
+      }
+    },
+    {
+      "id": "w1-physics-s2",
+      "title": "在数轴上放一个点：位置是“相对哪里”",
+      "level": "core",
+      "paragraphs": [
+        "先画一条直线，选一个点作原点O，再规定一边为正方向，最后标等间距刻度。下文统一以地面固定点为原点，向东为正，每个标数的单位是m。坐标x表示物体相对于原点的位置。",
+        "x=+3 m表示在原点东侧3 m；x=−2 m表示在原点西侧2 m。负号不说明物体正在向西走，也不说明路程为负，它只说明此刻位置在原点哪侧。处在负坐标处的物体也可以正在向东运动。",
+        "两个点之间的直线距离一定不小于0。在同一坐标轴上，从−2 m到+3 m，跨过原点，间距为2 m+3 m=5 m；也可写|3−(−2)| m=5 m。先画图再计算，能检查减去负数时是否漏掉括号。"
+      ],
+      "keyPoints": [
+        "原点、正方向、刻度缺一不可。",
+        "位置是一个时刻的状态，不是完整运动过程。"
+      ],
+      "checkpoint": {
+        "question": "物体位于−5 m，能否据此断言它正在向西运动？",
+        "answer": "不能。",
+        "explanation": "坐标只给当前位置；判断运动方向需要比较不同时间的位置。"
+      }
+    },
+    {
+      "id": "w1-physics-s3",
+      "title": "参考系：先说相对于谁观察",
+      "level": "core",
+      "paragraphs": [
+        "坐在平稳行驶的公交车上，你相对于座椅的位置可能不变，相对于路边站牌的位置却不断改变。描述静止或运动前，需要说明把哪个物体看作参照，这就是选择参考系的起点。",
+        "本周所有数轴题都把地面作为参考系，且原点固定在地面。题目如果已说明“沿同一直线、以站点为原点、向东为正”，就不必另猜坐标规则；把这些信息抄在图边即可。改变原点会改变坐标数值，不能把不同坐标规则下的初末坐标直接相减。",
+        "选择坐标轴是把实际运动翻译成数学语言：先定规则，再写初位置x初和末位置x末。文字说“回到起点”只说明这两个位置相同，不代表整个过程没走路。"
+      ],
+      "keyPoints": [
+        "同一题的初末位置必须用同一原点和正方向。",
+        "本课限定一维直线运动，不把弯道路径当数轴坐标。"
+      ],
+      "checkpoint": {
+        "question": "车上乘客相对座椅静止，相对站牌运动，矛盾吗？",
+        "answer": "不矛盾。",
+        "explanation": "两句话选择的参考系不同。"
+      }
+    },
+    {
+      "id": "w1-physics-s4",
+      "title": "位移：只比较起点和终点",
+      "level": "core",
+      "paragraphs": [
+        "位移描述位置的变化。在同一条直线和同一个坐标系中，位移Δx=x末−x初。符号Δ读作“变化量”，本周把它理解成“末减初”即可。位移关注从哪里到哪里，不记录中途绕了几次。",
+        "如果x初=−2 m、x末=+1 m，则Δx=(1−(−2)) m=+3 m。正号告诉我们末位置在初位置的东侧；位移大小为|Δx|=3 m。报告可以写“位移+3 m，大小3 m，方向向东”。",
+        "如果x初=6 m、x末=1 m，Δx=(1−6) m=−5 m。负号代表与正方向相反，即向西；大小仍为5 m。向西5 m与−5 m在已规定向东为正时表达同一位移，不要同时写“大小−5 m”。",
+        "正方向如果反过来选择，同一运动的位移坐标符号会变，但实际方向没有变。因此带符号的数必须和坐标规则一起阅读。"
+      ],
+      "keyPoints": [
+        "位移=末位置−初位置。",
+        "大小取绝对值，方向看符号和正方向。"
+      ],
+      "checkpoint": {
+        "question": "向东为正，从4 m到−1 m的位移及大小各是多少？",
+        "answer": "位移−5 m，大小5 m，向西。",
+        "explanation": "−1−4=−5；负号只用于表示方向。"
+      }
+    },
+    {
+      "id": "w1-physics-s5",
+      "title": "路程：沿实际走过的各段累计",
+      "level": "core",
+      "paragraphs": [
+        "路程是实际轨迹的长度，不能为负。一维分段运动中，每段的路程是该段两端坐标差的绝对值，再把各段相加。例如先从−2 m向东到6 m，再向西到1 m，第一段8 m，第二段5 m，总路程13 m。",
+        "同一过程的位移只看最初−2 m和最后1 m，得到+3 m。你可以把它想成两种记录：路线记录写“东8 m、西5 m”，位置变化记录写“最终在起点东侧3 m”。两者回答的问题不同。",
+        "结合本课图：上方两支箭头依次画出真实走法，下方直接连接初位置与末位置的箭头表示总位移。不要把两条上方路线的长度相减后称作路程，也不要把13 m称为位移大小。",
+        "回到起点时，x末=x初，所以位移为0；只要确实走动过，路程仍大于0。例如去3 m再原路回3 m，路程6 m，位移0。"
+      ],
+      "keyPoints": [
+        "路程=sum(每段长度)，每段取绝对值。",
+        "位移只由初末位置决定。"
+      ],
+      "checkpoint": {
+        "question": "从0 m到5 m再回0 m，路程与位移各为多少？",
+        "answer": "路程10 m；位移0。",
+        "explanation": "两段各5 m相加；末位置减初位置为0。"
+      }
+    },
+    {
+      "id": "w1-physics-s6",
+      "title": "用图和数量关系自检，而不是背两个口号",
+      "level": "core",
+      "paragraphs": [
+        "在本课一维运动中，路程一定不小于位移大小。没有掉头、始终沿一个方向运动时，两者数值相同；有来回抵消的部分时，路程更大。例如东8 m再西5 m，13 m≥3 m。比较的是“路程”与“位移大小”，不是把非负长度直接和带负号位移比较。",
+        "只给起点与终点通常只能确定总位移，不能唯一确定路程。起点0 m、终点4 m，可能直接走4 m，也可能先到6 m再回4 m，路程8 m。除非题目补充路径或“不反向”之类条件，否则不要自己补故事。",
+        "做题固定四步：画原点和正方向→按顺序标位置→分别列位移与路程式子→检查单位、方向、是否把过程条件补错。算得路程小于位移大小，通常提示漏加路段或坐标运算出错。"
+      ],
+      "keyPoints": [
+        "路程≥位移大小。",
+        "只有端点信息时，路程可能不确定。"
+      ],
+      "checkpoint": {
+        "question": "只知道从−1 m运动到3 m，能确定路程必为4 m吗？",
+        "answer": "不能；只能说路程至少4 m。",
+        "explanation": "可以直走，也可能先远离终点再返回，位移始终为+4 m。"
+      }
+    },
+    {
+      "id": "w1-physics-s7",
+      "title": "速度单位换算：拆开分子和分母",
+      "level": "core",
+      "paragraphs": [
+        "km/h读作“千米每小时”，m/s读作“米每秒”。这里先只学习单位关系，不要求先做完整速度课程。把1 km/h中的长度和时间都换掉：1 km/h=1000 m/3600 s=(1/3.6) m/s。",
+        "因此把54 km/h换成m/s，可写54×1000/3600 m/s=15 m/s；反过来5 m/s=5×3600/1000 km/h=18 km/h。记住3.6的倍数前，先明白它来自3600与1000的比。",
+        "单位检验很有用：长度除时间得到m/s，长度相减得到m。若一道位移题最后写出m/s，说明把量的种类写错；若只换了km却忘记h，结果会差3600倍。"
+      ],
+      "keyPoints": [
+        "km/h到m/s除以3.6；反向乘3.6。",
+        "计算背后是分子、分母一起换单位。"
+      ],
+      "checkpoint": {
+        "question": "36 km/h为什么不是36000 m/s？",
+        "answer": "因为1 h还要换成3600 s，36×1000/3600=10 m/s。",
+        "explanation": "只换长度没有换时间，单位未完全统一。"
+      }
+    },
+    {
+      "id": "w1-physics-s8",
+      "title": "选做：换原点，位移会变吗",
+      "level": "extension",
+      "paragraphs": [
+        "原坐标中初位置−2 m、末位置1 m，位移3 m。现在把原点向西平移5 m，正方向仍向东，则这两个位置的新坐标分别为3 m、6 m；位移仍为6−3=3 m。",
+        "原因是两坐标同时增加同一个数，作差时这个数相消。这说明位置坐标依赖原点，而同一初末位置间的位移不受原点平移影响。仅变原点与改变正方向是不同操作。",
+        "这是10分钟拓展，可在核心达标且还有余力时自己画两条数轴验证；不计入180分钟核心、不作为第1周过关条件。"
+      ],
+      "keyPoints": [
+        "平移原点不改变位移。"
+      ],
+      "checkpoint": {
+        "question": "初末坐标同时加10 m，位移增加多少？",
+        "answer": "不增加。",
+        "explanation": "(x末+10)−(x初+10)=x末−x初。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w1-physics-ex1",
+      "title": "把单位换算写成看得懂的等量关系",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "将1.2 km、150 cm、2.5 min、54 km/h分别换成m、m、s、m/s。",
+      "answer": "1200 m；1.5 m；150 s；15 m/s。",
+      "steps": [
+        "1.2 km=1.2×1000 m=1200 m。",
+        "150 cm=150÷100 m=1.5 m。",
+        "2.5 min=2.5×60 s=150 s。",
+        "54 km/h=54×1000 m/(3600 s)=15 m/s。",
+        "检查大小：km换m数值增大，cm换m数值减小；所有结果都带目标单位。"
+      ],
+      "commonErrors": [
+        "时间按100换算。",
+        "速度只换分子不换分母。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w1-physics-ex2",
+      "title": "从数轴读出方向",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "地面为参考系，向东为正。物体从x初=4 m运动到x末=−3 m。求位移、位移大小及方向；如果过程没有反向，路程多少？",
+      "answer": "位移−7 m，大小7 m，向西；无反向时路程7 m。",
+      "steps": [
+        "画原点，4 m在东侧，−3 m在西侧。",
+        "Δx=x末−x初=(−3−4) m=−7 m。",
+        "取绝对值得大小7 m；负号与向东为正相反，所以向西。",
+        "题目特别给出无反向，所以实际沿西向直走7 m，路程7 m。若缺少此条件，不能唯一确定路程。"
+      ],
+      "commonErrors": [
+        "末减初写成初减末。",
+        "把位移大小写成−7 m。"
+      ],
+      "estimatedMinutes": 8
+    },
+    {
+      "id": "w1-physics-ex3",
+      "title": "往返路径：图上两种箭头回答不同问题",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "沿东西直线，以地面O点为原点、向东为正。物体从A(−2 m)先到B(6 m)，再到C(1 m)。求每段路程、总路程、总位移，并说出方向。请结合“往返中的位移与路程”图。",
+      "answer": "A→B路程8 m，B→C路程5 m；总路程13 m；总位移+3 m，向东。",
+      "steps": [
+        "按运动顺序记坐标：−2→6→1，不能按数值大小重新排序。",
+        "第一段长度|6−(−2)| m=8 m；第二段长度|1−6| m=5 m。",
+        "路程相加：s=8 m+5 m=13 m。",
+        "总位移只取最初与最后：Δx=(1−(−2)) m=+3 m，向东。",
+        "用抵消关系检查：向东8 m与向西5 m抵消后，净向东3 m；13 m≥3 m。"
+      ],
+      "commonErrors": [
+        "总路程错算8−5。",
+        "总位移只算最后一段−5 m。"
+      ],
+      "estimatedMinutes": 12
+    },
+    {
+      "id": "w1-physics-ex4",
+      "title": "只有位置记录，哪些能求，哪些不能",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "某物体沿同一直线运动，向右为正，0 s在2 m处，3 s在8 m处，5 s在−1 m处。①求0至5 s位移。②只凭这些记录能确定总路程吗？③若再补充每个记录间隔内都不反向，求总路程。",
+      "answer": "①−3 m，向左。②不能，只能确定路程至少15 m。③15 m。",
+      "steps": [
+        "总位移=(−1−2) m=−3 m，向左，与中间位置无关。",
+        "0至3 s至少走|8−2|=6 m；3至5 s至少走|−1−8|=9 m。",
+        "两段记录之间仍可能往返，记录没有给出全部路径，所以路程不唯一，但至少6+9=15 m。",
+        "补充各间隔内不反向后，两段长度恰为6 m与9 m，总路程15 m。",
+        "检查本题没有要求用时求速度；时间标签主要告诉位置记录的顺序。"
+      ],
+      "commonErrors": [
+        "把每个记录点之间默认看成一定直达无反向。",
+        "用5−0代替位置差。"
+      ],
+      "estimatedMinutes": 13
+    }
+  ],
+  "practice": [
+    {
+      "id": "w1-physics-pr1",
+      "title": "基础：单位各归其位",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "将0.45 km换成m，240 s换成min，72 km/h换成m/s。",
+      "answer": "450 m；4 min；20 m/s。",
+      "steps": [
+        "0.45×1000=450，单位m。",
+        "240÷60=4，单位min。",
+        "72×1000/3600=20，单位m/s。"
+      ],
+      "commonErrors": [
+        "分钟换算也除以100。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w1-physics-pr2",
+      "title": "基础：负坐标不是负路程",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "向东为正，物体从−6 m到−2 m。求位移及方向，并说明负坐标是否意味着一直向西。",
+      "answer": "位移+4 m，向东；负坐标不意味着向西运动。",
+      "steps": [
+        "末减初：(−2−(−6)) m=+4 m。",
+        "两个位置都在原点西侧，但末位置比初位置更靠东，故净位移向东。"
+      ],
+      "commonErrors": [
+        "看见两个负坐标就答向西。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w1-physics-pr3",
+      "title": "基础：回到起点",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "从0 m向东直走7 m，再原路返回0 m。求路程和位移。",
+      "answer": "路程14 m；位移0。",
+      "steps": [
+        "两个路段的长度都是7 m，相加得14 m。",
+        "初末位置都是0，位移0−0=0。"
+      ],
+      "commonErrors": [
+        "位移为0就说没有运动。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w1-physics-pr4",
+      "title": "应用：带负号报告",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "向右为正，从5 m先到−1 m，再到−4 m，两段均无反向。求路程、位移及位移大小。",
+      "answer": "路程9 m；位移−9 m；位移大小9 m。",
+      "steps": [
+        "第一段长度|−1−5|=6 m，第二段|−4−(−1)|=3 m。",
+        "路程6+3=9 m。",
+        "总位移(−4−5) m=−9 m，大小取绝对值得9 m。"
+      ],
+      "commonErrors": [
+        "路程写−9 m。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w1-physics-pr5",
+      "title": "应用：不能补出的信息",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "某人从坐标1 m到坐标5 m。小林说路程一定是4 m。指出缺少的条件，并举一种路程不为4 m的走法。",
+      "answer": "缺少“不反向/实际路径”条件。例如先从1 m到7 m，再回5 m，路程6+2=8 m。",
+      "steps": [
+        "端点能确定的位移是5−1=4 m。",
+        "构造往返路径1→7→5，始末不变。",
+        "实际路程|7−1|+|5−7|=6+2=8 m，从而说明路程未唯一确定。"
+      ],
+      "commonErrors": [
+        "把一个可行的最短路程当作唯一答案。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w1-physics-pr6",
+      "title": "迁移：检查看似完整的计算",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "向东为正，物体从−3 m先到4 m，再到2 m。某解写“路程=4−(−3)+2−4=5 m，所以位移大小也是5 m”。指出哪部分计算对象错了，给出正确结果。",
+      "answer": "路程应为9 m；位移+5 m、大小5 m。原计算把两段带符号位移相加，算出了总位移，却误叫路程。",
+      "steps": [
+        "第一段长度7 m，第二段长度2 m，路程7+2=9 m。",
+        "原写法7+(−2)=5计算的是位移的代数和。",
+        "总位移也可直接算2−(−3)=+5 m，方向向东。"
+      ],
+      "commonErrors": [
+        "答案数字5有一项正确，就忽略路程推理错误。"
+      ],
+      "estimatedMinutes": 5
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "位置是负数，物体就向负方向运动。",
+      "why": "位置是某一刻在哪，方向需要比较位置变化。",
+      "right": "从−6 m到−2 m仍是向正方向移动。"
+    },
+    {
+      "wrong": "位移大小可以是−5 m。",
+      "why": "大小是非负长度，负号表示方向。",
+      "right": "位移−5 m；大小5 m，方向与正方向相反。"
+    },
+    {
+      "wrong": "路程等于末位置减初位置。",
+      "why": "端点之差会抵消来回路段，路程不能抵消。",
+      "right": "路程逐段取长度后相加；位移末减初。"
+    },
+    {
+      "wrong": "只给两个位置，就知道确切路程。",
+      "why": "两点之间可能往返。",
+      "right": "端点能确定总位移；确切路程还要实际路径条件。"
+    },
+    {
+      "wrong": "1 km/h=1000 m/s。",
+      "why": "只换长度，遗漏了小时换成秒。",
+      "right": "1 km/h=1000/3600 m/s。"
+    }
+  ],
+  "quiz": {
+    "instructions": "限15分钟闭卷。总20分，按每个评分点自行核对。16分及以上还需通过方向与路程两项关键检查；看到答案后写对属于订正，不等于首次独立作答。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w1-physics-quiz1",
+        "title": "单位换算",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "将1.5 km、3 min、36 km/h依次换成m、s、m/s。",
+        "answer": "1500 m；180 s；10 m/s。",
+        "steps": [
+          "1.5×1000=1500 m。",
+          "3×60=180 s。",
+          "36×1000/3600=10 m/s。"
+        ],
+        "commonErrors": [
+          "漏换时间单位。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "长度1500 m"
+          },
+          {
+            "points": 1,
+            "criterion": "时间180 s"
+          },
+          {
+            "points": 2,
+            "criterion": "写出速度分子分母单位换算的过程"
+          },
+          {
+            "points": 1,
+            "criterion": "速度10 m/s"
+          }
+        ]
+      },
+      {
+        "id": "w1-physics-quiz2",
+        "title": "位移的大小与方向",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "向东为正，从3 m到−5 m，求位移、位移大小与方向。",
+        "answer": "位移−8 m；大小8 m；向西。",
+        "steps": [
+          "Δx=(−5−3) m=−8 m。",
+          "大小|−8|=8 m。",
+          "负号表示与向东相反，即向西。"
+        ],
+        "commonErrors": [
+          "大小写负值。"
+        ],
+        "estimatedMinutes": 3,
+        "points": 4,
+        "scoring": [
+          {
+            "points": 2,
+            "criterion": "末减初式子正确且位移−8 m"
+          },
+          {
+            "points": 1,
+            "criterion": "大小8 m"
+          },
+          {
+            "points": 1,
+            "criterion": "方向向西"
+          }
+        ]
+      },
+      {
+        "id": "w1-physics-quiz3",
+        "title": "往返中的两个总量",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "向右为正，从−1 m到5 m，再回2 m，两段各无反向。求总路程和总位移。",
+        "answer": "路程9 m；位移+3 m，向右。",
+        "steps": [
+          "两段长度分别|5−(−1)|=6 m与|2−5|=3 m。",
+          "路程6+3=9 m。",
+          "总位移2−(−1)=+3 m，向右。"
+        ],
+        "commonErrors": [
+          "把回程的长度减掉。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 6,
+        "scoring": [
+          {
+            "points": 2,
+            "criterion": "两段长度6 m和3 m，各1分"
+          },
+          {
+            "points": 2,
+            "criterion": "路程相加得9 m且单位正确"
+          },
+          {
+            "points": 1,
+            "criterion": "总位移+3 m"
+          },
+          {
+            "points": 1,
+            "criterion": "方向向右"
+          }
+        ]
+      },
+      {
+        "id": "w1-physics-quiz4",
+        "title": "判断信息够不够",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "物体沿直线从0 m运动到4 m，途中曾到达6 m。未给出其他路径。能否断言总路程正好8 m？说明可确定的总位移及路程下限。",
+        "answer": "不能断言正好8 m；总位移+4 m；路程至少8 m，可能更长。",
+        "steps": [
+          "从0到6至少6 m，再从6到4至少2 m，因此总路程至少8 m。",
+          "若途中还往返，路程可以更长；材料没有排除。",
+          "总位移只看初末位置，4−0=+4 m。"
+        ],
+        "commonErrors": [
+          "“至少”与“等于”混淆。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "不肯定总路程恰为8 m"
+          },
+          {
+            "points": 1,
+            "criterion": "位移+4 m"
+          },
+          {
+            "points": 2,
+            "criterion": "给出6+2=8 m的下限计算"
+          },
+          {
+            "points": 1,
+            "criterion": "解释可能存在额外往返"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第2题位移符号与方向相符，大小为非负值。",
+        "第3题路程取两段长度之和，不能用位移代数和代替。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w1-physics-quiz1"
+        ],
+        "sectionIds": [
+          "w1-physics-s1",
+          "w1-physics-s7"
+        ],
+        "action": "逐个写出单位等量关系；速度转换要同时写长度和时间。"
+      },
+      {
+        "questionIds": [
+          "w1-physics-quiz2"
+        ],
+        "sectionIds": [
+          "w1-physics-s2",
+          "w1-physics-s4"
+        ],
+        "action": "重画数轴，把末位置和初位置放进有括号的减法，再单独取绝对值。"
+      },
+      {
+        "questionIds": [
+          "w1-physics-quiz3",
+          "w1-physics-quiz4"
+        ],
+        "sectionIds": [
+          "w1-physics-s5",
+          "w1-physics-s6"
+        ],
+        "action": "一行记实际路线，一行只记端点；说明哪行用于路程、哪行用于位移。"
+      }
+    ]
+  },
+  "mastery": [
+    "能独立给单位换算写出依据，而非只背乘除。",
+    "能画同一坐标系下的初末位置并解释负号。",
+    "短测至少16分，且方向与路程两项关键检查均满足。",
+    "隔开一门其他科学习后，能口述“回起点位移为0但路程可非0”的理由。"
+  ],
+  "nextStep": "达标后再在下一学习周学习位置随时间变化和速度；不要用本周打卡代替掌握，也不必抢学加速度。",
+  "sourcePolicy": {
+    "authorship": "全部讲解、数轴图数据、例题、练习和测验为本课程原创基础衔接材料。",
+    "examStatus": "非历年真题；未声称河南指定教材原文或2028考试范围已核验。",
+    "externalSources": []
+  },
+  "reviewActivity": {
+    "id": "w1-physics-review",
+    "title": "按图订正",
+    "instructions": [
+      "逐点评分，错误分类为单位、数轴、末减初、路程累加或条件不足。",
+      "在15分钟内只补本次错因；仍未理解就保持第1周，后续可用时段继续。",
+      "闭上答案，指着图讲一次各箭头的含义。"
+    ]
+  },
+  "diagrams": [
+    {
+      "id": "w1-physics-diagram-route",
+      "title": "往返中的位移与路程",
+      "kind": "number-line",
+      "description": "A在−2 m，先向东8 m到B的6 m处，再向西5 m到C的1 m处。两段路线总长13 m；初位置A到末位置C的位移为+3 m。",
+      "altText": "向东为正的米制数轴。A坐标−2，B坐标6，C坐标1。上方路线箭头A到B标8米向东，B到C标5米向西；下方总位移箭头A到C标正3米向东。总路程13米。",
+      "axis": {
+        "unit": "m",
+        "positiveDirection": "向东",
+        "min": -3,
+        "max": 7,
+        "ticks": [
+          -3,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "points": [
+        {
+          "label": "A（初位置）",
+          "x": -2
+        },
+        {
+          "label": "B（转向点）",
+          "x": 6
+        },
+        {
+          "label": "C（末位置）",
+          "x": 1
+        }
+      ],
+      "route": [
+        {
+          "from": -2,
+          "to": 6,
+          "label": "①向东8 m"
+        },
+        {
+          "from": 6,
+          "to": 1,
+          "label": "②向西5 m"
+        }
+      ],
+      "displacement": {
+        "from": -2,
+        "to": 1,
+        "label": "总位移 +3 m（向东）"
+      },
+      "linkedSectionIds": [
+        "w1-physics-s2",
+        "w1-physics-s4",
+        "w1-physics-s5"
+      ],
+      "asset": "assets/physics-route.svg"
+    }
+  ]
+}

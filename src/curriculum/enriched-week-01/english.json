@@ -1,0 +1,853 @@
+{
+  "id": "w1-英语",
+  "week": 1,
+  "subject": "英语",
+  "title": "主谓宾与基础词性：用短句建立读懂英语的顺序",
+  "revision": "week01-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能借助逐词词义读懂短句，先找谓语动词，再找完整主语和可能的宾语。",
+    "能区分名词、代词、动词、形容词、副词的基本作用，知道词性与句子成分是两个问题。",
+    "能区分主谓宾、主系表、主谓三种入门结构，不把be后的表语或时间短语当宾语。",
+    "能按修饰对象选择careful/carefully，并用够用的be配对和常见第三人称单数形式写对本课短句。"
+  ],
+  "prerequisites": [
+    "认识26个英文字母，能把词与给出的中文词义一一对应；不要求先掌握大量单词。",
+    "准备纸笔，用斜线划短语、圈动词；先作答再展开解析，暂时不会的词可直接查本题词义。",
+    "本课只处理一般现在时的简单肯定陈述句。问句、否定句、时态全套规则和听力训练不在本周核心范围。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 15,
+    "busyPolicy": "完整核心任务需要180分钟。忙碌时拆成两个实际学习周期，各90分钟：周期一前测补救15分钟＋六段教学45分钟＋例题1—4共30分钟；周期二例题5用10分钟＋六道练习30分钟＋短测20分钟＋订正30分钟。第二周期结束前学习序号仍为第1周，不能以90分钟宣称完成180分钟任务。词义查阅、停一停、核对答案均已包含，不额外叠加单词表、抄写或听力任务。补救超时则顺延；可选拓展15分钟不占核心周配额或未选第三科预留时间。",
+    "segments": [
+      {
+        "id": "w1-en-time1",
+        "title": "前测9分钟＋按错因补救6分钟",
+        "minutes": 15,
+        "activityIds": [
+          "w1-en-d1",
+          "w1-en-d2",
+          "w1-en-d3"
+        ]
+      },
+      {
+        "id": "w1-en-time2",
+        "title": "六段教学含词义查阅与停一停",
+        "minutes": 45,
+        "activityIds": [
+          "w1-en-s1",
+          "w1-en-s2",
+          "w1-en-s3",
+          "w1-en-s4",
+          "w1-en-s5",
+          "w1-en-s6"
+        ]
+      },
+      {
+        "id": "w1-en-time3",
+        "title": "例题1—4：逐步遮答模仿",
+        "minutes": 30,
+        "activityIds": [
+          "w1-en-ex1",
+          "w1-en-ex2",
+          "w1-en-ex3",
+          "w1-en-ex4"
+        ]
+      },
+      {
+        "id": "w1-en-time4",
+        "title": "例题5：把短句连成一段",
+        "minutes": 10,
+        "activityIds": [
+          "w1-en-ex5"
+        ]
+      },
+      {
+        "id": "w1-en-time5",
+        "title": "六道独立练习及即时核对",
+        "minutes": 30,
+        "activityIds": [
+          "w1-en-pr1",
+          "w1-en-pr2",
+          "w1-en-pr3",
+          "w1-en-pr4",
+          "w1-en-pr5",
+          "w1-en-pr6"
+        ]
+      },
+      {
+        "id": "w1-en-time6",
+        "title": "闭卷短测4题，共20分",
+        "minutes": 20,
+        "activityIds": [
+          "w1-en-quiz1",
+          "w1-en-quiz2",
+          "w1-en-quiz3",
+          "w1-en-quiz4"
+        ]
+      },
+      {
+        "id": "w1-en-time7",
+        "title": "逐点评分、回读、遮答重做和解释",
+        "minutes": 30,
+        "activityIds": [
+          "w1-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "9分钟完成三题，每题约3分钟。可以查题内词义，不能先看答案；不会写“卡在词义／找动词／分句型”。前测不计分。随后6分钟只补对应段落，再试一次；整段教学会继续讲，不必此刻把所有术语背完。三题全对则用这6分钟说出为什么，不增加新题。",
+    "questions": [
+      {
+        "id": "w1-en-d1",
+        "title": "读什么、谁来读",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "原创句子：She reads books.\n词义：She＝她；reads＝读，是read在本句中的形式；books＝书，复数。\n写出句中谁读书、读的是什么，并把句子译成中文。",
+        "answer": "读书的人是她，读的对象是书；全句意为“她读书”。She是主语，reads是谓语动词，books是宾语。",
+        "steps": [
+          "利用词义先确认动作reads。",
+          "问谁读，找到She；问读什么，找到books。",
+          "按“她—读—书”连起来，不把三个词只当作互不相关的译词。"
+        ],
+        "commonErrors": [
+          "把books看成另一个动作；译出单词却连不成句意。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w1-en-d2",
+        "title": "一个词说人，一个词说方式",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "用careful或carefully填空：①a _____ worker（一个_____工人）；②work _____（_____地工作）。\n词义：a＝一个；worker＝工人；work＝工作，本题是动词；careful＝细心的；carefully＝仔细地。说明每空是在说人还是工作方式。",
+        "answer": "①careful，说工人是什么样的；②carefully，说怎样工作。",
+        "steps": [
+          "先看空格与哪个词有关系：①修饰worker，②修饰work。",
+          "描述人的特点用形容词careful；描述工作方式用副词carefully。",
+          "译回中文分别为“一个细心的工人”“仔细地工作”，验证意思。"
+        ],
+        "commonErrors": [
+          "只因空格在某个位置就猜；将carefully当作描述工人的形容词。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w1-en-d3",
+        "title": "是、做和没有宾语",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "①She _____ a nurse. ②They _____ workers. 两空选is或are。③The baby sleeps. 这句有宾语吗？\n词义：She＝她；They＝他们／她们／它们；is/are＝be的不同形式，此处连接身份；a＝一位；nurse＝护士；workers＝工人，复数；The＝这里特指这个；baby＝婴儿；sleeps＝睡觉，是sleep在本句中的形式。",
+        "answer": "①is，“她是一位护士”。②are，“他们是工人”。③无宾语，“这个婴儿睡觉”。",
+        "steps": [
+          "①主语She是第三人称单数，与is配对。②They是复数，与are配对。",
+          "前两句说明身份，be后的身份信息不是动作对象。",
+          "③sleeps本身说明婴儿在做什么，句后没有动作对象，不需要硬补宾语。"
+        ],
+        "commonErrors": [
+          "认为每个英语句子都要有宾语；给They配is。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "w1-en-d1不能连成句意或找不到动作",
+        "action": "先读s1前两段，把She、reads、books分别对应她、读、书，再按三个问题指认；重做d1。",
+        "sectionIds": [
+          "w1-en-s1"
+        ]
+      },
+      {
+        "when": "w1-en-d2选错，或虽选对却说不出修饰谁",
+        "action": "先读s2对形容词和副词的说明，再读s5第一段；给worker与work画不同的线，重做d2。",
+        "sectionIds": [
+          "w1-en-s2",
+          "w1-en-s5"
+        ]
+      },
+      {
+        "when": "w1-en-d3错在be形式或硬找宾语",
+        "action": "先读s4的三种句型；be形式卡住时看s6的配对规则。分别问“身份是什么”和“动作对象是什么”，再重做d3。",
+        "sectionIds": [
+          "w1-en-s4",
+          "w1-en-s6"
+        ]
+      },
+      {
+        "when": "三题全对",
+        "action": "用6分钟口述词性与成分的差别，并解释为什么“护士”在d3里不是宾语；再按顺序读正文，不额外刷题。",
+        "sectionIds": [
+          "w1-en-s2",
+          "w1-en-s4"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w1-en-s1",
+      "title": "先把词连成一件事，再给关系起名字",
+      "level": "core",
+      "paragraphs": [
+        "本课先读很短的句子，不要求先背术语。She reads books. 词义：She＝她，reads＝读，books＝书（复数）；全句是“她读书”。读懂不只是知道三个词的中文，还要知道谁在读、做什么、读什么。",
+        "英语给这些关系起名：主语是本句谈论的对象，常回答谁或什么；谓语动词说明它做什么或处于什么状态；宾语是某些动词涉及的对象。上句中She是主语，reads是谓语动词，books是宾语。先圈reads，再向前问谁读、向后问读什么，这比从第一个词机械贴标签更可靠。",
+        "有时同一个词换了位置，就承担不同关系。The nurse helps the driver. 词义：The/the＝特指这里的这个，nurse＝护士，helps＝帮助，driver＝司机；译为“这位护士帮助这位司机”。The driver helps the nurse. 词义相同，译为“这位司机帮助这位护士”。nurse两句都是表示人的名词，却先做主语、后做宾语。",
+        "本课只处理简单肯定陈述句，入门时按“完整读句—找动词—问谁—问对象—补时间方式”五步。不把词义逐个译完就停，也不把本课的顺序推广到所有复杂句、问句或省略句。"
+      ],
+      "keyPoints": [
+        "先认动作或状态，再找句内关系。",
+        "同一个名词可在不同句子里做主语或宾语。",
+        "本课“谓语动词”指动词核心，不等于整个谓语部分只有一个词。"
+      ],
+      "checkpoint": {
+        "question": "原创句子：They read books.（They＝他们；read＝读；books＝书，复数。）谁是主语，什么是宾语？",
+        "answer": "They是主语，books是宾语；read是谓语动词。全句意为“他们读书”。",
+        "explanation": "先找read，再问谁读和读什么；不要因不认识术语而忽略自己已经理解的关系。"
+      }
+    },
+    {
+      "id": "w1-en-s2",
+      "title": "词性是词的种类，成分是它在句中做的工作",
+      "level": "core",
+      "paragraphs": [
+        "“名词、动词”等叫词性；“主语、宾语”等叫句子成分。可把词性想成工具的种类，把成分想成这次使用时承担的工作。不能回答“nurse是什么词性”时写“主语”，因为主语是句中关系，换一句位置就可能变。nurse意为护士，在本课例句中是名词。",
+        "先认识五种够用的词性。名词表示人、事物或概念：worker工人、book书。代词常代替名词：I我，you你／你们，he他，she她，it它，we我们，they他们／她们／它们。动词表示动作或状态：read读、work工作、be是／处于某状态；be在句中会变成am、is、are等形式。",
+        "形容词常说明人或事物的特点：a careful worker意为“一个细心的工人”，a＝一个，careful＝细心的，worker＝工人。careful修饰worker。副词常说明动作怎样发生：work carefully意为“仔细地工作”，work＝工作，carefully＝仔细地；carefully修饰work。副词还有其他用法，本周先学说明动作方式这一种。",
+        "还有一些小词帮助名词成组：a/an常引出一个人或一件事，the表示这里特指的对象；my＝我的，his＝他的。它们在本课只要求认懂并留在完整短语里，不开展冠词和限定词的全套分类。不要把每个词硬塞进上面五类。",
+        "判断某个词时分开问两次：词性问“它在这里表示人、动作还是特点／方式”；成分问“它在本句里是谁、动作还是对象”。先写作用，再补名词，不靠英文缩写记忆。"
+      ],
+      "keyPoints": [
+        "词性与句子成分分开回答。",
+        "形容词常说什么样，副词可说怎样做。",
+        "a、the、my等小词也有作用，找完整短语时别漏。"
+      ],
+      "checkpoint": {
+        "question": "在原创句子The nurse reads a book.中，nurse的词性与成分分别是什么？（The＝特指这位；nurse＝护士；reads＝读；a＝一本；book＝书。）",
+        "answer": "nurse是名词；完整主语是The nurse，nurse是其中的中心词。全句意为“这位护士读一本书”。",
+        "explanation": "“名词”说明词的种类；“主语”说明这个名词短语在句中回答谁读。"
+      }
+    },
+    {
+      "id": "w1-en-s3",
+      "title": "把词抱成短语：完整主语不只有一个词",
+      "level": "core",
+      "paragraphs": [
+        "看原创句子The young nurse reads a short story. 词义：The＝特指这位，young＝年轻的，nurse＝护士，reads＝读，a＝一个／一篇，short＝短的，story＝故事；译为“这位年轻护士读一篇短故事”。先找reads，再问谁读，得到The young nurse这一整组，不只是nurse。",
+        "问读什么，得到a short story这一整组。nurse与story是各自短语的中心词，前面的词帮助限定或描述它们。可划为The young nurse / reads / a short story。斜线是在分句子关系，不是让你删掉小词或在朗读中强行停顿。",
+        "现在加上every evening：The young nurse reads a short story every evening. 新词义：every＝每一个，evening＝晚上；every evening＝每天晚上；其余词义同上一句。全句为“这位年轻护士每天晚上读一篇短故事”。every evening回答何时读，是时间信息；读的对象仍是a short story，不能因为evening在动词后就算宾语。",
+        "用中文译句时，可以把时间提前，因为两种语言表达习惯不同；但人物、动作、对象、时间四项不能换关系。先抓nurse—reads—story的中心关系，再带回the、young、a、short与时间信息，比从左到右逐词生硬翻译更稳。"
+      ],
+      "keyPoints": [
+        "找完整成分时包含必要的限定词和修饰语。",
+        "动词后面的名词不一定是宾语，可能在时间短语里。",
+        "翻译可调顺序，不能调换谁做什么的关系。"
+      ],
+      "checkpoint": {
+        "question": "原创句子My brother checks the map every morning.写完整主语、动词、完整宾语和时间短语。（My＝我的；brother＝哥哥或弟弟；checks＝检查／查看；the＝特指这张；map＝地图；every＝每个；morning＝早晨。）",
+        "answer": "My brother / checks / the map；时间短语every morning。译为“我的哥哥／弟弟每天早晨查看地图”。",
+        "explanation": "brother不自带长幼信息，没有背景时可译哥哥／弟弟或兄弟；every morning不是被查看的对象。"
+      }
+    },
+    {
+      "id": "w1-en-s4",
+      "title": "三种句型：有对象、说状态、只有动作",
+      "level": "core",
+      "paragraphs": [
+        "第一种是主语＋谓语动词＋宾语。She checks the box. 词义：She＝她，checks＝检查，the＝特指这个，box＝箱子；译为“她检查这个箱子”。主语She，动作checks，对象the box。检查涉及箱子，箱子是宾语。",
+        "第二种是主语＋系动词＋表语。She is careful. 词义：She＝她，is＝be的形式，在这里连接主语与特点，careful＝细心的；译为“她很细心”。is不是“做细心”这个动作，而是把她和特点连起来，所以careful叫表语，不是宾语。中文常不说“是细心的”，但英语这里仍需要is。",
+        "身份也能作表语。She is a nurse. 词义：She＝她，is＝是，a＝一位，nurse＝护士；译为“她是一位护士”。a nurse是名词短语，却说明她的身份，不是被“是”的对象。可见“名词在动词后”不能自动推出宾语。本课分析时is算谓语动词中的系动词，句型名则叫主系表。",
+        "第三种是主语＋谓语动词。The baby sleeps. 词义：The＝特指这个，baby＝婴儿，sleeps＝睡觉；译为“这个婴儿睡觉”。sleeps已经说明做什么，无需宾语。不要为了凑主谓宾而把baby重写一次或补进bed（床）等句中没有的词。",
+        "判断顺序：先找动词。若是本课表示身份／特点的am、is、are，看后面怎样说明主语；若是checks、reads等动作，再问对象；若像sleeps这样表达完整动作而没有对象，就承认没有宾语。这只覆盖本课三种基础结构，be的其他功能留待后续学习。"
+      ],
+      "keyPoints": [
+        "be后说明身份或特点的是表语，名词也能作表语。",
+        "主谓句本来就可以没有宾语。",
+        "先看动词与后面信息的关系，再定句型。"
+      ],
+      "checkpoint": {
+        "question": "原创句子The worker is careful.有宾语吗？（The＝特指这位；worker＝工人；is＝此处连接主语与特点的be形式；careful＝细心的。）",
+        "answer": "没有宾语。The worker是主语，is是系动词，careful是表语；译为“这位工人很细心”。",
+        "explanation": "careful说明工人怎么样，并非某个动作作用到的对象。"
+      }
+    },
+    {
+      "id": "w1-en-s5",
+      "title": "形容词还是副词：先问它在修饰谁",
+      "level": "core",
+      "paragraphs": [
+        "把同一个意思换两个位置看：She is a careful worker. 词义：She＝她，is＝是，a＝一个／一位，careful＝细心的，worker＝工人；译为“她是一位细心的工人”。careful修饰名词worker。She works carefully. 词义：She＝她，works＝工作，carefully＝仔细地；译为“她工作仔细”。carefully修饰动词works。",
+        "不要只说“名词前用形容词、动词后用副词”就停止思考。She carefully checks the box. 词义：She＝她，carefully＝仔细地，checks＝检查，the＝特指这个，box＝箱子；译为“她仔细地检查这个箱子”。副词这次位于动词前，仍在说明怎样检查。真正依据是修饰关系，而不是左右位置。",
+        "形容词也可跟在本课的be后作表语，如前节She is careful.（She＝她；is＝连接主语与特点；careful＝细心的；译“她很细心”。）此处没有名词紧接在careful后面，但careful仍说明她的特点。遇到空格先问“说谁是什么样，还是说动作怎样做”。",
+        "很多副词由形容词加-ly形成，careful→carefully就是例子；这只是线索，不是通用判定公式。本周核心练好这一个词对即可。更多词尾特例放到可选拓展，不能因词尾规则还没背全而不敢分析句子。"
+      ],
+      "keyPoints": [
+        "careful说人或事物的特点，carefully说动作方式。",
+        "判断看修饰对象，不只看位置或-ly词尾。",
+        "同一词对反复在不同结构中应用，比一次背很多词更重要。"
+      ],
+      "checkpoint": {
+        "question": "填空：She checks the answers _____. 选careful/carefully。（She＝她；checks＝检查；the＝特指这些；answers＝答案，复数；careful＝细心的；carefully＝仔细地。）",
+        "answer": "carefully。译为“她仔细地检查答案”。",
+        "explanation": "空格说明怎样检查，修饰checks，所以选副词；不是描述答案很细心。"
+      }
+    },
+    {
+      "id": "w1-en-s6",
+      "title": "够用的动词形式，再做一次完整阅读",
+      "level": "core",
+      "paragraphs": [
+        "本周只学一般现在时肯定句中够用的配对。be的基本配对：I用am；he、she、it或单数名词主语用is；you、we、they或复数名词主语用are。词义：I我，he他，she她，it它，you你／你们，we我们，they他们／她们／它们；am/is/are都来自be，在本课连接身份或特点。you即使表示一个“你”，也用are。",
+        "看三句原创示范：I am a worker.（I＝我；am＝是；a＝一个；worker＝工人；译“我是一名工人”。）She is a worker.（She＝她；is＝是；a＝一个；worker＝工人；译“她是一名工人”。）They are workers.（They＝他们；are＝是；workers＝工人，复数；译“他们是工人”。）不要给所有主语统一填is。",
+        "一般现在时中，主语是he、she、it或一个人／事物时，许多动作动词要用第三人称单数形式，本周先练四个规则形式：read→reads（读），check→checks（检查），work→works（工作），sleep→sleeps（睡觉）。They read books.（They＝他们；read＝读；books＝书，复数；译“他们读书”。）She reads books.（She＝她；reads＝读；books＝书，复数；译“她读书”。）词尾s不是中文里的“很多次”，而是这里与主语配合的形式。",
+        "两套配对不能混拼：正确She checks the box.（She＝她；checks＝检查；the＝这个；box＝箱子；译“她检查这个箱子”。）若写错句“She is checks the box.”，就是把本课的is和checks硬拼在一起；这里删去is即可。英语有be与其他动词形式配合的结构，但本课不学，不能据此推成“任何句子都不准出现be与其他动词”。",
+        "最后形成固定流程：查懂本句词义→圈谓语动词→围出完整主语→判动作对象或表语→找时间、方式→译成自然中文→核对主语和动词形式。每题用同一顺序。若只是词义不熟，查给定释义后继续；若知道每个词却连不成句，回到前三步，不要靠反复抄句子掩盖结构问题。"
+      ],
+      "keyPoints": [
+        "be：I—am；he/she/it与单数名词—is；you/we/they与复数名词—are。",
+        "一般现在时中常见动作动词按主语配对；本周只练给出的规则形式。",
+        "读句顺序固定，核对词义、结构与形式三个层次。"
+      ],
+      "checkpoint": {
+        "question": "填空：①I _____ careful.（am/is）②She _____ books.（read/reads）词义：I＝我；She＝她；careful＝细心的；books＝书，复数；am/is＝be形式；read/reads＝读。",
+        "answer": "①am，“我很细心”。②reads，“她读书”。",
+        "explanation": "①I与am配对；②She是第三人称单数，在本课一般现在时肯定句中配reads，不再加is。"
+      }
+    },
+    {
+      "id": "w1-en-s7",
+      "title": "可选拓展：词尾线索也有例外",
+      "level": "extension",
+      "paragraphs": [
+        "本节可选15分钟，不计入180分钟核心任务，也不作为短测必过项。核心未达标时先跳过。",
+        "friendly意为“友好的”，虽然以-ly结尾，在这里却是形容词：She is friendly.（She＝她；is＝连接主语与特点；friendly＝友好的；译“她很友好”。）它说明她怎么样，不能仅凭词尾就判副词。",
+        "fast可作形容词，也可作副词。a fast train（a＝一列；fast＝快的；train＝火车；译“一列快车”）中fast修饰名词train。The train runs fast.（The＝特指这列；train＝火车；runs＝行驶；fast＝快地；译“这列火车行驶得快”。）fast说明runs的方式，作副词。这里无需额外加-ly。",
+        "拓展的目的只有一个：遇到新词，查其在当前句中的意义和作用。不要因为这两个例外就一次背完整个词性变化表。"
+      ],
+      "keyPoints": [
+        "-ly是线索，不是定义。",
+        "一个词可因具体用法不同而有不同词性。"
+      ],
+      "checkpoint": {
+        "question": "原创句子The fast train runs fast.两个fast作用相同吗？（The＝特指这列；fast＝快的／快地；train＝火车；runs＝行驶。）",
+        "answer": "不同。第一个fast是形容词，修饰train；第二个是副词，修饰runs。句意是“这列快车行驶得快”。",
+        "explanation": "虽然拼写相同，但要分别问它说明什么；本题属于拓展，不计核心达标。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w1-en-ex1",
+      "title": "第一阶：只抓一个主谓宾",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "原创句子：She reads books.\n词义：She＝她；reads＝读，是read的第三人称单数形式；books＝书，复数。\n找主语、谓语动词、宾语；解释books为什么是宾语，再翻译。",
+      "answer": "主语She，谓语动词reads，宾语books。books回答读什么；全句意为“她读书”。",
+      "steps": [
+        "先不贴标签，只把词义连成“她—读—书”。",
+        "圈出reads，确认它表示本句动作。",
+        "问谁读，指向She；问读什么，指向books。",
+        "对应标签：She主语、reads谓语动词、books宾语。",
+        "核对She与reads的形式；这是本课的一般现在时肯定句，不加is。"
+      ],
+      "commonErrors": [
+        "先背标签却没读懂动作关系；把主语She的词性写成名词，忽略它是代词。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w1-en-ex2",
+      "title": "第二阶：短语变长，关系不变",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创句子：The busy nurse reads a short story every evening.\n词义：The＝特指这位；busy＝忙碌的；nurse＝护士；reads＝读；a＝一篇；short＝短的；story＝故事；every＝每个；evening＝晚上；every evening＝每天晚上。\n写完整主语、谓语动词、完整宾语；判断busy、short的词性和every evening的作用；翻译。",
+      "answer": "主语The busy nurse；谓语动词reads；宾语a short story。busy和short都是形容词，分别修饰nurse、story；every evening是时间状语。译：这位忙碌的护士每天晚上读一篇短故事。",
+      "steps": [
+        "先圈reads，略去修饰暂看nurse—reads—story，读懂主要关系。",
+        "问谁读，把The busy nurse整组圈入，不能只写nurse。",
+        "问读什么，把a short story整组圈入。",
+        "busy说明护士的特点，short说明故事的特点，所以是形容词。",
+        "every evening说明何时读，不是读的对象。译成中文时把时间移到读之前，再检查信息有无漏掉。"
+      ],
+      "commonErrors": [
+        "把every evening并进宾语；找完整主语时漏掉The busy。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w1-en-ex3",
+      "title": "第三阶：同一主语，三种结构",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "分析三个原创句子，分别写句型与宾语或表语；没有宾语要明写。\n①The worker checks the box. ②The worker is careful. ③The worker sleeps.\n词义：The/the＝特指这位／这个；worker＝工人；checks＝检查；box＝箱子；is＝be的形式，此处连接主语与特点；careful＝细心的；sleeps＝睡觉。",
+      "answer": "①主谓宾：The worker为主语，checks为谓语动词，the box为宾语，意为“这位工人检查这个箱子”。②主系表：The worker为主语，is为系动词，careful为表语，无宾语，意为“这位工人很细心”。③主谓：The worker为主语，sleeps为谓语动词，无宾语，意为“这位工人睡觉”。",
+      "steps": [
+        "三句主语整体相同，先统一圈出The worker。",
+        "①checks表示检查，the box回答检查什么，所以有宾语。",
+        "②is把工人与careful这个特点相连；不存在“细心被检查”一类动作关系，所以careful是表语。",
+        "③sleeps已经表达动作，后面没有对象，不必补任何词。",
+        "比较可知，句型取决于动词与后面内容的关系，不由是否出现名词简单决定。"
+      ],
+      "commonErrors": [
+        "把careful当宾语；认为③缺宾语所以是病句。"
+      ],
+      "estimatedMinutes": 8
+    },
+    {
+      "id": "w1-en-ex4",
+      "title": "第四阶：词性与形式一起检查",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "填空并说明修饰对象，再改正③。\n①She is a _____ worker.（careful/carefully）\n②She _____ every box carefully.（check/checks）\n③错误句：She is checks the box.\n词义：She＝她；is＝是／be的形式；a＝一个；worker＝工人；careful＝细心的；carefully＝仔细地；check/checks＝检查；every＝每个；box＝箱子；the＝特指这个。",
+      "answer": "①careful，修饰worker；意为“她是一位细心的工人”。②checks，She配第三人称单数形式；carefully修饰checks，意为“她仔细地检查每个箱子”。③改为She checks the box.，意为“她检查这个箱子”；删去多余的is。",
+      "steps": [
+        "①先看空格说明谁：它说明worker的特点，用形容词careful；a careful worker整体是身份表语。",
+        "②先选句子动词。动作是检查，主语She是第三人称单数，所以本句用checks。",
+        "②句末carefully说明怎样检查，而不是箱子怎么样。",
+        "③本句已有动作谓语checks；它不是本周主系表句，不能再硬加is。",
+        "重读三个正确句：先判关系，再核对形式，两道检查互不替代。"
+      ],
+      "commonErrors": [
+        "以为句中只要有She就必须加is；把carefully用来直接修饰worker。"
+      ],
+      "estimatedMinutes": 9
+    },
+    {
+      "id": "w1-en-ex5",
+      "title": "第五阶：从三句话读出一个人的活动",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创短文：My brother is a driver. He checks his map before work. He works carefully.\n词义：My＝我的；brother＝哥哥或弟弟；is＝是；a＝一位；driver＝司机；He＝他；checks＝查看／检查；his＝他的；map＝地图；before＝在……之前；work＝工作，before work中用作名词；works＝工作，动词；carefully＝仔细地。\n回答：此人做什么职业？工作前做什么？工作方式怎样？再分析第二句的主语、动词、宾语和时间短语，并说明work/works在两处的作用。",
+      "answer": "他是司机；工作前查看自己的地图；工作很仔细。第二句：He为主语，checks为谓语动词，his map为宾语，before work为时间状语。before work中的work是名词，表示工作这件事；第三句works是动词，说明他做什么。全段译：我的哥哥／弟弟是一名司机。他工作前查看自己的地图。他工作很仔细。",
+      "steps": [
+        "第一句用is连接人物与职业，a driver是表语，确定此人是司机。",
+        "后两句He承接前面的brother，在这段短文中指同一个人。",
+        "第二句先圈checks，再找对象his map；before work回答何时查看，因此不并入宾语。",
+        "第三句works是动作，carefully说明方式，无须硬找宾语。",
+        "比较work与works：不能仅看中文都译为工作就认定词性相同，要看各自在句里承担的作用。",
+        "最后按问题顺序答职业、工作前动作、工作方式；不补材料没说的地点或工作时间。"
+      ],
+      "commonErrors": [
+        "把before work中的work当第二个谓语；只译句子却没按三个问题逐项回答。"
+      ],
+      "estimatedMinutes": 10
+    }
+  ],
+  "practice": [
+    {
+      "id": "w1-en-pr1",
+      "title": "基础：分别答词性与成分",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "原创句子：The nurse checks the list.\n词义：The/the＝特指这位／这份；nurse＝护士；checks＝检查；list＝名单。\n写完整主语、谓语动词、完整宾语；另答nurse与checks的词性，并翻译。",
+      "answer": "主语The nurse，谓语动词checks，宾语the list。nurse是名词，checks是动词。译：这位护士检查这份名单。",
+      "steps": [
+        "圈checks，向前问谁检查，向后问检查什么。",
+        "完整主语和宾语保留the。",
+        "另起一行回答词性：nurse表示人，checks表示动作；不用主语、谓语来代替词性名称。"
+      ],
+      "commonErrors": [
+        "把nurse的词性写成主语；漏掉完整短语中的the。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w1-en-pr2",
+      "title": "基础：be配对与无宾语句",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "①I _____ a worker. ②They _____ careful. 两空在am/is/are中选。③The baby sleeps. 说明③有无宾语。\n词义：I＝我；They＝他们；am/is/are＝be的形式，此处连接身份或特点；a＝一个；worker＝工人；careful＝细心的；The＝这个；baby＝婴儿；sleeps＝睡觉。",
+      "answer": "①am，“我是一名工人”。②are，“他们很细心”。③无宾语，“这个婴儿睡觉”。",
+      "steps": [
+        "I固定与am配对；They在本课与are配对。",
+        "①身份、②特点都通过be说明主语。",
+        "③sleeps是完整的动作表达，原句没提供也不需要对象。"
+      ],
+      "commonErrors": [
+        "认为careful必须变carefully才能放在be后；给每句都编一个宾语。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w1-en-pr3",
+      "title": "应用：形容词与副词换位置",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "选择careful或carefully：①The _____ worker checks the box. ②The worker _____ checks the box. ③The worker is _____. 每空说明修饰谁或说明谁。\n词义：The/the＝特指这位／这个；worker＝工人；checks＝检查；box＝箱子；is＝连接主语与特点；careful＝细心的；carefully＝仔细地。",
+      "answer": "①careful，修饰worker；“这位细心的工人检查这个箱子”。②carefully，修饰checks；“这位工人仔细地检查这个箱子”。③careful，作表语说明worker的特点；“这位工人很细心”。",
+      "steps": [
+        "①空格在名词短语内，描述工人，选形容词。",
+        "②空格说明检查方式，虽在动词前也应选副词。",
+        "③be后说明人的特点，用形容词；不把“动词后都用副词”当规则。"
+      ],
+      "commonErrors": [
+        "按前后位置选词，不看修饰关系；③误用carefully。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w1-en-pr4",
+      "title": "应用：时间不能挤进宾语",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创句子：My brother carefully checks the answers every evening.\n词义：My＝我的；brother＝哥哥或弟弟；carefully＝仔细地；checks＝检查；the＝特指这些；answers＝答案，复数；every＝每个；evening＝晚上；every evening＝每天晚上。\n写出完整主语、谓语动词、完整宾语、方式副词、时间短语并翻译。",
+      "answer": "主语My brother；谓语动词checks；宾语the answers；方式副词carefully；时间短语every evening。译：我的哥哥／弟弟每天晚上仔细地检查答案。",
+      "steps": [
+        "先锁定checks，主语是My brother而不是附近的carefully。",
+        "检查什么是the answers，到这里动作对象已完整。",
+        "carefully回答怎样检查，every evening回答何时检查。",
+        "译文先写人物与主要动作，再加时间、方式，不遗漏任何一项。"
+      ],
+      "commonErrors": [
+        "把carefully纳入主语；把every evening并入宾语。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w1-en-pr5",
+      "title": "迁移：同一个词干在不同位置",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创句子：①The workers work carefully. ②They check the map before work.\n词义：The/the＝特指这些／这张；workers＝工人，复数；work＝工作；carefully＝仔细地；They＝他们；check＝查看；map＝地图；before＝在……之前；before work＝工作前。\n分别指出两句中work的词性，写两句谓语动词，再说明②的宾语是什么。",
+      "answer": "①work是动词，谓语动词也是work；译“这些工人工作仔细”。②before work中的work是名词，谓语动词是check，宾语the map；译“他们工作前查看地图”。",
+      "steps": [
+        "①workers表示人，是主语中心；work说明他们做什么，所以是动词。",
+        "②先找主要动作check，对象the map。",
+        "before work整体表示时间，work在这个短语里表示工作这件事，不是本句谓语。",
+        "两个主语都是复数，因此本课用work、check，不给它们加第三人称单数s。"
+      ],
+      "commonErrors": [
+        "把所有拼写为work的词都判成动词；把①workers中的s误认为谓语三单。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w1-en-pr6",
+      "title": "迁移：修句并解释结构",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "以下均为有错误的练习句，请改正并说理由：①She are a careful driver. ②He is reads books. ③They work careful.\n词义：She＝她；He＝他；They＝他们；are/is＝be的形式；a＝一位；careful＝细心的；driver＝司机；reads＝读；books＝书，复数；work＝工作；正确替换可能用carefully＝仔细地。",
+      "answer": "①She is a careful driver.（她是一位细心的司机。）②He reads books.（他读书。）③They work carefully.（他们工作仔细。）",
+      "steps": [
+        "①说身份，保留be；但She需配is，把are改为is。",
+        "②说动作，reads已是配He的谓语动词，删去is，不能改成He is read books。",
+        "③说明怎样工作，修饰动词work，用副词carefully。",
+        "逐句核对主语、动词与其后内容，避免一种改法机械套三句。"
+      ],
+      "commonErrors": [
+        "把所有is都删掉；把错误②改为另一个混拼句；只写答案不说明修饰关系。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "名词就是主语，动词后面的名词就是宾语。",
+      "why": "词性与成分不是一回事；名词短语还可能在be后说明身份。",
+      "right": "She is a nurse.（She她；is是；a一位；nurse护士；译“她是一位护士”。）a nurse是表语，不是宾语。"
+    },
+    {
+      "wrong": "英语句子必须凑齐主谓宾。",
+      "why": "本课的主谓句和主系表句都可以没有宾语。",
+      "right": "The baby sleeps.（The这个；baby婴儿；sleeps睡觉；译“这个婴儿睡觉”。）句意完整，无需硬补对象。"
+    },
+    {
+      "wrong": "完整主语只写中心名词就够。",
+      "why": "题目问完整成分时，限定词与修饰语共同构成短语。",
+      "right": "The young nurse中The＝这位、young＝年轻的、nurse＝护士；整体意为“这位年轻护士”，不能只保留nurse来回答完整主语。"
+    },
+    {
+      "wrong": "动词前只能用形容词，动词后只能用副词。",
+      "why": "位置不是决定因素，要问它修饰谁；be后还可接形容词表语。",
+      "right": "careful＝细心的，用于说明人的特点；carefully＝仔细地，用于说明动作方式，可出现在动词前或后。"
+    },
+    {
+      "wrong": "看到she就加is，然后再写动作动词。",
+      "why": "主系表与本课动作句有不同结构，不能把两套谓语硬拼。",
+      "right": "She reads books.（She她；reads读；books书；译“她读书”。）本句reads已经是谓语动词，不再加is。"
+    },
+    {
+      "wrong": "动词词尾s与名词复数s完全一样。",
+      "why": "本课reads的s与第三人称单数主语配对；books的s表示书的复数，是不同作用。",
+      "right": "先确定词在句中表示动作还是事物，再理解其形式；不能看见s就说“很多”。"
+    }
+  ],
+  "quiz": {
+    "instructions": "闭卷20分钟，四题各5分，共20分。可看题内词义，不能查正文或答案。此测只评价书面词性、句子结构与本课动词形式；不含音频，不能证明真实听力达标。用30分钟订正槽处理错因，已计入180分钟。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w1-en-quiz1",
+        "title": "完整短语与词性",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "原创句子：The young worker reads a short story.\n词义：The＝这位；young＝年轻的；worker＝工人；reads＝读；a＝一篇；short＝短的；story＝故事。\n写完整主语、谓语动词、完整宾语；说明young的词性与修饰对象；翻译全句。",
+        "answer": "主语The young worker；谓语动词reads；宾语a short story。young是形容词，修饰worker。译：这位年轻工人读一篇短故事。",
+        "steps": [
+          "圈reads，前问谁、后问读什么。",
+          "主语与宾语分别带回限定和修饰词。",
+          "young说明工人的特点，判形容词，再按关系翻译。"
+        ],
+        "commonErrors": [
+          "完整成分只写中心词；把young当副词。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "完整主语The young worker。"
+          },
+          {
+            "points": 1,
+            "criterion": "谓语动词reads。"
+          },
+          {
+            "points": 1,
+            "criterion": "完整宾语a short story。"
+          },
+          {
+            "points": 1,
+            "criterion": "young是形容词且修饰worker，两项都对。"
+          },
+          {
+            "points": 1,
+            "criterion": "译文准确包含人物、年轻、读、短故事。"
+          }
+        ]
+      },
+      {
+        "id": "w1-en-quiz2",
+        "title": "句型与表语",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创句子：①She is a nurse. ②The baby sleeps.\n词义：She＝她；is＝是；a＝一位；nurse＝护士；The＝这个；baby＝婴儿；sleeps＝睡觉。\n写两句句型；指出①中a nurse是什么成分并说明理由；指出②有无宾语。",
+        "answer": "①主系表，意为“她是一位护士”；a nurse是表语，因为它说明She的身份。②主谓，意为“这个婴儿睡觉”；无宾语。",
+        "steps": [
+          "①is连接人物与身份，nurse并不是被某个动作作用的对象。",
+          "②sleeps直接说明婴儿做什么，句子没有也不需动作对象。",
+          "用关系给结构命名，不凭“名词出现在动词后”猜宾语。"
+        ],
+        "commonErrors": [
+          "把a nurse判为宾语；认为②句子不完整。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①句型为主系表，或准确写主语＋系动词＋表语。"
+          },
+          {
+            "points": 1,
+            "criterion": "a nurse为表语。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明其表达She的身份而非动作对象。"
+          },
+          {
+            "points": 1,
+            "criterion": "②句型为主谓。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确②无宾语，不另补句中没有的成分。"
+          }
+        ]
+      },
+      {
+        "id": "w1-en-quiz3",
+        "title": "选择形式并说明方式",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "选词填空：①I _____ a worker.（am/is）②She _____ the box.（check/checks）③They _____ careful.（is/are）④The worker checks the box _____.（careful/carefully）并解释④的词修饰什么。\n词义：I＝我；She＝她；They＝他们；am/is/are＝be形式，连接身份或特点；a＝一个；The/the＝特指这位／这个；worker＝工人；check/checks＝检查；box＝箱子；careful＝细心的；carefully＝仔细地。",
+        "answer": "①am，“我是一名工人”。②checks，“她检查这个箱子”。③are，“他们很细心”。④carefully，“这位工人仔细地检查这个箱子”；carefully修饰checks，说明检查方式。",
+        "steps": [
+          "①I配am；③They配are，先完成be配对。",
+          "②She是第三人称单数，本课一般现在时肯定句用checks。",
+          "④空格不说明箱子的特点，而说明检查怎样进行，所以用副词carefully。"
+        ],
+        "commonErrors": [
+          "把They配is；看到worker是名词就忽略空格实际修饰checks。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①am。"
+          },
+          {
+            "points": 1,
+            "criterion": "②checks。"
+          },
+          {
+            "points": 1,
+            "criterion": "③are。"
+          },
+          {
+            "points": 1,
+            "criterion": "④carefully。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明carefully修饰checks或表示怎样检查。"
+          }
+        ]
+      },
+      {
+        "id": "w1-en-quiz4",
+        "title": "读句后整合结构与意思",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "原创句子：My brother carefully checks his map before work.\n词义：My＝我的；brother＝哥哥或弟弟；carefully＝仔细地；checks＝查看；his＝他的；map＝地图；before＝在……之前；work＝工作，名词；before work＝工作前。\n写完整主语、谓语动词、完整宾语和时间短语；解释carefully的作用；翻译全句。",
+        "answer": "完整主语My brother；谓语动词checks；完整宾语his map；时间短语before work。carefully修饰checks，说明查看方式。译：我的哥哥／弟弟在工作前仔细地查看自己的地图。",
+        "steps": [
+          "先圈checks，再找谁查看、查看什么。",
+          "carefully属于方式信息，不并入主语；before work属于时间信息，不并入宾语。",
+          "中文可把时间移前，但须保留自己的地图与仔细这一方式。"
+        ],
+        "commonErrors": [
+          "把before work当宾语；把carefully并入完整主语；译文漏掉工作前。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "完整主语My brother。"
+          },
+          {
+            "points": 1,
+            "criterion": "checks与完整宾语his map均正确；只对一项给0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "时间短语before work准确。"
+          },
+          {
+            "points": 1,
+            "criterion": "carefully说明checks的方式，或正确称为修饰checks的副词。"
+          },
+          {
+            "points": 1,
+            "criterion": "译文含人物、工作前、仔细、查看自己的地图；brother译哥哥或弟弟均可。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "总分至少16/20。",
+        "w1-en-quiz2必须把a nurse判为表语，并确认sleeps句无宾语。",
+        "w1-en-quiz3的④选carefully且能说明修饰checks。",
+        "w1-en-quiz4必须把his map与before work分开，不能把时间算入宾语。",
+        "遮答重做至少一道原错题并解释理由；若原本全对，则遮答解释quiz2与quiz4。此达标仅限书面基础，不代表听力或2028高考整体水平。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w1-en-quiz1"
+        ],
+        "sectionIds": [
+          "w1-en-s1",
+          "w1-en-s2",
+          "w1-en-s3"
+        ],
+        "action": "若不会词义，先用题内释义逐词对齐；若是短语不完整，圈中心词后补限定和修饰。回做pr1，再遮答重做quiz1。不要把反复抄单词当作结构补救。"
+      },
+      {
+        "questionIds": [
+          "w1-en-quiz2"
+        ],
+        "sectionIds": [
+          "w1-en-s4"
+        ],
+        "action": "把“做什么／涉及什么”和“是什么／怎么样”分开问；对照ex3三句，再回做pr2并重做quiz2。只有结构解释正确才通过必检项。"
+      },
+      {
+        "questionIds": [
+          "w1-en-quiz3"
+        ],
+        "sectionIds": [
+          "w1-en-s5",
+          "w1-en-s6"
+        ],
+        "action": "形式错先口述I—am、She—is、They—are与She—checks；词性错先画箭头指向被修饰的词。回做pr3或pr6中相应小题，再重做quiz3。"
+      },
+      {
+        "questionIds": [
+          "w1-en-quiz4"
+        ],
+        "sectionIds": [
+          "w1-en-s3",
+          "w1-en-s5",
+          "w1-en-s6"
+        ],
+        "action": "按谁—做什么—对象—何时—怎样列五格，把原句逐组放入；回做pr4，再遮答重做quiz4。检查翻译不能漏时间和方式。"
+      },
+      {
+        "questionIds": [
+          "w1-en-quiz1",
+          "w1-en-quiz2",
+          "w1-en-quiz3",
+          "w1-en-quiz4"
+        ],
+        "sectionIds": [
+          "w1-en-s1",
+          "w1-en-s4",
+          "w1-en-s5"
+        ],
+        "action": "30分钟订正先补必过项和最低分题。仍不达标则记录具体卡点、延续第1学习周，在下个本科学习时段继续；不临时加倍刷题或占用第三科预留。隔开一次其他学习后重做原错题并注明订正重做，不冒充新题复测。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w1-en-review",
+    "title": "30分钟从错因回到会做",
+    "instructions": [
+      "前5分钟逐点评分，在错误旁只选主要原因：词义、短语边界、句型、修饰关系、动词形式。核对必检项，不只看总分。",
+      "接着10分钟按quiz.remediation回读最相关小节，回做对应的一道练习或小题；每步说清依据。",
+      "接着10分钟遮住答案重做原错题，仍错则停在该步骤重新比较，不照抄整套答案。原本全对则用这些时间独立解释quiz2与quiz4。",
+      "最后5分钟记录一条最关键错因和下一次检查点。需要间隔复查时，安排在下次本科学习时段，使用原错题，不另加核心时长。未达标保持本周未完成。"
+    ]
+  },
+  "mastery": [
+    "能借词义提示独立分析主谓宾、主系表、主谓三种基础句型。",
+    "能分别回答一个词的词性与所在短语的句子成分，不混用两套名称。",
+    "能按修饰对象选择careful/carefully，并写对本课be与常见动作动词的主语配对。",
+    "能从稍长短句分出人物、动作、对象、时间和方式，译文不漏关键信息。",
+    "短测至少16/20，全部必检项通过，原错题已按回路订正；此标准不含真实听力评价。"
+  ],
+  "nextStep": "达标后进入下一阶段的短句阅读与基础词汇，延续“动词—主语—对象／表语—附加信息”的顺序；未达标先补最薄弱一环。音频训练须另有真实音频材料和听后任务，本课不能替代。",
+  "sourcePolicy": {
+    "authorship": "本课讲解、英文例句、短文、词义提示、练习与短测均为原创基础衔接材料，未摘录或冒称任何指定教材原文。",
+    "examStatus": "所有题目均为原创练习，非历年真题。适用于河南2028高考准备的基础试点，但不声称已核验2028考试大纲、听力安排、题型或分值；不是指定教材版本对齐声明。",
+    "externalSources": []
+  },
+  "audioStatus": "未提供录音、音频文件或真实听辨任务。本课英文句子均有中文词义提示与解析，评价范围仅为书面理解、词性、句子结构和本课基本动词形式；默读、看文本或自行朗读均不能证明真实听力达标。"
+}

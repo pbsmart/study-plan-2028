@@ -3,8 +3,10 @@ import type { SubjectId } from '../src/model'
 import { adaptCurriculum } from '../src/curriculum/adapter'
 import { effectiveStatus } from '../src/curriculum/types'
 import { pastPaperSources, sourcesForSubject } from '../src/curriculum/sources'
-import { curriculum, curriculumCoverage, summarizeCoverage } from '../src/curriculum'
+import { curriculum as curriculumIndex, curriculumCoverage, loadStudyWeek, summarizeCoverage } from '../src/curriculum'
 import courseJson from '../src/curriculum/study-plan-content-v1.json?raw'
+const curriculum = await Promise.all(curriculumIndex.map(week => loadStudyWeek(week.week)))
+
 type RawQuestion = { id?: string; sourceType: string; points?: number; scoring?: { points: number; criterion: string }[] }
 type RawLesson = { referenceIds?: string[]; sources?: string[]; id: string; week: number; subject: string; workedExample: RawQuestion; practice: RawQuestion[]; retest: RawQuestion; diagnosticTest?: { totalPoints: number; questions: RawQuestion[] } }
 const raw = JSON.parse(courseJson) as { verificationReferences: Record<string,unknown>[]; scheduleMode: string; dateBinding: boolean; thirdSubject: null; lessons: RawLesson[]; weeks: {week:number;subjects:Record<string,{topic:string;detailStatus:string;lessonId?:string}>}[]; contentCoverage:{detailedLessons:number;detailedWeeks:number[];originalQuestionItems:number;additionalDiagnosticQuestionItems:number;remainingOutlineWeeks:number[]} }

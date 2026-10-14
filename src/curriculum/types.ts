@@ -1,4 +1,5 @@
 import type { SubjectId } from '../model'
+import type { EnrichedLesson } from './enriched-types'
 
 export type ContentStatus = 'complete' | 'outline' | 'pending'
 export interface KnowledgeBlock { title: string; paragraphs: string[]; keyPoints?: string[] }
@@ -41,6 +42,7 @@ export interface DiagnosticTest {
 export interface ContentReference { title: string; url: string; note: string }
 
 export interface SubjectWeek {
+  enrichment?: EnrichedLesson
   status: ContentStatus
   title: string
   goals: string[]

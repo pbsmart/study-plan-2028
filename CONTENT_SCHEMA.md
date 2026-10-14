@@ -60,3 +60,10 @@ interface PastPaperSource {
 
 
 第73—84周还支持 `progressionNote/trainingScope/masteryStatus/writingMasteryStatus/pendingChecklist`：分别显示训练边界、待独立作答状态与尚需验证的能力，不自动打卡或判定通过。`lesson.sources` 按根级核验记录ID解析；`question.sources` 仅将有效 HTTP(S) URL呈现为来源链接。`question.quotedSource` 保留作者、篇名、公版状态、引用原文和引用ID，明确原典不是课程原创；`characterCountNote` 显示各题汉字计数口径。
+
+
+## 专注页与按周加载
+
+`getStudyWeek` 和 `curriculum` 仅返回导航摘要（标题、内容状态），正文使用 `loadStudyWeek(week)` 异步获取。`src/curriculum/vite-plugin.ts` 在构建时生成84个独立周模块，主JSON不再进入首屏静态依赖。不要让前端页面直接import主JSON；修改后运行单元测试、构建及 `node scripts/check-curriculum-bundle.mjs`。
+
+可选第1周深化overlay在 `enriched-week-01/{subject}.json`，只能用于语数英物化，按 `SubjectWeek.enrichment` 保留其独立结构。接口详见 `enriched-types.ts` 与 `ENRICHMENT_SCHEMA.md`；前测、讲解自检、例题、练习、短测、订正与图不能静默丢字段。overlay不改变原84周基础覆盖统计，也不改变本地打卡模型。

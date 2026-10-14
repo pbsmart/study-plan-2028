@@ -1,0 +1,762 @@
+{
+  "id": "w1-化学",
+  "week": 1,
+  "subject": "化学",
+  "title": "物质分类：先数物质，再数元素，别被外表骗了",
+  "revision": "week01-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "分清“样品中有几种物质”与“某物质由几种元素组成”这两个问题。",
+    "能读出本课常见化学式中的元素种类，不把粒子个数当成物质种类。",
+    "能依次判断混合物/纯净物、单质/化合物及氧化物。",
+    "能用组成证据说明冰水、盐水、O₂/O₃样品为何分类不同；信息不足时不硬判。"
+  ],
+  "prerequisites": [
+    "能理解“一种”和“多种”的数量区别；不要求先背整张元素周期表。",
+    "本课用到H、O、C、Na、Cl、Ca、Fe，均在正文给出中文名。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 10,
+    "busyPolicy": "忙碌时可分成60+60+30分钟的三个可用学习时段，仍属于同一个学习周。少做的时间不算已经完成；没有把前测、测验和订正放到预算之外。",
+    "segments": [
+      {
+        "id": "w1-chemistry-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w1-chemistry-d1",
+          "w1-chemistry-d2",
+          "w1-chemistry-d3"
+        ]
+      },
+      {
+        "id": "w1-chemistry-time2",
+        "title": "补物质、元素和化学式概念",
+        "minutes": 15,
+        "activityIds": [
+          "w1-chemistry-s1",
+          "w1-chemistry-s2"
+        ]
+      },
+      {
+        "id": "w1-chemistry-time3",
+        "title": "学习分类判断链与易混边界",
+        "minutes": 45,
+        "activityIds": [
+          "w1-chemistry-s3",
+          "w1-chemistry-s4",
+          "w1-chemistry-s5",
+          "w1-chemistry-s6",
+          "w1-chemistry-s7"
+        ]
+      },
+      {
+        "id": "w1-chemistry-time4",
+        "title": "四个阶梯例题",
+        "minutes": 30,
+        "activityIds": [
+          "w1-chemistry-ex1",
+          "w1-chemistry-ex2",
+          "w1-chemistry-ex3",
+          "w1-chemistry-ex4"
+        ]
+      },
+      {
+        "id": "w1-chemistry-time5",
+        "title": "六题分层独立练习",
+        "minutes": 25,
+        "activityIds": [
+          "w1-chemistry-pr1",
+          "w1-chemistry-pr2",
+          "w1-chemistry-pr3",
+          "w1-chemistry-pr4",
+          "w1-chemistry-pr5",
+          "w1-chemistry-pr6"
+        ]
+      },
+      {
+        "id": "w1-chemistry-time6",
+        "title": "15分钟闭卷短测",
+        "minutes": 15,
+        "activityIds": [
+          "w1-chemistry-quiz1",
+          "w1-chemistry-quiz2",
+          "w1-chemistry-quiz3",
+          "w1-chemistry-quiz4"
+        ]
+      },
+      {
+        "id": "w1-chemistry-time7",
+        "title": "逐点评分、解释错因",
+        "minutes": 11,
+        "activityIds": [
+          "w1-chemistry-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "用9分钟先答，不必因为不认识化学式慌张，题中已给必要信息。每题写一句理由；目的在于找到概念卡点，不计入短测分。",
+    "questions": [
+      {
+        "id": "w1-chemistry-d1",
+        "title": "样品的外表够不够",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "甲杯只含水H₂O，乙杯含水H₂O和溶解的食盐NaCl，两杯都清澈透明。哪杯含一种物质，哪杯含两种物质？",
+        "answer": "甲含一种物质，乙含两种物质。",
+        "steps": [
+          "按题目给出的组成数种类，不看是否清澈。",
+          "甲仅有H₂O；乙有H₂O和NaCl。"
+        ],
+        "commonErrors": [
+          "透明就判一种物质。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w1-chemistry-d2",
+        "title": "一种物质能否有两种元素",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "H₂O表示水，其中H是氢元素，O是氧元素。水是一种物质还是两种物质？由几种元素组成？",
+        "answer": "一种物质，由氢、氧两种元素组成。",
+        "steps": [
+          "H₂O整个化学式对应水这种物质。",
+          "式中有H、O两种元素符号，所以水含两种元素。"
+        ],
+        "commonErrors": [
+          "把两种元素当作两种物质。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w1-chemistry-d3",
+        "title": "状态变化会不会增添物质种类",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "在不发生化学反应且没有其他杂质的条件下，样品只含冰和液态水；二者化学式都是H₂O。样品包含几种物质？",
+        "answer": "一种物质：H₂O。",
+        "steps": [
+          "冰和液态水状态不同，但都是水。",
+          "按化学组成数物质种类，而非按固态、液态数。"
+        ],
+        "commonErrors": [
+          "两种状态就当两种物质。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "d1出错",
+        "action": "读s3，把“外观”与“组成”分开；在样品下列出实际物质名称。",
+        "sectionIds": [
+          "w1-chemistry-s3"
+        ]
+      },
+      {
+        "when": "d2出错",
+        "action": "先读s1、s2，给“样品、物质、元素、微观粒子”各找一个位置。",
+        "sectionIds": [
+          "w1-chemistry-s1",
+          "w1-chemistry-s2"
+        ]
+      },
+      {
+        "when": "d3出错",
+        "action": "读s4，比较冰/水和氧气/臭氧这两组材料的关键差别。",
+        "sectionIds": [
+          "w1-chemistry-s4"
+        ]
+      },
+      {
+        "when": "三题都对",
+        "action": "补救时段用于口述三题理由并复习元素符号，不新增一套重复题。",
+        "sectionIds": [
+          "w1-chemistry-s1",
+          "w1-chemistry-s2"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w1-chemistry-s1",
+      "title": "先把四个词摆正：样品、物质、元素、粒子",
+      "level": "remediation",
+      "paragraphs": [
+        "样品是我们拿来研究的一份材料，例如“一杯液体”。它可能只含水，也可能含水和盐。“水”和“食盐”是物质的名称；问样品有几种物质，是问里面有哪些不同物质，而不是问有几个杯子。对本周题目，先按题干列出已明确给出的物质名称或化学式，再数种类。",
+        "元素描述物质的组成类别。水由氢元素和氧元素组成；纯铁由铁元素组成。同一种物质可能含不止一种元素。宏观上说“水由氢、氧元素组成”，并不意味着杯中有两份可以直接看见的氢气和氧气。",
+        "在微观层面，常讨论原子、分子或离子。元素是具有相同质子数的一类原子的总称；本周只需用它辨认“是什么元素”，质子数与原子结构后续再展开。水可以用水分子来描述，铁等物质常用原子层面描述，氯化钠由离子构成；不能把所有物质都说成由分子构成。",
+        "本周分类不要求推导微观结构。先能说清层次：样品里可以有多种物质；每种物质有自己的元素组成；微观粒子是另一种观察层次。不要把这三种“数种类”的问题混在一起。"
+      ],
+      "keyPoints": [
+        "样品是研究对象；物质是组成样品的类别。",
+        "物质种类与元素种类是两次不同判断。"
+      ],
+      "checkpoint": {
+        "question": "一杯只含水的样品里有很多水分子，能因此说含很多种物质吗？",
+        "answer": "不能。",
+        "explanation": "粒子数量很多，物质种类仍只有水这一种。"
+      }
+    },
+    {
+      "id": "w1-chemistry-s2",
+      "title": "化学式先这样读：看元素种类，不急着背计算",
+      "level": "remediation",
+      "paragraphs": [
+        "本课符号：H为氢，O为氧，C为碳，Na为钠，Cl为氯，Ca为钙，Fe为铁。第一个字母大写、第二个字母如有则小写：Cl是一个元素符号，不是C与字母l代表的两种元素。",
+        "H₂O中有H、O两个元素符号，因此由两种元素组成；下标2表示一个水分子里有2个氢原子，没有写下标的O表示1个氧原子。下标是原子个数关系，不能拿2+1=3说成三种元素。",
+        "O₂和O₃都只出现O，所以都只由氧元素组成；但分别表示氧气和臭氧，是不同物质。CO和CO₂都含C、O两种元素，却表示一氧化碳与二氧化碳两种不同物质。物质是否相同不能只比较元素名称，还要看具体组成。",
+        "NaCl表示氯化钠，其中Na和Cl两种元素；在这里化学式体现其组成比例，不将它说成一个“氯化钠分子”。对于本周给出的式子，辨认元素种类即可完成大多数分类，不需要擅自引入物质的量计算。"
+      ],
+      "keyPoints": [
+        "同一元素符号只算一种元素。",
+        "下标与元素种类是不同信息。"
+      ],
+      "checkpoint": {
+        "question": "CaCO₃中有几种元素？",
+        "answer": "3种：Ca钙、C碳、O氧。",
+        "explanation": "O的下标3不是三种氧元素；Ca是一个符号。"
+      }
+    },
+    {
+      "id": "w1-chemistry-s3",
+      "title": "第一层分类：先判断纯净物还是混合物",
+      "level": "core",
+      "paragraphs": [
+        "如果一个样品只由一种物质组成，称为纯净物；由两种或两种以上物质组成，称为混合物。这里的“一种”说的是物质种类，不是分子个数，也不是元素种类。",
+        "题目明确“只含H₂O”的水样是纯净物；明确“含H₂O和NaCl”的盐水是混合物。盐均匀地溶解后肉眼看不见，不代表盐消失或变成水；均匀、透明都不是纯净物的定义。",
+        "空气是多种气体组成的混合物；纯氧气是一种物质。气态、液态、固态都可能有纯净物或混合物，所以不能用状态代替组成判断。日常“纯净水”是商品名称，本课不能仅凭名字推定绝对只含H₂O；解题以明确给出的组成或证据为准。",
+        "做题先列样品成分，再数物质种类：成分列表若是H₂O、NaCl，直接归混合物，不要继续把整个盐水样品硬归单质或化合物；后两类是对纯净物的进一步分类。"
+      ],
+      "keyPoints": [
+        "纯净物=一种物质；混合物=至少两种物质。",
+        "透明、均匀、状态不能单独作判据。"
+      ],
+      "checkpoint": {
+        "question": "清澈盐水可不可以因为“看不见盐”判纯净物？",
+        "answer": "不可以。",
+        "explanation": "组成中仍有水和氯化钠两种物质。"
+      }
+    },
+    {
+      "id": "w1-chemistry-s4",
+      "title": "对照两组：冰水与O₂/O₃为什么不一样",
+      "level": "core",
+      "paragraphs": [
+        "理想冰水样品如果只有H₂O，没有溶解空气或其他杂质，那么冰与液态水是同一种物质的不同状态，仍为纯净物。真实生活样品可能含杂质，因此题目中的“只含”是决定性条件。",
+        "只含O₂的样品是纯净物；同时含O₂和O₃的样品是混合物。二者都只含氧元素，但O₂和O₃是不同物质。由一种元素组成的样品也可能是混合物，这正是先数物质再数元素的原因。",
+        "冰变水是在本题条件下同一种物质的状态变化；O₂与O₃的差别则是微观组成不同，它们不是“同一种物质的两个状态”。不要用一个表面相似点忽略物质身份。",
+        "遇到“只含一种元素，所以一定纯净”的说法，O₂/O₃样品就是反例。反例不需要很多，只要符合前提却不符合结论，就能说明“一定”不成立。"
+      ],
+      "keyPoints": [
+        "同一种物质不同状态，不自动变成混合物。",
+        "同一种元素形成不同物质，混在一起仍是混合物。"
+      ],
+      "checkpoint": {
+        "question": "只含冰和水蒸气，且两者均为纯H₂O的样品，按组成属于哪类？",
+        "answer": "纯净物。",
+        "explanation": "都只有H₂O一种物质，状态差别不改变种类。"
+      }
+    },
+    {
+      "id": "w1-chemistry-s5",
+      "title": "第二层分类：纯净物再分单质与化合物",
+      "level": "core",
+      "paragraphs": [
+        "确认是纯净物以后，再问“由几种元素组成”。由同种元素组成的纯净物是单质，例如O₂、O₃、Fe；由不同种元素组成的纯净物是化合物，例如H₂O、CO₂、NaCl。",
+        "定义中的“纯净物”不能省略。O₂和O₃混合样品虽然只含氧元素，仍不是一种单质，而是由两种单质组成的混合物。可以分类其中每个成分，但不能把成分的类别直接当作整个样品的类别。",
+        "一个水分子里有氢、氧两种原子，水仍是一种化合物；不能说“水是氢气和氧气的混合物”。元素氢/氧与物质氢气/氧气不是同一层次的词。",
+        "把判断写成两句很稳：第一句“只有……一种物质，因此是纯净物”；第二句“由……种元素组成，因此是单质/化合物”。若第一句已判混合物，就在这个分类分支停止。"
+      ],
+      "keyPoints": [
+        "单质、化合物都是纯净物的子类。",
+        "先物质种类，后元素种类。"
+      ],
+      "checkpoint": {
+        "question": "纯O₃是混合物、单质还是化合物？",
+        "answer": "单质。",
+        "explanation": "只有臭氧一种物质，且只由氧元素组成。"
+      }
+    },
+    {
+      "id": "w1-chemistry-s6",
+      "title": "第三层分类：氧化物需要同时满足哪些条件",
+      "level": "core",
+      "paragraphs": [
+        "氧化物是由两种元素组成、其中一种是氧元素的化合物。“化合物”“两种元素”“其中一种是氧”三个条件同时满足才行。例：CO₂由C、O两种元素组成，是氧化物；H₂O由H、O两种元素组成，也是氧化物。",
+        "O₂虽然含氧，但只有一种元素，属于单质，不是化合物，所以不是氧化物。NaOH含Na、O、H三种元素，虽然是化合物却不是氧化物；CaCO₃含Ca、C、O三种元素，同理不是氧化物。",
+        "不要把“含氧”当作充分条件。可按三个小问题逐个勾选：①是不是一种化合物？②是否恰有两种元素？③是否有氧元素？有任一项不满足，就不归氧化物。",
+        "氧化物并不等于有毒或安全：分类是组成信息，不能据此推断能触摸、闻或品尝。本周只做书面判断，不进行实验，也不扩展酸、碱、盐等后续完整分类。"
+      ],
+      "keyPoints": [
+        "氧化物：化合物＋两种元素＋含氧。",
+        "H₂O是氧化物；O₂、NaOH不是。"
+      ],
+      "checkpoint": {
+        "question": "NaCl含两种元素，是否为氧化物？",
+        "answer": "不是。",
+        "explanation": "它是化合物，但不含氧元素。"
+      }
+    },
+    {
+      "id": "w1-chemistry-s7",
+      "title": "遇到新材料：写证据，保留不能判断的部分",
+      "level": "core",
+      "paragraphs": [
+        "面对不认识的名字，先找题目明确提供的信息。若说“纯物质X只含C、O两种元素”，不必知道X的具体化学式，也能判断为化合物且是氧化物；因为分类需要的三个条件已经齐全。",
+        "若只说“样品X含C、O两种元素”，却没说明是不是纯净物，就不能直接判化合物。它可能是纯CO₂，也可能是CO与CO₂的混合样品。相同元素清单不保证相同物质种类。",
+        "使用固定句式：“证据是……，所以能判断……；缺少……，暂不能判断……。”这不是答得不完整，而是把知识的适用条件说完整。",
+        "本周收束为一条链：列实际成分→判断纯净/混合→纯净物数元素→判断单质/化合物→化合物再查氧化物三条件。每向下走一层，都先满足上一层的门槛。"
+      ],
+      "keyPoints": [
+        "未知物质名称不一定妨碍分类。",
+        "信息不足时写缺少什么，不能凭感觉补全。"
+      ],
+      "checkpoint": {
+        "question": "“某透明液体仅含H和O元素”足以证明它是纯水吗？",
+        "answer": "不足以。",
+        "explanation": "没有给出只有一种物质或其具体组成，透明和元素种类都不能唯一确定是水。"
+      }
+    },
+    {
+      "id": "w1-chemistry-s8",
+      "title": "选做：用反例检查“一定”",
+      "level": "extension",
+      "paragraphs": [
+        "“含氧元素的物质一定是氧化物”可用O₂或NaOH反驳；“含一种元素的样品一定是纯净物”可用O₂/O₃混合样品反驳。反例要满足前半句，却不满足后半句。",
+        "练习自己写一个错误断言，再给出满足前提的反例，并说出定义漏了哪一项。本段10分钟选做，不占150分钟核心，不是过关要求。"
+      ],
+      "keyPoints": [
+        "反例要满足原断言的前提。"
+      ],
+      "checkpoint": {
+        "question": "用NaOH反驳“所有化合物都是氧化物”是否有效？",
+        "answer": "有效。",
+        "explanation": "NaOH是化合物，却有三种元素，不是氧化物。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w1-chemistry-ex1",
+      "title": "先只做第一层：清澈也可以是混合物",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "甲样品只含H₂O；乙样品含H₂O和溶解的NaCl；丙样品是N₂、O₂等气体组成的空气。分别判断纯净物或混合物，并说明透明或气态是否影响判定。",
+      "answer": "甲纯净物；乙、丙混合物。外观透明或气态都不能代替组成判断。",
+      "steps": [
+        "甲只有水一种物质，符合纯净物定义。",
+        "乙有水和氯化钠两种物质，符合混合物定义；溶解均匀不等于只剩一种物质。",
+        "丙有多种气体，所以是混合物；此处N₂为氮气，O₂为氧气。",
+        "分类依据在题目成分列表，透明或气态不改变物质种类。"
+      ],
+      "commonErrors": [
+        "看不见杂质就说纯净物。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w1-chemistry-ex2",
+      "title": "一样的元素，不一样的物质数",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "样品A只含冰和液态水，均为H₂O且无其他成分；样品B同时含O₂和O₃；样品C只含O₃。把各样品分到混合物、单质、化合物，并说明理由。",
+      "answer": "A为化合物（也是纯净物）；B为混合物；C为单质（也是纯净物）。",
+      "steps": [
+        "A虽然有两种状态，仍只有H₂O一种物质，且含H、O两种元素，所以是化合物。",
+        "B包含氧气与臭氧两种物质，先判混合物，不再把整个样品归单质。",
+        "C只有臭氧一种物质，且只含氧元素，所以是单质。",
+        "比较B、C：两者都只含氧元素，但物质种类数不同，类别就不同。"
+      ],
+      "commonErrors": [
+        "A看两种状态判混合物。",
+        "B看一种元素判单质。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w1-chemistry-ex3",
+      "title": "氧化物三条件逐项检查",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "已知下列各项均为纯净物：H₂O、CO₂、O₂、NaOH、NaCl。哪些是氧化物？逐项说明通过或卡在哪个条件。",
+      "answer": "H₂O、CO₂是氧化物；O₂、NaOH、NaCl不是。",
+      "steps": [
+        "H₂O：H和O两种元素，且为化合物，含氧，满足三条件。",
+        "CO₂：C和O两种元素，且为化合物，含氧，满足三条件。",
+        "O₂：只有O一种元素，是单质，首先不满足化合物条件。",
+        "NaOH：Na、O、H共三种元素，不满足恰有两种元素。",
+        "NaCl：Na、Cl两种元素但无氧，不满足含氧。"
+      ],
+      "commonErrors": [
+        "只要化学式有O就归氧化物。"
+      ],
+      "estimatedMinutes": 8
+    },
+    {
+      "id": "w1-chemistry-ex4",
+      "title": "不知道名字，也能有限度地下结论",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "甲：纯物质，只由C、O两种元素组成。乙：样品含C、O两种元素，但未说明成分。小林说“甲乙都是氧化物”。分别评价，给乙举出一种符合信息的混合物。",
+      "answer": "甲可判氧化物；乙信息不足，不能直接判。乙可以是CO与CO₂的混合样品。",
+      "steps": [
+        "甲明确为纯物质，含两种元素且有氧，故为化合物、氧化物。",
+        "乙只给元素种类，未给物质种类，第一层纯净/混合尚不确定。",
+        "CO与CO₂同时存在时仍只含C、O元素，但已是两种物质的混合样品，符合乙的信息。",
+        "所以不能把甲有的“纯物质”条件默默借给乙。"
+      ],
+      "commonErrors": [
+        "把元素清单等同于成分清单。"
+      ],
+      "estimatedMinutes": 9
+    }
+  ],
+  "practice": [
+    {
+      "id": "w1-chemistry-pr1",
+      "title": "基础：读元素种类",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "分别写出H₂O、CO₂、NaCl中的元素种类及数量。",
+      "answer": "H₂O：H氢、O氧，2种；CO₂：C碳、O氧，2种；NaCl：Na钠、Cl氯，2种。",
+      "steps": [
+        "H₂O和CO₂中的下标2表示原子个数关系，不增加元素种类。",
+        "Na与Cl各是完整元素符号，不能按字母数计种类。"
+      ],
+      "commonErrors": [
+        "把H₂O算成3种元素。",
+        "把NaCl按四个字母计数。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w1-chemistry-pr2",
+      "title": "基础：用组成分类",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "A只含纯铁Fe；B只含NaCl；C含Fe和NaCl。分别归单质、化合物或混合物。",
+      "answer": "A单质；B化合物；C混合物。",
+      "steps": [
+        "A一种物质、只含Fe一种元素，为单质。",
+        "B一种物质、含Na和Cl两种元素，为化合物。",
+        "C两种物质并存，为混合物，不再把整体当化合物。"
+      ],
+      "commonErrors": [
+        "C含多种元素就判化合物。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w1-chemistry-pr3",
+      "title": "基础：状态与类别",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "在理想无杂质条件下，水蒸气与液态水混合只含H₂O。它属于哪一类？若再溶入NaCl，类别如何改变？",
+      "answer": "原样品为纯净物中的化合物；溶入NaCl后为混合物。",
+      "steps": [
+        "原来两种状态都对应水，只有一种物质；水含H、O两种元素。",
+        "加入NaCl后实际成分变为H₂O和NaCl两种物质，故为混合物。"
+      ],
+      "commonErrors": [
+        "没有明显分层就认为类别不变。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w1-chemistry-pr4",
+      "title": "应用：不被氧字带偏",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "已知CO、CaCO₃、O₃均为纯净物，分别判断是否为氧化物。",
+      "answer": "CO是；CaCO₃不是；O₃不是。",
+      "steps": [
+        "CO含C、O两种元素且为化合物，是氧化物。",
+        "CaCO₃含Ca、C、O三种元素，不满足两种元素条件。",
+        "O₃只有O一种元素，是单质，不是氧化物。"
+      ],
+      "commonErrors": [
+        "把O₃中的3当作元素种类3。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w1-chemistry-pr5",
+      "title": "应用：纠正概念层次",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "纠正说法：“水由氢、氧两种元素组成，所以水是氢气和氧气的混合物。”",
+      "answer": "水是由氢、氧两种元素组成的化合物，不是氢气和氧气的混合物。",
+      "steps": [
+        "元素与物质是不同层次：氢元素不等于氢气，氧元素不等于氧气。",
+        "纯水只含H₂O一种物质；不能把式中的元素拆成样品已有的两种气体。"
+      ],
+      "commonErrors": [
+        "只把结论改掉，不指出元素与物质混淆。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w1-chemistry-pr6",
+      "title": "迁移：证据还差什么",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "样品X清澈透明，只检出C、O两种元素。能否仅据此判为纯净物或氧化物？给出一个纯净物可能和一个混合物可能。",
+      "answer": "不能。纯CO₂可以是纯净物且为氧化物；CO与CO₂混合也只含C、O，却是混合物。透明不决定类别。",
+      "steps": [
+        "已知元素种类不足以确定物质种类。",
+        "构造纯物质CO₂满足元素条件。",
+        "构造CO/CO₂混合样品也满足元素条件；两种可能并存说明信息不足。"
+      ],
+      "commonErrors": [
+        "忽略“仅据此”，自行假定样品纯净。"
+      ],
+      "estimatedMinutes": 5
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "一个样品只含一种元素，一定是纯净物。",
+      "why": "同一元素可以形成不同物质，物质种类未确定。",
+      "right": "O₂/O₃混合样品只含氧元素，却是混合物。"
+    },
+    {
+      "wrong": "H₂O有三种元素。",
+      "why": "把原子个数关系与元素种类混淆。",
+      "right": "只有H、O两种元素。"
+    },
+    {
+      "wrong": "清澈、均匀的样品就是纯净物。",
+      "why": "溶解后的不同物质未必能用肉眼区分。",
+      "right": "透明盐水仍是混合物。"
+    },
+    {
+      "wrong": "所有物质都由分子构成。",
+      "why": "还存在以原子或离子描述构成的物质。",
+      "right": "水可用分子描述，铁常用原子层面描述，氯化钠由离子构成。"
+    },
+    {
+      "wrong": "含氧元素就属于氧化物。",
+      "why": "漏了化合物且恰含两种元素两个条件。",
+      "right": "O₂是单质，NaOH有三种元素，均不是氧化物。"
+    }
+  ],
+  "quiz": {
+    "instructions": "限15分钟闭卷，总20分。必须写理由，不能只猜标签。16分及以上且通过两项关键检查才算本课基础达标；若关键概念错了，按对应小节补救再解释。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w1-chemistry-quiz1",
+        "title": "元素与原子数",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "H₂O和NaOH分别含几种元素？写出元素符号，并说明H₂O中的下标2不能代表两种氢元素。",
+        "answer": "H₂O含H、O共2种；NaOH含Na、O、H共3种。下标2表示一个水分子中有2个氢原子，氢仍只是一种元素。",
+        "steps": [
+          "按不同元素符号计种类。",
+          "H₂O中H和O各一种，NaOH中Na、O、H各一种。",
+          "下标描述数量关系，不改变元素身份。"
+        ],
+        "commonErrors": [
+          "Na按两个字母数。"
+        ],
+        "estimatedMinutes": 3,
+        "points": 4,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "H₂O元素符号与2种均正确"
+          },
+          {
+            "points": 1,
+            "criterion": "NaOH元素符号与3种均正确"
+          },
+          {
+            "points": 2,
+            "criterion": "说明下标2是氢原子个数而非元素种类"
+          }
+        ]
+      },
+      {
+        "id": "w1-chemistry-quiz2",
+        "title": "三层分类",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "A只含CO₂；B含CO₂和CO；C只含O₂。分别判混合物、单质或化合物，并指出A是否为氧化物。",
+        "answer": "A化合物且为氧化物；B混合物；C单质。",
+        "steps": [
+          "A只有一种物质，含C、O两种元素，因此是化合物且满足氧化物定义。",
+          "B有CO₂、CO两种物质，所以是混合物。",
+          "C只有氧气一种物质，且仅含氧元素，所以是单质。"
+        ],
+        "commonErrors": [
+          "B含两种元素就判化合物。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 6,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "A为化合物"
+          },
+          {
+            "points": 1,
+            "criterion": "A为氧化物且说明两元素含氧"
+          },
+          {
+            "points": 2,
+            "criterion": "B为混合物并说明有两种物质"
+          },
+          {
+            "points": 2,
+            "criterion": "C为单质并说明一种物质、一种元素"
+          }
+        ]
+      },
+      {
+        "id": "w1-chemistry-quiz3",
+        "title": "条件完整的对照",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "无杂质冰水样品和O₂/O₃混合样品是否都为混合物？分别解释。",
+        "answer": "不是。无杂质冰水只有H₂O一种物质，为纯净物；O₂/O₃包含两种物质，为混合物。",
+        "steps": [
+          "冰和水状态不同，化学组成都是H₂O。",
+          "氧气与臭氧虽然同属氧元素构成，却是不同物质。"
+        ],
+        "commonErrors": [
+          "把状态数或元素数当物质数。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 4,
+        "scoring": [
+          {
+            "points": 2,
+            "criterion": "冰水判纯净物并以同为H₂O解释"
+          },
+          {
+            "points": 2,
+            "criterion": "O₂/O₃判混合物并以两种物质解释"
+          }
+        ]
+      },
+      {
+        "id": "w1-chemistry-quiz4",
+        "title": "判据与信息不足",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "①纯NaOH为什么不是氧化物？②“样品只含C、O两种元素”能否直接判为氧化物？说明还缺什么，并举反例。",
+        "answer": "①NaOH含Na、O、H三种元素，不满足氧化物由两种元素组成的条件。②不能，缺少样品只有一种物质的条件；CO与CO₂混合样品符合元素信息却是混合物。",
+        "steps": [
+          "氧化物需为化合物、恰含两元素、其中之一为氧。NaOH在元素种类数量上不符合。",
+          "第二问未确定纯净物，不能越过第一层分类。",
+          "CO/CO₂混合只有C、O，但含两种物质，是有效反例。"
+        ],
+        "commonErrors": [
+          "只答不是却不能说出漏了哪个条件。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 6,
+        "scoring": [
+          {
+            "points": 2,
+            "criterion": "指出NaOH三种元素并对照氧化物两元素条件"
+          },
+          {
+            "points": 2,
+            "criterion": "不能直接判，明确缺少纯净物/一种物质条件"
+          },
+          {
+            "points": 2,
+            "criterion": "给出CO/CO₂或其他正确反例并解释"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第2题B不能归为化合物，必须依据物质种类判混合物。",
+        "第4题不能把“含氧”作为氧化物的唯一条件。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w1-chemistry-quiz1"
+        ],
+        "sectionIds": [
+          "w1-chemistry-s1",
+          "w1-chemistry-s2"
+        ],
+        "action": "把元素符号圈出来、下标画方框，分开回答种类和个数。"
+      },
+      {
+        "questionIds": [
+          "w1-chemistry-quiz2",
+          "w1-chemistry-quiz3"
+        ],
+        "sectionIds": [
+          "w1-chemistry-s3",
+          "w1-chemistry-s4",
+          "w1-chemistry-s5"
+        ],
+        "action": "给每个样品先列物质清单，再走分类链；不能先数元素。"
+      },
+      {
+        "questionIds": [
+          "w1-chemistry-quiz4"
+        ],
+        "sectionIds": [
+          "w1-chemistry-s6",
+          "w1-chemistry-s7"
+        ],
+        "action": "写出氧化物三条件并逐一检验；对未知样品把已知和缺少条件分两行。"
+      }
+    ]
+  },
+  "mastery": [
+    "能用两句话分别回答物质种类与元素种类。",
+    "能独立解释冰水与O₂/O₃样品的分类差异。",
+    "短测至少16分，且混合物门槛与氧化物条件两项关键检查通过。",
+    "隔开一次其他学科学习后，不看答案复述“先数物质，再数元素”的判断链。"
+  ],
+  "nextStep": "达标后继续后续物质性质、微粒与化学变化基础；本周不要求记全酸碱盐分类或进行实验。",
+  "sourcePolicy": {
+    "authorship": "全部讲解、例题、练习与测验均为本课程原创基础衔接材料；元素符号和分类定义属于通用基础知识。",
+    "examStatus": "非历年真题，不称为河南指定教材原文或已核验2028考纲。",
+    "externalSources": []
+  },
+  "safetyScope": "本课仅用文字、化学式和已给组成做分类。不要为了验证分类自行混合、加热、闻嗅或品尝任何化学品；无需购买试剂，不安排家庭化学实验。",
+  "reviewActivity": {
+    "id": "w1-chemistry-review",
+    "title": "沿分类链订正",
+    "instructions": [
+      "按评分点核对，标出物质种类、元素种类、状态或证据不足中的具体错因。",
+      "在11分钟订正槽内回看对应小节并重新解释，不把抄对答案当作达标。",
+      "仍不清楚就保留第1周，后续可用时段继续，不跳过核心概念。"
+    ]
+  }
+}

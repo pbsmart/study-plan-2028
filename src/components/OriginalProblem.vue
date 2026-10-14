@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import type { OriginalProblem } from '../curriculum/types'
-const props = defineProps<{ problem: OriginalProblem; label: string; revealLabel: string }>()
+const props = defineProps<{ problem: OriginalProblem; label: string; revealLabel: string; hideTitle?: boolean; hideId?: boolean }>()
 const normalize = (text: string) => text.replace(/\s+/g, ' ').trim()
 const extraContext = computed(() => [...new Set([props.problem.sourceStory, props.problem.sourcePassage, props.problem.quotedSource?.text].filter((s): s is string => !!s))].filter(s => !normalize(props.problem.prompt).includes(normalize(s))))
 const extraSamples = computed(() => [...new Set([props.problem.sampleContinuation, props.problem.sampleText].filter((s): s is string => !!s))].filter(s => !normalize(props.problem.answer).includes(normalize(s))))
@@ -10,7 +10,7 @@ const extraStarters = computed(() => (props.problem.paragraphStarters || []).fil
 <template>
   <article class="problem-card">
     <span class="original-label">{{ label }}<span v-if="problem.points !== undefined"> · {{ problem.points }} 分</span></span>
-    <h3><span v-if="problem.points !== undefined" class="problem-id">{{ problem.id }} · </span>{{ problem.title }}</h3>
+    <h3 v-if="!hideTitle"><span v-if="problem.points !== undefined && !hideId" class="problem-id">{{ problem.id }} · </span>{{ problem.title }}</h3>
     <p v-if="problem.quotedSource" class="quotation-attribution">{{ problem.quotedSource.author }}《{{ problem.quotedSource.title }}》 · {{ problem.quotedSource.copyrightStatus === 'public_domain' ? '公版引文（原典非本课原创）' : '标源引文（原典非本课原创）' }}</p>
     <p v-for="context in extraContext" :key="context" class="math-text problem-context">{{ context }}</p>
     <p class="math-text problem-prompt">{{ problem.prompt }}</p>

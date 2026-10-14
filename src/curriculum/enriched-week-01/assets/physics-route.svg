@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+<title id="title">往返中的位移与路程</title>
+<desc id="desc">向东为正的米制数轴。A坐标−2，B坐标6，C坐标1。上方路线箭头A到B标8米向东，B到C标5米向西；下方总位移箭头A到C标正3米向东。总路程13米。</desc>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="context-stroke"/></marker></defs>
+<rect width="960" height="440" rx="16" fill="#f8fafc"/>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#17212b">
+<text x="38" y="42" font-size="24" font-weight="700">同一段运动，两种记录方法</text>
+<text x="38" y="70" font-size="16">向东为正；位置单位：m；先 A → B，再 B → C</text>
+<line x1="158" x2="782" y1="112" y2="112" stroke="#245b9e" stroke-width="4" marker-end="url(#arr)"/>
+<text x="470.0" y="99" text-anchor="middle" font-size="17" fill="#154474">①向东8 m</text>
+<line x1="782" x2="392" y1="178" y2="178" stroke="#245b9e" stroke-width="4" marker-end="url(#arr)"/>
+<text x="587.0" y="165" text-anchor="middle" font-size="17" fill="#154474">②向西5 m</text>
+<line x1="65" x2="900" y1="245" y2="245" stroke="#26384b" stroke-width="2" marker-end="url(#arr)"/>
+<text x="903" y="275" font-size="15">东</text>
+<line x1="80" x2="80" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="80" y="274" text-anchor="middle" font-size="16">-3</text>
+<line x1="158" x2="158" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="158" y="274" text-anchor="middle" font-size="16">-2</text>
+<line x1="236" x2="236" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="236" y="274" text-anchor="middle" font-size="16">-1</text>
+<line x1="314" x2="314" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="314" y="274" text-anchor="middle" font-size="16">0</text>
+<line x1="392" x2="392" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="392" y="274" text-anchor="middle" font-size="16">1</text>
+<line x1="470" x2="470" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="470" y="274" text-anchor="middle" font-size="16">2</text>
+<line x1="548" x2="548" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="548" y="274" text-anchor="middle" font-size="16">3</text>
+<line x1="626" x2="626" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="626" y="274" text-anchor="middle" font-size="16">4</text>
+<line x1="704" x2="704" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="704" y="274" text-anchor="middle" font-size="16">5</text>
+<line x1="782" x2="782" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="782" y="274" text-anchor="middle" font-size="16">6</text>
+<line x1="860" x2="860" y1="239" y2="251" stroke="#26384b" stroke-width="2"/>
+<text x="860" y="274" text-anchor="middle" font-size="16">7</text>
+<line x1="158" x2="158" y1="204" y2="245" stroke="#7c8b9a" stroke-dasharray="4,4"/>
+<circle cx="158" cy="245" r="5" fill="#17212b"/>
+<text x="158" y="221" text-anchor="middle" font-size="16" font-weight="600">A（初位置）</text>
+<line x1="782" x2="782" y1="204" y2="245" stroke="#7c8b9a" stroke-dasharray="4,4"/>
+<circle cx="782" cy="245" r="5" fill="#17212b"/>
+<text x="782" y="221" text-anchor="middle" font-size="16" font-weight="600">B（转向点）</text>
+<line x1="392" x2="392" y1="204" y2="245" stroke="#7c8b9a" stroke-dasharray="4,4"/>
+<circle cx="392" cy="245" r="5" fill="#17212b"/>
+<text x="392" y="221" text-anchor="middle" font-size="16" font-weight="600">C（末位置）</text>
+<line x1="158" x2="392" y1="329" y2="329" stroke="#0b7461" stroke-width="5" marker-end="url(#arr)"/>
+<text x="275.0" y="313" text-anchor="middle" font-size="17" fill="#075c4d">总位移 +3 m（向东）</text>
+<text x="38" y="389" font-size="19">路程：8 + 5 = 13 m</text>
+<text x="430" y="389" font-size="19">位移：1 − (−2) = +3 m</text>
+<text x="38" y="419" font-size="15" fill="#536170">路程累计所有走过的长度；总位移只由初位置 A 和末位置 C 决定。</text>
+</g></svg>
