@@ -13,7 +13,7 @@ export function lessonSteps(lesson?: SubjectWeek): LessonStep[] {
     sections.forEach((section, i) => steps.push({ id: section.id, title: section.title, checkpoint: i === sections.length - 1 ? 'knowledge' : undefined }))
     examples.forEach((problem, i) => steps.push({ id: problem.id, title: `例题 ${i + 1} · ${problem.title}`, checkpoint: i === examples.length - 1 ? 'example' : undefined }))
     practice.forEach((problem, i) => steps.push({ id: problem.id, title: `练习 ${i + 1} · ${problem.title}`, checkpoint: i === practice.length - 1 ? 'practice' : undefined }))
-    steps.push({ id: 'quiz', title: `${lessonData.quiz.totalPoints} 分短测` }, { id: 'review', title: '订正与回顾', checkpoint: 'retest' })
+    steps.push({ id: 'quiz', title: `${lessonData.quiz.totalPoints} 分${lesson.enrichmentReviewMap ? '累计诊断' : '短测'}` }, { id: 'review', title: '订正与回顾', checkpoint: 'retest' })
     for (const item of [...lessonData.sections, ...lessonData.workedExamples, ...lessonData.practice].filter(item => item.level === 'extension')) steps.push({ id: item.id, title: `可选拓展 · ${item.title}`, optional: true })
     return steps
   }

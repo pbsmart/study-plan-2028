@@ -1,12 +1,17 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { fileURLToPath } from 'node:url'
 import { gzipSync } from 'node:zlib'
 import { build } from 'vite'
 
+const expectedFigures = new Map([[2, 4], [3, 6], [4, 7]])
+
 describe('production curriculum bundle', () => {
-  it('leaves all 84 lesson chunks out of initial JavaScript and enforces the first-load budget', async () => {
+  // Vite's production flag follows NODE_ENV; Vitest normally sets it to test.
+  beforeEach(() => vi.stubEnv('NODE_ENV', 'production'))
+  afterEach(() => vi.unstubAllEnvs())
+  it.each(['/study-plan-2028/', '/nested/learning/'])('keeps 84 weeks and all 17 SVGs lazy and within budget under %s', async base => {
     const root = fileURLToPath(new URL('..', import.meta.url))
-    const result = await build({ root, logLevel: 'silent', build: { write: false } })
+    const result = await build({ root, base, logLevel: 'silent', build: { write: false } })
     if (!('output' in result)) throw new Error('Expected a single browser build')
     const chunks = result.output.filter(item => item.type === 'chunk')
     const byFilename = new Map(chunks.map(chunk => [chunk.fileName, chunk]))
@@ -20,34 +25,34 @@ describe('production curriculum bundle', () => {
     expect(initial.size).toBeGreaterThan(0)
     const weeks = chunks.filter(chunk => chunk.facadeModuleId?.startsWith('\0virtual:study-curriculum/week-'))
     expect(weeks).toHaveLength(84)
+    expect(new Set(weeks.map(chunk => chunk.facadeModuleId)).size).toBe(84)
     expect(weeks.every(chunk => chunk.isDynamicEntry && !initial.has(chunk.fileName))).toBe(true)
     const initialChunks = [...initial].map(filename => byFilename.get(filename)!)
     expect(initialChunks.reduce((sum, chunk) => sum + Buffer.byteLength(chunk.code), 0)).toBeLessThan(350_000)
     expect(initialChunks.reduce((sum, chunk) => sum + gzipSync(chunk.code).length, 0)).toBeLessThan(110_000)
+
     const figures = result.output.filter((item): item is Extract<typeof item, { type: 'asset' }> => item.type === 'asset' && item.fileName.endsWith('.svg'))
-    expect(figures).toHaveLength(4)
+    expect(figures).toHaveLength(17)
+    expect(new Set(figures.map(figure => figure.fileName)).size).toBe(17)
     for (const figure of figures) {
       expect(Buffer.byteLength(figure.source)).toBeLessThan(50_000)
       expect(initialChunks.some(chunk => chunk.code.includes(figure.fileName))).toBe(false)
-      const weekTwo = weeks.find(chunk => chunk.facadeModuleId?.endsWith('week-02'))!
-      expect(weekTwo.code).toContain(`/study-plan-2028/${figure.fileName}`)
+      const owners = weeks.filter(chunk => chunk.code.includes(figure.fileName))
+      expect(owners).toHaveLength(1)
+      expect(owners[0]!.code).toContain(`${base}${figure.fileName}`)
+      expect(expectedFigures.has(Number(owners[0]!.facadeModuleId!.slice(-2)))).toBe(true)
     }
-    expect(figures.reduce((sum, figure) => sum + Buffer.byteLength(figure.source), 0)).toBeLessThan(75_000)
+    for (const [weekNumber, expectedCount] of expectedFigures) {
+      const week = weeks.find(chunk => chunk.facadeModuleId?.endsWith(`week-${String(weekNumber).padStart(2, '0')}`))!
+      const ownedFigures = figures.filter(figure => week.code.includes(figure.fileName))
+      expect(ownedFigures).toHaveLength(expectedCount)
+      expect(ownedFigures.reduce((sum, figure) => sum + Buffer.byteLength(figure.source), 0)).toBeLessThan(75_000)
+    }
+    expect(figures.reduce((sum, figure) => sum + Buffer.byteLength(figure.source), 0)).toBeLessThan(150_000)
+    for (const chunk of chunks) expect(chunk.code.includes('/workspace/'), chunk.fileName).toBe(false)
     for (const chunk of weeks) {
       expect(Buffer.byteLength(chunk.code)).toBeLessThan(450_000)
       expect(gzipSync(chunk.code).length).toBeLessThan(150_000)
     }
   }, 30_000)
-  it('resolves static SVG URLs correctly under a non-root production base',async()=>{
-    const root=fileURLToPath(new URL('..',import.meta.url))
-    const result=await build({root,base:'/nested/learning/',logLevel:'silent',build:{write:false}})
-    if(!('output'in result))throw new Error('Expected browser output')
-    const week=result.output.find(item=>item.type==='chunk'&&item.facadeModuleId?.endsWith('week-02'))
-    if(!week||week.type!=='chunk')throw new Error('Missing second week')
-    const figures=result.output.filter(item=>item.type==='asset'&&item.fileName.endsWith('.svg'))
-    expect(figures).toHaveLength(4)
-    for(const figure of figures)expect(week.code).toContain(`/nested/learning/${figure.fileName}`)
-    expect(week.code).not.toContain('/workspace/')
-  },30_000)
-
 })

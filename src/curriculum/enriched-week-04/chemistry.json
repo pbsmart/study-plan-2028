@@ -1,0 +1,1102 @@
+{
+  "id": "w4-化学",
+  "week": 4,
+  "subject": "化学",
+  "title": "化学方程式计量：守恒配平、mol比例与第1—4周综合诊断",
+  "revision": "week04-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能保留化学式下标，只调整系数配平，并逐元素核对原子数守恒。",
+    "能从成组对应解释系数比为什么是实际反应量的mol比，避免直接当质量比。",
+    "能独立走完质量→已知mol→目标mol→目标质量的路线，完成Fe₂O₃足量CO反应与CaCO₃分解计算。",
+    "能先理解“谁先耗尽”，再用n/系数判断两给量反应的限制者、产量和剩余量，并完成质量总账。",
+    "能在唯一一套20分综合诊断中回顾第1周分类、第2周原子/离子与同位素、第3周物质的量，并根据错因留在本周补救。"
+  ],
+  "prerequisites": [
+    "第1周：按物质种类区分纯净物与混合物，再分单质、化合物及氧化物；读懂下标。",
+    "第2周：质子数=Z，中子数=A−Z，能结合单原子离子的电荷计算电子数；知道元素身份由质子数决定。",
+    "第3周：会用n=m/M与N=nN_A，区分物质的量、质量、摩尔质量和微粒个数；按题给数据运算。",
+    "本周s1先补前置，s2—s3从守恒与比例重新搭起；不要求自己推断陌生反应或进行任何实验。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "忙碌时按60+60+30分钟分三次可用学习时段，仍属同一个学习周，断点处记下活动ID与已做到的小问。前测补救、8节正文自检、4例、5练、唯一综合短测及订正均须完成，不能把60分钟当作可跳过核心的速成路线。150分钟是首轮学习计划；仍有概念卡点时可在下一可用周期继续本周，由自己手动推进，无日历绑定、倒计时或自动跳周。",
+    "segments": [
+      {
+        "id": "w4-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 9,
+        "activityIds": [
+          "w4-chemistry-diagnostic-1",
+          "w4-chemistry-diagnostic-2",
+          "w4-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w4-chemistry-time-recall",
+        "title": "前置补救及自检",
+        "minutes": 7,
+        "activityIds": [
+          "w4-chemistry-section-recall"
+        ]
+      },
+      {
+        "id": "w4-chemistry-time-concepts",
+        "title": "守恒、比例、质量路线与自检",
+        "minutes": 18,
+        "activityIds": [
+          "w4-chemistry-section-balance",
+          "w4-chemistry-section-ratios",
+          "w4-chemistry-section-bridge"
+        ]
+      },
+      {
+        "id": "w4-chemistry-time-models",
+        "title": "铁、分解、限量概念与两给量自检",
+        "minutes": 20,
+        "activityIds": [
+          "w4-chemistry-section-iron",
+          "w4-chemistry-section-decomposition",
+          "w4-chemistry-section-limiting",
+          "w4-chemistry-section-compare"
+        ]
+      },
+      {
+        "id": "w4-chemistry-time-examples",
+        "title": "四个阶梯例题，遮住下一步先模仿",
+        "minutes": 28,
+        "activityIds": [
+          "w4-chemistry-example-1",
+          "w4-chemistry-example-2",
+          "w4-chemistry-example-3",
+          "w4-chemistry-example-4"
+        ]
+      },
+      {
+        "id": "w4-chemistry-time-practice",
+        "title": "五题独立练习，写过程后核对",
+        "minutes": 30,
+        "activityIds": [
+          "w4-chemistry-practice-1",
+          "w4-chemistry-practice-2",
+          "w4-chemistry-practice-3",
+          "w4-chemistry-practice-4",
+          "w4-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w4-chemistry-time-quiz",
+        "title": "唯一第1—4周综合诊断，4题20分",
+        "minutes": 25,
+        "activityIds": [
+          "w4-chemistry-quiz-1",
+          "w4-chemistry-quiz-2",
+          "w4-chemistry-quiz-3",
+          "w4-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w4-chemistry-time-review",
+        "title": "逐点评分与错因订正",
+        "minutes": 13,
+        "activityIds": [
+          "w4-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "9分钟先独立答3题，答案与解析先折叠。前测只找入口卡点，不计入20分综合诊断。若某题不会，标记“卡在符号/单位/比例”，按路由使用本周已有补救与正文时间；不额外叠加一套前测。",
+    "questions": [
+      {
+        "id": "w4-chemistry-diagnostic-1",
+        "title": "前测1：系数与下标",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "只作纸面计数。把H₂+O₂→H₂O配成最简整数系数，并写两侧H、O总数；能把H₂O改成H₂O₂来配平吗？",
+        "answer": "2H₂+O₂→2H₂O；两侧H均4、O均2。不能改变下标，H₂O₂是另一种物质。",
+        "steps": [
+          "先看O左2右1，在水前加2。",
+          "右边H变4，在H₂前加2。",
+          "逐种原子检查，不改化学式。"
+        ],
+        "commonErrors": [
+          "只配氧而忘检查氢。",
+          "把下标2与前面系数2当作同一件事。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w4-chemistry-diagnostic-2",
+        "title": "前测2：由g回到mol",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "纯CO₂为17.6 g，题给M(CO₂)=44 g/mol。求n(CO₂)，并说明为什么这一步不乘N_A。",
+        "answer": "n(CO₂)=17.6 g÷(44 g/mol)=0.40 mol；所问为物质的量，不是微粒个数。",
+        "steps": [
+          "读目标单位mol。",
+          "用n=m/M，先除以每摩尔质量。",
+          "N_A用于mol与个数的换算，本问到mol即停止。"
+        ],
+        "commonErrors": [
+          "17.6×44。",
+          "答案写0.40 g或直接17.6乘N_A。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w4-chemistry-diagnostic-3",
+        "title": "前测3：先读mol比",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "题给2H₂+O₂→2H₂O，假定按该式完全反应、O₂足量且无副反应和损失。消耗0.80 mol H₂时生成多少mol H₂O？需要消耗多少mol O₂？",
+        "answer": "生成0.80 mol H₂O，消耗0.40 mol O₂。",
+        "steps": [
+          "H₂与H₂O系数均2，量比1∶1。",
+          "O₂与H₂系数比1∶2，所以0.80×1/2=0.40 mol。"
+        ],
+        "commonErrors": [
+          "看见2就再乘2得到1.60 mol水。",
+          "把mol关系直接写成g关系。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1配平、原子数或下标含义出错。",
+        "action": "先读前置，再在纸上列左/右每种原子数；保留物质化学式，逐个调系数。",
+        "sectionIds": [
+          "w4-chemistry-section-recall",
+          "w4-chemistry-section-balance"
+        ]
+      },
+      {
+        "when": "前测2的公式、运算或单位出错。",
+        "action": "先复述g、mol、g/mol各表示什么，再用单位约分检查n=m/M；前测3也错时接着补比例。",
+        "sectionIds": [
+          "w4-chemistry-section-recall",
+          "w4-chemistry-section-bridge",
+          "w4-chemistry-section-ratios"
+        ]
+      },
+      {
+        "when": "前测3比例出错，或三题均对但仍需说明理由。",
+        "action": "比例出错先把2∶1∶2按一组口述，再写目标/已知系数；三题均对时用相同预算讲清比例为什么只用于实际消耗量，并继续全部核心。",
+        "sectionIds": [
+          "w4-chemistry-section-ratios",
+          "w4-chemistry-section-limiting",
+          "w4-chemistry-section-compare"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w4-chemistry-section-recall",
+      "title": "先补前置：物质身份、核内计数和单位不能混",
+      "level": "remediation",
+      "paragraphs": [
+        "本节7分钟，包含阅读、纸上核对与随堂自检。前三周解决了三个不同层次的问题：第1周按实际组成给样品分类；第2周用质子、中子、电子描述原子和单原子离子；第3周用mol把微粒个数与质量连接起来。本周要在这些基础上回答“已知一种反应物的量，能生成多少另一种物质”。先认清所算对象，再动数字。",
+        "样品只含一种物质是纯净物，含多种物质是混合物。纯净物再按元素种类分单质或化合物；氧化物还须恰有两种元素且一种为氧。例如纯Fe是单质，纯Fe₂O₃是化合物且为氧化物，Fe与Fe₂O₃混在一起是混合物。理想条件下冰变成液态水仍是H₂O，属于状态变化；若出现了不同物质，便不能只叫状态变化。",
+        "化学式的下标告诉你一个分子内部的组成，或某物质化学式单元的组成比例。H₂O中2是每个水分子内H原子数，不是两种氢元素。NaCl是离子化合物，不能称为“NaCl分子”；计量可说NaCl的物质的量或NaCl化学式单元的个数。Fe₂O₃、CaCO₃也不在本课中称为一个个独立分子。",
+        "第2周的计数仍有效：质子数=Z，中子数=A−Z；单原子阳离子带k+时电子数=Z−k，阴离子带k−时电子数=Z+k。用“质子数−电子数=带符号的电荷数”回查。普通得失电子不改变质子数，所以不改变元素身份；同位素要看“质子数相同、中子数不同”，同核素的原子与离子不是因电子不同就互为同位素。质量数A不是以g/mol为单位的摩尔质量M。",
+        "第3周留下两座换算桥：n=m/M，N=nN_A。n写mol，m写g，M写g/mol，N写清“多少个哪种微粒”。本课需要的M均在题内给出；不要由核素的质量数擅自替代M。若需微粒个数，题中给N_A≈6.02×10²³ mol⁻¹；这是近似值，现行精确值为6.02214076×10²³ mol⁻¹。"
+      ],
+      "keyPoints": [
+        "先分清物质、元素、原子/离子与化学式单元。",
+        "Z管质子，A−Z管中子，电荷调整电子；mol与g必须换算。"
+      ],
+      "checkpoint": {
+        "question": "¹⁸O²⁻的Z=8，质子、中子、电子各多少？只含NaCl的样品能说由“NaCl分子”组成吗？",
+        "answer": "质子8、中子10、电子10；不能称NaCl分子。",
+        "explanation": "18−8=10个中子，负二电荷要求电子比质子多2个，8−10=−2。NaCl按离子组成与化学式单元计量。"
+      }
+    },
+    {
+      "id": "w4-chemistry-section-balance",
+      "title": "先守恒再配平：只能改前面的系数",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，包含阅读、纸上核对与随堂自检。化学方程式左边列反应物，右边列生成物，箭头表示指定反应方向。普通化学反应中，每一种元素的原子总数在反应前后相同。这里守恒的是每种原子的总数，不是分子总数，也不要求每种物质反应前后都保持原样。反应条件需由题目给出，不能只凭配平就断定某个反应会发生。",
+        "以题给“氢气与氧气在点燃条件下生成水”为纸面模型。先写H₂+O₂→H₂O：左边H有2、O有2，右边H有2、O有1，氧未守恒。把水前的系数改成2后，右边H变4，故氢气前也应改成2，得到2H₂+O₂→2H₂O。两边H均4，O均2，才配平。这个式子不是家庭实验步骤。",
+        "数原子时，要把“系数×下标”相乘，再把同侧所有来源相加。例如2H₂O代表2份水分子，对应H共2×2=4、O共2×1=2。若某元素出现在同侧两个式子中，要两处都算。没写系数或下标时，按1处理；但这个1的角色须分清。",
+        "不能把H₂O改成H₂O₂来凑氧数，因为后者是过氧化氢，物质身份已经变了。配平保留已知反应物与生成物的正确化学式，只调整式子前的系数，通常写最简正整数比。若所有系数同时乘相同倍数，比例不变；只改单独一个系数，必须重新核对全部元素。"
+      ],
+      "keyPoints": [
+        "系数可调，化学式下标不可为配平而改。",
+        "逐元素检查：同侧各项的“系数×下标”求和。"
+      ],
+      "checkpoint": {
+        "question": "题给反应在点燃条件下按2CO+O₂→2CO₂进行。两侧C、O原子数各是多少？分子总数是否也必须相同？",
+        "answer": "两侧C均2、O均4；左侧分子份数3，右侧2，不要求分子总数相同。",
+        "explanation": "左侧O要把2CO中的2个O与O₂中的2个O相加。原子重新组合可以使分子数变化。"
+      }
+    },
+    {
+      "id": "w4-chemistry-section-ratios",
+      "title": "从一组对应到mol比：系数不是克数",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，包含阅读、纸上核对与随堂自检。把2H₂+O₂→2H₂O暂时看成一张“对应卡”：每对应消耗2份H₂和1份O₂，就生成2份H₂O。扩大到3组，是6份H₂、3份O₂、6份H₂O；缩小到半组，对应量仍按同一个比例变化。这种分组只是计量模型，不描述真实反应一定由这几个分子同时碰撞完成。",
+        "同样的分组标准扩大到mol也成立：消耗2 mol H₂配合1 mol O₂，生成2 mol H₂O。原因是每1 mol指定基本单元对应同样多个基本单元。因此配平方程式的系数比等于“实际消耗或生成”的各物质的量之比。起始投料可以不按这个比例，过量部分不进入这个消耗比。",
+        "由一种物质的量求另一种，可以先口述：已知的系数是多少，目标的系数是多少？用n(目标)=n(已知实际反应量)×目标系数/已知系数。若从H₂O反推消耗O₂，应乘1/2；若从O₂求H₂O，应乘2/1。分式上下倒过来，含义就变了。",
+        "系数比通常不是质量比。题给M(H₂)=2 g/mol、M(O₂)=32 g/mol、M(H₂O)=18 g/mol时，2 mol、1 mol、2 mol分别对应4 g、32 g、36 g。因此这组反应的质量关系是4∶32∶36，不是2∶1∶2；反应物总质量4+32=36 g与生成物相同。"
+      ],
+      "keyPoints": [
+        "系数比对应实际反应量的mol比，也对应指定基本单元个数比。",
+        "目标系数写在分子；质量还需各自的M。"
+      ],
+      "checkpoint": {
+        "question": "按2H₂+O₂→2H₂O生成0.24 mol H₂O，实际消耗O₂多少mol？能直接说消耗0.12 g O₂吗？",
+        "answer": "消耗0.12 mol O₂；不能直接写0.12 g。",
+        "explanation": "0.24 mol×1/2=0.12 mol。若要求质量，还必须乘M(O₂)。"
+      }
+    },
+    {
+      "id": "w4-chemistry-section-bridge",
+      "title": "质量计算只走四步：g→mol→mol→g",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，包含阅读、纸上核对与随堂自检。现在把前后两周接起来。方程式的比例能直接连接两种物质的mol，天平给的却是g。因此要先把已知质量换成已知物质的量，跨过系数比这座桥，再把目标的物质的量换回质量。最稳的顺序是：已知质量m(A)→除以M(A)→n(A)→乘目标系数/已知系数→n(B)→乘M(B)→m(B)。",
+        "先做第0步：抄对方程式与条件，并核对配平；圈出“纯”“足量”“完全反应”“无副反应、无损失”等词。这里的“完全反应”是指题设指定的反应物或限制反应物耗尽，不是保证两种投料无论如何都一起耗尽。若题目缺少决定产量的量或条件，不能随意补上。",
+        "第1步用n(A)=m(A)/M(A)。M若是g/mol，质量先写g；例如250 mg须写成0.250 g。第2步只把mol按系数换成mol。第3步用m(B)=n(B)M(B)。把物质名跟在字母后，如n(Fe)，可以防止拿铁的M去除氧化铁的质量。",
+        "单位是检查器：g÷(g/mol)=mol，mol乘无量纲的系数比仍为mol，mol×g/mol=g。若中途得到g²/mol或最后还写mol，先别改答案，回头找用了哪个错误运算。若所问是分子个数，则最后不用乘M，而是用N=nN_A；若问分子内部某种原子，还要乘化学式中的相应个数。"
+      ],
+      "keyPoints": [
+        "质量→已知mol→目标mol→目标质量，每步标出物质。",
+        "先查条件，后代数据；单位与对象都要对齐。"
+      ],
+      "checkpoint": {
+        "question": "已知反应中A与B的系数分别为a、b，A完全反应且其他条件充分。由m(A)求m(B)，请写完整路线，不需数值。",
+        "answer": "m(B)=[m(A)/M(A)]×(b/a)×M(B)。",
+        "explanation": "先除已知物的摩尔质量，中间用目标/已知系数，最后乘目标物的摩尔质量。"
+      }
+    },
+    {
+      "id": "w4-chemistry-section-iron",
+      "title": "足量CO的意思：由氧化铁定产量",
+      "level": "core",
+      "paragraphs": [
+        "本节5分钟，包含阅读、纸上核对与随堂自检。本课铁的反应采用题给方程式Fe₂O₃+3CO→2Fe+3CO₂，条件为高温。只作理论计算，假定纯Fe₂O₃完全按该方程式反应，CO足量，无副反应和损失。CO有毒，本课不接触、不制取、不加热任何物质。",
+        "核对守恒：Fe左2右2；C左3右3；O左为Fe₂O₃的3加3CO的3，共6，右为3CO₂的6。容易漏的是左侧两处都有氧。再读“CO足量”：它说明CO不会提前耗尽，所以用给定Fe₂O₃的量计算；却没有告诉你最初共有多少CO，因此通常不能求剩余CO的绝对量。",
+        "用一个短样本练路线：8.0 g Fe₂O₃，题给M(Fe₂O₃)=160 g/mol、M(Fe)=56 g/mol、M(CO)=28 g/mol。先算n(Fe₂O₃)=8.0/160=0.050 mol。由1∶2求n(Fe)=0.100 mol，故m(Fe)=5.6 g；由1∶3求实际消耗n(CO)=0.150 mol，故消耗m(CO)=4.2 g。",
+        "产物铁比起始Fe₂O₃轻不违反质量守恒，因为还产生CO₂，同时反应还消耗了CO。不能拿一种反应物的质量与一种产物的质量单独硬判守恒。检查总质量时，要把所有实际消耗的反应物和所有产物都计入；过量未反应的物质须在反应前后两边一致保留。"
+      ],
+      "keyPoints": [
+        "足量说明谁不限制，不能代替它的具体起始量。",
+        "有多种反应物/产物时，质量守恒看完整账目。"
+      ],
+      "checkpoint": {
+        "question": "只有“Fe₂O₃为8.0 g、CO足量”这些条件，能求消耗CO的质量和剩余CO的质量吗？",
+        "answer": "能求消耗CO为4.2 g；不能唯一求剩余CO。",
+        "explanation": "消耗量由方程式与Fe₂O₃量决定；剩余量还要知道CO起始量。"
+      }
+    },
+    {
+      "id": "w4-chemistry-section-decomposition",
+      "title": "一种反应物分成两种产物：分别换算，再求和",
+      "level": "core",
+      "paragraphs": [
+        "本节5分钟，包含阅读、纸上核对与随堂自检。CaCO₃在题给高温条件下分解，本课采用CaCO₃→CaO+CO₂，假定纯CaCO₃完全分解且无副反应、无损失。先看式子：Ca左1右1，C左1右1，O左3右1+2=3，三个系数均为1，已配平。CaCO₃含Ca、C、O三种元素，不是氧化物；CaO与CO₂分别为两种元素组成的氧化物。",
+        "1∶1∶1说的是三种物质的物质的量相等。例如0.20 mol CaCO₃完全分解，生成CaO与CO₂各0.20 mol，不能把0.20 mol平分成各0.10 mol。一个组成单元的原子重新组合成两类产物，各自出现相应的一份，并非把“物质的量总数”当作必须守恒的量。",
+        "若题给M(CaCO₃)=100 g/mol、M(CaO)=56 g/mol、M(CO₂)=44 g/mol，则每1 mol反应的质量关系为100 g→56 g+44 g，说明相同mol的两种产物质量不相同。一个产物是气体也不能在总账上消失：质量守恒自检仍须把它计入。这里不要求也不指导实际收集气体。",
+        "反向题同样沿桥返回。若已知生成CO₂的质量，先除以M(CO₂)，由1∶1得到已分解CaCO₃的mol，再乘M(CaCO₃)。它能给出“已反应量”；只有题设说样品纯且完全分解，才可把这个量当作样品原有总量。"
+      ],
+      "keyPoints": [
+        "1∶1不等于等质量，也不是把一份mol平分。",
+        "气体产物计入守恒，反向计算保留纯度与完全反应条件。"
+      ],
+      "checkpoint": {
+        "question": "按题给CaCO₃→CaO+CO₂完全反应，若消耗0.30 mol CaCO₃，应生成各0.15 mol还是各0.30 mol产物？",
+        "answer": "CaO和CO₂各0.30 mol。",
+        "explanation": "系数比为1∶1∶1；原子数守恒，不要求反应前后各物质的mol数相加保持不变。"
+      }
+    },
+    {
+      "id": "w4-chemistry-section-limiting",
+      "title": "先懂“谁先用完”，再学比较式",
+      "level": "core",
+      "paragraphs": [
+        "本节5分钟，包含阅读、纸上核对与随堂自检。先用纸面配套帮助理解：一套材料需要2张蓝卡和1张橙卡，手头6张蓝卡与2张橙卡。蓝卡够3套，橙卡只够2套，因此最多配2套，剩2张蓝卡。不能因为橙卡数量较少就永远选橙卡；判断依据是“各自够完成多少套”，不是裸比较数量。",
+        "化学中先耗尽并决定最大生成量的反应物，叫限制反应物，也常称限量反应物。别的反应物可能剩余。这个概念依赖题目假定指定反应进行至限制反应物耗尽且无副反应；真实反应是否彻底还受条件影响，本课不把理论最大值当作任何实际过程都能达到的产量。",
+        "转到2H₂+O₂→2H₂O：一份对应关系需要2份H₂配1份O₂。如果给0.60 mol H₂、0.20 mol O₂，H₂够0.60/2=0.30份比例量，O₂够0.20/1=0.20份比例量，故O₂先耗尽。用O₂的0.20 mol算，可生成0.40 mol H₂O并消耗0.40 mol H₂，H₂还剩0.20 mol。",
+        "这里所谓“够多少份比例量”是帮助理解n/系数的说法，数值仍带mol，不是反应真正进行几次的微观描述。只有实际消耗量按2∶1配合，起始0.60∶0.20并不是这个比。因此不能把给出的两种反应物都假定完全耗尽，也不能把各自单算的两份产量相加。"
+      ],
+      "keyPoints": [
+        "比较各自能支持的同一比例量，较少者决定产量。",
+        "起始量、实际消耗量、剩余量是三笔不同的量。"
+      ],
+      "checkpoint": {
+        "question": "若一种反应物已用完，但另一种还剩，按本课理论模型还能继续生成产物吗？为什么？",
+        "answer": "不能，因为继续反应所需的限制反应物已没有了。",
+        "explanation": "剩余另一种物质不能单独满足方程式规定的共同消耗关系。"
+      }
+    },
+    {
+      "id": "w4-chemistry-section-compare",
+      "title": "两种都给量：先除系数，最后写剩余和总账",
+      "level": "core",
+      "paragraphs": [
+        "本节5分钟，包含阅读、纸上核对与随堂自检。两种反应物都给量时，固定做五步：①把各自质量都换成mol；②分别算n/该物质的系数；③取较小值，确定限制反应物；④由它求产物与另一物质的实际消耗量；⑤用起始量−消耗量求剩余。若两个比值相同，则恰好按计量比投料，在本课条件下两者同时耗尽。",
+        "不要拿质量大小直接判。题给M(H₂)=2 g/mol、M(O₂)=32 g/mol，H₂的每摩尔质量远小于O₂，少量克数也可能对应很多mol。即使比较mol数也不能漏除系数：在2H₂+O₂→2H₂O中，每1份O₂需要2份H₂，需求不相同。",
+        "只给mol也能按同样程序。例如0.50 mol H₂与0.40 mol O₂，比值为0.50/2=0.25 mol和0.40/1=0.40 mol，H₂限制。生成H₂O为0.50 mol，消耗O₂为0.25 mol，剩余O₂为0.40−0.25=0.15 mol。不能把O₂剩余写成0.40−0.50，因为两个被减的量必须属于同一种物质。",
+        "最后检查三件事：限制反应物剩余应为0，其他剩余不应为负；所有实际消耗量之比应等于系数比；反应前总质量=生成物总质量+剩余反应物总质量。若计算出负的剩余，通常是选错限制者或把不同物质的量直接相减。质量守恒通过只说明总账一致，还必须检查方程式比例与题设范围。"
+      ],
+      "keyPoints": [
+        "质量先换mol，分别除系数再比较。",
+        "剩余=同一种物质的起始量−实际消耗量。"
+      ],
+      "checkpoint": {
+        "question": "按2H₂+O₂→2H₂O，若n(H₂)/2与n(O₂)/1相等，在题设完全反应模型中谁剩余？",
+        "answer": "两者都不剩余，恰好同时耗尽。",
+        "explanation": "两种投料恰好满足2∶1所需比例；不必强行选一个“更少”的限制者。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w4-chemistry-example-1",
+      "title": "例1：从守恒得到一组对应",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "题给镁在点燃条件下按Mg+O₂→MgO反应。仅作理论题，Mg完全反应、O₂足量，无副反应和损失。（1）配平并逐种元素核对；（2）0.30 mol Mg消耗多少mol O₂，生成多少mol MgO？（3）能否称MgO为“MgO分子”？",
+      "answer": "2Mg+O₂→2MgO，两侧Mg均2、O均2；消耗O₂ 0.15 mol，生成MgO 0.30 mol。本课MgO按化学式单元计量，不称MgO分子。",
+      "steps": [
+        "O₂含2个O，先在MgO前写2；再在Mg前写2。",
+        "核对左Mg2、O2，右Mg2、O2，下标未改。",
+        "n(O₂)=0.30 mol×1/2=0.15 mol。",
+        "n(MgO)=0.30 mol×2/2=0.30 mol；这里计算的是MgO物质的量。",
+        "不用摩尔质量，因为只问mol；不把离子化合物都叫分子。"
+      ],
+      "commonErrors": [
+        "把MgO改为MgO₂。",
+        "把MgO量写为0.60 mol。",
+        "把MgO称为分子。"
+      ],
+      "estimatedMinutes": 5,
+      "points": 4,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "配成2∶1∶2且保持化学式。"
+        },
+        {
+          "points": 1,
+          "criterion": "逐种元素核对两侧原子数。"
+        },
+        {
+          "points": 1,
+          "criterion": "O₂为0.15 mol，比例正确。"
+        },
+        {
+          "points": 1,
+          "criterion": "MgO为0.30 mol，并避免称MgO分子。"
+        }
+      ]
+    },
+    {
+      "id": "w4-chemistry-example-2",
+      "title": "例2：足量CO下同时求铁和CO消耗",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "理论计算：高温下按Fe₂O₃+3CO→2Fe+3CO₂反应。16.0 g纯Fe₂O₃与足量CO反应，Fe₂O₃完全反应，无副反应和损失。题给M(Fe₂O₃)=160 g/mol、M(Fe)=56 g/mol、M(CO)=28 g/mol、M(CO₂)=44 g/mol。求生成铁和消耗CO的质量，再算CO₂质量完成守恒自检。",
+      "answer": "生成Fe 11.2 g，消耗CO 8.4 g，生成CO₂ 13.2 g；16.0+8.4=11.2+13.2=24.4 g。",
+      "steps": [
+        "核对Fe2、C3、O6在两侧相同；CO足量，使用Fe₂O₃定量。",
+        "n(Fe₂O₃)=16.0 g÷(160 g/mol)=0.100 mol。",
+        "n(Fe)=0.100×2/1=0.200 mol，m(Fe)=0.200×56=11.2 g。",
+        "消耗n(CO)=0.100×3/1=0.300 mol，消耗m(CO)=0.300×28=8.4 g。",
+        "n(CO₂)=0.300 mol，m(CO₂)=0.300×44=13.2 g。",
+        "把实际消耗与生成完整相加：16.0+8.4=11.2+13.2；CO起始量未知，不求其剩余量。"
+      ],
+      "commonErrors": [
+        "把16.0 g直接乘2当铁质量。",
+        "求CO时错用铁的系数2。",
+        "把8.4 g误说成CO原有总质量或剩余质量。"
+      ],
+      "estimatedMinutes": 8,
+      "points": 6,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "解释CO足量且守恒核对正确。"
+        },
+        {
+          "points": 1,
+          "criterion": "n(Fe₂O₃)=0.100 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "由系数比算n(Fe)=0.200 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "m(Fe)=11.2 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "消耗CO 8.4 g，含比例与质量换算。"
+        },
+        {
+          "points": 1,
+          "criterion": "CO₂ 13.2 g及完整质量自检正确。"
+        }
+      ]
+    },
+    {
+      "id": "w4-chemistry-example-3",
+      "title": "例3：分解时两种产物分别计算",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "理论计算：25.0 g纯CaCO₃在高温下按CaCO₃→CaO+CO₂完全分解，无副反应和损失。题给M(CaCO₃)=100 g/mol、M(CaO)=56 g/mol、M(CO₂)=44 g/mol。求两种产物的物质的量与质量，并判断它们的质量是否因系数相同而相同。",
+      "answer": "CaO与CO₂各0.250 mol；CaO为14.0 g，CO₂为11.0 g，质量不相同；14.0+11.0=25.0 g。",
+      "steps": [
+        "核对Ca1、C1、O3两侧相同，系数1∶1∶1。",
+        "n(CaCO₃)=25.0/100=0.250 mol。",
+        "生成n(CaO)=n(CO₂)=0.250 mol，不能平分为各0.125 mol。",
+        "m(CaO)=0.250×56=14.0 g；m(CO₂)=0.250×44=11.0 g。",
+        "两种产物M不同，等mol不等质量；含气体在内相加得25.0 g。"
+      ],
+      "commonErrors": [
+        "把两产物都写12.5 g。",
+        "忽略CO₂就说质量减少。",
+        "认为物质的量总数也必须相等。"
+      ],
+      "estimatedMinutes": 7,
+      "points": 5,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "n(CaCO₃)=0.250 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "两产物各0.250 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "CaO 14.0 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "CO₂ 11.0 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "用M不同解释质量不同，并完成25.0 g总账。"
+        }
+      ]
+    },
+    {
+      "id": "w4-chemistry-example-4",
+      "title": "例4：两种质量都给，先判限制者",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "仅作理论题：1.20 g H₂与12.8 g O₂按2H₂+O₂→2H₂O反应，题给反应条件为点燃；假定进行至限制反应物耗尽，无副反应和损失。题给M(H₂)=2 g/mol、M(O₂)=32 g/mol、M(H₂O)=18 g/mol。求限制反应物、生成水的质量、剩余反应物的物质的量与质量，并作总质量检查。",
+      "answer": "H₂限制；生成H₂O 10.8 g；剩O₂ 0.100 mol，即3.2 g；1.20+12.8=10.8+3.2=14.0 g。",
+      "steps": [
+        "先换mol：n(H₂)=1.20/2=0.600 mol，n(O₂)=12.8/32=0.400 mol。",
+        "各除系数：0.600/2=0.300 mol，0.400/1=0.400 mol，前者小，所以H₂先耗尽。",
+        "生成n(H₂O)=0.600×2/2=0.600 mol，m(H₂O)=0.600×18=10.8 g。",
+        "实际消耗n(O₂)=0.600×1/2=0.300 mol。",
+        "剩n(O₂)=0.400−0.300=0.100 mol，剩m(O₂)=0.100×32=3.2 g。",
+        "H₂剩0，O₂剩余为正；总质量14.0 g前后一致。选H₂的证据是n/系数较小，不是其克数较小。"
+      ],
+      "commonErrors": [
+        "只比较0.600与0.400而选O₂。",
+        "把H₂按自己算出的产水量与O₂按自己算出的产水量相加。",
+        "O₂剩余用0.400−0.600相减。"
+      ],
+      "estimatedMinutes": 8,
+      "points": 6,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "两种质量均正确换为mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "各除系数并正确判H₂限制。"
+        },
+        {
+          "points": 1,
+          "criterion": "水0.600 mol及10.8 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "消耗O₂为0.300 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "剩余O₂ 0.100 mol、3.2 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "完整质量检查正确，解释判断不能只看克数。"
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "id": "w4-chemistry-practice-1",
+      "title": "独练1：分类与离子记号回看",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "样品甲只含CuO，乙含Cu和CuO；其中Cu为铜，O为氧。先判断甲是否为氧化物、乙是否为混合物。再看⁶⁵Cu²⁺，题给Z=29，求质子、中子、电子数并检查净电荷。它与同核素中性铜原子是否仍属同一元素？",
+      "answer": "甲是氧化物；乙为混合物。⁶⁵Cu²⁺含质子29、中子36、电子27，29−27=+2；它与同核素中性铜原子仍属铜元素。",
+      "steps": [
+        "甲为一种化合物且只含Cu、O两种元素，所以是氧化物；乙有两种物质。",
+        "质子数由Z得29，中子数65−29=36。",
+        "2+表示少2个电子，所以电子29−2=27；净电荷+2。",
+        "得失电子未改变29个质子，元素身份不变。"
+      ],
+      "commonErrors": [
+        "见CuO有两种元素就说混合物。",
+        "把2+解释成多2个电子。",
+        "电子变了就认为换了元素。"
+      ],
+      "estimatedMinutes": 5,
+      "points": 4,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "甲氧化物、乙混合物，理由对应组成。"
+        },
+        {
+          "points": 1,
+          "criterion": "质子29与中子36。"
+        },
+        {
+          "points": 1,
+          "criterion": "电子27，净电荷检查+2。"
+        },
+        {
+          "points": 1,
+          "criterion": "说明质子数未变，所以元素不变。"
+        }
+      ]
+    },
+    {
+      "id": "w4-chemistry-practice-2",
+      "title": "独练2：不同系数仍走同一条比例",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "题给铝在点燃条件下按Al+O₂→Al₂O₃反应。仅作理论题，假定O₂为0.90 mol、Al足量，O₂完全反应，无副反应和损失。配平为最简整数系数，核对原子数，求消耗Al和生成Al₂O₃的物质的量。",
+      "answer": "4Al+3O₂→2Al₂O₃；两侧Al均4、O均6；消耗Al 1.20 mol，生成Al₂O₃ 0.60 mol。",
+      "steps": [
+        "O₂中每份2个O，Al₂O₃每份3个O，先取6个O：O₂前3、Al₂O₃前2。",
+        "右Al为2×2=4，所以Al前4，再核对。",
+        "n(Al)=0.90×4/3=1.20 mol。",
+        "n(Al₂O₃)=0.90×2/3=0.60 mol，不改变物质的下标。"
+      ],
+      "commonErrors": [
+        "把Al₂O₃写成AlO来配平。",
+        "把系数3直接乘0.90求Al。",
+        "答案把mol写成g。"
+      ],
+      "estimatedMinutes": 5,
+      "points": 4,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "配平4∶3∶2且化学式不变。"
+        },
+        {
+          "points": 1,
+          "criterion": "两侧Al4、O6。"
+        },
+        {
+          "points": 1,
+          "criterion": "Al 1.20 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "Al₂O₃ 0.60 mol。"
+        }
+      ]
+    },
+    {
+      "id": "w4-chemistry-practice-3",
+      "title": "独练3：换数后独立计算铁与CO",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "理论题：12.0 g纯Fe₂O₃在高温下与足量CO按Fe₂O₃+3CO→2Fe+3CO₂完全反应，无副反应和损失。题给M(Fe₂O₃)=160 g/mol、M(Fe)=56 g/mol、M(CO)=28 g/mol。求生成Fe和实际消耗CO的质量；还能唯一求出剩余CO质量吗？",
+      "answer": "生成Fe 8.4 g，消耗CO 6.3 g；不能唯一求剩余CO，因为起始CO量未知。",
+      "steps": [
+        "n(Fe₂O₃)=12.0/160=0.0750 mol。",
+        "n(Fe)=0.0750×2=0.150 mol，m(Fe)=0.150×56=8.4 g。",
+        "消耗n(CO)=0.0750×3=0.225 mol，消耗m(CO)=0.225×28=6.3 g。",
+        "足量只表明CO不限制，未给初始量就不能作“初始−消耗”。"
+      ],
+      "commonErrors": [
+        "照抄例题的0.100 mol而未换数。",
+        "把CO质量误写为12.0×3。",
+        "把消耗量当剩余量。"
+      ],
+      "estimatedMinutes": 7,
+      "points": 5,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "n(Fe₂O₃)=0.0750 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "Fe的mol比例正确。"
+        },
+        {
+          "points": 1,
+          "criterion": "Fe 8.4 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "CO的mol比例与6.3 g正确。"
+        },
+        {
+          "points": 1,
+          "criterion": "指出CO起始量未知，剩余不能确定。"
+        }
+      ]
+    },
+    {
+      "id": "w4-chemistry-practice-4",
+      "title": "独练4：由气体产物反求原料",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "理论题：某份纯CaCO₃在高温下按CaCO₃→CaO+CO₂完全分解，无副反应和损失，生成CO₂为6.60 g。题给M(CO₂)=44 g/mol、M(CaCO₃)=100 g/mol、M(CaO)=56 g/mol。求原CaCO₃质量和生成CaO质量，检查总质量。",
+      "answer": "原CaCO₃为15.0 g，生成CaO为8.4 g；8.4+6.6=15.0 g。",
+      "steps": [
+        "先从已知产物出发：n(CO₂)=6.60/44=0.150 mol。",
+        "1∶1∶1，因此已反应CaCO₃与生成CaO各0.150 mol。",
+        "题设纯且完全分解，原CaCO₃量等于已反应量；m(CaCO₃)=0.150×100=15.0 g。",
+        "m(CaO)=0.150×56=8.4 g。",
+        "检查8.4+6.6=15.0 g，气体也在总账内。"
+      ],
+      "commonErrors": [
+        "已知CO₂质量却除以CaCO₃的M。",
+        "把6.60 g当两种产物的各自质量。",
+        "没有完全分解条件也把反应量视为原有总量。"
+      ],
+      "estimatedMinutes": 6,
+      "points": 4,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "n(CO₂)=0.150 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "由1∶1∶1求另外两者各0.150 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "原CaCO₃ 15.0 g，保留完全分解条件。"
+        },
+        {
+          "points": 1,
+          "criterion": "CaO 8.4 g及总质量检查正确。"
+        }
+      ]
+    },
+    {
+      "id": "w4-chemistry-practice-5",
+      "title": "独练5：较少克数未必先耗尽",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "仅作理论题：2.00 g H₂与11.2 g O₂按2H₂+O₂→2H₂O反应，条件为题给点燃；反应至限制反应物耗尽，无副反应和损失。题给M(H₂)=2 g/mol、M(O₂)=32 g/mol、M(H₂O)=18 g/mol。判断限制者，求生成水质量、剩余哪种反应物及其mol和质量，并反驳“质量小的一定先耗尽”。",
+      "answer": "O₂限制；生成H₂O 12.6 g；剩H₂ 0.300 mol，即0.60 g。H₂的质量虽较小却有剩余，因此不能按克数大小选限制者。",
+      "steps": [
+        "n(H₂)=2.00/2=1.00 mol，n(O₂)=11.2/32=0.350 mol。",
+        "n/系数分别1.00/2=0.500 mol、0.350/1=0.350 mol，O₂先耗尽。",
+        "水为0.350×2=0.700 mol，质量0.700×18=12.6 g。",
+        "H₂实际消耗0.700 mol，剩1.00−0.700=0.300 mol，质量0.300×2=0.60 g。",
+        "总质量2.00+11.2=12.6+0.60=13.2 g；限制判断来自mol除系数。"
+      ],
+      "commonErrors": [
+        "因2.00小于11.2就选H₂。",
+        "计算两种产水量后取较大值。",
+        "水质量漏乘18或剩余量漏减消耗量。"
+      ],
+      "estimatedMinutes": 7,
+      "points": 5,
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "H₂ 1.00 mol、O₂ 0.350 mol。"
+        },
+        {
+          "points": 1,
+          "criterion": "比较n/系数并判O₂限制。"
+        },
+        {
+          "points": 1,
+          "criterion": "水0.700 mol、12.6 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "剩H₂ 0.300 mol、0.60 g。"
+        },
+        {
+          "points": 1,
+          "criterion": "用本题剩余证据反驳只看质量，并完成质量检查。"
+        }
+      ]
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "“配平就是随便把化学式中的数字凑相等。”",
+      "why": "下标决定物质组成，改下标会换成别的物质。",
+      "right": "只调式子前的系数，再逐元素核对同侧各项的系数×下标之和。"
+    },
+    {
+      "wrong": "“两边分子数必须相等，所有mol相加也必须相等。”",
+      "why": "反应可以使原子重新组合，分子数与各物质mol总数不必守恒。",
+      "right": "普通化学反应检查每种原子总数与完整质量总账；配平方程式给出各物质间固定比例。"
+    },
+    {
+      "wrong": "“系数1∶2就是质量1∶2。”",
+      "why": "不同物质每mol质量不同，系数只直接连接实际消耗或生成的mol。",
+      "right": "质量先除自身M，按系数换mol，再乘目标M。"
+    },
+    {
+      "wrong": "“CO足量，剩余CO就等于算出的CO量。”",
+      "why": "由Fe₂O₃算出的只是消耗量，足量没有给出起始量。",
+      "right": "起始量未知时不求绝对剩余；有起始量后用同物质起始减消耗。"
+    },
+    {
+      "wrong": "“限制反应物一定是质量小的，或者mol数小的。”",
+      "why": "摩尔质量与方程式对各反应物的需求系数都可能不同。",
+      "right": "把各自质量换mol，再分别除各自系数，比较能支持的同一比例量。"
+    },
+    {
+      "wrong": "“两种反应物分别算出的产量可以相加。”",
+      "why": "两个计算是在问同一个反应最多能进行多少，不能重复计算成两场互不关联的反应。",
+      "right": "以限制者决定的较小理论产量为准，再求另一物质的实际消耗与剩余。"
+    },
+    {
+      "wrong": "“气体跑掉就说明质量不守恒；理论算出多少，实际一定得到多少。”",
+      "why": "漏计气体会使总账不全，实际过程还可能不完全、存在副反应或损失。",
+      "right": "本课只按题设完全、无副反应、无损失的理论模型计算，并计入全部产物及剩余。"
+    },
+    {
+      "wrong": "“离子电子变了就换了元素，NaCl也能叫分子。”",
+      "why": "元素由质子数决定；构成微粒并非全是分子。",
+      "right": "单原子离子先算Z、A−Z、电子，再查净电荷；NaCl按化学式单元计量，不称NaCl分子。"
+    }
+  ],
+  "quiz": {
+    "instructions": "本次是第1—4周真实综合回顾诊断，替代第4周普通短测，不在150分钟之外再叠加测验。共4题，25分钟，满分20分；先关闭答案、例题与评分说明独立完成，再逐点评分。第1题7分钟、第2题5分钟、第3题6分钟、第4题7分钟。例题/练习的核对分仅用于训练，前测、随堂自检、训练分及勾选都不并入这20分。每条1分评分点须满足条内完整条件才得1分，不额外扣负分；过程分须有对应过程，不因只写最后数值而自动获得。第2题个数使用题给近似N_A，合理等值科学计数法可接受。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w4-chemistry-quiz-1",
+        "title": "综合诊断1：分类、原子结构与同位素",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "（1）样品甲只含CO和CO₂两种物质，样品乙只含MgO。判断甲是否为混合物，乙是否为氧化物，各写组成理由。（2）³⁴S²⁻的Z=16，求质子、中子、电子数，并用正负电荷之差回查。（3）³⁴S²⁻与同核素中性³⁴S是否同属一种元素？说明依据。（4）另给中性³²S，Z也为16。³²S与³⁴S是否互为同位素？说明核内依据。",
+        "answer": "（1）甲为混合物，含CO、CO₂两种物质；乙为氧化物，是由Mg、O两种元素组成且含氧的化合物。（2）³⁴S²⁻：质子16、中子18、电子18，16−18=−2。（3）同属硫元素，因为质子数均16。（4）³²S与³⁴S互为同位素，质子数均16，中子数分别16、18。",
+        "steps": [
+          "分类先数物质，再数元素；两种元素不等于两种物质。",
+          "由Z=16得质子16；中子34−16=18。",
+          "2−表示电子比质子多2，电子18；检查净电荷−2。",
+          "得失电子不改变质子数，所以同核素原子与离子仍属同一元素。",
+          "³²S的中子数32−16=16，³⁴S的中子数34−16=18；同质子、异中子满足同位素定义。"
+        ],
+        "commonErrors": [
+          "只因CO、CO₂含相同元素就把甲判纯净物。",
+          "因MgO有两种元素就说混合物。",
+          "2−反而减2个电子。",
+          "把原子与同核素离子误称同位素。"
+        ],
+        "estimatedMinutes": 7,
+        "points": 6,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "甲判混合物，明确有CO、CO₂两种物质。"
+          },
+          {
+            "points": 1,
+            "criterion": "乙判氧化物，说明为含Mg、O两种元素的化合物。"
+          },
+          {
+            "points": 1,
+            "criterion": "³⁴S²⁻的质子16、中子18均正确，说明来自Z及A−Z。"
+          },
+          {
+            "points": 1,
+            "criterion": "电子18并写16−18=−2或等效电荷核验。"
+          },
+          {
+            "points": 1,
+            "criterion": "原子与同核素离子仍为同一元素，依据是质子数16不变。"
+          },
+          {
+            "points": 1,
+            "criterion": "判断³²S与³⁴S互为同位素，并指出同质子16、中子16与18不同。"
+          }
+        ]
+      },
+      {
+        "id": "w4-chemistry-quiz-2",
+        "title": "综合诊断2：从SO₂质量到指定O原子",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "纯SO₂样品质量9.60 g，题给M(SO₂)=64 g/mol，取N_A≈6.02×10²³ mol⁻¹。求：（1）n(SO₂)；（2）SO₂分子个数；（3）这些分子内部所含O原子的物质的量及个数。写明公式、所数对象和单位，不把内部原子说成游离原子。",
+        "answer": "n(SO₂)=0.150 mol；SO₂分子约9.03×10²²个；内部O原子为0.300 mol，约1.806×10²³个。",
+        "steps": [
+          "n(SO₂)=9.60 g÷(64 g/mol)=0.150 mol。",
+          "N(SO₂)≈0.150×6.02×10²³=9.03×10²²，所数对象为SO₂分子。",
+          "一个SO₂分子含2个O原子，因此n(O原子)=2×0.150=0.300 mol。",
+          "N(O原子)≈0.300×6.02×10²³=1.806×10²³，为分子数的2倍；个数后不写mol。"
+        ],
+        "commonErrors": [
+          "直接用9.60乘N_A。",
+          "求O原子时把S也数进去乘3。",
+          "把9.03×10²²写成mol。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 4,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "列n=m/M并算出n(SO₂)=0.150 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "用N=nN_A得到约9.03×10²²个SO₂分子，对象和数量级正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "读出O的倍数2，算内部O原子为0.300 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "O原子约1.806×10²³个，所数对象正确且个数不带mol。"
+          }
+        ]
+      },
+      {
+        "id": "w4-chemistry-quiz-3",
+        "title": "综合诊断3：配平后完成分解质量账",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "纯CaCO₃为35.0 g，题给高温下按CaCO₃→CaO+CO₂完全分解，无副反应和损失。题给M(CaCO₃)=100 g/mol、M(CaO)=56 g/mol、M(CO₂)=44 g/mol。（1）检查是否已配平，写出两侧Ca、C、O总数，说明能否为配平改下标。（2）求CaCO₃物质的量及两种产物质量。（3）用两种产物总质量检查结果。",
+        "answer": "已配平，两侧Ca均1、C均1、O均3，不能为配平改下标。n(CaCO₃)=0.350 mol；生成CaO 19.6 g、CO₂ 15.4 g；19.6+15.4=35.0 g。",
+        "steps": [
+          "核对O：右边CaO的1与CO₂的2相加为3，其余元素也相等。",
+          "n(CaCO₃)=35.0/100=0.350 mol。",
+          "由1∶1∶1，CaO与CO₂各0.350 mol。",
+          "m(CaO)=0.350×56=19.6 g；m(CO₂)=0.350×44=15.4 g。",
+          "相加得35.0 g；化学式下标标记组成，不能为配平而改。"
+        ],
+        "commonErrors": [
+          "把35.0 g直接平分成两份。",
+          "漏掉CaO中的O而说未配平。",
+          "只计算固体CaO就声称质量不守恒。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "确认已配平，Ca1/C1/O3两侧相同，并明确下标不能为配平而改。"
+          },
+          {
+            "points": 1,
+            "criterion": "正确列n=m/M，CaCO₃为0.350 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "使用1∶1∶1，两种产物各0.350 mol，未平分mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "CaO为19.6 g，含对应M的换算。"
+          },
+          {
+            "points": 1,
+            "criterion": "CO₂为15.4 g且19.6+15.4=35.0 g，气体未漏计。"
+          }
+        ]
+      },
+      {
+        "id": "w4-chemistry-quiz-4",
+        "title": "综合诊断4：小质量者仍可能有剩余",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "仅作理论题：1.40 g H₂与8.00 g O₂按2H₂+O₂→2H₂O反应，题给条件为点燃；反应至限制反应物耗尽，无副反应和损失。题给M(H₂)=2 g/mol、M(O₂)=32 g/mol、M(H₂O)=18 g/mol。求限制反应物、生成水的物质的量与质量、剩余反应物的物质的量与质量。最后作完整质量核对，并用本题说明能否按起始质量大小选限制者。",
+        "answer": "O₂限制；生成H₂O 0.500 mol、9.00 g；剩H₂ 0.200 mol、0.40 g。1.40+8.00=9.00+0.40=9.40 g。H₂初始质量较小却有剩余，故不能按质量大小选择限制者。",
+        "steps": [
+          "n(H₂)=1.40/2=0.700 mol，n(O₂)=8.00/32=0.250 mol。",
+          "n/系数分别0.700/2=0.350 mol、0.250/1=0.250 mol，O₂限制。",
+          "水为0.250×2=0.500 mol，m(H₂O)=0.500×18=9.00 g。",
+          "实际消耗H₂为0.500 mol，剩0.700−0.500=0.200 mol，质量0.200×2=0.40 g。",
+          "总质量9.40 g前后一致；H₂的1.40 g小于O₂的8.00 g却仍剩余，判断应比较各自n/系数。"
+        ],
+        "commonErrors": [
+          "选择质量较小的H₂。",
+          "直接比较0.700与0.250却不给系数依据。",
+          "把剩余H₂当成0.700−0.250。",
+          "漏把剩余H₂计入反应后总质量。"
+        ],
+        "estimatedMinutes": 7,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "H₂=0.700 mol、O₂=0.250 mol，两次质量换算及单位正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "正确比较0.700/2与0.250/1，判O₂为限制者。"
+          },
+          {
+            "points": 1,
+            "criterion": "由限制者得H₂O 0.500 mol、9.00 g，比例与M换算正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "正确求剩余H₂ 0.200 mol、0.40 g，使用同物质起始减消耗。"
+          },
+          {
+            "points": 1,
+            "criterion": "完整核对9.40 g前后相等，并指出较小质量的H₂有剩余，不能仅按克数判断。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "综合题1：能以物质种类判断混合物，并以两种元素且含氧的化合物判断氧化物；不能把元素种类当物质种类。",
+        "综合题1：S²⁻电子数与净电荷方向正确；能说明元素看质子、同位素看同质子异中子。",
+        "综合题2：质量先除M，指定O原子的倍数2正确，粒子个数结果不写mol。",
+        "综合题3：不为配平改下标，使用1∶1∶1的mol关系，再分别乘M求两产物质量。",
+        "综合题4：必须按n/系数判O₂限制，产量由限制者算，剩余用同物质起始减消耗；不得按质量大小猜选。",
+        "总分至少16/20且以上关键门槛全部通过，才具备本课推进条件。高总分不能掩盖关键概念错误；看过答案后照抄不算独立达标。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w4-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w4-chemistry-section-recall"
+        ],
+        "action": "按“样品里有什么—元素有哪些—核内Z/A—核外电子”分四行重建；分类和原子结构各用题内证据说明。需要时在下一可用周期独立重做，保留首次分数。"
+      },
+      {
+        "questionIds": [
+          "w4-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w4-chemistry-section-recall",
+          "w4-chemistry-section-bridge"
+        ],
+        "action": "重写m(SO₂)→n(SO₂)→n(O原子)→N(O原子)，每段标单位和对象；解释倍数2来自下标。"
+      },
+      {
+        "questionIds": [
+          "w4-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w4-chemistry-section-balance",
+          "w4-chemistry-section-ratios",
+          "w4-chemistry-section-bridge",
+          "w4-chemistry-section-decomposition"
+        ],
+        "action": "先查每种原子，再写1∶1∶1的mol关系，两产物分别乘各自M；气体必须进入总质量。"
+      },
+      {
+        "questionIds": [
+          "w4-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w4-chemistry-section-limiting",
+          "w4-chemistry-section-compare",
+          "w4-chemistry-section-ratios",
+          "w4-chemistry-section-bridge"
+        ],
+        "action": "先用配套材料解释“各够多少套”，再写两种n/系数；把起始、消耗、剩余分行，只在同种物质内做减法。"
+      }
+    ]
+  },
+  "mastery": [
+    "能用自己的话区分化学式下标与系数，独立配平并逐元素数原子。",
+    "能解释系数比为何连接实际反应量的mol，而不是直接连接质量或全部投料。",
+    "能写出带对象和单位的g→mol→mol→g路线，不错用M，不跳过足量与完全反应条件。",
+    "能完成Fe₂O₃与足量CO、CaCO₃分解两类基础计算，解释消耗量与未知剩余量的区别。",
+    "能用n/系数判断两给量的限制者，算产量和剩余，并用包含剩余物的质量总账复查。",
+    "唯一综合诊断达到16/20且各关键门槛通过；1—3周回顾错误也须订正，不能只看本周计算得分。"
+  ],
+  "nextStep": "完成本周核心活动及订正后，达到综合诊断总分和关键门槛，再由学习者手动推进。若分类、原子结构、单位、配平或限量判断仍不稳，按本周补救小节继续，下一可用周期再独立重做相应题并记录新尝试。不要清空首次分数，不把订正后的正确答案当作首次独立掌握，不因日历变化自动进入下一周。",
+  "reviewActivity": {
+    "id": "w4-chemistry-review-corrections",
+    "title": "13分钟综合订正：找到是哪一周的桥断了",
+    "instructions": [
+      "第1—4分钟：逐条核对唯一4题综合诊断的20个1分评分点，记录首次分数，并另查五类关键门槛。不要把例题与练习的训练分加进来。",
+      "第5—9分钟：选最多两处最根本错误，写“原思路—违背的定义/题设—正确依据”。分类与原子结构回到本周前置小节；单位与对象回到质量桥；配平与比例回到守恒；限制者错误先回到配套概念。",
+      "第10—13分钟：合上答案，口述一条质量→mol→比例→质量路线；再解释为什么质量较小的反应物仍可能剩余。对回顾错题，用质子/中子/电子或物质/元素的区别解释，不能只背一个数值。",
+      "13分钟订正未修复的错误保留为本周待办，在下一可用学习时段继续补救并独立重做原错题，记录为新尝试。订正与重做不另外生成一份20分测验，不重复计算首次得分。",
+      "150分钟是首轮包含补救、正文自检、例题、独练、综合诊断和订正的完整计划；额外巩固按实际需要延长本周，不削减核心，也不承诺到时一定掌握。"
+    ]
+  },
+  "safetyScope": "全课只进行纸笔计数、理论计算、原创图示阅读与口头解释，不安排任何家庭实验，不要求购买、接触、混合、点燃或加热化学品。CO有毒，H₂/O₂混合及点燃存在危险；文中“高温”“点燃”仅为题目指定的反应条件，不是操作指南。所有产量题均明确采用指定方程式、纯物质或给定组成、足量或两给量、反应至题定反应物/限制反应物耗尽、无副反应和损失的理论范围，不能直接作为现实实验产量或安全判断。",
+  "sourcePolicy": {
+    "authorship": "中文讲解、问题数据、解析、评分与图示方案均为针对基础薄弱在职自学者原创编写。第4周保留原课Fe₂O₃足量CO、CaCO₃分解及H₂/O₂限制反应物的核心范围；唯一综合诊断按已发布第1周分类、第2周原子结构/离子/同位素、第3周物质的量真实技能设计。",
+    "examStatus": "全部为原创教学题，非历年真题；未声称对应某版教材页码、2028年必考范围或已核验高考题。pilot-ready表示内容试点版本，不表示学习者已经掌握。",
+    "externalSources": [
+      {
+        "id": "w4-chemistry-source-openstax-balance",
+        "title": "OpenStax Chemistry 2e：4.1 Writing and Balancing Chemical Equations",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations",
+        "kind": "reference",
+        "scopeNote": "已实际打开原发布机构页面，核验系数与下标的区别、逐元素原子数守恒、配平不能改变物质化学式，以及CaCO₃分解方程式示例。本文教学表述与题目数据为原创，未复制原书题目。"
+      },
+      {
+        "id": "w4-chemistry-source-openstax-stoichiometry",
+        "title": "OpenStax Chemistry 2e：4.3 Reaction Stoichiometry",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+        "kind": "reference",
+        "scopeNote": "已实际打开原发布机构页面，核验配平方程式系数用于物质的量比，以及质量经mol关系再换成目标质量的计量路线。未沿用原书例题数据。"
+      },
+      {
+        "id": "w4-chemistry-source-openstax-limiting",
+        "title": "OpenStax Chemistry 2e：4.4 Reaction Yields",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-4-reaction-yields",
+        "kind": "reference",
+        "scopeNote": "已实际打开原发布机构页面，核验限制反应物、过量物质、理论产量与实际产量条件差别；本课不扩展产率计算。"
+      },
+      {
+        "id": "w4-chemistry-source-bipm-mole",
+        "title": "BIPM：SI base unit — mole (mol)",
+        "url": "https://www.bipm.org/en/si-base-units/mole",
+        "kind": "reference",
+        "scopeNote": "已实际打开BIPM页面，核验物质的量单位mol、指定基本单元与N_A精确值。题中6.02×10²³ mol⁻¹明确为近似计算值。"
+      }
+    ]
+  }
+}

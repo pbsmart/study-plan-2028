@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="525" viewBox="0 0 1000 525" role="img" aria-labelledby="title desc"><title id="title">函数允许不同输入得到相同输出</title><desc id="desc">定义域A为负二、零、二，规则为平方。负二和二都箭头指向输出四，零指向输出零。每个输入恰好一根箭头，虽有两个输入同得四，仍是函数；不同输出的集合为零和四。</desc><rect width="1000" height="525" fill="white"/><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#111"/></marker></defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#111;font-size:20px}.title{font-size:27px;font-weight:700}.small{font-size:18px}.strong{font-weight:700}</style>
+<text x="25" y="43" class="title">每个输入恰好一个输出，就通过唯一性检查</text>
+<text x="25" y="80" class="small">教学规则 f(x) = x²；箭头方向从输入到输出，不反过来要求唯一。</text>
+<text x="90" y="135" class="strong">定义域 A = {−2, 0, 2}</text>
+<text x="575" y="135" class="strong">值域 = {0, 4}</text>
+<circle cx="180" cy="200" r="29" fill="white" stroke="#111" stroke-width="2"/>
+<text x="168" y="208" class="strong">−2</text>
+<circle cx="180" cy="290" r="29" fill="white" stroke="#111" stroke-width="2"/>
+<text x="168" y="298" class="strong">2</text>
+<circle cx="180" cy="380" r="29" fill="white" stroke="#111" stroke-width="2"/>
+<text x="168" y="388" class="strong">0</text>
+<circle cx="680" cy="245" r="29" fill="white" stroke="#111" stroke-width="2"/>
+<text x="668" y="253" class="strong">4</text>
+<circle cx="680" cy="335" r="29" fill="white" stroke="#111" stroke-width="2"/>
+<text x="668" y="343" class="strong">0</text>
+<line x1="209" y1="200" x2="650" y2="239" stroke="#111" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="209" y1="290" x2="650" y2="251" stroke="#111" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="209" y1="380" x2="650" y2="335" stroke="#111" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="310" y="196" class="small">(−2)² = 4</text>
+<text x="330" y="394" class="small">0² = 0</text>
+<text x="352" y="303" class="small">2² = 4</text>
+<text x="25" y="453" class="">输入 2 的函数值是 4；整个值域是集合 {0, 4}。</text>
+<text x="25" y="491" class="small">输出 4 收到两根箭头没有问题；同一个输入发出两个不同结果才不合要求。</text>
+</svg>

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "w3-physics-fig-trapezoid",
+    "kind": "velocity-time",
+    "timeUnit": "s",
+    "velocityUnit": "m/s",
+    "vertices": [
+      [
+        0,
+        2
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "displayRole": "section-teaching"
+  },
+  {
+    "id": "w3-physics-fig-stop-boundary",
+    "kind": "velocity-time",
+    "timeUnit": "s",
+    "velocityUnit": "m/s",
+    "vertices": [
+      [
+        0,
+        12
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "displayRole": "section-teaching"
+  },
+  {
+    "id": "w3-physics-fig-signed-area",
+    "kind": "velocity-time",
+    "timeUnit": "s",
+    "velocityUnit": "m/s",
+    "vertices": [
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        -4
+      ]
+    ],
+    "displayRole": "section-teaching"
+  },
+  {
+    "id": "w3-physics-fig-quiz2-given",
+    "kind": "velocity-time",
+    "timeUnit": "s",
+    "velocityUnit": "m/s",
+    "vertices": [
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        8
+      ]
+    ],
+    "displayRole": "question-givens-only"
+  }
+]

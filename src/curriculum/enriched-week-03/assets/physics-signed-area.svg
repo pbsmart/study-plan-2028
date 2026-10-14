@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="565" viewBox="0 0 900 565" role="img" aria-labelledby="title desc"><title id="title">教学图：反向时上方取正、下方取负</title><desc id="desc">速度—时间直线从(0秒,4米每秒)经过(2秒,0)到(4秒,负4米每秒)。时间轴上下两个三角形分别标正位移4米与负位移4米；路程把两块面积大小相加。</desc><rect width="900" height="565" fill="white"/><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#111;font-size:19px}.title{font-size:25px;font-weight:700}.small{font-size:17px}</style>
+<text x="30" y="40" class="title">教学图：反向时上方取正、下方取负</text>
+<text x="30" y="74" class="small">原创模型图；图线描述速度随时间怎样变化，不能当作运动轨迹。</text>
+<polygon points="145.0,255.0 145.0,120.0 430.0,255.0" fill="#ddd"/>
+<polygon points="430.0,255.0 715.0,390.0 715.0,255.0" fill="#eee"/>
+<line x1="145.0" y1="390.0" x2="145.0" y2="95.0" stroke="#111" stroke-width="2"/>
+<line x1="130.0" y1="255.0" x2="753.0" y2="255.0" stroke="#111" stroke-width="2"/>
+<text x="30" y="105" class="">v / (m/s)</text>
+<text x="743.0" y="287.0" class="">t / s</text>
+<line x1="145.0" y1="250.0" x2="145.0" y2="260.0" stroke="#111" stroke-width="2"/>
+<text x="140.0" y="281.0" class="small">0</text>
+<line x1="287.5" y1="250.0" x2="287.5" y2="260.0" stroke="#111" stroke-width="2"/>
+<text x="282.5" y="281.0" class="small">1</text>
+<line x1="430.0" y1="250.0" x2="430.0" y2="260.0" stroke="#111" stroke-width="2"/>
+<text x="425.0" y="281.0" class="small">2</text>
+<line x1="572.5" y1="250.0" x2="572.5" y2="260.0" stroke="#111" stroke-width="2"/>
+<text x="567.5" y="281.0" class="small">3</text>
+<line x1="715.0" y1="250.0" x2="715.0" y2="260.0" stroke="#111" stroke-width="2"/>
+<text x="710.0" y="281.0" class="small">4</text>
+<line x1="140.0" y1="390.0" x2="150.0" y2="390.0" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="396.0" class="small">-4</text>
+<line x1="140.0" y1="322.5" x2="150.0" y2="322.5" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="328.5" class="small">-2</text>
+<line x1="140.0" y1="187.5" x2="150.0" y2="187.5" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="193.5" class="small">2</text>
+<line x1="140.0" y1="120.0" x2="150.0" y2="120.0" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="126.0" class="small">4</text>
+<line x1="145.0" y1="120.0" x2="430.0" y2="255.0" stroke="#111" stroke-width="4"/>
+<line x1="430.0" y1="255.0" x2="715.0" y2="390.0" stroke="#111" stroke-width="4"/>
+<circle cx="145.0" cy="120.0" r="5" fill="#111"/>
+<circle cx="430.0" cy="255.0" r="5" fill="#111"/>
+<circle cx="715.0" cy="390.0" r="5" fill="#111"/>
+<text x="225" y="205" class="">+4 m</text>
+<text x="567" y="311" class="">−4 m</text>
+<text x="30" y="473" class="">位移：+4 m − 4 m = 0 m；路程：4 m + 4 m = 8 m</text>
+<text x="30" y="512" class="small">下方的负号表示位移方向；路程只累计各段长度。</text>
+</svg>

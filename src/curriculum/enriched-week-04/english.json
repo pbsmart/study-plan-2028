@@ -1,0 +1,836 @@
+{
+  "id": "w4-英语",
+  "week": 4,
+  "subject": "英语",
+  "title": "阅读主旨与细节：从读通一句到用全文作答",
+  "revision": "week04-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能借逐句词义读通原创连续短文，区分主要内容与背景、一个局部细节。",
+    "能按问题需要定位人物、动作、时间、地点和原因，并用原句或准确改述回答。",
+    "能利用前后句理解代词，保留only、some、now、last等限制，区分矛盾与原文未说明。",
+    "在一套20分新材料整合诊断中复查第1周句子与词性、第2周时态和问句、第3周主谓一致以及本周阅读，所有用时纳入180分钟。"
+  ],
+  "prerequisites": [
+    "带上第1周找完整主语、动词、对象和状态的方法，第2周时间与be/普通动词分路，第3周长主语中心与单复数配对。",
+    "可随时查看每题词义。先用中文说清句意再选答案，不把生词量或听力混入本课过关分。",
+    "本课面向河南南阳2028高考备考的跨版本衔接；教材版本未核定，不编教材章节页码或考试安排。",
+    "准备纸笔。短测先独立答再展开；本课仍无音频，不把书面答对算作真实听辨达标。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "核心180分钟含累计诊断，替代通常周测，没有额外复习卷。为腾出26分钟四题综合短测与40分钟订正，本周压缩为4个例题、5道练习。忙时两个可用周期各90分钟：第一周期前测9＋补救9＋八节正文42＋例题24＋练习1用6；第二周期练习2—5共24＋累计短测26＋订正40。词义查阅、全文重读、正文自检都计入。超时留在同一学习周，下次英语学段接续，不跳题假完成、不按日期自动推进、不占第三科预留；无额外抄词或听力任务。",
+    "segments": [
+      {
+        "id": "w4-en-time1",
+        "title": "三题前测，各3分钟",
+        "minutes": 9,
+        "activityIds": [
+          "w4-en-d1",
+          "w4-en-d2",
+          "w4-en-d3"
+        ]
+      },
+      {
+        "id": "w4-en-time2",
+        "title": "9分钟前置补救与查词方法",
+        "minutes": 9,
+        "activityIds": [
+          "w4-en-r1"
+        ]
+      },
+      {
+        "id": "w4-en-time3",
+        "title": "八节连贯阅读教学，含词义查阅和自检",
+        "minutes": 42,
+        "activityIds": [
+          "w4-en-s1",
+          "w4-en-s2",
+          "w4-en-s3",
+          "w4-en-s4",
+          "w4-en-s5",
+          "w4-en-s6",
+          "w4-en-s7",
+          "w4-en-s8"
+        ]
+      },
+      {
+        "id": "w4-en-time4",
+        "title": "四阶例题，各6分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w4-en-ex1",
+          "w4-en-ex2",
+          "w4-en-ex3",
+          "w4-en-ex4"
+        ]
+      },
+      {
+        "id": "w4-en-time5",
+        "title": "五道分层独练，各6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w4-en-pr1",
+          "w4-en-pr2",
+          "w4-en-pr3",
+          "w4-en-pr4",
+          "w4-en-pr5"
+        ]
+      },
+      {
+        "id": "w4-en-time6",
+        "title": "第1—4周整合诊断，7＋6＋6＋7分钟",
+        "minutes": 26,
+        "activityIds": [
+          "w4-en-quiz1",
+          "w4-en-quiz2",
+          "w4-en-quiz3",
+          "w4-en-quiz4"
+        ]
+      },
+      {
+        "id": "w4-en-time7",
+        "title": "分项核分、定点补救、遮答重做与解释",
+        "minutes": 40,
+        "activityIds": [
+          "w4-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题9分钟，不计20分短测；可查词义，先独立判断。前测只找起点，错了先用已计入预算的9分钟补救槽，不重刷前三周整套课程。",
+    "questions": [
+      {
+        "id": "w4-en-d1",
+        "title": "读通句子再找中心",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "The worker near the boxes checks a list carefully. 写完整主语、动作及对象；carefully修饰什么？\n词义：The/the＝这位／这些；worker＝工作人员；near＝在……附近；boxes＝箱子，复数；checks＝检查；a＝一张；list＝清单；carefully＝仔细地。",
+        "answer": "完整主语The worker near the boxes；动词checks；对象a list；carefully修饰checks，说明怎样检查。译：“箱子附近的这位工作人员仔细检查一张清单。”",
+        "steps": [
+          "先把修饰人物的near the boxes归入完整主语。",
+          "再找检查动作与对象。",
+          "carefully说明动作方式，不把它当物品特点。"
+        ],
+        "commonErrors": [
+          "只看boxes；把副词当宾语；只写中心worker代替完整主语。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w4-en-d2",
+        "title": "过去与现在不能互相覆盖",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "填空：①Yesterday the worker _____ the books.（check/checks/checked）②Each book _____ a number now.（have/has）\n词义：Yesterday＝昨天；the＝这位／这些；worker＝工作人员；check/checks/checked＝检查，原形／现在三单／过去式；books＝书，复数；Each＝每个；book＝书，单数；have/has＝有，原形／现在三单；a＝一个；number＝编号；now＝现在。",
+        "answer": "①checked，昨天的普通动作。②has，each book单数，表示现在拥有编号。译：“昨天这位工作人员检查了这些书。”“现在每本书都有一个编号。”",
+        "steps": [
+          "先看时间，再看主语和句型。",
+          "不能因为①worker单数就忽略昨天；不能因为②现实有很多书就选have。"
+        ],
+        "commonErrors": [
+          "用checks写昨天；把Each book当复数。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w4-en-d3",
+        "title": "时间信息只回答对应问题",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "原创两句：The shop opens at seven. Lin works there for two hours. 问“Lin工作多久”，应回答七点还是两小时？能据此断言店七点关门吗？\n词义：The＝这家；shop＝商店；opens＝开门；at＝在某时；seven＝七；Lin＝林，人名；works＝工作；there＝在那里；for＝持续；two＝两；hours＝小时，复数。",
+        "answer": "工作两小时；不能说七点关门，原文七点说的是开门时间，关门时间未交代。译：“商店七点开门。林在那里工作两小时。”",
+        "steps": [
+          "把开放时刻和个人工作时长分栏。",
+          "看问题问哪一种，再回句定位。",
+          "不把未提供的关门时间猜出来。"
+        ],
+        "commonErrors": [
+          "见到数字就选七；把开门当关门。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "第1题句子或词性不清楚",
+        "action": "先用补救节拆主语、动作、对象与方式，再读第2节。",
+        "sectionIds": [
+          "w4-en-r1",
+          "w4-en-s2"
+        ]
+      },
+      {
+        "when": "第2题时间或中心出错",
+        "action": "补救槽复习过去/现在与单复数，再读第2、8节的阅读中的语法。",
+        "sectionIds": [
+          "w4-en-r1",
+          "w4-en-s2",
+          "w4-en-s8"
+        ]
+      },
+      {
+        "when": "第3题混淆时间类型或补造结论",
+        "action": "重点读第4、6节，给问题先贴“时刻/时长”等标签。",
+        "sectionIds": [
+          "w4-en-s4",
+          "w4-en-s6"
+        ]
+      },
+      {
+        "when": "三题均能解释",
+        "action": "同一9分钟槽中解释各错误选项，再顺序读全文；前测不能代替最后累计诊断。",
+        "sectionIds": [
+          "w4-en-r1",
+          "w4-en-s1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w4-en-r1",
+      "title": "九分钟把前三周接到阅读里",
+      "level": "remediation",
+      "paragraphs": [
+        "读长一点的文章不需要先掌握全部语法。先看一个熟结构：The worker reads the list carefully.（The/the＝这位／这张；worker＝工作人员；reads＝阅读、查看；list＝清单；carefully＝仔细地。译：“这位工作人员仔细查看这张清单。”）主语The worker，谓语动词reads，宾语the list；carefully是副词，说明查看的方式。词性回答是什么类别，句子成分回答在句中做什么。",
+        "换状态句：The list is clear.（The＝这张；list＝清单；is＝现在时be单数形式；clear＝清楚的。译：“这张清单很清楚。”）clear是形容词，在句中作表语，不是动作承受的宾语。与前句对照，不能见到动词后还有词就一律叫宾语。这是第1周的两种基础句型。",
+        "时间与主语也继续检查。The workers checked the list yesterday.（The/the＝这些／这张；workers＝工作人员，复数；checked＝检查，过去式；list＝清单；yesterday＝昨天。译：“这些工作人员昨天检查了这张清单。”）先由昨天选过去式；若说现在、单数中心才考虑checks。does/did后普通动词要原形，be句保留对应be形式。它们在本周用于理解句意与累计诊断，不重新扩成整套时态课程。",
+        "本槽9分钟：前3分钟读两类句子，接着3分钟圈主语、动词与时间，最后3分钟做停一停并解释。忘记更大块前周知识时，可在下次英语学段回看对应周；本次先把句子读通，不把查词和复习都叠加在总时长之外。"
+      ],
+      "keyPoints": [
+        "词性与成分分开，宾语与表语分开。",
+        "时间、句型、主语中心依次核对。",
+        "本课允许查题内词义。"
+      ],
+      "checkpoint": {
+        "question": "The worker is careful. 中careful是形容词还是副词，作宾语还是表语？词义：The＝这位；worker＝工作人员；is＝现在时be形式；careful＝认真的、仔细的。",
+        "answer": "careful是形容词，作表语，说明工作人员的特点。译：“这位工作人员很认真。”",
+        "explanation": "careful描述主语特点；carefully通常说明动作方式，不能把两者只当拼写不同。"
+      }
+    },
+    {
+      "id": "w4-en-s1",
+      "title": "完整读一篇：先抓场景，再逐句读通",
+      "level": "core",
+      "paragraphs": [
+        "原创教学短文《Chen的新清单》（非新闻、真题或实测报告）：\n①Chen works in a small reading room.\n②It opens from six to nine in the evening.\n③On Tuesdays, he checks books for twenty minutes.\n④Last week, the list of books was hard to read.\n⑤Chen made a new list.\n⑥Now each book has a clear number on the new list.\n⑦The new list helps him find books.\n⑧He still checks the books carefully.",
+        "逐句词义：\n①Chen＝陈，人名；works＝工作；in＝在……里；a＝一间；small＝小的；reading＝阅读；room＝房间；reading room＝阅览室。\n②It＝它，指阅览室；opens＝开放；from＝从；six＝六；to＝到；nine＝九；in＝在；the＝本词组组成部分；evening＝晚上；in the evening＝在晚上。\n③On＝用于日期或星期前；Tuesdays＝每周二；he＝他；checks＝检查；books＝书，复数；for＝持续；twenty＝二十；minutes＝分钟，复数。\n④Last＝上一个；week＝星期；Last week＝上周；the＝这张／这些；list＝清单；of＝……的；books＝书；was＝过去时be单数形式；hard＝困难的；to read＝读起来，其中read＝阅读，to帮助构成这种表达；hard to read＝读起来费劲。\n⑤Chen＝陈；made＝制作，make的过去式；a＝一张；new＝新的；list＝清单。\n⑥Now＝现在；each＝每个；book＝书，单数；has＝有，现在三单；a＝一个；clear＝清楚的；number＝编号；on＝在……上；the＝这张；new＝新的；list＝清单。\n⑦The＝这张；new＝新的；list＝清单；helps＝帮助，现在三单；him＝他，动作对象；find＝找到；books＝书，复数。\n⑧He＝他；still＝仍然；checks＝检查；the＝这些；books＝书；carefully＝仔细地。",
+        "全文意译（本课原创）：陈在一间小阅览室工作。阅览室晚上六点至九点开放。每周二，他检查书籍二十分钟。上周，书籍清单读起来费劲。陈制作了一张新清单。现在每本书在新清单上都有一个清楚的编号。新清单帮助他找到书。他仍然仔细检查这些书。",
+        "先不做题，按顺序说出文章发生了什么：阅览室与日常检查是背景；旧清单难读是问题；陈制作新清单是处理；编号清楚、帮助找书是当前结果；他仍仔细检查书。文章没有说新清单让所有问题消失，也没有调查别人使用清单的效果。",
+        "本课全文是原创场景，八句之间有时间和指代联系。第一遍借词义把每句译通；第二遍圈陈、新旧清单及时间词。不要为生词停在第一句，也不要只认某一个熟词就猜整篇意思。正文停一停和查词的时间已经包含在42分钟阅读教学槽中。"
+      ],
+      "keyPoints": [
+        "先完整读场景，再进入题型。",
+        "背景、问题、处理与结果连成全文。",
+        "原创故事不等于真实调查证据。"
+      ],
+      "checkpoint": {
+        "question": "全文处理的主要问题是什么？是阅览室太小，还是旧清单难读？",
+        "answer": "旧清单难读。文章写制作新清单、编号清楚及帮助找书；small只是场景信息，没有写扩建房间。",
+        "explanation": "主旨从后续展开验证，不能把开头出现的背景词当中心问题。"
+      }
+    },
+    {
+      "id": "w4-en-s2",
+      "title": "句子读懂是第一步：主干、时间和修饰各归位",
+      "level": "core",
+      "paragraphs": [
+        "看第④句：Last week, the list of books was hard to read.（Last week＝上周；the＝这张；list＝清单；of＝……的；books＝书；was＝过去时be；hard to read＝读起来费劲，hard困难、read阅读。译：“上周，书籍清单读起来费劲。”）完整主语the list of books，中心list单数；Last week提供过去时间，所以用was。books不是主语中心，不能据它改were。",
+        "第⑥句Now each book has a clear number on the new list.（Now＝现在；each＝每个；book＝书；has＝有；a＝一个；clear＝清楚的；number＝编号；on＝在……上；the＝这张；new＝新的；list＝清单。译：“现在每本书在新清单上都有一个清楚的编号。”）each book是主语，has是拥有的动词，a clear number是宾语；clear形容编号。on the new list补充编号在哪里，不是第二个动作。",
+        "第⑧句He still checks the books carefully.（He＝他；still＝仍然；checks＝检查；the＝这些；books＝书；carefully＝仔细地。译：“他仍然仔细检查这些书。”）carefully说明怎样检查；不能换careful来充当这里的方式副词。与上一句clear作名词的修饰对照，词汇在句中的作用也帮助我们读准细节。",
+        "长句先画主干，再放回修饰；不要把所有修饰都永久删掉。阅读题可能正问这些修饰带来的地点、方式或范围。前面三周教的主干方法负责让你不迷路，本周还要把被暂括的信息恢复，回答题目到底问的那一项。"
+      ],
+      "keyPoints": [
+        "主干有助读懂，修饰往往含题目所问信息。",
+        "时间与中心合起来解释was/has等形式。",
+        "clear描写编号，carefully说明检查方式。"
+      ],
+      "checkpoint": {
+        "question": "第④句说难读的是书籍清单还是所有书？从哪组词判断？",
+        "answer": "是清单。完整主语the list of books的中心是list，of books只是说明这张清单列什么。",
+        "explanation": "若忽略中心，会把清单难读误成每本书都很难读，改变了原意。"
+      }
+    },
+    {
+      "id": "w4-en-s3",
+      "title": "主旨用全文检验：谁或什么，发生了什么变化",
+      "level": "core",
+      "paragraphs": [
+        "主旨不是把标题写得很大，也不是从文章抽一个熟词。先问文章围绕谁或什么，再问用了最多内容说明哪件事。本篇围绕陈与书籍清单，主要写旧清单难读、制作新清单及其帮助找书的作用。一个自然概括是：“陈改用清楚的新清单，方便找书，并继续认真检查。”",
+        "第一句说陈在阅览室工作，第二句说开放时间，这些帮助了解场景，但后续并未主要讨论场所营业安排。若把标题选成“阅览室的开放时间”，就只覆盖一处细节；若选成“全世界最好的图书管理办法”，范围又远超过一个原创场景。",
+        "主旨可借首尾句，但不是首句抄写题。本文真正的问题出现在第④句，变化发生在第⑤⑥句，作用在第⑦句。你需要把这些句子连起来看。只写“书”“阅览室”是话题词，还没告诉人文章围绕它说了什么。",
+        "选择题中常有选项复用原文某个词却偏离内容。判断时用全文覆盖法：这个标题能解释主要问题、处理和结果吗？会不会把背景当重点？有没有添加原文没谈的领域或保证？先读意思，再看词相同不同。"
+      ],
+      "keyPoints": [
+        "主旨＝核心对象＋全文主要内容。",
+        "细节不能冒充全文，范围不能过大。",
+        "首尾可参考，仍需看中间展开。"
+      ],
+      "checkpoint": {
+        "question": "用中文一句话概括本文，必须提到清单的什么变化与作用？",
+        "answer": "旧清单难读，陈制作了编号清楚的新清单，帮助自己找书，并仍认真检查。",
+        "explanation": "不要求逐字相同；关键是有变化与作用，而不只说陈在阅览室工作。"
+      }
+    },
+    {
+      "id": "w4-en-s4",
+      "title": "细节题先分问题类型：时刻、时长与频率不是一回事",
+      "level": "core",
+      "paragraphs": [
+        "本文有三种容易混淆的时间：晚上六点到九点是场所开放时段；每周二是陈检查书的日子；二十分钟是这项检查的持续时间。题目问哪一类，就找对应信息，不能一见数字就把最近数字抄上去。",
+        "第②句It opens from six to nine in the evening.（It＝阅览室；opens＝开放；from＝从；six＝六；to＝到；nine＝九；in the evening＝在晚上，in在、evening晚上。译：“阅览室晚上六点至九点开放。”）这句没有说陈每天在那里工作三小时，也没有说明他在其他日子的安排。场所开放时间不等于某人的全部工作时间。",
+        "第③句On Tuesdays, he checks books for twenty minutes.（On Tuesdays＝每周二，On用于星期前、Tuesdays周二；he＝陈；checks＝检查；books＝书；for＝持续；twenty＝二十；minutes＝分钟。译：“每周二，陈检查书二十分钟。”）问when在什么时候，要给周二；问how long持续多久，要给二十分钟。when＝什么时候，how long＝多久。题目问why为什么时，要找原因，不能用时间代替。",
+        "做题可先用中文给题干贴标签：谁、地点、时刻、时长、原因或做法。找到对应句后再读前后句，避免把它的代词与时间背景读错。答案可用中文准确表达或用已经学过的英语短语，不为了写英语再凭空增加信息。"
+      ],
+      "keyPoints": [
+        "问题类型决定定位的细节。",
+        "场所开放时段不等于个人工作时长。",
+        "when、how long、why各有不同所问。"
+      ],
+      "checkpoint": {
+        "question": "问“陈检查书多久”，能否答from six to nine？词义：from＝从；six＝六；to＝到；nine＝九。",
+        "answer": "不能。陈检查书的时长是二十分钟；六点至九点是阅览室开放时段。",
+        "explanation": "同是时间信息，也要看属于哪个主体、哪个动作。"
+      }
+    },
+    {
+      "id": "w4-en-s5",
+      "title": "代词与前后句：it、he、him要各自找回对象",
+      "level": "core",
+      "paragraphs": [
+        "代词使文章不用反复重复同一名字。找指代不是一律选最近名词，而是回到动作与句意。在第②句，It承接前句的reading room，因为能开放的是阅览室；第③句he指陈，因为检查书的是人。It＝它；he＝他；reading room＝阅览室。",
+        "判断对象还要看它能否承担本句动作。第②句It opens的It承接阅览室；opens是场所开放，不能因为前句也有陈就理解为陈本人开门营业。这里It＝它，opens＝开放。文章说明的是阅览室的开放时段，不是陈全部的个人工作安排。每遇代词都做这一步，不能背成it在任何文章里都等于阅览室。",
+        "第⑦句The new list helps him find books.（The＝这张；new＝新的；list＝清单；helps＝帮助；him＝他，动作对象；find＝找到；books＝书。译：“新清单帮助他找到书。”）him指陈，是被帮助的人；主语仍是清单。代词所指与句子成分是两件事：him指陈，但在这句不是主语。",
+        "检查指代时做一个替换：把候选对象放回原句，看看前后是否连贯。若还有两个同样可能的对象，应该承认材料不够，而不是硬猜。本课这几处都有连续语境支持；后面新材料也会要求你用这种办法说明理由。"
+      ],
+      "keyPoints": [
+        "指代看前后意思，不总看距离。",
+        "同指一个人，不代表处处都是主语。",
+        "替换后检查是否与上下句一致。"
+      ],
+      "checkpoint": {
+        "question": "第⑦句him指谁？它在这句是不是主语？",
+        "answer": "指陈，但不是主语，是helps帮助的对象；主语是The new list，即新清单。",
+        "explanation": "“这个词指谁”与“这个词作什么成分”分开作答。"
+      }
+    },
+    {
+      "id": "w4-en-s6",
+      "title": "核对选项：相符、矛盾与未说明分开",
+      "level": "core",
+      "paragraphs": [
+        "相符是原文直接写明，或准确换了一种说法；矛盾是原文有相反信息；未说明是文中找不到足够依据。三者都要回文本检查，不能把“我觉得可能”当作相符，也不能把没写的一概说成事实错误。",
+        "例如有人说“陈现在停止检查书”，这与第⑧句still checks相反，属于矛盾。still＝仍然；checks＝检查。若说“陈每天早上也上班”，文中没有陈早晨工作的信息，就属于未说明。晚上开放的信息不自动排除其他未交代安排，也不证明他早晨工作。",
+        "限制词会改变结论。on Tuesdays只交代周二的这项安排，没有only on Tuesdays，不能加成仅在周二才检查；only＝仅仅。每本书在新清单上有编号，也不等于任何人使用任何清单都不会出错。对象、时间和语气都不能扩大。",
+        "把一个人、一次变化写成人人适用的学习或管理规律，是阅读中的越界，不是更深理解。本文只报告原创场景里陈的做法与作用，没有提供现实调查数据。能识别“未说明”，本身就是准确作答，不需要替作者补一段常识。"
+      ],
+      "keyPoints": [
+        "矛盾有反面依据，未说明是证据不足。",
+        "保留only、still等限制，不自行增加。",
+        "个别场景不扩大为普遍保证。"
+      ],
+      "checkpoint": {
+        "question": "“陈只在周二检查书”是原文准确表达吗？原文哪一个词并不存在？",
+        "answer": "不能认定准确。原文有On Tuesdays，但没有only；只是交代周二的安排，没有明确排除别的日子。",
+        "explanation": "不要把一个已知时间误当唯一时间。"
+      }
+    },
+    {
+      "id": "w4-en-s7",
+      "title": "同义改述看意思：答案不必与原句一字不差",
+      "level": "core",
+      "paragraphs": [
+        "细节答案可以是原文的一部分，也可以是意思相同的改述。关键是对象、动作、时间和范围都保持一致。若原文说二十分钟，答“三分之一小时”在意义上相同；但基础阅读中没有必要额外换算，写二十分钟更直接。",
+        "第⑦句说新清单帮助陈找到书。用中文答“陈找书时从新清单得到帮助”表达相同关系；答“新清单替陈检查了全部书”就不同。帮助找书不是自动完成检查，第⑧句还说他仍然亲自检查。熟词相同不能抵消关系被改写。",
+        "同义不是随意换近义词。第④句清单hard to read是读起来费劲，结合新清单编号清楚可以说明需要改善可读性；不能换成“书很难理解”，因为主语中心变了。先固定句子关系，再允许自然表达上的变化。",
+        "作答时采用“答案＋依据”两步。先用一句短话回答题目，再指出句号编号或抄出必要短语，并解释它为何相符。举证不需要把整篇文章复制一遍；选择的依据应真正回答所问，不只是含有同一个词。 若原因并非用because（因为）直接明说，而是由相邻事件支持，回答要说明是根据上下文的合理推断；不能把推断冒充原句，也不能随意添加别的动机。"
+      ],
+      "keyPoints": [
+        "改述保持对象、动作、时间、范围。",
+        "帮忙找书不等于替人完成检查。",
+        "答案与证据对应，不靠熟词匹配。"
+      ],
+      "checkpoint": {
+        "question": "“新清单帮助陈查找书”与“新清单让陈不必检查书”，哪句得到支持？",
+        "answer": "前句得到第⑦句支持；后句与第⑧句陈仍认真检查书相反。",
+        "explanation": "同样提到新清单，仍要核对所说的作用是否改变。"
+      }
+    },
+    {
+      "id": "w4-en-s8",
+      "title": "用一个问题调动前四周，不再额外加卷",
+      "level": "core",
+      "paragraphs": [
+        "最后的累计诊断仍只有四题20分，用同一篇全新失物招领短文及必要的补充句，把四周方法连起来。第1题拆句与词性，第2题在新场景中处理时间和问句，第3题找主语中心，第4题读全文主旨和细节。每项评分只计一次，不会把交叉技能重复加分。",
+        "读新短文先完整看一遍和题内词义；遇到made、wrote等已在题注说明的不规则过去式，可以借注释读懂，不要求临时背全过去式表。真正要判断的仍是是谁、做什么、现在还是过去、哪部分能作证据。题注支持理解，不能把标准答案写在题注里。",
+        "第2周路线可用三个短提醒唤回：普通动词过去问句用Did＋主语＋原形；肯定短答保留did；过去be问句把was/were前移，不能加did。Did/did＝帮助组成过去问句或承接过去行为，was/were＝be的过去形式。这些规则在新句中用一次，不加一套额外改写作业。",
+        "第3周中心提醒也保留：each按单数，普通and并列两对象用复数，with修饰不添主语数量；不可数information和数量中心bottles分清。通过累计诊断知道哪个旧技能尚需补救，订正就定点回读，不把前面三周全部再刷一遍。没有音频，所以四周累计结果也只覆盖书面任务。"
+      ],
+      "keyPoints": [
+        "新材料迁移能看出是否会用旧方法。",
+        "20分取代普通周测，不另叠加复习卷。",
+        "题注支持词义，评分定位关键技能。"
+      ],
+      "checkpoint": {
+        "question": "读懂短文大意了，就可以忽略“did后原形”和主语中心吗？",
+        "answer": "不能。大意理解、句子结构、时间形式与主语配对需要分别检查；累计诊断会分别定位。",
+        "explanation": "不因大意猜对就把基础结构错误算作已掌握，也不因一个词不熟就否定全部阅读能力。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w4-en-ex1",
+      "title": "第一阶：从全文选主旨",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "回读本课原创八句短文《Chen的新清单》。选择最合适主旨，并说明另两项为何不合适：A.陈用清楚的新清单帮助找书，仍认真检查。B.阅览室应该建得越大越好。C.陈每周二检查书二十分钟。",
+      "answer": "A。B把开头small扩成扩建主张，全文没有谈这件事；C是一项准确细节，但只覆盖第③句，没有概括清单从难读到改进的主要变化。",
+      "steps": [
+        "先确定全文围绕陈和新旧清单展开。",
+        "把问题、处理、作用连起来。",
+        "A覆盖核心；B增加文章未讨论的要求；C过窄。",
+        "注意主旨题的干扰项可以是事实正确但覆盖不够，不一定每个都是假话。"
+      ],
+      "commonErrors": [
+        "见到C原文同词多就选C；只抄第一句背景。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w4-en-ex2",
+      "title": "第二阶：把三种时间分给三个问题",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "回读《Chen的新清单》。分别回答：①阅览室晚上什么时间开放？②陈在文中所说的哪一天检查书？③这一检查持续多久？每项注明对应句号；不能把②补成“只在这一天”。",
+      "answer": "①晚上六点到九点，第②句。②每周二，第③句。③二十分钟，第③句。原文未加only，所以不说只在周二。",
+      "steps": [
+        "按时段、星期安排、时长列三个空。",
+        "先问各信息属于场所还是人。",
+        "对准from...to...、On Tuesdays、for twenty minutes；完整词义见正文：分别为从……到……、每周二、持续二十分钟。",
+        "最后检查没有把场所开放三小时写成陈工作三小时。"
+      ],
+      "commonErrors": [
+        "都用同一个数字回答；给周二擅自加只。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w4-en-ex3",
+      "title": "第三阶：代词不是总找最近名词",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "回读《Chen的新清单》第①②句与第⑦句，指出第②句It、第⑦句him各指什么，并解释判断依据。词义：It＝它；him＝他，作动作对象。",
+      "answer": "It指陈工作的阅览室；him指陈。前一句引入阅览室，第②句描述它的开放时段；第⑦句说明新清单帮助陈找书。不能把场所开放时段自动当成陈的全部个人工作时间。",
+      "steps": [
+        "先读前一句出现的对象，再看当前动作。",
+        "把It换成reading room阅览室，与opens开放相配。",
+        "把him换成Chen，得到清单帮助陈找书；him指人但在这句不是主语。",
+        "用句意说明依据，不只列两个候选名词。"
+      ],
+      "commonErrors": [
+        "把him当主语；把It指成陈；把场所开放时间直接说成陈个人工作时长。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w4-en-ex4",
+      "title": "第四阶：相符、矛盾、未说明分别举证",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "据《Chen的新清单》，给三项标“相符／矛盾／未说明”并说明：①新清单帮助陈找书。②有了新清单，陈不再检查书。③陈每周日还去另一家图书馆工作。",
+      "answer": "①相符，第⑦句说明清单帮助找书。②矛盾，第⑧句仍仔细检查。③未说明，全文没有他周日去别处工作的资料；不能因没有写就断言现实中绝不发生。",
+      "steps": [
+        "先找每项对应动作与时间。",
+        "存在相反句子的②是矛盾，不是未说明。",
+        "③没有足够对应信息，就停在未说明。",
+        "检查自己的解释也没补新事实。"
+      ],
+      "commonErrors": [
+        "把所有未支持项都叫矛盾；以生活常识猜周日工作。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w4-en-pr1",
+      "title": "基础：两句也要有完整主旨",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "原创短文：A list on the door shows the room numbers. New workers use it to find the rooms.\n词义：A＝一张；list＝清单；on＝在……上；the＝这扇／这些；door＝门；shows＝显示；room＝房间；numbers＝编号，复数；New＝新来的；workers＝工作人员；use＝使用；it＝它；to find＝为了找到，to表示这里的用途联系、find找到；rooms＝房间，复数。\n①用一句中文概括主要内容。②it指什么？③能否据此说新工作人员不需要做其他任何事？",
+      "answer": "①门上的房间编号清单帮助新工作人员找到房间。②it指门上的清单。③不能，短文只说清单的一项作用，没谈他们全部工作。译：“门上一张清单显示房间编号。新工作人员用它找到这些房间。”",
+      "steps": [
+        "用两句共同说的清单与找房间组成主旨。",
+        "代词接回前句list，并放回use it核对。",
+        "拒绝把一项作用扩大成全部工作安排。"
+      ],
+      "commonErrors": [
+        "只写门或房间；it指门；添加全部工作保证。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w4-en-pr2",
+      "title": "应用：营业时段与个人行为分开",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创短文：A small shop opens from eight to six. On Fridays, Lan works there for two hours. She checks the boxes first.\n词义：A＝一家；small＝小的；shop＝商店；opens＝营业；from＝从；eight＝八；to＝到；six＝六；On＝用于星期前；Fridays＝每周五；Lan＝兰，人名；works＝工作；there＝在那里；for＝持续；two＝两；hours＝小时；She＝她；checks＝检查；the＝这些；boxes＝箱子；first＝首先。题设eight为上午八点，six为傍晚六点。\n①兰工作多久？②她首先做什么？③是否能得知她在其他日子的全部安排？",
+      "answer": "①两小时。②先检查箱子。③不能，文中只写周五这项安排。译：“一家小店从上午八点营业到傍晚六点。每周五，兰在那里工作两小时。她先检查这些箱子。”",
+      "steps": [
+        "将店营业时段与兰工作时长分开。",
+        "first定位动作顺序，不误作一个人名。",
+        "其他日子没有足够材料，回答未说明。"
+      ],
+      "commonErrors": [
+        "把十小时营业时间当个人工作时长；添加兰只在周五上班。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w4-en-pr3",
+      "title": "应用：some与计划不变成all与已完成",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创短文：Some workers read the new list every morning. Li wants to put a copy near the door. The copy is not there now.\n词义：Some＝一些；workers＝工作人员；read＝阅读、查看；the＝这张／这份／这扇；new＝新的；list＝清单；every＝每个；morning＝早晨；Li＝李，人名；wants＝想要；to put＝放置，to与wants连接计划动作、put放；a＝一份；copy＝副本；near＝在……附近；door＝门；is＝现在be；not＝不；there＝在那里；now＝现在。\n判断并给证据：①所有工作人员每天早晨都看清单。②门口现在已有副本。③李想在门边放副本。",
+      "answer": "①不能由原文确认，some只说一些，未证明所有；不将其判成事实必然相反。②与原文矛盾，is not there now明确否定现在已放。③相符，wants to put表想要这样做。译：“一些工作人员每天早晨看新清单。李想在门边放一份副本。现在那里还没有副本。”",
+      "steps": [
+        "先保留Some的范围。",
+        "区分想做与已经做，结合第三句否定。",
+        "给每项对应字词，不靠猜测计划是否会完成。"
+      ],
+      "commonErrors": [
+        "把一些变所有；把想做当完成；把范围不足一概叫事实矛盾。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w4-en-pr4",
+      "title": "迁移：新故事的顺序、指代与主旨",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创短文：Mei checked two lists yesterday. One list had a wrong number. She changed the number and put the list on the desk.\n词义：Mei＝梅，人名；checked＝检查，过去式；two＝两；lists＝清单，复数；yesterday＝昨天；One＝一张；list＝清单；had＝有，过去式；a＝一个；wrong＝错误的；number＝编号；She＝她；changed＝修改，过去式；the＝这个／这张；and＝并且；put＝放，这里为过去式；on＝在……上；desk＝书桌。\n①概括主要事情。②She指谁？末句the list是两张都指，还是那张有错号的清单？③能否说她把两张清单上所有编号都改了？",
+      "answer": "①梅昨天检查两张清单，发现一张有错号，改正后把那张放到桌上。②She指梅；the list承接有错号的那张。③不能，原文只写改那个错误编号，未说改全部编号。译文与①概括相同。",
+      "steps": [
+        "按检查—发现错号—修改并放好串起事件。",
+        "从one list与the number的承接确定对象。",
+        "保留两张中一张、那一个错号的范围。"
+      ],
+      "commonErrors": [
+        "把发现一处错号扩大成两张全部错误；She指清单。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w4-en-pr5",
+      "title": "迁移：阅读细节与主语配对一起用",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创短文，先填空再理解：The box of cards _____（is/are）ready. Every card _____（has/have）a number. The workers use the cards to check the bags. The cards help them, but the workers still check each bag.\n词义：The/the＝这个／这些；box＝盒子；of＝……的；cards＝卡片，复数；is/are＝现在be形式；ready＝准备好的；Every＝每个；card＝卡片，单数；has/have＝有；a＝一个；number＝编号；workers＝工作人员；use＝使用；to check＝为了检查，to表示用途联系、check检查；bags＝包，复数；help＝帮助；them＝他们，动作对象；but＝但是；still＝仍然；each＝每个；bag＝包。\n①填两空并说明中心。②them指谁？③卡片是否代替工作人员完成了所有检查？",
+      "answer": "①is，中心box；has，every card按单数。②them指工作人员。③没有，末句仍说工作人员检查每个包；卡片只是帮助。译：“这盒卡片准备好了。每张卡片都有编号。工作人员用卡片检查包。卡片帮助他们，但工作人员仍检查每个包。”",
+      "steps": [
+        "先按长主语中心和every判断形式。",
+        "再从help的对象确定them指人。",
+        "把帮助与替代分开，末句是明确证据。"
+      ],
+      "commonErrors": [
+        "看cards选are；them指卡片；忽略still把帮助说成全部替代。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "主旨就是第一句或最长的句子。",
+      "why": "背景可能在前，主要问题与变化在后。",
+      "right": "用全文对象、问题、处理与结果合成主要内容。"
+    },
+    {
+      "wrong": "选项有原文同词就一定对。",
+      "why": "词相同也可能改变主语、时间、范围或关系。",
+      "right": "核对完整句意，给对应证据。"
+    },
+    {
+      "wrong": "场所开放几小时，人物就一定工作几小时。",
+      "why": "信息属于不同主体和动作。",
+      "right": "先看题目问时刻、时长还是日子，再找对应句。"
+    },
+    {
+      "wrong": "代词永远指最近的名词。",
+      "why": "动作和前后句的意义会决定承接对象。",
+      "right": "替换候选对象，核对上下文是否连贯。"
+    },
+    {
+      "wrong": "原文没说就是原文否定了。",
+      "why": "证据不足与存在相反信息不同。",
+      "right": "有相反文字叫矛盾，缺少依据停在未说明。"
+    },
+    {
+      "wrong": "综合复习意味着原180分钟之外再加一套卷。",
+      "why": "会挤占原定核心工时且难以坚持。",
+      "right": "本周用26分钟20分整合诊断替代通常周测，例练已相应缩减。"
+    }
+  ],
+  "quiz": {
+    "instructions": "第1—4周整合诊断，四题共20分，用26分钟完成，替代常规周测。第1、2、4题共用全新短文；第3题是同一场景的补充语法记录，不要求把补充句当作原文事实。可查逐句词义，不看教学例练答案。每题5分分别定位一周核心技能，交叉方法不重复加分。 第1题的7分钟包含首次通读全文和查词；第2、4题只回查相关句，虽然页面再次给全文方便独立查看，不重复安排整篇阅读时长。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w4-en-quiz1",
+        "title": "第1周迁移：主干、词性和表语",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "全新原创短文《失物招领台的一次核对》（只用于本次累计诊断，不是现实记录）：\n①Ming works at a lost-and-found desk.\n②The desk opens at eight in the morning.\n③The worker near the door checks each bag carefully.\n④Yesterday Ming checked two bags.\n⑤One bag had a name card, but the other bag had no card.\n⑥Ming wrote a note for it.\n⑦The room was quiet.\n⑧Now each bag has a number.\n⑨The information on the cards helps Ming find the owners.\n⑩A key and a card are on the desk.\n短文逐句词义（可查）：\n①Ming＝明，人名；works＝工作；at＝在……处；a＝一个；lost-and-found desk＝失物招领台，其中lost＝丢失的，and＝和，found＝被找到的，desk＝服务台。\n②The/the＝这个／词组组成部分；desk＝服务台；opens＝开放；at＝在某时；eight＝八；in＝在；morning＝早晨；in the morning＝在早晨。\n③The/the＝这位／这扇；worker＝工作人员；near＝在……附近；door＝门；checks＝检查，现在三单；each＝每个；bag＝包；carefully＝仔细地。\n④Yesterday＝昨天；Ming＝明；checked＝检查，过去式；two＝两；bags＝包，复数。\n⑤One＝一个；bag＝包；had＝有，have的过去式；a＝一张；name＝姓名；card＝卡片；name card＝姓名卡；but＝但是；the other＝另一个；no＝没有；card＝卡片。\n⑥Ming＝明；wrote＝写，write的过去式；a＝一张；note＝便条；for＝为；it＝它，具体指代请结合上下句判断。\n⑦The＝这个；room＝房间；was＝过去时be单数形式；quiet＝安静的。\n⑧Now＝现在；each＝每个；bag＝包；has＝有，现在三单；a＝一个；number＝编号。\n⑨The＝这些特定的；information＝信息，不可数；on＝在……上；the＝这些；cards＝卡片，复数；helps＝帮助，现在三单；Ming＝明；find＝找到；the＝这些；owners＝物主，复数。\n⑩A/a＝一把／一张；key＝钥匙；and＝和；card＝卡片；are＝现在时be形式；on＝在……上；the＝这个；desk＝服务台。\n任务：①分析第③句：写完整主语、谓语动词和宾语。②carefully是什么词性，修饰什么？③第⑦句是主谓宾还是主系表，quiet作什么成分，能否当宾语？",
+        "answer": "①完整主语The worker near the door；谓语动词checks；宾语each bag。②carefully是副词，修饰检查动作checks。③主系表；quiet是形容词作表语，说明房间的状态，不是宾语。第③句译“门附近的这位工作人员仔细检查每个包”；第⑦句译“房间那时很安静”。",
+        "steps": [
+          "先问谁检查，把near the door保留在完整主语里。",
+          "再找检查动作和被检查对象。",
+          "carefully说明怎样检查，区分副词类别与修饰作用。",
+          "was连接房间与安静状态，不是把安静当动作承受者。"
+        ],
+        "commonErrors": [
+          "只写worker代替完整主语；把carefully当宾语；把be后的quiet也归宾语。"
+        ],
+        "estimatedMinutes": 7,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "完整主语The worker near the door正确，不能漏修饰短语。"
+          },
+          {
+            "points": 1,
+            "criterion": "谓语动词checks正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "宾语each bag正确，保留each限定。"
+          },
+          {
+            "points": 1,
+            "criterion": "carefully为副词、修饰checks说明方式，两项各0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "第⑦句主系表，quiet作表语非宾语；结构与成分各0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w4-en-quiz2",
+        "title": "第2周迁移：同一新场景的两种问句",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "全新原创短文《失物招领台的一次核对》（只用于本次累计诊断，不是现实记录）：\n①Ming works at a lost-and-found desk.\n②The desk opens at eight in the morning.\n③The worker near the door checks each bag carefully.\n④Yesterday Ming checked two bags.\n⑤One bag had a name card, but the other bag had no card.\n⑥Ming wrote a note for it.\n⑦The room was quiet.\n⑧Now each bag has a number.\n⑨The information on the cards helps Ming find the owners.\n⑩A key and a card are on the desk.\n短文逐句词义（可查）：\n①Ming＝明，人名；works＝工作；at＝在……处；a＝一个；lost-and-found desk＝失物招领台，其中lost＝丢失的，and＝和，found＝被找到的，desk＝服务台。\n②The/the＝这个／词组组成部分；desk＝服务台；opens＝开放；at＝在某时；eight＝八；in＝在；morning＝早晨；in the morning＝在早晨。\n③The/the＝这位／这扇；worker＝工作人员；near＝在……附近；door＝门；checks＝检查，现在三单；each＝每个；bag＝包；carefully＝仔细地。\n④Yesterday＝昨天；Ming＝明；checked＝检查，过去式；two＝两；bags＝包，复数。\n⑤One＝一个；bag＝包；had＝有，have的过去式；a＝一张；name＝姓名；card＝卡片；name card＝姓名卡；but＝但是；the other＝另一个；no＝没有；card＝卡片。\n⑥Ming＝明；wrote＝写，write的过去式；a＝一张；note＝便条；for＝为；it＝它，具体指代请结合上下句判断。\n⑦The＝这个；room＝房间；was＝过去时be单数形式；quiet＝安静的。\n⑧Now＝现在；each＝每个；bag＝包；has＝有，现在三单；a＝一个；number＝编号。\n⑨The＝这些特定的；information＝信息，不可数；on＝在……上；the＝这些；cards＝卡片，复数；helps＝帮助，现在三单；Ming＝明；find＝找到；the＝这些；owners＝物主，复数。\n⑩A/a＝一把／一张；key＝钥匙；and＝和；card＝卡片；are＝现在时be形式；on＝在……上；the＝这个；desk＝服务台。\n任务：①将Yesterday Ming checked two bags.改为一般疑问句，并作肯定简短回答，回答可用he代Ming。②将The room was quiet.改为一般疑问句。③介绍日常工作：Every morning Ming _____（check）the cards. 说明①为什么用过去帮助词、③为什么不是过去式。\n补充词义：Yes＝是的；he＝他；Every＝每个；morning＝早晨；check＝检查，原形；cards＝卡片。",
+        "answer": "①Did Ming check two bags yesterday? Yes, he did. ②Was the room quiet? ③checks。①yesterday表过去，did后check还原；③every morning配合介绍日常习惯，用现在时，Ming单数配checks。译：“明昨天检查了两个包吗？是的。”“那时房间安静吗？”“每天早晨明检查这些卡片。”",
+        "steps": [
+          "过去普通动作句用Did前置，checked还原为check。",
+          "肯定短答承接过去帮助词did。",
+          "be句直接前移was，不拼Did...was。",
+          "第③句换到日常安排，不能把前面的昨天覆盖全题。"
+        ],
+        "commonErrors": [
+          "写Did Ming checked；Yes, he does；Did the room was；把日常写checked。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①用Did置于主语前，保留原对象和过去语境。"
+          },
+          {
+            "points": 1,
+            "criterion": "①check正确还原，整句无重复过去形式。"
+          },
+          {
+            "points": 1,
+            "criterion": "肯定短答Yes, he did.正确；用Ming替he亦可。"
+          },
+          {
+            "points": 1,
+            "criterion": "②Was the room quiet?正确，无额外did。"
+          },
+          {
+            "points": 1,
+            "criterion": "③checks正确，并区分日常习惯与①昨天；仅填词无说明得0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w4-en-quiz3",
+        "title": "第3周迁移：给补充记录选形式并解释中心",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "以下为失物招领场景的新补充语法句，不是要求由原短文推断的事实。填空，并在每项旁写决定形式的中心或并列对象：\n①The information about the bags _____ useful.（is/are）\n②Two bottles of water _____ near the bags.（is/are）\n③Each of the workers _____ a pen.（has/have）\n④Ming with two workers _____ ready.（is/are）\n⑤Ming and a worker _____ ready.（is/are）\n词义：The/the＝这些特定的／这些；information＝信息，不可数；about＝关于；bags＝包，复数；is/are＝现在be形式；useful＝有用的；Two/two＝两；bottles＝瓶，复数；of＝……的／……中的；water＝水，不可数；near＝在……附近；Each＝每一个；workers＝工作人员，复数；has/have＝有；a＝一支／一位；pen＝钢笔；Ming＝明；with＝和……一起，补充同伴；ready＝准备好的；and＝和，连接独立对象；worker＝工作人员。",
+        "answer": "①is，中心information不可数。②are，中心bottles复数。③has，中心Each单数。④is，中心Ming，with短语只是修饰。⑤are，Ming与a worker两个独立的人并列。译：“有关这些包的信息有用。”“两瓶水在这些包附近。”“工作人员每人有一支钢笔。”“和两位工作人员在一起的明准备好了。”“明和一位工作人员都准备好了。”",
+        "steps": [
+          "先圈完整主语，不让about/of/with后最近的名词控制配对。",
+          "区分不可数information与明确瓶数bottles。",
+          "Each逐个看待；with附加同伴不等于and并列。",
+          "每项写形式和真正控制它的词，不能只凭词尾-s猜。"
+        ],
+        "commonErrors": [
+          "看bags选are；看water选is；看workers给Each选have；混用with和and。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①is 0.5分，中心information不可数0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "②are 0.5分，中心bottles复数0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "③has 0.5分，中心Each单数0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "④is 0.5分，中心Ming且with不构成并列0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "⑤are 0.5分，两独立对象Ming和worker通过and并列0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w4-en-quiz4",
+        "title": "第4周迁移：全文、原因与未说明的界限",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "全新原创短文《失物招领台的一次核对》（只用于本次累计诊断，不是现实记录）：\n①Ming works at a lost-and-found desk.\n②The desk opens at eight in the morning.\n③The worker near the door checks each bag carefully.\n④Yesterday Ming checked two bags.\n⑤One bag had a name card, but the other bag had no card.\n⑥Ming wrote a note for it.\n⑦The room was quiet.\n⑧Now each bag has a number.\n⑨The information on the cards helps Ming find the owners.\n⑩A key and a card are on the desk.\n短文逐句词义（可查）：\n①Ming＝明，人名；works＝工作；at＝在……处；a＝一个；lost-and-found desk＝失物招领台，其中lost＝丢失的，and＝和，found＝被找到的，desk＝服务台。\n②The/the＝这个／词组组成部分；desk＝服务台；opens＝开放；at＝在某时；eight＝八；in＝在；morning＝早晨；in the morning＝在早晨。\n③The/the＝这位／这扇；worker＝工作人员；near＝在……附近；door＝门；checks＝检查，现在三单；each＝每个；bag＝包；carefully＝仔细地。\n④Yesterday＝昨天；Ming＝明；checked＝检查，过去式；two＝两；bags＝包，复数。\n⑤One＝一个；bag＝包；had＝有，have的过去式；a＝一张；name＝姓名；card＝卡片；name card＝姓名卡；but＝但是；the other＝另一个；no＝没有；card＝卡片。\n⑥Ming＝明；wrote＝写，write的过去式；a＝一张；note＝便条；for＝为；it＝它，具体指代请结合上下句判断。\n⑦The＝这个；room＝房间；was＝过去时be单数形式；quiet＝安静的。\n⑧Now＝现在；each＝每个；bag＝包；has＝有，现在三单；a＝一个；number＝编号。\n⑨The＝这些特定的；information＝信息，不可数；on＝在……上；the＝这些；cards＝卡片，复数；helps＝帮助，现在三单；Ming＝明；find＝找到；the＝这些；owners＝物主，复数。\n⑩A/a＝一把／一张；key＝钥匙；and＝和；card＝卡片；are＝现在时be形式；on＝在……上；the＝这个；desk＝服务台。\n任务：①选最佳标题并解释为什么能覆盖主要内容：A. Ming’s Work at a Lost-and-Found Desk B. How to Make a Bag C. A Quiet Room。②根据上下文，明给另一个包写便条的最合理原因是什么？用第⑤⑥句的关系作证据。③“明每天一直工作到晚上”是原文明确支持、矛盾还是未说明？解释。\n标题词义：Ming’s＝明的；Work＝工作；at＝在；a/A＝一个／一间；Lost-and-Found Desk＝失物招领台；How＝如何；to Make＝制作，to配合How组成如何做某事、Make制作；Bag＝包；Quiet＝安静的；Room＝房间。",
+        "answer": "①A。全文主要写明在招领台检查包、记录信息并借信息找物主；B制作包没有出现，C只抓一处房间状态。②根据第⑤⑥句，最合理的推断是：另一包没有姓名卡，明因此为它写便条。第⑤句对比有卡与无卡的两包，第⑥句it承接无卡的那个包；原文未用因果句直接说明动机，所以应标为上下文支持的有限推断。③未说明。文章只给开放时刻八点，没有明的结束工作时间，不能补成一直到晚上。",
+        "steps": [
+          "主旨用整段检查与记录行动概括，背景地点不是唯一信息。",
+          "将第⑤句的the other bag与第⑥句it连起来，据“缺姓名卡—写便条”紧接的上下文作有限原因推断；不声称原文直接写明因果，也不添加物主身份等信息。",
+          "明确区分开放时刻与个人工作终止时间，证据不足停在未说明。"
+        ],
+        "commonErrors": [
+          "选出现quiet的C而忽略多数内容；把it指成有卡的包；由八点开门猜几点下班。",
+          "把上下文支持的原因推断说成原文有明确因果句。"
+        ],
+        "estimatedMinutes": 7,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 2,
+            "criterion": "选A 1分，解释它覆盖检查包与记录/找物主等主要工作1分。"
+          },
+          {
+            "points": 2,
+            "criterion": "合理推断因另一包没有姓名卡而写便条1分，以第⑤⑥句承接说明it为无卡的那包1分；不把该动机声称为原文明说或补造额外原因。"
+          },
+          {
+            "points": 1,
+            "criterion": "判未说明并说明只给八点开放、未给个人结束时间；两层都应具备。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第1题分清完整主语、动作对象以及carefully的方式作用，quiet不当宾语。",
+        "第2题Did后check还原、短答did与be问句Was路线正确；能区别过去与日常。",
+        "第3题Each、with/and、不可数/量词中心都能解释，不能只填对碰运气。",
+        "第4题主旨覆盖全文，it与无卡包的关系正确，未说明信息不补造。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w4-en-quiz1"
+        ],
+        "sectionIds": [
+          "w4-en-r1",
+          "w4-en-s2",
+          "w4-en-s5"
+        ],
+        "action": "本周先拆一句动作句和一句状态句；必要时下次回看第1周词性、主谓宾与主系表，不额外加卷。"
+      },
+      {
+        "questionIds": [
+          "w4-en-quiz2"
+        ],
+        "sectionIds": [
+          "w4-en-r1",
+          "w4-en-s2",
+          "w4-en-s8"
+        ],
+        "action": "按过去普通动作、过去be、日常三行分类；需要更深入时下次回看第2周对应路线。"
+      },
+      {
+        "questionIds": [
+          "w4-en-quiz3"
+        ],
+        "sectionIds": [
+          "w4-en-s2",
+          "w4-en-s8"
+        ],
+        "action": "用本周提醒找中心，回做练习5；Each/with/量词仍不清时，下次回看第3周对应讲解。"
+      },
+      {
+        "questionIds": [
+          "w4-en-quiz4"
+        ],
+        "sectionIds": [
+          "w4-en-s3",
+          "w4-en-s4",
+          "w4-en-s5",
+          "w4-en-s6",
+          "w4-en-s7"
+        ],
+        "action": "分别写全文主线、it替换对象及开放时刻/工作终止时间，把答案与原句对应后遮答再做。"
+      }
+    ]
+  },
+  "mastery": [
+    "能借题内词义读通一篇完整短文，概括核心对象、主要事情与已有结果。",
+    "细节答案能回到文本，分清时段、时长、原因、对象，理解准确改述。",
+    "代词指代有前后文依据，不靠最近名词猜；能区分矛盾与未说明。",
+    "累计短测至少16/20且四项关键检查全过，记录四周薄弱点，首次分与订正分分开。",
+    "本课没有音频，四周累计分也不证明听力、口语或发音已经达标。"
+  ],
+  "nextStep": "在预算内40分钟订正槽里分项核分与定点回看，达到16/20且四项关键检查全过后，由你手动进入第5周。若某一周关键方法尚未过，留在第4学习周，下次英语学段继续相应补救，不把需要的额外时间伪装成已经完成。",
+  "reviewActivity": {
+    "id": "w4-en-review",
+    "title": "40分钟定点订正：四周技能逐项看",
+    "instructions": [
+      "前6分钟核20分与四项关键检查；每道5分记录主要错因，分清词义没读懂与结构/推断出错。",
+      "接着12分钟只读对应的本周补救小节，回做相关练习的一小项。若旧技能缺口较大，在下次英语学段回到对应前周，不立即重刷前三周全部内容。",
+      "接着16分钟遮答重做错题并口头解释原因；原本全对者逐题解释干扰项。题干词义仍可查，重做属于订正，不能当作未见过的新测验。",
+      "最后6分钟核订正结果，记录首次与重做分、未过关键项，以及下一次先做哪个动作。不另在180分钟之外增加复习卷或无音频听力任务。"
+    ]
+  },
+  "audioStatus": "本课未提供音频，完整词义与译文只服务书面阅读和语法。不能据本课作答声称真实听辨、口语或发音达标；累计诊断也不包含听力评价。",
+  "sourcePolicy": {
+    "authorship": "英文教学短文、独立练习段落、累计诊断短文及句子均为本课原创；中文词义、译文、讲解、设问和评分原创，未抄教材、真题或现代阅读选文。场景不宣称真实调查，也不从人物经历推出未经核验的学习科学结论。",
+    "examStatus": "全部题目标记original，均为原创跨版本基础诊断，非历年真题。教材版本未核定，不编河南南阳教材章页，不声称已核验2028考试安排、听力政策或题型分值；20分为本课累计自测设计。",
+    "externalSources": []
+  }
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="565" viewBox="0 0 900 565" role="img" aria-labelledby="title desc"><title id="title">短测2题图：已知速度端点</title><desc id="desc">横轴t单位秒，纵轴v单位米每秒。直线连接已知点(0秒,2米每秒)与(3秒,8米每秒)，其他数值不标。</desc><rect width="900" height="565" fill="white"/><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#111;font-size:19px}.title{font-size:25px;font-weight:700}.small{font-size:17px}</style>
+<text x="30" y="40" class="title">短测2题图：已知速度端点</text>
+<text x="30" y="74" class="small">原创模型图；图线描述速度随时间怎样变化，不能当作运动轨迹。</text>
+<line x1="145.0" y1="390.0" x2="145.0" y2="95.0" stroke="#111" stroke-width="2"/>
+<line x1="130.0" y1="390.0" x2="753.0" y2="390.0" stroke="#111" stroke-width="2"/>
+<text x="30" y="105" class="">v / (m/s)</text>
+<text x="743.0" y="422.0" class="">t / s</text>
+<line x1="145.0" y1="385.0" x2="145.0" y2="395.0" stroke="#111" stroke-width="2"/>
+<text x="140.0" y="416.0" class="small">0</text>
+<line x1="335.0" y1="385.0" x2="335.0" y2="395.0" stroke="#111" stroke-width="2"/>
+<text x="330.0" y="416.0" class="small">1</text>
+<line x1="525.0" y1="385.0" x2="525.0" y2="395.0" stroke="#111" stroke-width="2"/>
+<text x="520.0" y="416.0" class="small">2</text>
+<line x1="715.0" y1="385.0" x2="715.0" y2="395.0" stroke="#111" stroke-width="2"/>
+<text x="710.0" y="416.0" class="small">3</text>
+<line x1="140.0" y1="322.5" x2="150.0" y2="322.5" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="328.5" class="small">2</text>
+<line x1="140.0" y1="255.0" x2="150.0" y2="255.0" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="261.0" class="small">4</text>
+<line x1="140.0" y1="187.5" x2="150.0" y2="187.5" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="193.5" class="small">6</text>
+<line x1="140.0" y1="120.0" x2="150.0" y2="120.0" stroke="#111" stroke-width="2"/>
+<text x="107.0" y="126.0" class="small">8</text>
+<line x1="145.0" y1="322.5" x2="715.0" y2="120.0" stroke="#111" stroke-width="4"/>
+<circle cx="145.0" cy="322.5" r="5" fill="#111"/>
+<circle cx="715.0" cy="120.0" r="5" fill="#111"/>
+<line x1="715.0" y1="390.0" x2="715.0" y2="120.0" stroke="#999" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="145.0" y1="120.0" x2="715.0" y2="120.0" stroke="#999" stroke-width="1" stroke-dasharray="6 5"/>
+<text x="167" y="360.5" class="">(0 s, 2 m/s)</text>
+<text x="525.0" y="106.0" class="">(3 s, 8 m/s)</text>
+<text x="30" y="473" class="">已知：速度在 0—3 s 内沿这条直线变化。</text>
+<text x="30" y="512" class="small">本图只给题设；加速度、平均速度和位移由你独立求出。</text>
+</svg>

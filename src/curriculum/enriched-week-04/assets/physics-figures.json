@@ -1,0 +1,29 @@
+[
+  {
+    "id": "w4-physics-fig-height-parts",
+    "title": "教学图：总高度、已下落与离地高度",
+    "asset": "assets/physics-height-parts.svg",
+    "altText": "竖直方向示意图：上方为释放点O，标初速度0；中间为下落中的球P；下方为地面。O到地面标总高度H，O到P标累计下落h，P到地面标剩余高度H−h。右侧向下箭头标正方向和a=+g。",
+    "description": "H是从释放点到地面的总高度；h是已经下落的距离；落地前离地高度为H−h。三者先分清，才不会把累计量当成剩余量。",
+    "renderingNote": "纯教学示意，不标任何题目数值。画竖直释放点O、途中P与地面，三组括号清楚分隔标H、h、H−h。向下为正箭头旁标a=+g，上方v₀=0；底注“从静止释放，忽略空气阻力，首次触地前”。不要画连续下落越过地面或暗示触地后一定静止。",
+    "linkedSectionIds": [
+      "w4-physics-s2",
+      "w4-physics-s3"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w4-physics-fig-time-interval",
+    "title": "教学图：最后一秒是梯形区域",
+    "asset": "assets/physics-time-interval.svg",
+    "altText": "通用速度—时间图，直线从原点到触地前时刻T，纵轴为向下速度v，横轴为时间t。标出T−1秒与T之间的窄梯形区域，其左侧速度不为0。T处标首次触地，右侧只写后续需要碰撞信息，不延长图线。",
+    "description": "从释放到某时刻的累计距离由图下面积表示。最后1 s从T−1 s开始，该时刻已经有速度；应取这一秒的梯形面积，或把两个累计距离相减。首次触地后的运动需要新条件。",
+    "renderingNote": "画无具体数值的v-t教学图，T≥1 s且示意取T>1 s，线v=gt只绘至T。横轴标0、T−1 s、T；末点纵坐标写gT。仅最后1 s区域用阴影，写“h(T)−h(T−1 s)”。T竖虚线旁标“首次触地”，T右侧不要延长速度直线，也不要画为0水平线，只用灰色问号与“需碰撞后信息”。脚注写忽略空气阻力、g恒定、v₀=0、向下为正。所有解答数值省略。",
+    "linkedSectionIds": [
+      "w4-physics-s4",
+      "w4-physics-s6",
+      "w4-physics-s7"
+    ],
+    "linkedQuestionIds": []
+  }
+]

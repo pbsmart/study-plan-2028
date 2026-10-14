@@ -36,5 +36,11 @@ export interface EnrichedLesson {
 export interface StaticLessonFigure {
   id: string; title: string; src: string; altText: string; caption: string
   linkedSectionIds: string[]; linkedQuestionIds: string[]
-  width: number; height: number
+  width: number; height: number; answerOnly?: boolean
+}
+
+/** Review-only mapping of the existing cumulative quiz; not another activity or score. */
+export interface CumulativeReviewMap {
+  totalPoints: number; minutes: number
+  questions: { questionId: string; title: string; points: number; skills: { skill: string; points: number; weeks: number[]; sectionIds: string[] }[] }[]
 }

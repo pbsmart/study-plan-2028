@@ -1,0 +1,343 @@
+{
+  "week": 4,
+  "subject": "英语",
+  "lessonId": "w4-英语",
+  "totalPoints": 20,
+  "minutes": 26,
+  "budgetPolicy": "本累计诊断替代通常周测，已包含在180分钟核心内。已压缩为4例、5练，未外加复习卷。",
+  "scoringIndexBase": 0,
+  "scoringIndexMeaning": "0表示对应question.scoring数组第一个评分项，依次类推。每项只按primaryWeek计分一次；同一材料的交叉阅读技能不重复计分。",
+  "firstReadingPolicy": "共享材料首次阅读算在第1题；后续题只回查所需句段。",
+  "pointsByPrimaryWeek": {
+    "1": 5,
+    "2": 5,
+    "3": 5,
+    "4": 5
+  },
+  "scoringMap": [
+    {
+      "questionId": "w4-en-quiz1",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "保留修饰，找完整主语",
+          "points": 1,
+          "criterion": "完整主语The worker near the door正确，不能漏修饰短语。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s5"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "找谓语动词",
+          "points": 1,
+          "criterion": "谓语动词checks正确。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s5"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "辨认宾语与其限定",
+          "points": 1,
+          "criterion": "宾语each bag正确，保留each限定。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s5"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "区分副词词性与动作方式作用",
+          "points": 1,
+          "criterion": "carefully为副词、修饰checks说明方式，两项各0.5分。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s5"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "区分主系表及表语，避免把be后状态当宾语",
+          "points": 1,
+          "criterion": "第⑦句主系表，quiet作表语非宾语；结构与成分各0.5分。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s5"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-en-r1",
+        "w4-en-s2",
+        "w4-en-s5"
+      ],
+      "remediationAction": "本周先拆一句动作句和一句状态句；必要时下次回看第1周词性、主谓宾与主系表，不额外加卷。"
+    },
+    {
+      "questionId": "w4-en-quiz2",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "过去普通动词问句选Did并保持语境",
+          "points": 1,
+          "criterion": "①用Did置于主语前，保留原对象和过去语境。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "Did后动词还原",
+          "points": 1,
+          "criterion": "①check正确还原，整句无重复过去形式。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "过去问句短答保留did",
+          "points": 1,
+          "criterion": "肯定短答Yes, he did.正确；用Ming替he亦可。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "过去be问句直接前移Was",
+          "points": 1,
+          "criterion": "②Was the room quiet?正确，无额外did。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "一般现在习惯与过去区分并写三单",
+          "points": 1,
+          "criterion": "③checks正确，并区分日常习惯与①昨天；仅填词无说明得0.5分。",
+          "remediationSectionIds": [
+            "w4-en-r1",
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-en-r1",
+        "w4-en-s2",
+        "w4-en-s8"
+      ],
+      "remediationAction": "按过去普通动作、过去be、日常三行分类；需要更深入时下次回看第2周对应路线。"
+    },
+    {
+      "questionId": "w4-en-quiz3",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "不可数information不受about后复数影响",
+          "points": 1,
+          "criterion": "①is 0.5分，中心information不可数0.5分。",
+          "remediationSectionIds": [
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "量词中心bottles控制复数",
+          "points": 1,
+          "criterion": "②are 0.5分，中心bottles复数0.5分。",
+          "remediationSectionIds": [
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "Each作中心按单数",
+          "points": 1,
+          "criterion": "③has 0.5分，中心Each单数0.5分。",
+          "remediationSectionIds": [
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "with修饰不增加主语数量",
+          "points": 1,
+          "criterion": "④is 0.5分，中心Ming且with不构成并列0.5分。",
+          "remediationSectionIds": [
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        },
+        {
+          "scoringIndex": 4,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "普通and并列两个独立对象用复数",
+          "points": 1,
+          "criterion": "⑤are 0.5分，两独立对象Ming和worker通过and并列0.5分。",
+          "remediationSectionIds": [
+            "w4-en-s2",
+            "w4-en-s8"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-en-s2",
+        "w4-en-s8"
+      ],
+      "remediationAction": "用本周提醒找中心，回做练习5；Each/with/量词仍不清时，下次回看第3周对应讲解。"
+    },
+    {
+      "questionId": "w4-en-quiz4",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 4,
+          "weeks": [
+            4
+          ],
+          "skill": "概括全文主旨，不用局部背景替代",
+          "points": 2,
+          "criterion": "选A 1分，解释它覆盖检查包与记录/找物主等主要工作1分。",
+          "remediationSectionIds": [
+            "w4-en-s3",
+            "w4-en-s4",
+            "w4-en-s5",
+            "w4-en-s6",
+            "w4-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 4,
+          "weeks": [
+            4
+          ],
+          "skill": "根据前后句确定代词，作有限的原因推断并区别于明说因果",
+          "points": 2,
+          "criterion": "合理推断因另一包没有姓名卡而写便条1分，以第⑤⑥句承接说明it为无卡的那包1分；不把该动机声称为原文明说或补造额外原因。",
+          "remediationSectionIds": [
+            "w4-en-s3",
+            "w4-en-s4",
+            "w4-en-s5",
+            "w4-en-s6",
+            "w4-en-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 4,
+          "weeks": [
+            4
+          ],
+          "skill": "分清场所开放与人物工作时段，识别未说明",
+          "points": 1,
+          "criterion": "判未说明并说明只给八点开放、未给个人结束时间；两层都应具备。",
+          "remediationSectionIds": [
+            "w4-en-s3",
+            "w4-en-s4",
+            "w4-en-s5",
+            "w4-en-s6",
+            "w4-en-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-en-s3",
+        "w4-en-s4",
+        "w4-en-s5",
+        "w4-en-s6",
+        "w4-en-s7"
+      ],
+      "remediationAction": "分别写全文主线、it替换对象及开放时刻/工作终止时间，把答案与原句对应后遮答再做。"
+    }
+  ]
+}

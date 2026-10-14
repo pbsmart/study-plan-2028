@@ -1,0 +1,16 @@
+[
+  {
+    "id": "w3-chemistry-figure-conversion",
+    "title": "质量、物质的量与指定微粒的换算桥",
+    "asset": "assets/chemistry-conversion.svg",
+    "altText": "通用换算框图，不含任何例题数值。左框为质量m(X)，单位g；向右除以M(X)，到中框物质的量n(X)，单位mol；再向右乘N_A，到右框X的个数N(X)。反向分别除以N_A、乘M(X)。从n(X)另有分支：当一个X含k个所求原子Y时，乘k得到n(Y)，再乘N_A得到N(Y)。所有框保留对象标签，N表示个数而不是mol。",
+    "description": "先明确计数对象X：质量除以摩尔质量得到物质的量，再乘N_A得到个数。若改数X中所含的原子Y，先按化学式乘组成倍数k。沿箭头检查对象和单位，不把g、mol与个数混写。",
+    "linkedSectionIds": [
+      "w3-chemistry-section-mass",
+      "w3-chemistry-section-subscripts",
+      "w3-chemistry-section-bridge"
+    ],
+    "linkedQuestionIds": [],
+    "renderingNote": "绘制通用换算桥：主行依次为m(X) / g、n(X) / mol、N(X) / 个数，箭头分别标除以M(X)、乘N_A，反向箭头标乘M(X)、除以N_A。第二行从n(X)向n(Y)再向N(Y)，两个箭头依次标乘组成倍数k、乘N_A，并明确“一个X中含k个所求原子Y”。脚注：先定对象，再查单位；M使用题给g/mol；N_A在计算中按题给近似值使用。X为已指定的基本单元，分支仅在题目已给出组成关系时使用。不要填水、NH₃或短测的任何数值，也不要把NaCl画成独立分子。图是路线工具，不是题目答案。"
+  }
+]

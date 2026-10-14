@@ -17,7 +17,7 @@ describe('complete curriculum and enriched pilot rendering',()=>{
       expect(html).not.toContain('[object Object]');count++
     }}expect(count).toBe(672)
   })
-  it.each([1,2])('validates week %i five-subject overlay and preserves third subjects and later weeks',async(weekNumber)=>{
+  it.each([1,2,3,4])('validates week %i five-subject overlay and preserves third subjects and later weeks',async(weekNumber)=>{
     const week=await loadStudyWeek(weekNumber);let minutes=0
     for(const subject of ['chinese','math','english','physics','chemistry'] as const){
       const content=week.subjects[subject]!.enrichment!;expect(content.week).toBe(weekNumber);expect(content.revision).toBe(`week${String(weekNumber).padStart(2,'0')}-enriched-v1`);expect(content.status).toBe('pilot-ready')
@@ -38,9 +38,9 @@ describe('complete curriculum and enriched pilot rendering',()=>{
     expect(minutes).toBe(870)
     for(const subject of ['biology','geography','politics'] as const)expect(week.subjects[subject]?.enrichment).toBeUndefined()
     expect(week.subjects.english!.enrichment!.audioStatus).toContain('音频')
-    for(const summary of curriculum.filter(item=>item.week>2)){const later=await loadStudyWeek(summary.week);for(const lesson of Object.values(later.subjects))expect(lesson?.enrichment).toBeUndefined()}
+    for(const summary of curriculum.filter(item=>item.week>4)){const later=await loadStudyWeek(summary.week);for(const lesson of Object.values(later.subjects))expect(lesson?.enrichment).toBeUndefined()}
   })
-  it.each([1,2])('renders every week %i enriched step and all assessments without losing fields',async(weekNumber)=>{
+  it.each([1,2,3,4])('renders every week %i enriched step and all assessments without losing fields',async(weekNumber)=>{
     const week=await loadStudyWeek(weekNumber),enriched=Object.entries(week.subjects).filter(([,lesson])=>lesson?.enrichment)
     expect(enriched.map(([subject])=>subject).sort()).toEqual(['chemistry','chinese','english','math','physics'])
     for(const [subject,lesson] of enriched){const content=lesson!.enrichment!,steps=lessonSteps(lesson),htmlByStep:Record<string,string>={}

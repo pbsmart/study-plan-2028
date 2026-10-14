@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1175" viewBox="0 0 1000 1175" role="img" aria-labelledby="title desc"><title id="title">两种都给量：各自够支持多少反应</title><desc id="desc">反应物A和B分别用质量除以摩尔质量求mol，再各除自己的方程式系数，比较两者，较小者限制产量，相等则恰好同时耗尽；最后由限制者求产物及另一种反应物消耗，再用同物质起始减消耗求剩余。</desc><rect width="1000" height="1175" fill="#fff"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L8,5 L0,9 Z" fill="#111"/></marker></defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#111;font-size:24px}.title{font-size:32px;font-weight:700}.small{font-size:21px}.tiny{font-size:19px}.strong{font-weight:700}.white{fill:#fff}.formula{font-size:30px}.rule{stroke:#111;stroke-width:2;fill:none}.arrow{stroke:#111;stroke-width:2.5;fill:none;marker-end:url(#arrow)}</style>
+<text x="30" y="48" class="title">两种都给量：各自够支持多少反应</text>
+<text x="30" y="88" class="small">比较同一标准：先把质量换成 mol，再除各自的系数。</text>
+<rect x="30" y="109" width="940" height="84" rx="9" fill="#f3f3f3" stroke="#111" stroke-width="2"/>
+<text x="50" y="143" class="small strong">已配平：a A ＋ b B → …；a、b 是 A、B 各自的系数。</text>
+<text x="50" y="176" class="tiny">按题设反应至限制者耗尽，无副反应和损失；A、B 的起始量分别计算。</text>
+<rect x="30" y="220" width="450" height="285" rx="12" fill="#fff" stroke="#111" stroke-width="2"/>
+<rect x="520" y="220" width="450" height="285" rx="12" fill="#fff" stroke="#111" stroke-width="2"/>
+<text x="55" y="258" class="strong">① A：质量换成物质的量</text>
+<text x="545" y="258" class="strong">① B：质量换成物质的量</text>
+<text x="255" y="307" text-anchor="middle" font-size="27">m(A) ÷ M(A) ＝ n(A)</text>
+<text x="745" y="307" text-anchor="middle" font-size="27">m(B) ÷ M(B) ＝ n(B)</text>
+<text x="255" y="342" text-anchor="middle" class="small">g ÷ (g/mol) ＝ mol</text>
+<text x="745" y="342" text-anchor="middle" class="small">g ÷ (g/mol) ＝ mol</text>
+<path d="M255,357 V385" class="arrow"/><path d="M745,357 V385" class="arrow"/>
+<text x="255" y="419" text-anchor="middle" class="small strong">② 再除 A 的系数 a</text>
+<text x="745" y="419" text-anchor="middle" class="small strong">② 再除 B 的系数 b</text>
+<text x="255" y="468" text-anchor="middle" class="formula strong">n(A) / a　（mol）</text>
+<text x="745" y="468" text-anchor="middle" class="formula strong">n(B) / b　（mol）</text>
+<path d="M255,505 V537 H400 V562" class="arrow"/><path d="M745,505 V537 H600 V562" class="arrow"/>
+<rect x="80" y="568" width="840" height="143" rx="12" fill="#111"/>
+<text x="500" y="612" text-anchor="middle" class="white strong" font-size="28">③ 比较 n(A)/a 与 n(B)/b</text>
+<text x="500" y="655" text-anchor="middle" class="white strong">较小者先耗尽，限制产量；相等则同时耗尽。</text>
+<text x="500" y="690" text-anchor="middle" class="white tiny">不能只比较 g，也不能跳过系数只比较 mol。</text>
+<path d="M500,711 V752" class="arrow"/>
+<rect x="80" y="758" width="840" height="155" rx="12" fill="#f3f3f3" stroke="#111" stroke-width="2"/>
+<text x="500" y="800" text-anchor="middle" class="strong">④ 由限制者求产物与另一反应物的实际消耗</text>
+<text x="300" y="864" font-size="27">n(目标) ＝ n(限制者) ×</text>
+<text x="636" y="841" text-anchor="middle" class="small strong">目标系数</text><path d="M568,851 H704" class="rule"/><text x="636" y="880" text-anchor="middle" class="small strong">限制者系数</text>
+<path d="M500,913 V954" class="arrow"/>
+<rect x="80" y="960" width="840" height="135" rx="12" fill="#fff" stroke="#111" stroke-width="2"/>
+<text x="500" y="1004" text-anchor="middle" class="strong">⑤ 剩余＝同一种物质的起始量 − 实际消耗量</text>
+<text x="500" y="1042" text-anchor="middle" class="small">相减时物质相同、单位相同；如需 g，再乘该物质的 M。</text>
+<text x="500" y="1074" text-anchor="middle" class="tiny">检查：限制者剩余为 0；其余剩余不能为负。</text>
+<text x="30" y="1140" class="small">最后核对：反应前总质量＝产物总质量＋剩余反应物总质量。</text></svg>

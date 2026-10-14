@@ -1,0 +1,15 @@
+[
+  {
+    "id": "w3-math-figure-interval",
+    "title": "用端点逐个核对交集与并集",
+    "asset": "assets/math-interval-operations.svg",
+    "altText": "A=[−1,3)，B=(1,5]；交集(1,3)，并集[−1,5]。实心包含，空心不含。1只在A，3只在B，所以二者都进并集但不进交集。",
+    "description": "原创区间示意；与例4同一组数据。先独立判断端点，再展开解答图核对。",
+    "linkedSectionIds": [
+      "w3-math-s6"
+    ],
+    "linkedQuestionIds": [
+      "w3-math-ex4"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc"><title id="title">质量、物质的量与指定微粒的换算桥</title><desc id="desc">通用换算框图，不含任何例题数值。左框为质量m(X)，单位g；向右除以M(X)，到中框物质的量n(X)，单位mol；再向右乘N_A，到右框X的个数N(X)。反向分别除以N_A、乘M(X)。从n(X)另有分支：当一个X含k个所求原子Y时，乘k得到n(Y)，再乘N_A得到N(Y)。所有框保留对象标签，N表示个数而不是mol。</desc><rect width="1000" height="620" fill="white"/><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#111"/></marker></defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#111;font-size:20px}.title{font-size:27px;font-weight:700}.small{font-size:18px}.strong{font-weight:700}</style>
+<text x="25" y="42" class="title">先定对象，再沿单位换算</text>
+<text x="25" y="78" class="small">X：指定基本单元；Y：X 中所含的某一种原子。每一步只做一次转换。</text>
+<rect x="20" y="150" width="230" height="100" rx="8" fill="#f6f6f6" stroke="#111"/>
+<text x="42" y="189" class="strong">m(X)：质量</text>
+<text x="42" y="226" class="small">单位：g</text>
+<rect x="385" y="150" width="230" height="100" rx="8" fill="#f6f6f6" stroke="#111"/>
+<text x="407" y="189" class="strong">n(X)：物质的量</text>
+<text x="407" y="226" class="small">单位：mol</text>
+<rect x="750" y="150" width="230" height="100" rx="8" fill="#f6f6f6" stroke="#111"/>
+<text x="772" y="189" class="strong">N(X)：X 的个数</text>
+<text x="772" y="226" class="small">回答：多少个 X</text>
+<line x1="260" y1="178" x2="375" y2="178" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="288" y="166" class="small">÷ M(X)</text>
+<line x1="375" y1="223" x2="260" y2="223" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="288" y="247" class="small">× M(X)</text>
+<line x1="625" y1="178" x2="740" y2="178" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="655" y="166" class="small">× N_A</text>
+<line x1="740" y1="223" x2="625" y2="223" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="655" y="247" class="small">÷ N_A</text>
+<line x1="500" y1="263" x2="500" y2="395" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="527" y="310" class="">× k（组成倍数）</text>
+<text x="527" y="341" class="small">每个 X 中含 k 个 Y</text>
+<rect x="385" y="410" width="230" height="100" rx="8" fill="#f6f6f6" stroke="#111"/>
+<text x="407" y="449" class="strong">n(Y)：Y 的物质的量</text>
+<text x="407" y="486" class="small">单位：mol</text>
+<rect x="750" y="410" width="230" height="100" rx="8" fill="#f6f6f6" stroke="#111"/>
+<text x="772" y="449" class="strong">N(Y)：Y 的个数</text>
+<text x="772" y="486" class="small">回答：多少个 Y</text>
+<line x1="625" y1="453" x2="740" y2="453" stroke="#111" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="655" y="440" class="small">× N_A</text>
+<text x="25" y="550" class="small">M 用题给 g/mol；N_A 按题给近似值计算。N 是个数，不加 mol。</text>
+<text x="25" y="587" class="small">先由 m(X) 除以 M(X)；换到另一种对象时，再检查化学式中的组成倍数。</text>
+</svg>

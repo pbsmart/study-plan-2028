@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="title desc"><title id="title">教学图：总高度、已下落与离地高度</title><desc id="desc">竖直方向示意图：上方为释放点O，标初速度0；中间为下落中的球P；下方为地面。O到地面标总高度H，O到P标累计下落h，P到地面标剩余高度H−h。右侧向下箭头标正方向和a=+g。</desc><rect width="1000" height="610" fill="white"/><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8" fill="#111"/></marker></defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#111;font-size:20px}.title{font-size:27px;font-weight:700}.small{font-size:18px}.strong{font-weight:700}</style>
+<text x="25" y="43" class="title">教学图：总高度、已下落与离地高度</text>
+<text x="25" y="80" class="small">示意，非比例。下落尚在空中，图中没有规定触地后怎样运动。</text>
+<line x1="480" y1="140" x2="480" y2="480" stroke="#111" stroke-width="1" stroke-dasharray="7 6"/>
+<line x1="80" y1="480" x2="870" y2="480" stroke="#111" stroke-width="3"/>
+<circle cx="480" cy="140" r="7" stroke="#111" stroke-width="2" fill="white"/>
+<circle cx="480" cy="300" r="16" stroke="#111" stroke-width="2" fill="white"/>
+<text x="513" y="146" class="strong">O 释放点；v₀ = 0</text>
+<text x="513" y="307" class="strong">P 当前位置</text>
+<text x="788" y="510" class="small">地面</text>
+<line x1="120" y1="140" x2="120" y2="480" stroke="#111" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="25" y="305" class="strong">总高度 H</text>
+<line x1="325" y1="140" x2="475" y2="140" stroke="#111" stroke-width="1" stroke-dasharray="5 5"/>
+<line x1="325" y1="300" x2="475" y2="300" stroke="#111" stroke-width="1" stroke-dasharray="5 5"/>
+<line x1="325" y1="480" x2="475" y2="480" stroke="#111" stroke-width="1" stroke-dasharray="5 5"/>
+<line x1="370" y1="140" x2="370" y2="300" stroke="#111" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="205" y="226" class="strong">已下落 h</text>
+<line x1="370" y1="300" x2="370" y2="480" stroke="#111" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="173" y="397" class="strong">离地高度 H − h</text>
+<line x1="820" y1="150" x2="820" y2="430" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="706" y="121" class="strong">向下为正</text>
+<text x="844" y="303" class="small">a = +g</text>
+<text x="25" y="550" class="">只有首次触地前：h ≥ 0，离地高度 = H − h。</text>
+<text x="25" y="587" class="small">模型前提：从静止释放，忽略空气阻力，g 视为恒定。</text>
+</svg>

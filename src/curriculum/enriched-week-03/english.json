@@ -1,0 +1,850 @@
+{
+  "id": "w3-英语",
+  "week": 3,
+  "subject": "英语",
+  "title": "主谓一致：越过修饰语，找到真正的中心",
+  "revision": "week03-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "借助完整词义读懂句子，先判断时间，再找完整主语与主语中心，选择相配的谓语。",
+    "能把of、in、on、with、to等引出的本课修饰短语暂时括起，避免让离动词最近的名词决定单复数。",
+    "能处理each、everyone、every＋单数名词，区分两个独立对象由and并列与with附加同行者。",
+    "能辨别常见不可数名词与a piece of／two bottles of等数量表达，依据正确中心配对。",
+    "能在新语境解释选择理由，并桥接第2周已学的现在、过去及does后原形，不重做整套时态课。"
+  ],
+  "prerequisites": [
+    "第1周主语、谓语与基础句型，第2周一般现在时和一般过去时是前置。忘记时用本课12分钟补救槽回忆，不额外增加一套复习。",
+    "全课提供词义，可随时查本题释义；先读懂谁、是什么／做什么，再做语法，不把生词量当过关门槛。",
+    "适用于河南南阳2028高考备考的跨版本基础衔接；教材版本未核定，不编章节页码或2028考试规则。",
+    "准备纸笔；先圈完整主语，再下划线标中心，括起修饰语。没有音频，不用默念或打勾代替听辨达标。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "完整核心180分钟，所有词义查阅、前测、补救、正文停一停、例练、20分钟短测与35分钟订正都在内。忙时分两次可用学习周期，各90分钟：周期一前测10＋补救12＋八节正文48＋例题1—4共20；周期二例题5用5＋六题练习30＋短测20＋订正35。同一学习周可跨更多实际周期，手动推进，无日期绑定。补救超时顺延到下次英语时段，不删掉新测与订正，不占第三科预留时间；不另加抄词、听力或拓展任务。",
+    "segments": [
+      {
+        "id": "w3-en-time1",
+        "title": "三题前测：3＋3＋4分钟",
+        "minutes": 10,
+        "activityIds": [
+          "w3-en-d1",
+          "w3-en-d2",
+          "w3-en-d3"
+        ]
+      },
+      {
+        "id": "w3-en-time2",
+        "title": "12分钟前置补救；已会者同槽解释选择依据",
+        "minutes": 12,
+        "activityIds": [
+          "w3-en-r1"
+        ]
+      },
+      {
+        "id": "w3-en-time3",
+        "title": "八节连贯讲解，含逐句词义和自检",
+        "minutes": 48,
+        "activityIds": [
+          "w3-en-s1",
+          "w3-en-s2",
+          "w3-en-s3",
+          "w3-en-s4",
+          "w3-en-s5",
+          "w3-en-s6",
+          "w3-en-s7",
+          "w3-en-s8"
+        ]
+      },
+      {
+        "id": "w3-en-time4",
+        "title": "五阶例题：4＋5＋5＋6＋5分钟",
+        "minutes": 25,
+        "activityIds": [
+          "w3-en-ex1",
+          "w3-en-ex2",
+          "w3-en-ex3",
+          "w3-en-ex4",
+          "w3-en-ex5"
+        ]
+      },
+      {
+        "id": "w3-en-time5",
+        "title": "六题分层练习：4＋4＋5＋5＋6＋6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w3-en-pr1",
+          "w3-en-pr2",
+          "w3-en-pr3",
+          "w3-en-pr4",
+          "w3-en-pr5",
+          "w3-en-pr6"
+        ]
+      },
+      {
+        "id": "w3-en-time6",
+        "title": "四题独立新短测，20分",
+        "minutes": 20,
+        "activityIds": [
+          "w3-en-quiz1",
+          "w3-en-quiz2",
+          "w3-en-quiz3",
+          "w3-en-quiz4"
+        ]
+      },
+      {
+        "id": "w3-en-time7",
+        "title": "核分、定点回读、遮答重做与解释",
+        "minutes": 35,
+        "activityIds": [
+          "w3-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "用10分钟完成三题，不计20分短测。可看本题词义，但先不看答案。不会就标记“时间／主语／词义／变形”，然后使用已计入预算的12分钟补救槽；全对者同槽解释为何其他形式不合适。",
+    "questions": [
+      {
+        "id": "w3-en-d1",
+        "title": "先辨平时和过去",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "填空并说时间依据：①She _____ every day.（work/works/worked）②They _____ yesterday.（work/works/worked）\n词义：She＝她；They＝他们；work/works/worked＝工作，分别为原形／现在时第三人称单数形式／过去式；every＝每个；day＝一天；every day＝每天；yesterday＝昨天。",
+        "answer": "①works，every day表示日常习惯，She是单个第三者。②worked，yesterday表示过去。译：“她每天工作。”“他们昨天工作了。”",
+        "steps": [
+          "先用时间确定现在习惯或过去。",
+          "现在肯定句She配works；过去普通动作句用worked，不因They复数改回work。"
+        ],
+        "commonErrors": [
+          "只看主语，不看时间；写workeds。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w3-en-d2",
+        "title": "找主语，不看最近名词",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "The box of pens _____ on the table.（is/are）写完整主语、中心词和所选形式。\n词义：The/the＝特指这／这些；box＝盒子；of＝……的，此处说明盒内物品；pens＝钢笔，复数；is/are＝现在时be的不同形式；on＝在……上；table＝桌子。",
+        "answer": "完整主语The box of pens；中心box单数；填is。译：“这盒钢笔在桌子上。”",
+        "steps": [
+          "问什么在桌上，答案是这盒钢笔。",
+          "of pens说明盒内物品，不能把pens当决定谓语的中心。"
+        ],
+        "commonErrors": [
+          "让离空格最近的pens决定用are。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w3-en-d3",
+        "title": "区分通常状态与普通动作",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "选词：①Everyone _____ ready.（is/are）②Two bottles of water _____ here.（is/are）说明各句决定单复数的词。\n词义：Everyone＝每个人；is/are＝现在时be的形式；ready＝准备好的；Two＝两；bottles＝瓶，复数；of＝……的，此处连接容器和内容；water＝水；here＝在这里。",
+        "answer": "①is，Everyone按单数处理；②are，中心bottles是复数。译：“每个人都准备好了。”“两瓶水在这里。”",
+        "steps": [
+          "Everyone虽然涉及多人，语法上逐个看待，用单数配对。",
+          "第二句说两瓶，以bottles为中心，不能只看water。"
+        ],
+        "commonErrors": [
+          "按现实人数给Everyone配are；只看water就选is。"
+        ],
+        "estimatedMinutes": 4
+      }
+    ],
+    "routes": [
+      {
+        "when": "第1题时间或变形出错",
+        "action": "补救槽先复习时间与动词路线，再读第1、2节；不重做第2周整套时态。",
+        "sectionIds": [
+          "w3-en-r1",
+          "w3-en-s1",
+          "w3-en-s2"
+        ]
+      },
+      {
+        "when": "第2题完整主语或中心找错",
+        "action": "在补救槽画出“谁／什么＋谓语”，重点读第3节；修饰短语只是暂括，不是真的删掉句意。",
+        "sectionIds": [
+          "w3-en-r1",
+          "w3-en-s3"
+        ]
+      },
+      {
+        "when": "第3题each类或量词不清楚",
+        "action": "先读补救，再重点读第4、6节，分别看逐个表达与数量中心。",
+        "sectionIds": [
+          "w3-en-r1",
+          "w3-en-s4",
+          "w3-en-s6"
+        ]
+      },
+      {
+        "when": "三题全对且能解释",
+        "action": "同一12分钟槽中口头解释各干扰项为什么错，然后按八节顺序继续；不据前测自动完成本周。",
+        "sectionIds": [
+          "w3-en-r1",
+          "w3-en-s8"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w3-en-r1",
+      "title": "前置补救：一句话先找谁、什么、什么时间",
+      "level": "remediation",
+      "paragraphs": [
+        "先把熟句重新拆开。The worker checks a box every day.（The＝特指这位；worker＝工人；checks＝检查；a＝一个；box＝箱子；every＝每个；day＝一天；every day＝每天。译：“这位工人每天检查一个箱子。”）谁做检查？The worker，这是主语。主要动作是什么？checks，是谓语动词。被检查的a box是宾语，不是另一个主语。",
+        "再看状态句。The boxes are heavy.（The＝特指这些；boxes＝箱子，复数；are＝现在时be形式；heavy＝重的。译：“这些箱子很重。”）说的是箱子的状态，are连接主语与heavy，不需要再添加work或do。单数和复数表示语法上的数量；box一个箱子，boxes多个箱子，但不能只数句子里所有名词。",
+        "第2周的时间检查仍然有效。The worker checked a box yesterday.（The＝这位；worker＝工人；checked＝检查，过去式；a＝一个；box＝箱子；yesterday＝昨天。译：“这位工人昨天检查了一个箱子。”）昨天发生的普通动作先用过去式checked，不能因为worker是单数就写checks。主谓一致是在选对时间与句型以后，再核对主语和动词怎样配。",
+        "本槽12分钟：前4分钟读懂上面三句；中间4分钟圈主语、动词和时间；最后4分钟做停一停并用中文解释。全会者同槽解释为什么宾语、修饰语不控制谓语，不另加复习时长。后面用的of、with等新词会随句解释。"
+      ],
+      "keyPoints": [
+        "主语与宾语不混；先理解谁做什么。",
+        "时间先检查，主语配对后核对。",
+        "be说明本课状态，普通动词表示本课动作。"
+      ],
+      "checkpoint": {
+        "question": "填空：The workers _____ the box yesterday.（check/checks/checked）词义：The＝这些；workers＝工人，复数；check/checks/checked＝检查的原形／现在三单／过去式；the＝这个；box＝箱子；yesterday＝昨天。",
+        "answer": "checked。译：“这些工人昨天检查了这个箱子。”",
+        "explanation": "yesterday先确定过去；本课普通动词过去肯定句用checked，不因workers是复数改用原形。"
+      }
+    },
+    {
+      "id": "w3-en-s1",
+      "title": "时间与主语是两道检查，不是互相替代",
+      "level": "core",
+      "paragraphs": [
+        "本周不是再背一遍全部时态，而是把第2周的时间判断用作入口。遇到空格先问：是在介绍通常情况，还是叙述过去？再问：谁／什么在作主语？两道检查都要做，只做其中一个容易选到看似熟悉的错误形式。",
+        "The worker near these boxes checks the door every day.（The＝这位；worker＝工人；near＝在……附近；these＝这些；boxes＝箱子，复数；checks＝检查；the＝这扇；door＝门；every＝每个；day＝一天；every day＝每天。译：“这些箱子附近的那位工人每天检查这扇门。”）every day说明日常习惯，真正做检查的是一位worker，因此用checks；boxes只是说明工人在哪附近。",
+        "Yesterday the worker checked the door.（Yesterday＝昨天；the＝这位／这扇；worker＝工人；checked＝检查，过去式；door＝门。译：“昨天那位工人检查了这扇门。”）对象仍是一位工人，但现在说过去，用checked。本课普通动词过去式通常不随主语人称和单复数改变；be的过去式仍需配对。",
+        "只做一个be桥接：The workers were here yesterday.（The＝这些；workers＝工人，复数；were＝过去时be形式；here＝在这里；yesterday＝昨天。译：“这些工人昨天在这里。”）复数workers配were；若换单个第三者，普通过去陈述句用was。本课核心仍是一般现在时的主谓一致，遇到过去先保留第2周规则。"
+      ],
+      "keyPoints": [
+        "先时态，再主语中心，再形式。",
+        "修饰语里的复数不替代真正主语。",
+        "普通动作过去式与be过去配对分清。"
+      ],
+      "checkpoint": {
+        "question": "同是worker作主语，为什么平时用checks，昨天用checked？这是不是主谓一致矛盾？词义：worker＝工人；checks＝检查，现在三单；checked＝检查，过去式。",
+        "answer": "不矛盾。先由语境决定现在习惯或过去；checks是在一般现在时肯定句中与单个第三者配对，checked是普通动作过去式。",
+        "explanation": "主谓一致不能越过时间判断，把单数主语后的所有动词永远写成-s形式。"
+      }
+    },
+    {
+      "id": "w3-en-s2",
+      "title": "现在时配对：be与普通动词各有形式",
+      "level": "core",
+      "paragraphs": [
+        "在本课一般现在时肯定句中，I我配am，you你／你们、we我们、they他们／她们／它们配are，he他、she她、it它及单个第三者配is。不要把“单数一定is”背死：I和单数的you都有自己的配对。先认主语身份再选。",
+        "The student is ready.（The＝这位；student＝学生；is＝现在时be的单数形式；ready＝准备好的。译：“这位学生准备好了。”）The students are ready.（The＝这些；students＝学生，复数；are＝现在时be形式；ready＝准备好的。译：“这些学生准备好了。”）两句都是状态，把名词变复数后，be也要对应改变。",
+        "普通动词看另一组：The student needs a pen.（The＝这位；student＝学生；needs＝需要，现在三单；a＝一支；pen＝钢笔。译：“这位学生需要一支钢笔。”）The students need a pen.（The＝这些；students＝学生，复数；need＝需要，原形；a＝一支；pen＝钢笔。译：“这些学生需要一支钢笔。”）宾语a pen不决定谓语；主语是复数，所以用need。",
+        "本课复用少量形式：need→needs（需要）、help→helps（帮助）、check→checks（检查）；study→studies（学习，辅音字母加y时改y为i加es）；have→has（有，单独记）。这些是现在时肯定句配对，不给普通动词额外加一个is，也不写成is needs。"
+      ],
+      "keyPoints": [
+        "be用am/is/are，普通动词用本课原形或三单。",
+        "I、you有各自配对，不能只机械数人。",
+        "宾语数量不控制主语的谓语。"
+      ],
+      "checkpoint": {
+        "question": "选词：The students _____ two books.（has/have）词义：The＝这些；students＝学生，复数；has/have＝有，现在三单／原形；two＝两；books＝书，复数。",
+        "answer": "have。译：“这些学生有两本书。”",
+        "explanation": "主语students为复数，用have。这里主语和宾语恰巧都复数，但理由必须说主语，不能说因为books复数。"
+      }
+    },
+    {
+      "id": "w3-en-s3",
+      "title": "完整主语与中心：修饰短语先括起，再放回句意",
+      "level": "core",
+      "paragraphs": [
+        "完整主语往往不止一个词，它可能包含说明对象的修饰语。中心词是这组主语在语法上围绕的核心。做题时要先认整组在说什么，再用括号暂时隔开修饰部分；括号是分析工具，写答案时不是真的删去那些信息。",
+        "The key to these rooms is in my bag.（The＝这把；key＝钥匙；to＝……的，此处表示与这些房间对应；these＝这些；rooms＝房间，复数；is＝现在时be单数形式；in＝在……里面；my＝我的；bag＝包。译：“这些房间的钥匙在我的包里。”）完整主语是The key to these rooms；中心key，to these rooms修饰key。后面的in my bag说明钥匙的位置，不属于主语。",
+        "The books on the desk are new.（The/the＝这些／这张；books＝书，复数；on＝在……上；desk＝桌子；are＝现在时be形式；new＝新的。译：“桌子上的这些书是新的。”）完整主语The books on the desk，中心books；暂括on the desk后，剩下The books are new。desk虽离are近，却不是被说明新旧的对象。",
+        "本课of、in、on、near、to、with等都在具体句子中提示修饰关系，但不能把“所有介词后面都永远不重要”当规则。这里采取的是理解句意后分组：主语内部的介词短语不另加主语数量；句末地点短语也不挪到主语里面。不能简单规定第一个名词永远是中心，后面each类与数量表达还要继续识别。"
+      ],
+      "keyPoints": [
+        "先圈完整主语，再找中心；不能二选一。",
+        "主语内修饰短语与句末地点区分。",
+        "最近名词不决定谓语。"
+      ],
+      "checkpoint": {
+        "question": "The bag of books is heavy. 写完整主语、中心、修饰部分。词义：The＝这个；bag＝包；of＝装着……的，此处说明包内物品；books＝书，复数；is＝现在时be单数形式；heavy＝重的。",
+        "answer": "完整主语The bag of books；中心bag；修饰部分of books。译：“这包书很重。”",
+        "explanation": "重的是这包书这一个整体，以单数bag配is，不由修饰部分books决定。"
+      }
+    },
+    {
+      "id": "w3-en-s4",
+      "title": "each、everyone与every：现实里多人，语法上逐个看",
+      "level": "core",
+      "paragraphs": [
+        "each表示“每一个”，everyone表示“每个人”。本课它们作主语时按单数处理。现实上可能涉及一群人，但表达方式是把成员逐个看待，所以不直接按总人数选复数谓语。语法上的数不总等于眼前一共站了几个人。",
+        "Each of the workers has a bag.（Each＝每一个；of＝……中的；the＝这些；workers＝工人，复数；has＝有，现在三单；a＝一个；bag＝包。译：“这些工人每人有一个包。”）完整主语Each of the workers，中心Each；of the workers指明哪群人，不把Each变成复数。先括修饰部分，再看到Each has，就不容易被workers带走。",
+        "Each worker has a bag.（Each＝每个；worker＝工人，单数；has＝有；a＝一个；bag＝包。译：“每个工人都有一个包。”）Every worker has a bag.（Every＝每个；worker＝工人，单数；has＝有；a＝一个；bag＝包。译：“每个工人都有一个包。”）这两句的名词中心是worker，each/every放在单数名词前限定它；不要写every workers。本课不把every单独当成能替代everyone的代词。",
+        "Everyone is here.（Everyone＝每个人；is＝现在时be单数形式；here＝在这里。译：“每个人都在这里。”）与Each of the workers比较：everyone本身是主语，不需要再加people人们才算完整；它后面用is、needs、has等相应形式，取决于句子要表达状态还是动作／拥有。"
+      ],
+      "keyPoints": [
+        "Each of＋复数名词：中心Each，单数配对。",
+        "each/every＋单数名词：本课也按单数配对。",
+        "everyone按单数，不以现实人数改are。"
+      ],
+      "checkpoint": {
+        "question": "Everyone _____ a book.（have/has）Every student _____ ready.（is/are）词义：Everyone＝每个人；have/has＝有，原形／现在三单；a＝一本；book＝书；Every＝每个；student＝学生；is/are＝现在时be形式；ready＝准备好的。",
+        "answer": "has；is。译：“每个人都有一本书。”“每个学生都准备好了。”",
+        "explanation": "第一句everyone本身按单数，第二句every限定单数student；两句都不因班里有多人而选复数。"
+      }
+    },
+    {
+      "id": "w3-en-s5",
+      "title": "and与with：两个并列主语，还是一个主语带同伴",
+      "level": "core",
+      "paragraphs": [
+        "先读普通的两个独立对象并列。The teacher and the student are here.（The/the＝这位；teacher＝老师；and＝和；student＝学生；are＝现在时be形式；here＝在这里。译：“这位老师和这位学生都在这里。”）and把两个人放在同等位置，一起作主语，完整主语The teacher and the student是复数。",
+        "再把连接换成with。The teacher with two students is here.（The＝这位；teacher＝老师；with＝和……一起，此处补充同行者；two＝两；students＝学生，复数；is＝现在时be单数形式；here＝在这里。译：“这位带着两名学生的老师在这里。”）完整主语The teacher with two students，中心teacher；with two students是附加说明，不像and那样把三人并列作主语。",
+        "把with后人数增加，不改变主语中心；反过来若主语本身复数也不被单个同伴改变。The students with a teacher are here.（The＝这些；students＝学生，复数；with＝和……一起；a＝一位；teacher＝老师；are＝现在时be形式；here＝在这里。译：“这些和一位老师在一起的学生在这里。”）中心students，仍用are。",
+        "本课and规则限定为两个独立的人或事物。英语里存在并列词合指一个整体、同一人等特殊语义，本周不扩展，也不把“见到and一律复数”当无条件口号。做这里的题，只需确认两端是独立对象，再与with修饰区分。"
+      ],
+      "keyPoints": [
+        "普通and并列两个独立对象，复数配对。",
+        "with短语不另加主语数量。",
+        "完整主语包括修饰语，但谓语与中心配。"
+      ],
+      "checkpoint": {
+        "question": "The worker with two bags _____ at the door.（is/are）词义：The/the＝这位／这扇；worker＝工人；with＝带着；two＝两个；bags＝包，复数；is/are＝现在时be形式；at＝在……处；door＝门；at the door＝在门口。",
+        "answer": "is。完整主语The worker with two bags；中心worker。译：“带着两个包的那位工人在门口。”",
+        "explanation": "bags属于with修饰，不是并列主语；不能把一个人加两个包算作复数主语。"
+      }
+    },
+    {
+      "id": "w3-en-s6",
+      "title": "不可数名词与量词：水和两瓶水，中心不同",
+      "level": "core",
+      "paragraphs": [
+        "water水、information信息、advice建议是本课常见不可数名词。它们在这里不直接用a表示一个，也不靠加-s表示几条；单独作主语时按单数配对。不可数是英语表达方式，不是说现实中无法计量，也不是说这些词后永远只能接is。",
+        "The information is useful.（The＝这些特定的；information＝信息，不可数；is＝现在时be单数形式；useful＝有用的。译：“这些信息很有用。”）The advice helps me.（The＝这条／这些特定的；advice＝建议，不可数；helps＝帮助，现在三单；me＝我，作动作对象。译：“这些建议对我有帮助。”）一个配is，一个配helps，先看句意需要be还是普通动词，再作单数配对。",
+        "A bottle of water is here.（A＝一；bottle＝瓶，单数；of＝……的，连接量词和内容；water＝水；is＝现在时be单数形式；here＝在这里。译：“一瓶水在这里。”）Two bottles of water are here.（Two＝两；bottles＝瓶，复数；of＝……的；water＝水；are＝现在时be形式；here＝在这里。译：“两瓶水在这里。”）两句中心分别是bottle与bottles，不能因为water不可数把两句都写is。",
+        "同一道理可表示一条建议。A piece of advice is useful.（A＝一；piece＝条，在这里为计量单位；of＝……的；advice＝建议；is＝现在时be单数形式；useful＝有用的。译：“一条建议很有用。”）若说两条，用two pieces of advice（two＝两；pieces＝条，复数；of＝……的；advice＝建议），看pieces配复数。本课只练这些明确数量表达，不引入复杂集合名词。"
+      ],
+      "keyPoints": [
+        "water/information/advice在本课不可数，单独作主语单数配对。",
+        "有明确计量短语时看bottle/bottles、piece/pieces中心。",
+        "不把不可数名词硬加-s，也不忽略量词的复数。"
+      ],
+      "checkpoint": {
+        "question": "Two pieces of advice _____ useful.（is/are）词义：Two＝两；pieces＝条，复数；of＝……的；advice＝建议；is/are＝现在时be形式；useful＝有用的。",
+        "answer": "are。主语中心pieces是复数。译：“两条建议很有用。”",
+        "explanation": "advice虽不可数，完整主语却在数两条建议，配对由复数量词中心决定。"
+      }
+    },
+    {
+      "id": "w3-en-s7",
+      "title": "把主语检查带回does：只在一个位置承担变化",
+      "level": "core",
+      "paragraphs": [
+        "本周重点是找到主语，但原来的句型规则不能丢。普通动词现在时肯定句，单个第三者用相应三单；改为否定或一般疑问，主语配对常由does承担，后面的普通动词回原形。这只是第2周规则的一次桥接，不新增整套改写训练。",
+        "The information on these cards helps me.（The＝这些特定的；information＝信息，不可数；on＝在……上；these＝这些；cards＝卡片，复数；helps＝帮助，现在三单；me＝我，动作对象。译：“这些卡片上的信息对我有帮助。”）完整主语The information on these cards，中心information，on these cards不把它变复数。",
+        "Does the information on these cards help you?（Does＝帮助组成现在时一般疑问，与本句单数主语配对；the＝这些特定的；information＝信息；on＝在……上；these＝这些；cards＝卡片，复数；help＝帮助，原形；you＝你，动作对象。译：“这些卡片上的信息对你有帮助吗？”）提问后中心仍然是information，用does；后面help不再加s。cards既不能让助动词改do，也不能让help重复加s。",
+        "遇到be句仍用be路线，不要拼成does is。这里并不要求掌握更复杂疑问句。写完只查三件事：中心有没有找错？句子需要的时间有没有变？有does时后面的普通动词有没有还原？这三问足够解决本课安排的基础改错。"
+      ],
+      "keyPoints": [
+        "长主语进入问句后，中心不变。",
+        "does承担现在的单数配对，后面普通动词原形。",
+        "be句不要再套does。"
+      ],
+      "checkpoint": {
+        "question": "改正错误句：Does each worker needs a pen? 词义：Does＝帮助提问；each＝每个；worker＝工人；needs/need＝需要，现在三单／原形；a＝一支；pen＝钢笔。",
+        "answer": "Does each worker need a pen? 译：“每个工人都需要一支钢笔吗？”",
+        "explanation": "each worker单数配does，needs要还原为need；不是把does删掉来保留三单。"
+      }
+    },
+    {
+      "id": "w3-en-s8",
+      "title": "读通一个小场景，再按四步自己检查",
+      "level": "core",
+      "paragraphs": [
+        "把规则放回一段有意思的文字。下面是本课原创场景，不是实地记录。先逐句读懂，再看中心如何变化。第一句：The room is small.（The＝这间；room＝房间；is＝现在时be单数形式；small＝小的。译：“这间房间很小。”）这里中心room，单数状态句用is。",
+        "第二句：The teacher with two students checks the books.（The/the＝这位／这些；teacher＝老师；with＝和……一起；two＝两；students＝学生，复数；checks＝检查，现在三单；books＝书，复数。译：“带着两名学生的这位老师检查这些书。”）第三句：Each of the students has a pen.（Each＝每一个；of＝……中的；the＝这些；students＝学生，复数；has＝有，现在三单；a＝一支；pen＝钢笔。译：“这些学生每人有一支钢笔。”）第二句中心teacher，第三句中心Each，不能都被students带成复数。",
+        "第四句：Two bottles of water are on the table.（Two＝两；bottles＝瓶，复数；of＝……的；water＝水；are＝现在时be形式；on＝在……上；the＝这张；table＝桌子。译：“两瓶水在桌子上。”）第五句：Everyone is ready.（Everyone＝每个人；is＝现在时be单数形式；ready＝准备好的。译：“每个人都准备好了。”）同一段不必统一用一种单复数形式，要每句单独看主语中心。",
+        "现在合起来理解：小房间里，老师检查书，学生各有钢笔，桌上有两瓶水，大家已经准备好。检查的顺序是“时间与句型→完整主语→暂括修饰、找中心→选形式并译通”。后面的例题让你看一次完整过程；练习和短测换句子与场景，你要先独立判断再对照。没有音频，本课只评价书面读懂与语法选择。"
+      ],
+      "keyPoints": [
+        "同段每句主语可以不同，不统一套一个形式。",
+        "先读通整句，再用语法检查。",
+        "书面任务不能证明听力或真实发音达标。"
+      ],
+      "checkpoint": {
+        "question": "这段里为什么students出现两次，却不能让checks和has改成原形？词义：students＝学生，复数；checks/check＝检查；has/have＝有。",
+        "answer": "第二句students在with修饰中，中心teacher；第三句students在of短语中，中心Each。两个中心都按单数处理，所以分别用checks、has。",
+        "explanation": "数句子里有多少复数名词不能替代主语分析。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w3-en-ex1",
+      "title": "第一阶：先选时间，再选主语配对",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "填空，写一句理由：①The student _____ a bag every day.（checks/check/checked）②The students _____ a bag yesterday.（checks/check/checked）\n词义：The＝这位／这些；student＝学生，单数；students＝学生，复数；checks/check/checked＝检查，现在三单／原形／过去式；a＝一个；bag＝包；every＝每个；day＝一天；every day＝每天；yesterday＝昨天。",
+      "answer": "①checks：每天的习惯，单数student配三单。②checked：昨天的动作先用过去式，不因students复数就选check。译：“这位学生每天检查一个包。”“这些学生昨天检查了一个包。”",
+      "steps": [
+        "读懂两句主要动作都为检查，a bag是宾语。",
+        "①先看every day，再看单数student。",
+        "②先看yesterday，普通动作过去肯定句用checked。",
+        "回读确认没有多添be，也没有把过去式再加s。"
+      ],
+      "commonErrors": [
+        "只因第二句复数选check；给checked再加s。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w3-en-ex2",
+      "title": "第二阶：完整主语长，中心仍然可找",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "填空并标完整主语、中心和修饰部分：①The list of names _____ here.（is/are）②The books near the window _____ new.（is/are）\n词义：The/the＝这张／这些／这扇；list＝名单／清单；of＝……的；names＝名字，复数；is/are＝现在时be形式；here＝在这里；books＝书，复数；near＝在……附近；window＝窗户；new＝新的。",
+      "answer": "①is；完整主语The list of names，中心list，修饰of names。译：“这张名单在这里。”②are；完整主语The books near the window，中心books，修饰near the window。译：“窗户附近的这些书是新的。”",
+      "steps": [
+        "①问什么在这里，是一张名单，而非单独谈各名字。",
+        "②问什么是新的，是这些书，而非窗户。",
+        "把各修饰部分暂括，只留The list is与The books are检查。",
+        "译回整句，把暂括的信息恢复进去；不要漏翻位置。"
+      ],
+      "commonErrors": [
+        "总选最近名词；写中心时只答The或把句末here并入主语。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w3-en-ex3",
+      "title": "第三阶：逐个与并列，同样多人也不同",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "填空并说明中心：①Each of the teachers _____ ready.（is/are）②A teacher and a worker _____ here.（is/are）③A teacher with two workers _____ here.（is/are）\n词义：Each＝每一个；of＝……中的；the＝这些；teachers＝老师，复数；is/are＝现在时be形式；ready＝准备好的；A/a＝一位；teacher＝老师；and＝和，连接并列对象；worker＝工人；here＝在这里；with＝和……一起，补充同伴；two＝两；workers＝工人，复数。",
+      "answer": "①is，中心Each。②are，a teacher和a worker是两个独立并列对象。③is，中心teacher，with two workers是修饰。译：“这些老师每人都准备好了。”“一位老师和一位工人在这里。”“一位和两名工人在一起的老师在这里。”",
+      "steps": [
+        "①of后复数只说明哪群人，Each仍单数。",
+        "②确认and连接的是两个人，不是同一个称呼。",
+        "③完整主语包括with短语，配对中心却仍是teacher。",
+        "比较②③：现实都可能多人，语法结构决定怎样配。"
+      ],
+      "commonErrors": [
+        "按所有在场人数配动词；把with当and。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w3-en-ex4",
+      "title": "第四阶：不可数和明确数量，分别找中心",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "选择并解释：①The water in these bottles _____ here.（is/are）②Two bottles of water _____ here.（is/are）③A piece of advice _____ me.（help/helps）\n词义：The＝这些特定的；water＝水，不可数；in＝在……里；these＝这些；bottles＝瓶，复数；is/are＝现在时be形式；here＝在这里；Two＝两；of＝……的；A＝一；piece＝条，此处为计量单位；advice＝建议，不可数；help/helps＝帮助，原形／现在三单；me＝我，动作对象。",
+      "answer": "①is，中心water；②are，中心bottles；③helps，中心piece。译：“这些瓶子里的水在这里。”“两瓶水在这里。”“一条建议对我有帮助。”",
+      "steps": [
+        "①完整主语The water in these bottles，in短语修饰水，看不可数water。",
+        "②完整主语Two bottles of water，数的是两瓶，看复数bottles。",
+        "③单数量词piece为中心；句意需要help普通动词，所以选helps而非添加is。",
+        "同样出现water，不代表所有句子都由water控制；要看整个短语如何组织。",
+        "回头说出①②差别：水带瓶子位置修饰，或用瓶数给水计量。"
+      ],
+      "commonErrors": [
+        "看到water就两句都is；看到bottles就两句都are；写is helps。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w3-en-ex5",
+      "title": "第五阶：一个短语境里同时检查时间、中心和句型",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创语境，填空并解释：The worker with two bags _____（check）the door every day. Yesterday the worker _____（check）the window. Does the worker _____（need）a key?\n词义：The/the＝这位／这扇／这把；worker＝工人；with＝带着；two＝两个；bags＝包，复数；check＝检查；door＝门；every＝每个；day＝一天；every day＝每天；Yesterday＝昨天；window＝窗户；Does＝帮助组成现在时一般疑问；need＝需要；a＝一把；key＝钥匙。",
+      "answer": "checks；checked；need。第一句主语中心worker，with two bags不改变单数，every day表习惯；第二句昨天用过去式；第三句does后用原形need。译：“带着两个包的这位工人每天检查门。昨天这位工人检查了窗户。这位工人需要一把钥匙吗？”",
+      "steps": [
+        "第一句括起with two bags，保留worker作中心，判现在习惯，写checks。",
+        "第二句主体仍单数，但时间变过去，写checked。",
+        "第三句用does提问，need还原；对象a key不控制谓语。",
+        "完成后再整段译通，不要求同一人物出现就全段用同一种形式。"
+      ],
+      "commonErrors": [
+        "被bags带成复数；把第二句写checks；在does后写needs。"
+      ],
+      "estimatedMinutes": 5
+    }
+  ],
+  "practice": [
+    {
+      "id": "w3-en-pr1",
+      "title": "基础：带位置修饰的两种中心",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "填空，并给出完整主语和中心：①The pens in my bag _____ new.（is/are）②The map of these rooms _____ clear.（is/are）\n词义：The/the＝这些／这张；pens＝钢笔，复数；in＝在……里面；my＝我的；bag＝包；is/are＝现在时be形式；new＝新的；map＝示意图；of＝……的；these＝这些；rooms＝房间，复数；clear＝清楚的。",
+      "answer": "①are；完整主语The pens in my bag，中心pens。②is；完整主语The map of these rooms，中心map。译：“我包里的这些钢笔是新的。”“这些房间的这张示意图很清楚。”",
+      "steps": [
+        "①in my bag只说明钢笔位置。",
+        "②of these rooms说明示意图描画的对象，题面以单数map为中心。",
+        "恢复整句意思，不由最近名词bag或rooms作判断。"
+      ],
+      "commonErrors": [
+        "两句都用最近名词判断；只写名词而漏完整主语。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w3-en-pr2",
+      "title": "基础：each与everyone从意义走到形式",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "填空：①Each of the books _____ a name.（has/have）②Everyone _____ more time.（need/needs）再说明为什么不能只根据books或现实人数判断。\n词义：Each＝每一个；of＝……中的；the＝这些；books＝书，复数；has/have＝有，现在三单／原形；a＝一个；name＝名称；Everyone＝每个人；need/needs＝需要，原形／现在三单；more＝更多的；time＝时间。",
+      "answer": "①has；②needs。①中心Each，books在of短语中；②everyone按单数配对。译：“这些书每本都有一个名称。”“每个人都需要更多时间。”",
+      "steps": [
+        "先找每一句的主语中心。",
+        "each/everyone都按单数，因此普通现在肯定动词用三单。",
+        "不把现实范围里有多个成员等同于复数主语。"
+      ],
+      "commonErrors": [
+        "写Each have或Everyone need。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w3-en-pr3",
+      "title": "应用：把with和and放在完整句里比",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "改正每句的一处错误，并说明理由：①The student with two books are here. ②The student and the teacher is ready.\n词义：The/the＝这位；student＝学生；with＝带着；two＝两；books＝书，复数；are/is＝现在时be形式；here＝在这里；and＝和，连接独立对象；teacher＝老师；ready＝准备好的。",
+      "answer": "①The student with two books is here. 中心student单数。②The student and the teacher are ready. 两个独立的人并列为复数。译：“带着两本书的这位学生在这里。”“这位学生和这位老师准备好了。”",
+      "steps": [
+        "完整主语先圈出，不因长度不同选词。",
+        "①with two books只是修饰。",
+        "②and连接两个独立对象，复数配对。",
+        "只改题设那一处，不随意更换主语或语义。"
+      ],
+      "commonErrors": [
+        "通过删去with短语让句子变短，却没有改错；把and改with逃避配对。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w3-en-pr4",
+      "title": "应用：同一词汇换结构，中心会变",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "填空：①The advice in these books _____ useful.（is/are）②Three bottles of water _____ cold.（is/are）③The water _____ cold.（is/are）写每空的中心。\n词义：The/the＝这些特定的；advice＝建议，不可数；in＝在……里；these＝这些；books＝书，复数；is/are＝现在时be形式；useful＝有用的；Three＝三；bottles＝瓶，复数；of＝……的；water＝水，不可数；cold＝冷的。",
+      "answer": "①is，中心advice；②are，中心bottles；③is，中心water。译：“这些书里的建议很有用。”“三瓶水是冷的。”“这些水是冷的。”",
+      "steps": [
+        "①把in these books暂括，看advice不可数。",
+        "②of water说明三瓶的内容，中心bottles复数。",
+        "③直接看不可数water，状态句用is。",
+        "比较②③：第二句以三瓶为数量中心，第三句直接以水为中心。"
+      ],
+      "commonErrors": [
+        "因为books复数选are；因为water不可数让第二句也is。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w3-en-pr5",
+      "title": "迁移：有does还要保持真正的中心",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "每句选一个词，并译通：①Does the list of rooms _____ you?（help/helps）②The information about these books _____ useful.（is/are）③Every worker _____ a pen.（has/have）\n词义：Does＝帮助组成现在时一般疑问；the＝这张／这些特定的；list＝清单；of＝……的；rooms＝房间，复数；help/helps＝帮助，原形／现在三单；you＝你，动作对象；information＝信息，不可数；about＝关于；these＝这些；books＝书，复数；is/are＝现在时be形式；useful＝有用的；Every＝每个；worker＝工人，单数；has/have＝有，现在三单／原形；a＝一支；pen＝钢笔。",
+      "answer": "①help，does后原形，主语中心list。②is，中心information不可数，about these books为修饰。③has，every worker单数。译：“这张房间清单对你有帮助吗？”“关于这些书的信息很有用。”“每个工人都有一支钢笔。”",
+      "steps": [
+        "①既找list中心，也看到助动词does已承担配对。",
+        "②不能被修饰部分books影响。",
+        "③every后单数worker，肯定句have变has。",
+        "三句各有不同结构，不只依据最后一个名词。"
+      ],
+      "commonErrors": [
+        "把help改helps造成双重变化；将information想当然当成可数复数。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w3-en-pr6",
+      "title": "迁移：读懂一段再分别处理",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创短段，填空并写第①句完整主语、第②句中心、第③句时间依据：①The teacher near the windows _____（study）here every day. ②Two bottles of water _____（be）on the desk now. ③Yesterday the teachers _____（work）at home.\n词义：The/the＝这位／这些／这张；teacher＝老师，单数；near＝在……附近；windows＝窗户，复数；study＝学习；here＝在这里；every＝每个；day＝一天；every day＝每天；Two＝两；bottles＝瓶，复数；of＝……的；water＝水；be＝是／在，本题选择相应形式；on＝在……上；desk＝书桌；now＝现在；Yesterday＝昨天；teachers＝老师，复数；work＝工作；at＝在；home＝家；at home＝在家。",
+      "answer": "①studies，完整主语The teacher near the windows，中心teacher。②are，中心bottles。③worked，依据Yesterday叙述过去。译：“窗户附近的这位老师每天在这里学习。”“两瓶水现在在书桌上。”“昨天这些老师在家工作了。”",
+      "steps": [
+        "①时间习惯，单数teacher配studies，注意y改i加es。",
+        "②说现在状态，看数量中心bottles选are；now不意味着必须使用进行时。",
+        "③昨天普通动作，work用worked，不因主语复数改原形。",
+        "完整读通三句再自查，不要求把不同时间统一。"
+      ],
+      "commonErrors": [
+        "写studys；看water选is；因为now就额外添加being；忽略Yesterday。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "动词前最近的名词决定单复数。",
+      "why": "那个名词可能在修饰短语中，真正被说明的主语中心在前面。",
+      "right": "先圈完整主语，再暂括修饰，找中心。"
+    },
+    {
+      "wrong": "完整主语就是中心词，两者只要写一个。",
+      "why": "完整主语包含必要的限定和修饰，中心只负责核心配对；题目可能分别要求。",
+      "right": "例如The books on the desk是完整主语，books是中心。"
+    },
+    {
+      "wrong": "Everyone涉及多人，所以用are或have。",
+      "why": "everyone在本课语法上按单数，不由现实总人数决定。",
+      "right": "按句意用is、has、needs等相应形式。"
+    },
+    {
+      "wrong": "with和and都是“和”，所以一样选复数。",
+      "why": "普通and连接独立并列对象，with短语在本课只是修饰。",
+      "right": "The teacher with...看teacher；teacher and student两者并列。"
+    },
+    {
+      "wrong": "water不可数，所以Two bottles of water也只能is。",
+      "why": "数量短语中心已经变为复数bottles。",
+      "right": "数瓶数时看bottle/bottles，水单独作中心时看water。"
+    },
+    {
+      "wrong": "只要中心单数，任何动词都加s。",
+      "why": "还要看时间、be与普通动词、是否有does；I和you也有特定配对。",
+      "right": "先判时间句型；过去普通动词用过去式，does后原形，be选对应形式。"
+    }
+  ],
+  "quiz": {
+    "instructions": "四题独立完成20分钟，4题各5分，共20分。允许看各题完整词义，不看前文答案。每题句子与语境均为新写，没有照搬例题原句。要按要求写中心与理由，单填字母或词不能自动拿满分。评分后进入已计入总预算的35分钟订正。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w3-en-quiz1",
+        "title": "找到整组主语，躲开两个最近名词",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "填空，并写两句的完整主语与中心：①The names on the card _____ new.（is/are）②The bag near these chairs _____ heavy.（is/are）\n词义：The/the＝这些／这张／这个；names＝名字，复数；on＝在……上；card＝卡片，单数；is/are＝现在时be形式；new＝新的；bag＝包，单数；near＝在……附近；these＝这些；chairs＝椅子，复数；heavy＝重的。",
+        "answer": "①are；完整主语The names on the card，中心names。②is；完整主语The bag near these chairs，中心bag。译：“这张卡片上的这些名字是新的。”“这些椅子附近的这个包很重。”",
+        "steps": [
+          "①单数card在on修饰中，不能控制谓语。",
+          "②复数chairs在near修饰中，不能控制谓语。",
+          "把完整主语与中心分别写清。"
+        ],
+        "commonErrors": [
+          "两句都按离空格最近的名词选词；把完整主语只写成一个名词。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 2,
+            "criterion": "①are、②is各1分。"
+          },
+          {
+            "points": 1,
+            "criterion": "两句完整主语各0.5分，不能遗漏修饰短语。"
+          },
+          {
+            "points": 2,
+            "criterion": "中心names与bag各1分；若中心被包含在完整主语答案中但未明确标示，不自动给中心分。"
+          }
+        ]
+      },
+      {
+        "id": "w3-en-quiz2",
+        "title": "每一个、并列与附加同伴",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创物品核对场景，填空：①Each of the boxes _____ a label.（has/have）②A name and a number _____ on each label.（is/are）③A box with two labels _____ on the floor.（is/are）解释①按什么配对，并说明②③为什么不同。\n词义：Each/each＝每一个／每个；of＝……中的／……的；the＝这些／这个；boxes＝箱子，复数；has/have＝有，现在三单／原形；a/A＝一个／一张；label＝标签，单数；name＝名称；and＝和，连接独立对象；number＝号码；is/are＝现在时be形式；on＝在……上；box＝箱子，单数；with＝带有，补充修饰；two＝两；labels＝标签，复数；floor＝地面。",
+        "answer": "①has，中心Each按单数。②are，一个名称和一个号码是两个独立项目，通过and并列，主语复数。③is，中心box单数，with two labels不增加主语数量。译：“这些箱子每个都有一张标签。”“每张标签上都有一个名称和一个号码。”“一个贴着两张标签的箱子在地上。”",
+        "steps": [
+          "①完整主语Each of the boxes，以Each配has，不由boxes决定。",
+          "②主语A name and a number是两个独立项目，on each label是位置，不能看label选is。",
+          "③with two labels修饰box，不把标签与箱子并列作主语。",
+          "完整译通核对场景，再用and并列与with修饰解释差别。"
+        ],
+        "commonErrors": [
+          "因为boxes复数写have；因为位置短语each label单数选is；把box与两张标签合算为复数主语。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 3,
+            "criterion": "三个空has、are、is各1分。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明①中心Each按单数处理。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释②是两个独立项目并列、③with只是修饰中心box；两层各0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w3-en-quiz3",
+        "title": "数量表达不能被内容名词带走",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "选择并写决定形式的中心：①The information about these rooms _____ clear.（is/are）②Two pieces of advice _____ me.（help/helps）③A bottle of water _____ on the chair.（is/are）\n词义：The/the＝这些特定的／这把；information＝信息，不可数；about＝关于；these＝这些；rooms＝房间，复数；is/are＝现在时be形式；clear＝清楚的；Two＝两；pieces＝条，复数；of＝……的；advice＝建议，不可数；help/helps＝帮助，原形／现在三单；me＝我，动作对象；A＝一；bottle＝瓶，单数；water＝水；on＝在……上；chair＝椅子。",
+        "answer": "①is，中心information不可数。②help，中心pieces复数。③is，中心bottle单数。译：“关于这些房间的信息很清楚。”“两条建议对我有帮助。”“一瓶水在椅子上。”",
+        "steps": [
+          "①about these rooms是修饰，中心仍information。",
+          "②不是让advice决定形式，而是看“两条”的pieces。",
+          "③也是计量结构，但只有一瓶，看bottle。"
+        ],
+        "commonErrors": [
+          "看到rooms选are；advice不可数使第二句也选helps；把所有of前词都忽略。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 3,
+            "criterion": "三空is、help、is各1分。"
+          },
+          {
+            "points": 1,
+            "criterion": "写明①information不可数，单数配对。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确②中心pieces为复数、③中心bottle为单数，各0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w3-en-quiz4",
+        "title": "新语境中兼顾时间与问句还原",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "填空并按要求解释：Every student _____（have）a book now. Yesterday everyone _____（check）a bag. Does each student _____（need）a pen?\n请说明第二空为什么不能只按“单数加s”处理，以及第三空为什么不写needs。\n词义：Every＝每个；student＝学生，单数；have＝有；a＝一，本／个／支；book＝书；now＝现在；Yesterday＝昨天；everyone＝每个人；check＝检查；bag＝包；Does＝帮助组成现在时一般疑问；each＝每个；need/needs＝需要，原形／现在三单；pen＝钢笔。",
+        "answer": "has；checked；need。第二句Yesterday明确过去，普通动作肯定句用checked，不能因everyone单数写checks；第三句does已承担现在单数配对，后面的普通动词用原形need。译：“现在每个学生都有一本书。”“昨天每个人都检查了一个包。”“每个学生都需要一支钢笔吗？”",
+        "steps": [
+          "第一句表示当前拥有，every student单数，写has。",
+          "第二句先看过去时间，再用规则过去式checked。",
+          "第三句主语虽单数，但does后不能再加s。",
+          "回读保留每句时间，不把整段统一为现在或过去。"
+        ],
+        "commonErrors": [
+          "写have或haves；看到everyone写checks忽略昨天；在does后写needs。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 3,
+            "criterion": "三个空has、checked、need各1分。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释第二空先由Yesterday判断过去，不能机械用单数-s规则。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释does已承担配对，后面need用原形。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第1题两句中心names、bag均判断正确，不能靠最近名词猜。",
+        "第2题能同时解释Each按单数以及and与with的结构差别。",
+        "第3题能区分不可数information与数量中心pieces/bottle。",
+        "第4题checked与need都正确，能解释时间优先和does后还原；不以主谓一致为由破坏已学句型。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w3-en-quiz1"
+        ],
+        "sectionIds": [
+          "w3-en-s2",
+          "w3-en-s3"
+        ],
+        "action": "画完整主语括号与中心下划线，回做练习1，再遮答改原错题。"
+      },
+      {
+        "questionIds": [
+          "w3-en-quiz2"
+        ],
+        "sectionIds": [
+          "w3-en-s4",
+          "w3-en-s5"
+        ],
+        "action": "把Each、and并列、with修饰分三行说明，回做练习2或3中相关一小题。"
+      },
+      {
+        "questionIds": [
+          "w3-en-quiz3"
+        ],
+        "sectionIds": [
+          "w3-en-s3",
+          "w3-en-s6"
+        ],
+        "action": "比较“信息本身”与“若干条／瓶”的中心，回做练习4，不抄整段规则。"
+      },
+      {
+        "questionIds": [
+          "w3-en-quiz4"
+        ],
+        "sectionIds": [
+          "w3-en-s1",
+          "w3-en-s4",
+          "w3-en-s7"
+        ],
+        "action": "先标现在／昨天，再标肯定／does问句，回做练习5或6的相关小题后重写原错题。"
+      }
+    ]
+  },
+  "mastery": [
+    "看题内词义能读懂本课完整句子，正确区别完整主语、中心、修饰与宾语。",
+    "能解释为什么不由最近名词决定谓语，并在新句里做出配对。",
+    "能处理Each/everyone、every＋单数名词、普通and与with的差别。",
+    "能让不可数主语与明确量词短语分别由自己的中心配对。",
+    "短测独立至少16/20且全部关键检查通过；能遮答订正并解释，首次分与重做分分开。",
+    "未提供音频，以上只证明本课书面语法与词义理解，不证明真实听辨、口语或发音达标。"
+  ],
+  "nextStep": "用预算内35分钟完成核分和定点订正。达到16/20及全部关键检查后，由你手动进入第4周阅读主旨与细节；未过则继续第3周，在下次英语时段补最薄弱的结构，不自动按日期前进。下一周读短文时，继续先找到每句主语和主要动作。",
+  "reviewActivity": {
+    "id": "w3-en-review",
+    "title": "35分钟订正：保留首次分，把中心找出来",
+    "instructions": [
+      "前5分钟按评分点核分，另外核对四项关键检查。每个错题标主要错因：时间、完整主语、中心、each类、and/with、不可数/量词或does后还原。",
+      "接着10分钟按quiz.remediation只回读相关小节，并回做对应一道练习或小题。逐句先译意，再圈完整主语、标中心；查本题词义已在此时间内。",
+      "接着15分钟遮住答案重做所有错题并解释理由；已全对者遮答解释四道短测中的干扰项为什么不成立，不另加新题。重做是订正，不能冒充未见过的独立测验。",
+      "最后5分钟核对订正结果，写一句个人检查提醒，记录首次分与重做分。未通过关键项就保留本周未完成，下次英语学段继续，不在180分钟之外强加复习或听力。"
+    ]
+  },
+  "audioStatus": "本课始终未提供音频。词义、译文和书面练习可辅助读懂与语法判断，不能替代真实听辨或发音练习；不设置或宣称听力达标。",
+  "sourcePolicy": {
+    "authorship": "中文讲解、英文短句与短段、逐句词义、前测、例题、练习、短测及评分均为原创基础衔接内容；未摘录教材、试卷或受版权保护的现代阅读选文。语法规则限定在文中明确的基础句型与语境。",
+    "examStatus": "全部题目origin为original，非历年真题。面向河南南阳2028高考备考的跨版本补基础，不虚构教材章节页码，不声称核验2028题型、听力政策或分值；20分为本课自测设计。",
+    "externalSources": []
+  }
+}

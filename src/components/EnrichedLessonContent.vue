@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { EnrichedLesson, EnrichedQuestion, StaticLessonFigure } from '../curriculum/enriched-types'
+import type { CumulativeReviewMap, EnrichedLesson, EnrichedQuestion, StaticLessonFigure } from '../curriculum/enriched-types'
 import OriginalProblem from './OriginalProblem.vue'
 import LessonDiagram from './LessonDiagram.vue'
 import StaticLessonFigureView from './StaticLessonFigure.vue'
-const props = defineProps<{ lesson: EnrichedLesson; step: string; figures?: StaticLessonFigure[] }>()
+const props = defineProps<{ lesson: EnrichedLesson; step: string; figures?: StaticLessonFigure[]; reviewMap?: CumulativeReviewMap }>()
 const emit = defineEmits<{ navigate: [step: string] }>()
 const section = computed(() => props.lesson.sections.find(section => section.id === props.step))
 const question = computed(() => [...props.lesson.workedExamples, ...props.lesson.practice].find(problem => problem.id === props.step))
@@ -13,8 +13,8 @@ const problem = (question: EnrichedQuestion) => ({ ...question, solution: questi
 const questionTitle = (id: string) => props.lesson.quiz.questions.find(question => question.id === id)?.title || id
 const sectionTitle = (id: string) => props.lesson.sections.find(section => section.id === id)?.title || id
 const figuresForQuestion = (id: string) => (props.figures || []).filter(figure => figure.linkedQuestionIds.includes(id))
-const relevantFigures = computed(() => (props.figures || []).filter(figure => figure.linkedSectionIds.includes(props.step) || figure.linkedQuestionIds.includes(props.step)))
-const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram => diagram.linkedSectionIds.includes(props.step) && !relevantFigures.value.some(figure => figure.id === diagram.id)) || [])
+const relevantFigures = computed(() => (props.figures || []).filter(figure => (!figure.answerOnly && figure.linkedSectionIds.includes(props.step)) || figure.linkedQuestionIds.includes(props.step)))
+const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram => diagram.linkedSectionIds.includes(props.step) && !(props.figures || []).some(figure => figure.id === diagram.id)) || [])
 </script>
 <template>
   <div class="enriched-content">
@@ -44,13 +44,19 @@ const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram =>
     </template>
     <template v-else-if="step === 'quiz'">
       <p>{{ lesson.quiz.instructions }}</p><p class="help">共 {{ lesson.quiz.totalPoints }} 分。独立作答后按评分点自行核对，页面不提供自动评分。</p>
-      <OriginalProblem hide-id v-for="item in lesson.quiz.questions" :key="item.id" :problem="problem(item)" label="原创短测（非历年真题）" reveal-label="短测完成后核对答案与评分点"><template #solution-media><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></OriginalProblem>
+      <OriginalProblem hide-id v-for="item in lesson.quiz.questions" :key="item.id" :problem="problem(item)" :label="reviewMap ? '原创累计诊断（非历年真题）' : '原创短测（非历年真题）'" :reveal-label="reviewMap ? '累计诊断完成后核对答案与评分点' : '短测完成后核对答案与评分点'"><template #solution-media><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></OriginalProblem>
     </template>
     <template v-else-if="step === 'review'">
       <h3>{{ lesson.reviewActivity?.title || '按错因订正' }}</h3><ul v-if="lesson.reviewActivity"><li v-for="item in lesson.reviewActivity.instructions" :key="item">{{ item }}</li></ul>
       <article v-for="item in lesson.quiz.remediation" :key="item.questionIds.join('-')" class="remediation-item"><p>{{ item.questionIds.map(questionTitle).join('、') }}：{{ item.action }}</p><button v-for="id in item.sectionIds" :key="id" class="text-button" @click="emit('navigate', id)">回看：{{ sectionTitle(id) }} →</button></article>
       <details class="reading-detail"><summary>检查常见误区</summary><article v-for="item in lesson.misconceptions" :key="item.wrong" class="remediation-item"><h3>{{ item.wrong }}</h3><p>{{ item.why }}</p><p>{{ item.right }}</p></article></details>
-      <h3>自行核对掌握情况</h3><p>短测参考标准：{{ lesson.quiz.passRule.minScore }} / {{ lesson.quiz.totalPoints }} 分，并满足以下关键检查。</p><ul><li v-for="item in lesson.quiz.passRule.requiredChecks" :key="item">{{ item }}</li></ul><ul><li v-for="item in lesson.mastery" :key="item">{{ item }}</li></ul><p>{{ lesson.nextStep }}</p><p class="help">看过答案或完成打卡不代表已经掌握；没有自动评分、自动达标或自动跳周。</p>
+      <details v-if="reviewMap" class="reading-detail cumulative-review-map"><summary>做完累计诊断后，查看第1—{{ lesson.week }}周技能回查</summary>
+        <p class="help">这是本节 {{ reviewMap.totalPoints }} 分累计诊断的回查表，已计入原有 {{ reviewMap.minutes }} 分钟测评安排，不是额外试卷。每项分值只计一次；同一技能关联多个周次，不重复加分。先独立完成并核对答案，再按薄弱项回看本周讲解。</p>
+        <article v-for="item in reviewMap.questions" :key="item.questionId" class="remediation-item"><h3>{{ item.title }} · {{ item.points }} 分</h3>
+          <ul><li v-for="(skill, index) in item.skills" :key="index"><p>{{ skill.skill }} · {{ skill.points }} 分 · 关联第 {{ skill.weeks.join('、') }} 周</p><button v-for="id in skill.sectionIds" :key="id" class="text-button" @click="emit('navigate', id)">回看：{{ sectionTitle(id) }} →</button></li></ul>
+        </article>
+      </details>
+      <h3>自行核对掌握情况</h3><p>{{ reviewMap ? '累计诊断' : '短测' }}参考标准：{{ lesson.quiz.passRule.minScore }} / {{ lesson.quiz.totalPoints }} 分，并满足以下关键检查。</p><ul><li v-for="item in lesson.quiz.passRule.requiredChecks" :key="item">{{ item }}</li></ul><ul><li v-for="item in lesson.mastery" :key="item">{{ item }}</li></ul><p>{{ lesson.nextStep }}</p><p class="help">看过答案或完成打卡不代表已经掌握；没有自动评分、自动达标或自动跳周。</p>
     </template>
   </div>
 </template>

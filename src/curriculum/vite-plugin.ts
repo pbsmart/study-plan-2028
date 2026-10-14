@@ -9,6 +9,7 @@ import { effectiveStatus } from './types'
 import type { StudyWeek, SubjectWeek } from './types'
 import type { EnrichedLesson, StaticLessonFigure } from './enriched-types'
 import type { StudyWeekSummary } from './summary-types'
+import { normalizeReviewMap } from './review-map'
 import { enrichmentConfigs } from './enrichment-config'
 import type { EnrichmentConfig } from './enrichment-config'
 
@@ -64,7 +65,9 @@ async function readFigure(value: unknown, lesson: EnrichedLesson, config: Enrich
   const viewBox = /\bviewBox\s*=\s*["']\s*([\d.-]+)\s+([\d.-]+)\s+([\d.]+)\s+([\d.]+)\s*["']/.exec(svg)
   if (!viewBox || !viewBox.slice(1).every(value => Number.isFinite(Number(value))) || Number(viewBox[3]) <= 0 || Number(viewBox[4]) <= 0) throw new Error('静态图解需要有效viewBox。')
   sourceFiles.add(path)
-  return { id: value.id, title: value.title, src: path, altText: value.altText, caption: typeof value.description === 'string' ? value.description : value.altText, linkedSectionIds: value.linkedSectionIds, linkedQuestionIds: questionIds, width: Number(viewBox[3]), height: Number(viewBox[4]) }
+  const answerOnly = config.answerOnlyFigureIds?.includes(value.id) || undefined
+  if (answerOnly && !questionIds.length) throw new Error('答案图解必须关联题目。')
+  return { answerOnly, id: value.id, title: value.title, src: path, altText: value.altText, caption: typeof value.description === 'string' ? value.description : value.altText, linkedSectionIds: value.linkedSectionIds, linkedQuestionIds: questionIds, width: Number(viewBox[3]), height: Number(viewBox[4]) }
 }
 
 export async function readCurriculumData(options: CurriculumPluginOptions = {}) {
@@ -105,7 +108,16 @@ export async function readCurriculumData(options: CurriculumPluginOptions = {}) 
       const figures: unknown = JSON.parse(await readFile(path, 'utf8'))
       for (const figure of Array.isArray(figures) ? figures : [figures]) await attachFigure(manifest.subject, figure)
     }
+    for (const manifest of config.reviewMapManifests || []) {
+      if (!(manifest.subject in enrichedSubjects)) throw new Error('累计诊断映射只能用于核心学科。')
+      const lesson = week?.subjects[manifest.subject as keyof typeof week.subjects]
+      if (!lesson?.enrichment || lesson.enrichmentReviewMap) throw new Error('累计诊断映射缺少课程或重复。')
+      const path = localAsset(config.directory, manifest.file, 'json')
+      sourceFiles.add(path)
+      lesson.enrichmentReviewMap = normalizeReviewMap(JSON.parse(await readFile(path, 'utf8')), lesson.enrichment)
+    }
     if (config.preferDiagramAssets) for (const [subject, lesson] of Object.entries(week?.subjects || {})) for (const diagram of lesson?.enrichment?.diagrams || []) if (diagram.asset) await attachFigure(subject, { ...diagram, linkedQuestionIds: config.diagramQuestionLinks?.[diagram.id] || [] })
+    for (const id of config.answerOnlyFigureIds || []) if (!Object.values(week?.subjects || {}).some(lesson => lesson?.enrichmentFigures?.some(figure => figure.id === id))) throw new Error('答案图解配置关联了不存在的图解。')
   }
   return { weeks, summaries, coverage, sourceFiles: [...sourceFiles] }
 }

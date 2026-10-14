@@ -1,0 +1,51 @@
+[
+  {
+    "id": "w3-physics-fig-trapezoid",
+    "title": "教学图：速度直线下的梯形",
+    "asset": "assets/physics-trapezoid.svg",
+    "altText": "横轴时间t，单位秒；纵轴速度v，单位米每秒。一条直线从(0,2)连接到(4,6)，图线下方至时间轴的梯形分为高2、宽4的矩形和额外高度4、宽4的三角形。",
+    "description": "速度在4 s内由+2匀变至+6 m/s。图下梯形可拆成8 m的矩形和8 m的三角形，合计位移+16 m；图像不是物体运动的轨迹。",
+    "linkedSectionIds": [
+      "w3-physics-s3",
+      "w3-physics-s4"
+    ],
+    "linkedQuestionIds": [],
+    "renderingNote": "画t轴0—4 s、v轴0—6 m/s，直线端点(0,2)、(4,6)。阴影分成矩形与三角形，可标“初速度×时间”和“额外变化形成的三角形”，面积可在教学图展示：8 m+8 m=16 m。此图只属于正文，不关联例题或短测，避免在作答前暴露题目答案。"
+  },
+  {
+    "id": "w3-physics-fig-stop-boundary",
+    "title": "教学图：制动结束后沿时间轴静止",
+    "asset": "assets/physics-stop-boundary.svg",
+    "altText": "速度—时间图从(0秒,12米每秒)直线降到(4秒,0)，之后到6秒沿速度0水平延伸；4秒处是制动与静止的分界。",
+    "description": "制动到4 s时停止，随后保持静止。后段速度为0、位移不再增加，不能把原负加速度延伸成倒车。",
+    "linkedSectionIds": [
+      "w3-physics-s7"
+    ],
+    "linkedQuestionIds": [],
+    "renderingNote": "t轴0—6 s，v轴0—12 m/s。实线折线(0,12)→(4,0)→(6,0)。只在0—4 s三角形内填色；4—6 s标“静止：v=0，a=0”。若加辅助错误延长线，必须用灰色虚线且注明“本题不适用”，但可直接省略，保持初学者清晰。仅正文教学图，不关联任何问题。"
+  },
+  {
+    "id": "w3-physics-fig-signed-area",
+    "title": "教学图：反向时上方取正、下方取负",
+    "asset": "assets/physics-signed-area.svg",
+    "altText": "速度—时间直线从(0秒,4米每秒)经过(2秒,0)到(4秒,负4米每秒)。时间轴上下两个三角形分别标正位移4米与负位移4米；路程把两块面积大小相加。",
+    "description": "恒定加速度在速度过零后继续：上方位移+4 m，下方−4 m，总位移0；路程把两块面积大小相加，得8 m。",
+    "linkedSectionIds": [
+      "w3-physics-s8"
+    ],
+    "linkedQuestionIds": [],
+    "renderingNote": "t轴0—4 s，v轴−4—+4 m/s。直线(0,4)→(2,0)→(4,−4)，轴上、轴下区域使用两种色并加+/−标签，不能只靠颜色区分。标示“位移：+4−4=0 m；路程：4+4=8 m”。仅s8教学图，不关联练习或短测。"
+  },
+  {
+    "id": "w3-physics-fig-quiz2-given",
+    "title": "短测2题图：已知速度端点",
+    "asset": "assets/physics-quiz2-given.svg",
+    "altText": "横轴t单位秒，纵轴v单位米每秒。直线连接已知点(0秒,2米每秒)与(3秒,8米每秒)，其他数值不标。",
+    "description": "只给题设：v-t直线连接(0 s,+2 m/s)与(3 s,+8 m/s)。加速度和位移由你独立计算，题干文字提供完全等效信息。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w3-physics-quiz2"
+    ],
+    "renderingNote": "只画标明单位的坐标轴、给定端点(0,2)与(3,8)、连接直线及读数虚线。禁止标面积、斜率、平均速度、15或2 m/s²等求解结果，禁止解题阴影拆分。题干已有完全等效文字，未加载图也可独立作答。仅关联短测2，不关联正文。"
+  }
+]

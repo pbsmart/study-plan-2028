@@ -1,0 +1,388 @@
+{
+  "id": "w4-chemistry-review-map",
+  "week": 4,
+  "lessonId": "w4-化学",
+  "revision": "week04-enriched-v1",
+  "status": "pilot-ready",
+  "title": "第1—4周综合诊断逐点评分与本周补救地图",
+  "assessmentType": "第1—4周综合回顾诊断，替代普通周测，不叠加",
+  "totalPoints": 20,
+  "estimatedMinutes": 25,
+  "scoringIndexConvention": "scoringIndex为对应lesson.quiz.questions中scoring数组的零基索引；每点1分。primaryWeek用于分数统计，supportingWeeks只记录交叉前置，不重复计分。",
+  "verifiedPriorSkills": [
+    {
+      "week": 1,
+      "evidenceFile": "week-01-enrichment/lessons/chemistry.json",
+      "skillSummary": "已发布核心为按组成分类，区分物质/元素/微粒与下标；冰/水状态变化用于说明物质身份。没有把第1周虚构成系统化学反应类型课。",
+      "verifiedSectionTitles": [
+        "先把四个词摆正：样品、物质、元素、粒子",
+        "化学式先这样读：看元素种类，不急着背计算",
+        "第一层分类：先判断纯净物还是混合物",
+        "对照两组：冰水与O₂/O₃为什么不一样",
+        "第二层分类：纯净物再分单质与化合物",
+        "第三层分类：氧化物需要同时满足哪些条件"
+      ]
+    },
+    {
+      "week": 2,
+      "evidenceFile": "week-02-enrichment/lessons/chemistry.json",
+      "skillSummary": "已发布真实核心是原子结构、Z/A、单原子离子、同位素。综合题1直接考核这些技能，不只贴“微观组成”标签。",
+      "verifiedSectionTitles": [
+        "可数模型：质子+1，中子0，电子−1",
+        "原子序数Z：先锁定质子数，再谈元素",
+        "质量数A：核内两个数相加，不是查表小数",
+        "离子从哪里来：拿走负电，整体变正",
+        "把记号拆成三步：Z、A、电荷各管一件事",
+        "同位素：元素相同，核内中子数不同"
+      ]
+    },
+    {
+      "week": 3,
+      "evidenceFile": "week-03-enrichment/lessons/chemistry.json",
+      "skillSummary": "质量与物质的量、N=nN_A、对象和单位、化学式对应的指定原子计数。",
+      "verifiedSectionTitles": [
+        "数目与物质的量：N=nN_A为什么成立",
+        "质量与物质的量：把M看成每摩尔的质量",
+        "化学式下标：换的是计数对象",
+        "把换算连成一座桥，再检查结果"
+      ]
+    },
+    {
+      "week": 4,
+      "evidenceFile": "week-04-enrichment/lessons/chemistry.json",
+      "skillSummary": "守恒配平、系数mol比、质量计量、限制反应物、剩余与总质量核对。",
+      "verifiedSectionTitles": [
+        "先守恒再配平：只能改前面的系数",
+        "从一组对应到mol比：系数不是克数",
+        "质量计算只走四步：g→mol→mol→g",
+        "一种反应物分成两种产物：分别换算，再求和",
+        "先懂“谁先用完”，再学比较式",
+        "两种都给量：先除系数，最后写剩余和总账"
+      ]
+    }
+  ],
+  "pointsByPrimaryWeek": {
+    "1": 2,
+    "2": 4,
+    "3": 6,
+    "4": 8
+  },
+  "questions": [
+    {
+      "questionId": "w4-chemistry-quiz-1",
+      "title": "综合诊断1：分类、原子结构与同位素",
+      "points": 6,
+      "estimatedMinutes": 7,
+      "scoringPointMap": [
+        {
+          "id": "w4-chemistry-quiz-1-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "甲判混合物，明确有CO、CO₂两种物质。",
+          "primaryWeek": 1,
+          "skill": "按物质种类判断混合物",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-1-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "乙判氧化物，说明为含Mg、O两种元素的化合物。",
+          "primaryWeek": 1,
+          "skill": "化合物和氧化物的组成条件",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-1-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "³⁴S²⁻的质子16、中子18均正确，说明来自Z及A−Z。",
+          "primaryWeek": 2,
+          "skill": "由Z与A求质子、中子",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-1-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "电子18并写16−18=−2或等效电荷核验。",
+          "primaryWeek": 2,
+          "skill": "阴离子电子数及净电荷核验",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-1-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "原子与同核素离子仍为同一元素，依据是质子数16不变。",
+          "primaryWeek": 2,
+          "skill": "元素身份由质子数决定",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-1-point-6",
+          "scoringIndex": 5,
+          "points": 1,
+          "criterion": "判断³²S与³⁴S互为同位素，并指出同质子16、中子16与18不同。",
+          "primaryWeek": 2,
+          "skill": "同位素：同质子、异中子",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w4-chemistry-quiz-2",
+      "title": "综合诊断2：从SO₂质量到指定O原子",
+      "points": 4,
+      "estimatedMinutes": 5,
+      "scoringPointMap": [
+        {
+          "id": "w4-chemistry-quiz-2-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "列n=m/M并算出n(SO₂)=0.150 mol。",
+          "primaryWeek": 3,
+          "skill": "质量除以摩尔质量求物质的量",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall",
+            "w4-chemistry-section-bridge"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-2-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "用N=nN_A得到约9.03×10²²个SO₂分子，对象和数量级正确。",
+          "primaryWeek": 3,
+          "skill": "N=nN_A与科学计数法、微粒对象",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall",
+            "w4-chemistry-section-bridge"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-2-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "读出O的倍数2，算内部O原子为0.300 mol。",
+          "primaryWeek": 3,
+          "skill": "从化学式倍数求指定原子物质的量",
+          "supportingWeeks": [
+            1
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall",
+            "w4-chemistry-section-bridge"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-2-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "O原子约1.806×10²³个，所数对象正确且个数不带mol。",
+          "primaryWeek": 3,
+          "skill": "由指定原子物质的量求个数与单位",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall",
+            "w4-chemistry-section-bridge"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w4-chemistry-quiz-3",
+      "title": "综合诊断3：配平后完成分解质量账",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "scoringPointMap": [
+        {
+          "id": "w4-chemistry-quiz-3-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "确认已配平，Ca1/C1/O3两侧相同，并明确下标不能为配平而改。",
+          "primaryWeek": 4,
+          "skill": "守恒配平且不改化学式下标",
+          "supportingWeeks": [
+            1
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-balance"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-3-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "正确列n=m/M，CaCO₃为0.350 mol。",
+          "primaryWeek": 3,
+          "skill": "n=m/M与g/mol单位",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall",
+            "w4-chemistry-section-bridge"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-3-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "使用1∶1∶1，两种产物各0.350 mol，未平分mol。",
+          "primaryWeek": 4,
+          "skill": "系数比连接mol而非平分mol",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-ratios",
+            "w4-chemistry-section-decomposition"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-3-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "CaO为19.6 g，含对应M的换算。",
+          "primaryWeek": 4,
+          "skill": "mol比例后乘目标M求产物质量",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-bridge",
+            "w4-chemistry-section-decomposition"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-3-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "CO₂为15.4 g且19.6+15.4=35.0 g，气体未漏计。",
+          "primaryWeek": 4,
+          "skill": "另一产物质量与完整守恒账目",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-decomposition",
+            "w4-chemistry-section-compare"
+          ]
+        }
+      ]
+    },
+    {
+      "questionId": "w4-chemistry-quiz-4",
+      "title": "综合诊断4：小质量者仍可能有剩余",
+      "points": 5,
+      "estimatedMinutes": 7,
+      "scoringPointMap": [
+        {
+          "id": "w4-chemistry-quiz-4-point-1",
+          "scoringIndex": 0,
+          "points": 1,
+          "criterion": "H₂=0.700 mol、O₂=0.250 mol，两次质量换算及单位正确。",
+          "primaryWeek": 3,
+          "skill": "两种物质分别用各自M把质量换mol",
+          "supportingWeeks": [],
+          "remediationSectionIds": [
+            "w4-chemistry-section-recall",
+            "w4-chemistry-section-bridge"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-4-point-2",
+          "scoringIndex": 1,
+          "points": 1,
+          "criterion": "正确比较0.700/2与0.250/1，判O₂为限制者。",
+          "primaryWeek": 4,
+          "skill": "比较n/系数判断限制者",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-limiting",
+            "w4-chemistry-section-compare"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-4-point-3",
+          "scoringIndex": 2,
+          "points": 1,
+          "criterion": "由限制者得H₂O 0.500 mol、9.00 g，比例与M换算正确。",
+          "primaryWeek": 4,
+          "skill": "由限制者按mol比求理论产量",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-ratios",
+            "w4-chemistry-section-compare",
+            "w4-chemistry-section-bridge"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-4-point-4",
+          "scoringIndex": 3,
+          "points": 1,
+          "criterion": "正确求剩余H₂ 0.200 mol、0.40 g，使用同物质起始减消耗。",
+          "primaryWeek": 4,
+          "skill": "同物质起始减消耗求剩余",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-compare"
+          ]
+        },
+        {
+          "id": "w4-chemistry-quiz-4-point-5",
+          "scoringIndex": 4,
+          "points": 1,
+          "criterion": "完整核对9.40 g前后相等，并指出较小质量的H₂有剩余，不能仅按克数判断。",
+          "primaryWeek": 4,
+          "skill": "包含剩余的质量总账及反驳只看质量",
+          "supportingWeeks": [
+            3
+          ],
+          "remediationSectionIds": [
+            "w4-chemistry-section-limiting",
+            "w4-chemistry-section-compare"
+          ]
+        }
+      ]
+    }
+  ],
+  "passRule": {
+    "minScore": 16,
+    "requiredChecks": [
+      "综合题1：能以物质种类判断混合物，并以两种元素且含氧的化合物判断氧化物；不能把元素种类当物质种类。",
+      "综合题1：S²⁻电子数与净电荷方向正确；能说明元素看质子、同位素看同质子异中子。",
+      "综合题2：质量先除M，指定O原子的倍数2正确，粒子个数结果不写mol。",
+      "综合题3：不为配平改下标，使用1∶1∶1的mol关系，再分别乘M求两产物质量。",
+      "综合题4：必须按n/系数判O₂限制，产量由限制者算，剩余用同物质起始减消耗；不得按质量大小猜选。",
+      "总分至少16/20且以上关键门槛全部通过，才具备本课推进条件。高总分不能掩盖关键概念错误；看过答案后照抄不算独立达标。"
+    ]
+  },
+  "currentWeekRemediationOnly": true,
+  "useNote": "此文件是同一套4题20分诊断的解释映射，不是新增测验。来源证据可指向已发布前周；所有remediationSectionIds仅指本周可读小节。补救后重做保留首次分数，另记新尝试。"
+}

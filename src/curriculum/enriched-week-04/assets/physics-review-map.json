@@ -1,0 +1,348 @@
+{
+  "lessonId": "w4-物理",
+  "week": 4,
+  "assessmentId": "w4-physics-integrated-review",
+  "title": "第1—4周物理综合短测技能映射",
+  "quizTotalPoints": 20,
+  "quizMinutes": 30,
+  "correctionMinutes": 25,
+  "policy": "本映射对应lesson.quiz中的唯一4题20分短测，替代普通周测，不额外增加题目或学习时长。scoringIndex从1计数；每个评分点只计一次分，多周标签表示前置链，不把各周分数另行相加。",
+  "weekSkills": [
+    {
+      "week": 1,
+      "skills": [
+        "单位换算",
+        "正方向与位置/位移",
+        "路程与往返"
+      ]
+    },
+    {
+      "week": 2,
+      "skills": [
+        "平均速度与平均速率",
+        "平均加速度与瞬时信息边界",
+        "速度/加速度符号"
+      ]
+    },
+    {
+      "week": 3,
+      "skills": [
+        "恒定加速度关系",
+        "首尾平均与面积法",
+        "按阶段限制模型"
+      ]
+    },
+    {
+      "week": 4,
+      "skills": [
+        "自由落体条件与题给g",
+        "时间/高度/速度",
+        "最后一秒",
+        "首次触地边界"
+      ]
+    }
+  ],
+  "scoringMap": [
+    {
+      "questionId": "w4-physics-quiz1",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        1
+      ],
+      "skill": "km到m的长度单位换算",
+      "sectionIds": [
+        "w4-physics-s1"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz1",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        1
+      ],
+      "skill": "同一正方向下用末位置减初位置求位移",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s3",
+        "w4-physics-s8"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz1",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        1
+      ],
+      "skill": "往返过程按各段长度求路程",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s8"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz1",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        1,
+        2
+      ],
+      "skill": "用有符号总位移与总时间求平均速度",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s8"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz1",
+      "scoringIndex": 5,
+      "points": 1,
+      "weeks": [
+        1,
+        2
+      ],
+      "skill": "用总路程与总时间求平均速率",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s8"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz2",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        2,
+        3
+      ],
+      "skill": "用Δv/Δt求加速度，恒定条件下对应各时刻",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s4",
+        "w4-physics-s8"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz2",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        3
+      ],
+      "skill": "匀变速条件下用首尾平均求平均速度",
+      "sectionIds": [
+        "w4-physics-s4",
+        "w4-physics-s8"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz2",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        1,
+        3
+      ],
+      "skill": "由平均速度乘时间求位移并保留m单位",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s4"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz2",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        2,
+        3
+      ],
+      "skill": "只有端点时不能从平均量推定瞬时速度",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s8"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz3",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        3,
+        4
+      ],
+      "skill": "确认初速度0、忽略空气、恒定g和触地前范围",
+      "sectionIds": [
+        "w4-physics-s2",
+        "w4-physics-s4",
+        "w4-physics-s7"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz3",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        3,
+        4
+      ],
+      "skill": "由v=v₀+at取v₀=0、a=g并使用题给9.8",
+      "sectionIds": [
+        "w4-physics-s2",
+        "w4-physics-s4"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz3",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        3,
+        4
+      ],
+      "skill": "用图面积或位移式保留1/2与t²",
+      "sectionIds": [
+        "w4-physics-s4"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz3",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        1,
+        2,
+        4
+      ],
+      "skill": "改变正方向时a与v同换符号，运动大小不变",
+      "sectionIds": [
+        "w4-physics-s3"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz3",
+      "scoringIndex": 5,
+      "points": 1,
+      "weeks": [
+        1,
+        4
+      ],
+      "skill": "区分有符号位移与非负下落距离",
+      "sectionIds": [
+        "w4-physics-s3"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz4",
+      "scoringIndex": 1,
+      "points": 1,
+      "weeks": [
+        3,
+        4
+      ],
+      "skill": "用h=H建立首次触地的平方关系",
+      "sectionIds": [
+        "w4-physics-s5"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz4",
+      "scoringIndex": 2,
+      "points": 1,
+      "weeks": [
+        4
+      ],
+      "skill": "选取符合经历时间的正根",
+      "sectionIds": [
+        "w4-physics-s1",
+        "w4-physics-s5"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz4",
+      "scoringIndex": 3,
+      "points": 1,
+      "weeks": [
+        2,
+        4
+      ],
+      "skill": "区别触地前瞬时速度与整段平均速度",
+      "sectionIds": [
+        "w4-physics-s4",
+        "w4-physics-s5"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz4",
+      "scoringIndex": 4,
+      "points": 1,
+      "weeks": [
+        3,
+        4
+      ],
+      "skill": "最后1 s定位为5到6 s，求各自累计量",
+      "sectionIds": [
+        "w4-physics-s6"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz4",
+      "scoringIndex": 5,
+      "points": 1,
+      "weeks": [
+        1,
+        3,
+        4
+      ],
+      "skill": "用两个累计距离之差求区间距离",
+      "sectionIds": [
+        "w4-physics-s6"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    },
+    {
+      "questionId": "w4-physics-quiz4",
+      "scoringIndex": 6,
+      "points": 1,
+      "weeks": [
+        3,
+        4
+      ],
+      "skill": "先确定模型边界，信息不足不外推碰撞后状态",
+      "sectionIds": [
+        "w4-physics-s7"
+      ],
+      "remediation": "在本周所列小节查对应概念，遮住答案重做该评分点；必要时按周技能文字回看已学内容。"
+    }
+  ],
+  "passRule": {
+    "minScore": 16,
+    "requiredChecks": [
+      "quiz1必须分清有符号位移与路程，并分别用正确分子求平均速度/平均速率。",
+      "quiz2必须说明只知端点时平均加速度不能确定中间瞬时速度。",
+      "quiz3必须识别从静止、忽略阻力、题给g、触地前范围；不能把g擅改为10。",
+      "quiz4必须将最后1 s定位为5到6 s并用累计差，也必须说明7 s越过触地边界后缺少条件。"
+    ]
+  }
+}

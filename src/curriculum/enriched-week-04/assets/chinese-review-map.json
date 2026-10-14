@@ -1,0 +1,282 @@
+{
+  "week": 4,
+  "subject": "语文",
+  "lessonId": "w4-语文",
+  "totalPoints": 20,
+  "minutes": 24,
+  "budgetPolicy": "本累计诊断替代通常周测，已包含在120分钟核心内。已压缩为4例、5练，未外加复习卷。",
+  "scoringIndexBase": 0,
+  "scoringIndexMeaning": "0表示对应question.scoring数组第一个评分项，依次类推。每项只按primaryWeek计分一次；同一材料的交叉阅读技能不重复计分。",
+  "firstReadingPolicy": "共享材料首次阅读算在第1题；后续题只回查所需句段。",
+  "pointsByPrimaryWeek": {
+    "1": 5,
+    "2": 5,
+    "3": 5,
+    "4": 5
+  },
+  "scoringMap": [
+    {
+      "questionId": "w4-cn-quiz1",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "分别提取归还总数与损坏数，保留信息项目",
+          "points": 2,
+          "criterion": "归还三副、损坏两副，各1分。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s5",
+            "w4-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "用明确相反证据判断矛盾，不把部分当总量",
+          "points": 2,
+          "criterion": "判为矛盾1分，并说明红盒两副加柜中一副／红盒只放损坏品的证据1分。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s5",
+            "w4-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 1,
+          "weeks": [
+            1
+          ],
+          "skill": "辨现代句主语与动作对象",
+          "points": 1,
+          "criterion": "主语老周、对象三副护目镜各0.5分。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s5",
+            "w4-cn-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-cn-r1",
+        "w4-cn-s5",
+        "w4-cn-s7"
+      ],
+      "remediationAction": "回到本周补救，分列数量、状态、主语和对象。必要时下一次语文学段回看第1周信息筛选与句子主干；本次先重做原错点。"
+    },
+    {
+      "questionId": "w4-cn-quiz2",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "概括情节节点及已发生结果",
+          "points": 2,
+          "criterion": "写出误记经核对改正1分，写出新表主动分数量/状态1分。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "不同人物特点分别配动作/语言证据",
+          "points": 2,
+          "criterion": "认真配按编号逐一核对等证据1分，耐心配提示重读查找而不直接代改的证据1分。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 2,
+          "weeks": [
+            2
+          ],
+          "skill": "结尾与前文错误呼应，限制人物推断",
+          "points": 1,
+          "criterion": "说明分栏呼应最初混淆数量与状态，显示本次认识/做法变化，不编永不出错。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-cn-r1",
+        "w4-cn-s7"
+      ],
+      "remediationAction": "按事件—已有结果列两点，再给两个特点各配证据；需深入时下次回看第2周叙事分析。"
+    },
+    {
+      "questionId": "w4-cn-quiz3",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "将论题写为完整观点",
+          "points": 1,
+          "criterion": "准确写出区分已查与待查项目的完整论点。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s6",
+            "w4-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "分清设想材料与真实调查",
+          "points": 1,
+          "criterion": "明示材料是设想，不是真实调查。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s6",
+            "w4-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "解释材料经何中间关系支持观点",
+          "points": 2,
+          "criterion": "指出笼统记录会混淆状态1分，说明分别记录提供下一步线索并支持观点1分。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s6",
+            "w4-cn-s7"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 3,
+          "weeks": [
+            3
+          ],
+          "skill": "不把信息作用扩大为结果保证",
+          "points": 1,
+          "criterion": "拒绝全部成功保证，并用信息作用有限或原文否定句解释。",
+          "remediationSectionIds": [
+            "w4-cn-r1",
+            "w4-cn-s6",
+            "w4-cn-s7"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-cn-r1",
+        "w4-cn-s6",
+        "w4-cn-s7"
+      ],
+      "remediationAction": "写观点、设想身份、具体连接和作用限度；必要时下次回看第3周论证。"
+    },
+    {
+      "questionId": "w4-cn-quiz4",
+      "points": 5,
+      "estimatedMinutes": 6,
+      "skills": [
+        {
+          "scoringIndex": 0,
+          "primaryWeek": 4,
+          "weeks": [
+            4
+          ],
+          "skill": "利用题注与句中位置确定实词故",
+          "points": 1,
+          "criterion": "说明故是温习的旧知识，不是所以，并能结合位置或题注解释。",
+          "remediationSectionIds": [
+            "w4-cn-s2",
+            "w4-cn-s3",
+            "w4-cn-s4",
+            "w4-cn-s5"
+          ]
+        },
+        {
+          "scoringIndex": 1,
+          "primaryWeek": 4,
+          "weeks": [
+            4
+          ],
+          "skill": "看两动作内容判断而的承接",
+          "points": 1,
+          "criterion": "而连接温故与知新，理解承接／从温习进而领悟。",
+          "remediationSectionIds": [
+            "w4-cn-s2",
+            "w4-cn-s3",
+            "w4-cn-s4",
+            "w4-cn-s5"
+          ]
+        },
+        {
+          "scoringIndex": 2,
+          "primaryWeek": 4,
+          "weeks": [
+            4
+          ],
+          "skill": "落实词义、必要关系并串译全句",
+          "points": 2,
+          "criterion": "译出温习旧知识且得到新理解1分，译出可以做老师及自然句意1分。",
+          "remediationSectionIds": [
+            "w4-cn-s2",
+            "w4-cn-s3",
+            "w4-cn-s4",
+            "w4-cn-s5"
+          ]
+        },
+        {
+          "scoringIndex": 3,
+          "primaryWeek": 4,
+          "weeks": [
+            4
+          ],
+          "skill": "保留知新的必要条件与可以的语气",
+          "points": 1,
+          "criterion": "拒绝错误推断，说明不能删知新或不能把可以强化为一定；至少指出条件遗漏。",
+          "remediationSectionIds": [
+            "w4-cn-s2",
+            "w4-cn-s3",
+            "w4-cn-s4",
+            "w4-cn-s5"
+          ]
+        }
+      ],
+      "remediationSectionIds": [
+        "w4-cn-s2",
+        "w4-cn-s3",
+        "w4-cn-s4",
+        "w4-cn-s5"
+      ],
+      "remediationAction": "按题注逐字落实，再检查动作关系、必要省略与条件；遮答重译，不背答案当新测。"
+    }
+  ]
+}

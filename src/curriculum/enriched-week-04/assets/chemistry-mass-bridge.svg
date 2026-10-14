@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="676" viewBox="0 0 1240 676" role="img" aria-labelledby="title desc"><title id="title">从一种物质的克数走到另一种的克数</title><desc id="desc">路线为已知m(A)，除以M(A)得到n(A)，乘目标B系数除以已知A系数得到n(B)，乘M(B)得到m(B)。上方先检查方程式已配平且已知量是实际反应量。</desc><rect width="1240" height="676" fill="#fff"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,1 L8,5 L0,9 Z" fill="#111"/></marker></defs><style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#111;font-size:24px}.title{font-size:32px;font-weight:700}.small{font-size:21px}.tiny{font-size:19px}.strong{font-weight:700}.white{fill:#fff}.formula{font-size:30px}.rule{stroke:#111;stroke-width:2;fill:none}.arrow{stroke:#111;stroke-width:2.5;fill:none;marker-end:url(#arrow)}</style>
+<text x="28" y="48" class="title">从一种物质的克数走到另一种的克数</text>
+<text x="28" y="88" class="small">质量先换成 mol，按系数比连接两种物质，再换回目标质量。</text>
+<rect x="28" y="110" width="1184" height="67" rx="9" fill="#f3f3f3" stroke="#111" stroke-width="2"/>
+<text x="50" y="153" class="strong">先确认：已配平；所用 A 的量为实际反应量；题设条件成立。</text>
+<rect x="28" y="284" width="196" height="128" rx="10" fill="#f3f3f3" stroke="#111" stroke-width="2"/>
+<rect x="357" y="284" width="196" height="128" rx="10" fill="#111" stroke="#111" stroke-width="2"/>
+<rect x="686" y="284" width="196" height="128" rx="10" fill="#111" stroke="#111" stroke-width="2"/>
+<rect x="1016" y="284" width="196" height="128" rx="10" fill="#f3f3f3" stroke="#111" stroke-width="2"/>
+<text x="126" y="266" text-anchor="middle" class="small strong">已知 A 的质量</text>
+<text x="455" y="266" text-anchor="middle" class="small strong">A 的物质的量</text>
+<text x="784" y="266" text-anchor="middle" class="small strong">B 的物质的量</text>
+<text x="1114" y="266" text-anchor="middle" class="small strong">目标 B 的质量</text>
+<text x="126" y="339" text-anchor="middle" class="formula strong">m(A)</text><text x="126" y="382" text-anchor="middle">单位：g</text>
+<text x="455" y="339" text-anchor="middle" class="formula strong white">n(A)</text><text x="455" y="382" text-anchor="middle" class="white">单位：mol</text>
+<text x="784" y="339" text-anchor="middle" class="formula strong white">n(B)</text><text x="784" y="382" text-anchor="middle" class="white">单位：mol</text>
+<text x="1114" y="339" text-anchor="middle" class="formula strong">m(B)</text><text x="1114" y="382" text-anchor="middle">单位：g</text>
+<path d="M232,356 H345" class="arrow"/><path d="M561,356 H674" class="arrow"/><path d="M890,356 H1004" class="arrow"/>
+<text x="290" y="327" text-anchor="middle" class="small strong">÷ M(A)</text>
+<text x="949" y="327" text-anchor="middle" class="small strong">× M(B)</text>
+<text x="573" y="315" class="small strong">×</text><text x="630" y="296" text-anchor="middle" class="tiny strong">B 系数</text><path d="M591,305 H669" class="rule"/><text x="630" y="332" text-anchor="middle" class="tiny strong">A 系数</text>
+<text x="620" y="447" text-anchor="middle" class="strong">只有 mol → mol 这一步，直接使用「目标系数 ÷ 已知系数」。</text>
+<rect x="28" y="478" width="1184" height="123" rx="9" fill="#fff" stroke="#111" stroke-width="2"/>
+<path d="M422,478 V601 M817,478 V601" class="rule"/>
+<text x="54" y="518" class="small strong">① 除以 A 自己的摩尔质量</text><text x="54" y="565" class="small">g ÷ (g/mol) ＝ mol</text>
+<text x="449" y="518" class="small strong">② 乘目标 / 已知的系数比</text><text x="449" y="565" class="small">mol × 无量纲系数比 ＝ mol</text>
+<text x="844" y="518" class="small strong">③ 乘 B 自己的摩尔质量</text><text x="844" y="565" class="small">mol × (g/mol) ＝ g</text>
+<text x="28" y="644" class="small">A、B 保留物质名称；M(A)、M(B) 均用各自题给的 g/mol，不能互换。</text></svg>

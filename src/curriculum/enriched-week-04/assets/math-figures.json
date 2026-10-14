@@ -1,0 +1,25 @@
+[
+  {
+    "id": "w4-math-figure-mapping",
+    "title": "不同输入可以同得一个输出",
+    "asset": "assets/math-function-mapping.svg",
+    "altText": "定义域A为负二、零、二，规则为平方。负二和二都箭头指向输出四，零指向输出零。每个输入恰好一根箭头，虽有两个输入同得四，仍是函数；不同输出的集合为零和四。",
+    "description": "定义域逐个输入−2、0、2，每个都唯一平方；收集不同输出得到值域{0,4}。这张教学图帮助区分“逐输入唯一”和“输出反查唯一”。",
+    "linkedSectionIds": [
+      "w4-math-s3",
+      "w4-math-s4"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w4-math-figure-domain",
+    "title": "共同范围内去掉分母零点",
+    "asset": "assets/math-domain-hole.svg",
+    "altText": "教学函数为根号x加二除以x减一。第一条条件x大于等于负二；第二条排除一；共同允许范围是负二含到一不含，再接一不含到正无穷。负二实心，一空心，最右箭头代表继续增大。",
+    "description": "先列根式的x≥−2与分母的x≠1，再取交。最终两段区间用并连接，是把全部已允许的输入列齐；不是把原来的两条限制改成“或”。",
+    "linkedSectionIds": [
+      "w4-math-s6"
+    ],
+    "linkedQuestionIds": []
+  }
+]

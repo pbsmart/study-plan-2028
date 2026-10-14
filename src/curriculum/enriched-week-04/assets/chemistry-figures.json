@@ -1,0 +1,42 @@
+[
+  {
+    "id": "w4-chemistry-figure-balanced-groups",
+    "title": "系数改份数，下标保留物质身份",
+    "asset": "assets/chemistry-balanced-groups.svg",
+    "altText": "纸面计量示意：2份H₂加1份O₂对应2份H₂O，箭头左侧与右侧H总数均4、O总数均2。只改变化学式前的系数，不改变H₂O的下标。",
+    "description": "前面的系数表示取几份，化学式内部的下标表示每份的组成。配平要让每种原子在两边一样多；这只是数量对应，不是反应机理或实验示意。",
+    "renderingNote": "画三个清晰分区：左侧2张H₂卡和1张O₂卡，右侧2张H₂O卡；每张卡内用H、O字符或带字母小圆点表达组成，不画试管、火焰、轨道或碰撞机制。下方列H：4=4、O：2=2。系数用强调色、下标仍保持原化学式。加“仅作纸面计量，不是实验”短注。不得放任何独练或综合短测投料数据/答案。",
+    "linkedSectionIds": [
+      "w4-chemistry-section-balance",
+      "w4-chemistry-section-ratios"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w4-chemistry-figure-mass-bridge",
+    "title": "从一种物质的克数走到另一种的克数",
+    "asset": "assets/chemistry-mass-bridge.svg",
+    "altText": "路线为已知m(A)，除以M(A)得到n(A)，乘目标B系数除以已知A系数得到n(B)，乘M(B)得到m(B)。上方先检查方程式已配平且已知量是实际反应量。",
+    "description": "g先换成mol，只有中间的mol能直接按系数比转换，再换成目标的g。每个节点写上物质名称，可防止换错摩尔质量。",
+    "renderingNote": "画四个从左到右方框m(A)/g、n(A)/mol、n(B)/mol、m(B)/g；箭头依次标÷M(A)、×[B系数/A系数]、×M(B)。中间两个mol框颜色一致，质量框用另一配色；上方提示“已配平；A为实际反应量；题设条件成立”。不用陌生复杂反应或独练短测数字，移动端可纵向阅读但顺序不变。",
+    "linkedSectionIds": [
+      "w4-chemistry-section-bridge",
+      "w4-chemistry-section-iron",
+      "w4-chemistry-section-decomposition"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w4-chemistry-figure-limiting-path",
+    "title": "两种都给量：各自够支持多少反应",
+    "asset": "assets/chemistry-limiting-path.svg",
+    "altText": "反应物A和B分别用质量除以摩尔质量求mol，再各除自己的方程式系数，比较两者，较小者限制产量，相等则恰好同时耗尽；最后由限制者求产物及另一种反应物消耗，再用同物质起始减消耗求剩余。",
+    "description": "不能看谁的克数小。先换mol，再除各自需求的系数，才是在比较同一个标准；剩余量必须在同一种物质内做减法。",
+    "renderingNote": "上方两条并列支路A：m(A)÷M(A)→n(A)/a，B：m(B)÷M(B)→n(B)/b；汇入比较框“较小者先耗尽；相等则同时耗尽”；再向下到“求产物与实际消耗”，末框“剩余=同物质起始−消耗”。明确a、b是各自系数，不画称重天平暗示只看质量。不放具体题目数值。",
+    "linkedSectionIds": [
+      "w4-chemistry-section-limiting",
+      "w4-chemistry-section-compare"
+    ],
+    "linkedQuestionIds": []
+  }
+]
