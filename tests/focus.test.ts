@@ -36,7 +36,7 @@ describe('focus lesson structure and routes',()=>{
   })
   it('keeps exercise answers behind a native closed disclosure',async()=>{
     const html=await render(FocusLesson,{week:2,subject:'math',subjectLabel:'数学',lesson,completed:[],step:'practice'})
-    expect(html).toContain('QUESTION ONLY');expect(html).toMatch(/<details><summary>完成后核对答案与解析<\/summary>/)
+    expect(html).toContain('QUESTION ONLY');expect(html).toMatch(/<details class="problem-answer"><summary>完成后核对答案与解析<\/summary>/)
     expect(html).not.toContain('当前知识正文');expect(html).not.toMatch(/<details[^>]*\bopen/)
   })
   it('removes a duplicate retest prompt while retaining distinct instructions',async()=>{

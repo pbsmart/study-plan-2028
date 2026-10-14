@@ -32,7 +32,7 @@ const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram =>
       <details class="reading-detail"><summary>查看时间安排</summary><ul><li v-for="segment in lesson.budget.segments" :key="segment.id">{{ segment.title }} · {{ segment.minutes }} 分钟</li></ul><p class="help">可选拓展约 {{ lesson.budget.extensionMinutes }} 分钟，不计核心达标。</p></details>
     </template>
     <template v-else-if="step === 'diagnostic'">
-      <p>{{ lesson.diagnostic.instructions }}</p><OriginalProblem hide-id v-for="item in lesson.diagnostic.questions" :key="item.id" :problem="problem(item)" label="原创课前自测 · 不计过关分" reveal-label="做完后核对答案与解析"><template #solution-media><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></OriginalProblem>
+      <p class="lesson-instructions">{{ lesson.diagnostic.instructions }}</p><OriginalProblem hide-id v-for="item in lesson.diagnostic.questions" :key="item.id" :problem="problem(item)" label="原创课前自测 · 不计过关分" reveal-label="做完后核对答案与解析"><template #solution-media><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></OriginalProblem>
       <details class="reading-detail"><summary>核对后，看看该从哪里开始</summary><article v-for="route in lesson.diagnostic.routes" :key="route.when" class="remediation-item"><h3>{{ route.when }}</h3><p>{{ route.action }}</p><button v-for="id in route.sectionIds" :key="id" class="text-button" @click="emit('navigate', id)">回看：{{ sectionTitle(id) }} →</button></article></details>
     </template>
     <template v-else-if="section">
@@ -48,7 +48,7 @@ const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram =>
       <OriginalProblem hide-id hide-title :problem="problem(question)" :label="example ? '原创例题（非历年真题）' : '原创独立练习（非历年真题）'" :reveal-label="example ? '展开例题解析' : '完成后核对答案与解析'"><template #solution-media><StaticLessonFigureView v-for="figure in relevantFigures" :key="figure.id" :figure="figure"/></template></OriginalProblem>
     </template>
     <template v-else-if="step === 'quiz'">
-      <p>{{ lesson.quiz.instructions }}</p><p class="help">共 {{ lesson.quiz.totalPoints }} 分。独立作答后按评分点自行核对，页面不提供自动评分。</p>
+      <p class="lesson-instructions">{{ lesson.quiz.instructions }}</p><p class="help">共 {{ lesson.quiz.totalPoints }} 分。独立作答后按评分点自行核对，页面不提供自动评分。</p>
       <OriginalProblem hide-id v-for="item in lesson.quiz.questions" :key="item.id" :problem="problem(item)" :label="reviewMap ? '原创累计诊断（非历年真题）' : '原创短测（非历年真题）'" :reveal-label="reviewMap ? '累计诊断完成后核对答案与评分点' : '短测完成后核对答案与评分点'"><template #solution-media><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></OriginalProblem>
     </template>
     <template v-else-if="step === 'review'">

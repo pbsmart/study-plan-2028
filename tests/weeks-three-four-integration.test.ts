@@ -40,7 +40,7 @@ describe('frozen weeks three and four integration',()=>{
           else {expect(html).toContain(`data-figure-id="${figure.id}"`);expect(html).toContain(escaped(figure.altText));expect(html).not.toContain('<svg')}
         }
         for(const id of figure.linkedQuestionIds){const step=lesson.enrichment!.quiz.questions.some(question=>question.id===id)?'quiz':id,html=await renderStep(weekNumber,subject,step),position=html.indexOf(`data-figure-id="${figure.id}"`)
-          expect(position).toBeGreaterThan(-1);const opening=html.lastIndexOf('<details>',position);expect(opening).toBeGreaterThan(-1);expect(html.indexOf('</details>',opening)).toBeGreaterThan(position);expect(html).not.toMatch(/<details[^>]*\bopen/)
+          expect(position).toBeGreaterThan(-1);const opening=html.lastIndexOf('<details',position);expect(opening).toBeGreaterThan(-1);expect(html.indexOf('</details>',opening)).toBeGreaterThan(position);expect(html).not.toMatch(/<details[^>]*\bopen/)
         }
       }
     }

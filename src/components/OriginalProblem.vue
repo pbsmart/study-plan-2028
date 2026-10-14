@@ -22,7 +22,7 @@ const extraStarters = computed(() => (props.problem.paragraphStarters || []).fil
     <p v-if="problem.wordCountNote" class="help">{{ problem.wordCountNote }}</p>
     <p v-if="problem.characterCountNote" class="help">{{ problem.characterCountNote }}</p>
     <p v-if="problem.sources?.length" class="help"><a v-for="(url,i) in problem.sources" :key="url" :href="url" target="_blank" rel="noopener noreferrer">原文核验来源 {{ i+1 }} ↗ </a></p>
-    <details><summary>{{ revealLabel }}</summary><div class="solution">
+    <details class="problem-answer"><summary>{{ revealLabel }}</summary><div class="solution">
       <p class="math-text"><strong>答案：</strong>{{ problem.answer }}</p>
       <slot name="solution-media"/>
       <p v-for="sample in extraSamples" :key="sample" class="math-text">{{ sample }}</p>

@@ -52,7 +52,7 @@ describe('frozen weeks seven and eight integration',()=>{
         expect(figure.src).toContain('.svg');expect(figure.altText.length).toBeGreaterThan(20)
         expect(figure.answerOnly||false).toBe(weekNumber===7&&figure.id==='w7-physics-figure4')
         for(const step of figure.linkedSectionIds){const html=await renderStep(weekNumber,subject,step);expect(html).toContain(`data-figure-id="${figure.id}"`);expect(html).toContain(escaped(figure.altText));expect(html).not.toContain('<svg')}
-        for(const id of figure.linkedQuestionIds){const html=await renderStep(weekNumber,subject,id),position=html.indexOf(`data-figure-id="${figure.id}"`),opening=html.lastIndexOf('<details>',position)
+        for(const id of figure.linkedQuestionIds){const html=await renderStep(weekNumber,subject,id),position=html.indexOf(`data-figure-id="${figure.id}"`),opening=html.lastIndexOf('<details',position)
           expect(position).toBeGreaterThan(-1);expect(opening).toBeGreaterThan(-1);expect(html.indexOf('</details>',opening)).toBeGreaterThan(position);expect(html).not.toMatch(/<details[^>]*\bopen/)
         }
       }

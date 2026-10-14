@@ -1,0 +1,68 @@
+/* Application shell and navigation. Current location is quieter than the page action. */
+.layout { display: flex; min-height: 100vh; }
+.sidebar { width: 224px; position: fixed; inset: 0 auto 0 0; display: flex; flex-direction: column; background: var(--surface); border-right: 1px solid var(--border); padding: 32px 20px 24px; overflow-y: auto; }
+.brand { display: flex; gap: 12px; align-items: center; font-size: 23px; font-weight: 600; }
+.brand-icon { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--text); border-radius: 10px; font-size: 22px; }
+.brand-sub { display: block; font-size: 13px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+.nav-caption { margin: 40px 12px 12px; }
+.sidebar nav { display: grid; gap: 4px; }
+.sidebar nav a { display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 8px; min-height: 48px; font-size: 14px; color: var(--muted); }
+.sidebar nav a:hover { background: var(--bg); color: var(--text); }
+.sidebar nav a.active { background: var(--soft); color: var(--text); font-weight: 600; box-shadow: inset 3px 0 var(--ink); }
+.nav-number { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 400; }
+.nav-arrow { display: none; }
+.sidebar-bottom { margin-top: auto; padding: 40px 8px 0; }
+.sidebar-bottom > p:nth-child(2) { font-size: 13px; color: var(--muted); margin: 8px 0 20px; }
+.theme-group { display: flex; gap: 4px; }
+.theme-group button { font-size: 13px; padding: 8px; min-height: 44px; border-color: transparent; background: transparent; }
+.theme-group button[aria-pressed="true"] { background: var(--soft); box-shadow: inset 0 -2px var(--text); border-radius: 6px; }
+.local-label { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; margin-top: 20px; }
+.local-label i { width: 4px; height: 4px; background: var(--muted); border-radius: 50%; }
+.workspace { margin-left: 224px; min-width: 0; flex: 1; }
+.topbar { min-height: 64px; padding: 12px 40px; display: flex; justify-content: space-between; align-items: center; gap: 16px; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+.topbar-meta span { margin-inline: 8px; }
+main { max-width: 1280px; margin: 0 auto; padding: 40px 40px 0; outline: none; }
+.page-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 32px; }
+.page-heading .eyebrow { margin-bottom: 8px; }
+.subtitle { margin-top: 8px; color: var(--muted); font-size: 14px; }
+.page-heading > .outline-badge { flex-shrink: 0; }
+footer { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--border); padding: 24px 0; margin-top: 48px; color: var(--muted); font-size: 13px; }
+.skip-link { position: fixed; top: -80px; left: 16px; z-index: 100; background: var(--ink); color: var(--inverse); padding: 12px 20px; border-radius: 6px; }
+.skip-link:focus { top: 12px; }
+.message { display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 16px 20px; margin-bottom: 24px; border: 1px solid var(--text); border-radius: 8px; background: var(--surface); font-size: 14px; }
+.message button { flex-shrink: 0; }
+.modal { width: min(560px, calc(100% - 32px)); padding: 32px; margin: auto; background: var(--surface); color: var(--text); border: 1px solid var(--control-border); border-radius: var(--radius); max-height: 90dvh; overflow: auto; }
+.modal::backdrop { background: #0009; }
+.modal h2 { margin-bottom: 16px; }
+.modal p { font-size: 15px; }
+.modal .help { margin: 16px 0 24px; font-size: 13px; }
+@media (max-width: 1100px) {
+  .sidebar { width: 208px; padding-inline: 16px; }
+  .workspace { margin-left: 208px; }
+  main { padding: 32px 28px 0; }
+  .topbar { padding-inline: 28px; }
+  .page-heading > .outline-badge { display: none; }
+}
+@media (max-width: 760px) {
+  .layout { display: block; }
+  .sidebar { width: 100%; position: static; padding: 20px 20px 0; border-right: 0; overflow: visible; }
+  .brand { font-size: 22px; }
+  .brand-icon { width: 38px; height: 38px; }
+  .brand-sub { font-size: 13px; }
+  .nav-caption, .sidebar-bottom { display: none; }
+  .sidebar nav { display: flex; gap: 4px; overflow-x: auto; margin-top: 20px; padding: 4px 4px 12px; scrollbar-width: thin; }
+  .sidebar nav a { white-space: nowrap; flex-shrink: 0; padding: 10px 12px; min-height: 44px; }
+  .sidebar nav a.active { box-shadow: inset 0 -2px var(--ink); }
+  .nav-number { display: none; }
+  .workspace { margin-left: 0; }
+  .topbar { min-height: 48px; padding: 10px 20px; font-size: 13px; }
+  .topbar-meta { white-space: nowrap; }
+  main { padding: 28px 20px 0; }
+  h1 { font-size: 26px; }
+  .page-heading { margin-bottom: 24px; }
+  .subtitle { font-size: 14px; }
+  footer { flex-direction: column; gap: 4px; margin-top: 32px; }
+  .message { align-items: flex-start; padding: 16px; }
+  .modal { padding: 24px; }
+  .modal .button-row { flex-direction: column; }
+}

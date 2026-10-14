@@ -46,7 +46,7 @@ describe('week-two frozen content and static figure integration',()=>{
     const physics=await renderStep('physics','w2-physics-s2');expect(physics).toContain('physics-route.svg');expect(physics.match(/data-figure-id=/g)).toHaveLength(1);expect(physics).not.toContain('<svg');expect(physics).toContain('总时间9 s')
   })
   it.each([['math','w2-math-ex4'],['chemistry','w2-chemistry-ex1'],['chemistry','w2-chemistry-ex3'],['physics','w2-physics-ex2']] as const)('keeps the solution figure closed for %s %s',async(subject,step)=>{
-    const html=await renderStep(subject,step),details=html.indexOf('<details><summary>展开例题解析</summary>'),figure=html.indexOf('data-figure-id=')
+    const html=await renderStep(subject,step),details=html.indexOf('<details class="problem-answer"><summary>展开例题解析</summary>'),figure=html.indexOf('data-figure-id=')
     expect(details).toBeGreaterThan(-1);expect(figure).toBeGreaterThan(details);expect(figure).toBeLessThan(html.indexOf('</details>',details));expect(html).not.toMatch(/<details[^>]*\bopen/)
   })
   it('does not show the round-trip answer diagram for the outbound-only physics example',async()=>{
