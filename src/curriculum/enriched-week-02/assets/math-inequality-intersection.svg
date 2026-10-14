@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 555" role="img" aria-labelledby="title desc">
+<title id="title">不等式组的共同部分</title>
+<desc id="desc">三条相同数轴，第一条表示x小于等于5，5处实心；第二条表示x大于负2，负2处空心；第三条取重合部分负2小于x小于等于5，负2空心、5实心。整数解为负1、0、1、2、3、4、5。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#26384b"/></marker></defs>
+<rect width="960" height="555" rx="16" fill="#f8fafc"/>
+<g fill="#17212b" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif">
+<text x="35" y="42" font-size="25" font-weight="700">同一个 x，要同时通过两条条件</text>
+<text x="35" y="75" font-size="17">空心圆：不取端点　实心圆：取端点　共同部分：两条条件都允许</text>
+<text x="35" y="117" font-size="21" font-weight="600">条件①：x ≤ 5</text>
+<line x1="58" x2="887" y1="160" y2="160" stroke="#8190a0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="70" x2="70" y1="154" y2="166" stroke="#536170"/>
+<text x="70" y="190" text-anchor="middle" font-size="16">-3</text>
+<line x1="156" x2="156" y1="154" y2="166" stroke="#536170"/>
+<text x="156" y="190" text-anchor="middle" font-size="16">-2</text>
+<line x1="242" x2="242" y1="154" y2="166" stroke="#536170"/>
+<text x="242" y="190" text-anchor="middle" font-size="16">-1</text>
+<line x1="328" x2="328" y1="154" y2="166" stroke="#536170"/>
+<text x="328" y="190" text-anchor="middle" font-size="16">0</text>
+<line x1="414" x2="414" y1="154" y2="166" stroke="#536170"/>
+<text x="414" y="190" text-anchor="middle" font-size="16">1</text>
+<line x1="500" x2="500" y1="154" y2="166" stroke="#536170"/>
+<text x="500" y="190" text-anchor="middle" font-size="16">2</text>
+<line x1="586" x2="586" y1="154" y2="166" stroke="#536170"/>
+<text x="586" y="190" text-anchor="middle" font-size="16">3</text>
+<line x1="672" x2="672" y1="154" y2="166" stroke="#536170"/>
+<text x="672" y="190" text-anchor="middle" font-size="16">4</text>
+<line x1="758" x2="758" y1="154" y2="166" stroke="#536170"/>
+<text x="758" y="190" text-anchor="middle" font-size="16">5</text>
+<line x1="844" x2="844" y1="154" y2="166" stroke="#536170"/>
+<text x="844" y="190" text-anchor="middle" font-size="16">6</text>
+<line x1="70" x2="758" y1="160" y2="160" stroke="#26384b" stroke-width="5" marker-start="url(#arrow)"/>
+<circle cx="758" cy="160" r="7" fill="#26384b"/>
+<text x="35" y="247" font-size="21" font-weight="600">条件②：x > −2</text>
+<line x1="58" x2="887" y1="290" y2="290" stroke="#8190a0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="70" x2="70" y1="284" y2="296" stroke="#536170"/>
+<text x="70" y="320" text-anchor="middle" font-size="16">-3</text>
+<line x1="156" x2="156" y1="284" y2="296" stroke="#536170"/>
+<text x="156" y="320" text-anchor="middle" font-size="16">-2</text>
+<line x1="242" x2="242" y1="284" y2="296" stroke="#536170"/>
+<text x="242" y="320" text-anchor="middle" font-size="16">-1</text>
+<line x1="328" x2="328" y1="284" y2="296" stroke="#536170"/>
+<text x="328" y="320" text-anchor="middle" font-size="16">0</text>
+<line x1="414" x2="414" y1="284" y2="296" stroke="#536170"/>
+<text x="414" y="320" text-anchor="middle" font-size="16">1</text>
+<line x1="500" x2="500" y1="284" y2="296" stroke="#536170"/>
+<text x="500" y="320" text-anchor="middle" font-size="16">2</text>
+<line x1="586" x2="586" y1="284" y2="296" stroke="#536170"/>
+<text x="586" y="320" text-anchor="middle" font-size="16">3</text>
+<line x1="672" x2="672" y1="284" y2="296" stroke="#536170"/>
+<text x="672" y="320" text-anchor="middle" font-size="16">4</text>
+<line x1="758" x2="758" y1="284" y2="296" stroke="#536170"/>
+<text x="758" y="320" text-anchor="middle" font-size="16">5</text>
+<line x1="844" x2="844" y1="284" y2="296" stroke="#536170"/>
+<text x="844" y="320" text-anchor="middle" font-size="16">6</text>
+<line x1="156" x2="856" y1="290" y2="290" stroke="#26384b" stroke-width="5" marker-end="url(#arrow)"/>
+<circle cx="156" cy="290" r="7" fill="#f8fafc" stroke="#26384b" stroke-width="3"/>
+<text x="35" y="377" font-size="21" font-weight="600">共同部分：−2 &lt; x ≤ 5，即 (−2, 5]</text>
+<line x1="58" x2="887" y1="420" y2="420" stroke="#8190a0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="70" x2="70" y1="414" y2="426" stroke="#536170"/>
+<text x="70" y="450" text-anchor="middle" font-size="16">-3</text>
+<line x1="156" x2="156" y1="414" y2="426" stroke="#536170"/>
+<text x="156" y="450" text-anchor="middle" font-size="16">-2</text>
+<line x1="242" x2="242" y1="414" y2="426" stroke="#536170"/>
+<text x="242" y="450" text-anchor="middle" font-size="16">-1</text>
+<line x1="328" x2="328" y1="414" y2="426" stroke="#536170"/>
+<text x="328" y="450" text-anchor="middle" font-size="16">0</text>
+<line x1="414" x2="414" y1="414" y2="426" stroke="#536170"/>
+<text x="414" y="450" text-anchor="middle" font-size="16">1</text>
+<line x1="500" x2="500" y1="414" y2="426" stroke="#536170"/>
+<text x="500" y="450" text-anchor="middle" font-size="16">2</text>
+<line x1="586" x2="586" y1="414" y2="426" stroke="#536170"/>
+<text x="586" y="450" text-anchor="middle" font-size="16">3</text>
+<line x1="672" x2="672" y1="414" y2="426" stroke="#536170"/>
+<text x="672" y="450" text-anchor="middle" font-size="16">4</text>
+<line x1="758" x2="758" y1="414" y2="426" stroke="#536170"/>
+<text x="758" y="450" text-anchor="middle" font-size="16">5</text>
+<line x1="844" x2="844" y1="414" y2="426" stroke="#536170"/>
+<text x="844" y="450" text-anchor="middle" font-size="16">6</text>
+<line x1="156" x2="758" y1="420" y2="420" stroke="#0b7461" stroke-width="7"/>
+<circle cx="156" cy="420" r="8" fill="#f8fafc" stroke="#0b7461" stroke-width="3"/>
+<circle cx="758" cy="420" r="8" fill="#0b7461"/>
+<text x="35" y="497" font-size="20">整数解：−1、0、1、2、3、4、5</text>
+<text x="35" y="531" font-size="16">检查：−2 不满足严格条件 x > −2；5 满足两条条件，所以包含右端点。</text>
+</g></svg>

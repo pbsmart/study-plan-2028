@@ -31,3 +31,10 @@ export interface EnrichedLesson {
   reviewActivity?: { id: string; title: string; instructions: string[] }
   diagrams?: LessonDiagram[]
 }
+
+/** Compiled image metadata, kept separate from the immutable lesson overlay. */
+export interface StaticLessonFigure {
+  id: string; title: string; src: string; altText: string; caption: string
+  linkedSectionIds: string[]; linkedQuestionIds: string[]
+  width: number; height: number
+}

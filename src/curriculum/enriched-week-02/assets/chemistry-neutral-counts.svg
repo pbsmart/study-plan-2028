@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 570" role="img" aria-labelledby="title desc">
+<title id="title">原子的微粒计数：中性不等于内部无电荷</title>
+<desc id="desc">微粒计数框图，所有符号只用于数数，不按真实比例，也不表示电子固定轨道。氕原子：核内质子1、中子0，核外电子1，净电荷0；氦-4原子：质子2、中子2、电子2，净电荷0。</desc>
+<rect width="1120" height="570" rx="16" fill="#f8fafc"/>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#17212b">
+<text x="30" y="40" font-size="25" font-weight="700">中性不等于内部没有电荷</text>
+<text x="30" y="72" font-size="17">每个“+”表示一个质子；“0”一个中子；“−”一个电子。</text>
+<rect x="30" y="95" width="505" height="395" rx="12" fill="#ffffff" stroke="#c9d2dc"/>
+<text x="48" y="126" font-size="22" font-weight="700">中性氕原子¹H</text>
+<text x="48" y="154" font-size="16">Z = 1　A = 1</text>
+<rect x="44" y="171" width="477" height="164" rx="8" fill="#edf2f7"/>
+<text x="55" y="195" font-size="16" font-weight="600">核内计数</text>
+<text x="55" y="227" font-size="17">质子 1 个</text>
+<circle cx="200" cy="221" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="200" y="226" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<text x="55" y="288" font-size="17">中子 0 个</text>
+<text x="196" y="288" font-size="17">此例没有中子</text>
+<rect x="44" y="347" width="477" height="92" rx="8" fill="#ecf7f4"/>
+<text x="55" y="370" font-size="16" font-weight="600">核外计数</text>
+<text x="55" y="405" font-size="17">电子 1 个</text>
+<circle cx="200" cy="397" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="200" y="402" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<text x="50" y="470" font-size="19">净电荷数：1−1=0</text>
+<rect x="585" y="95" width="505" height="395" rx="12" fill="#ffffff" stroke="#c9d2dc"/>
+<text x="603" y="126" font-size="22" font-weight="700">中性氦-4原子⁴He</text>
+<text x="603" y="154" font-size="16">Z = 2　A = 4</text>
+<rect x="599" y="171" width="477" height="164" rx="8" fill="#edf2f7"/>
+<text x="610" y="195" font-size="16" font-weight="600">核内计数</text>
+<text x="610" y="227" font-size="17">质子 2 个</text>
+<circle cx="755" cy="221" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="755" y="226" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="782" cy="221" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="782" y="226" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<text x="610" y="288" font-size="17">中子 2 个</text>
+<circle cx="755" cy="282" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="755" y="287" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="782" cy="282" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="782" y="287" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<rect x="599" y="347" width="477" height="92" rx="8" fill="#ecf7f4"/>
+<text x="610" y="370" font-size="16" font-weight="600">核外计数</text>
+<text x="610" y="405" font-size="17">电子 2 个</text>
+<circle cx="755" cy="397" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="755" y="402" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="782" cy="397" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="782" y="402" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<text x="605" y="470" font-size="19">净电荷数：2−2=0</text>
+<text x="30" y="525" font-size="17">氕核中没有中子；中性氦-4的正负电荷数相等，电荷总和为0。</text>
+<text x="30" y="554" font-size="15">计数示意，非真实比例；图标排列不是微粒实际位置，不表示固定电子轨道。</text>
+</g></svg>

@@ -38,7 +38,7 @@ describe('lazy curriculum loading', () => {
       const actual = await loadStudyWeek(expected.week)
       expect(actual).toMatchObject(expected)
       expect(Object.keys(actual.subjects)).toEqual(Object.keys(expected.subjects))
-      if (expected.week !== 1) expect(actual).toEqual(expected)
+      if (![1, 2].includes(expected.week)) expect(actual).toEqual(expected)
     }
   })
   it('does not import until requested and deduplicates in-flight and completed requests', async () => {

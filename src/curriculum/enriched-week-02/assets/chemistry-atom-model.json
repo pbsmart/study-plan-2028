@@ -1,0 +1,128 @@
+{
+  "id": "w2-chemistry-asset-atom-model",
+  "title": "只数微粒与电荷：原子和离子的计数框图",
+  "kind": "particle-count-description",
+  "modelDisclaimer": "书面示意，非真实大小、距离或形状比例；核外电子图标仅表示数量，不表示电子具有确定位置或沿确定的行星轨道运动。各模型分为核内计数框与核外计数框；不要用圆形电子轨道连接图标。",
+  "renderingGuidance": "建议分两组卡片：A组用氕与氦-4说明三种微粒、电中性及无中子例外；B组并排展示²³Na→²³Na⁺和³⁵Cl→³⁵Cl⁻，只用箭头文字写“失1电子”或“得1电子”。核内与核外采用分离的计数框；电子图标可作规整计数阵列，但必须标注计数用、非空间分布。每张卡均显示p、n、电子数量和p−电子数的净电荷检查式。",
+  "legend": [
+    {
+      "symbol": "p",
+      "label": "质子",
+      "region": "核内",
+      "chargeUnits": 1
+    },
+    {
+      "symbol": "n",
+      "label": "中子",
+      "region": "核内",
+      "chargeUnits": 0
+    },
+    {
+      "symbol": "e⁻",
+      "label": "电子",
+      "region": "核外计数框",
+      "chargeUnits": -1
+    }
+  ],
+  "models": [
+    {
+      "id": "w2-chemistry-model-h1",
+      "label": "中性氕原子¹H",
+      "element": "H",
+      "atomicNumber": 1,
+      "massNumber": 1,
+      "protons": 1,
+      "neutrons": 0,
+      "electrons": 1,
+      "netChargeUnits": 0,
+      "chargeCheck": "1−1=0",
+      "note": "核内没有中子，是“所有原子核都有中子”的反例。"
+    },
+    {
+      "id": "w2-chemistry-model-he4",
+      "label": "中性氦-4原子⁴He",
+      "element": "He",
+      "atomicNumber": 2,
+      "massNumber": 4,
+      "protons": 2,
+      "neutrons": 2,
+      "electrons": 2,
+      "netChargeUnits": 0,
+      "chargeCheck": "2−2=0",
+      "note": "2个正电单位和2个负电单位抵消；2个中子不贡献电荷。"
+    },
+    {
+      "id": "w2-chemistry-model-na23",
+      "label": "中性钠-23原子²³Na",
+      "element": "Na",
+      "atomicNumber": 11,
+      "massNumber": 23,
+      "protons": 11,
+      "neutrons": 12,
+      "electrons": 11,
+      "netChargeUnits": 0,
+      "chargeCheck": "11−11=0",
+      "note": "从中性原子出发，失1电子得到相邻Na⁺。"
+    },
+    {
+      "id": "w2-chemistry-model-na23-plus",
+      "label": "钠离子²³Na⁺",
+      "element": "Na",
+      "atomicNumber": 11,
+      "massNumber": 23,
+      "protons": 11,
+      "neutrons": 12,
+      "electrons": 10,
+      "netChargeUnits": 1,
+      "chargeCheck": "11−10=+1",
+      "note": "只有电子数由11变10；核内组成保持不变。"
+    },
+    {
+      "id": "w2-chemistry-model-cl35",
+      "label": "中性氯-35原子³⁵Cl",
+      "element": "Cl",
+      "atomicNumber": 17,
+      "massNumber": 35,
+      "protons": 17,
+      "neutrons": 18,
+      "electrons": 17,
+      "netChargeUnits": 0,
+      "chargeCheck": "17−17=0",
+      "note": "从中性原子出发，得1电子得到相邻Cl⁻。"
+    },
+    {
+      "id": "w2-chemistry-model-cl35-minus",
+      "label": "氯离子³⁵Cl⁻",
+      "element": "Cl",
+      "atomicNumber": 17,
+      "massNumber": 35,
+      "protons": 17,
+      "neutrons": 18,
+      "electrons": 18,
+      "netChargeUnits": -1,
+      "chargeCheck": "17−18=−1",
+      "note": "只有电子数由17变18；核内组成保持不变。"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "w2-chemistry-model-na23",
+      "to": "w2-chemistry-model-na23-plus",
+      "label": "失去1个电子，核内不变",
+      "electronCountChange": -1
+    },
+    {
+      "from": "w2-chemistry-model-cl35",
+      "to": "w2-chemistry-model-cl35-minus",
+      "label": "得到1个电子，核内不变",
+      "electronCountChange": 1
+    }
+  ],
+  "altText": "微粒计数框图，所有符号只用于数数，不按真实比例，也不表示电子固定轨道。氕原子：核内质子1、中子0，核外电子1，净电荷0；氦-4原子：质子2、中子2、电子2，净电荷0。钠-23原子质子11、中子12、电子11；失去1电子后Na⁺质子11、中子12、电子10，净电荷+1。氯-35原子质子17、中子18、电子17；得到1电子后Cl⁻质子17、中子18、电子18，净电荷−1。",
+  "linkedSectionIds": [
+    "w2-chemistry-s2",
+    "w2-chemistry-s3",
+    "w2-chemistry-s5",
+    "w2-chemistry-s6"
+  ]
+}

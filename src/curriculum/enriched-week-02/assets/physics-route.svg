@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">9秒往返：平均速度与平均速率</title>
+<desc id="desc">向东为正、单位米的数轴，A在−2，B在6，C在1。第一段A到B向东8米，用4秒；第二段B到C向西5米，用5秒。另一箭头A直连C表示位移正3米。两段路线总长13米，总时间9秒。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="context-stroke"/></marker></defs>
+<rect width="960" height="480" rx="16" fill="#f8fafc"/>
+<g fill="#17212b" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif">
+<text x="35" y="40" font-size="25" font-weight="700">9秒往返：两个平均量的分子不同</text>
+<text x="35" y="70" font-size="17">向东为正；位置单位 m；每段内不反向；总时间 4 + 5 = 9 s</text>
+<line x1="158.0" x2="782.0" y1="115" y2="115" stroke="#245b9e" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="470.0" y="101" text-anchor="middle" font-size="17" fill="#154474">①8 m，用4 s</text>
+<line x1="782.0" x2="392.0" y1="175" y2="175" stroke="#245b9e" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="587.0" y="161" text-anchor="middle" font-size="17" fill="#154474">②5 m，用5 s</text>
+<line x1="65" x2="900" y1="245" y2="245" stroke="#26384b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="903" y="274" font-size="15">东</text>
+<line x1="80.0" x2="80.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="80.0" y="274" text-anchor="middle" font-size="16">-3</text>
+<line x1="158.0" x2="158.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="158.0" y="274" text-anchor="middle" font-size="16">-2</text>
+<line x1="236.0" x2="236.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="236.0" y="274" text-anchor="middle" font-size="16">-1</text>
+<line x1="314.0" x2="314.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="314.0" y="274" text-anchor="middle" font-size="16">0</text>
+<line x1="392.0" x2="392.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="392.0" y="274" text-anchor="middle" font-size="16">1</text>
+<line x1="470.0" x2="470.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="470.0" y="274" text-anchor="middle" font-size="16">2</text>
+<line x1="548.0" x2="548.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="548.0" y="274" text-anchor="middle" font-size="16">3</text>
+<line x1="626.0" x2="626.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="626.0" y="274" text-anchor="middle" font-size="16">4</text>
+<line x1="704.0" x2="704.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="704.0" y="274" text-anchor="middle" font-size="16">5</text>
+<line x1="782.0" x2="782.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="782.0" y="274" text-anchor="middle" font-size="16">6</text>
+<line x1="860.0" x2="860.0" y1="239" y2="251" stroke="#26384b"/>
+<text x="860.0" y="274" text-anchor="middle" font-size="16">7</text>
+<circle cx="158.0" cy="245" r="5" fill="#17212b"/>
+<text x="158.0" y="222" text-anchor="middle" font-size="17">A（0 s）</text>
+<circle cx="782.0" cy="245" r="5" fill="#17212b"/>
+<text x="782.0" y="222" text-anchor="middle" font-size="17">B（4 s）</text>
+<circle cx="392.0" cy="245" r="5" fill="#17212b"/>
+<text x="392.0" y="222" text-anchor="middle" font-size="17">C（9 s）</text>
+<line x1="158.0" x2="392.0" y1="329" y2="329" stroke="#0b7461" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="275.0" y="313" text-anchor="middle" font-size="17" fill="#075c4d">总位移 +3 m（向东）</text>
+<text x="35" y="386" font-size="20">平均速度 = 总位移 ÷ 总时间 = (+3 m) ÷ (9 s) = +1/3 m/s（向东）</text>
+<text x="35" y="423" font-size="20">平均速率 = 总路程 ÷ 总时间 = (13 m) ÷ (9 s) = 13/9 m/s</text>
+<text x="35" y="459" font-size="16">都除以全程 9 秒；不能用两段速率 (2 + 1) ÷ 2 替代不等用时的全程平均。</text>
+</g></svg>

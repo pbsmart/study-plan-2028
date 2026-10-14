@@ -1,0 +1,893 @@
+{
+  "id": "w2-英语",
+  "week": 2,
+  "subject": "英语",
+  "title": "一般现在时与一般过去时：先看事情发生在哪段时间，再选句子走法",
+  "revision": "week02-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能借助题内词义，区分日常习惯、通常状态与已经发生的过去事情，并说出语境依据。",
+    "能从第1周的主语、谓语及三种基础句型出发，写对本课一般现在时和一般过去时的肯定句。",
+    "能用do、does、did改写普通动作句的否定和一般疑问句，并把后面的动作动词还原。",
+    "能把be句单独处理，正确选择am/is/are或was/were，再写否定、疑问及本课简短回答。"
+  ],
+  "prerequisites": [
+    "回看第1周英语的主语、谓语动词与主谓宾／主系表／主谓三句型；忘记时先用本课第1节补起，不要求背完术语再学习。",
+    "认识I我、you你／你们、he他、she她、it它、we我们、they他们／她们／它们。题内词义可以随时查，不把词汇量不足当作语法不及格。",
+    "本课是面向河南南阳2028高考准备者的跨版本基础补救。教材版本尚未核定，不对应或虚构本地教材章节、页码；不替学习者决定第三科。",
+    "准备纸笔：先画出主语和动词，再标“平时／过去”；完成后才展开答案。只练本课两种时态的基础用法，其他时态与复杂问句留待后续。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 0,
+    "busyPolicy": "完整核心需要180分钟。上班忙时分两个实际可用学习周期，各90分钟：周期一前测及补救15分钟＋八段教学45分钟＋例题1—4共30分钟；周期二例题5用10分钟＋六道练习30分钟＋闭卷短测20分钟＋订正30分钟。两个周期都属于第2学习周，未完成和未达标时不自动进入第3周。词义查阅、停一停、核对已计入预算，不另叠加抄单词或听力任务；补救超时顺延至下一次本科学习时段，不压缩成假完成，也不占第三科预留时间。本课不设置额外拓展。",
+    "segments": [
+      {
+        "id": "w2-en-time1",
+        "title": "三题前测9分钟＋按错因补救6分钟",
+        "minutes": 15,
+        "activityIds": [
+          "w2-en-d1",
+          "w2-en-d2",
+          "w2-en-d3"
+        ]
+      },
+      {
+        "id": "w2-en-time2",
+        "title": "八段连续教学，含词义查阅与停一停",
+        "minutes": 45,
+        "activityIds": [
+          "w2-en-s1",
+          "w2-en-s2",
+          "w2-en-s3",
+          "w2-en-s4",
+          "w2-en-s5",
+          "w2-en-s6",
+          "w2-en-s7",
+          "w2-en-s8"
+        ]
+      },
+      {
+        "id": "w2-en-time3",
+        "title": "例题1—4：先遮答尝试，再逐步模仿",
+        "minutes": 30,
+        "activityIds": [
+          "w2-en-ex1",
+          "w2-en-ex2",
+          "w2-en-ex3",
+          "w2-en-ex4"
+        ]
+      },
+      {
+        "id": "w2-en-time4",
+        "title": "例题5：读懂同一段里的两个时间层次",
+        "minutes": 10,
+        "activityIds": [
+          "w2-en-ex5"
+        ]
+      },
+      {
+        "id": "w2-en-time5",
+        "title": "六道分层练习及即时核对",
+        "minutes": 30,
+        "activityIds": [
+          "w2-en-pr1",
+          "w2-en-pr2",
+          "w2-en-pr3",
+          "w2-en-pr4",
+          "w2-en-pr5",
+          "w2-en-pr6"
+        ]
+      },
+      {
+        "id": "w2-en-time6",
+        "title": "四题闭卷短测，共20分",
+        "minutes": 20,
+        "activityIds": [
+          "w2-en-quiz1",
+          "w2-en-quiz2",
+          "w2-en-quiz3",
+          "w2-en-quiz4"
+        ]
+      },
+      {
+        "id": "w2-en-time7",
+        "title": "评分、回读、遮答重做和解释",
+        "minutes": 30,
+        "activityIds": [
+          "w2-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "前测共9分钟，每题约3分钟，可查本题词义，不看答案。不会时写“卡在句型／时间／形式”，不需要猜分。随后6分钟只补对应入口；三题全对则口述判断依据。前测不计过关分，也不要求课前已会本周所有新形式。",
+    "questions": [
+      {
+        "id": "w2-en-d1",
+        "title": "接回第1周：动作还是状态",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "原创句子：①She checks the box. ②She is tired. ③She works.\n词义：She＝她；checks＝检查；the＝特指这个；box＝箱子；is＝be的形式，此处连接人物与状态；tired＝疲倦的；works＝工作。\n圈出每句的谓语动词，指出哪句说状态；哪句有动作对象？",
+        "answer": "①checks，动作对象为the box，“她检查这个箱子”。②is，tired说明状态，“她很累”。③works，无宾语，“她工作”。说状态的是②，有动作对象的是①。",
+        "steps": [
+          "先按词义读懂三件事：检查、疲倦、工作。",
+          "①checks和③works直接说明动作；②is把她与疲倦状态连起来。",
+          "①the box回答检查什么；②tired不是宾语；③没有宾语也完整。"
+        ],
+        "commonErrors": [
+          "把tired当谓语而漏掉is；认为所有句子都必须有宾语。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w2-en-d2",
+        "title": "平时做与昨天做",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "原创句子：①I work every day. ②I worked yesterday.\n词义：I＝我；work/worked＝工作，本题分别是现在形式和过去形式；every＝每个；day＝一天；every day＝每天；yesterday＝昨天。\n哪句描述日常习惯，哪句说过去发生的事情？各写一条依据并翻译。",
+        "answer": "①描述日常习惯，every day表示每天反复做，译“我每天工作”。②说过去发生的事情，yesterday把事情放在昨天，译“我昨天工作了”。",
+        "steps": [
+          "先读完整句意，不只比较work与worked的拼写。",
+          "每天表示习惯性反复；昨天是已经过去的时间。",
+          "把时间判断与形式对应：work用于这里的习惯，worked用于这里的过去。"
+        ],
+        "commonErrors": [
+          "把一般现在时说成此刻一定正在工作；把worked译成将要工作。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w2-en-d3",
+        "title": "主语和时间一起检查",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "选词填空：①She _____ the box every day.（check/checks）②They _____ the box every day.（check/checks）③She _____ the box yesterday.（checks/checked）\n词义：She＝她；They＝他们；check/checks/checked＝检查，不同动词形式；the＝特指这个；box＝箱子；every＝每个；day＝一天；every day＝每天；yesterday＝昨天。",
+        "answer": "①checks，“她每天检查这个箱子”。②check，“他们每天检查这个箱子”。③checked，“她昨天检查了这个箱子”。",
+        "steps": [
+          "①②都是习惯性动作，先确定一般现在时。",
+          "①She指单个的她，肯定句用checks；②They指他们，用check。",
+          "③说昨天发生的检查，用过去式checked，不继续按She加s。"
+        ],
+        "commonErrors": [
+          "把She永远配checks而忽视过去；把They当成单个人。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "w2-en-d1把状态词当动作，或忘记第1周三句型",
+        "action": "先回看第1周英语“三种句型”与“先找动词”的说明，再读本课第1节：分别问“做什么”“怎么样”，最后重做d1。第1周只作文字衔接，本课内跳转指向下面的有效段落。",
+        "sectionIds": [
+          "w2-en-s1"
+        ]
+      },
+      {
+        "when": "w2-en-d2分不清平时与过去，或只会找时间词不会说句意",
+        "action": "读本课第2节，画“平时反复发生”和“过去的一次”两个框，把两句分别放入；再读第3、4节各自第一段，重做d2。",
+        "sectionIds": [
+          "w2-en-s2",
+          "w2-en-s3",
+          "w2-en-s4"
+        ]
+      },
+      {
+        "when": "w2-en-d3肯定句形式选错",
+        "action": "第1周已接触She与checks的配对，忘记可回看第1周动词形式段；在本课先读第3节确认单个人与动词配对，再读第4节比较checked，重做d3。不要先背全部变形表。",
+        "sectionIds": [
+          "w2-en-s3",
+          "w2-en-s4"
+        ]
+      },
+      {
+        "when": "三题全对",
+        "action": "用6分钟解释“句型先分路、时间再判断、主语再配对”的三个问题，说明第1周只学肯定句而本周要继续学否定和疑问；随后仍按顺序读八节，不额外加题。",
+        "sectionIds": [
+          "w2-en-s1",
+          "w2-en-s2",
+          "w2-en-s3"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w2-en-s1",
+      "title": "先接回三句型：找准动词，后面才不会走错路",
+      "level": "core",
+      "paragraphs": [
+        "第1周学的是句内关系，本周加上时间和句子要求。先看She checks the box.（She＝她；checks＝检查；the＝特指这个；box＝箱子；译“她检查这个箱子”。）She是主语，checks是谓语动词，the box是检查的对象，即宾语。时间变了，谁检查什么的关系仍能保留。",
+        "再看She is tired.（She＝她；is＝be的形式，此处连接人物与状态；tired＝疲倦的；译“她很累”。）主语仍是She，is是本句的系动词，tired说明她的状态，是表语。中文不一定说“是疲倦的”，英语这句仍要有is，不能只写人物和tired。",
+        "She works.（She＝她；works＝工作；译“她工作”。）这是主谓句，没有宾语也完整。后面变否定或疑问时，works和checks走同一条普通动作路线；is走be路线。所以“有没有宾语”不能代替“有没有be”的检查。",
+        "本课先把表示检查、工作、学习的普通动作动词分为一组，把表示身份或状态的be分为另一组。这里只讨论它们在本课简单句中的用法。每次先圈主语，再圈动词；不要看见She就自动加is，也不要看见状态词就漏掉be。I＝我；you＝你／你们；he＝他；she＝她；it＝它；we＝我们；they＝他们／她们／它们，这些主语后面还要按时间选择合适的形式。"
+      ],
+      "keyPoints": [
+        "第1周的句型关系仍保留，本周是在它上面加时间和改写。",
+        "普通动作句可以有宾语，也可以没有。",
+        "be状态句与普通动作句分开处理。"
+      ],
+      "checkpoint": {
+        "question": "原创句子：The worker is careful.（The＝特指这位；worker＝工人；is＝连接人物与特点的be形式；careful＝细心的。）圈动词，判断走be路线还是普通动作路线。",
+        "answer": "动词是is，走be路线；careful是表语。译“这位工人很细心”。",
+        "explanation": "先找实际出现的动词，不能因为worker是工人，就把句子误读成工人正在工作。"
+      }
+    },
+    {
+      "id": "w2-en-s2",
+      "title": "时间先讲意思：平时如此，还是过去发生",
+      "level": "core",
+      "paragraphs": [
+        "一般现在时常用来表达日常习惯、通常成立的情况或相对稳定的状态。I study after work.（I＝我；study＝学习；after＝在……之后；work＝工作，这里在after后作名词；after work＝下班后；译“我下班后学习”。）在介绍平时安排的语境中，它说的是习惯，不保证说话这一刻正在学习。",
+        "一般过去时常用来讲过去发生的动作或过去的状态。I studied last night.（I＝我；studied＝学习，study的过去式；last＝上一个；night＝夜晚；last night＝昨晚；译“我昨晚学习了”。）先把事情放到过去，再选择过去形式。英文并不是只有出现中文“了”才用过去时，中文译法不能替代时间判断。",
+        "every day＝每天、usually＝通常，常帮助识别习惯；yesterday＝昨天、last night＝昨晚，常提示过去。本课先练清楚这些线索，但不把它们当永远不变的按钮。时间有时在上一句交代，下一句没有再写yesterday，事情仍可能属于昨天；也不能因为没有时间词就断言无法判断。",
+        "对比原创语境：介绍平时安排时说She works at home.（She＝她；works＝工作；at＝在；home＝家；at home＝在家；译“她在家工作”。）讲昨天经过时说She worked at home.（She＝她；worked＝工作，过去式；at home＝在家；译“她昨天在家工作了”，昨天来自语境。）做题时先说明整件事的时间，再找支持它的词或前后文。"
+      ],
+      "keyPoints": [
+        "一般现在时不等于此刻正在做；一般过去时可以表示过去动作或状态。",
+        "先看完整语境，再用时间词辅助验证。",
+        "过去语境可以延续到下一句，不必每句重复时间词。"
+      ],
+      "checkpoint": {
+        "question": "原创两句：Yesterday she worked. She studied at home.（Yesterday＝昨天；she＝她；worked＝工作，过去式；studied＝学习，过去式；at＝在；home＝家；at home＝在家。）第二句没有yesterday，是否仍在说过去？",
+        "answer": "是。两句在同一段叙述昨天的事情，第二句studied也用过去式。译“昨天她工作了。她在家学习了”。",
+        "explanation": "结合开头的昨天和第二句的过去形式判断；不能要求每句都重复一个时间词。"
+      }
+    },
+    {
+      "id": "w2-en-s3",
+      "title": "肯定句第一步：一般现在时怎样和主语配对",
+      "level": "core",
+      "paragraphs": [
+        "先用最熟的work＝工作。I work.（I＝我；work＝工作；译“我工作”。）They work.（They＝他们；work＝工作；译“他们工作”。）She works.（She＝她；works＝工作；译“她工作”。）这些都在介绍通常情况。I、you、we、they后用work原形；he、she、it或单个的人、物作主语时，本课的肯定动作句通常用相应的第三人称单数形式。",
+        "“第三人称单数”先理解成不是我、不是你，而是单个的他／她／它或一个人、物。The worker checks the box every day.（The/the＝特指这位／这个；worker＝工人；checks＝检查；box＝箱子；every＝每个；day＝一天；every day＝每天；译“这位工人每天检查这个箱子”。）主语整组指一个工人，动词用checks，不是看离动词最近的任何名词。",
+        "把常用变形分小块记：work→works（工作）、check→checks（检查）直接加s；study→studies（学习）末尾是辅音字母d加y，先把y改i再加es；go→goes（去）加es；have→has（有）单独记。本课先掌握这五组，不要求一次背全所有拼写变化。study原形里的y不能留着写成studys。",
+        "肯定句写完再问：是不是普通动作句？是不是在说习惯／通常情况？主语是单个第三者吗？只在符合本课条件时用works、checks等。过去句、否定句、疑问句后面另有处理，不可以把“她后面动词永远加s”当总规则。"
+      ],
+      "keyPoints": [
+        "本课一般现在时肯定动作句：I/you/we/they用原形，单个第三者用对应形式。",
+        "work—works、check—checks与study—studies分块记。",
+        "go—goes、have—has单独认，后面出现does时还要还原。"
+      ],
+      "checkpoint": {
+        "question": "填空：①She _____ at home. ②They _____ at home.（study/studies）语境都是介绍平时习惯。词义：She＝她；They＝他们；study/studies＝学习；at＝在；home＝家；at home＝在家。",
+        "answer": "①studies，②study。分别译“她在家学习”“他们在家学习”。",
+        "explanation": "①主语是单个第三者；②主语是他们。时间相同，但肯定句与主语的配对不同。"
+      }
+    },
+    {
+      "id": "w2-en-s4",
+      "title": "肯定句第二步：规则过去式，先学小块变化",
+      "level": "core",
+      "paragraphs": [
+        "普通动作在过去发生，肯定句通常用动词过去式，不再用现在时的单数配对。I worked yesterday.（I＝我；worked＝工作，过去式；yesterday＝昨天；译“我昨天工作了”。）She worked yesterday.（She＝她；worked＝工作，过去式；yesterday＝昨天；译“她昨天工作了”。）主语变了，这里worked不变，不能写成workeds。",
+        "第一小块是常用规则动词直接加ed：work→worked（工作），check→checked（检查）。第二小块是辅音字母加y结尾：study→studied（学习），把y改i再加ed。比较上一节study→studies：现在时单个第三者肯定句用studies，过去肯定句用studied；都是改y，但结尾不同。",
+        "规则动词还存在末尾已有e只加d、某些词先双写末尾辅音字母再加ed等情况；这些不是本课额外背诵清单。不能把“多数加ed”误背成“所有动词直接加ed”。本课需要动手写准的是worked、checked、studied；下节再把不规则变化单独处理。",
+        "两个过去动作都要检查。Yesterday she worked. She studied after work.（Yesterday＝昨天；she＝她；worked＝工作，过去式；studied＝学习，过去式；after＝在……之后；work＝工作，在after后作名词；after work＝下班后；译“昨天她工作了。她下班后学习了”。）第二句沿用昨天的叙述，studied也用过去式；after work中的work是名词，不是漏改的第二个动词。"
+      ],
+      "keyPoints": [
+        "本课普通动作的过去肯定句一般不随人称改变过去式。",
+        "work/check加ed；study先改y，再加ed。",
+        "一个过去语境中的各个动作都要核对，但名词work不跟着变。"
+      ],
+      "checkpoint": {
+        "question": "填空：Yesterday they _____ at home and _____ the box.（study；check）词义：Yesterday＝昨天；they＝他们；study＝学习；at＝在；home＝家；at home＝在家；and＝并且；check＝检查；the＝特指这个；box＝箱子。",
+        "answer": "studied；checked。译“昨天他们在家学习，并检查了这个箱子”。",
+        "explanation": "两项都在说昨天的动作。study按辅音加y规则变化，check直接加ed。"
+      }
+    },
+    {
+      "id": "w2-en-s5",
+      "title": "肯定句第三步：不规则变化单独记，不硬加ed",
+      "level": "core",
+      "paragraphs": [
+        "有些常用动词不按上一节的规则变过去式，先记少量配对：go→went（去），have→had（有）。它们仍然是普通动作路线中的动词，过去肯定句用相应过去式。所谓不规则，是变形不按一般拼写规则，不是说句子没有判断依据。",
+        "She goes home after work.（She＝她；goes＝去，此处与home连用为回家；home＝家／回家这个方向；after＝在……之后；work＝工作，名词；after work＝下班后；译“她下班后回家”。）She went home yesterday.（She＝她；went＝去，go的过去式；home＝家／回家这个方向；yesterday＝昨天；译“她昨天回家了”。）前句说习惯，后句说过去；不要把goes再加ed，也不要给go硬加ed。",
+        "I have a book.（I＝我；have＝有；a＝一本；book＝书；译“我有一本书”。）I had a book then.（I＝我；had＝有，have的过去式；a＝一本；book＝书；then＝那时，指过去；译“我那时有一本书”。）这里have表示拥有，不一定是能看见的动作，但否定疑问仍走本课普通动词路线；不要因此擅自换成be。",
+        "再认识一个容易误判的词：read＝读，它的原形和过去式拼写都为read，读音不同。She read a book yesterday.（She＝她；read＝读，这里为过去式；a＝一本；book＝书；yesterday＝昨天；译“她昨天读了一本书”。）书面可借语境认出过去，不能靠是否有ed判断全部时态。本课未提供音频，不在这里评价这两个读音是否听清或读准。"
+      ],
+      "keyPoints": [
+        "核心小组：go—went、have—had；不把不规则形式再加ed。",
+        "肯定句中的went/had本身表示过去，不依赖主语是单数还是复数。",
+        "read拼写相同也可能表示过去；本课没有音频，不能证明听辨达标。"
+      ],
+      "checkpoint": {
+        "question": "选词：Yesterday they _____ home.（go/went/goes）词义：Yesterday＝昨天；they＝他们；go/went/goes＝去的不同形式；home＝家／回家的方向。",
+        "answer": "went。译“昨天他们回家了”。",
+        "explanation": "过去肯定句选go的过去式went；不能因they是复数就忽略昨天而选go。"
+      }
+    },
+    {
+      "id": "w2-en-s6",
+      "title": "现在的否定和问句：do或does来帮忙，动作词用原形",
+      "level": "core",
+      "paragraphs": [
+        "现在时普通动作句改否定，需要在主语后加do not或does not。They work at home.（They＝他们；work＝工作；at＝在；home＝家；at home＝在家；译“他们在家工作”。）变为They do not work at home.（They＝他们；do＝帮助组成否定、不单独译成做；not＝不；work＝工作；at home＝在家；译“他们不在家工作”。）I、you、we、they在本课用do。",
+        "She studies at home.（She＝她；studies＝学习；at home＝在家；译“她在家学习”。）变为She does not study at home.（She＝她；does＝帮助组成否定、对应现在的单个第三者；not＝不；study＝学习；at home＝在家；译“她不在家学习”。）does已经承担了这里的单数配对，后面的studies还原成study。不要在两个地方重复保留变化。",
+        "问一般疑问句，就是提出能用是或否回答的问题。Does she study at home?（Does＝本句帮助提问、不单独译为做；she＝她；study＝学习；at home＝在家；译“她在家学习吗？”）顺序是Does＋she＋study＋其他信息，句末问号。They开头的原句则写Do they work at home?（Do＝帮助提问；they＝他们；work＝工作；at home＝在家；译“他们在家工作吗？”）肯定句中的主语并未改变。",
+        "简短回答跟问句的帮助词对应：Yes, she does.（Yes＝是的；she＝她；does＝承接前句的学习情况；译“是的，她在家学习”。）No, she does not.（No＝不／不是；she＝她；does not＝否定前句的学习情况；译“不，她不在家学习”。）do not可缩为don't，does not可缩为doesn't；先写完整形式也完全正确。否定只否定本句所说的情况，“不在家学习”不能擅自扩大成“从不学习”。"
+      ],
+      "keyPoints": [
+        "现在时普通动词：I/you/we/they用do，单个第三者用does。",
+        "否定在do/does后加not；疑问把do/does放到主语前。",
+        "do/does后普通动词用原形；短答与帮助词对应。"
+      ],
+      "checkpoint": {
+        "question": "改正错误练习句：Does she studies at home? 词义：Does＝帮助提问；she＝她；studies/study＝学习；at＝在；home＝家；at home＝在家。",
+        "answer": "Does she study at home?（她在家学习吗？）把studies改为study。",
+        "explanation": "有does后，后面的普通动词用原形；不是把does删掉来保留studies。"
+      }
+    },
+    {
+      "id": "w2-en-s7",
+      "title": "过去的否定和问句：did表示过去，后面还原",
+      "level": "core",
+      "paragraphs": [
+        "过去时普通动作句改否定，用did not加动词原形。She worked yesterday.（She＝她；worked＝工作，过去式；yesterday＝昨天；译“她昨天工作了”。）变为She did not work yesterday.（She＝她；did＝帮助组成过去否定；not＝不；work＝工作，原形；yesterday＝昨天；译“她昨天没有工作”。）过去信息由did承担，worked要回到work。",
+        "提问时把Did放到主语前：Did she work yesterday?（Did＝帮助组成过去问句；she＝她；work＝工作；yesterday＝昨天；译“她昨天工作了吗？”）本课不因主语是I、she或they就更换另一套did形式。用did后仍写work，不能写worked，也不能改写成works。",
+        "不规则动词也必须还原。She went home yesterday.（She＝她；went＝去，go的过去式；home＝家／回家的方向；yesterday＝昨天；译“她昨天回家了”。）疑问为Did she go home yesterday?（Did＝帮助组成过去问句；she＝她；go＝去，原形；home＝家／回家的方向；yesterday＝昨天；译“她昨天回家了吗？”）went不是去掉词尾就能还原，要找回配对的go。",
+        "短答也对应did：Yes, she did.（Yes＝是的；she＝她；did＝承接前句的过去行为；译“是的，她做了问句中的事”。）No, she did not.（No＝不／不是；she＝她；did not＝否定前句的过去行为；译“不，她没有做问句中的事”。）did not可缩为didn't。句中有yesterday也不能把did后动词再变过去式；时间判断正确不等于所有动词都要带过去形。"
+      ],
+      "keyPoints": [
+        "普通动词的过去否定：主语＋did not＋原形。",
+        "过去一般疑问：Did＋主语＋原形＋其他信息？",
+        "went还原go，had还原have；还原不能只靠删ed。"
+      ],
+      "checkpoint": {
+        "question": "选词并解释：She did not _____ yesterday.（study/studied）词义：She＝她；did＝帮助组成过去否定；not＝不；study/studied＝学习的原形／过去式；yesterday＝昨天。",
+        "answer": "study。全句意为“她昨天没有学习”。",
+        "explanation": "did已承载过去，后面用原形study；不是看到昨天就把所有动词都改成过去形式。"
+      }
+    },
+    {
+      "id": "w2-en-s8",
+      "title": "be另走一条线：直接加not或往前移",
+      "level": "core",
+      "paragraphs": [
+        "说身份或状态时，先选be形式。现在：I配am，he/she/it或单个第三者配is，you/we/they配are；过去：I/he/she/it或单个第三者在本课普通陈述句中配was，you/we/they配were。I我，he他，she她，it它，you你／你们，we我们，they他们／她们／它们。现在和过去都要看主语；这与上一节普通动作过去式常不随人称变化不同。",
+        "She is tired.（She＝她；is＝现在的be形式；tired＝疲倦的；译“她很累”。）She was tired yesterday.（She＝她；was＝过去的be形式；tired＝疲倦的；yesterday＝昨天；译“她昨天很累”。）把现在的状态放到昨天，is换成was。They were tired yesterday.（They＝他们；were＝过去的be形式；tired＝疲倦的；yesterday＝昨天；译“他们昨天很累”。）复数主语用were。",
+        "be句否定直接在be后加not：She was not tired yesterday.（She＝她；was＝过去的be形式；not＝不；tired＝疲倦的；yesterday＝昨天；译“她昨天不累”。）疑问把be移到主语前：Was she tired yesterday?（Was＝本句移到句首的过去be形式；she＝她；tired＝疲倦的；yesterday＝昨天；译“她昨天累吗？”）不要添加did，也不要把was还原成be；这不是上一节普通动作句的路线。",
+        "同样的操作也用于现在：She is not tired.（She＝她；is＝现在的be形式；not＝不；tired＝疲倦的；译“她不累”。）Is she tired?（Is＝移到句首的现在be形式；she＝她；tired＝疲倦的；译“她累吗？”）was not、were not可缩写为wasn't、weren't；is not、are not可缩为isn't、aren't；先使用完整形式即可。",
+        "过去问句的短答保持相同的be：Yes, she was.（Yes＝是的；she＝她；was＝承接前句的过去状态；译“是的，她那时累”。）No, she was not.（No＝不／不是；she＝她；was not＝否定前句的过去状态；译“不，她那时不累”。）最后用两个问题防混线：原句主要动词是be吗？是，就保留合适的be，加not或前移；不是本课be句，才按时间选do/does/did加原形。"
+      ],
+      "keyPoints": [
+        "be现在用am/is/are，过去用was/were，主语配对要核对。",
+        "be否定直接加not，be一般疑问直接前移，不加do/does/did。",
+        "先判be还是普通动词，再套对应操作；不把两条路线拼成一句。"
+      ],
+      "checkpoint": {
+        "question": "将They were tired yesterday.改为一般疑问句，并作肯定简短回答。词义：They/they＝他们；were＝过去的be形式；tired＝疲倦的；yesterday＝昨天；回答可用Yes＝是的。",
+        "answer": "Were they tired yesterday? Yes, they were.（他们昨天累吗？是的，他们昨天累。）",
+        "explanation": "were直接前移，回答仍用were，不写Did they were或Yes, they did。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w2-en-ex1",
+      "title": "第一阶：同一个检查动作，先判时间再看主语",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "选词并解释：①She _____ the box every day.（check/checks/checked）②They _____ the box yesterday.（check/checks/checked）再分别指出两句完整主语、动作对象和时间信息。\n词义：She＝她；They＝他们；check/checks/checked＝检查的不同形式；the＝特指这个；box＝箱子；every＝每个；day＝一天；every day＝每天；yesterday＝昨天。",
+      "answer": "①checks；主语She，宾语the box，时间every day，译“她每天检查这个箱子”。②checked；主语They，宾语the box，时间yesterday，译“他们昨天检查了这个箱子”。",
+      "steps": [
+        "先找主要动作check＝检查，两句都属于普通动作句，不加入be。",
+        "①every day与完整句意说明平时反复检查，用一般现在时。",
+        "①主语She是单个第三者，肯定句用checks；the box是动作对象，不能拿它来决定主语配对。",
+        "②yesterday把动作放到过去，check是本课规则动词，写checked；They是复数不妨碍用过去式。",
+        "写完用中文核对谁、做什么、对象、时间四项，时间短语不并入宾语。"
+      ],
+      "commonErrors": [
+        "只看They就选check，忽略过去；把every day当检查对象。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w2-en-ex2",
+      "title": "第二阶：把现在习惯改为否定和疑问",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创句子：She studies at home. 语境为她平时的学习安排。①改成否定句。②改成一般疑问句。③为②写肯定简短回答。④说明为什么改写后不保留studies。\n词义：She/she＝她；studies/study＝学习的单数形式／原形；at＝在；home＝家；at home＝在家；改写可用does＝帮助组成现在的否定或疑问；not＝不；Yes＝是的。",
+      "answer": "①She does not study at home.（她不在家学习。）②Does she study at home?（她在家学习吗？）③Yes, she does.（是的，她在家学习。）④does承担本句的单数配对，后面的普通动词用study原形；does not可写doesn't。",
+      "steps": [
+        "先圈She与studies：原句是普通动作的现在习惯句，不能用be路线。",
+        "She是单个第三者，改否定选does not，放在主语后。",
+        "把studies还原成study，再保留地点at home。",
+        "改疑问把Does放句首，随后仍是she study at home，末尾用问号。",
+        "肯定简短回答沿用does；最后说明改写改变了肯定／否定／询问要求，没有把时间改成过去。"
+      ],
+      "commonErrors": [
+        "写She does not studies；写Is she study；把不在家学习解释为完全不学习。"
+      ],
+      "estimatedMinutes": 7
+    },
+    {
+      "id": "w2-en-ex3",
+      "title": "第三阶：规则过去式和不规则过去式分别还原",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创句子：①She worked yesterday. ②She went home yesterday. 将①改为否定句，将②改为一般疑问句，再作否定简短回答。说明worked与went各自还原成什么。\n词义：She/she＝她；worked/work＝工作，过去式／原形；went/go＝去，过去式／原形；home＝家／回家的方向；yesterday＝昨天；did＝帮助组成过去否定或疑问；not＝不；No＝不／不是。",
+      "answer": "①She did not work yesterday.（她昨天没有工作。）②Did she go home yesterday?（她昨天回家了吗？）No, she did not.（不，她昨天没有回家。）worked还原为work，went还原为go；did not可写didn't。",
+      "steps": [
+        "两句都说昨天的过去行为，且都不是be句，选did路线。",
+        "①主语后加did not，worked回到原形work。",
+        "②把Did放到主语前，went需按不规则配对找回go，不能只去一个词尾。",
+        "原句的home与yesterday保留，说明去哪里和何时；疑问句结束加问号。",
+        "②的否定简短回答用did not，不因原句有went而写No, she went not。",
+        "检查过去信息已经由did承担；后面的动作原形并不表示时间回到现在。"
+      ],
+      "commonErrors": [
+        "写did not worked或Did she went；把did后原形误认为现在时；只会删ed却不会还原went。"
+      ],
+      "estimatedMinutes": 8
+    },
+    {
+      "id": "w2-en-ex4",
+      "title": "第四阶：状态句和动作句不能混线",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "处理两个原创句子：①They were tired yesterday. 改为否定句和一般疑问句，并给问句写肯定简短回答。②They worked yesterday. 改为一般疑问句。最后解释两个问句为什么开头不同。\n词义：They/they＝他们；were＝过去的be形式；tired＝疲倦的；yesterday＝昨天；worked/work＝工作，过去式／原形；not＝不；Yes＝是的；did＝帮助组成过去普通动作问句。",
+      "answer": "①They were not tired yesterday.（他们昨天不累。）Were they tired yesterday?（他们昨天累吗？）Yes, they were.（是的，他们昨天累。）②Did they work yesterday?（他们昨天工作了吗？）①原句有be，were直接前移；②原句worked是普通动作动词，需Did帮助提问并把worked还原。",
+      "steps": [
+        "①tired说明状态，真正的动词是were；先圈出were，不把tired当作过去式。",
+        "①否定只在were后加not，不加did。",
+        "①疑问将Were前移，主语仍是they，状态tired与时间yesterday保留。",
+        "①短答保持were。题目分别练习否定改写和肯定短答，不要求它们构成同一个真实对话。",
+        "②先识别worked是工作这个普通动作，过去问句用Did＋they＋work。",
+        "对照两句：都是昨天，但动词路线不同；时间相同不代表都要用did。"
+      ],
+      "commonErrors": [
+        "写Did they were tired；写Were they worked；给be问句用Yes, they did作短答。"
+      ],
+      "estimatedMinutes": 9
+    },
+    {
+      "id": "w2-en-ex5",
+      "title": "第五阶：读懂习惯与一次例外，不作过度推断",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "阅读原创短文：She usually studies after work. Yesterday she worked late. She was tired. She did not study.\n词义：She/she＝她；usually＝通常；studies/study＝学习的单数形式／原形；after＝在……之后；work＝工作，after work中为名词；after work＝下班后；Yesterday＝昨天；worked＝工作，过去式；late＝到很晚／晚；was＝过去的be形式；tired＝疲倦的；did＝帮助组成过去否定；not＝不。\n①写她平时的学习习惯。②写昨天的工作和学习情况。③能否据此说“她从不学习”？说明理由。④解释studies、worked、was、did not study为什么用这些形式，并把She was tired.改为一般疑问句。",
+      "answer": "①她通常下班后学习。②昨天工作到很晚，感到疲倦，没有学习。③不能；没有学习只针对昨天，与通常下班后学习不矛盾。④studies表达通常习惯，She配单数形式；worked讲昨天的工作，用规则过去式；was讲过去的状态，She配was；did not已表示过去否定，study用原形。问句为Was she tired?（她那时累吗？）后两句的过去时间承接昨天。",
+      "steps": [
+        "第一句usually配合句意说明平时安排，不把这一句也改成昨天。",
+        "第二句Yesterday开启昨天的叙述，worked late说明那次工作到很晚。",
+        "第三句was把疲倦放在同一过去情境中；主语She对应was，而非were。",
+        "第四句否定的是昨天学习这件事。did承担过去，study保留原形。",
+        "回答推断题时比较通常习惯和一次情况，昨天没做不能推出永远不做；也不能判断她今天是否已经学习。",
+        "最后单独改写be句：将Was前移，保留she与tired，不能用Did she was tired。所有英文词义都可回查题干。"
+      ],
+      "commonErrors": [
+        "整段都套成同一时态；只改Yesterday后的第一个动词；把一次没学扩大为从不学习；把was句混入did。"
+      ],
+      "estimatedMinutes": 10
+    }
+  ],
+  "practice": [
+    {
+      "id": "w2-en-pr1",
+      "title": "基础：没有时间词也要读语境",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "两种情境选形式并解释：①介绍平时安排：She _____ at home.（works/worked）②继续讲昨天的经历：She _____ at home.（works/worked）两个句子都没有另写时间词，是否只能猜？\n词义：She＝她；works/worked＝工作的现在单数形式／过去式；at＝在；home＝家；at home＝在家。",
+      "answer": "①works，译“她在家工作”，说通常安排。②worked，译“她昨天在家工作了”，过去来自已给语境。不必猜，可依据题目明确的时间背景。",
+      "steps": [
+        "先读题干提供的情境，不把判断范围缩到横线附近。",
+        "①是平时，She为单个第三者，选works。",
+        "②是昨天，选worked；没有重复yesterday不等于没有过去依据。"
+      ],
+      "commonErrors": [
+        "只在句子里搜时间词而忽略明确语境；将①译成此刻一定正在工作。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w2-en-pr2",
+      "title": "基础：现在肯定句的小块配对",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "填空并说明主语配对：①I _____ at home.（study/studies）②She _____ home after work.（go/goes）③They _____ a book.（have/has）均在介绍目前通常情况。\n词义：I＝我；She＝她；They＝他们；study/studies＝学习；go/goes＝去，和home连用为回家；home＝家／回家的方向；at home＝在家，at＝在；after＝在……之后；work＝工作，名词；after work＝下班后；have/has＝有；a＝一本；book＝书。",
+      "answer": "①study，“我在家学习”。②goes，“她下班后回家”。③have，“他们有一本书”。I与They在这里用原形，She用对应的单数形式goes。",
+      "steps": [
+        "确认都是本课现在肯定句，不添加do/does或be。",
+        "①I配study原形；②She配goes，不能写gos。",
+        "③They配have，has对应单个第三者而不是复数They。"
+      ],
+      "commonErrors": [
+        "把I也当第三人称单数；将goes写成gos；误给They配has。"
+      ],
+      "estimatedMinutes": 4
+    },
+    {
+      "id": "w2-en-pr3",
+      "title": "应用：过去叙述里分别用规则与不规则形式",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "括号词变为合适形式：Yesterday she _____（study）at home. She _____（go）to work. She _____（have）a book then.\n词义：Yesterday＝昨天；she/She＝她；study＝学习；at＝在；home＝家；at home＝在家；go＝去；to＝到／往；work＝工作，在to work中表示工作的地点或活动；go to work＝去上班；have＝有；a＝一本；book＝书；then＝那时，指上述过去情境。",
+      "answer": "studied；went；had。译“昨天她在家学习了。她去上班了。她那时有一本书”。三句都在说过去，不能从材料推出今天是否仍有那本书。",
+      "steps": [
+        "Yesterday开启过去背景，后两句延续同一背景，then再次指向那时。",
+        "study按辅音加y规则改为studied。",
+        "go与have不硬加ed，分别用went、had。",
+        "to work中的work不是本句另一个谓语，不改为worked。"
+      ],
+      "commonErrors": [
+        "只把第一句改为过去；写goed或haved；把名词work也改为worked。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w2-en-pr4",
+      "title": "应用：现在问句与否定，复数也不能漏do",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①They check the box every day. 改为一般疑问句。②She studies at home. 改为否定句。并分别说明为什么选do或does。\n词义：They/they＝他们；check＝检查；the＝特指这个；box＝箱子；every＝每个；day＝一天；every day＝每天；She＝她；studies/study＝学习的单数形式／原形；at＝在；home＝家；at home＝在家；do/does＝帮助组成现在问句或否定；not＝不。",
+      "answer": "①Do they check the box every day?（他们每天检查这个箱子吗？）They用do，check仍为原形。②She does not study at home.（她不在家学习。）She用does，studies还原成study；does not也可写doesn't。",
+      "steps": [
+        "两句都是现在的普通动作句，不用be路线。",
+        "①问句在They前放Do，保持check原形和原时间信息。",
+        "②否定在She后放does not，随后还原study。",
+        "解释主语差异：They是复数，She是单个第三者；不是用中文是否有“做”决定do。"
+      ],
+      "commonErrors": [
+        "①只加问号而不加Do；②写does not studies；改写时丢掉every day。"
+      ],
+      "estimatedMinutes": 5
+    },
+    {
+      "id": "w2-en-pr5",
+      "title": "迁移：纠正重复变形，再限定句子含义",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "下面是有错误的练习句，请改正并说理由：①Did she went home yesterday? ②She did not studied yesterday. 改正后，②能否证明她从不学习？\n词义：Did/did＝帮助组成过去疑问或否定；she/She＝她；went/go＝去，过去式／原形；home＝家／回家的方向；yesterday＝昨天；not＝不；studied/study＝学习，过去式／原形。",
+      "answer": "①Did she go home yesterday?（她昨天回家了吗？）②She did not study yesterday.（她昨天没有学习。）两句已有did，后面均用原形。②不能证明从不学习，只说明昨天没有学习。",
+      "steps": [
+        "两个句子都已有did，先圈出它，不因有yesterday而再给后面的词变过去。",
+        "①went按配对还原为go，不能只删一个字母。",
+        "②studied还原为study，把ied还原回y。",
+        "解释否定范围：昨天一次的情况不能推出平时从不学习。"
+      ],
+      "commonErrors": [
+        "把went还原成不存在的词；将studied改为studies；把昨天没学扩大到所有时间。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w2-en-pr6",
+      "title": "迁移：相同时间，先分两条改写路线",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创句子：①She was tired yesterday. ②She worked yesterday. 两句都改为否定句和一般疑问句；分别圈出原句动词，并说明为什么不能共用一种改法。\n词义：She/she＝她；was＝过去的be形式；tired＝疲倦的；yesterday＝昨天；worked/work＝工作，过去式／原形；not＝不；did＝帮助组成过去普通动作否定或疑问。",
+      "answer": "①原动词was：She was not tired yesterday.（她昨天不累。）Was she tired yesterday?（她昨天累吗？）②原动词worked：She did not work yesterday.（她昨天没有工作。）Did she work yesterday?（她昨天工作了吗？）①是be状态句，②是普通动作句。",
+      "steps": [
+        "先圈was与worked，不能只看两句都有yesterday。",
+        "①保留was：否定加not，疑问把Was移到主语前。",
+        "②用did：否定用did not work，疑问用Did she work。",
+        "逐句检查没有混出did was或was work；最后用中文核对状态和动作的区别。"
+      ],
+      "commonErrors": [
+        "把两句都写成Did开头；把worked句写成Was she work；be否定时删除was。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "一般现在时就是现在这一刻正在做。",
+      "why": "本课一般现在时主要讲习惯、通常情况或相对稳定的状态，不能据此证明此刻正在进行。",
+      "right": "She studies after work.（She＝她；studies＝学习；after＝在……之后；work＝工作，名词；after work＝下班后。）在本课习惯语境中译“她下班后学习”，不等于此刻正在学习。"
+    },
+    {
+      "wrong": "主语是She，动词在所有句子里都要加s。",
+      "why": "现在肯定动作句、过去句以及用了does/did的句子要求不同。",
+      "right": "She worked yesterday.（She＝她；worked＝工作，过去式；yesterday＝昨天；译“她昨天工作了”。）过去肯定句用worked，不写workeds；用了does/did后普通动词另须还原。"
+    },
+    {
+      "wrong": "所有过去式都直接加ed，出现原形就一定是现在。",
+      "why": "go—went等为不规则变化；did后用原形但整句仍是过去。",
+      "right": "Did she go home yesterday?（Did＝帮助组成过去问句；she＝她；go＝去，原形；home＝家／回家的方向；yesterday＝昨天；译“她昨天回家了吗？”）整句说过去，go仍须原形。"
+    },
+    {
+      "wrong": "有了does或did，后面的studies／studied不用动。",
+      "why": "本课普通动词否定和一般疑问中，does/did已经承担相应变化，后面用原形。",
+      "right": "She does not study.（She＝她；does＝帮助组成现在否定；not＝不；study＝学习；译“她不学习”。）She did not study yesterday.（She＝她；did＝帮助组成过去否定；not＝不；study＝学习；yesterday＝昨天；译“她昨天没学习”。）两句都用study，时间仍不同。"
+    },
+    {
+      "wrong": "过去问句一律在句首加Did，包括was/were句。",
+      "why": "本课be句自带合适的be形式，直接前移；普通动作句才用did加原形。",
+      "right": "Was she tired yesterday?（Was＝过去的be形式；she＝她；tired＝疲倦的；yesterday＝昨天；译“她昨天累吗？”）不再加did，也不把was换成be。"
+    },
+    {
+      "wrong": "一段里所有句子必须同一时态，或者每句都必须有自己的时间词。",
+      "why": "一段可以先说习惯再说过去的一次；同一过去背景也可延续到没有重复时间词的句子。",
+      "right": "先辨习惯与事件的切换，再逐个检查真正的动词；时间背景可能来自上一句，不能只扫一个词尾。"
+    },
+    {
+      "wrong": "昨天没学习，就能推出这个人从来不学习。",
+      "why": "一次过去否定只涉及所给时间，不能任意扩大到所有时间。",
+      "right": "把“平时通常做”和“昨天没做”分开记录；回答阅读问题时只作文本支持的判断。"
+    }
+  ],
+  "quiz": {
+    "instructions": "闭卷20分钟，四题各5分，共20分。可看题内词义，不查正文和答案；可以用完整形式或本课已教的正确缩写。逐点评分后还要核对关键检查，达到16分不自动等于通过。后续30分钟订正已计入180分钟。本测无音频，只评价本课书面基础。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w2-en-quiz1",
+        "title": "同一段中的习惯与过去",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "填空，并分别写出第一句与后两句的时间依据：She usually _____（study）at home. Yesterday she _____（work）late. She _____（check）the box after work.\n词义：She/she＝她；usually＝通常；study＝学习；at＝在；home＝家；at home＝在家；Yesterday＝昨天；work＝工作，作动词；late＝到很晚；check＝检查；the＝特指这个；box＝箱子；after＝在……之后；after work＝下班后，其中work作名词。",
+        "answer": "studies；worked；checked。第一句usually配合句意说平时习惯，She配studies；后两句讲昨天的经过，Yesterday开启过去背景，第三句继续同一背景。译“她通常在家学习。昨天她工作到很晚。她下班后检查了这个箱子”。",
+        "steps": [
+          "第一句先判通常习惯，再按She选studies。",
+          "第二句昨天用worked。",
+          "第三句延续昨天，用checked；after work里的work是名词，不随之变化。",
+          "说明前后时间区别，不把整段机械统一为一种时态。"
+        ],
+        "commonErrors": [
+          "漏改第三句；把study写成studys；把after work写成after worked。"
+        ],
+        "estimatedMinutes": 4,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "第一空studies拼写正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "第二空worked正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "第三空checked正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明第一句是通常习惯，依据usually与句意。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明后两句都属昨天的过去叙述；只说第二句有Yesterday、未说明第三句承接，给0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w2-en-quiz2",
+        "title": "用主语与原形纠正现在句",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "两句均在说平时情况，但各有一处错误：①The workers does not work at home. ②Does the worker studies at home?\n写出两个正确句子，再解释两句为什么分别用do与does，以及②后面为什么用study。\n词义：The/the＝特指这些／这位；workers＝工人，复数；worker＝工人，单数；does/do＝帮助组成现在否定或疑问；not＝不；work＝工作，动词；at＝在；home＝家；at home＝在家；studies/study＝学习的单数形式／原形。",
+        "answer": "①The workers do not work at home.（这些工人不在家工作。）②Does the worker study at home?（这位工人在家学习吗？）①主语The workers是复数，用do；②主语the worker指单个第三者，用does。②有does后，studies须还原为study；①do not可写don't。",
+        "steps": [
+          "先圈两句完整主语，不把workers的复数s当成动词的单数变化。",
+          "①主语是多个工人，现在否定用do not，保留work原形和at home。",
+          "②主语是一个工人，句首Does正确；把studies改成study。",
+          "比较可知，不能把所有s都删掉，也不能看见workers的s就选does；须分别检查主语数量与动词形式。"
+        ],
+        "commonErrors": [
+          "①保留does或误把主语workers改成worker；②删Does而保留studies；把名词复数s与动词单数形式混同。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①保留复数主语The workers，并把does改为do。"
+          },
+          {
+            "points": 1,
+            "criterion": "①其余部分not work at home正确，保持否定和work原形；don't也可。"
+          },
+          {
+            "points": 1,
+            "criterion": "②保留Does the worker，主语单数与问句顺序正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②其余部分study at home?正确，study必须原形；只漏问号给0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释workers复数配do、worker单数配does，并说明does后study用原形；前两项0.5分，原形原因0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w2-en-quiz3",
+        "title": "表示拥有，也要按普通动词还原",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创句子：They had a book yesterday. ①改否定句。②改一般疑问句。③写②的否定简短回答。④解释had应还原为什么，以及have虽表示“有”，为什么本题仍用did。\n词义：They/they＝他们；had/have＝有，过去式／原形；a＝一本；book＝书；yesterday＝昨天；did＝帮助组成普通动词的过去否定或疑问；not＝不；No＝不／不是。",
+        "answer": "①They did not have a book yesterday.（他们昨天没有书。）②Did they have a book yesterday?（他们昨天有书吗？）③No, they did not.（不，他们昨天没有书。）④had还原have；have在本课表示拥有，仍是普通动词，不是be；过去否定和问句用did，后面用原形。did not可写didn't。",
+        "steps": [
+          "圈had，确认它是have的过去式，原句没有be。",
+          "否定在They后放did not；疑问在They前放Did，两处had都还原have。",
+          "a book与yesterday保留；a book在肯定句意为一本书，在这里的否定与疑问中可自然译为有没有书。",
+          "短答跟随did；解释路线依据是动词身份，不能因have不像可见动作就擅自换成be。"
+        ],
+        "commonErrors": [
+          "写did not had或Did they had；认为拥有是状态，就写Were they have；简短回答误用were。"
+        ],
+        "estimatedMinutes": 5,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①They did not或They didn't顺序正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "①其余部分have a book yesterday正确，have必须原形。"
+          },
+          {
+            "points": 1,
+            "criterion": "②Did they have a book yesterday?结构与原形均正确；仅句首大小写或问号疏漏给0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "③No, they did not.或No, they didn't.正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "④说明had还原have，且have是本课普通动词而非be，因此过去否定／疑问用did；只答还原have给0.5分。"
+          }
+        ]
+      },
+      {
+        "id": "w2-en-quiz4",
+        "title": "be的现在与过去，都直接操作",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "按要求处理三个原创句子：①I _____ tired yesterday.（was/were）填空。②They are careful. 改为否定句。③They were tired yesterday. 改为一般疑问句，并作肯定简短回答。④解释②③为什么都不加did。\n词义：I＝我；They/they＝他们；was/were＝过去的be形式；tired＝疲倦的；yesterday＝昨天；are＝现在与They配对的be形式；careful＝细心的；not＝不；Yes＝是的；did＝帮助组成普通动词的过去否定或疑问。",
+        "answer": "①was，“我昨天很累”。②They are not careful.（他们不细心。）③Were they tired yesterday?（他们昨天累吗？）Yes, they were.（是的，他们昨天累。）④两句都有be：②现在的are后直接加not；③过去的were直接前移，不走did加普通动词原形的路线。are not可写aren't。",
+        "steps": [
+          "①先判昨天为过去，再按I选择was；不是所有过去主语都配were。",
+          "②原动词是are，careful说明特点；保留现在形式are，在它后面加not。",
+          "③原动词是were，tired说明过去状态；将Were前移，短答仍用were。",
+          "②③时间不同，但都属于be路线，不能混入did。"
+        ],
+        "commonErrors": [
+          "①I配were；②将are改成were或添did；③写Did they were或用Yes, they did回答。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①was正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②They are not careful.或They aren't careful.，必须保持现在be并正确否定，不含did。"
+          },
+          {
+            "points": 1,
+            "criterion": "③Were they tired yesterday?，必须were前置且不含did；仅句首大小写或问号疏漏给0.5分。"
+          },
+          {
+            "points": 1,
+            "criterion": "③肯定短答Yes, they were.正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "④说明两句都有be，分别直接加not／前移，不能套did路线；只说不能加did而无依据不给分。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "总分至少16/20，且下面关键检查全部通过。",
+        "w2-en-quiz1能把通常的习惯与昨天的两个动作分开，不能只改昨天的第一个动词。",
+        "w2-en-quiz2能按workers复数／worker单数区分do与does，否定保留not，疑问中studies还原study；不能靠改掉原主语来规避配对。",
+        "w2-en-quiz3的否定与疑问都正确使用did，并把had还原成have；不能因“有”表示拥有就误用be。",
+        "w2-en-quiz4的现在否定保留are并加not，过去疑问把were前移；两句都不混入do/does/did。",
+        "至少一道原错题遮答重做正确并说明原因；原本全对则解释quiz2—4为什么分成两条路线。达标只代表本课书面技能，不代表真实听力或2028高考整体水平。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w2-en-quiz1"
+        ],
+        "sectionIds": [
+          "w2-en-s2",
+          "w2-en-s3",
+          "w2-en-s4",
+          "w2-en-s5"
+        ],
+        "action": "先分“平时习惯”和“昨天经过”两个框，再在过去框内逐个圈动词；区别after work中的名词。回做pr1或pr3相应小题，再遮答重做quiz1。"
+      },
+      {
+        "questionIds": [
+          "w2-en-quiz2"
+        ],
+        "sectionIds": [
+          "w2-en-s3",
+          "w2-en-s6"
+        ],
+        "action": "先圈workers／worker，分清名词复数与单数主语，再分别选do／does；已出现does的问句中把studies还原study。回做pr4，解释两个主语为什么配不同的帮助词，再遮答重做quiz2。"
+      },
+      {
+        "questionIds": [
+          "w2-en-quiz3"
+        ],
+        "sectionIds": [
+          "w2-en-s5",
+          "w2-en-s7"
+        ],
+        "action": "口述have—had，确认表示拥有的have在本课仍走普通动词路线，再先写did not或Did，后填have原形。回读第5节拥有的例句并做pr5的还原检查，再遮答重做quiz3。"
+      },
+      {
+        "questionIds": [
+          "w2-en-quiz4"
+        ],
+        "sectionIds": [
+          "w2-en-s1",
+          "w2-en-s8"
+        ],
+        "action": "先圈are／were，分别判断现在与过去，再确认两句都为be句。否定只加not，疑问只前移；回做pr6的be部分并与动作部分对照，再遮答重做quiz4，不能把两个时间混成一个。"
+      },
+      {
+        "questionIds": [
+          "w2-en-quiz1",
+          "w2-en-quiz2",
+          "w2-en-quiz3",
+          "w2-en-quiz4"
+        ],
+        "sectionIds": [
+          "w2-en-s2",
+          "w2-en-s6",
+          "w2-en-s7",
+          "w2-en-s8"
+        ],
+        "action": "30分钟订正优先处理未过的关键检查，再处理最低分题。仍未达标就记录具体错因，留在第2学习周，在下一次本科学习时段继续；不临时加倍刷题或占第三科预留。间隔后重做原错题须注明订正重做，不当作独立新题达标证据。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w2-en-review",
+    "title": "30分钟把错题还原成三个判断",
+    "instructions": [
+      "前5分钟按评分点核分，再查关键检查。在错误旁标一个主要原因：时间判断、主语配对、规则／不规则变化、does/did后还原、be与动作混线；不会词义则先查本题释义。",
+      "接着10分钟按quiz.remediation只回读最相关小节，回做一道对应练习或小题。把主语、时间、动词路线分别画出来，先说理由再写答案。",
+      "接着10分钟遮住答案重做原错题，不边看边抄；原本全对则遮答解释quiz2、quiz3、quiz4为什么用不同的改写路线。重新评分，重做分与首次分分开记录。",
+      "最后5分钟写一条最容易忘的检查，例如“did后写go，不写went”。未达到16分或关键检查未过，保持第2周未完成，在下一次本科学习时段继续；隔开一次其他学习后可再做原错题，标注订正重做，不当成全新测验或另外强加时长。"
+    ]
+  },
+  "mastery": [
+    "借题内词义能说明句子讲平时还是过去；不把“现在时”误解成“此刻正在做”。",
+    "能在本课肯定句中正确使用一般现在时主语配对、规则过去式与go—went、have—had等已学形式。",
+    "能把普通动作句改为否定和疑问，正确选do/does/did，并解释后面的动词为何用原形。",
+    "能独立把be句写成肯定、否定、疑问和简短回答，避免与do/does/did混拼。",
+    "短测至少16/20且全部关键检查通过，能遮答纠正原错题。本课没有音频，不评价真实听辨。"
+  ],
+  "nextStep": "达标后按原学习顺序进入后续英语内容，继续保留“先分be／普通动作—再看时间—再看主语与句子要求”的检查顺序；未达标留在第2周补最薄弱一环。真实听力训练必须另有真实音频与听后任务，不能用本课书面达标替代。",
+  "sourcePolicy": {
+    "authorship": "本课讲解、英文例句、词义提示、前测、例题、练习和短测均为原创基础衔接内容，基于既有第2周一般现在时与一般过去时主题重新展开，未摘录或冒称指定教材原文。",
+    "examStatus": "所有题目标记original，均为原创题，非历年真题。本课用于河南南阳2028高考准备中的跨版本基础补救；教材版本未核定，不虚构章节页码，不声称已核验2028考试大纲、听力安排、题型或分值，也不替学习者选第三科。",
+    "externalSources": []
+  },
+  "audioStatus": "未提供录音、音频文件或真实听辨任务。read的现在与过去形式拼写相同、读音不同，本课仅提示这一事实，不用文字练习冒充发音或听辨训练。所有评分仅覆盖书面理解与本课动词形式；默读、看文本或自行朗读均不能证明真实听力达标。"
+}

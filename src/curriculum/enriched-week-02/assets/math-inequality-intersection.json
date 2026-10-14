@@ -1,0 +1,13 @@
+{
+  "id": "w2-math-figure-interval",
+  "title": "不等式组的共同部分",
+  "asset": "assets/math-inequality-intersection.svg",
+  "altText": "相同数轴上的两条条件x≤5和x>−2，重合范围−2<x≤5；−2空心、5实心；整数解−1至5。",
+  "linkedSectionIds": [
+    "w2-math-s6"
+  ],
+  "linkedQuestionIds": [
+    "w2-math-ex4"
+  ],
+  "renderingNote": "Sidecar static figure. Current number-line renderer uses filled point markers only, so this open/closed interval image must not be encoded as a position/displacement diagram. Equivalent explanation is present in lesson text; image requires explicit static-figure integration."
+}

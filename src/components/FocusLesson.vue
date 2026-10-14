@@ -46,7 +46,7 @@ watch(() => props.step, focusHeading)
     </details>
     <section :key="current.id" class="focus-section" :aria-labelledby="`focus-step-${current.id}`">
       <h2 :id="`focus-step-${current.id}`" ref="heading" tabindex="-1" class="focus-section-title">{{ current.title }}</h2>
-      <EnrichedLessonContent v-if="lesson?.enrichment" :lesson="lesson.enrichment" :step="current.id" @navigate="navigate"/>
+      <EnrichedLessonContent v-if="lesson?.enrichment" :lesson="lesson.enrichment" :figures="lesson.enrichmentFigures" :step="current.id" @navigate="navigate"/>
       <WeekLesson v-else :week="week" :subject="subject" :lesson="lesson" :completed="completed" :section="current.id as LessonSection" />
       <label v-if="checkpointId" class="check-row focus-checkpoint"><input type="checkbox" :checked="completed.includes(checkpointId)" @change="emit('complete', checkpointId, ($event.target as HTMLInputElement).checked)"/><span>{{ lesson?.enrichment ? '本周学习打卡 · ' : '我已实际完成' }}{{ checkpointLabel }}<small>{{ lesson?.enrichment ? '沿用本周历史打卡，不代表深化内容已完成，请按新标准重新核对。' : '仅保存打卡，不计时、不判定掌握，也不自动跳周。' }}{{ (lesson?.audioStatus || lesson?.enrichment?.audioStatus) ? '听力打卡仅表示文字预训练。' : '' }}</small></span></label>
     </section>

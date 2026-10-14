@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1070" role="img" aria-labelledby="title desc">
+<title id="title">得失电子怎样形成离子</title>
+<desc id="desc">微粒计数框图，所有符号只用于数数，不按真实比例，也不表示电子固定轨道。氕原子：核内质子1、中子0，核外电子1，净电荷0；氦-4原子：质子2、中子2、电子2，净电荷0。钠-23原子质子11、中子12、电子11；失去1电子后Na⁺质子11、中子12、电子10，净电荷+1。氯-35原子质子17、中子18、电子17；得到1电子后Cl⁻质子17、中子18、电子18，净电荷−1。</desc>
+<rect width="1120" height="1070" rx="16" fill="#f8fafc"/>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" fill="#17212b">
+<text x="30" y="40" font-size="25" font-weight="700">得失电子：核内不变，电子数改变</text>
+<text x="30" y="71" font-size="17">上排：钠原子失去1个电子 → Na⁺　　下排：氯原子得到1个电子 → Cl⁻</text>
+<rect x="30" y="96" width="505" height="395" rx="12" fill="#ffffff" stroke="#c9d2dc"/>
+<text x="48" y="127" font-size="22" font-weight="700">中性钠-23原子²³Na</text>
+<text x="48" y="155" font-size="16">Z = 11　A = 23</text>
+<rect x="44" y="172" width="477" height="164" rx="8" fill="#edf2f7"/>
+<text x="55" y="196" font-size="16" font-weight="600">核内计数</text>
+<text x="55" y="228" font-size="17">质子 11 个</text>
+<circle cx="200" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="200" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="227" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="227" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="254" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="254" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="281" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="281" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="308" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="308" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="335" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="335" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="362" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="362" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="389" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="389" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="416" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="416" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="443" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="443" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="200" cy="247" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="200" y="252" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<text x="55" y="289" font-size="17">中子 12 个</text>
+<circle cx="200" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="200" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="227" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="227" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="254" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="254" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="281" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="281" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="308" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="308" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="335" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="335" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="362" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="362" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="389" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="389" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="416" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="416" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="443" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="443" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="200" cy="308" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="200" y="313" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="227" cy="308" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="227" y="313" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<rect x="44" y="348" width="477" height="92" rx="8" fill="#ecf7f4"/>
+<text x="55" y="371" font-size="16" font-weight="600">核外计数</text>
+<text x="55" y="406" font-size="17">电子 11 个</text>
+<circle cx="200" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="200" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="227" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="227" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="254" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="254" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="281" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="281" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="308" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="308" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="335" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="335" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="362" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="362" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="389" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="389" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="416" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="416" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="443" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="443" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="200" cy="423" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="200" y="428" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<text x="50" y="471" font-size="19">净电荷数：11−11=0</text>
+<rect x="585" y="96" width="505" height="395" rx="12" fill="#ffffff" stroke="#c9d2dc"/>
+<text x="603" y="127" font-size="22" font-weight="700">钠离子²³Na⁺</text>
+<text x="603" y="155" font-size="16">Z = 11　A = 23</text>
+<rect x="599" y="172" width="477" height="164" rx="8" fill="#edf2f7"/>
+<text x="610" y="196" font-size="16" font-weight="600">核内计数</text>
+<text x="610" y="228" font-size="17">质子 11 个</text>
+<circle cx="755" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="755" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="782" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="782" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="809" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="809" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="836" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="836" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="863" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="863" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="890" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="890" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="917" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="917" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="944" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="944" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="971" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="971" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="998" cy="222" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="998" y="227" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="755" cy="247" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="755" y="252" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<text x="610" y="289" font-size="17">中子 12 个</text>
+<circle cx="755" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="755" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="782" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="782" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="809" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="809" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="836" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="836" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="863" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="863" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="890" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="890" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="917" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="917" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="944" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="944" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="971" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="971" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="998" cy="283" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="998" y="288" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="755" cy="308" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="755" y="313" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="782" cy="308" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="782" y="313" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<rect x="599" y="348" width="477" height="92" rx="8" fill="#ecf7f4"/>
+<text x="610" y="371" font-size="16" font-weight="600">核外计数</text>
+<text x="610" y="406" font-size="17">电子 10 个</text>
+<circle cx="755" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="755" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="782" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="782" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="809" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="809" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="836" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="836" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="863" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="863" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="890" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="890" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="917" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="917" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="944" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="944" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="971" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="971" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="998" cy="398" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="998" y="403" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<text x="605" y="471" font-size="19">净电荷数：11−10=+1</text>
+<rect x="30" y="585" width="505" height="395" rx="12" fill="#ffffff" stroke="#c9d2dc"/>
+<text x="48" y="616" font-size="22" font-weight="700">中性氯-35原子³⁵Cl</text>
+<text x="48" y="644" font-size="16">Z = 17　A = 35</text>
+<rect x="44" y="661" width="477" height="164" rx="8" fill="#edf2f7"/>
+<text x="55" y="685" font-size="16" font-weight="600">核内计数</text>
+<text x="55" y="717" font-size="17">质子 17 个</text>
+<circle cx="200" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="200" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="227" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="227" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="254" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="254" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="281" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="281" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="308" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="308" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="335" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="335" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="362" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="362" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="389" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="389" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="416" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="416" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="443" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="443" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="200" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="200" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="227" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="227" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="254" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="254" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="281" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="281" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="308" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="308" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="335" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="335" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="362" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="362" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<text x="55" y="778" font-size="17">中子 18 个</text>
+<circle cx="200" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="200" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="227" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="227" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="254" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="254" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="281" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="281" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="308" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="308" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="335" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="335" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="362" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="362" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="389" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="389" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="416" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="416" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="443" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="443" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="200" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="200" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="227" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="227" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="254" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="254" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="281" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="281" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="308" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="308" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="335" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="335" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="362" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="362" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="389" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="389" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<rect x="44" y="837" width="477" height="92" rx="8" fill="#ecf7f4"/>
+<text x="55" y="860" font-size="16" font-weight="600">核外计数</text>
+<text x="55" y="895" font-size="17">电子 17 个</text>
+<circle cx="200" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="200" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="227" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="227" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="254" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="254" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="281" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="281" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="308" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="308" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="335" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="335" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="362" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="362" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="389" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="389" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="416" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="416" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="443" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="443" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="200" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="200" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="227" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="227" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="254" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="254" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="281" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="281" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="308" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="308" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="335" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="335" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="362" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="362" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<text x="50" y="960" font-size="19">净电荷数：17−17=0</text>
+<rect x="585" y="585" width="505" height="395" rx="12" fill="#ffffff" stroke="#c9d2dc"/>
+<text x="603" y="616" font-size="22" font-weight="700">氯离子³⁵Cl⁻</text>
+<text x="603" y="644" font-size="16">Z = 17　A = 35</text>
+<rect x="599" y="661" width="477" height="164" rx="8" fill="#edf2f7"/>
+<text x="610" y="685" font-size="16" font-weight="600">核内计数</text>
+<text x="610" y="717" font-size="17">质子 17 个</text>
+<circle cx="755" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="755" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="782" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="782" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="809" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="809" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="836" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="836" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="863" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="863" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="890" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="890" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="917" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="917" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="944" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="944" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="971" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="971" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="998" cy="711" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="998" y="716" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="755" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="755" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="782" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="782" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="809" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="809" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="836" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="836" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="863" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="863" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="890" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="890" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<circle cx="917" cy="736" r="10" fill="white" stroke="#245b9e" stroke-width="1.5"/>
+<text x="917" y="741" text-anchor="middle" font-size="14" fill="#245b9e">+</text>
+<text x="610" y="778" font-size="17">中子 18 个</text>
+<circle cx="755" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="755" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="782" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="782" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="809" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="809" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="836" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="836" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="863" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="863" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="890" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="890" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="917" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="917" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="944" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="944" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="971" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="971" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="998" cy="772" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="998" y="777" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="755" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="755" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="782" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="782" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="809" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="809" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="836" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="836" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="863" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="863" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="890" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="890" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="917" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="917" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<circle cx="944" cy="797" r="10" fill="white" stroke="#64748b" stroke-width="1.5"/>
+<text x="944" y="802" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<rect x="599" y="837" width="477" height="92" rx="8" fill="#ecf7f4"/>
+<text x="610" y="860" font-size="16" font-weight="600">核外计数</text>
+<text x="610" y="895" font-size="17">电子 18 个</text>
+<circle cx="755" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="755" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="782" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="782" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="809" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="809" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="836" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="836" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="863" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="863" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="890" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="890" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="917" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="917" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="944" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="944" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="971" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="971" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="998" cy="887" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="998" y="892" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="755" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="755" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="782" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="782" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="809" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="809" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="836" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="836" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="863" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="863" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="890" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="890" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="917" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="917" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<circle cx="944" cy="912" r="10" fill="white" stroke="#0b7461" stroke-width="1.5"/>
+<text x="944" y="917" text-anchor="middle" font-size="14" fill="#0b7461">−</text>
+<text x="605" y="960" font-size="19">净电荷数：17−18=−1</text>
+<text x="30" y="526" font-size="19">11个电子 → 10个电子：失去一个负单位，净电荷由0变+1。</text>
+<text x="30" y="555" font-size="16">质子仍11个，中子仍12个；元素与质量数均不因这次得失电子改变。</text>
+<text x="30" y="1013" font-size="19">17个电子 → 18个电子：增加一个负单位，净电荷由0变−1。</text>
+<text x="30" y="1045" font-size="15">每个图标只用于计数，非比例、非空间分布；不表示电子沿确定轨道运行。</text>
+</g></svg>

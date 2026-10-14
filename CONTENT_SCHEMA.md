@@ -66,4 +66,4 @@ interface PastPaperSource {
 
 `getStudyWeek` 和 `curriculum` 仅返回导航摘要（标题、内容状态），正文使用 `loadStudyWeek(week)` 异步获取。`src/curriculum/vite-plugin.ts` 在构建时生成84个独立周模块，主JSON不再进入首屏静态依赖。不要让前端页面直接import主JSON；修改后运行单元测试、构建及 `node scripts/check-curriculum-bundle.mjs`。
 
-可选第1周深化overlay在 `enriched-week-01/{subject}.json`，只能用于语数英物化，按 `SubjectWeek.enrichment` 保留其独立结构。接口详见 `enriched-types.ts` 与 `ENRICHMENT_SCHEMA.md`；前测、讲解自检、例题、练习、短测、订正与图不能静默丢字段。overlay不改变原84周基础覆盖统计，也不改变本地打卡模型。
+深化overlay由 `enrichment-config.ts` 按周号、版本、目录明确配置；目前为第1—2周 `enriched-week-01/{subject}.json` 和 `enriched-week-02/{subject}.json`，只能用于语数英物化，按 `SubjectWeek.enrichment` 保留其独立结构。静态图由sidecar与配置关联，编译为独立的 `SubjectWeek.enrichmentFigures`，不改原作者JSON。接口详见 `enriched-types.ts` 与 `ENRICHMENT_SCHEMA.md`；前测、讲解自检、例题、练习、短测、订正与图不能静默丢字段。overlay不改变原84周基础覆盖统计，也不改变本地打卡模型。
