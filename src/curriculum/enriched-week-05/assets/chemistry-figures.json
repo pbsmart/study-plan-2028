@@ -1,0 +1,42 @@
+[
+  {
+    "id": "w5-chemistry-figure-denominator",
+    "title": "分母跟着定义走：溶液体积与溶液质量",
+    "asset": "assets/chemistry-figure1.svg",
+    "altText": "两条路线并列：物质的量浓度c等于指定溶质n除以最终溶液体积V，单位mol/L；溶质质量分数w等于溶质质量除以整个溶液质量，无单位，可写百分数。二者之间需要摩尔质量和溶液密度搭桥。",
+    "description": "先圈出所问的量，再选择分母。溶液包含溶质和溶剂，不能用水的体积代替最终溶液体积，也不能把百分数直接读成mol/L。",
+    "renderingNote": "画两个平行分数卡：左c=n(指定溶质)/V(最终溶液)，下标mol/L；右w=m(溶质)/m(整个溶液)，下标无量纲。用颜色框出两个不同分母。底部仅用M和ρ作概念连桥，不写未解释的密度换算总公式。纯数学信息图，不画操作器材，不使用练习或测验数据。",
+    "linkedSectionIds": [
+      "w5-chemistry-section-concentration",
+      "w5-chemistry-section-fraction"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w5-chemistry-figure-sample-dilute",
+    "title": "取样与稀释改变的是不同的量",
+    "asset": "assets/chemistry-figure2.svg",
+    "altText": "上排均一溶液分成大小两份，n与V同比例分开，两份c相同；下排同一份溶液只加水且无反应无溶质损失，n保持，最终V增大，c变小。示意点仅代表溶质计量份额，不代表真实NaCl分子。",
+    "description": "取样是分走溶液，稀释是同一份溶质分布在更大的最终体积中。先确定追踪的是哪一份，才能说守恒。",
+    "renderingNote": "采用几何矩形而非实验器皿。上排一个均匀网格框按1:3分开，溶质符号数和框面积均按1:3分配，注明c相同；下排原框与放大框放相同数量符号，注明n不变、V增大、c减小。符号标注“计量份额，非真实微粒图”。不画水量数值或器具步骤。",
+    "linkedSectionIds": [
+      "w5-chemistry-section-dilution",
+      "w5-chemistry-section-sampling",
+      "w5-chemistry-section-scope"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w5-chemistry-figure-mixing-ledger",
+    "title": "混合先加溶质量，再除最终体积",
+    "asset": "assets/chemistry-figure3.svg",
+    "altText": "两份同溶质溶液分别以c₁V₁和c₂V₂求n，合并为n总；用题给最终溶液体积V终相除得到c终。仅当题目明确体积可加和时，V终才取V₁加V₂。",
+    "description": "可以相加的是无反应、无损失条件下同一溶质的mol；两个浓度通常不能直接取平均，两个体积也不能无条件相加。",
+    "renderingNote": "两路输入“c₁、V₁(L)”和“c₂、V₂(L)”各到n₁、n₂，再汇入n总=n₁+n₂，最后c终=n总/V终；V终从单独的题给条件框接入，框中写“题给/明确可加和”。旁注“不默认V终=V₁+V₂”。仅用符号不泄露题目答案。",
+    "linkedSectionIds": [
+      "w5-chemistry-section-mixtures",
+      "w5-chemistry-section-units"
+    ],
+    "linkedQuestionIds": []
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "w5-math-input-points",
+    "title": "有限输入与区间输入产生不同图像",
+    "asset": "assets/math-input-points.svg",
+    "altText": "左图只有三个允许输入对应的散点，不能连接；右图保留定义域[−1,2)内全部输入的线段，左端实心、右端空心。两图横轴输入，纵轴输出。",
+    "description": "左图只有三个允许输入对应的散点，不能连接；右图保留定义域[−1,2)内全部输入的线段，左端实心、右端空心。两图横轴输入，纵轴输出。",
+    "linkedSectionIds": [
+      "w5-math-s2",
+      "w5-math-s3"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w5-math-output-witness",
+    "title": "输出边界要找允许输入作见证",
+    "asset": "assets/math-output-witness.svg",
+    "altText": "y=x²只保留−2<x≤2。左端(−2,4)空心，但右端(2,4)实心，所以输出4仍属于值域；输入0产生最小输出0，值域[0,4]。",
+    "description": "y=x²只保留−2<x≤2。左端(−2,4)空心，但右端(2,4)实心，所以输出4仍属于值域；输入0产生最小输出0，值域[0,4]。",
+    "linkedSectionIds": [
+      "w5-math-s5",
+      "w5-math-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w5-math-output-gap",
+    "title": "分段函数的输出可能有缺口",
+    "asset": "assets/math-output-gap.svg",
+    "altText": "教学规则：−2≤x<0时y=x，0≤x≤2时y=x+2。第一段输出[−2,0)，第二段[2,4]，0≤y<2这一整段没有输出。x=0只对应2，不能在两个分支之间补竖线。",
+    "description": "教学规则：−2≤x<0时y=x，0≤x≤2时y=x+2。第一段输出[−2,0)，第二段[2,4]，0≤y<2这一整段没有输出。x=0只对应2，不能在两个分支之间补竖线。",
+    "linkedSectionIds": [
+      "w5-math-s8"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

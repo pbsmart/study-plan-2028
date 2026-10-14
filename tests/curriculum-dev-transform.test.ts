@@ -17,7 +17,7 @@ it('transforms all enhanced weeks and their SVG URLs through real browser import
       expect(index?.code).toContain('week-01')
       expect(index?.code).toContain('week-84')
       expect(index?.code).not.toContain('.svg')
-      for (const [week, figureCount] of [[1, 0], [2, 4], [3, 6], [4, 7]]) {
+      for (const [week, figureCount] of [[1, 0], [2, 4], [3, 6], [4, 7], [5, 10], [6, 10]]) {
         const number = String(week).padStart(2, '0')
         const transformed = await server.transformRequest(`virtual:study-curriculum/week-${number}`)
         expect(transformed?.code).toContain(`week${number}-enriched-v1`)

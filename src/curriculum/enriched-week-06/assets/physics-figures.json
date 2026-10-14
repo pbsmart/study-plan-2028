@@ -1,0 +1,58 @@
+[
+  {
+    "id": "w6-physics-figure1",
+    "title": "只画选定物体实际受到的力",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "水平地面上的箱子受到竖直向下重力、向上支持力、向右拉力和向左静摩擦；另用虚线隔离箱子。",
+    "description": "先圈定箱子，重力来自地球，支持力和摩擦力来自地面，拉力来自绳。箱子对地面的力不画进箱子的受力图。",
+    "renderingNote": "教学图非题解。画粗糙水平面和静止箱子，绳水平向右，明确右侧文字“箱子有向右相对运动趋势”；受力箭头从代表点起，G↓、N↑、F→、f_s←；施力者用文本列表。另画独立的地面小示意与箱子对地面的压力，浅灰并标“研究对象换成地面时才画在它身上”。不要把压力与支持力画为箱子上一对抵消力。",
+    "linkedSectionIds": [
+      "w6-physics-s2",
+      "w6-physics-s3",
+      "w6-physics-s5"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w6-physics-figure2",
+    "title": "弹簧形变量是与原长的差",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "三根水平弹簧分别为原长10厘米、伸长后14厘米、压缩后7厘米；对应形变量0、4厘米、3厘米。",
+    "description": "先标原长，再求总长与原长的差；拉伸和压缩都会产生使弹簧恢复原长的弹力。",
+    "renderingNote": "三行同一起点固定端：原长10 cm，拉伸总长14 cm、物块右端受弹簧力向左，压缩总长7 cm、物块右端受弹簧力向右。虚线标原长末端，Δl伸长4 cm=0.04 m，压缩量3 cm=0.03 m。此是示意而非按比例实物图；只有在弹性限度内用F=k|Δl|。",
+    "linkedSectionIds": [
+      "w6-physics-s4"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w6-physics-figure3",
+    "title": "静摩擦的实际值与上限",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "教学条形对比：最大静摩擦10牛；静止所需摩擦3牛、8牛均可，所需12牛超出上限不可。",
+    "description": "静止阶段先找需要多大的摩擦，再核对上限；上限不是每次都取到的实际值。",
+    "renderingNote": "不画f对F的连续状态曲线，以免暗示唯一动力学路径。三个独立静止假设卡片：水平所需3 N,8 N,12 N，上限均10 N。3与8标可实现实际值；12标超限，不能保持原静止。标记这些是三个独立条件，滑动后必须重新使用题给μ_k及N。",
+    "linkedSectionIds": [
+      "w6-physics-s5",
+      "w6-physics-s6"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w6-physics-figure4",
+    "title": "支持力会随竖直外力改变",
+    "asset": "assets/physics-figure4.svg",
+    "altText": "三幅接触地面的箱子图，重力均30牛；无竖直外力支持30牛，另有向上8牛支持22牛，另有向下8牛支持38牛。",
+    "description": "同样的重物，向上拉会分担地面的支持，向下压会增加地面负担。这里只比较题设竖直方向没有速度变化的接触状态。",
+    "renderingNote": "教学图，非任何题的答案。三小图统一箱子G=30 N向下；第一N=30 N向上；第二P=8 N向上、N=22 N向上；第三P=8 N向下、N=38 N向上。写每幅竖直和式30=30；22+8=30；38=30+8。明确P是额外竖直外力而不是斜力分量，不引入三角分解。",
+    "linkedSectionIds": [
+      "w6-physics-s3",
+      "w6-physics-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

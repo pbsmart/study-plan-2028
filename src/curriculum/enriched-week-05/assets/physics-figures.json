@@ -1,0 +1,57 @@
+[
+  {
+    "id": "w5-physics-figure1",
+    "title": "位置图的线不是物体走过的路线",
+    "asset": "assets/physics-figure1.svg",
+    "altText": "x-t图依次连接(0秒,2米)、(2秒,6米)、(4秒,6米)、(6秒,0米)，右侧另画真实水平位置轴。",
+    "description": "横轴是时间，纵轴是位置。图上向右只代表时间推进；速度方向由位置随时间的增减判断。",
+    "renderingNote": "教学图，非任何题的答案。并列左侧x-t折线图与右侧一维位置轴：左横轴t/s从0到6，纵轴x/m从0到6，标2和6，折线经过(0,2)(2,6)(4,6)(6,0)；按蓝、灰、橙分三段。右侧水平位置轴原点0、位置2和6，箭头2→6标前2秒，位置6驻留标2—4秒，箭头6→0标4—6秒。明确两图不是同一空间坐标系。不要将折线形状画为实际轨迹。",
+    "linkedSectionIds": [
+      "w5-physics-s2",
+      "w5-physics-s3"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w5-physics-figure2",
+    "title": "同样的斜率计算，不同的纵轴单位",
+    "asset": "assets/physics-figure2.svg",
+    "altText": "左右两幅图分别以位置和速度为纵轴；从两个端点画出横向时间变化量和纵向变化量。",
+    "description": "斜率始终是纵轴变化量除以时间变化量；位置图得到速度，速度图得到加速度。",
+    "renderingNote": "左x-t教学示意取(1,1)(3,5)，横轴t/s、纵轴x/m，标Δt=2 s、Δx=4 m，斜率=2 m/s。右v-t教学示意取(1,1)(3,5)，纵轴v/(m/s)，标Δv=4 m/s、Δt=2 s，斜率=2 m/s²。坐标单位必须完整；该图不是题解。",
+    "linkedSectionIds": [
+      "w5-physics-s3",
+      "w5-physics-s4"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w5-physics-figure3",
+    "title": "速度图的正负面积与零点",
+    "asset": "assets/physics-figure3.svg",
+    "altText": "v-t教学直线从(0秒,2米每秒)下降到(4秒,负2米每秒)，在2秒穿过时间轴；两侧三角形等大。",
+    "description": "先在速度零点分段：上方给正位移，下方给负位移；路程把每块面积的大小相加。",
+    "renderingNote": "横轴t/s 0至4，纵轴v/(m/s) −2至2；直线(0,2)(2,0)(4,−2)。上方淡蓝填色标+2 m，下方淡橙填色标−2 m，旁注位移0 m，路程4 m，2 s前后速度正→负。此为通用教学图，不关联题目；文字明确面积单位是米。",
+    "linkedSectionIds": [
+      "w5-physics-s5",
+      "w5-physics-s6"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w5-physics-figure4",
+    "title": "例4解析图：三段图线，四块面积",
+    "asset": "assets/physics-figure4.svg",
+    "altText": "答案图：v-t折线经过(0,0)(2,4)(5,4)(8,−2)，标出7秒速度零点和四块面积4、12、4、负1米。",
+    "description": "解析核对：5—8秒这一条线经过7秒零点，路程必须在零点再切一刀。",
+    "renderingNote": "仅在例4展开答案后显示。横轴t/s0至8，纵轴v/(m/s)−2至4；严格通过指定点；虚线标2、5、7、8秒，四块区域标+4 m,+12 m,+4 m,−1 m；附位移19 m，路程21 m，勿放在题干前。",
+    "linkedSectionIds": [],
+    "linkedQuestionIds": [
+      "w5-physics-ex4"
+    ],
+    "answerOnly": true
+  }
+]

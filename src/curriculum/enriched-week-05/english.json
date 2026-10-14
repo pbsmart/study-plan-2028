@@ -1,0 +1,863 @@
+{
+  "id": "w5-英语",
+  "week": 5,
+  "subject": "英语",
+  "title": "从打算到应答：will与be going to的真实语境",
+  "revision": "week05-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "先读通一段计划交流，区分谈论的未来动作、此前决定和说话时的回应，不凭tomorrow单独猜结构。",
+    "掌握will＋动词原形与am/is/are going to＋动词原形，能作否定、一般疑问及简短回答。",
+    "能说明两种结构在计划、预测中有重叠，区分“语法错误”与“该语境常见选择”，不伪造唯一答案。",
+    "用四五个有联系的句子表达计划、临时帮助与一个简单条件，读后能指出尚未发生的事情。"
+  ],
+  "prerequisites": [
+    "第1周的主语和动词、第2周的时间与问句、第3周的主语中心及单复数、第4周的原文证据继续使用。",
+    "本周先补I/he/we与am/is/are配对、原形和三单区别；不要求预先会完成时或进行时。",
+    "题内词义与正文常用词索引均可查，不另加背词时段；先独立作答，再看译文与解释。",
+    "全部英文场景为原创书面材料，无音频；不把书面读通或出声自读算作真实听辨与发音达标。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 12,
+    "busyPolicy": "核心180分钟：前测9＋补救12＋七节正文自检45＋五例30＋五练30＋新短测24＋订正30。忙时两周期各90分钟：第一周期前测、补救、正文、例1—4；第二周期例5、五练、短测、订正。查词、翻译核对和自检均计入。第8节“其他未来表达”选读12分钟，明确在180分钟之外，不纳入20分短测或过关条件；不选不影响推进。超时下次英语学段续本周，不自动跳周、不占第三科预留。",
+    "segments": [
+      {
+        "id": "w5-en-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w5-en-d1",
+          "w5-en-d2",
+          "w5-en-d3"
+        ]
+      },
+      {
+        "id": "w5-en-time2",
+        "title": "前置补救，已会者在同槽解释理由",
+        "minutes": 12,
+        "activityIds": [
+          "w5-en-r1"
+        ]
+      },
+      {
+        "id": "w5-en-time3",
+        "title": "连贯概念讲解与每节自检",
+        "minutes": 45,
+        "activityIds": [
+          "w5-en-s1",
+          "w5-en-s2",
+          "w5-en-s3",
+          "w5-en-s4",
+          "w5-en-s5",
+          "w5-en-s6",
+          "w5-en-s7"
+        ]
+      },
+      {
+        "id": "w5-en-time4",
+        "title": "五阶完整例题",
+        "minutes": 30,
+        "activityIds": [
+          "w5-en-ex1",
+          "w5-en-ex2",
+          "w5-en-ex3",
+          "w5-en-ex4",
+          "w5-en-ex5"
+        ]
+      },
+      {
+        "id": "w5-en-time5",
+        "title": "五道分层独练",
+        "minutes": 30,
+        "activityIds": [
+          "w5-en-pr1",
+          "w5-en-pr2",
+          "w5-en-pr3",
+          "w5-en-pr4",
+          "w5-en-pr5"
+        ]
+      },
+      {
+        "id": "w5-en-time6",
+        "title": "全新20分短测",
+        "minutes": 24,
+        "activityIds": [
+          "w5-en-quiz1",
+          "w5-en-quiz2",
+          "w5-en-quiz3",
+          "w5-en-quiz4"
+        ]
+      },
+      {
+        "id": "w5-en-time7",
+        "title": "核分、定点回看、遮答订正",
+        "minutes": 30,
+        "activityIds": [
+          "w5-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题共9分钟，不计20分。词义可以查；不会先写中文句意，再标主语和动作。用12分钟补救槽补最弱项，已会者解释错误形式为何不合结构。",
+    "questions": [
+      {
+        "id": "w5-en-d1",
+        "title": "先认主语与原形",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "找句子的完整主语和动作：“The woman near the door checks the tickets.” 把checks对应的动词原形写出。\n词义：the＝这位／这些；woman＝女士；near＝在……附近；door＝门；check＝检查；tickets＝票。",
+        "answer": "完整主语The woman near the door；动作checks；原形check。句意：门边的这位女士检查票。",
+        "steps": [
+          "near the door说明是哪位女士，属于主语内部。",
+          "动作词在完整主语后；原形不带此处的s。"
+        ],
+        "commonErrors": [
+          "把door当主语；把tickets当动作；将checks当原形。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w5-en-d2",
+        "title": "用旧知识补be",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "填am/is/are：①I _____ ready. ②He _____ ready. ③My friends _____ ready.\n词义：I＝我；he＝他；my＝我的；friends＝朋友们；ready＝准备好了。",
+        "answer": "①am；②is；③are。分别是我、他、我的朋友们准备好了。",
+        "steps": [
+          "I与am配。",
+          "he单数配is。",
+          "friends复数配are，不能被my干扰。"
+        ],
+        "commonErrors": [
+          "全部填is；把my当单数主语。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w5-en-d3",
+        "title": "计划不是完成事实",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创便条：“I plan to visit the museum on Sunday. I bought a ticket yesterday.” 能说作者昨天已参观博物馆吗？周日要做什么？\n词义：I＝我；plan＝计划；visit＝参观；the museum＝这家博物馆；on Sunday＝在周日；bought＝买；a ticket＝一张票；yesterday＝昨天。",
+        "answer": "不能。昨天买票，不是昨天参观。计划周日参观博物馆。",
+        "steps": [
+          "分别圈visit与bought的时间。",
+          "买票为已发生，参观仍是计划。"
+        ],
+        "commonErrors": [
+          "把两件事合成昨天参观；看到yesterday把所有动作都看成过去。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "第1题不会找主语或原形",
+        "action": "先做补救节角色和词形两列，再读第2节。",
+        "sectionIds": [
+          "w5-en-r1",
+          "w5-en-s2"
+        ]
+      },
+      {
+        "when": "第2题be配对不稳",
+        "action": "补救槽按人称配be，然后读第3、5节，不先背全部时态表。",
+        "sectionIds": [
+          "w5-en-r1",
+          "w5-en-s3",
+          "w5-en-s5"
+        ]
+      },
+      {
+        "when": "第3题混淆计划与事实",
+        "action": "读第1、4节，给每个动作单独写发生时间与证据。",
+        "sectionIds": [
+          "w5-en-s1",
+          "w5-en-s4"
+        ]
+      },
+      {
+        "when": "三题都能解释",
+        "action": "同槽说明错误选项为什么错，再顺序读核心正文。",
+        "sectionIds": [
+          "w5-en-r1",
+          "w5-en-s1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w5-en-r1",
+      "title": "十二分钟补救：人称、be、原形与词义查阅",
+      "level": "remediation",
+      "paragraphs": [
+        "先把人称读清：I我，you你／你们，he他，she她，it它，we我们，they他们／她们／它们。be是动词家族名；谈现在时，I am，he/she/it is，you/we/they are。完整主语可能带修饰，如The worker near the gate，中心是单数worker，后面用is；near the gate只是说明人在门附近。worker工作人员，gate大门，near在……附近。",
+        "动词原形是词典通常收录的基本形式，如help帮助、read阅读、study学习、bring带来、check检查。普通现在时会因主语变成helps或studies，过去可成helped或studied，但will和going to后本课都接原形。不要把“将来”理解成给动词再加一个s或ed。",
+        "本课常用小词索引，可随时回看：a/an一个，the特指的对象，this这，that那，my我的，your你的，our我们的，his他的，her她的，to向／到或结构连接，for为／持续，with和／带有，in在……里，at在某地或某时，on在某日，and并且，but但是，so所以，not不，now现在，tomorrow明天，tonight今晚，yesterday昨天，next下一个，can能，cannot/can’t不能，yes是，no不。每题再提供场景词义；词义是阅读支持，不替你判断哪种结构合适。",
+        "前4分钟把I/he/we和am/is/are连线，再把helps/studies还原help/study；中间4分钟读小词索引并拆“She checks a list”＝她检查一张清单；后4分钟自检，读错先补人物与动作。只做本课所需前置，不把整张不规则动词表搬进来。"
+      ],
+      "keyPoints": [
+        "be要配完整主语的中心。",
+        "will与going to之后都用动词原形。",
+        "读不懂先查词，词义与结构判断分开。"
+      ],
+      "checkpoint": {
+        "question": "把“她今晚打算学习”先排成“She ___ going to ___ tonight”，两空各承担什么工作？",
+        "answer": "第一空配she选is；第二空表示学习选原形study。整句She is going to study tonight.",
+        "explanation": "is配主语，going to后接study；不能因she就把study写成studies。"
+      }
+    },
+    {
+      "id": "w5-en-s1",
+      "title": "先读完整情境：哪些事已经决定，哪些刚刚回应",
+      "level": "core",
+      "paragraphs": [
+        "原创短文《A Saturday Plan》（一个周六计划）：\nIt is Friday evening. Mei and Jun are at a small bookshop after work. Yesterday, Mei chose a book for her reading group. “I am going to buy it tomorrow,” she says. “We are going to meet at the café at ten on Saturday.” Jun looks at her heavy bag. “I’ll carry that for you,” he says. Then Mei notices a loose handle on the bag. “It is going to break,” she says. “If the café is full tomorrow, we will meet in the park.” They write the second place on their plan.\n这是一段书面情境，没有音频；后面各节都回到这一段。",
+        "场景词义：Friday evening周五晚上；Mei梅、Jun俊（人名）；small小的；bookshop书店；after work下班后；chose选择；book书；reading group读书小组；buy买；it此处指那本书；says/he says说；meet见面；café咖啡馆；ten十；Saturday周六；looks at看着；heavy重的；bag包；carry拿／提；that此处指包；then然后；notices注意到；loose松动的；handle提手；break断裂；if如果；full满的；park公园；write写下；second第二个；place地点；plan计划。am/is/are、will、going to在本课分节学习。",
+        "逐层读意：现在是周五晚，梅和俊下班后在小书店。梅昨天选好书，现在说打算明天买，并说明周六十点的小组见面计划。俊看见重包，当场提出帮提。梅看见提手松动，判断它快断了。最后他们补了咖啡馆满座时去公园的备用地点。这里的预测尚不是“包已经断了”，备用计划也不等于两处都要去。",
+        "先在纸上写三个观察点：昨天的选择；现在的谈话和迹象；明天的购买与见面。will与be going to都可谈未来，选择还涉及说话者想强调什么。先理解这条时间关系，再看结构，才能避免见tomorrow就自动填同一个词。"
+      ],
+      "keyPoints": [
+        "每个动作单独配时间。",
+        "计划、当场回应、眼前迹象可在同段出现。",
+        "预测不等于已经发生，条件计划不等于无条件事实。"
+      ],
+      "checkpoint": {
+        "question": "文中的买书与选书哪件已经发生？咖啡馆是否已经满座？",
+        "answer": "选书昨天已发生；买书是明天的计划。咖啡馆明天是否满座尚未说明，if提出条件。",
+        "explanation": "读句子时保留时间与条件，不把计划当已完成。"
+      }
+    },
+    {
+      "id": "w5-en-s2",
+      "title": "will：结构简单，不能给后面动词再变形",
+      "level": "core",
+      "paragraphs": [
+        "先从俊的“I’ll carry that for you”看。I’ll是I will的缩写，句意是“我来帮你提那个包”。说话者听到或看到需要后，马上提出帮助，用will很自然。will也能表达承诺、愿意做事和预测，不只表示临时决定，不能把一本简化口诀当成全部用法。",
+        "肯定结构是主语＋will＋动词原形。I will carry；she will carry；they will carry，人物变化时will和carry都不变。will后的to carry、carries、carried都不适用于这里。“She will be ready”中ready是状态，需要be把状态接起来，be仍是原形，不写will is ready。ready准备好的。",
+        "为什么原形不再跟she加s？在这一结构里，will已经是句子中承担情态／未来表达的有限动词，后面的动作只用基本形式。入门不必记术语，但可以按两个位置检查：第一格will，第二格完整动作原形。时态不是每个动词都加一次标志。",
+        "本段的明天计划也可以用will陈述，如“We will meet at ten”。这可强调未来安排或承诺，并非只要事前商量过就不准用will。判断“will carry”结构对错与判断“此处哪种说法更顺口”是两件事，后面的练习会要求把理由说清。"
+      ],
+      "keyPoints": [
+        "I’ll＝I will；won’t＝will not。",
+        "各人称will后均用原形。",
+        "will的用途不只临时决定，别把常见用法当唯一许可。"
+      ],
+      "checkpoint": {
+        "question": "把“He will carries the box”修好，并说不能怎样修。词义：he他；carry搬；box箱子。",
+        "answer": "He will carry the box. 不能改成He will to carry the box或He will carried the box.",
+        "explanation": "will后位置需要原形carry，不重复加to、s或过去式。"
+      }
+    },
+    {
+      "id": "w5-en-s3",
+      "title": "be going to：先配be，再放原形动作",
+      "level": "core",
+      "paragraphs": [
+        "梅说“I am going to buy it tomorrow”，联系前句她昨天选好了书，是已有购买意图。“We are going to meet…”说明他们已谈好的见面计划。be going to的基本结构是主语＋am/is/are＋going to＋动词原形。I用am；单数he/she/it用is；you/we/they及复数主语用are。",
+        "把句子分三块读：I am／going to／buy it。am不能省，buy也不能变成buys。去买可写am going to buy，而不是I going to buy；她打算读可写She is going to read，而不是She are going to reads。read读。写错时应检查两处，不只顾最后一个动词。",
+        "going to还可表达有眼前迹象的预测。提手已经松动，梅说“It is going to break”，是根据现在迹象判断未来。此处不是说提手“正在去某地断裂”。在表示未来的结构中，going to已组成表达意图或预测的整体，后面接动作。",
+        "不要把任何go与to连用都看成这套形式。“I go to work by bus”是我坐公交去上班，go表示去，to后是work这个去处／活动，不是未来动作原形。“I am going to work tomorrow”可因语境表示明天打算工作，也可谈明天去上班；先读上下文，不能靠外形保证只有一种分析。by bus乘公交。"
+      ],
+      "keyPoints": [
+        "be不可漏，且与主语配对。",
+        "going to后动作仍是原形。",
+        "已有意图与可见迹象都常用；不是所有go to都是同一结构。"
+      ],
+      "checkpoint": {
+        "question": "“The two workers ___ going to check the door”应怎样补？门是否已检查完？词义：two两个；workers工人；check检查；door门。",
+        "answer": "填are；整句指两名工人打算检查门，不能据此说检查已经完成。",
+        "explanation": "复数主语配are，结构说明未来意图，未给完成结果。"
+      }
+    },
+    {
+      "id": "w5-en-s4",
+      "title": "选择靠语境，重叠处不要伪装唯一答案",
+      "level": "core",
+      "paragraphs": [
+        "给未来表达分类只是帮助看清重心。事前决定常用be going to；当场回应常用will；眼前迹象支持的预测常用be going to；一般看法或相信会发生常用will。但日常交流中这些区域有交叠，一句话换结构可能改变强调点而仍成立。语法学习要能描述这种差异。",
+        "例如小组已约好周六十点见面，说“We are going to meet at ten”突出已有打算；说“We will meet at ten”可以是在确认安排。不能因为出现计划，就把第二句判为语法错误。反之，面对突然的帮助请求，“I’ll help”是常见即时回应；“I’m going to help”可能突出已形成或马上执行的意图，语境解释若合理，不应仅凭标签扣尽分。help帮助。",
+        "预测也是如此。看到松动提手，It is going to break自然地把迹象与判断相连；It will break在警告或判断语境也能说。两种结构都不提供现实百分之百保证，更不能据will这个词推断没有证据，或据going to断言事情必定发生。",
+        "本课的题分两类：指定结构的练习，是测试你能否按要求造句，若要求will就写will；开放选择的练习，要写一种自然表达并给文本理由，对结构正确且理由与语境相容的替代也给分。“不是本题指定结构”不等于“英语里不成立”。"
+      ],
+      "keyPoints": [
+        "语法正确、语境自然、符合题目要求分开看。",
+        "已有计划也能用will确认。",
+        "开放题按结构＋理由判分；不伪造唯一性。"
+      ],
+      "checkpoint": {
+        "question": "单独看到“We ___ visit the farm tomorrow”能只凭tomorrow断言必须填will吗？词义：we我们；visit参观；farm农场。",
+        "answer": "不能。will visit与are going to visit都可，需上下文了解意图或表达重心；tomorrow只把时间放在未来。",
+        "explanation": "未来时间不能单独决定表达形式。"
+      }
+    },
+    {
+      "id": "w5-en-s5",
+      "title": "否定与问句：移动已有的will或be",
+      "level": "core",
+      "paragraphs": [
+        "will否定在will后加not：Jun will not carry the box.＝俊不会／不愿搬这个箱子，具体语气由语境判断。will not可缩为won’t。一般疑问将will放句首：“Will Jun carry the box?”即俊会搬箱子吗；简答“Yes, he will.”或“No, he won’t.”。不另加does，也不把carry变成carries。",
+        "be going to否定把not放在be后：“Mei is not going to buy the bag.”梅不打算买这个包。疑问移动be：“Is Mei going to buy the bag?”简答“Yes, she is.”或“No, she isn’t.”。这里只需回答计划是否存在，不是“Yes, she does”。buy买，bag包，box箱子。",
+        "当你向对方核实他的“I am going to…”时，人物视角也变化：“Are you going to…?”。这不是把am随便换are，而是把我改为你后重新配be。如果题目只是把原句保持同一说话者改为问句，可以是“Am I going to…?”；必须读清题目说保持人物还是向本人询问。",
+        "否定范围也要读。“She isn’t going to buy it tomorrow”通常说她不打算明天买，并不自动等于永远不买。回答阅读问题时保留tomorrow等限制。句式转换不是删去时间再拼句；改后要核对人物、动作、对象、时间四项。"
+      ],
+      "keyPoints": [
+        "will问句移动will，going to问句移动be。",
+        "否定放在will或be后，不另造don’t will。",
+        "人物视角和否定范围要保留。"
+      ],
+      "checkpoint": {
+        "question": "保持同一人物，把“They are going to bring food tonight”改否定和一般疑问。词义：they他们；bring带来；food食物。",
+        "answer": "They are not going to bring food tonight. Are they going to bring food tonight?",
+        "explanation": "they保持复数are；bring、food、tonight都保留。"
+      }
+    },
+    {
+      "id": "w5-en-s6",
+      "title": "把计划写成有联系的几句，再回看全文",
+      "level": "core",
+      "paragraphs": [
+        "计划表达不仅是填动词。至少让读者知道谁、做什么、何时、在哪里或怎样准备；若信息未确定，可不编。比如主文里梅要买那本书，it有前文chose a book承接，不能把it误解为包。俊的that指他刚看到的重包，代词要回到各自句子前后的动作里看。",
+        "一个简短计划可以先说已有意图，再说具体时间地点，接一个即时回应，最后补必要条件。但别为了展示每种时态写彼此不相关的五句，也不要把所有计划包装成真实生活承诺。本课写作使用虚构角色，写你的真实计划时由你自己决定内容。",
+        "看主文最后两句：If the café is full tomorrow, we will meet in the park. They write the second place on their plan. 写下第二地点是现在进行情境中的叙述动作，公园是备用地点。主旨是两人安排周六购书和会面并补备用计划，不能概括成“他们已经在公园读完那本书”。",
+        "写完自己核对四格：主语配不配be；will或going to后的动词是否原形；代词指向是否明确；计划与已发生事情有没有混写。把读短文的证据检查和语法检查放一起做，比孤立背“将来时”一个名称更能帮助真实表达。"
+      ],
+      "keyPoints": [
+        "四格检查：人物、结构、指代、事实状态。",
+        "计划写成连续意思，不堆不相关句。",
+        "尚未确定的信息不编造。"
+      ],
+      "checkpoint": {
+        "question": "主文的it（buy it）与that（carry that）是否指同一物？为什么？",
+        "answer": "不是。it指昨天选好的书；that指俊刚看到的重包。",
+        "explanation": "回到动作对象和前后文，不把所有代词都指给最近任意一个名词。"
+      }
+    },
+    {
+      "id": "w5-en-s7",
+      "title": "一个够用的条件句：如果……就……",
+      "level": "core",
+      "paragraphs": [
+        "核心只增加一个能用的条件模式：“If the café is full tomorrow, we will meet in the park.” 前半是条件，后半是满足条件时的计划。虽然两边都谈明天，if引导这种条件状语从句时，通常用一般现在时is；主句可用will meet。不是每个谈未来的动词都必须带will。",
+        "换成普通动作：“If Mei finishes work early, she will join us.”＝如果梅提前下班，她会加入我们。finish完成；work工作；early早；join加入；us我们。前半仍要运用第3周的一致：Mei单数所以finishes。不能因为这是未来就把旧的一致规则删除，也不写本题含义下的If Mei will finish…。",
+        "也可把条件放后面：“We will meet in the park if the café is full.” 基本条件关系不变。不要把它误读成无论咖啡馆怎样都在公园；也不能据条件句断言条件已满足。改写时最易漏的不是动词，而是if所设范围。",
+        "本周只处理if＝如果的明确条件句，不把规则扩大到所有含if的句子；if还可表示是否，那是后续内容。when表示当……时的类似时间状语从句先作为选读提示，不增加核心题量。学完这一节即可进入例练，不需要先学各种复杂从句。"
+      ],
+      "keyPoints": [
+        "条件与结果分两半。",
+        "未来条件从句通常用现在时，仍要主谓一致。",
+        "if＝是否不套本节简化规则。"
+      ],
+      "checkpoint": {
+        "question": "补全：“If the room ___ free tonight, we will use it.”（be）并说明是否已经确定能用。词义：room房间；free空着的；use使用。",
+        "answer": "is；还没有确定。句子只说如果今晚房间空着就使用。",
+        "explanation": "room单数配is；保留if，不能把条件计划当已确定安排。"
+      }
+    },
+    {
+      "id": "w5-en-s8",
+      "title": "选读十二分钟：安排与时间表也能谈未来",
+      "level": "extension",
+      "paragraphs": [
+        "本节为可跳过的12分钟选读，不计180分钟核心，不进入20分短测或过关条件。第6周会先正式建立进行时的观察时间。本节只帮助你遇到别的未来形式时不误改，不要求熟练产出。",
+        "已约定的安排可用现在进行时：“I am meeting Rui at the station at six tomorrow.”＝我明天六点将在车站与瑞见面。Rui瑞，人名；station车站；six六；meeting见面。am meeting从外形是be＋-ing，但明天及具体约定让它谈未来，并非现在就在见面。",
+        "时间表可用一般现在时：“The evening class starts at seven tomorrow.”＝明天的晚课七点开始。evening class晚课；start开始；seven七。starts并不因tomorrow而必错，它可陈述固定安排的时间表。若换成will start，也可能是在通知未来开始时间，不据一个副词强行判唯一。",
+        "若用when＝当……时引导未来的时间状语从句，可说“When the class ends, I will call you.”＝课结束时我会给你打电话。end结束；call打电话；you你。这里从句ends用现在形式。含when却不是这种从句的问句不可照搬，后续再学。选读后若觉得负担大，保留本课两种核心结构与if句即可。"
+      ],
+      "keyPoints": [
+        "选读不加进核心考核。",
+        "已约定安排与时间表可用别的形式。",
+        "先看语境，再判断时间意义。"
+      ],
+      "checkpoint": {
+        "question": "明天的固定晚课七点开始，The class starts at seven tomorrow一定错吗？",
+        "answer": "不一定错，时间表可用一般现在时；不能只因tomorrow就机械换成will。",
+        "explanation": "本节目标是识别边界，不增加一个必须背会的规则表。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w5-en-ex1",
+      "title": "第一级：同一意图写出完整结构",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "原创情境：Bo chose two books yesterday. He plans to buy them on Friday. 按要求把第二句写成①be going to结构；②will结构，并说明第二种是否因已有计划而语法错误。\n词义：Bo博，人名；chose选择；two两本；books书；yesterday昨天；he他；plans计划；buy买；them它们；on Friday在周五。",
+      "answer": "①He is going to buy them on Friday. ②He will buy them on Friday. ①突出已有打算；②可陈述或确认未来决定，并非语法错误。句意都是他将在周五买那两本书。",
+      "steps": [
+        "找主语he，be配is。",
+        "going to后放原形buy，保留them与on Friday。",
+        "第二句用will buy，不写will buys。",
+        "已有计划解释①为何自然，但不能用它禁止②。"
+      ],
+      "commonErrors": [
+        "漏is；写will to buy；把them换成没有依据的新对象；断言②绝不成立。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-ex2",
+      "title": "第二级：读到困难再给回应",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创对话：\nNing: The bag is too heavy. I cannot lift it.\nYan: Wait. I ___ (help) you.\n在will或be going to中选一种自然表达，说明上下文；再说另一种是否必然有语法错误。\n词义：Ning宁、Yan燕，人名；bag包；too太；heavy重；cannot不能；lift提起；it它；wait等一下；help帮助；you你。",
+      "answer": "常见即时回应：I will help you.（I’ll help you.）燕听到困难后当场提出帮助。I am going to help you也能在突出即将帮助的意图时使用，结构本身没错；本情境will更常见地表达即时回应。译：包太重，我提不起来。等一下，我来帮你。",
+      "steps": [
+        "先读cannot lift it，明确对方遇到的困难。",
+        "从Wait接一句即时帮助，优先will help。",
+        "检查help原形而非helps。",
+        "将自然选择与唯一正确分开，给替代解释。"
+      ],
+      "commonErrors": [
+        "只凭空格选will不说语境；认为going to本身违法；把帮助改成已经帮完。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-ex3",
+      "title": "第三级：预测由迹象支持，但不是已发生",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创场景：The shelf is bending under the books. “It ___ (fall),” says Lan. 用一种自然未来表达，说明依据；能否据此说架子已经倒了？\n词义：shelf架子；is bending正弯曲（这里只供读意）；under在……下面／承受；books书；fall倒下；says说；Lan兰，人名。",
+      "answer": "It is going to fall. 眼前架子被书压得弯曲，支持即将倒下的预测；It will fall作为警告或判断也可。不能说已经倒下，预测不是完成事实。译：书下面的架子正弯曲。兰说：“它要倒了。”",
+      "steps": [
+        "找可见迹象bending。",
+        "it单数，写is going to fall。",
+        "fall保留原形。",
+        "检查时间：现在弯曲，未来可能倒下，未给已经倒的事实。"
+      ],
+      "commonErrors": [
+        "写It going to falls；见going认作正在倒；拒绝有解释的will预测。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-ex4",
+      "title": "第四级：否定、问句与指代一起查",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创便条：“Rui is going to bring her notebook tonight. Her friends will bring food.”\n①保持Rui这个人物，把第一句改否定句和一般疑问句，并给肯定简答。②把第二句改一般疑问句。\n词义：Rui瑞，人名；her她的；notebook笔记本；tonight今晚；friends朋友们；bring带来；food食物。",
+      "answer": "①Rui is not going to bring her notebook tonight. Is Rui going to bring her notebook tonight? Yes, she is. ②Will her friends bring food? 译：瑞今晚打算带她的笔记本；她的朋友们会带食物。否定只改瑞的计划，不否定朋友带食物。",
+      "steps": [
+        "第一句已有is，否定加not，疑问移动is。",
+        "保持人物Rui，不随意换you；简答代成she。",
+        "第二句已有will，移至句首，不加do。",
+        "两句动作与对象分别保留。"
+      ],
+      "commonErrors": [
+        "Do Rui going to…；Yes, she does；Will her friends brings…；把两句全否定。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-ex5",
+      "title": "第五级：把条件放进计划，保留未知状态",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创信息：Wei打算周日去公园画画；如果下雨，他就在家画。他现在并不知道周日天气。用be going to写已有打算，用if和will写备用计划，再解释不能推断的事情。\n可用词：Wei伟；paint画画；park公园；on Sunday周日；rain下雨；at home在家；it天气句形式主语；if如果。",
+      "answer": "Wei is going to paint in the park on Sunday. If it rains, he will paint at home. 不能推断周日一定下雨，也不能说他已在公园画过。词序可变：He will paint at home if it rains.",
+      "steps": [
+        "先给已有意图配Wei is going to paint。",
+        "条件部分if it rains，一般现在时且it三单。",
+        "结果部分he will paint at home。",
+        "核对周日、地点与条件；不把备用计划写成无条件两处都画。"
+      ],
+      "commonErrors": [
+        "If it will rain；He will paints；漏if；擅断周日一定下雨。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w5-en-pr1",
+      "title": "基础：修复计划卡上的结构",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "原创计划卡写着：“The two helpers is going to checks the chairs tomorrow. Lin will to bring water.” 按原意修复所有明确结构错误，并写出两项计划的中文。\n词义：two两个；helpers帮手；check检查；chairs椅子；tomorrow明天；Lin林，人名；bring带来；water水。",
+      "answer": "The two helpers are going to check the chairs tomorrow. Lin will bring water. 两名帮手明天打算检查椅子；林将带水。",
+      "steps": [
+        "完整主语中心helpers复数，is改are。",
+        "going to后checks改check。",
+        "will to bring删to，保留bring。"
+      ],
+      "commonErrors": [
+        "只改一处；把计划误译成昨天完成；改写对象为桌子。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-pr2",
+      "title": "应用：计划与购买证据分开",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创短文：“On Monday, Jia chose a train for her trip. ‘I am going to buy a ticket on Wednesday,’ she says. Her sister replies, ‘I will help you use the machine.’”\n①哪一天选车次？哪一天打算买票？②姐姐的句子可怎样理解？③能推出票已经买好吗？\n词义：on Monday在周一；Jia佳，人名；chose选择；train火车／车次；trip出行；buy买；ticket票；Wednesday周三；says说；sister姐姐／妹妹，本题设为姐姐；replies回应；help帮助；use使用；machine机器。",
+      "answer": "①周一选车次，周三打算买票。②姐姐表示愿意帮助／在回应中提出帮助使用机器，will help自然；不能仅靠will判定她从没考虑过帮助。③不能，文中买票仍是计划。",
+      "steps": [
+        "为chose与buy分别配日期。",
+        "结合replies理解帮助回应。",
+        "区别未来意图和已完成证据。"
+      ],
+      "commonErrors": [
+        "把周一当购票日；凭will断言姐姐此前绝无帮助想法；说已有票。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-pr3",
+      "title": "应用：向写便条的人核实，再否定一项",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "Tao给你写：“I am going to send the parcel tomorrow. My brother will collect it.”\n①你向Tao问“你明天打算寄包裹吗”，用原结构造句。②保持人物不变，把第二句改否定句。\n词义：Tao涛；I我；send寄；parcel包裹；tomorrow明天；my我的；brother兄弟；collect领取；it它。",
+      "answer": "①Are you going to send the parcel tomorrow? ②My brother will not collect it.（My brother won’t collect it.）①从涛的I转为你问you，be随之用are；②按原说话者的句子变换，仍是My brother。",
+      "steps": [
+        "先辨任务视角：①向本人发问，I换you。",
+        "移动并配are，send原形。",
+        "②只改原句的否定，will后加not，保持my brother。"
+      ],
+      "commonErrors": [
+        "Am you…；把第二句人物擅改成your brother；don’t will collect。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-pr4",
+      "title": "迁移：两张安排卡不需要硬选唯一形式",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "两人已约好周六一起修自行车。卡A写“We are going to repair the bikes on Saturday.”，卡B写“We will repair the bikes on Saturday.” 有人说B必错，因为已提前计划。你同意吗？再写一条“如果有时间，我们会先检查车灯”的条件句。\n词义：we我们；repair修理；bikes自行车；on Saturday周六；if如果；have有；time时间；first先；check检查；lights车灯。",
+      "answer": "不同意。A突出已有意图，B可确认未来安排，两句结构都正确。条件句：If we have time, we will check the lights first. 不能据此断言已经有时间或车灯已检查。",
+      "steps": [
+        "分开语法正确与语用重心。",
+        "if部分we have，不写will have表示本题条件。",
+        "结果写will check，保留first与lights。"
+      ],
+      "commonErrors": [
+        "把will当只许临时决定；If we will have time；漏先检查。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-en-pr5",
+      "title": "迁移：四句短消息，内容连起来",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "虚构角色An的安排：昨晚已决定周日整理书架；现在朋友说没有标签，An当场提出带标签；如果朋友忙，An周一再来。写一条含四句的英文消息：已有计划、即时帮助、条件计划、一个核实对方安排的一般疑问句。允许合理变化，不编更多承诺。\n词义：I我；you你；tidy整理；bookshelf书架；on Sunday周日；label标签；bring带来；if如果；busy忙；come来；on Monday周一；help帮助。",
+      "answer": "示例：I am going to tidy the bookshelf on Sunday. I will bring some labels. If you are busy, I will come on Monday. Are you going to help me on Sunday? 最后也可问Will you help me on Sunday?（请求／核实帮助）。合理内容与结构变式可；some一些、me我在宾语位置。",
+      "steps": [
+        "第一句给I配am，tidy原形。",
+        "第二句回应缺标签，用will bring自然。",
+        "第三句条件you are busy，结果will come，保留周一。",
+        "最后问句移动be或will，核对内容相关。"
+      ],
+      "commonErrors": [
+        "四句互不相关；把条件改成无条件周日周一都来；忘am或写will brings。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "tomorrow出现就必须will。",
+      "why": "时间线指未来，但表达意图、安排或预测还看上下文。",
+      "right": "先读情境，再选合适结构；重叠处允许合理替代。"
+    },
+    {
+      "wrong": "she后每个动作都加s。",
+      "why": "will或going to之后动作使用原形。",
+      "right": "She will read；She is going to read。"
+    },
+    {
+      "wrong": "going to不必有be。",
+      "why": "本课完整结构需要与主语配对的am/is/are。",
+      "right": "先选be，再放going to和动作原形。"
+    },
+    {
+      "wrong": "当场决定只能用will，其他说法一律语法错。",
+      "why": "常见语用选择不是互不重叠的法律。",
+      "right": "说明will自然之处，并检查替代的结构与意图是否成立。"
+    },
+    {
+      "wrong": "所有含if的未来句都可机械照套。",
+      "why": "本课仅教if＝如果的条件状语从句，不含是否等其他结构。",
+      "right": "先识别条件和结果，再分别配时态。"
+    },
+    {
+      "wrong": "计划说得确定就表示已经做完。",
+      "why": "未来意图、预测与完成事实不同。",
+      "right": "只陈述材料证明的时间与状态。"
+    }
+  ],
+  "quiz": {
+    "instructions": "全新原创材料，四题各6分钟、各5分，共24分钟20分。可查题内词义和常用小词索引，不看答案独立写。语境开放处接受结构正确且解释相容的替代；指定结构只测试按要求造句。无音频，无听力题；选读第8节不计分。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w5-en-quiz1",
+        "title": "新情境：为旧照片准备展览",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创短文：“Yesterday, Lan chose six photos for a small show. She plans to put them on the wall on Saturday. Two friends plan to help her.”\n①用be going to改写第二句。②用will改写第三句。③照片是否已贴上墙？给依据。\n词义：yesterday昨天；Lan兰；chose选择；six六；photos照片；small小型；show展览；plans/plan计划；put放／贴；them它们；wall墙；Saturday周六；two两个；friends朋友；help帮助；her她。",
+        "answer": "①She is going to put them on the wall on Saturday. ②Two friends will help her. ③不能说已经贴好，选照片昨天完成，贴墙仍是周六计划。",
+        "steps": [
+          "主语she配is，put原形。",
+          "will后help原形，两位朋友保留。",
+          "分清chose与plan to put的时间状态。"
+        ],
+        "commonErrors": [
+          "She going…；will helps；把选好照片等同贴好。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 2,
+            "criterion": "①is going to put结构1分，照片指代、上墙、周六内容保留1分。"
+          },
+          {
+            "points": 1,
+            "criterion": "②Two friends will help her结构与人物正确。"
+          },
+          {
+            "points": 2,
+            "criterion": "③拒绝已贴好1分，说明昨天选照片不等于周六贴墙已完成1分。"
+          }
+        ]
+      },
+      {
+        "id": "w5-en-quiz2",
+        "title": "新对话：腾不出手时怎样回应",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创对话：\nLan: I cannot hold these photos and open the box.\nKe: Wait. I ___ (hold) the photos for you.\nLan: Thank you. We ___ (start) the show at nine tomorrow. We chose that time last week.\n两空从will或be going to中各写一种自然形式，解释语境。有人说“第二空用will一定有语法错误”，评价这句话。\n词义：cannot不能；hold拿住；these这些；photos照片；and并且；open打开；box盒子；Ke可，人名；wait等一下；for you帮你；thank you谢谢；start开始；show展览；nine九；tomorrow明天；chose选定；that time那个时间；last week上周。",
+        "answer": "第一空常见will hold，是看到困难后的回应；am going to hold若突出即将帮助且解释合理也可。第二空常见are going to start，已有上周选定的时间；will start也可确认未来安排。因此说will一定语法错不成立。",
+        "steps": [
+          "先读两空各自的前后句。",
+          "第一空I配will hold或am going to hold。",
+          "第二空we配are going to start或will start。",
+          "解释常见选择，不把它升级为唯一合法形式。"
+        ],
+        "commonErrors": [
+          "第一空写is；第二空漏are；只说tomorrow所以唯一will；把已有安排判禁止will。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "第一空完整正确结构，并符合帮助内容；合理替代可。"
+          },
+          {
+            "points": 1,
+            "criterion": "第一空理由联系对方正遇困难与回应，不只贴临时决定标签。"
+          },
+          {
+            "points": 1,
+            "criterion": "第二空完整正确结构，允许are going to start或will start。"
+          },
+          {
+            "points": 1,
+            "criterion": "第二空理由联系上周选好时间；用will者说明确认安排即可。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确否定will必错，说明形式有重叠或可确认未来安排。"
+          }
+        ]
+      },
+      {
+        "id": "w5-en-quiz3",
+        "title": "新便条：否定与询问不能换错人物",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "“Lan is going to bring a lamp tonight. Her friends will bring chairs.”\n①保持Lan，把第一句改否定句。②保持her friends，把第二句改一般疑问句，并用they给否定简答。③第一句否定后是否表示Lan永远不带灯？\n词义：Lan兰；bring带来；a lamp一盏灯；tonight今晚；her她的；friends朋友们；chairs椅子；they他们。",
+        "answer": "①Lan is not going to bring a lamp tonight. ②Will her friends bring chairs? No, they won’t.（No, they will not.）③不表示永远，只否定今晚这项计划。",
+        "steps": [
+          "not放is后，保留tonight。",
+          "will移句首，bring原形。",
+          "they与will作简答，不换does。",
+          "查否定范围是否被扩大。"
+        ],
+        "commonErrors": [
+          "Lan don’t going…；Do her friends will…；No, they aren’t；漏今晚。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①is not going to结构正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "①保留Lan、带灯、今晚。"
+          },
+          {
+            "points": 1,
+            "criterion": "②问句Will her friends bring chairs正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②No, they won’t/will not正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③说明不是永远，否定范围只及今晚计划。"
+          }
+        ]
+      },
+      {
+        "id": "w5-en-quiz4",
+        "title": "新计划：把条件写对并保住边界",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "展览备用方案：如果周六刮大风，我们就在大厅展出照片。用if与will写一句；再解释为什么不能据它断言“周六一定刮大风”或“肯定在大厅展出”。\n可用词：windy风大的；it天气句形式主语；on Saturday周六；we我们；show展出；photos照片；hall大厅；in在……里；if如果。",
+        "answer": "If it is windy on Saturday, we will show the photos in the hall.（We will show the photos in the hall if it is windy on Saturday.）不能确定刮风，也不能确定大厅方案必执行：句子只给刮风时的条件计划。",
+        "steps": [
+          "先写条件it is windy，it配is。",
+          "结果we will show，show原形。",
+          "保留周六、照片、大厅。",
+          "说明条件尚未证实，结果有前提。"
+        ],
+        "commonErrors": [
+          "If it will be windy用于本题普通条件；will shows；删if；把备用方案当已定事实。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "if条件用it is windy，形式与意义正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "主句will show结构正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "保留周六、照片、大厅三项内容，语序自然。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝一定刮风，指出条件尚未得到证实。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝必在大厅，指出方案以刮风为前提。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第1题至少一套going to完整结构及will原形正确，且不把计划当已完成。",
+        "第2题承认will与be going to有语境重叠，不能把常见选择伪装成唯一语法。",
+        "第3题问句、否定能用已有will或be，不添加do；保留人物与今晚。",
+        "第4题条件从句is与主句will show均正确，并保留if的前提边界。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w5-en-quiz1"
+        ],
+        "sectionIds": [
+          "w5-en-r1",
+          "w5-en-s1",
+          "w5-en-s2",
+          "w5-en-s3"
+        ],
+        "action": "把人物、be或will、原形分三格，再给选择与展出配不同时间。"
+      },
+      {
+        "questionIds": [
+          "w5-en-quiz2"
+        ],
+        "sectionIds": [
+          "w5-en-s4"
+        ],
+        "action": "为每空抄一条语境证据，分别说常见选择与可接受替代，不背唯一配对表。"
+      },
+      {
+        "questionIds": [
+          "w5-en-quiz3"
+        ],
+        "sectionIds": [
+          "w5-en-s5"
+        ],
+        "action": "圈已有will或be，移动或加not；再核人物、对象、时间。"
+      },
+      {
+        "questionIds": [
+          "w5-en-quiz4"
+        ],
+        "sectionIds": [
+          "w5-en-s6",
+          "w5-en-s7"
+        ],
+        "action": "把条件与结果写两行，条件一般现在时、主句will；中文复述时仍说如果。"
+      }
+    ]
+  },
+  "mastery": [
+    "能读通完整计划段落，分别定位已发生、已有意图、当场回应与未来预测。",
+    "两种结构都能造肯定、否定、问句；后接动词原形不漏be。",
+    "能解释未来表达重叠，开放题按语境与理由验收，不机械判唯一。",
+    "独立短测至少16/20且四项关键检查全过；不以已看答案后的重做替代首次成绩。",
+    "本课没有音频，完成书面学习不代表听力、口语或发音已达标。"
+  ],
+  "nextStep": "在预算内30分钟订正槽补关键错点；达到16分且关键检查全过后手动进入第6周，先学时间线再读进行与完成。未过则下次英语学段续本周，不增加无音频听力任务或自动跳周。第8节选读不影响过关。",
+  "reviewActivity": {
+    "id": "w5-en-review",
+    "title": "30分钟订正，已计核心预算",
+    "instructions": [
+      "前5分钟按评分记录首次分与四项关键检查，区分词义未读通、结构错误、语境理由不全。",
+      "接着10分钟按映射回读最弱的小节，拆一例的主语、辅助结构与动作，开放选择题写证据。",
+      "接着12分钟遮答重做错点；全对者给第2题另一种合理形式并说明重心，给第4题改变条件位置的版本。",
+      "最后3分钟记订正分与尚未过项目，安排下次先补哪一节。总分与原题重做分分开；不另加一套卷。"
+    ]
+  },
+  "sourcePolicy": {
+    "authorship": "所有英文短文、对话、例题、独练和新测、中文词义译文及评分为原创。参考资料仅核对未来表达的结构、常见语境及交叠边界，不复制其例句或练习。",
+    "examStatus": "所有题目origin=original，均为原创基础衔接训练，非历年真题。面向河南南阳2028高考备考，但教材版本未核定，不编教材章页，不声称已核验2028题型分值或考试政策；20分为本课自测设计。",
+    "externalSources": [
+      {
+        "id": "w5-en-ref-future-forms",
+        "title": "British Council LearnEnglish：Future forms",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/future-forms-will-be-going-present-continuous",
+        "kind": "reference",
+        "scopeNote": "已实际打开核对常见计划语境；页面教学团队说明未来形式在部分语境可互换。本课原创示例，明确自然选择不是唯一语法答案。"
+      },
+      {
+        "id": "w5-en-ref-future",
+        "title": "British Council LearnEnglish：Talking about the future",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/talking-about-future",
+        "kind": "reference",
+        "scopeNote": "已实际打开，仅核对will意愿/预测与going to意图/可见迹象，以及其他未来表达边界；不复制其语料。"
+      }
+    ]
+  },
+  "audioStatus": "无音频。词义、译文和英文文本用于书面自学，不据此声明真实听辨、发音或口语水平达标；本周短测不含听力评价。"
+}

@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="584.39952pt" height="339.59952pt" viewBox="0 0 584.39952 339.59952" version="1.1" role="img" aria-labelledby="math-output-gap-title math-output-gap-desc">
+ <title id="math-output-gap-title">分段函数的输出可能有缺口</title><desc id="math-output-gap-desc">教学规则：−2≤x&lt;0时y=x，0≤x≤2时y=x+2。第一段输出[−2,0)，第二段[2,4]，0≤y&lt;2这一整段没有输出。x=0只对应2，不能在两个分支之间补竖线。</desc><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-13T20:08:06.591773</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 339.59952  L 584.39952 339.59952  L 584.39952 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 41.94875 296.79952  L 577.19952 296.79952  L 577.19952 24.819  L 41.94875 24.819  z " style="fill: #ffffff" />
+   </g>
+   <g id="patch_3">
+    <path d="M 41.94875 196.348048  L 577.19952 196.348048  L 577.19952 128.896879  L 41.94875 128.896879  z " clip-path="url(#pa214ba3cda)" style="fill: #eeeeee; stroke: #eeeeee; stroke-linejoin: miter" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 103.708454 296.79952  L 103.708454 24.819  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m86c8fb8217" d="M 0 0  L 0 3.5  " style="stroke: #000000; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use ns4:href="#m86c8fb8217" x="103.708454" y="296.79952" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="103.708454" y="313.35077" transform="rotate(-0 103.708454 313.35077)">-2</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 206.641295 296.79952  L 206.641295 24.819  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use ns4:href="#m86c8fb8217" x="206.641295" y="296.79952" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="206.641295" y="313.35077" transform="rotate(-0 206.641295 313.35077)">-1</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 309.574135 296.79952  L 309.574135 24.819  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use ns4:href="#m86c8fb8217" x="309.574135" y="296.79952" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="309.574135" y="313.35077" transform="rotate(-0 309.574135 313.35077)">0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 412.506975 296.79952  L 412.506975 24.819  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use ns4:href="#m86c8fb8217" x="412.506975" y="296.79952" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="412.506975" y="313.35077" transform="rotate(-0 412.506975 313.35077)">1</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 515.439816 296.79952  L 515.439816 24.819  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use ns4:href="#m86c8fb8217" x="515.439816" y="296.79952" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="515.439816" y="313.35077" transform="rotate(-0 515.439816 313.35077)">2</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="309.574135" y="329.65077" transform="rotate(-0 309.574135 329.65077)">输入 x</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11">
+      <path d="M 41.94875 271.414671  L 577.19952 271.414671  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_12">
+      <defs>
+       <path id="m252f52aa15" d="M 0 0  L -3.5 0  " style="stroke: #000000; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use ns4:href="#m252f52aa15" x="41.94875" y="271.414671" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: end" x="34.94875" y="276.190296" transform="rotate(-0 34.94875 276.190296)">-2</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_13">
+      <path d="M 41.94875 235.150602  L 577.19952 235.150602  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use ns4:href="#m252f52aa15" x="41.94875" y="235.150602" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: end" x="34.94875" y="239.926227" transform="rotate(-0 34.94875 239.926227)">-1</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_15">
+      <path d="M 41.94875 198.886533  L 577.19952 198.886533  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use ns4:href="#m252f52aa15" x="41.94875" y="198.886533" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: end" x="34.94875" y="203.662158" transform="rotate(-0 34.94875 203.662158)">0</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_17">
+      <path d="M 41.94875 162.622463  L 577.19952 162.622463  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use ns4:href="#m252f52aa15" x="41.94875" y="162.622463" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: end" x="34.94875" y="167.398088" transform="rotate(-0 34.94875 167.398088)">1</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_19">
+      <path d="M 41.94875 126.358394  L 577.19952 126.358394  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use ns4:href="#m252f52aa15" x="41.94875" y="126.358394" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: end" x="34.94875" y="131.134019" transform="rotate(-0 34.94875 131.134019)">2</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_21">
+      <path d="M 41.94875 90.094325  L 577.19952 90.094325  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use ns4:href="#m252f52aa15" x="41.94875" y="90.094325" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: end" x="34.94875" y="94.86995" transform="rotate(-0 34.94875 94.86995)">3</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_23">
+      <path d="M 41.94875 53.830255  L 577.19952 53.830255  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #e1e1e1; stroke-width: 0.7; stroke-linecap: square" />
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use ns4:href="#m252f52aa15" x="41.94875" y="53.830255" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: end" x="34.94875" y="58.60588" transform="rotate(-0 34.94875 58.60588)">4</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="17.315625" y="160.80926" transform="rotate(-90 17.315625 160.80926)">输出 y</text>
+    </g>
+   </g>
+   <g id="line2d_25">
+    <path d="M 41.94875 198.886533  L 577.19952 198.886533  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #333333; stroke-linecap: square" />
+   </g>
+   <g id="line2d_26">
+    <path d="M 309.574135 296.79952  L 309.574135 24.819  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #333333; stroke-linecap: square" />
+   </g>
+   <g id="line2d_27">
+    <path d="M 103.708454 271.414671  L 309.574135 198.886533  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #185b88; stroke-width: 2.2; stroke-linecap: square" />
+   </g>
+   <g id="line2d_28">
+    <path d="M 309.574135 126.358394  L 515.439816 53.830255  " clip-path="url(#pa214ba3cda)" style="fill: none; stroke: #975629; stroke-width: 2.2; stroke-linecap: square" />
+   </g>
+   <g id="patch_4">
+    <path d="M 41.94875 296.79952  L 41.94875 24.819  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_5">
+    <path d="M 41.94875 296.79952  L 577.19952 296.79952  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'Noto Sans CJK JP'; text-anchor: start" x="62.535318" y="160.80926" transform="rotate(-0 62.535318 160.80926)">0≤y&lt;2 没有图像点</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Noto Sans CJK JP'; text-anchor: start" x="62.535318" y="287.733503" transform="rotate(-0 62.535318 287.733503)">第一段：−2≤x&lt;0，y=x</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11px; font-family: 'Noto Sans CJK JP'; text-anchor: start" x="330.160703" y="39.324628" transform="rotate(-0 330.160703 39.324628)">第二段：0≤x≤2，y=x+2</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 14.4px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="309.574135" y="18.819" transform="rotate(-0 309.574135 18.819)">不连接两个分支，值域为 [−2,0) ∪ [2,4]</text>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mccacbfb648" d="M 0 4.031129  C 1.069068 4.031129 2.094493 3.606384 2.850439 2.850439  C 3.606384 2.094493 4.031129 1.069068 4.031129 0  C 4.031129 -1.069068 3.606384 -2.094493 2.850439 -2.850439  C 2.094493 -3.606384 1.069068 -4.031129 0 -4.031129  C -1.069068 -4.031129 -2.094493 -3.606384 -2.850439 -2.850439  C -3.606384 -2.094493 -4.031129 -1.069068 -4.031129 0  C -4.031129 1.069068 -3.606384 2.094493 -2.850439 2.850439  C -2.094493 3.606384 -1.069068 4.031129 0 4.031129  z " style="stroke: #185b88; stroke-width: 2" />
+    </defs>
+    <g clip-path="url(#pa214ba3cda)">
+     <use ns4:href="#mccacbfb648" x="103.708454" y="271.414671" style="fill: #185b88; stroke: #185b88; stroke-width: 2" />
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="mff919a7500" d="M 0 4.031129  C 1.069068 4.031129 2.094493 3.606384 2.850439 2.850439  C 3.606384 2.094493 4.031129 1.069068 4.031129 0  C 4.031129 -1.069068 3.606384 -2.094493 2.850439 -2.850439  C 2.094493 -3.606384 1.069068 -4.031129 0 -4.031129  C -1.069068 -4.031129 -2.094493 -3.606384 -2.850439 -2.850439  C -3.606384 -2.094493 -4.031129 -1.069068 -4.031129 0  C -4.031129 1.069068 -3.606384 2.094493 -2.850439 2.850439  C -2.094493 3.606384 -1.069068 4.031129 0 4.031129  z " style="stroke: #185b88; stroke-width: 2" />
+    </defs>
+    <g clip-path="url(#pa214ba3cda)">
+     <use ns4:href="#mff919a7500" x="309.574135" y="198.886533" style="fill: #ffffff; stroke: #185b88; stroke-width: 2" />
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <defs>
+     <path id="mdd024848f4" d="M 0 4.031129  C 1.069068 4.031129 2.094493 3.606384 2.850439 2.850439  C 3.606384 2.094493 4.031129 1.069068 4.031129 0  C 4.031129 -1.069068 3.606384 -2.094493 2.850439 -2.850439  C 2.094493 -3.606384 1.069068 -4.031129 0 -4.031129  C -1.069068 -4.031129 -2.094493 -3.606384 -2.850439 -2.850439  C -3.606384 -2.094493 -4.031129 -1.069068 -4.031129 0  C -4.031129 1.069068 -3.606384 2.094493 -2.850439 2.850439  C -2.094493 3.606384 -1.069068 4.031129 0 4.031129  z " style="stroke: #975629; stroke-width: 2" />
+    </defs>
+    <g clip-path="url(#pa214ba3cda)">
+     <use ns4:href="#mdd024848f4" x="309.574135" y="126.358394" style="fill: #975629; stroke: #975629; stroke-width: 2" />
+    </g>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#pa214ba3cda)">
+     <use ns4:href="#mdd024848f4" x="515.439816" y="53.830255" style="fill: #975629; stroke: #975629; stroke-width: 2" />
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa214ba3cda">
+   <rect x="41.94875" y="24.819" width="535.25077" height="271.98052" />
+  </clipPath>
+ </defs>
+</svg>

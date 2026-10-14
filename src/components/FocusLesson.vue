@@ -62,7 +62,7 @@ watch(() => props.step, focusHeading)
     </details>
     <div class="focus-ai-entry"><button ref="aiTrigger" type="button" :disabled="aiLoading" aria-haspopup="dialog" @click="openAi">{{ aiLoading ? '正在打开…' : '问 AI' }}</button></div>
     <p v-if="aiLoadError" class="focus-ai-load-error" role="alert">{{ aiLoadError }}</p>
-    <component :is="aiComponent" v-if="aiOpen && aiComponent" :lesson="lesson" :step="current.id" :week="week" :subject-label="subjectLabel" @close="closeAi"/>
+    <component :is="aiComponent" v-if="aiOpen && aiComponent" :lesson="lesson" :step="current.id" :week="week" :subject="subject" :subject-label="subjectLabel" :step-title="current.title" @close="closeAi"/>
     <section :key="current.id" class="focus-section" :aria-labelledby="`focus-step-${current.id}`">
       <h2 :id="`focus-step-${current.id}`" ref="heading" tabindex="-1" class="focus-section-title">{{ current.title }}</h2>
       <EnrichedLessonContent v-if="lesson?.enrichment" :lesson="lesson.enrichment" :figures="lesson.enrichmentFigures" :review-map="lesson.enrichmentReviewMap" :step="current.id" @navigate="navigate"/>

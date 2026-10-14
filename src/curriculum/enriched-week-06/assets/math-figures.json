@@ -1,0 +1,41 @@
+[
+  {
+    "id": "w6-math-square-intervals",
+    "title": "单调区间和定义域要一起检查",
+    "asset": "assets/math-square-intervals.svg",
+    "altText": "平方函数定义域仅[−1,2]：在[−1,0]递减，在[0,2]递增，不能合成整体递增或递减。定义域缺少−2，因此这个受限函数不是偶函数。",
+    "description": "平方函数定义域仅[−1,2]：在[−1,0]递减，在[0,2]递增，不能合成整体递增或递减。定义域缺少−2，因此这个受限函数不是偶函数。",
+    "linkedSectionIds": [
+      "w6-math-s3",
+      "w6-math-s5"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w6-math-parity-pairs",
+    "title": "两种对称对应不同的输出关系",
+    "asset": "assets/math-parity-pairs.svg",
+    "altText": "两图都取对称的实数定义域，画出其中一部分。左边y=x²相反输入给相同高度，关于y轴对称；右边y=x相反输入给相反高度，关于原点对称。此为教学示意，不表示仅两个散点。",
+    "description": "两图都取对称的实数定义域，画出其中一部分。左边y=x²相反输入给相同高度，关于y轴对称；右边y=x相反输入给相反高度，关于原点对称。此为教学示意，不表示仅两个散点。",
+    "linkedSectionIds": [
+      "w6-math-s5",
+      "w6-math-s6"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  },
+  {
+    "id": "w6-math-reciprocal-branches",
+    "title": "分别递减不是全域递减",
+    "asset": "assets/math-reciprocal-branches.svg",
+    "altText": "y=2/x在负半轴与正半轴分别递减，图示截取两支的一部分。跨支取−1<1，输出−2<2，反而升高，故不能说整个定义域递减。x=0未定义，曲线没有连过竖轴。",
+    "description": "y=2/x在负半轴与正半轴分别递减，图示截取两支的一部分。跨支取−1<1，输出−2<2，反而升高，故不能说整个定义域递减。x=0未定义，曲线没有连过竖轴。",
+    "linkedSectionIds": [
+      "w6-math-s4",
+      "w6-math-s7"
+    ],
+    "linkedQuestionIds": [],
+    "answerOnly": false
+  }
+]

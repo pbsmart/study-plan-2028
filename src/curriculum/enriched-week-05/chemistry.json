@@ -1,0 +1,854 @@
+{
+  "id": "w5-化学",
+  "week": 5,
+  "subject": "化学",
+  "title": "溶液浓度与稀释：分清分母、追踪份额与守恒条件",
+  "revision": "week05-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能从“每升含多少”解释c=n/V，独立完成g→mol、mL→L的单位链。",
+    "能明确使用最终溶液体积，区分水量、溶液量、质量分数及密度的作用。",
+    "能从同一份溶质n不变推导稀释式，并判断无反应无损失等适用条件。",
+    "能分开追踪取样、剩余、样品再稀释及简单无反应混合，说明c不变与n不变的区别。",
+    "能在唯一20分原创短测中达到16分且通过关键条件，并在不做家庭化学实验的前提下完成订正。"
+  ],
+  "prerequisites": [
+    "第3周能用n=m/M、m=nM，分清g、mol与g/mol。",
+    "第4周知道守恒需要指定对象，反应会改变各物质实际量。",
+    "本课先补1 L=1000 mL、比例与百分数；不要求预先掌握离子反应。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "忙碌60分钟是单次学习上限，不是删减版过关路线。完整核心按60+60+30分钟分三次可用时段：第1次60分钟=前测6+8节正文及自检48+例1共6；活动ID：w5-chemistry-diagnostic-1、w5-chemistry-diagnostic-2、w5-chemistry-diagnostic-3、w5-chemistry-section-recall、w5-chemistry-section-units、w5-chemistry-section-concentration、w5-chemistry-section-fraction、w5-chemistry-section-dilution、w5-chemistry-section-sampling、w5-chemistry-section-mixtures、w5-chemistry-section-scope、w5-chemistry-example-1。第2次60分钟=例2—5共24+5题独练30+短测1共6；活动ID：w5-chemistry-example-2、w5-chemistry-example-3、w5-chemistry-example-4、w5-chemistry-example-5、w5-chemistry-practice-1、w5-chemistry-practice-2、w5-chemistry-practice-3、w5-chemistry-practice-4、w5-chemistry-practice-5、w5-chemistry-quiz-1。第3次30分钟=短测2—4共18+订正12；活动ID：w5-chemistry-quiz-2、w5-chemistry-quiz-3、w5-chemistry-quiz-4、w5-chemistry-review-corrections。分开完成短测时先保存已答内容，不看任何短测答案、评分、例题或课文，直到4题均交卷；不能回改前次作答冒充独立表现。因工作中断可记录活动ID和小问断点，下一可用时段续做。所有核心及订正完成、总分与关键条件同时通过才手动推进；150分钟仅是首轮预算，仍卡住就延长本周，不随日历自动跳周。",
+    "segments": [
+      {
+        "id": "w5-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w5-chemistry-diagnostic-1",
+          "w5-chemistry-diagnostic-2",
+          "w5-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w5-chemistry-time-concepts",
+        "title": "八节前置、正文与自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w5-chemistry-section-recall",
+          "w5-chemistry-section-units",
+          "w5-chemistry-section-concentration",
+          "w5-chemistry-section-fraction",
+          "w5-chemistry-section-dilution",
+          "w5-chemistry-section-sampling",
+          "w5-chemistry-section-mixtures",
+          "w5-chemistry-section-scope"
+        ]
+      },
+      {
+        "id": "w5-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w5-chemistry-example-1",
+          "w5-chemistry-example-2",
+          "w5-chemistry-example-3",
+          "w5-chemistry-example-4",
+          "w5-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w5-chemistry-time-practice",
+        "title": "五题独立练习，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w5-chemistry-practice-1",
+          "w5-chemistry-practice-2",
+          "w5-chemistry-practice-3",
+          "w5-chemistry-practice-4",
+          "w5-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w5-chemistry-time-quiz",
+        "title": "唯一原创短测，4题20分，每题6分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w5-chemistry-quiz-1",
+          "w5-chemistry-quiz-2",
+          "w5-chemistry-quiz-3",
+          "w5-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w5-chemistry-time-review",
+        "title": "评分与错因订正",
+        "minutes": 12,
+        "activityIds": [
+          "w5-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "用6分钟先独立答3道前测，每题约2分钟。不会的题标出卡在对象、单位、规则还是比例。前测不计入20分短测；按路由进入本课已有的补救和正文时间，不另加一份测验。全对仍需完成各节自检。",
+    "questions": [
+      {
+        "id": "w5-chemistry-diagnostic-1",
+        "title": "前测1：单位与质量桥",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "125 mL等于多少L？5.85 g NaCl的M=58.5 g/mol，求n。",
+        "answer": "0.125 L；n=0.100 mol。",
+        "steps": [
+          "mL除1000得L。",
+          "n=5.85/58.5=0.100 mol。"
+        ],
+        "commonErrors": [
+          "把125 mL写成125 L。",
+          "用质量乘M。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w5-chemistry-diagnostic-2",
+        "title": "前测2：分清分母",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "最终溶液0.400 L中含指定溶质0.080 mol，c是多少？V指水还是溶液？",
+        "answer": "c=0.200 mol/L；V是最终溶液。",
+        "steps": [
+          "c=0.080/0.400=0.200 mol/L。",
+          "定义分母是整体溶液体积。"
+        ],
+        "commonErrors": [
+          "写0.032 mol/L。",
+          "把V称水量。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w5-chemistry-diagnostic-3",
+        "title": "前测3：两种变化",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "均一溶液先取出一半；再只向取出的那半份加水使最终体积增大，无反应无损失。取出瞬间c变吗？随后稀释时这半份的n变吗？",
+        "answer": "取出瞬间c不变；随后这半份的n不变，c减小。",
+        "steps": [
+          "取样使n与V同减半。",
+          "稀释追踪样品本身，溶质未增减。"
+        ],
+        "commonErrors": [
+          "取半就把c减半。",
+          "把原瓶全部n带入样品稀释。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1换算或n=m/M出错。",
+        "action": "先读前置与单位两节，逐个写等值单位，再回做该前测。",
+        "sectionIds": [
+          "w5-chemistry-section-recall",
+          "w5-chemistry-section-units"
+        ]
+      },
+      {
+        "when": "前测2分母或浓度意义不清。",
+        "action": "先区分总量与每升含量，再对照质量分数两种分母。",
+        "sectionIds": [
+          "w5-chemistry-section-concentration",
+          "w5-chemistry-section-fraction"
+        ]
+      },
+      {
+        "when": "前测3混淆取样与稀释，或三题全对但说不出理由。",
+        "action": "画原瓶、样品、稀释后样品三个框，解释各框n、V、c；全对仍完成全部核心。",
+        "sectionIds": [
+          "w5-chemistry-section-dilution",
+          "w5-chemistry-section-sampling",
+          "w5-chemistry-section-scope"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w5-chemistry-section-recall",
+      "title": "先补前置：先认对象，再搭g与mol的桥",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。先想清所求的是哪一种物质、哪一份溶液。溶质是本题要追踪的溶解成分，溶剂是溶解它的介质；本课只讨论以水为溶剂的均一溶液。溶液是溶质与溶剂构成的整体，不等于水。NaCl溶液里不能把NaCl称作一个个NaCl分子；本周c(NaCl)按加入并溶解的NaCl计量，下一周再区分离子浓度。",
+        "质量m表示多少g；物质的量n表示多少mol；摩尔质量M表示每mol多少g。已知5.85 g NaCl且M=58.5 g/mol，用n=m/M=0.100 mol，因为每58.5 g才是一mol。g除以g/mol得到mol，单位也支持除法；直接相乘会得到g²/mol，已偏离目标。",
+        "反向是m=nM。这里符号M始终表示摩尔质量，不用它代替浓度；本课浓度用c，单位写mol/L。所有题目给出所需摩尔质量，不要求背复杂数值。数学卡点先写“目标单位是什么”，再挑能消去多余单位的运算。",
+        "本周只做纸笔题，不安排配制、尝味、取样或接触化学品。题目中的“取出、稀释、混合”是已给定条件的理论情境；涉及危险物质时也不能照文字操作。"
+      ],
+      "keyPoints": [
+        "m→n除以M；n→m乘以M。",
+        "溶液是整体，指定溶质与溶剂不能混写。"
+      ],
+      "checkpoint": {
+        "question": "11.7 g NaCl，M=58.5 g/mol，n是多少？它能直接当作0.200 mol/L吗？",
+        "answer": "n=0.200 mol；还不能写浓度，缺最终溶液体积。",
+        "explanation": "mol说明总量，mol/L还要说明这些mol分布在多少L溶液内。"
+      }
+    },
+    {
+      "id": "w5-chemistry-section-units",
+      "title": "mL与L：让单位在乘除中对得上",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。1 L=1000 mL，因此mL换L要除以1000。100 mL是0.100 L，25.0 mL是0.0250 L，5.00 mL是0.00500 L。小单位的数值大，换成大单位数值变小；用这一句先判断小数点方向。",
+        "当c用mol/L时，计算n=cV必须把V写L：0.40 mol/L×0.050 L=0.020 mol。L约掉才是mol。若直接乘50，得到20的单位实际是(mol/L)·mL，不是20 mol；把它当mol会放大1000倍。",
+        "求c=n/V也一样：0.020 mol÷0.050 L=0.40 mol/L。求V=n/c得到L，再乘1000换mL。不要只记“移动三位”，每次写一行等值换算，把对象一起留下。",
+        "稀释比例c₁V₁=c₂V₂中，如果两个V都写mL，左右相同换算因子可以抵消，所以能直接求浓度比。但其中c×mL的数值不能声称是mol。本周推荐统一先换L，等理解后再用同单位比例简写。"
+      ],
+      "keyPoints": [
+        "mol/L与L配对才直接得到mol。",
+        "比例两边同单位可抵消，单独求n仍须正确换算。"
+      ],
+      "checkpoint": {
+        "question": "0.250 mol/L的溶液取12.0 mL，n是多少？",
+        "answer": "12.0 mL=0.0120 L；n=0.00300 mol。",
+        "explanation": "0.250×0.0120=0.00300；样品不足一升，所以其mol数应小于0.250。"
+      }
+    },
+    {
+      "id": "w5-chemistry-section-concentration",
+      "title": "c=n/V：每升含多少，不是整瓶一共有多少",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。物质的量浓度c(B)=n(B)/V。B是指定溶质，n(B)是这份溶液中B的物质的量；V是这份最终溶液在题给温度下的体积。常用单位mol/L。它表达“按每升折算有多少mol”，实际不必真的有一升。",
+        "例如0.060 mol指定溶质存在于0.300 L均一溶液中，平均每升对应0.060÷0.300=0.200 mol，所以c=0.200 mol/L。若另一份为0.120 mol、0.600 L，浓度仍0.200 mol/L，总量不同而比例相同。不能用瓶子大或溶质多单独判断浓度。",
+        "定义可改写为n=cV和V=n/c：已知每升份额与体积，乘起来得到总量；已知总量和每升份额，除起来得到所需总体积。每次公式都要写清同一个B、同一份溶液，不能用剩余溶质配上原来整瓶体积。",
+        "“溶于100 mL水”给的是溶剂体积，不保证最终溶液100 mL；“形成100 mL溶液”才给出本式分母。溶解或混合前后体积可能变化，温度也影响体积。缺最终体积且无可用密度等条件时，应答信息不足，不擅自假设。"
+      ],
+      "keyPoints": [
+        "分母是最终溶液体积，按题给温度。",
+        "浓度是比值，不能等同溶质总量。"
+      ],
+      "checkpoint": {
+        "question": "把0.10 mol某固体溶于0.50 L水，能直接得到c=0.20 mol/L吗？",
+        "answer": "不能；尚缺最终溶液体积或能推得它的条件。",
+        "explanation": "0.50 L描述水，不是最终溶液。只有题目给最终体积恰为0.50 L才可如此计算。"
+      }
+    },
+    {
+      "id": "w5-chemistry-section-fraction",
+      "title": "质量分数w：比较的是质量，不是mol与L",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。溶质质量分数w=m(溶质)/m(溶液)。上下同用g，单位相消；可以写小数0.10，也可以写10%。例如6 g溶质与54 g水形成均一溶液且无损失，溶液质量60 g，w=6/60=10%，不是6/54。百分数的分母是整个溶液。",
+        "c与w的分子、分母都不同：c用mol/L，w用g/g。10%表示每100 g溶液含10 g该溶质，不表示每100 mL，也不表示0.10 mol/L。题目只给质量分数而没有体积或密度，通常不能确定c。",
+        "若题目同时给M与溶液密度ρ，就能搭桥，不必背总公式：先选100 g溶液，按w求溶质质量，再除M求n；用V=m(溶液)/ρ求整个溶液体积。ρ若为g/mL，得到的是mL，还要换成L后算c。这里m/ρ中的m是溶液质量，不能错用溶质质量。",
+        "例如仅作单位路径：100 g溶液、ρ=1.00 g/mL，则V=100 mL=0.100 L；若另知其中某溶质为0.020 mol，c=0.20 mol/L。密度必须由题给或可靠数据提供，不能把所有溶液都当作水的密度。"
+      ],
+      "keyPoints": [
+        "w分母为溶液质量，c分母为最终溶液体积。",
+        "换算通常需要M与ρ，ρ不能自行取1。"
+      ],
+      "checkpoint": {
+        "question": "8 g溶质与72 g水组成溶液，w是多少？能只凭这两个质量求c吗？",
+        "answer": "w=8/(8+72)=10%；不能，仅有质量还缺摩尔质量和最终体积等必要条件。",
+        "explanation": "两种浓度所需信息不同，不能把10%挪成0.10 mol/L。"
+      }
+    },
+    {
+      "id": "w5-chemistry-section-dilution",
+      "title": "稀释公式从哪里来：追踪同一份溶质",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。稀释是在同一份溶液中加入溶剂，使浓度降低。本课理想题设为只加水、指定溶质不反应、不挥发、不析出、不丢失，体积对应同一题定温度。此时指定溶质的n不变；体积增大，c=n/V随之减小。先说条件，再谈守恒。",
+        "稀释前n₁=c₁V₁，稀释后n₂=c₂V₂；n₁=n₂才推出c₁V₁=c₂V₂。V₁是实际被稀释那一份原液的体积，不一定是原液整瓶体积；V₂是稀释后的最终溶液体积，不是加入水的体积。",
+        "“稀释至200 mL”说明V₂=200 mL；“加入200 mL水”只说明加入水的量，不能不加条件就把V₂写200 mL，也不能默认V₂=V₁+200 mL。只有题目明确体积可加和，才作该加法。题给最终体积时直接使用，不反推精确加水体积。",
+        "用变化方向检查：同一n、V变为原来的4倍，c应为原来的1/4。若稀释后反而更浓，先检查是否把V₁、V₂颠倒，或把水量当了最终体积。反应消耗了溶质时，c₁V₁=c₂V₂不再描述该溶质。"
+      ],
+      "keyPoints": [
+        "守恒式前先写同一溶质、无反应、无损失等条件。",
+        "稀释至某体积，给的是最终溶液体积。"
+      ],
+      "checkpoint": {
+        "question": "某份原液含0.040 mol溶质，无损失稀释至0.200 L，求c；能确定加水体积吗？",
+        "answer": "c=0.200 mol/L；不能凭这些信息确定精确加水体积。",
+        "explanation": "n不变，除最终体积即可；还不知道原液体积，且题目没有体积可加和条件。"
+      }
+    },
+    {
+      "id": "w5-chemistry-section-sampling",
+      "title": "取样不是稀释：被分走的是同样组成的溶液",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。均一溶液的每一小份组成相同。假定题定温度不变、取样前充分均一且无反应、挥发或析出，取出总体积的1/4，也取走其中指定溶质的1/4。取出部分的n和V同除4，n/V不变；剩余部分同理。",
+        "例如原来0.40 L溶液含0.080 mol溶质，c=0.20 mol/L。取走0.10 L，取走n=0.20×0.10=0.020 mol；剩n=0.060 mol、V=0.30 L，剩余c=0.060/0.30=0.20 mol/L。浓度不变，不等于总量不变。",
+        "如果随后只稀释所取的小份，守恒的是那一小份中的0.020 mol，不是原瓶的0.080 mol。画“原瓶→样品/剩余→样品再稀释”三个框，每个框写n、V、c，能防止追错对象。",
+        "取样后原瓶总溶质减少，但若把样品与剩余都计入，二者n之和仍等于取样前。守恒与否要说明系统范围：“原瓶内”与“原瓶加取出部分”是不同范围。"
+      ],
+      "keyPoints": [
+        "取样后c相同，n按体积比例分配。",
+        "样品再稀释，只追踪样品自己的n。"
+      ],
+      "checkpoint": {
+        "question": "从200 mL、0.30 mol/L均一溶液取走50 mL，剩余c和n分别多少？",
+        "answer": "剩余c=0.30 mol/L；n剩=0.045 mol。",
+        "explanation": "剩余体积0.150 L，n=cV=0.30×0.150=0.045 mol；没有加水，不能说浓度减小。"
+      }
+    },
+    {
+      "id": "w5-chemistry-section-mixtures",
+      "title": "两份同溶质混合：先算各份mol",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。两份含同一种稳定溶质的均一溶液混合，在无反应、无挥发、无析出和无损失条件下，n总=n₁+n₂=c₁V₁+c₂V₂。浓度不是可直接累加的总量，故不能写c总=c₁+c₂。",
+        "随后使用c终=n总/V终。V终优先用题给或实测最终溶液体积。只有明确给出体积可加和，才写V终=V₁+V₂。若只有原来两个体积且没有可加和条件，也没有其他信息，求精确c终缺条件。",
+        "体积可加和时，浓度是按体积加权的平均：较多的那份影响更大。只有两份体积相同，才能对两浓度直接取算术平均；不同体积直接相加除2会给每份同样权重，丢失“哪份更多”的信息。",
+        "检验也要带条件：同一溶质、无反应、无损失且体积可加和时，混合c应位于两原浓度之间（两者相等则不变）。这个范围判断不能替代计算，也不能无条件推广到体积明显不加和或发生反应的体系。"
+      ],
+      "keyPoints": [
+        "同一溶质的mol可相加，浓度不能直接相加。",
+        "最终体积使用题给值；可加和须明确。"
+      ],
+      "checkpoint": {
+        "question": "等体积的0.20和0.60 mol/L同溶质溶液无反应、无损失混合且体积可加和，c终是多少？",
+        "answer": "0.40 mol/L。",
+        "explanation": "可设两份各V，n总=(0.20+0.60)V，体积2V，得0.40；成立是因为等体积且可加和。"
+      }
+    },
+    {
+      "id": "w5-chemistry-section-scope",
+      "title": "守恒前先查范围，结果后再查单位与条件",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。把一句“n守恒”改写完整：哪个对象、在哪个范围、发生什么过程？稀释时同一份指定溶质不变；取样时原瓶内n减少但所有部分合计不变；混合同溶质时各份n相加；发生反应时某反应物会被消耗，不能对它硬套稀释等式。",
+        "析出沉淀或晶体时，若问的是液相中某溶质，溶液内n可能减少；即使连固体一起统计某元素仍守恒，也不代表溶液中该溶质n不变。溶剂蒸发与溶质挥发也不是同一种情况。后续题若出现这些过程，要回到题目给定的反应和相态，本周不凭直觉补复杂模型。",
+        "每题固定四项自查：对象是不是同一份同一物质；V是不是最终溶液体积且换成L；守恒或可加和的条件是否真的给出；结果单位及变化方向是否合理。质量分数检查分母是溶液质量，百分数不得带mol/L。",
+        "这些是纸面模型，不是家庭配液指南。浓酸、强碱稀释可能放热并造成伤害；本课不要求购买、混合或操作任何试剂，也不给家庭酸碱稀释步骤。真实实验需由合格人员在适当设施下按规范实施。"
+      ],
+      "keyPoints": [
+        "先核实对象和边界，再列守恒。",
+        "本课只做纸面与口头学习，不实施配液。"
+      ],
+      "checkpoint": {
+        "question": "原NaCl溶液倒出一半后，有人对“原瓶内NaCl”使用n前=n后，错在哪里？",
+        "answer": "追踪范围错了；原瓶内n减半，原瓶与倒出部分合计才保留原n。",
+        "explanation": "均一取样保证c相同，不保证原瓶内n不变。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w5-chemistry-example-1",
+      "title": "例1·基础：从g走到mol/L",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "仅作纸面题：11.7 g NaCl完全溶解，最终溶液体积为500 mL，M(NaCl)=58.5 g/mol。求c(NaCl)，再求其中50.0 mL均一样品所含NaCl的n。",
+      "answer": "c=0.400 mol/L；样品n=0.0200 mol。",
+      "steps": [
+        "先认对象：11.7 g属于整份500 mL溶液中的NaCl，不是水。",
+        "质量转mol：n整=11.7 g÷(58.5 g/mol)=0.200 mol。",
+        "V整=500 mL=0.500 L，所以c=0.200/0.500=0.400 mol/L。",
+        "样品与整份c相同；V样=0.0500 L，n样=0.400×0.0500=0.0200 mol。",
+        "样品体积是整份1/10，其NaCl也为1/10；比例与结果相符。"
+      ],
+      "commonErrors": [
+        "直接11.7/0.500得到的g/L误写mol/L。",
+        "取样浓度又除10。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-example-2",
+      "title": "例2·应用：稀释至不等于加水量",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "取30.0 mL、1.50 mol/L NaCl原液，无反应、无损失、无析出地稀释至225.0 mL。求最终c及该份溶液所含NaCl质量，M=58.5 g/mol。能断言加水恰为195.0 mL吗？",
+      "answer": "c=0.200 mol/L；NaCl质量2.6325 g，约2.63 g；不能断言精确加水195.0 mL。",
+      "steps": [
+        "这次追踪的是取出的30.0 mL，不是未知体积的原液整瓶。",
+        "n前=1.50×0.0300=0.0450 mol；只加水且无损失，n后仍0.0450 mol。",
+        "V后=0.2250 L；c后=0.0450/0.2250=0.200 mol/L。",
+        "m=nM=0.0450×58.5=2.6325 g；水增加并没有增加NaCl质量。",
+        "225.0−30.0=195.0 mL只是体积差，没有体积可加和条件不能视为精确水量。",
+        "体积放大7.5倍，浓度从1.50降到0.200，为原来的1/7.5，方向正确。"
+      ],
+      "commonErrors": [
+        "把0.2250 L误作水量再加0.0300。",
+        "稀释后质量也除7.5。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-example-3",
+      "title": "例3·应用：取样后只稀释小份",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "一份300 mL、0.400 mol/L均一NaCl溶液，取出75.0 mL，再将取出部分稀释至150.0 mL。全过程无反应、无挥发、无析出、无损失。求取出瞬间样品n、原瓶剩余n与c，以及稀释后样品c。",
+      "answer": "样品n=0.0300 mol；原瓶剩余n=0.0900 mol、c=0.400 mol/L；稀释后样品c=0.200 mol/L。",
+      "steps": [
+        "原瓶起始n=0.400×0.300=0.120 mol。",
+        "取出时浓度相同，n样=0.400×0.0750=0.0300 mol。",
+        "原瓶剩n=0.120−0.0300=0.0900 mol，剩体积0.225 L，c剩=0.0900/0.225=0.400 mol/L。",
+        "后续只跟踪样品的0.0300 mol，用最终0.1500 L作分母：c样后=0.200 mol/L。",
+        "原瓶剩余没有加水，c不变；小份被稀释，c减半。把两个容器分开记账才能避免混算。"
+      ],
+      "commonErrors": [
+        "用整瓶0.120 mol除样品150 mL。",
+        "原瓶剩余浓度写0.300 mol/L。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-example-4",
+      "title": "例4·应用：质量分数与浓度分别算",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给某均一NaCl水溶液总质量125 g，其中NaCl为5.85 g；在题定温度下最终溶液体积120 mL。M(NaCl)=58.5 g/mol。分别求质量分数w、c与溶液密度ρ；解释两个浓度数值为什么不相同。",
+      "answer": "w=4.68%；c≈0.833 mol/L；ρ≈1.04 g/mL。",
+      "steps": [
+        "w分母用溶液125 g：5.85/125=0.0468=4.68%，不是除以水的119.15 g。",
+        "n=5.85/58.5=0.100 mol。",
+        "最终V=0.120 L，c=0.100/0.120≈0.833 mol/L。",
+        "ρ=m溶液/V溶液=125/120≈1.04 g/mL。反过来若只给质量与ρ，可求V，再换L。",
+        "w是g/g，c是mol/L；定义不同，没有理由数值相同。计算中使用原始125与120，不把已舍入ρ再用于回算。"
+      ],
+      "commonErrors": [
+        "把4.68%写成4.68 mol/L。",
+        "密度用溶质5.85 g作分子。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-example-5",
+      "title": "例5·迁移：不同体积不能简单平均",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "把80.0 mL、0.250 mol/L NaCl溶液与120.0 mL、0.750 mol/L NaCl溶液混合。题设无反应、无挥发、无析出、无损失，且体积可加和。求c终；若删去可加和且没有最终体积，哪些量仍可确定？",
+      "answer": "n总=0.110 mol；V终=0.2000 L；c终=0.550 mol/L。若没有最终体积条件，n总仍0.110 mol，但精确c终不能确定。",
+      "steps": [
+        "先各换L：0.0800 L、0.1200 L。",
+        "n₁=0.250×0.0800=0.0200 mol；n₂=0.750×0.1200=0.0900 mol。",
+        "同一溶质无反应无损失，n总=0.0200+0.0900=0.110 mol。",
+        "题目明确体积可加和，V终=0.0800+0.1200=0.2000 L，c=0.110/0.2000=0.550 mol/L。",
+        "直接平均得0.500 mol/L不对，因为高浓度那份体积更大。0.550介于0.250与0.750之间且偏向0.750，符合本题条件下的检验。",
+        "去掉最终体积依据不影响n相加，但会失去c的分母；要明确指出缺条件。"
+      ],
+      "commonErrors": [
+        "两浓度相加得1.00 mol/L。",
+        "未给条件也默认体积相加。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w5-chemistry-practice-1",
+      "title": "独练1：质量与最终体积",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "9.36 g NaCl完全溶解后形成400 mL均一溶液，M=58.5 g/mol。求n与c，并说明若题目只说“溶于400 mL水”，能否保证同一浓度。",
+      "answer": "n=0.160 mol；c=0.400 mol/L；只给400 mL水不能保证。",
+      "steps": [
+        "n=9.36/58.5=0.160 mol。",
+        "V溶液=0.400 L；c=0.160/0.400=0.400 mol/L。",
+        "水体积不等于最终溶液体积；后一表述不足以确定同一c。"
+      ],
+      "commonErrors": [
+        "将g/L当mol/L。",
+        "不区分水与溶液。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-practice-2",
+      "title": "独练2：由目标反求原液体积",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "理论上要把0.800 mol/L NaCl原液的一部分无反应无损失地稀释成200.0 mL、0.200 mol/L溶液。需要原液多少mL？能仅凭此说加水150.0 mL吗？",
+      "answer": "需原液50.0 mL；不能断言精确加水150.0 mL。",
+      "steps": [
+        "目标溶质n=0.200×0.2000=0.0400 mol。",
+        "原液须提供同样n，V原=n/c原=0.0400/0.800=0.0500 L=50.0 mL。",
+        "最终体积200.0 mL不表示各液体体积严格相加，因此水量不能直接作精确差值。"
+      ],
+      "commonErrors": [
+        "把200.0 mL当水量。",
+        "V算出0.0500后仍写mL。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-practice-3",
+      "title": "独练3：两份各记各的n",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "250 mL、0.360 mol/L均一溶液取走50.0 mL。温度不变、无反应、挥发或析出。求取出部分n、剩余n与剩余c；再把取出部分稀释至90.0 mL，求其c。",
+      "answer": "n取=0.0180 mol；n剩=0.0720 mol；c剩=0.360 mol/L；c样后=0.200 mol/L。",
+      "steps": [
+        "原n=0.360×0.250=0.0900 mol。",
+        "取出n=0.360×0.0500=0.0180 mol。",
+        "剩n=0.0900−0.0180=0.0720 mol，剩V=0.200 L，所以c剩=0.360 mol/L。",
+        "只稀释所取小份，c样后=0.0180/0.0900=0.200 mol/L。"
+      ],
+      "commonErrors": [
+        "把剩余浓度随n减小。",
+        "样品稀释使用整瓶n。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-practice-4",
+      "title": "独练4：两个分母分别识别",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给某NaCl溶液总质量100 g，NaCl质量5.85 g，最终溶液体积96.0 mL，M=58.5 g/mol。求w与c。只知道w=5.85%时，能否确定c？",
+      "answer": "w=5.85%；c≈1.04 mol/L。仅有w不能确定c。",
+      "steps": [
+        "w=5.85/100=0.0585=5.85%。",
+        "n=5.85/58.5=0.100 mol，V=0.0960 L，c≈1.0417 mol/L，约1.04 mol/L。",
+        "从w到c还需M及体积/密度等条件，不能默认ρ=1。"
+      ],
+      "commonErrors": [
+        "用水质量94.15 g做w分母。",
+        "把百分数直接当mol/L。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w5-chemistry-practice-5",
+      "title": "独练5：混合后溶质量账",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "60.0 mL、0.300 mol/L与140.0 mL、0.800 mol/L同溶质溶液混合，明确无反应、无挥发、无析出、无损失且体积可加和。求n总与c终，并解释能否使用两浓度平均。",
+      "answer": "n总=0.130 mol；c终=0.650 mol/L；不能直接取算术平均，因体积不同。",
+      "steps": [
+        "n₁=0.300×0.0600=0.0180 mol。",
+        "n₂=0.800×0.1400=0.112 mol。",
+        "n总=0.130 mol，V终=0.2000 L；c终=0.650 mol/L。",
+        "高浓度液体更多，结果偏向0.800；(0.300+0.800)/2=0.550错误赋予同样体积权重。"
+      ],
+      "commonErrors": [
+        "浓度直接相加或不加权平均。",
+        "忽略可加和是题设而非普遍规律。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "取走一半，原瓶浓度减半。",
+      "why": "均一取样使剩余n与V同时减半，比值不变。",
+      "right": "c不变，原瓶内n减半；原瓶与样品合计的n不变。"
+    },
+    {
+      "wrong": "稀释至200 mL，就是加入200 mL水。",
+      "why": "前者是最终溶液体积，后者是溶剂增量，不是同一量。",
+      "right": "V后用题给最终溶液体积；水量不能无条件由体积差精确求出。"
+    },
+    {
+      "wrong": "5%就是0.05 mol/L。",
+      "why": "质量分数为g/g，物质的量浓度为mol/L，分子分母不同。",
+      "right": "需M与最终体积或密度等信息后逐步换算。"
+    },
+    {
+      "wrong": "两液混合的浓度就是两浓度之和或平均。",
+      "why": "浓度不是总量；不同体积所提供的n不同。",
+      "right": "无反应无损失时先相加同溶质n，再除有依据的V终。"
+    },
+    {
+      "wrong": "任何过程中某物质n都守恒。",
+      "why": "反应、析出、溶质挥发或取样范围改变都可能使所跟踪的n变化。",
+      "right": "先说明物质、系统范围和过程条件，再决定是否守恒。"
+    }
+  ],
+  "quiz": {
+    "instructions": "唯一原创短测，共4题、24分钟、20分，每题6分钟5分。先折叠全部答案和评分说明，独立写依据、式子、单位与结果，再逐点评分。每条评分点满足其完整条件才得分，过程分不因只写末尾数值自动获得。允许等值写法和合理末位舍入，计算中间量尽量不提前舍入。前测、正文自检、例题、练习和勾选不并入20分。忙碌分段按预算执行；首次作答与订正后新尝试分别保留。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w5-chemistry-quiz-1",
+        "title": "短测1：定义、单位与信息充分性",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "（1）4.68 g NaCl完全溶解形成200 mL溶液，M=58.5 g/mol，求n与c。（2）若只说溶于200 mL水，是否能保证相同c？写理由。",
+        "answer": "n=0.0800 mol；c=0.400 mol/L；不能保证，缺最终溶液体积。",
+        "steps": [
+          "n=4.68/58.5=0.0800 mol。",
+          "200 mL=0.200 L。",
+          "c=0.0800/0.200=0.400 mol/L。",
+          "定义分母是最终溶液，不是所加水。"
+        ],
+        "commonErrors": [
+          "单位未换算。",
+          "默认水量就是溶液体积。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "列n=m/M，得到0.0800 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "200 mL正确换为0.200 L。"
+          },
+          {
+            "points": 1,
+            "criterion": "列c=n/V，得0.400 mol/L，写对对象与单位。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确V指最终溶液体积。"
+          },
+          {
+            "points": 1,
+            "criterion": "第2问答不能保证，并指出缺最终溶液体积，未默认体积不变。"
+          }
+        ]
+      },
+      {
+        "id": "w5-chemistry-quiz-2",
+        "title": "短测2：先稀释，再取样",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "20.0 mL、1.20 mol/L NaCl溶液无反应无损失无析出地稀释至160.0 mL；从均一的最终溶液中取出40.0 mL。求稀释后c及所取样品n；判断能否断言精确加水140.0 mL。",
+        "answer": "n稀释全份=0.0240 mol；c后=0.150 mol/L；n样=0.00600 mol；不能断言精确加水140.0 mL。",
+        "steps": [
+          "n前=1.20×0.0200=0.0240 mol。",
+          "同一份溶质满足条件，n后=n前。",
+          "V后=0.1600 L，c后=0.0240/0.1600=0.150 mol/L。",
+          "样品c不变，n样=0.150×0.0400=0.00600 mol。",
+          "V后为最终溶液；未经可加和条件不能用体积差确定精确加水量。"
+        ],
+        "commonErrors": [
+          "样品n仍用全部0.0240 mol。",
+          "将最终体积当水量。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "先换原液为0.0200 L并求n=0.0240 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "写明同一份溶质无反应、无损失等题设使n前=n后。"
+          },
+          {
+            "points": 1,
+            "criterion": "用最终0.1600 L得到c后=0.150 mol/L。"
+          },
+          {
+            "points": 1,
+            "criterion": "样品浓度不变，用0.0400 L求n样=0.00600 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝断言精确水量140.0 mL，理由是未给体积可加和。"
+          }
+        ]
+      },
+      {
+        "id": "w5-chemistry-quiz-3",
+        "title": "短测3：两种浓度不可混读",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "某NaCl溶液总质量125 g，含NaCl 7.02 g，题给最终溶液体积120 mL，M=58.5 g/mol。求w与c。若只保留w与M而不给体积或密度，能确定c吗？",
+        "answer": "w=5.616%（约5.62%）；n=0.120 mol；c=1.00 mol/L；仅w与M不能确定c，还需体积或密度等条件。",
+        "steps": [
+          "w=7.02/125=0.05616，写成百分数为5.616%。",
+          "n=7.02/58.5=0.120 mol。",
+          "V=0.120 L，c=0.120/0.120=1.00 mol/L。",
+          "w为g/g，c为mol/L；缺体积信息不能跨过不同分母。"
+        ],
+        "commonErrors": [
+          "把w分母用117.98 g水。",
+          "认为5.616%=0.05616 mol/L。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "w分母取整个溶液125 g，列7.02/125。"
+          },
+          {
+            "points": 1,
+            "criterion": "w=0.05616=5.616%或约5.62%，无mol/L单位。"
+          },
+          {
+            "points": 1,
+            "criterion": "n=7.02/58.5=0.120 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "用最终0.120 L求c=1.00 mol/L。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明仅有w与M不能求c，缺体积/密度信息，未默认溶液密度为1。"
+          }
+        ]
+      },
+      {
+        "id": "w5-chemistry-quiz-4",
+        "title": "短测4：混合、守恒范围与估计",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "50.0 mL、0.240 mol/L与150.0 mL、0.640 mol/L NaCl溶液混合。题设无反应、无挥发、无析出、无损失，体积可加和。求n总与c终；说明能否直接平均两浓度。若混合时NaCl发生反应被消耗，能否仍把n终写成两份起始n之和？",
+        "answer": "n总=0.108 mol；c终=0.540 mol/L；不能简单平均，体积不同；若NaCl被反应消耗，其最终n应扣消耗，不能直接等于起始之和。",
+        "steps": [
+          "n₁=0.240×0.0500=0.0120 mol。",
+          "n₂=0.640×0.1500=0.0960 mol，合计0.108 mol。",
+          "题给可加和，V终=0.2000 L；c终=0.108/0.2000=0.540 mol/L。",
+          "高浓度那份体积为低浓度的3倍，结果应更靠近0.640，不能取0.440。",
+          "所问是NaCl本身而不是元素总量，发生消耗时要用起始减消耗，原稀释/无反应混合假设失效。"
+        ],
+        "commonErrors": [
+          "直接平均得0.440 mol/L。",
+          "认为所有过程中每种物质n都不变。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "两份n分别为0.0120、0.0960 mol，过程单位正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "同一溶质无反应无损失时相加为0.108 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "依据明确可加和，V终=0.2000 L，c=0.540 mol/L。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝简单平均，解释两份体积不同；可用体积加权解释。"
+          },
+          {
+            "points": 1,
+            "criterion": "反应消耗后NaCl的n要扣消耗，不能照搬起始之和；说明守恒适用条件改变。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "短测1：必须把mL换L，且明确c的分母为最终溶液体积；不能用给定水量代替。",
+        "短测2：必须追踪同一份溶质并依据无反应无损失守恒，V后取最终160.0 mL；样品只含该取样份额的n。",
+        "短测2：没有体积可加和条件不能把体积差断言为精确加水量。",
+        "短测3：w用溶液质量作分母且不带mol/L，c不能由百分数直接代换。",
+        "短测4：先算各份n再相加，使用题设最终体积；不能将n守恒无条件推广到发生反应的物质。",
+        "总分至少16/20，所有关键条件均通过，并完成核心活动与订正，才具备本周推进条件。照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w5-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w5-chemistry-section-recall",
+          "w5-chemistry-section-units",
+          "w5-chemistry-section-concentration"
+        ],
+        "action": "重写g→mol与mL→L两条线，再解释分母为何是最终溶液。"
+      },
+      {
+        "questionIds": [
+          "w5-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w5-chemistry-section-dilution",
+          "w5-chemistry-section-sampling",
+          "w5-chemistry-section-scope"
+        ],
+        "action": "画原液小份、稀释全份、取样份三框，逐框标n、V、c，口述哪些n相等、哪些只按比例分配。"
+      },
+      {
+        "questionIds": [
+          "w5-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w5-chemistry-section-fraction",
+          "w5-chemistry-section-concentration"
+        ],
+        "action": "把w与c的分子分母并排写，并说明密度搭桥用的是溶液质量。"
+      },
+      {
+        "questionIds": [
+          "w5-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w5-chemistry-section-mixtures",
+          "w5-chemistry-section-scope"
+        ],
+        "action": "先列每份n的账，再从题设找最终体积的依据；对反应消耗情境明确写起始减消耗。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w5-chemistry-review-corrections",
+    "title": "12分钟：把错因改成下次能执行的检查",
+    "instructions": [
+      "第1—3分钟：按4题逐点计分，记录首次分数；另查关键条件，不用高总分掩盖对象、状态、守恒或单位错误。",
+      "第4—8分钟：选最多两处根本错误，写“原来怎么想—定义或题设哪里不支持—正确依据—下一次先查什么”。按短测补救路由重读相应小节，不能只抄结果。",
+      "第9—12分钟：合上答案，用自己的话讲清一道错题的路线，重新写原错题关键式和单位。看过解析后的订正不替代首次独立作答成绩。",
+      "若12分钟内仍未修复，记录活动ID与卡点，在下一可用时段继续留在本周。独立重做原错题记录为新尝试，不另外新增一套20分测验；不以学习时长或日期自动判定掌握。"
+    ]
+  },
+  "nextStep": "完成本周所有核心并订正后，核对20分短测与关键条件，达标才由学习者手动进入下一周。未达标按路由回到相应小节和例题，下一可用时段独立重做错题并保存新尝试，保留首次成绩。课程顺序按能力推进，不绑定日历或固定下班时刻。",
+  "audioStatus": "未配置音频；全部定义、条件、示例、解析和自检均可直接阅读。",
+  "mastery": [
+    "不看公式能说出c、n、V各表示什么，并用正确单位列式。",
+    "看到“水”与“最终溶液”能判断信息是否够用，不擅自补密度或体积可加和。",
+    "能解释均一取样c不变和理想稀释n不变，始终追踪同一份溶质。",
+    "能分别计算w与c，说明不能把百分数直接当mol/L。",
+    "五题独练完成并订正；短测至少16/20且所有关键条件通过后才手动推进。"
+  ],
+  "safetyScope": "仅作纸笔计算、阅读原创示意图和口头说明，不要求购买、配制、稀释、混合或接触任何化学品。特别不进行家庭浓酸、强碱稀释实验。题目均为指定温度下的理论均一溶液；使用无反应、无溶质损失、无析出等条件时须按题设核实。体积仅在明确允许时相加，n=cV的V为所追踪那份最终溶液体积。",
+  "sourcePolicy": {
+    "authorship": "中文讲解、问题数据、逐步解释、评分与图示方案均为针对基础薄弱在职自学者原创编写；保留原第5周的浓度、质量分数、稀释、取样和简单混合范围。",
+    "examStatus": "全部是原创教学题，非历年真题；未声称为2028年必考题或已核验高考真题。pilot-ready仅指内容试点状态，不表示学习者已掌握。",
+    "externalSources": [
+      {
+        "id": "w5-chemistry-source-molarity",
+        "title": "OpenStax Chemistry 2e：3.3 Molarity",
+        "url": "https://openstax.org/books/chemistry-2e/pages/3-3-molarity",
+        "kind": "reference",
+        "scopeNote": "已打开原发布机构页面核验物质的量浓度的定义、单位及理想稀释的溶质守恒基础。本文表述、图示设计与题目数据为原创，未复制原书练习。"
+      },
+      {
+        "id": "w5-chemistry-source-mass-fraction",
+        "title": "OpenStax Chemistry 2e：3.4 Other Units for Solution Concentrations",
+        "url": "https://openstax.org/books/chemistry-2e/pages/3-4-other-units-for-solution-concentrations",
+        "kind": "reference",
+        "scopeNote": "已打开原发布机构页面核验质量百分数以溶液质量为分母，以及密度可连接溶液质量与体积；原创题目独立设定并复算。"
+      }
+    ]
+  }
+}

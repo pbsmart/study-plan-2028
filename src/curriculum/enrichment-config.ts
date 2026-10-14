@@ -46,4 +46,23 @@ export const enrichmentConfigs: EnrichmentConfig[] = [
       { subject: 'chemistry', file: 'assets/chemistry-review-map.json' },
     ],
   },
+  {
+    week: 5, revision: 'week05-enriched-v1', directory: 'enriched-week-05',
+    answerOnlyFigureIds: ['w5-physics-figure4'],
+    figureManifests: [
+      { subject: 'math', file: 'assets/math-figures.json' },
+      { subject: 'physics', file: 'assets/physics-figures.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-figures.json' },
+    ],
+    preferDiagramAssets: true,
+  },
+  {
+    week: 6, revision: 'week06-enriched-v1', directory: 'enriched-week-06',
+    figureManifests: [
+      { subject: 'math', file: 'assets/math-figures.json' },
+      { subject: 'physics', file: 'assets/physics-figures.json' },
+      { subject: 'chemistry', file: 'assets/chemistry-figures.json' },
+    ],
+    preferDiagramAssets: true,
+  },
 ]

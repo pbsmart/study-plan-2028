@@ -41,7 +41,7 @@ test('figures containing results stay inside closed example answers and reset wh
 test('week-two enrichment preserves progress, pending third subject, and later basic courses',async({page})=>{
   await page.goto('/#learn/2/math/prepare');await expect(page.locator('.enriched-content')).toContainText('第2周深化试点')
   await page.getByRole('button',{name:'← 退出专注',exact:true}).click();await expect(page.locator('.topbar')).toContainText('第 1 周');await expect(page.locator('.subject-tabs')).toContainText('第三科 · 待确认')
-  for(const week of [5,40,84]){await page.goto(`/#learn/${week}/math/knowledge`);await expect(page.locator('.knowledge-block')).not.toHaveCount(0);await expect(page.locator('.enriched-content')).toHaveCount(0)}
+  for(const week of [7,40,84]){await page.goto(`/#learn/${week}/math/knowledge`);await expect(page.locator('.knowledge-block')).not.toHaveCount(0);await expect(page.locator('.enriched-content')).toHaveCount(0)}
   await page.goto('/#learn/1/math/prepare');await expect(page.locator('.enriched-content')).toContainText('第1周深化试点')
   const record=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)||'null'),key);if(record){expect(record.currentWeek).toBe(1);expect(record.settings.thirdConfirmed).toBe(false)}
 })

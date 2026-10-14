@@ -1,0 +1,862 @@
+{
+  "id": "w6-化学",
+  "week": 6,
+  "subject": "化学",
+  "title": "离子反应与离子方程式：拆写有条件，原子电荷都守恒",
+  "revision": "week06-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "能借本课前置规则卡辨认常见离子、强弱电解质、溶解性及aq/s/l/g状态。",
+    "能区分强弱电离与浓稀，说明弱酸、水、气体与固相为何保留，避免见酸碱盐就拆。",
+    "能按写拆删查完成沉淀、中和和足量酸与碳酸盐的简单净离子式，并同时检查原子与电荷。",
+    "能从n=cV接到离子计量，按反应消耗求简单混合后的剩余浓度，说明旁观离子仍在溶液。",
+    "能在唯一20分原创短测中达到16分并通过关键条件，不进行任何家庭化学实验。"
+  ],
+  "prerequisites": [
+    "第4周能读化学式、配平与使用mol系数比，知道两给量要判限制者。",
+    "第5周能把mL换L，使用n=cV，区分最终溶液体积与原液/水体积。",
+    "不假设已背熟电离与溶解性；本课给出够用规则卡与常见离子电荷，先补再练。"
+  ],
+  "budget": {
+    "coreMinutes": 150,
+    "busyMinutes": 60,
+    "extensionMinutes": 0,
+    "busyPolicy": "忙碌60分钟是单次学习上限，不是删减版过关路线。完整核心按60+60+30分钟分三次可用时段：第1次60分钟=前测6+8节正文及自检48+例1共6；活动ID：w6-chemistry-diagnostic-1、w6-chemistry-diagnostic-2、w6-chemistry-diagnostic-3、w6-chemistry-section-recall、w6-chemistry-section-rulecard、w6-chemistry-section-foursteps、w6-chemistry-section-charge、w6-chemistry-section-neutralization、w6-chemistry-section-gas、w6-chemistry-section-concentration、w6-chemistry-section-boundaries、w6-chemistry-example-1。第2次60分钟=例2—5共24+5题独练30+短测1共6；活动ID：w6-chemistry-example-2、w6-chemistry-example-3、w6-chemistry-example-4、w6-chemistry-example-5、w6-chemistry-practice-1、w6-chemistry-practice-2、w6-chemistry-practice-3、w6-chemistry-practice-4、w6-chemistry-practice-5、w6-chemistry-quiz-1。第3次30分钟=短测2—4共18+订正12；活动ID：w6-chemistry-quiz-2、w6-chemistry-quiz-3、w6-chemistry-quiz-4、w6-chemistry-review-corrections。分开完成短测时先保存已答内容，不看任何短测答案、评分、例题或课文，直到4题均交卷；不能回改前次作答冒充独立表现。因工作中断可记录活动ID和小问断点，下一可用时段续做。所有核心及订正完成、总分与关键条件同时通过才手动推进；150分钟仅是首轮预算，仍卡住就延长本周，不随日历自动跳周。",
+    "segments": [
+      {
+        "id": "w6-chemistry-time-diagnostic",
+        "title": "三题前测，不计过关分",
+        "minutes": 6,
+        "activityIds": [
+          "w6-chemistry-diagnostic-1",
+          "w6-chemistry-diagnostic-2",
+          "w6-chemistry-diagnostic-3"
+        ]
+      },
+      {
+        "id": "w6-chemistry-time-concepts",
+        "title": "八节前置、正文与自检，每节6分钟",
+        "minutes": 48,
+        "activityIds": [
+          "w6-chemistry-section-recall",
+          "w6-chemistry-section-rulecard",
+          "w6-chemistry-section-foursteps",
+          "w6-chemistry-section-charge",
+          "w6-chemistry-section-neutralization",
+          "w6-chemistry-section-gas",
+          "w6-chemistry-section-concentration",
+          "w6-chemistry-section-boundaries"
+        ]
+      },
+      {
+        "id": "w6-chemistry-time-examples",
+        "title": "五个阶梯例题，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w6-chemistry-example-1",
+          "w6-chemistry-example-2",
+          "w6-chemistry-example-3",
+          "w6-chemistry-example-4",
+          "w6-chemistry-example-5"
+        ]
+      },
+      {
+        "id": "w6-chemistry-time-practice",
+        "title": "五题独立练习，每题6分钟",
+        "minutes": 30,
+        "activityIds": [
+          "w6-chemistry-practice-1",
+          "w6-chemistry-practice-2",
+          "w6-chemistry-practice-3",
+          "w6-chemistry-practice-4",
+          "w6-chemistry-practice-5"
+        ]
+      },
+      {
+        "id": "w6-chemistry-time-quiz",
+        "title": "唯一原创短测，4题20分，每题6分钟",
+        "minutes": 24,
+        "activityIds": [
+          "w6-chemistry-quiz-1",
+          "w6-chemistry-quiz-2",
+          "w6-chemistry-quiz-3",
+          "w6-chemistry-quiz-4"
+        ]
+      },
+      {
+        "id": "w6-chemistry-time-review",
+        "title": "评分与错因订正",
+        "minutes": 12,
+        "activityIds": [
+          "w6-chemistry-review-corrections"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "用6分钟先独立答3道前测，每题约2分钟。不会的题标出卡在对象、单位、规则还是比例。前测不计入20分短测；按路由进入本课已有的补救和正文时间，不另加一份测验。全对仍需完成各节自检。",
+    "questions": [
+      {
+        "id": "w6-chemistry-diagnostic-1",
+        "title": "前测1：电荷与组成",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "2SO₄²⁻一共含几个S、几个O，带符号的总电荷数是多少？",
+        "answer": "S2、O8，总电荷数−4。",
+        "steps": [
+          "系数2乘整体：S为2×1，O为2×4。",
+          "电荷为2×(−2)=−4。"
+        ],
+        "commonErrors": [
+          "把O写4。",
+          "电荷写−2或+4。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w6-chemistry-diagnostic-2",
+        "title": "前测2：浓度到离子",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "50.0 mL、0.200 mol/L NaCl溶液，按完全电离，NaCl为多少mol，Cl⁻为多少mol？",
+        "answer": "NaCl0.0100 mol；Cl⁻0.0100 mol。",
+        "steps": [
+          "50.0 mL=0.0500 L。",
+          "n(NaCl)=0.200×0.0500=0.0100 mol；每份提供1份Cl⁻。"
+        ],
+        "commonErrors": [
+          "用50.0直接乘。",
+          "认为所有负离子都要乘2。"
+        ],
+        "estimatedMinutes": 2
+      },
+      {
+        "id": "w6-chemistry-diagnostic-3",
+        "title": "前测3：拆写依据",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "已知HCl为强酸、CH₃COOH为弱酸、AgCl为难溶沉淀。在普通水溶液反应中，HCl(aq)、CH₃COOH(aq)、AgCl(s)分别是否拆成离子？",
+        "answer": "HCl(aq)拆；CH₃COOH(aq)、AgCl(s)保留。",
+        "steps": [
+          "HCl在本课水溶液中按完全电离。",
+          "醋酸弱电离，AgCl为难溶固相，均不能按可溶强电解质拆写。"
+        ],
+        "commonErrors": [
+          "见aq就全部拆。",
+          "见盐就全部拆。"
+        ],
+        "estimatedMinutes": 2
+      }
+    ],
+    "routes": [
+      {
+        "when": "前测1电荷、下标或多原子离子出错。",
+        "action": "先在前置小节分别圈系数、下标、右上电荷，再练逐元素与电荷两本账。",
+        "sectionIds": [
+          "w6-chemistry-section-recall",
+          "w6-chemistry-section-charge"
+        ]
+      },
+      {
+        "when": "前测2单位、n=cV或离子份数出错。",
+        "action": "先写mL→L和溶质mol→离子mol两行，不能跳步。",
+        "sectionIds": [
+          "w6-chemistry-section-recall",
+          "w6-chemistry-section-concentration"
+        ]
+      },
+      {
+        "when": "前测3拆写错误，或三题全对但不能解释条件。",
+        "action": "按三项前提检查规则卡；全部正确仍完成八节自检，再进入五例与独练。",
+        "sectionIds": [
+          "w6-chemistry-section-rulecard",
+          "w6-chemistry-section-foursteps",
+          "w6-chemistry-section-boundaries"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w6-chemistry-section-recall",
+      "title": "先补前置：离子电荷、下标与n=cV",
+      "level": "remediation",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。这一周不从记忆一大堆方程式开始。先认本课常用离子：H⁺、Na⁺、K⁺、Ag⁺带1个正电荷；Ca²⁺、Ba²⁺带2个正电荷；Cl⁻、OH⁻、NO₃⁻、CH₃COO⁻带1个负电荷；SO₄²⁻、CO₃²⁻带2个负电荷。电荷标在右上角，下标表示内部组成，位置与含义不同。",
+        "OH⁻是一个整体氢氧根离子，不拆成O和H；SO₄²⁻是一个硫酸根离子，含1个S、4个O，总电荷−2，不是每个O都标−2。本课读化学式时先找整体多原子离子，再看前面的份数。2SO₄²⁻含S共2、O共8，总电荷−4。",
+        "溶液中每1 mol完全电离的BaCl₂按计量提供1 mol Ba²⁺和2 mol Cl⁻；Na₂SO₄提供2 mol Na⁺和1 mol SO₄²⁻。这里倍数来自化学式下标，不来自离子电荷大小：Ba²⁺带2+不代表每份BaCl₂产生2个Ba²⁺。",
+        "第5周公式继续用：n(溶质)=cV，c用mol/L时V必须换L。先求所加溶质的mol，再按每份含几个离子换算，最后才按反应系数比较。切忌把试剂瓶标注的c(BaCl₂)直接当作c(Cl⁻)。"
+      ],
+      "keyPoints": [
+        "下标给组成，右上电荷给正负；多原子离子整体识别。",
+        "先n=cV求溶质，再按化学式求参与反应的离子。"
+      ],
+      "checkpoint": {
+        "question": "0.010 mol Na₂SO₄按完全电离且忽略水解计算，提供Na⁺与SO₄²⁻各多少mol？总正负电荷份额怎样？",
+        "answer": "Na⁺0.020 mol，SO₄²⁻0.010 mol；正0.020、负2×0.010=0.020，电荷平衡。",
+        "explanation": "Na的下标2决定Na⁺的mol倍数；SO₄²⁻每个带2−，计电荷另乘2。"
+      }
+    },
+    {
+      "id": "w6-chemistry-section-rulecard",
+      "title": "前置规则卡：能拆必须同时看性质、溶解性和状态",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。本课的电解质指在水溶液或熔融状态下能因本身电离而导电的化合物。强、弱电解质描述在相应条件下电离程度的差别：本课强电解质按完全电离处理，弱电解质只部分电离。浓、稀描述单位体积里含多少；稀盐酸仍按强酸处理，较浓的醋酸仍是弱酸。不能用浓度高低决定是否拆写，也不能只用灯泡亮暗替代判断。",
+        "拆写的三项前提：本题是水溶液反应；该物质在题给情境下实际溶解；它属于可按强电解质处理的物质。本课HCl(aq)、HNO₃(aq)、NaOH(aq)、KOH(aq)与可溶盐NaCl(aq)、AgNO₃(aq)、BaCl₂(aq)、Na₂SO₄(aq)、Na₂CO₃(aq)、CH₃COONa(aq)可写成相应离子。aq表示水溶液，s表示固体，l表示液态，g表示气态。",
+        "本课必须保留：弱酸CH₃COOH(aq)、水H₂O(l)、气体CO₂(g)、难溶固体或沉淀AgCl(s)、BaSO₄(s)、CaCO₃(s)，以及题目尚未让它溶解的NaOH(s)。醋酸可溶也不等于完全电离；难溶也不等于弱电解质。NaOH固体虽属于强电解质，但不能为了套水溶液写法偷偷把它改成aq。",
+        "够本周用的溶解性小卡：常见钠盐、钾盐、硝酸盐在本课题设下可溶；AgCl、BaSO₄、CaCO₃按难溶处理。不是所有氯化物都难溶，也不是所有硫酸盐都可溶。遇到卡片外物质，以题给性质或正规溶解性表为据，不凭名称猜。CH₃COONa作为可溶盐拆写，不因来源于弱酸就保留整式；本周基础计量明确忽略盐类水解。"
+      ],
+      "keyPoints": [
+        "可溶、强电解质、水溶液状态须一起查。",
+        "CH₃COOH、水、固体沉淀和气体保留化学式；强弱不等于浓稀。"
+      ],
+      "checkpoint": {
+        "question": "稀HCl(aq)、较浓CH₃COOH(aq)、BaSO₄(s)、NaOH(s)哪些可在本课直接拆写？",
+        "answer": "只有HCl(aq)可直接写H⁺和Cl⁻；其余保留。",
+        "explanation": "CH₃COOH是弱酸；BaSO₄为难溶固体；NaOH虽为强电解质但当前为固体。"
+      }
+    },
+    {
+      "id": "w6-chemistry-section-foursteps",
+      "title": "写、拆、删、查：只删没有变化的离子",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。离子方程式突出反应中发生变化的粒子。先“写”：依据题目给定或已知的实际反应写正确化学方程式，配平并标清状态。不能仅把离子随意配对就认为必然反应；本周以题给生成沉淀、水或气体的常见反应为范围。",
+        "再“拆”：对照规则卡，只把符合条件的物质写成离子。以HCl(aq)+NaOH(aq)→NaCl(aq)+H₂O(l)为例，完整离子式为H⁺+Cl⁻+Na⁺+OH⁻→Na⁺+Cl⁻+H₂O。水不拆，弱酸、固体、气体也不能因书写方便而拆。",
+        "接着“删”：左右相同状态、相同种类、相同数量的Na⁺和Cl⁻是旁观离子，约去后得H⁺+OH⁻→H₂O。删的是方程式中的重复项，不是离子从溶液消失。它们仍在溶液里，算离子浓度或检查电中性时还要计入。",
+        "最后“查”：查反应事实与用量条件、查拆写规则、查每种原子总数、查电荷代数和，系数约为最简整数比。同一元素若处于不同化学物种中，不能像约同一项那样删；例如不能把CH₃COOH与CH₃COO⁻当成完全相同的旁观项。"
+      ],
+      "keyPoints": [
+        "先有正确实际反应，再拆删，不能靠拼凑生成物。",
+        "旁观离子仍留在溶液；仅从净反应式约去。"
+      ],
+      "checkpoint": {
+        "question": "NaCl(aq)与KNO₃(aq)混合，题设不生成沉淀、气体或弱电解质且无其他反应。应强写哪条净离子式吗？",
+        "answer": "不应；本题没有净离子反应。",
+        "explanation": "所有离子前后相同，没有实际净变化，不能为凑方程式凭空造沉淀。"
+      }
+    },
+    {
+      "id": "w6-chemistry-section-charge",
+      "title": "双重检查：原子数相等，电荷代数和也相等",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。原子守恒逐元素检查。以Ba²⁺+SO₄²⁻→BaSO₄↓为例，左、右Ba均1、S均1、O均4。SO₄作为整体离子参与，但核查时仍能逐元素展开；不能只数式子的个数。↓表示生成沉淀，固相BaSO₄不拆。",
+        "电荷守恒检查带符号的代数和。上式左边+2+(−2)=0，右边中性固体为0。H⁺+OH⁻→H₂O左边+1−1=0，右边0。离子方程式的两边电荷相等，却不一定各为0，例如后面的醋酸反应两侧都−1。",
+        "系数同时乘原子数与电荷。例如CO₃²⁻+2H⁺中左边电荷−2+2×(+1)=0。若漏写H⁺前的2，电荷便为−1；产物CO₂和H₂O都是中性，就不守恒。只看原子或只看电荷都不够，二者都对还要检查反应是否真能在题设条件下发生。",
+        "整体溶液始终要保持电中性。在这些基础计量题中，按每种离子物质的量乘其电荷数求和应为0；旁观离子虽然在净式中省略，却常是这笔电荷账的一部分。不能为了让单独净式每边都0而添加不存在的离子或电子。"
+      ],
+      "keyPoints": [
+        "电荷计算带正负号，系数也乘电荷。",
+        "净离子式两边可以均非零；整体溶液仍电中性。"
+      ],
+      "checkpoint": {
+        "question": "CaCO₃(s)+2H⁺→Ca²⁺+CO₂↑+H₂O的两边总电荷各多少？",
+        "answer": "左+2，右+2。",
+        "explanation": "CaCO₃、CO₂与H₂O中性；左右只分别由2H⁺与Ca²⁺提供+2。不能为了写成0而添OH⁻。"
+      }
+    },
+    {
+      "id": "w6-chemistry-section-neutralization",
+      "title": "强酸与弱酸：都是中和，却不能写成同一条式子",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。HCl与NaOH均在水溶液中按强电解质拆写，净变化是H⁺+OH⁻→H₂O。这里H⁺是高中基础题中水溶液氢离子的简写；实际与水结合存在，不把它理解成能独立拿在手里的裸质子。",
+        "CH₃COOH是醋酸，弱酸在溶液中只部分电离，写净离子式时保留整个CH₃COOH。与NaOH(aq)反应生成可溶CH₃COONa和水：CH₃COOH+OH⁻→CH₃COO⁻+H₂O。生成的醋酸钠按可溶强电解质处理，删去Na⁺，留下醋酸根；不能因为反应物是弱酸就连生成的盐也不拆。",
+        "为什么保留弱酸仍能与碱反应？“只部分电离”不等于“不能反应”或“永远只能消耗很少”。在本课题设充分反应模型中，OH⁻消耗酸提供的酸性氢，醋酸会继续参与，按1 mol醋酸对应1 mol OH⁻计量。本周不求弱酸的自由H⁺浓度，也不能把分析浓度c(CH₃COOH)直接当作c(H⁺)。",
+        "查醋酸式：CH₃COOH含C2、H4、O2，左再加OH⁻，左C2/H5/O3；右CH₃COO⁻与H₂O合计也是C2/H5/O3。两侧电荷均−1。若只写H⁺+OH⁻→H₂O，虽然原子电荷守恒，却没有正确体现弱酸的实际存在形式，仍是错式。"
+      ],
+      "keyPoints": [
+        "强酸HCl拆；弱酸CH₃COOH保留。",
+        "原子电荷对只是必要检查，不能代替物质性质。"
+      ],
+      "checkpoint": {
+        "question": "有人说“醋酸较浓就应全部拆成H⁺与CH₃COO⁻”，错在哪里？",
+        "answer": "把浓稀与电离强弱混为一谈；本课醋酸为弱酸，净离子式保留CH₃COOH。",
+        "explanation": "浓度描述每体积的含量，不保证全部以离子存在。"
+      }
+    },
+    {
+      "id": "w6-chemistry-section-gas",
+      "title": "碳酸盐遇酸：既看状态，也看酸是否足量",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。若题给Na₂CO₃(aq)与足量稀盐酸充分反应，生成CO₂与水，碳酸钠按可溶强电解质拆写，净式为CO₃²⁻+2H⁺→CO₂↑+H₂O。C均1、O均3、H均2，电荷左−2+2=0、右0。气体CO₂与水都保留。",
+        "若换成难溶CaCO₃(s)与足量稀盐酸，必须保留固体：CaCO₃(s)+2H⁺→Ca²⁺+CO₂↑+H₂O。左不是现成的游离CO₃²⁻；随固体反应，Ca²⁺进入溶液。两侧Ca1、C1、O3、H2，电荷均+2。两个情境产气相似，但离子式不同。",
+        "“足量”在这里有实质含义：按完全生成CO₂的总反应，每1 mol CO₃²⁻或CaCO₃需要2 mol H⁺。对可溶碳酸盐，当酸量不足且题给只到碳酸氢根时，应按CO₃²⁻+H⁺→HCO₃⁻；不能在酸只有一份时仍按两份的完整产气式计算。",
+        "本周核心计算只采用明确足量强酸或给定单一终点的简单模型；不从复杂滴加顺序猜测多步混合的终态，不扩展酸不足的分段产气曲线。图文中的产气与沉淀符号只是纸面反应信息，不要求进行实验。"
+      ],
+      "keyPoints": [
+        "CaCO₃(s)不拆；Na₂CO₃(aq)按题设拆。",
+        "生成CO₂的总式需要2份H⁺，先读酸量条件。"
+      ],
+      "checkpoint": {
+        "question": "足量稀盐酸与0.0120 mol CaCO₃固体完全反应，消耗H⁺、生成CO₂各多少mol？",
+        "answer": "H⁺消耗0.0240 mol；CO₂生成0.0120 mol。",
+        "explanation": "按固体反应式1∶2∶1；没有把CaCO₃固体当作已溶解的CO₃²⁻。"
+      }
+    },
+    {
+      "id": "w6-chemistry-section-concentration",
+      "title": "反应后求c：先求离子初量，再扣消耗",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。第5周无反应稀释可保持溶质n，本周反应会改变参与者。写四行账：①各原液V换L，用n=cV求溶质初量；②依电离计量求目标离子初量；③按已配平离子式算实际消耗、产物和剩余；④剩余离子n除以题给最终溶液体积V终，得到c。",
+        "两种反应离子都给量时，比较n/各自系数。H⁺+OH⁻→H₂O是1∶1，较少的mol先耗尽；若系数不是1∶1，就不能直接比较两个n。先耗尽者决定最大反应量，剩余必须写“同一种离子的起始−实际消耗”，不能拿不同比例的两种量直接乱减。",
+        "例：若H⁺初0.006 mol、OH⁻初0.004 mol，按1∶1充分反应，H⁺剩0.002 mol。这里参加反应的H⁺只有0.004 mol，不是起始全部；混合后的c(H⁺)还需要V终。不要再把原H⁺起始n守恒到终态，也不要只除原酸的体积。",
+        "本周计算假设按题定反应充分进行，沉淀视为定量生成，忽略其微量溶解；明确忽略水的微弱电离及相关盐类水解，不求平衡常数或pH。体积只在题目明确可加和时相加；沉淀题的V终指题定近似的液相溶液体积，不把固体体积擅自计入。"
+      ],
+      "keyPoints": [
+        "反应离子先扣消耗，最后才除最终溶液体积。",
+        "旁观离子通常不被消耗，但混合后c可因体积变化。"
+      ],
+      "checkpoint": {
+        "question": "H⁺0.008 mol与OH⁻0.005 mol充分反应，最终溶液0.100 L，忽略水电离，c(H⁺)多少？",
+        "answer": "H⁺剩0.003 mol，c(H⁺)=0.030 mol/L。",
+        "explanation": "按1∶1先减消耗：0.008−0.005=0.003，再除0.100；不能用0.008直接作分子。"
+      }
+    },
+    {
+      "id": "w6-chemistry-section-boundaries",
+      "title": "把规则串起来：守恒正确还不够，条件也必须正确",
+      "level": "core",
+      "paragraphs": [
+        "本节6分钟，含阅读、纸上核对和随堂自检。做题前先给每种物质贴状态与性质标签：HCl(aq)强酸可拆，CH₃COOH(aq)弱酸保留，AgCl(s)沉淀保留。若题中出现不熟悉的溶解性、酸碱强弱或反应条件，应先找题给信息或查规则卡；信息仍不足就说明不能确定，不能因为符号配平得漂亮就算正确反应。",
+        "难溶物不是“完全不存在任何溶解”，本课按难溶固相与定量沉淀的近似模型处理。强电解质与水中是否易溶也不是同一维度。我们保留BaSO₄(s)，依据是题给固体/沉淀状态，并非把它分类为弱电解质。",
+        "本课不做多种反应竞争、氧化还原电子配平、复杂共存、酸不足的连续滴加或电离平衡计算。简单量的题先列同一反应的账，题设如果改变到上述情况，原模型可能失效，需要以后逐步补新知识，不能把本周口诀无限推广。",
+        "所有内容只用于纸面学习。可溶性钡盐有毒，银盐及酸碱有风险；不购买、触碰、混合或试验任何这些物质。完成题目不需要观察真实沉淀或气体，也不把水溶液反应式当作可照做的家庭操作。"
+      ],
+      "keyPoints": [
+        "先查物质与条件，再查原子和电荷，最后核对量与体积。",
+        "电离、溶解性、状态是不同问题；本课模型有明确边界。"
+      ],
+      "checkpoint": {
+        "question": "BaSO₄(s)保留整式，能推出它一定是弱电解质吗？",
+        "answer": "不能。保留依据是难溶固相状态，不能由溶解少推断已溶部分电离弱。",
+        "explanation": "溶解性与电离程度不是同一概念；反应写法还要结合物理状态。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w6-chemistry-example-1",
+      "title": "例1·基础：把沉淀反应写到净离子式",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "题给水溶液反应：AgNO₃(aq)+NaCl(aq)→AgCl(s)+NaNO₃(aq)，AgCl难溶，其余为可溶强电解质。依写、拆、删、查给出完整过程，并说明旁观离子是否消失。",
+      "answer": "Ag⁺+Cl⁻→AgCl↓；Na⁺、NO₃⁻为旁观离子，仍在水溶液里。",
+      "steps": [
+        "写：原化学式已经配平，Ag、Na、Cl、N各1，O各3。",
+        "拆：Ag⁺+NO₃⁻+Na⁺+Cl⁻→AgCl(s)+Na⁺+NO₃⁻，AgCl固体不拆。",
+        "删：左右相同的Na⁺、NO₃⁻约去，得到Ag⁺+Cl⁻→AgCl↓。",
+        "查：Ag与Cl两侧各1；左+1−1=0，右0；反应生成难溶固体与题设相符。",
+        "“删去”只是净式省略不变的项，Na⁺、NO₃⁻并未离开水相；若算全部离子仍须计入。"
+      ],
+      "commonErrors": [
+        "将AgCl沉淀再拆成Ag⁺和Cl⁻，把反应全删光。",
+        "认为旁观离子从溶液消失。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-example-2",
+      "title": "例2·应用：弱酸保留，产物可溶盐拆写",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "CH₃COOH(aq)+NaOH(aq)→CH₃COONa(aq)+H₂O(l)。题给醋酸为弱酸，NaOH和醋酸钠为可溶强电解质。写完整离子式与净离子式，逐元素和电荷检查；说明为何不能直接用H⁺+OH⁻→H₂O。",
+      "answer": "完整：CH₃COOH+Na⁺+OH⁻→CH₃COO⁻+Na⁺+H₂O；净式：CH₃COOH+OH⁻→CH₃COO⁻+H₂O。两侧C2/H5/O3，电荷均−1。",
+      "steps": [
+        "写：化学方程式各系数为1。",
+        "拆：弱酸CH₃COOH与水保留；NaOH拆成Na⁺、OH⁻，CH₃COONa拆成Na⁺、CH₃COO⁻。",
+        "删：只约去相同的Na⁺，不能把醋酸和醋酸根当同一项删除。",
+        "查原子：左CH₃COOH为C2H4O2，加OH得到C2H5O3；右醋酸根为C2H3O2，加水也为C2H5O3。",
+        "查电荷：左−1、右−1相等，不要求每边0。",
+        "H⁺+OH⁻→H₂O虽然形式守恒，却把弱酸错误当作全部游离H⁺来源，未体现其应保留的实际形式。"
+      ],
+      "commonErrors": [
+        "认为弱酸产生的盐也一定不拆。",
+        "为使每边0而乱加H⁺。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-example-3",
+      "title": "例3·应用：难溶固体与足量酸",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "仅作理论题：0.0150 mol CaCO₃(s)与足量稀盐酸完全反应，题给生成CaCl₂(aq)、CO₂(g)、H₂O(l)，无副反应。写净离子式，核查电荷，求消耗H⁺与生成CO₂的n。",
+      "answer": "CaCO₃(s)+2H⁺→Ca²⁺+CO₂↑+H₂O；两侧电荷均+2；消耗H⁺0.0300 mol，生成CO₂0.0150 mol。",
+      "steps": [
+        "先写并配平：CaCO₃+2HCl→CaCl₂+CO₂+H₂O。",
+        "CaCO₃固体、CO₂气体、水不拆；HCl和CaCl₂(aq)拆写，左右各2Cl⁻约去。",
+        "得净式CaCO₃(s)+2H⁺→Ca²⁺+CO₂↑+H₂O；原子Ca1/C1/O3/H2均守恒。",
+        "电荷左2×(+1)=+2，右Ca²⁺为+2，符合守恒。",
+        "酸足量，CaCO₃全反应；系数1∶2∶1，所以H⁺消耗2×0.0150=0.0300 mol，CO₂生成0.0150 mol。",
+        "不能改写成CO₃²⁻+2H⁺→CO₂+H₂O，因为那会丢失起始为CaCO₃固体及Ca²⁺生成的事实。"
+      ],
+      "commonErrors": [
+        "把固体直接拆成游离离子。",
+        "只用1倍H⁺。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-example-4",
+      "title": "例4·应用：沉淀量与剩余离子浓度",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "纯理论题：60.0 mL、0.200 mol/L BaCl₂(aq)与100.0 mL、0.150 mol/L Na₂SO₄(aq)充分反应。按BaSO₄定量沉淀，忽略微量溶解、水解及水电离，题定混合后液相体积可按0.1600 L计算，无副反应或损失。M(BaSO₄)=233 g/mol。求沉淀质量与剩余c(SO₄²⁻)，再用旁观离子的mol检查电中性。",
+      "answer": "Ba²⁺+SO₄²⁻→BaSO₄↓；沉淀0.0120 mol，质量2.796 g（约2.80 g）；剩SO₄²⁻0.00300 mol，c=0.01875 mol/L（约0.0188）。Na⁺0.0300 mol、Cl⁻0.0240 mol，正负电荷份额均0.0300。",
+      "steps": [
+        "n(BaCl₂)=0.200×0.0600=0.0120 mol，故Ba²⁺0.0120 mol，Cl⁻0.0240 mol。",
+        "n(Na₂SO₄)=0.150×0.1000=0.0150 mol，故SO₄²⁻0.0150 mol，Na⁺0.0300 mol。",
+        "净式1∶1，比较0.0120/1与0.0150/1，Ba²⁺先耗尽，沉淀0.0120 mol。",
+        "m沉淀=0.0120×233=2.796 g；剩SO₄²⁻=0.0150−0.0120=0.00300 mol。",
+        "c剩=0.00300/0.1600=0.01875 mol/L，分母是题定最终液相体积，不是原硫酸钠100 mL。",
+        "水相正电荷份额来自Na⁺：0.0300；负电荷份额=Cl⁻的0.0240+SO₄²⁻的2×0.00300=0.0300，平衡。这里的电荷份额用mol离子×带符号电荷数表示，不是库仑。"
+      ],
+      "commonErrors": [
+        "Na₂SO₄的SO₄²⁻错乘2。",
+        "计算c时未扣已沉淀的SO₄²⁻。",
+        "把旁观Na⁺、Cl⁻从电荷账里删掉。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-example-5",
+      "title": "例5·迁移：强酸强碱混合后只剩谁",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "纸面题：75.0 mL、0.200 mol/L HCl(aq)与50.0 mL、0.200 mol/L NaOH(aq)充分反应，无损失。题设体积可加和，忽略水电离。求剩余H⁺或OH⁻的n及其浓度，并解释原酸的n为什么不能直接稀释守恒。",
+      "answer": "H⁺+OH⁻→H₂O；H⁺剩0.00500 mol，c(H⁺)=0.0400 mol/L；OH⁻按本题近似耗尽。原H⁺参与反应，不能保留起始n。",
+      "steps": [
+        "HCl和NaOH均按水溶液强电解质拆写，净式H⁺+OH⁻→H₂O，系数1∶1。",
+        "n(H⁺)初=0.200×0.0750=0.0150 mol；n(OH⁻)初=0.200×0.0500=0.0100 mol。",
+        "1∶1反应，OH⁻先耗尽；H⁺实际消耗0.0100 mol，剩0.0150−0.0100=0.00500 mol。",
+        "V终=0.0750+0.0500=0.1250 L，这是题给可加和才成立。",
+        "c(H⁺)=0.00500/0.1250=0.0400 mol/L；若错用0.0150/0.1250则忽略了中和。",
+        "核对：Na⁺为0.0100 mol，Cl⁻为0.0150 mol，剩H⁺0.00500 mol，正负份额0.0150=0.0150。水电离产生的微量离子按题设忽略，不声称现实绝对零OH⁻。"
+      ],
+      "commonErrors": [
+        "相同c就认为一定恰好中和，忽略体积不同。",
+        "将H⁺起始mol全数带到最终c。",
+        "分母只用75.0 mL。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w6-chemistry-practice-1",
+      "title": "独练1：带理由使用规则卡",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "在本课普通水溶液反应写法中，对HNO₃(aq)、KOH(aq)、Na₂CO₃(aq)、CH₃COOH(aq)、AgCl(s)、CO₂(g)、H₂O(l)、NaOH(s)逐项判断是否直接拆写。说明“较稀NaOH溶液是弱电解质”是否正确。",
+      "answer": "前三者拆写；后五者保留。“较稀NaOH溶液是弱电解质”错误，浓稀不改变本课NaOH强电解质判断。",
+      "steps": [
+        "HNO₃为本课强酸，KOH为可溶强碱，Na₂CO₃为可溶盐；在aq条件下拆写。",
+        "CH₃COOH是弱酸；AgCl为难溶固体；CO₂是气体；H₂O不拆；NaOH(s)未成为水溶液。",
+        "强弱描述电离程度，浓稀描述单位体积含量，是两件事。"
+      ],
+      "commonErrors": [
+        "只要有aq就拆弱酸。",
+        "将NaOH(s)直接变成水合离子。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-practice-2",
+      "title": "独练2：自己走完写拆删查",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "题给BaCl₂(aq)+Na₂SO₄(aq)→BaSO₄(s)+2NaCl(aq)。BaSO₄难溶，其他均可溶强电解质。写完整与净离子式，检查原子和电荷，并列旁观离子。",
+      "answer": "完整：Ba²⁺+2Cl⁻+2Na⁺+SO₄²⁻→BaSO₄(s)+2Na⁺+2Cl⁻；净式Ba²⁺+SO₄²⁻→BaSO₄↓。旁观Na⁺、Cl⁻。两侧Ba1/S1/O4、电荷0。",
+      "steps": [
+        "按化学式倍数拆：BaCl₂生成2Cl⁻，Na₂SO₄生成2Na⁺。",
+        "BaSO₄(s)保留，约去两侧各2Na⁺和2Cl⁻。",
+        "检查Ba、S、O各数相等；+2−2=0等于固体电荷0。",
+        "旁观离子仍在水相。"
+      ],
+      "commonErrors": [
+        "把Na₂SO₄拆成Na⁺+2SO₄²⁻。",
+        "把沉淀拆掉。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-practice-3",
+      "title": "独练3：弱酸式与错误定位",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "CH₃COOH(aq)与KOH(aq)充分反应生成CH₃COOK(aq)和H₂O(l)。写净离子式，并检查两侧C、H、O与电荷。有人写H⁺+OH⁻→H₂O且说“守恒就一定对”，怎样反驳？",
+      "answer": "CH₃COOH+OH⁻→CH₃COO⁻+H₂O；两侧C2/H5/O3、电荷−1。原子电荷守恒仍须满足弱酸不整体拆写的条件。",
+      "steps": [
+        "弱酸保留；KOH与可溶CH₃COOK拆，约去K⁺。",
+        "CH₃COOH含H4，加OH⁻后H5；右醋酸根H3加水H2也为H5。",
+        "C均2，O均3，电荷均−1。",
+        "错误式把弱酸当成完全电离；必要的守恒检查不能替代存在形式判断。"
+      ],
+      "commonErrors": [
+        "把CH₃COOH的H数读成3。",
+        "以守恒为唯一判据。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-practice-4",
+      "title": "独练4：反应消耗后再除最终体积",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "80.0 mL、0.150 mol/L HCl与50.0 mL、0.200 mol/L NaOH水溶液充分反应，无损失，体积可加和，忽略水电离。写净式，求剩余离子n与c。",
+      "answer": "H⁺+OH⁻→H₂O；H⁺剩0.00200 mol，c(H⁺)≈0.0154 mol/L，OH⁻按近似耗尽。",
+      "steps": [
+        "n(H⁺)=0.150×0.0800=0.0120 mol；n(OH⁻)=0.200×0.0500=0.0100 mol。",
+        "按1∶1，OH⁻限制，H⁺剩0.0120−0.0100=0.00200 mol。",
+        "V终=0.1300 L，c=0.00200/0.1300≈0.01538 mol/L，约0.0154。",
+        "H⁺并未守恒，因为其中0.0100 mol进入反应生成水。"
+      ],
+      "commonErrors": [
+        "比较0.150与0.200就断定HCl不足。",
+        "用原酸体积作最后分母。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-chemistry-practice-5",
+      "title": "独练5：换一种沉淀仍用同一张量账",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "40.0 mL、0.150 mol/L AgNO₃与60.0 mL、0.0800 mol/L NaCl水溶液充分反应。按AgCl定量沉淀，忽略微量溶解、水解及水电离；题给最终液相体积0.1000 L，无副反应或损失。M(AgCl)=143.5 g/mol。求沉淀质量和剩余c(Ag⁺)。",
+      "answer": "Ag⁺+Cl⁻→AgCl↓；沉淀0.00480 mol、0.6888 g（约0.689 g）；Ag⁺剩0.00120 mol，c(Ag⁺)=0.0120 mol/L。",
+      "steps": [
+        "n(Ag⁺)=0.150×0.0400=0.00600 mol，n(Cl⁻)=0.0800×0.0600=0.00480 mol。",
+        "净式1∶1，Cl⁻限制，生成AgCl0.00480 mol。",
+        "m=0.00480×143.5=0.6888 g。",
+        "Ag⁺剩0.00600−0.00480=0.00120 mol，再除0.1000 L得0.0120 mol/L。",
+        "作为复查，Na⁺0.00480 mol加Ag⁺0.00120 mol=NO₃⁻0.00600 mol，电荷平衡。"
+      ],
+      "commonErrors": [
+        "以原液浓度而非n判断限制者。",
+        "把未反应Ag⁺从水相漏掉。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "酸、碱、盐只要看到就全部拆。",
+      "why": "是否拆还取决于强弱、溶解性及题中物理状态。",
+      "right": "逐项查水溶液、实际溶解、强电解质；弱酸、水、气体、固体沉淀保留。"
+    },
+    {
+      "wrong": "浓的强、稀的弱；难溶也一定弱。",
+      "why": "浓度、溶解性与已溶部分电离程度是不同概念。",
+      "right": "稀HCl仍强；可溶CH₃COOH仍弱；BaSO₄固相保留不等于判弱电解质。"
+    },
+    {
+      "wrong": "CH₃COOH和CH₃COO⁻含相同元素，可以约去。",
+      "why": "二者组成与电荷不同，不是同一种未变化的粒子。",
+      "right": "只能约去两侧同种、同状态且等量的不变粒子。"
+    },
+    {
+      "wrong": "离子式每边电荷必须0。",
+      "why": "净式省略了旁观离子，左右相等即可，可均为−1或+2。",
+      "right": "净式查电荷代数和相等，整个溶液另外计入所有离子检查电中性。"
+    },
+    {
+      "wrong": "原子和电荷配平了就一定正确。",
+      "why": "这两项不能保证真实反应条件与物质存在形式正确。",
+      "right": "反应事实、状态、拆写规则、用量条件也要核验。"
+    },
+    {
+      "wrong": "离子反应后仍用原n除混合体积。",
+      "why": "参与反应的离子已被消耗，起始n不是终态n。",
+      "right": "先求各离子初量，按系数算消耗与剩余，最后除最终溶液体积。"
+    }
+  ],
+  "quiz": {
+    "instructions": "唯一原创短测，共4题、24分钟、20分，每题6分钟5分。先折叠全部答案和评分说明，独立写依据、式子、单位与结果，再逐点评分。每条评分点满足其完整条件才得分，过程分不因只写末尾数值自动获得。允许等值写法和合理末位舍入，计算中间量尽量不提前舍入。前测、正文自检、例题、练习和勾选不并入20分。忙碌分段按预算执行；首次作答与订正后新尝试分别保留。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w6-chemistry-quiz-1",
+        "title": "短测1：拆写规则与强弱浓稀",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "（1）HCl(aq)、CH₃COOH(aq)、BaSO₄(s)、NaOH(s)、H₂O(l)在本课水溶液离子式中分别拆或保留，并给理由。（2）“稀盐酸是弱电解质，较浓醋酸是强电解质”是否正确？",
+        "answer": "HCl(aq)按强酸拆；醋酸弱酸保留；BaSO₄难溶固体保留；NaOH当前固体保留；水保留。第2句错误，强弱电离不等于浓稀。",
+        "steps": [
+          "先读aq/s/l，再用性质卡。",
+          "HCl在本课水溶液按完全电离；醋酸只部分电离。",
+          "固体NaOH不能偷换成aq；BaSO₄固相不拆，水不拆。",
+          "浓稀看单位体积的含量，强弱看电离程度。"
+        ],
+        "commonErrors": [
+          "把NaOH强电解质标签当作忽略固体状态的理由。",
+          "把弱酸可溶看成强电离。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "HCl(aq)拆并说明为本课强酸水溶液。"
+          },
+          {
+            "points": 1,
+            "criterion": "CH₃COOH(aq)保留并说明弱酸部分电离。"
+          },
+          {
+            "points": 1,
+            "criterion": "BaSO₄(s)与NaOH(s)均保留，分别指出难溶固相与当前固体状态。"
+          },
+          {
+            "points": 1,
+            "criterion": "H₂O(l)保留，不将其整体拆成H⁺和OH⁻。"
+          },
+          {
+            "points": 1,
+            "criterion": "否定原判断，明确强弱电离与浓稀是不同维度。"
+          }
+        ]
+      },
+      {
+        "id": "w6-chemistry-quiz-2",
+        "title": "短测2·迁移：给新弱酸，自己重建净反应",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "题给丙酸CH₃CH₂COOH为弱一元酸；CH₃CH₂COONa为可溶强电解质，忽略其水解。普通式为CH₃CH₂COOH(aq)+NaOH(aq)→CH₃CH₂COONa(aq)+H₂O(l)。不要求预先背丙酸性质。写完整离子式、净离子式，并列净式两侧C、H、O总数及电荷代数和；说明旁观离子是否从溶液消失。",
+        "answer": "完整：CH₃CH₂COOH+Na⁺+OH⁻→CH₃CH₂COO⁻+Na⁺+H₂O；净式CH₃CH₂COOH+OH⁻→CH₃CH₂COO⁻+H₂O。两侧C3/H7/O3，电荷−1；Na⁺仍在溶液。",
+        "steps": [
+          "题给丙酸为弱酸，应保留；水保留，NaOH和题给可溶丙酸钠拆写。",
+          "约去两侧相同的Na⁺，留下CH₃CH₂COOH+OH⁻→CH₃CH₂COO⁻+H₂O。",
+          "重新数原子而非照抄醋酸例：左丙酸C3/H6/O2，加OH⁻为C3/H7/O3；右丙酸根C3/H5/O2，加水也是C3/H7/O3。",
+          "左OH⁻带−1，右丙酸根带−1，两侧相等；Na⁺仅在净式中省略，仍在水相。",
+          "新物质用题给性质进入同一规则，不靠化学式长短或熟悉程度决定是否拆。"
+        ],
+        "commonErrors": [
+          "把新弱酸全拆成H⁺而套强酸式。",
+          "沿用醋酸例的C2/H5/O3，未重数丙酸组成。",
+          "把Na⁺从溶液电荷账中删除。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "完整离子式正确：题给弱丙酸与水保留，NaOH与可溶丙酸钠拆写。"
+          },
+          {
+            "points": 1,
+            "criterion": "正确约去Na⁺，净式CH₃CH₂COOH+OH⁻→CH₃CH₂COO⁻+H₂O。"
+          },
+          {
+            "points": 1,
+            "criterion": "逐元素重新计数，两侧均C3/H7/O3，未沿用醋酸例数字。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确两侧电荷代数和均−1，不要求各0。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明Na⁺为旁观离子，仍在溶液而非消失。"
+          }
+        ]
+      },
+      {
+        "id": "w6-chemistry-quiz-3",
+        "title": "短测3：强酸强碱反应后的量账",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "60.0 mL、0.200 mol/L HCl与40.0 mL、0.150 mol/L NaOH水溶液充分反应。无副反应、无损失，体积可加和，忽略水电离。写净式，求H⁺与OH⁻起始n、限制者、剩余H⁺的n与c。",
+        "answer": "H⁺+OH⁻→H₂O；H⁺初0.0120 mol、OH⁻初0.00600 mol；OH⁻限制；H⁺剩0.00600 mol，c(H⁺)=0.0600 mol/L。",
+        "steps": [
+          "原液体积换为0.0600 L、0.0400 L。",
+          "n(H⁺)=0.200×0.0600=0.0120 mol，n(OH⁻)=0.150×0.0400=0.00600 mol。",
+          "净式1∶1，OH⁻先耗尽，H⁺消耗0.00600 mol。",
+          "H⁺剩0.0120−0.00600=0.00600 mol。",
+          "V终=0.1000 L，c(H⁺)=0.00600/0.1000=0.0600 mol/L。"
+        ],
+        "commonErrors": [
+          "把两个原液浓度相减当最终c。",
+          "把起始H⁺直接除最终体积。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "净式H⁺+OH⁻→H₂O正确，说明1∶1。"
+          },
+          {
+            "points": 1,
+            "criterion": "mL换L且两种起始离子n分别为0.0120与0.00600 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "依1∶1判OH⁻限制，H⁺实际消耗0.00600 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "按同一种离子起始减消耗得H⁺剩0.00600 mol。"
+          },
+          {
+            "points": 1,
+            "criterion": "依据体积可加和用最终0.1000 L，得c(H⁺)=0.0600 mol/L。"
+          }
+        ]
+      },
+      {
+        "id": "w6-chemistry-quiz-4",
+        "title": "短测4：固体遇酸，条件决定写法与计量",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "题给0.0180 mol CaCO₃(s)与足量稀盐酸充分反应，生成可溶CaCl₂、CO₂气体和水，无副反应。写净离子式，说明CaCO₃为何不拆，核查原子与电荷，再求消耗H⁺与生成CO₂的n。最后说明这里为什么强调足量酸。",
+        "answer": "CaCO₃(s)+2H⁺→Ca²⁺+CO₂↑+H₂O；CaCO₃难溶固体不拆。两侧Ca1/C1/O3/H2、电荷+2；消耗H⁺0.0360 mol，CO₂0.0180 mol。足量酸保证按给定总反应使CaCO₃全部反应。",
+        "steps": [
+          "普通式CaCO₃+2HCl→CaCl₂+CO₂+H₂O。",
+          "拆HCl与CaCl₂并约去2Cl⁻；固体、气体和水保留。",
+          "核查Ca1/C1/O3/H2；电荷左+2、右+2。",
+          "由酸足量，CaCO₃全反应；按1∶2∶1，得H⁺0.0360 mol、CO₂0.0180 mol。",
+          "如果酸不足，就不能保证这0.0180 mol固体全按总式反应，必须重判可进行的反应量，不能沿用全转化产量。"
+        ],
+        "commonErrors": [
+          "把CaCO₃直接拆为Ca²⁺+CO₃²⁻再删Ca²⁺。",
+          "只配原子不看电荷。",
+          "忽略足量酸条件仍算全部产量。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "净式完整正确，CaCO₃(s)保留、H⁺系数2、Ca²⁺与CO₂/H₂O齐全。"
+          },
+          {
+            "points": 1,
+            "criterion": "明确不拆CaCO₃是难溶固体状态，并给两侧Ca1/C1/O3/H2。"
+          },
+          {
+            "points": 1,
+            "criterion": "两侧电荷代数和均+2，检查正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "按1∶2∶1算H⁺0.0360 mol、CO₂0.0180 mol，两量及单位均对。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释足量酸保证给定CaCO₃充分反应；酸不足时不能沿用全部转化产量。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "短测1：弱酸、水与固体均不得错误拆写，NaOH(s)不得偷换成水溶液；强弱与浓稀必须区分。",
+        "短测2：根据题给弱酸性质保留CH₃CH₂COOH，正确拆可溶丙酸盐；重新核查C3/H7/O3与两侧−1电荷，不能照抄醋酸例的原子数。",
+        "短测2：必须说明旁观离子仍在溶液，约去书写项不等于粒子消失。",
+        "短测3：先mL→L和n=cV，按1∶1扣反应消耗，再以最终总体积求c；不得把反应当无反应稀释。",
+        "短测4：必须保留CaCO₃固体并核对+2电荷，使用2份H⁺与足量酸条件。",
+        "总分至少16/20，所有关键条件均通过，并完成核心活动与订正，才具备本周推进条件。照抄答案不算独立掌握。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w6-chemistry-quiz-1"
+        ],
+        "sectionIds": [
+          "w6-chemistry-section-rulecard",
+          "w6-chemistry-section-boundaries"
+        ],
+        "action": "给每物质写状态、溶解性与强弱三项理由，分别举稀强酸和可溶弱酸，禁止只背“酸碱盐全拆”。"
+      },
+      {
+        "questionIds": [
+          "w6-chemistry-quiz-2"
+        ],
+        "sectionIds": [
+          "w6-chemistry-section-foursteps",
+          "w6-chemistry-section-neutralization",
+          "w6-chemistry-section-charge"
+        ],
+        "action": "从题给新弱酸性质出发重做四步法，逐段数CH₃、CH₂、COOH中的原子，列C3/H7/O3与带符号电荷账，再说明Na⁺去向。"
+      },
+      {
+        "questionIds": [
+          "w6-chemistry-quiz-3"
+        ],
+        "sectionIds": [
+          "w6-chemistry-section-recall",
+          "w6-chemistry-section-concentration"
+        ],
+        "action": "列起始、消耗、剩余三行，反应完成后才除最终体积；说清为何H⁺不适用稀释守恒。"
+      },
+      {
+        "questionIds": [
+          "w6-chemistry-quiz-4"
+        ],
+        "sectionIds": [
+          "w6-chemistry-section-gas",
+          "w6-chemistry-section-rulecard",
+          "w6-chemistry-section-charge"
+        ],
+        "action": "对照Na₂CO₃(aq)与CaCO₃(s)，各自说明状态写法；核查2H⁺及足量条件，再重算两种mol。"
+      }
+    ]
+  },
+  "reviewActivity": {
+    "id": "w6-chemistry-review-corrections",
+    "title": "12分钟：把错因改成下次能执行的检查",
+    "instructions": [
+      "第1—3分钟：按4题逐点计分，记录首次分数；另查关键条件，不用高总分掩盖对象、状态、守恒或单位错误。",
+      "第4—8分钟：选最多两处根本错误，写“原来怎么想—定义或题设哪里不支持—正确依据—下一次先查什么”。按短测补救路由重读相应小节，不能只抄结果。",
+      "第9—12分钟：合上答案，用自己的话讲清一道错题的路线，重新写原错题关键式和单位。看过解析后的订正不替代首次独立作答成绩。",
+      "若12分钟内仍未修复，记录活动ID与卡点，在下一可用时段继续留在本周。独立重做原错题记录为新尝试，不另外新增一套20分测验；不以学习时长或日期自动判定掌握。"
+    ]
+  },
+  "nextStep": "完成本周所有核心并订正后，核对20分短测与关键条件，达标才由学习者手动进入下一周。未达标按路由回到相应小节和例题，下一可用时段独立重做错题并保存新尝试，保留首次成绩。课程顺序按能力推进，不绑定日历或固定下班时刻。",
+  "audioStatus": "未配置音频；全部定义、条件、示例、解析和自检均可直接阅读。",
+  "mastery": [
+    "能不用“浓就强、盐都拆”之类错误口诀，逐项解释本课物质的拆写依据。",
+    "能写完整离子式，再只约相同旁观项，理解离子并未消失。",
+    "能逐元素与逐电荷独立核查，知道两边可相等于非零数。",
+    "能完成简单酸碱和沉淀的起始/消耗/剩余账，用题给最终液相体积求c。",
+    "五题独练完成并订正；短测至少16/20且所有关键条件通过后才手动推进。"
+  ],
+  "safetyScope": "全课仅为纸笔、原创信息图阅读和口头说明；不要求购买、接触、混合任何试剂，不安排家庭酸碱、银盐或钡盐实验。可溶性钡盐有毒，酸碱及银盐也有危害。计算只采用题定充分反应、无副反应/损失、定量沉淀近似，按题设忽略微量溶解、盐类水解与水电离；不将近似耗尽说成现实绝对无该离子。沉淀后的分母是题给最终液相溶液体积，体积可加和必须明确。",
+  "sourcePolicy": {
+    "authorship": "中文教学、规则卡组织、问题数据、逐步解析、评分与图示方案均针对基础薄弱在职自学者原创；保留原第6周离子反应、拆写条件与简单浓度计量范围，不扩展复杂反应竞争。",
+    "examStatus": "全部为原创教学题，非历年真题；未声称已核验高考真题或预测2028年必考内容。pilot-ready表示教学内容试点，不能替代学习者实测掌握。",
+    "externalSources": [
+      {
+        "id": "w6-chemistry-source-ionic",
+        "title": "OpenStax Chemistry 2e：4.2 Classifying Chemical Reactions",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+        "kind": "reference",
+        "scopeNote": "已打开原发布机构页面，核验常见溶解性、AgCl/BaSO₄沉淀、强弱酸及净离子反应基础。本课使用高中常见H⁺简写并明确水相含义；中文讲解、所有题目数据和图示设计独立编写，未复制原书题目。"
+      }
+    ]
+  }
+}

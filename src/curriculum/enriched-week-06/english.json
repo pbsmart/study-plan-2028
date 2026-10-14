@@ -1,0 +1,898 @@
+{
+  "id": "w6-英语",
+  "week": 6,
+  "subject": "英语",
+  "title": "先画时间线：正在做、当时在做与现在已有结果",
+  "revision": "week06-enriched-v1",
+  "status": "pilot-ready",
+  "objectives": [
+    "先区分观察点在现在还是过去，再区分强调动作过程还是到现在已有的结果，不按一个时间词机械选形式。",
+    "以have/has＋过去分词建立“此前发生、现在有关”的联系；能与明确结束时间的一般过去时比较。",
+    "掌握am/is/are＋-ing的现在进行时，以及was/were＋-ing的过去某时过程；不把正在做自动当已完成。",
+    "能利用短文上下文读清已经完成的部分与仍在进行的部分，正确写否定、问句；扩展用法与核心过关分开。"
+  ],
+  "prerequisites": [
+    "继续使用第1—4周主语、动作、完整对象、时间和证据边界；第5周未来计划仍不同于已经发生。",
+    "先用12分钟补救复查现在/过去的be、have/has配对及原形—过去式—过去分词；允许查本课小词和词形表。",
+    "核心只要求现在过程、过去某时过程、现在结果及与明确过去时间比较；for/since延续、经历、状态动词与瞬间动词在选读中展开，不先背所有规则。",
+    "准备纸笔先画简短时间线，再独立答；本课无音频，不能把书面成绩当成听力、发音或口语评价。"
+  ],
+  "budget": {
+    "coreMinutes": 180,
+    "busyMinutes": 90,
+    "extensionMinutes": 18,
+    "busyPolicy": "核心180分钟闭合：前测9＋补救12＋七节讲解与自检45＋五例30＋五练30＋全新20分短测24＋订正30。忙时两周期各90分钟：第一周期前测、补救、七节正文和例1—4；第二周期例5、五练、短测、订正。时间线、查词与词形查表均已计入。第8节18分钟为可跳过的选读，解释for/since、延续、经历与状态/瞬间动作边界，不纳入核心短测。未掌握时下一次英语学段继续同周，不跳过订正、不占第三科预留。",
+    "segments": [
+      {
+        "id": "w6-en-time1",
+        "title": "三题前测",
+        "minutes": 9,
+        "activityIds": [
+          "w6-en-d1",
+          "w6-en-d2",
+          "w6-en-d3"
+        ]
+      },
+      {
+        "id": "w6-en-time2",
+        "title": "前置补救，已会者在同槽解释理由",
+        "minutes": 12,
+        "activityIds": [
+          "w6-en-r1"
+        ]
+      },
+      {
+        "id": "w6-en-time3",
+        "title": "连贯概念讲解与每节自检",
+        "minutes": 45,
+        "activityIds": [
+          "w6-en-s1",
+          "w6-en-s2",
+          "w6-en-s3",
+          "w6-en-s4",
+          "w6-en-s5",
+          "w6-en-s6",
+          "w6-en-s7"
+        ]
+      },
+      {
+        "id": "w6-en-time4",
+        "title": "五阶完整例题",
+        "minutes": 30,
+        "activityIds": [
+          "w6-en-ex1",
+          "w6-en-ex2",
+          "w6-en-ex3",
+          "w6-en-ex4",
+          "w6-en-ex5"
+        ]
+      },
+      {
+        "id": "w6-en-time5",
+        "title": "五道分层独练",
+        "minutes": 30,
+        "activityIds": [
+          "w6-en-pr1",
+          "w6-en-pr2",
+          "w6-en-pr3",
+          "w6-en-pr4",
+          "w6-en-pr5"
+        ]
+      },
+      {
+        "id": "w6-en-time6",
+        "title": "全新20分短测",
+        "minutes": 24,
+        "activityIds": [
+          "w6-en-quiz1",
+          "w6-en-quiz2",
+          "w6-en-quiz3",
+          "w6-en-quiz4"
+        ]
+      },
+      {
+        "id": "w6-en-time7",
+        "title": "核分、定点回看、遮答订正",
+        "minutes": 30,
+        "activityIds": [
+          "w6-en-review"
+        ]
+      }
+    ]
+  },
+  "diagnostic": {
+    "instructions": "三题共9分钟，只定位起点，不计短测分。可看词义；先说中文时间关系，不会新时态名称也可。依最弱项使用12分钟补救槽。",
+    "questions": [
+      {
+        "id": "w6-en-d1",
+        "title": "旧知识：现在与过去的be",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "foundation",
+        "prompt": "填am/is/are/was/were：①I ___ at home now. ②They ___ at home yesterday evening. ③She ___ ready now.\n词义：I我；they他们；she她；at home在家；now现在；yesterday evening昨天晚上；ready准备好了。",
+        "answer": "①am；②were；③is。①③现在，②过去；they过去用were。",
+        "steps": [
+          "先给句子标观察时间。",
+          "再给I、they、she配be。"
+        ],
+        "commonErrors": [
+          "只看人称不看时间；they配was。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w6-en-d2",
+        "title": "过程能否证明完成",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "两条现场记录：①“Lin is drawing a map. The last road is not on it yet.” ②“Lin has drawn the map. It is ready to use.” 不要求先解释时态名称，只说哪条说明现在地图已可用，并给内容依据。\n词义：Lin林；drawing/drawn画；map地图；last最后的；road道路；not…yet还没有；on it在图上；ready to use可供使用。",
+        "answer": "②说明已可用，有It is ready to use的明确结果。①最后一条路还未画上，动作在进行，不能说完成。",
+        "steps": [
+          "先读后一句的结果信息。",
+          "把过程与完成状态分开。"
+        ],
+        "commonErrors": [
+          "看到drawing也说画过就完成；只看map不看否定。"
+        ],
+        "estimatedMinutes": 3
+      },
+      {
+        "id": "w6-en-d3",
+        "title": "过去事实与当下结果分开",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创记录：“Qin made a paper box yesterday. The box is on the desk now.” 哪件事发生在昨天？哪项是现在状态？能仅据现在盒子在桌上说现在还在制作吗？\n词义：Qin琴；made制作；paper box纸盒；yesterday昨天；desk桌子；now现在。",
+        "answer": "昨天制作纸盒；现在盒子在桌上；不能据位置状态说仍在制作。",
+        "steps": [
+          "made对应昨天。",
+          "is on the desk对应现在位置。",
+          "现在有结果不同于动作此刻仍进行。"
+        ],
+        "commonErrors": [
+          "看到now就把made改成正在制作；把位置状态当动作过程。"
+        ],
+        "estimatedMinutes": 3
+      }
+    ],
+    "routes": [
+      {
+        "when": "第1题be配对不稳",
+        "action": "先用补救节的现在/过去两行配对，再读第3、6节。",
+        "sectionIds": [
+          "w6-en-r1",
+          "w6-en-s3",
+          "w6-en-s6"
+        ]
+      },
+      {
+        "when": "第2题把过程当完成",
+        "action": "先读第1节时间线与完整短文，再读第2、3节对比。",
+        "sectionIds": [
+          "w6-en-s1",
+          "w6-en-s2",
+          "w6-en-s3"
+        ]
+      },
+      {
+        "when": "第3题混淆结果状态和动作时间",
+        "action": "补救槽分两列“动作发生时间/现在状态”，再读第2、4节。",
+        "sectionIds": [
+          "w6-en-r1",
+          "w6-en-s2",
+          "w6-en-s4"
+        ]
+      },
+      {
+        "when": "三题都可解释",
+        "action": "同一补救槽解释错误推断，再顺序学习；不直接跳到扩展规则。",
+        "sectionIds": [
+          "w6-en-r1",
+          "w6-en-s1"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "w6-en-r1",
+      "title": "十二分钟补救：辅助词与三种词形先分家",
+      "level": "remediation",
+      "paragraphs": [
+        "先回看be：现在I am，he/she/it is，you/we/they are；过去I/he/she/it was，you/we/they were。完整主语若是两个工人，按they；若是每位工人，按单数。进行时的时间和人称主要由be体现，后面的-ing不用因主语单复数再加s。",
+        "再看have/has：在本课现在完成结构中，I/you/we/they have，he/she/it has；后面还必须有动作的过去分词。这里have/has帮助构成时态，不单独译“拥有”。She has finished不是“她拥有完成”，而是她已完成，和现在有联系。finish完成。",
+        "本课可查词形卡（顺序为原形—过去式—过去分词）：write—wrote—written（写）；make—made—made（制作）；take—took—taken（拍照／拿）；find—found—found（找到）；finish—finished—finished（完成）；check—checked—checked（检查）；open—opened—opened（打开）；walk—walked—walked（走）；study—studied—studied（学习）；live—lived—lived（居住）；know—knew—known（认识／知道）；keep—kept—kept（保留）。后面三组主要服务选读。三列身份不同，即使拼写相同，也不能把任意过去式都放在have后。",
+        "常用小词可查：I我，you你／你们，he他，she她，it它，we我们，they他们，my我的，his他的，her她的，a/an一个，the特指，this这，these这些，all全部，some一些，not不，and并且，but但是，so所以，now现在，still仍然，already已经，yet尚／已经（看句意），yesterday昨天，last上一个，at在某时／某处，on在某日／某物上，in在……里，for为了／持续，to向／到或结构连接，with和／带有，can能，cannot不能，when当……时。题内再给场景词义，词形卡允许全程查看。",
+        "前4分钟配be与have/has，接着4分钟用write—wrote—written比较三列，最后4分钟做自检并画“过去动作→现在结果”一条线。暂不背全套不规则表；词形忘了可以查，时间关系需要自己判断。"
+      ],
+      "keyPoints": [
+        "be体现进行时的时间和主语配对。",
+        "have/has后需要过去分词，不等于拥有。",
+        "三列词形可查，先判断结构位置。"
+      ],
+      "checkpoint": {
+        "question": "“She has wrote the note”哪一处要改？词义：note便条。",
+        "answer": "把wrote改written：She has written the note.",
+        "explanation": "has后要过去分词；wrote是一般过去式，written是这里所需形式。"
+      }
+    },
+    {
+      "id": "w6-en-s1",
+      "title": "先看一条时间线和一段完整故事",
+      "level": "core",
+      "paragraphs": [
+        "把纸从左到右分成“过去某一时刻—到现在为止—现在观察点”。如果镜头停在现在，问正在做什么；如果镜头回到过去某时，问当时正在做什么；如果站在现在回看已发生的动作，问现在有什么结果。这三个问题比先背三个中文时态名字更容易分清。",
+        "原创短文《Cards for a Photo Show》（照片展的说明卡）：\nIt is eight on Tuesday evening. Tao is writing cards for a small photo show. His sister is checking the dates. “I have written all the name cards,” Tao says. “They are ready, but I am still writing the place cards.” His sister points to a photo. “You took this photo last Sunday.” Tao smiles. “Yes. At six that evening, I was walking near the river. I stopped and took the photo.” Now they can put the finished cards beside the photos.\n这里只提供文字，没有配套音频。",
+        "场景词义：eight八；Tuesday evening周二晚上；Tao涛，人名；cards卡片；small小型；photo照片；show展览；sister姐姐／妹妹，本课不限定排行；dates日期；name姓名／名称；says说；ready准备好；place地点；points to指向；took this photo拍了这张照片；last Sunday上周日；smiles微笑；yes是；six六；that evening那天晚上；near在……附近；river河；stopped停下；put放；finished完成的；beside在……旁边。write/check/take/walk词义见补救卡，-ing与分词怎样工作下面逐节讲。",
+        "完整读意：周二晚八点，涛在为照片展写说明卡，他的姐姐或妹妹（原文未交代排行）在核对日期。涛说名称卡已经全部写好，现在可用，但地点卡还在写。她指着一张上周日拍的照片；涛回忆那晚六点正沿河走，随后停下拍照。现在他们可以把已经做完的卡放到照片旁，不意味着所有类型卡片都已完成。",
+        "给文中动作贴四个位置：上周日六点walking是过去过程；stopped/took是那次具体过去事件；have written表示到现在名称卡已有完成结果；am still writing表示现在地点卡还在写。一个人可同时报告某部分完成和另一部分进行，不能给整段统一贴一个时态。"
+      ],
+      "keyPoints": [
+        "观察点与完成状态是两条线。",
+        "名称卡完成、地点卡进行，不互相矛盾。",
+        "过去过程不等于过去整个事件已经结束。"
+      ],
+      "checkpoint": {
+        "question": "涛说已写好全部名称卡，能否概括成“他已写完所有说明卡”？",
+        "answer": "不能。地点卡仍在写，all只限定name cards；不能扩成所有类型卡片。",
+        "explanation": "把范围阅读与时态意义一起核对，不被all一个词带跑。"
+      }
+    },
+    {
+      "id": "w6-en-s2",
+      "title": "先建立现在结果：have/has＋过去分词",
+      "level": "core",
+      "paragraphs": [
+        "从“I have written all the name cards”看：写卡发生在说话之前，现在名称卡可用了。用一条线记“此前写完→现在卡已准备好”。现在完成时之所以有现在，不是说动作必须此刻在做，而是现在仍是观察的参照点。本课核心先练这一种结果联系，再在选读里认识其他用途。",
+        "结构是主语＋have/has＋过去分词。I have written；Tao has written；the two helpers have written。have/has随主语配对，written表示写这个动作在本结构中的分词形式；不能写I has written、Tao have written或Tao has wrote。two helpers两名帮手。",
+        "规则动词的过去式和过去分词常同形，如finish—finished—finished；不规则有write—wrote—written。碰到has后一个动作空，先从词形卡取第三列，而不是凭“发生在过去”拿第二列。第三列叫过去分词不等于整句一般过去时，整套have/has＋分词共同工作。",
+        "结果要从语境说具体。“I have found the key. I can open the door now.”＝我找到了钥匙，现在能开门。key钥匙；door门。关键不是笼统说对现在有影响，而是指出钥匙已找到、现在可开门。也不能仅凭have found推断永远不会再丢，当前结果有其范围。",
+        "现在完成并非永远意味着一件事彻底停止。例如持续的居住状态也能用have lived，选读会解释。本核心题为了减负，会明确要求用现在完成时报告已完成部分；不要把这一练习范围扩大为全部完成时的定义。"
+      ],
+      "keyPoints": [
+        "此前动作＋现在具体结果。",
+        "have/has配主语，后接第三列分词。",
+        "本周核心先结果，不把结果用法当唯一全部用途。"
+      ],
+      "checkpoint": {
+        "question": "“The workers have checked the door, so we can use it now.”现在相关的结果是什么？词义：workers工作人员；checked检查；use使用。",
+        "answer": "门已检查过，按句中给定情况现在可以使用；不是工作人员此刻必定还在检查。",
+        "explanation": "要说出句中can use it now对应的结果，而不只背“过去影响现在”。"
+      }
+    },
+    {
+      "id": "w6-en-s3",
+      "title": "现在进行：镜头对准动作中间",
+      "level": "core",
+      "paragraphs": [
+        "主文“I am still writing the place cards”把镜头对准现在的写作过程。结构am/is/are＋动词-ing：I am writing；she is writing；they are writing。不能只写I writing，因为缺承担现在时间与主语配对的be；也不能写She is writes，因为此处要求-ing形式。",
+        "看过程与结果的对照：“She is making a box”＝她正在做一个盒子；“She has made a box”＝她已经做出一个盒子，语境可接现在能使用它。make制作。进行句本身不保证成品已经完成，也不保证后来一定成功；完成句在此语境报告一个已有结果。",
+        "-ing先掌握本课需要的几种：check→checking、walk→walking直接加；write→writing、make→making先去不发音e；run→running在此重读短元音后双写末尾n；study→studying保留y。不能把写studied的y变化搬到-ing。run跑；study学习。遇更复杂拼写可查，不扩成一整章。",
+        "now只是线索，不是开关。“I know the answer now”＝我现在知道答案，know在这个意义通常表示状态，用一般现在时，不写am knowing。answer答案。核心这里只提醒“现在不一定都进行”；更多状态与延续问题放选读，不增加核心错综规则。",
+        "进行还可表示现阶段活动或已安排的未来，第5周选读见过后一种。因此完整语境比一个形态名称重要。本周核心题明确围绕正在发生的可观察动作，先把“be不能漏，-ing不当成过去分词”两件事练稳。"
+      ],
+      "keyPoints": [
+        "过程镜头：be＋-ing。",
+        "be配现在人称，-ing按拼写规律。",
+        "now不是所有动词一律进行的开关。"
+      ],
+      "checkpoint": {
+        "question": "“They are checking two maps now”能推出两张地图都已经检查完吗？词义：maps地图。",
+        "answer": "不能，只说明现在正在检查两张地图；没有提供全部完成的结果。",
+        "explanation": "过程视角并不自带完成保证。"
+      }
+    },
+    {
+      "id": "w6-en-s4",
+      "title": "与一般过去时比较：动作定位在结束时间还是回看现在",
+      "level": "core",
+      "paragraphs": [
+        "主文“You took this photo last Sunday”把拍摄事件放进已结束的上周日，使用一般过去式took。若说“I have taken a photo; you can see it now”，是在现在回看已有照片，用现在完成时也自然。后一句没有把同一动作同时锁在last Sunday这个结束时间里。",
+        "本课采用标准书面英语的基础规则：明确结束的过去时间，如yesterday、last night、two days ago，一般用过去时陈述该动作，不写“I have made the card yesterday”。可改“I made the card yesterday”。若任务要求保留昨天，不能只删yesterday躲掉时间信息；句式应服务原意。two days ago两天前。",
+        "但“现在有结果”不意味着一般过去时永远不可能用。“I made the card yesterday, so it is ready now”是完整自然的句子，说明过去动作也能带来现在结果。两种表达的参照方式不同；当题目要求练现在完成结构时按要求写，不能把其他自然表达判成根本不合法。",
+        "already、yet、ever不是自动按钮。本周主文不依赖它们，也能用have written表达现在结果。副词可给线索，但先看动作时间、说话者关注点和句子结构。本课不考英美变体细节，更不把一句口诀当所有交流语境的唯一解。",
+        "比较时写两个问题：是否给出该动作发生在已经结束的明确过去时间？现在说话者在报告过程、具体过去事件还是到现在的结果？先答问题，再在过去式与have/has＋分词之间选择，尤其要查write的wrote/written。"
+      ],
+      "keyPoints": [
+        "明确结束时间定位过去事件。",
+        "现在有结果不排斥句中另用过去时叙事。",
+        "不可删必须保留的时间来逃避结构问题。"
+      ],
+      "checkpoint": {
+        "question": "保留yesterday，修复“She has written the address yesterday”。词义：address地址。",
+        "answer": "She wrote the address yesterday.",
+        "explanation": "原动作定位在昨天，保留信息时用过去式wrote，而不是仅删yesterday。"
+      }
+    },
+    {
+      "id": "w6-en-s5",
+      "title": "问句和否定：先认清谁是辅助词",
+      "level": "core",
+      "paragraphs": [
+        "现在进行句“She is checking the dates”否定为“She is not checking the dates”；问句为“Is she checking the dates?”；简答“Yes, she is.”或“No, she isn’t.”。日期dates；checking检查。操作和第5周移动be相通：不要在已有is前再加does。",
+        "现在完成句“She has checked the dates”否定为“She has not checked the dates”；问句“Has she checked the dates?”；简答“Yes, she has.”或“No, she hasn’t.”。这里has是完成结构的辅助词，移动它，checked不变；不能写“Does she has checked”或“Has she check”。",
+        "否定完成与否定过程不是同一意思：“She hasn’t finished the card”说卡还没完成，可以正在写，也可能尚未开始；“She isn’t writing the card now”只说此刻没在写，不能单凭它认定已经写完。finish完成；card卡片。看否定时要同时找动作视角与时间范围。",
+        "过去进行的问句和否定沿同一be路线，学到第6节后把is换成was、are换成were即可：“Was he writing?”；“He was not writing”。这里提前看到形式是为了减轻记忆负担，不需要再学一套do/did规则。肯定简答保持问句的辅助词。"
+      ],
+      "keyPoints": [
+        "进行时移动be，完成时移动have/has。",
+        "否定接在辅助词后。",
+        "没完成不等于没开始，没在做不等于已做完。"
+      ],
+      "checkpoint": {
+        "question": "“He has not finished the model”能推出“他根本没开始做”吗？词义：model模型。",
+        "answer": "不能，可能已开始但未完成；原句只否定完成结果。",
+        "explanation": "否定范围是finished的完成，不能扩成所有过程都未发生。"
+      }
+    },
+    {
+      "id": "w6-en-s6",
+      "title": "过去进行只先学一个镜头：过去那个时刻正在做",
+      "level": "core",
+      "paragraphs": [
+        "现在把镜头移到主文上周日傍晚六点：“At six that evening, I was walking near the river.” 当时涛正在河边走。结构was/were＋-ing，意义和现在进行的过程视角相通，只是观察点在过去。I/he/she/it或单数用was；you/we/they或复数用were。",
+        "与普通过去式比较：“At eight last night, she was making a card”着眼昨晚八点动作中间；“She made a card last night”把昨晚做卡作为一个过去事件来报告。具体八点并不自动要求进行时，如“She opened the door at eight”也成立；本课题目会明确要表达当时正在做，避免拿时刻词造唯一答案。",
+        "过去进行本身不保证后来完成。你只知道当时在写，不能据此说九点已写完，也不能说现在还在写。从过去观察点到现在隔了一段未知时间，材料没有提供的结果要停在未说明。要表达已完成结果，需要相应文字而非你补故事。",
+        "简单叙事中可将背景过程和新事件连起来：“She was writing when the phone rang.”＝电话响时她正在写。phone电话；rang响。进行的是写，响铃作为一个过去事件进入背景。本周核心只理解这个先后／重叠关系，不扩展所有when/while规则；正式独练以明确过去时刻的过程为主。",
+        "否定和问句仍移动be：“They were not working.”；“Were they working?”；“Yes, they were.”。work工作。不要用did加were；过去已经在was/were表达，-ing仍原样，不能写was wrote。"
+      ],
+      "keyPoints": [
+        "镜头在过去：was/were＋-ing。",
+        "具体时刻不自动要求进行，表达目标和语境要明确。",
+        "过去过程不保证后来完成或持续到现在。"
+      ],
+      "checkpoint": {
+        "question": "“At nine yesterday evening, the two students were making a model”能说现在模型还没完成吗？",
+        "answer": "不能。只知道昨晚九点制作过程在进行，后来和现在的结果未说明。",
+        "explanation": "过去的未完成视角不能无依据延长到现在。"
+      }
+    },
+    {
+      "id": "w6-en-s7",
+      "title": "回到全文：先定时间线，再做结构核查",
+      "level": "core",
+      "paragraphs": [
+        "把三种核心镜头串成一个检查顺序：先读全文明确动作和对象；再标现在、过去观察点或到现在的结果；最后选辅助词和后续词形。现在过程用am/is/are＋-ing；过去过程用was/were＋-ing；现在完成结果用have/has＋过去分词。明确结束过去事件另用过去式，不强塞进前三类。",
+        "回看涛：名称卡have written，所以在题内已准备好；地点卡am writing，仍未完成；上周日六点was walking；拍照took定位上周日。这些句子并不冲突，因为动作对象与观察时间不同。若读成他一边走路一边在同一地点写全部卡，就忽略了跨日时间线。",
+        "一个可靠答案应同时有形式与理由：“has written，因为Tao单数；written取第三列；这部分卡现在ready，所以用完成结构报告结果。”比只说already所以完成更有用。题目若指定现在完成，即使过去式也可能在自然交流中说得通，仍要按本题练习目标产出目标结构。",
+        "最后做范围检查：all是否只修饰某一类；not是否只否定完成；at six是否只说明过去一个时刻；now是否只说明当前。语言准确不仅是动词形式对，还要避免把部分完成扩成全部、把当时过程扩成至今未完。",
+        "本周核心到这里结束。可先完成例练和短测，再决定是否读18分钟选读。没有读for/since、经历、状态与瞬间动作扩展不会扣核心分；后续学习遇到持续含义再逐项补，不在一周内硬塞全部完成时规则。"
+      ],
+      "keyPoints": [
+        "时间关系先于形式选择。",
+        "同一段可有不同对象的不同进度。",
+        "核心与选读分开，防止弱基础被规则淹没。"
+      ],
+      "checkpoint": {
+        "question": "主文最后“finished cards”可以指所有卡都完成了吗？为什么？",
+        "answer": "不能。它只指已经完成的那部分卡；前文说地点卡还在写。",
+        "explanation": "修饰语finished筛出一部分，不删除前文进行中的信息。"
+      }
+    },
+    {
+      "id": "w6-en-s8",
+      "title": "选读十八分钟：持续到现在、经历与动词边界",
+      "level": "extension",
+      "paragraphs": [
+        "本节选读18分钟，不计180分钟核心、不列短测或过关条件。前6分钟读持续与for/since，中间6分钟读经历与状态，最后6分钟看瞬间动作和自检。只需认识边界，不要求本周背完所有例外。",
+        "现在完成也可说开始于过去、一直连到现在的状态：“I have lived here for two years”＝我在这里住了两年，语境通常是现在仍住这里；“I have lived here since March”＝我从三月起一直住这里。for后是一段时长two years两年，since后是起点March三月。不能把two years直接放since后。live居住；here这里。",
+        "经历看截至现在有没有过：“I have seen that film before”＝我以前看过那部电影。see—saw—seen看；film电影；before以前。“Have you ever seen it?”＝你曾看过它吗？ever曾经。“I have never seen it”＝我从未看过它。never从未。没有指定哪天，也不保证仍记得每个细节；若明确last Sunday，就用过去时讲那一次。",
+        "know在认识、知道的状态义通常不用进行形式。“She has known him for two years”＝她认识他两年了，而不是has been knowing。him他（宾语位置）。这也说明完成时不等于动作已经停止：现在仍认识。核心中的I know the answer now同样不必进行；不要把所有状态词的所有意义都绝对化。",
+        "瞬间动作与持续时间要匹配。borrow表示借到的一刻，若想表达书一直留在手中三天，可说“I have kept the book for three days”；不能在这个持续意思下机械用have borrowed…for three days。borrow借；keep保留；book书；three days三天。不是“完成时禁用borrow”，例如“I have borrowed a book”本身可以报告借到一本书这一结果。",
+        "本周没有展开现在完成进行时have/has been＋-ing；看见它不必猜它和本课完全相同，也不把选读变成新必做卷。先画起点到现在的一段线，确认想说过程、持续状态还是已有结果，再到后续课程逐步扩展。"
+      ],
+      "keyPoints": [
+        "选读：for接时长，since接起点。",
+        "完成时也可表达持续状态与截至现在经历。",
+        "瞬间借到与持续保留不同；不是禁用某个动词。"
+      ],
+      "checkpoint": {
+        "question": "若要说“书借来后一直留在我这里两天，现在仍在”，I have kept the book ___ two days填for还是since？为什么？",
+        "answer": "for。two days是时长；kept表达持续保留，而不是只指借到那一刻。",
+        "explanation": "先确定要表达持续状态，再选时长介词；这不是核心20分要求。"
+      }
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "w6-en-ex1",
+      "title": "第一级：先说现在的结果，再构成完成时",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "原创情境：Ming现在能交出一张地址卡，因为他此前已写好。按要求用现在完成时补全：“Ming ___ (write) the address card. It is ready now.” 再解释has/have和词形怎样选择。\n词义：Ming明；write写；address card地址卡；ready准备好；now现在。可查补救节词形卡。",
+      "answer": "Ming has written the address card. It is ready now. 明已经写好了地址卡，现在卡已准备好。Ming单数配has，write的过去分词written；过去动作的当前结果是卡已可交出。",
+      "steps": [
+        "先画此前写好→现在ready。",
+        "Ming是单数主语，选择has。",
+        "从write三列取written，不取wrote。",
+        "核对完整结构has written，不只写written。"
+      ],
+      "commonErrors": [
+        "has wrote；Ming have written；只写过去有影响却不说卡已可用。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-ex2",
+      "title": "第二级：同样是做卡，镜头不同",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "甲：你现在看见Yu还在写最后一行。“Yu ___ (write) a card now.” 用现在进行时。乙：她现在把写好的卡交给你。“Yu ___ (write) the card. Here it is.” 用现在完成时。说明两句各能支持什么。\n词义：Yu雨；write写；card卡；now现在；here it is卡在这里。",
+      "answer": "甲Yu is writing a card now. 乙Yu has written the card. Here it is. 甲报告写作过程，不保证已完成；乙报告写好且现在能拿出的结果。",
+      "steps": [
+        "甲现在观察点落在过程内部，is＋writing，write去e加ing。",
+        "乙现在回看成品，has＋written。",
+        "单数Yu两句分别配is/has。",
+        "用题内还在写、交出成品说明区别，不仅凭now或here猜。"
+      ],
+      "commonErrors": [
+        "is written被当进行；has writing被当完成；两句都断言成品已完成。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-ex3",
+      "title": "第三级：过去日期保留，不能用删时间躲题",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "保留全部时间信息，修复：“I have made the sign yesterday. It is ready now.” 再按“用现在完成时只报告当前已有结果”的要求另写一句，不含yesterday。\n词义：I我；make制作；sign标牌；yesterday昨天；ready准备好；now现在。",
+      "answer": "保留原信息：I made the sign yesterday. It is ready now. 另按目标结构：I have made the sign. 昨天定位具体过去动作；第二种站在现在报告已有标牌，未指定结束时间。两者都可联系现在结果，不能说made就与现在毫无关系。",
+      "steps": [
+        "圈yesterday，它明确限定制作事件。",
+        "第一处移去have，make用过去式made。",
+        "保留It is ready now，不因过去时删除现在结果。",
+        "另句题目改变表达目标，使用have made，不带昨天。"
+      ],
+      "commonErrors": [
+        "只删yesterday却声称保留原意；写have maked；认为过去事件不可能有当前结果。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-ex4",
+      "title": "第四级：把镜头移到昨晚，并作问答",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创回忆：昨晚九点，两名同事正在检查路线图；后来的完成情况未提供。按此意思补句、改一般疑问并给肯定简答：“At nine last night, the two workers ___ (check) the map.” 最后说是否知道现在检查已完成。\n词义：at nine last night昨晚九点；two两名；workers工作人员；check检查；map地图。",
+      "answer": "At nine last night, the two workers were checking the map. Were the two workers checking the map at nine last night? Yes, they were. 只知道当时正在检查，现在是否完成未说明。",
+      "steps": [
+        "观察点在过去九点且明确正在过程，选过去进行。",
+        "two workers复数配were，check变checking。",
+        "问句移动were，checking保留；简答they were。",
+        "不把过去镜头直接延长到现在或补后来完成。"
+      ],
+      "commonErrors": [
+        "was checking；did they were checking；断言现在还没完成或肯定已完成。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-ex5",
+      "title": "第五级：一篇短报告中的四种时间关系",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "原创报告：“Yesterday, Fei ___ (make) a box. At eight last night, her friends ___ (paint) it.（当时正在涂色）Now Fei ___ (put) labels on it.（正在贴）She ___ (finish) two labels, so those two are ready.（用现在完成时）” 补全并概括现在已完成什么、仍在做什么。\n词义：Fei菲；make制作；box盒子；friends朋友们；paint涂色；put labels on在……上贴标签；label标签；finish完成；two两个；those two那两个；ready准备好。put的-ing为putting，本题可查。",
+      "answer": "made；were painting；is putting；has finished。昨天做好盒子；昨晚八点朋友们正在涂色；现在菲在贴标签，其中两个标签已完成。不能据最后一句推出所有标签完成，也不能从过去进行单独推出涂色最终怎样。",
+      "steps": [
+        "昨天事件用made。",
+        "过去观察点与复数friends对应were painting。",
+        "现在过程Fei对应is putting。",
+        "当前结果Fei对应has finished。",
+        "对象层级分清：盒子、涂色、标签不同；two不扩大为all。"
+      ],
+      "commonErrors": [
+        "全段只用一种时态；has finish；朋友们配was；两个标签扩大全部。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "practice": [
+    {
+      "id": "w6-en-pr1",
+      "title": "基础：两种辅助结构别混装",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "foundation",
+      "prompt": "修复两条现场文字并给中文：①“The workers is moving a table now.”②“An have wrote the room numbers. They are ready.” 第二句按完成结构保留当前结果。\n词义：workers工作人员；move搬动；table桌子；now现在；An安；write写；room numbers房间号；they它们；ready准备好。",
+      "answer": "①The workers are moving a table now. 工作人员现在正在搬桌子。②An has written the room numbers. They are ready. 安已经写好了房间号，它们已准备好。",
+      "steps": [
+        "①复数workers配are，moving已是正确-ing。",
+        "②An单数用has，write取written。",
+        "译文分别保留过程与当前结果。"
+      ],
+      "commonErrors": [
+        "只改have不改wrote；把两句都译成已经完成；将moving误改moved。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-pr2",
+      "title": "应用：完成一部分不等于全部",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "原创短文：“Bo has made three paper birds. They are on the shelf now. He is making a fourth bird, but its wings are not ready.”\n①哪部分已完成？哪部分仍在制作？②they指什么？③能否说fourth bird已经准备好？\n词义：Bo博；make制作；three三；paper birds纸鸟；shelf架子；fourth第四只；bird鸟；its它的；wings翅膀；ready准备好；on在……上。",
+      "answer": "①三只纸鸟已做好；第四只仍在制作。②they指已做好的三只纸鸟。③不能，第四只翅膀尚未做好。has made联系现有三只成品，is making呈现第四只的过程。",
+      "steps": [
+        "分别圈three与fourth。",
+        "代词they回指前三只，不包括未完成第四只。",
+        "用wings are not ready保留否定证据。"
+      ],
+      "commonErrors": [
+        "已完成四只；they指翅膀；根据has made忽略后半进行。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-pr3",
+      "title": "应用：过去过程的问句和完成否定",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "application",
+      "prompt": "①保持意思“昨天下午三点她正在画海报”，用过去进行时写一句。②把“He has finished the poster”改一般疑问句并给否定简答。③否定简答能否说明他没开始做？\n词义：she她；draw画（本题-ing为drawing）；poster海报；at three yesterday afternoon昨天下午三点；he他；finish完成。",
+      "answer": "①She was drawing a poster at three yesterday afternoon. ②Has he finished the poster? No, he hasn’t. ③不能，只说未完成，可能已经开始。",
+      "steps": [
+        "①过去观察点且明确进行，she配was。",
+        "②移动has，finished不变。",
+        "③区分未完成与未开始。"
+      ],
+      "commonErrors": [
+        "①is drawing；②Does he has…；③把否定完成扩大成无任何进展。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-pr4",
+      "title": "迁移：时间词不能代替完整阅读",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "编辑要保留两条记录的全部信息：①“Jin has opened the shop at seven yesterday morning.”②“Jin is cleaning the floor now. One corner is still dirty.” 修复①；判断②能否概括“地面已经全部干净”。\n词义：Jin金；open打开／开门；shop商店；at seven yesterday morning昨天上午七点；clean打扫；floor地面；one一个；corner角落；still仍然；dirty脏。",
+      "answer": "①Jin opened the shop at seven yesterday morning. ②不能。正在打扫，且一个角落仍脏，不能概括全部干净。明确过去时刻与事件要求opened；now不替代对过程与结果的判断。",
+      "steps": [
+        "保留昨天上午七点，改用一般过去式opened。",
+        "读②第二句，看仍脏这一明确状态。",
+        "不把开始或正在做说成完全达成。"
+      ],
+      "commonErrors": [
+        "删时间当保意修改；把has opened的结果思路强加昨天句；漏one corner still dirty。"
+      ],
+      "estimatedMinutes": 6
+    },
+    {
+      "id": "w6-en-pr5",
+      "title": "迁移：四句连贯工作记录",
+      "origin": "original",
+      "level": "core",
+      "difficulty": "transfer",
+      "prompt": "按事实写四句英语：①昨天我们制作了一张地图。②昨晚八点，我们正在给它涂色。③现在我正在检查三个名称。④我已检查完其中两个名称，故两个现在可用（用现在完成时）。材料没有说明第三个已完成，不补写。\n可用词：we我们；I我；make制作；map地图；yesterday昨天；at eight last night昨晚八点；paint给……涂色；it它；check检查；three三个；names名称；two两个；ready准备好；now现在。",
+      "answer": "示例：We made a map yesterday. At eight last night, we were painting it. I am checking three names now. I have checked two names, so those two are ready. 最后也可用two of them（其中两个）且指代明确。只确认两个完成，不声称第三个也完成。",
+      "steps": [
+        "过去事件make用made。",
+        "过去进行we were painting。",
+        "现在过程I am checking。",
+        "当前部分结果I have checked，two范围保留。",
+        "最后通读各个对象与进度是否矛盾。"
+      ],
+      "commonErrors": [
+        "I is；we was；have check；最后写all three ready；把昨晚过程改未来计划。"
+      ],
+      "estimatedMinutes": 6
+    }
+  ],
+  "misconceptions": [
+    {
+      "wrong": "完成时里的现在表示现在正在做。",
+      "why": "它可在现在回看此前动作及当前结果，不同于过程镜头。",
+      "right": "先说清已经形成的具体结果，再构造have/has＋分词。"
+    },
+    {
+      "wrong": "过去式都能直接放have后。",
+      "why": "wrote与written等形式不同。",
+      "right": "用词形卡的第三列，分清过去式与过去分词身份。"
+    },
+    {
+      "wrong": "now一定进行，具体过去几点一定过去进行。",
+      "why": "状态句与过去发生的单个事件也可带这些时间。",
+      "right": "先看表达目标和完整语境，再确定视角。"
+    },
+    {
+      "wrong": "过去进行说明动作直到现在还没完。",
+      "why": "只给过去观察点，之后结果未必交代。",
+      "right": "停在当时正在做，不扩到现在。"
+    },
+    {
+      "wrong": "有当前结果的句子只能用现在完成。",
+      "why": "一般过去时也能陈述造成现在结果的过去事件。",
+      "right": "区分参照方式；保留明确过去时间时用相应过去叙事。"
+    },
+    {
+      "wrong": "没有完成意味着没有开始。",
+      "why": "可能已有部分进度但终点未达到。",
+      "right": "只否定完成，不擅自否定全部过程。"
+    }
+  ],
+  "quiz": {
+    "instructions": "全新原创模型展示情境，四题各6分钟、各5分，共24分钟20分。可查词义与补救节词形卡，先独立答，再看解析。指定时态的题按所给表达目标写，不把其他自然表述伪装成语法禁令。选读的for/since、经历与状态/瞬间动词不计分；无音频或听力评价。",
+    "totalPoints": 20,
+    "questions": [
+      {
+        "id": "w6-en-quiz1",
+        "title": "新材料：三艘模型船的不同进度",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "原创记录：“It is Monday evening. Wen ___ (make) the third model boat now.（正处于制作过程，用现在进行时）She ___ (finish) two boats.（用现在完成时报告当前结果）Those two are ready for the show, but the third boat has no sail.”\n补全两空；再说哪部分可以展出，哪部分尚未完成，用文字作证；最后说明两种时态分别从什么角度看动作。\n词义：Monday evening周一晚上；Wen雯；make制作；third第三艘；model boat模型船；now现在；finish完成；two两艘；those two那两艘；ready for the show可用于展览；but但是；has no没有；sail帆。",
+        "answer": "is making；has finished。两艘已完成的船可展出，有Those two are ready for the show作证；第三艘仍在制作且没有帆，不能概括三艘都完成。 两种视角：is making把镜头放在现在的制作过程中；has finished从现在回看此前已完成的动作，已有可展出的结果。",
+        "steps": [
+          "单数Wen的现在过程用is making，make去e。",
+          "单数she完成结果用has finished。",
+          "two和third分不同对象，否定信息不丢。",
+          "分别解释现在过程与从现在回看已有结果，不只说出现now或ready。"
+        ],
+        "commonErrors": [
+          "has making；is finished误作目标结构；three ready；只凭has no忘进行状态。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "第一空is making，辅助词与-ing都正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "第二空has finished，配she且用分词。"
+          },
+          {
+            "points": 1,
+            "criterion": "指出两艘已完成的可展出并联系ready。"
+          },
+          {
+            "points": 1,
+            "criterion": "指出第三艘仍在制作/尚未完成并用没有帆作证。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明两种观察角度：现在制作过程、此前完成且当前已有结果；各0.5分。不与对象数量的判断重复计分。"
+          }
+        ]
+      },
+      {
+        "id": "w6-en-quiz2",
+        "title": "新回忆：过去过程不能替代后来结果",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "昨天晚上七点，两名志愿者正在画船帆，后续完成情况没有记录。用过去进行时完成：“At seven yesterday evening, the two volunteers ___ (paint) the sails.” 然后改一般疑问句，给肯定简答；最后回答现在船帆是否已画完。\n词义：at seven yesterday evening昨晚七点；two volunteers两名志愿者；paint画／涂色；sails船帆。",
+        "answer": "were painting。Were the two volunteers painting the sails at seven yesterday evening? Yes, they were. 现在是否画完未说明，不能从过去过程推出现在结果。",
+        "steps": [
+          "过去观察点和明确正在目标选择过去进行。",
+          "two volunteers复数配were。",
+          "问句移were，简答保留were。",
+          "结果未知，不猜。"
+        ],
+        "commonErrors": [
+          "was painting；did they were；Yes, they did；断言现在必已完成或仍未完成。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "填were painting正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "一般疑问移动were且保留painting。"
+          },
+          {
+            "points": 1,
+            "criterion": "问句保留两名志愿者、船帆和昨晚七点。"
+          },
+          {
+            "points": 1,
+            "criterion": "Yes, they were正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "说明现在完成情况未说明，不把过去过程外推。"
+          }
+        ]
+      },
+      {
+        "id": "w6-en-quiz3",
+        "title": "新记录：保留过去时间，再表达当前结果",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "application",
+        "prompt": "①保留全部意思，修复：“Wen has wrote the title yesterday. The title is on the card now.”②另按要求用现在完成时表达“她已经写好标题，现在标题卡可用了”，写一个完成句并说明它怎样关联现在；再说明①与②的时间参照为何不同。\n词义：Wen雯；write写；title标题；yesterday昨天；card卡片；now现在；ready可用／准备好。",
+        "answer": "①Wen wrote the title yesterday. The title is on the card now. ②She has written the title. The title card is ready now. 也可用Wen has written the title作完成句。①动作定位昨天，不能保留has；②has配she，written为分词，当前结果是标题已在卡上且可使用。",
+        "steps": [
+          "①不能只把wrote改written，因为仍有yesterday。",
+          "保留昨天用过去式wrote。",
+          "②按指定结果表达使用has written。",
+          "说具体当前结果，不笼统背有影响。"
+        ],
+        "commonErrors": [
+          "只改written仍带yesterday；删昨天；②has wrote；声称一般过去时完全与现在无关。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①去has并用wrote，过去事件形式正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "①保留昨天、标题及现在卡上有标题的信息。"
+          },
+          {
+            "points": 1,
+            "criterion": "②用She/Wen has written the title，has与分词正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②写出或说明标题卡当前可用的具体结果。"
+          },
+          {
+            "points": 1,
+            "criterion": "解释①明确过去时间定位与②从现在回看结果的不同，不声称过去事件不能造成现在结果。"
+          }
+        ]
+      },
+      {
+        "id": "w6-en-quiz4",
+        "title": "新便条：没完成不等于没开始",
+        "origin": "original",
+        "level": "core",
+        "difficulty": "transfer",
+        "prompt": "已知Lin正在制作展台，尚未完成。任务：①用现在进行时写“Lin现在正在制作展台”。②用现在完成时的否定写“Lin还没有完成展台”。③把②改一般疑问句。④有人据②说“Lin还没开始”，这个推断对吗？\n可用词：Lin林；make制作；stand展台；now现在；finish完成；yet还／已经，可用于本题句末。",
+        "answer": "①Lin is making the stand now. ②Lin has not finished the stand yet.（Lin hasn’t finished the stand yet.）③Has Lin finished the stand yet? ④不对，只是否定完成；题内明确正在制作，已有开始。",
+        "steps": [
+          "①现在过程用is making。",
+          "②has not＋finished保留未完成。",
+          "③移动has，不加does，分词不变。",
+          "④用题内正在制作说明未完成不等于未开始。"
+        ],
+        "commonErrors": [
+          "Lin has making；doesn’t has finished；Has Lin finish；据not断言没有开始。"
+        ],
+        "estimatedMinutes": 6,
+        "points": 5,
+        "scoring": [
+          {
+            "points": 1,
+            "criterion": "①is making且内容正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "②has not/hasn’t finished，否定完成正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "③Has Lin finished…问句正确。"
+          },
+          {
+            "points": 1,
+            "criterion": "三句均保留同一人物与展台，①now和②③未完成/是否完成含义清楚。"
+          },
+          {
+            "points": 1,
+            "criterion": "拒绝未开始推断，并说明题内正在制作或未完成可已有进度。"
+          }
+        ]
+      }
+    ],
+    "passRule": {
+      "minScore": 16,
+      "requiredChecks": [
+        "第1题能写is making与has finished，并把两艘已完和第三艘在做分开。",
+        "第2题were painting及问答正确，不把过去过程直接外推为现在结果。",
+        "第3题保留yesterday时用wrote，目标完成句用has written，并能说具体当前结果。",
+        "第4题否定与疑问正确操作has，且不把未完成等同未开始。"
+      ]
+    },
+    "remediation": [
+      {
+        "questionIds": [
+          "w6-en-quiz1"
+        ],
+        "sectionIds": [
+          "w6-en-s1",
+          "w6-en-s2",
+          "w6-en-s3",
+          "w6-en-s7"
+        ],
+        "action": "为两个对象各画时间线，先中文说过程/结果，再分别填辅助词与词形。"
+      },
+      {
+        "questionIds": [
+          "w6-en-quiz2"
+        ],
+        "sectionIds": [
+          "w6-en-r1",
+          "w6-en-s5",
+          "w6-en-s6"
+        ],
+        "action": "圈过去观察点，复数配were；同一个were做问答，未来到现在的结果留为未知。"
+      },
+      {
+        "questionIds": [
+          "w6-en-quiz3"
+        ],
+        "sectionIds": [
+          "w6-en-r1",
+          "w6-en-s2",
+          "w6-en-s4"
+        ],
+        "action": "查write三列；带昨天的是过去事件，指定当前结果用has written，均保留材料信息。"
+      },
+      {
+        "questionIds": [
+          "w6-en-quiz4"
+        ],
+        "sectionIds": [
+          "w6-en-s3",
+          "w6-en-s5",
+          "w6-en-s7"
+        ],
+        "action": "对比正在做与尚未完成两句，移动已有has；用中文写清否定只否定完成。"
+      }
+    ]
+  },
+  "mastery": [
+    "能为现在过程、过去某时过程和到现在的结果画三条简短时间线，并用材料说理由。",
+    "能用正确be/have/has和-ing/分词，允许查表但不混词形身份。",
+    "明确结束的过去时间能与一般过去事件相配，不靠删时间修句。",
+    "否定与问句移动已有辅助词，未完成、未开始和现在不在做三者不混。",
+    "独立短测至少16/20且四项关键检查全过；18分钟选读不影响核心推进。",
+    "无音频，不以书面完成声明真实听力、口语或发音达标。"
+  ],
+  "nextStep": "先在30分钟预算内核分与订正；达到16分且四项关键检查全过后手动进入第7周被动语态，保留本课分词与辅助词的基础。未过下次英语学段继续本周，不为赶周数硬叠所有完成时扩展规则。",
+  "reviewActivity": {
+    "id": "w6-en-review",
+    "title": "30分钟订正，已计核心预算",
+    "instructions": [
+      "前5分钟记录首次20分及四项关键检查，分开时间线误判、主语配对、词形与信息范围错误。",
+      "接着10分钟按对应小节回读，画最弱题的观察点与动作线，再查一组词形。",
+      "接着12分钟遮答重做错题并逐句说中文；全对者解释为何第1题两艘完成与第三艘进行可以同时成立，以及第2题为何不能知现在结果。",
+      "最后3分钟记订正分与仍未过项目，安排下次接续；不另加全卷或将选读变成必做。"
+    ]
+  },
+  "sourcePolicy": {
+    "authorship": "全部教学短文、例练、模型展新短测、中文释义译文及评分原创。外部官方语法参考只核对进行时、完成时的形式和意义边界，没有复制其例句、练习或说明段落。",
+    "examStatus": "所有题目origin=original，均为原创基础衔接训练，非历年真题。面向河南南阳2028高考备考，但教材版本未核定，不编教材章页，不声称已核验2028题型分值或考试政策；20分为本课自测设计。",
+    "externalSources": [
+      {
+        "id": "w6-en-ref-perfect",
+        "title": "British Council LearnEnglish：Present perfect",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-perfect",
+        "kind": "reference",
+        "scopeNote": "已实际打开，核对have/has＋分词、现在联系及结束过去时间边界；延续与经历放选读，原文例句未复制。"
+      },
+      {
+        "id": "w6-en-ref-present-continuous",
+        "title": "British Council LearnEnglish：Present continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-continuous",
+        "kind": "reference",
+        "scopeNote": "已实际打开，核对be＋-ing、问否与状态动词边界；本课原创场景，核心先观察现在动作。"
+      },
+      {
+        "id": "w6-en-ref-past-continuous",
+        "title": "British Council LearnEnglish：Past continuous",
+        "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/past-continuous",
+        "kind": "reference",
+        "scopeNote": "已实际打开，核对was/were＋-ing用于过去某时进行；不把具体时刻当唯一自动触发，也不抄例题。"
+      }
+    ]
+  },
+  "audioStatus": "本课无音频。英文文本、中文词义和译文服务书面阅读与语法，不构成真实听辨、发音或口语测验；核心20分不含听力评价。"
+}

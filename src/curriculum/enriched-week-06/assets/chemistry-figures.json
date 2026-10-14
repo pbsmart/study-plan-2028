@@ -1,0 +1,41 @@
+[
+  {
+    "id": "w6-chemistry-figure-split-card",
+    "title": "拆写离子前过三道关",
+    "asset": "assets/chemistry-figure1.svg",
+    "altText": "依次检查本题是否水溶液、物质是否确实溶解且为强电解质；本课符合条件的NaCl溶液、盐酸、NaOH溶液写离子。沉淀和固体、气体、水、弱酸保留化学式。浓与稀不决定电解质强弱。",
+    "description": "拆写取决于物质性质和题目中的状态。难溶不等于弱电解质，稀溶液也不等于弱电解质。",
+    "renderingNote": "三道判断卡顺次为“水溶液情境？”“该物质实际溶于水？”“属于本课可拆的强电解质？”，符合流向离子写法，其余转至保留或按题给条件判断。下方保留卡列CH₃COOH(aq)、H₂O(l)、AgCl(s)、CO₂(g)、NaOH(s)，注明“同一状态不可偷换”。另画独立提示强弱≠浓稀。切勿写所有盐都拆或所有难溶物是弱电解质。",
+    "linkedSectionIds": [
+      "w6-chemistry-section-rulecard",
+      "w6-chemistry-section-boundaries"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w6-chemistry-figure-spectators",
+    "title": "旁观离子不写入净反应，却仍在溶液里",
+    "asset": "assets/chemistry-figure2.svg",
+    "altText": "概念示意：Ag⁺与Cl⁻结合生成AgCl固体；Na⁺和NO₃⁻反应前后均保留在水相。删除的是方程式两侧相同的书写项，不是将离子从溶液中移走。",
+    "description": "净离子方程式只记录发生变化的对象。旁观离子仍参与整个溶液的电荷平衡。",
+    "renderingNote": "两张状态卡“反应前水相”与“反应后”，前卡放Ag⁺、Cl⁻、Na⁺、NO₃⁻各一份；后卡将AgCl放入单独固相框，Na⁺、NO₃⁻仍在水相。用虚线对应旁观离子，不能将它们打叉消失。底部写Ag⁺+Cl⁻→AgCl↓，标“仅示意计量，不是实验装置或机理”。这是通用正文示意，不链接题目。",
+    "linkedSectionIds": [
+      "w6-chemistry-section-foursteps",
+      "w6-chemistry-section-charge"
+    ],
+    "linkedQuestionIds": []
+  },
+  {
+    "id": "w6-chemistry-figure-ion-ledger",
+    "title": "反应后浓度的四步账",
+    "asset": "assets/chemistry-figure3.svg",
+    "altText": "先用各原液cV求溶质mol，再按电离下标得到参加反应的离子mol；用配平离子方程式算消耗和剩余；最后以剩余离子mol除题给混合后溶液体积。旁观离子也要保留用于电中性检查。",
+    "description": "反应消耗了哪一种离子，就先扣掉它的反应量。不能把混合前的总量直接代入稀释公式。",
+    "renderingNote": "纵向四层：原液cV→参与离子的n（注意每式单位几个）→起始/消耗/剩余账（按系数比）→c剩=n剩/V终。右侧核查框写“原子数；总电荷；V终题给或明示可加和”。不要展示任何练习或短测数值。",
+    "linkedSectionIds": [
+      "w6-chemistry-section-concentration",
+      "w6-chemistry-section-charge"
+    ],
+    "linkedQuestionIds": []
+  }
+]
