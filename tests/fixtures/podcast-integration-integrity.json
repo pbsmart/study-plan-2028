@@ -1,0 +1,15 @@
+{
+  "description": "Only App and FocusLesson intentionally change for the podcast integration; all other historical protected files retain their prior hashes.",
+  "files": {
+    "src/App.vue": {
+      "bytes": 40006,
+      "sha256": "94d3d6655de570bd96c8838461522cba676185eeb607b748864a4b1c638868b4",
+      "scriptSha256": "e9dddc222a97e8ab30786a653056efca2c4ffe3c16adb28c2ae0fe84367b28a0"
+    },
+    "src/components/FocusLesson.vue": {
+      "bytes": 7695,
+      "sha256": "4af84115df439d43e2ce665c40505cff0f11b9919c276f6bba97e7286e702e41",
+      "scriptSha256": "b50b42e6e0e6c027a2b873fd272e0da99f81ef1e6d72448e10d98d5ae03a6603"
+    }
+  }
+}

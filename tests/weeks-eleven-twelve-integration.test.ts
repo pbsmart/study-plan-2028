@@ -15,6 +15,7 @@ import type { SubjectId } from '../src/model'
 import FocusLesson from '../src/components/FocusLesson.vue'
 import integrity from './fixtures/weeks-eleven-twelve-integrity.json'
 import protectedFiles from './fixtures/weeks-eleven-twelve-protected.json'
+import podcastIntegrity from './fixtures/podcast-integration-integrity.json'
 import { enrichmentConfigs } from '../src/curriculum/enrichment-config'
 const answerLinks = [
   {week:11,subject:'physics',figureId:'w11-physics-figure2',questionId:'w11-physics-ex3'},
@@ -42,13 +43,14 @@ const escaped = (text:string) => text.replaceAll('&','&amp;').replaceAll('<','&l
 describe('frozen weeks eleven and twelve integration',()=>{
   it('preserves the deployed UI, AI, progress, all earlier courses, workflow and prior enrichment configuration',async()=>{
     expect(protectedFiles.baselineCommit).toBe('dfac13acf18804f73abb1cceb5cda2ff147dfe84')
-    for(const file of protectedFiles.files){const bytes=await readFile(new URL(`../${file.path}`,import.meta.url));expect(bytes.length,file.path).toBe(file.bytes);expect(createHash('sha256').update(bytes).digest('hex'),file.path).toBe(file.sha256)}
+    const podcastFiles: Record<string,{bytes:number;sha256:string}> = podcastIntegrity.files
+    for(const file of protectedFiles.files){const expected=podcastFiles[file.path] || file;const bytes=await readFile(new URL(`../${file.path}`,import.meta.url));expect(bytes.length,file.path).toBe(expected.bytes);expect(createHash('sha256').update(bytes).digest('hex'),file.path).toBe(expected.sha256)}
     expect((await readFile(source('enrichment-config.ts'),'utf8')).startsWith(protectedFiles.priorConfigPrefix)).toBe(true)
     expect(enrichmentConfigs.map(config=>config.week)).toEqual([1,2,3,4,5,6,7,8,9,10,11,12])
     for(const week of [11,12])expect(enrichmentConfigs.find(config=>config.week===week)!.answerOnlyFigureIds).toEqual(answerLinks.filter(link=>link.week===week).map(link=>link.figureId))
   })
   it('watches exactly 36 new runtime sources and excludes author QA, rubric, handouts, images and scripts',async()=>{
-    const data=await readCurriculumData(),files=data.sourceFiles.filter(path=>/enriched-week-(?:11|12)\//.test(path))
+    const data=await readCurriculumData(),files=data.sourceFiles.map(path=>path.replaceAll('\\','/')).filter(path=>/enriched-week-(?:11|12)\//.test(path))
     expect(files).toHaveLength(36)
     for(const file of files)expect(file).not.toMatch(/\/(?:qa|handouts)\/|rubric|\.png$|\.py$/)
     expect(files.filter(file=>file.endsWith('-review-map.json'))).toHaveLength(5)

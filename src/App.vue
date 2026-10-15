@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, provide, ref, watch } from 'vue'
 import { activeSubjects, addSession, allSessions, canAddStudySession, dateKey, defaultData, emptyWeek, loadData, names, parseBackup, setCompleted, STORAGE_KEY, StudyTimer, validDate, workloadHours, workloadNames } from './model'
 import type { PlanData, SubjectId, Theme, Workload } from './model'
 import { firstWeeks, paths } from './content'
@@ -8,6 +8,9 @@ import { useStudyWeek } from './composables/useStudyWeek'
 import { statusNames } from './curriculum/types'
 import { sourceScope } from './curriculum/sources'
 import FocusLesson from './components/FocusLesson.vue'
+import PodcastHost from './components/PodcastHost.vue'
+import { createPodcastPlayer, podcastPlayerKey } from './podcast/player'
+import { inlinePodcastSteps } from './podcast/catalog'
 import { learningHash, parseLearningRoute, lessonSteps } from './focus'
 
 const pages = [
@@ -36,6 +39,11 @@ const lessonSubject = ref<SubjectId>('math')
 const selectedSubject = ref<SubjectId>('math')
 const focusActive = ref(false)
 const focusStep = ref('prepare')
+let podcastStorage: Storage | undefined
+try { podcastStorage = localStorage } catch { /* Playback remains usable without storage. */ }
+const podcastPlayer = createPodcastPlayer(podcastStorage)
+provide(podcastPlayerKey, podcastPlayer)
+const podcastInline = computed(() => focusActive.value && !!focusLesson.value && selectedWeek.value === 1 && lessonSubject.value === 'physics' && inlinePodcastSteps.includes(focusStep.value))
 const { course: loadedCourse, loading: courseLoading, error: courseError, retry: loadFocusedCourse } = useStudyWeek(focusActive, selectedWeek, { loadStudyWeek, peekStudyWeek })
 const focusLesson = computed(() => loadedCourse.value?.week === selectedWeek.value ? loadedCourse.value.subjects[lessonSubject.value] : undefined)
 watch([loadedCourse, lessonSubject, focusActive, focusStep], () => {
@@ -161,6 +169,7 @@ onBeforeUnmount(() => { clearInterval(interval); media?.removeEventListener('cha
 </script>
 
 <template>
+  <PodcastHost :player="podcastPlayer" :inline="podcastInline"/>
   <a class="skip-link" href="#main" @click.prevent="skipToMain">跳至主要内容</a>
   <div v-if="focusActive" class="focus-layout">
     <header class="focus-topbar"><button class="focus-exit" @click="exitFocus">← 退出专注</button><span v-if="timerOpen" class="focus-timer-status">{{ names[timerSubject] }} · {{ timerRunning ? '计时中' : '计时已暂停' }}</span><details class="focus-options"><summary>阅读设置</summary><div class="theme-group" aria-label="主题"><button v-for="(name,key) in {light:'浅色',dark:'深色',system:'跟随系统'}" :key="key" :aria-pressed="data.settings.theme === key" @click="setTheme(key)">{{ name }}</button></div></details></header>

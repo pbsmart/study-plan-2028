@@ -8,6 +8,8 @@ import { lessonSteps } from '../focus'
 import type { LessonSection } from '../focus'
 import EnrichedLessonContent from './EnrichedLessonContent.vue'
 import WeekLesson from './WeekLesson.vue'
+import LessonPodcast from './LessonPodcast.vue'
+import { inlinePodcastSteps, podcastFor } from '../podcast/catalog'
 
 const props = defineProps<{ week: number; subject: SubjectId; subjectLabel: string; lesson?: SubjectWeek; completed: string[]; step: string }>()
 const emit = defineEmits<{ complete: [id: string, checked: boolean]; navigate: [step: string]; exit: [] }>()
@@ -64,6 +66,7 @@ watch(() => props.step, focusHeading)
     <component :is="aiComponent" v-if="aiOpen && aiComponent" :lesson="lesson" :step="current.id" :week="week" :subject="subject" :subject-label="subjectLabel" :step-title="current.title" @close="closeAi"/>
     <section :key="current.id" class="focus-section" :aria-labelledby="`focus-step-${current.id}`">
       <div class="focus-step-heading"><div><p class="eyebrow">现在学这一节</p><h2 :id="`focus-step-${current.id}`" ref="heading" tabindex="-1" class="focus-section-title">{{ current.title }}</h2></div><div class="focus-ai-entry"><button ref="aiTrigger" type="button" :disabled="aiLoading" aria-haspopup="dialog" @click="openAi">{{ aiLoading ? '正在打开…' : '问 AI' }}</button></div></div>
+      <LessonPodcast v-if="current.id === 'prepare' || (podcastFor(week, subject) && inlinePodcastSteps.includes(current.id))" :week="week" :subject="subject" :lesson="lesson" :overview="current.id === 'prepare'" @navigate="navigate"/>
       <EnrichedLessonContent v-if="lesson?.enrichment" :lesson="lesson.enrichment" :figures="lesson.enrichmentFigures" :review-map="lesson.enrichmentReviewMap" :step="current.id" @navigate="navigate"/>
       <WeekLesson v-else :week="week" :subject="subject" :lesson="lesson" :completed="completed" :section="current.id as LessonSection" />
       <label v-if="checkpointId" class="check-row focus-checkpoint"><input type="checkbox" :checked="completed.includes(checkpointId)" @change="emit('complete', checkpointId, ($event.target as HTMLInputElement).checked)"/><span>{{ lesson?.enrichment ? '本周学习打卡 · ' : '我已实际完成' }}{{ checkpointLabel }}<small>{{ lesson?.enrichment ? '沿用本周历史打卡，不代表深化内容已完成，请按新标准重新核对。' : '仅保存打卡，不计时、不判定掌握，也不自动跳周。' }}{{ (subject === 'english' && (lesson?.audioStatus || lesson?.enrichment?.audioStatus)) ? '听力打卡仅表示文字预训练。' : '' }}</small></span></label>

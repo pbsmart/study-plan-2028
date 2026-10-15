@@ -1,0 +1,30 @@
+.lesson-podcast { margin: 0 0 28px; padding: 20px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.lesson-podcast .eyebrow { margin-bottom: 8px; }
+.podcast-controls { margin-top: 16px; }
+.podcast-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.podcast-buttons button { padding: 8px 12px; }
+.podcast-rate { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.podcast-rate select { width: auto; padding: 8px; font-size: 14px; }
+.podcast-seek { display: block; margin-top: 12px; font-size: 13px; color: var(--muted); }
+.podcast-seek input { display: block; padding: 0; min-height: 32px; width: 100%; accent-color: var(--ink); border: 0; cursor: pointer; }
+.podcast-time { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-variant-numeric: tabular-nums; }
+.podcast-error { margin-top: 12px; font-size: 14px; }
+.podcast-error button { margin-top: 8px; }
+.podcast-transcript, .podcast-study-links { margin-top: 12px; border-top: 1px solid var(--border); }
+.podcast-transcript pre { font: inherit; font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; margin: 12px 0 0; }
+.podcast-study-links article { margin-top: 20px; }
+.podcast-links { display: flex; flex-direction: column; align-items: flex-start; }
+.podcast-pending { margin-bottom: 20px; }
+.podcast-mini { position: fixed; z-index: 30; bottom: 0; left: 0; right: 0; padding: 12px max(16px, calc((100vw - 720px) / 2)) calc(12px + env(safe-area-inset-bottom)); border-top: 1px solid var(--control-border); background: var(--surface); max-height: 65dvh; overflow-y: auto; }
+.podcast-mini .podcast-controls { margin: 0; }
+.podcast-mini-title { font-size: 14px; margin-bottom: 8px; }
+.podcast-mini-title a { text-decoration: underline; text-underline-offset: 4px; }
+.podcast-mini .podcast-seek { margin-top: 6px; font-size: 0; }
+.has-mini-podcast body { padding-bottom: 250px; }
+@media (max-width: 480px) {
+  .lesson-podcast { padding: 16px; }
+  .podcast-buttons { gap: 6px; }
+  .podcast-buttons button { font-size: 13px; }
+  .podcast-rate { gap: 4px; }
+  .podcast-mini .podcast-time { font-size: 12px; }
+}

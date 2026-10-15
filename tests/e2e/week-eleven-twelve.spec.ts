@@ -182,7 +182,9 @@ for (const week of [11, 12]) {
       if (subject === 'english') {
         await expect(page.locator('.focus-title')).toContainText('听力文字预训练，无音频')
         await expect(page.locator('.enriched-content')).toContainText(lesson.audioStatus!)
-        await expect(page.locator('audio')).toHaveCount(0)
+        // The global podcast host has no source until explicitly selected; English still has no lesson audio.
+        await expect(page.locator('audio[src]')).toHaveCount(0)
+        await expect(page.locator('.lesson-podcast')).toHaveCount(0)
       } else await expect(page.locator('.focus-title')).not.toContainText('听力文字预训练，无音频')
       if (subject === 'chemistry') await expect(page.locator('.enriched-content')).toContainText(lesson.safetyScope!)
       await page.locator('.focus-directory > summary').click()

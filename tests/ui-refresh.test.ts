@@ -11,14 +11,18 @@ import FocusLesson from '../src/components/FocusLesson.vue'
 import LearningAiDialog from '../src/components/LearningAiDialog.vue'
 import { loadStudyWeek } from '../src/curriculum'
 import integrity from './fixtures/ui-refresh-integrity.json'
+import podcastIntegrity from './fixtures/podcast-integration-integrity.json'
 
 const root = fileURLToPath(new URL('..', import.meta.url))
 const sourceFiles = (directory: string): string[] => readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
   const path = join(directory, entry.name)
-  return entry.isDirectory() ? sourceFiles(path) : path.endsWith('.css') ? [] : [relative(root, path)]
+  return entry.isDirectory() ? sourceFiles(path) : path.endsWith('.css') ? [] : [relative(root, path).replaceAll('\\', '/')]
 }).sort()
 const additiveCurriculum = (path: string) => /^src\/curriculum\/enriched-week-(?:09|10|11|12)\//.test(path)
 const updatedConfig = 'src/curriculum/enrichment-config.ts'
+// Only these two scripts have a new, explicit podcast baseline.
+const podcastScripts: Record<string, { scriptSha256: string }> = podcastIntegrity.files
+const podcastAdded = (path: string) => path.startsWith('src/podcast/') || /^src\/components\/(?:LessonPodcast|PodcastControls|PodcastHost)\.vue$/.test(path)
 const read = (path: string) => readFileSync(join(root, path), 'utf8')
 const digest = (content: string) => createHash('sha256').update(content).digest('hex')
 const basic = (await loadStudyWeek(13)).subjects.math!
@@ -32,13 +36,13 @@ describe('project-wide UI-only refresh invariants', () => {
   it('preserves all baseline curriculum, figures, business modules and Vue script blocks', () => {
     expect(integrity.baselineCommit).toBe('3b66fff23ce9918bd6998bb93e4536d1ad65b5ed')
     // These additive weeks and the explicit config addition are independently guarded by weeks-nine-ten-integration and weeks-eleven-twelve-integration.
-    expect(sourceFiles(join(root, 'src')).filter(path => !additiveCurriculum(path))).toEqual(Object.keys(integrity.files).sort())
+    expect(sourceFiles(join(root, 'src')).filter(path => !additiveCurriculum(path) && !podcastAdded(path))).toEqual(Object.keys(integrity.files).sort())
     for (const [path, expected] of Object.entries(integrity.files)) {
       if (path === updatedConfig) continue
       const source = read(path)
       const descriptor = expected.kind === 'vue-scripts' ? parse(source).descriptor : undefined
       const content = descriptor ? JSON.stringify({ script: descriptor.script?.content || '', scriptSetup: descriptor.scriptSetup?.content || '' }) : source
-      expect(digest(content), `${path}: business/data changes need a separate reviewed change, not a UI refresh`).toBe(expected.sha256)
+      expect(digest(content), `${path}: business/data changes need a separate reviewed change, not a UI refresh`).toBe(podcastScripts[path]?.scriptSha256 || expected.sha256)
     }
   })
 
