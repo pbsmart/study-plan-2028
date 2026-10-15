@@ -1,3 +1,4 @@
+import { selectQuestionFor } from './ui-audit'
 import { test, expect, type Page } from '@playwright/test'
 import { readFileSync } from 'node:fs'
 import { normalizeReviewMap } from '../../src/curriculum/review-map'
@@ -38,7 +39,7 @@ for (const fixture of figures) {
       const disclosure = page.locator('.focus-section .problem-card > details').filter({ has: figure })
       await expect(disclosure).not.toHaveAttribute('open', '')
       await expect(figure).not.toBeVisible()
-      await disclosure.locator('summary').focus()
+      await selectQuestionFor(page, disclosure); await disclosure.locator('summary').focus()
       await page.keyboard.press('Enter')
       await expect(disclosure).toHaveAttribute('open', '')
     }
@@ -91,7 +92,7 @@ test('week-seven physics answer diagram is exclusive to example four and resets 
   await expect(figure).toHaveCount(1)
   await expect(answer).not.toHaveAttribute('open', '')
   await expect(figure).not.toBeVisible()
-  await answer.locator('summary').focus()
+  await selectQuestionFor(page, answer); await answer.locator('summary').focus()
   await page.keyboard.press('Enter')
   await expect(figure).toBeVisible()
   await page.getByRole('button', { name: '下一节 →', exact: true }).click()
@@ -160,7 +161,7 @@ for (const week of [7, 8]) {
         await page.goto(`/#learn/${week}/${subject}/${question.id}`)
         const answer = page.locator('.focus-section .problem-card > details')
         await expect(answer).not.toHaveAttribute('open', '')
-        await answer.locator('summary').click()
+        await selectQuestionFor(page, answer); await answer.locator('summary').click()
         const linked = subjectFigures.filter(figure => figure.linkedQuestionIds.includes(question.id))
         await expect(page.locator('.focus-section .static-lesson-figure')).toHaveCount(linked.length)
         for (const figure of linked) await expect(answer.locator(`[data-figure-id="${figure.id}"]`)).toBeVisible()
@@ -181,7 +182,7 @@ for (const week of [7, 8]) {
       await route.fulfill({ json: { choices: [{ message: { content: '先找题目给定的条件，再决定第一步。' }, finish_reason: 'stop' }] } })
     })
     await page.goto(`/#learn/${week}/physics/${week === 7 ? question.id : 'quiz'}`)
-    await page.getByRole('button', { name: '问 AI', exact: true }).click()
+    await page.getByRole('button', { name: '这一步没懂', exact: true }).click()
     const settings = page.locator('.ai-settings')
     if (!await settings.evaluate(element => (element as HTMLDetailsElement).open)) await settings.locator('summary').click()
     await page.getByLabel('DeepSeek API Key', { exact: true }).fill(fakeKey)
@@ -213,7 +214,7 @@ for (const week of [7, 8]) {
     for (const figure of figures.filter(figure => figure.week === week && figure.subject === 'physics')) expect(payload).not.toContain(JSON.stringify(figure.altText).slice(1, -1))
     expect(await page.evaluate(() => localStorage.getItem('xunxu.deepseek.api-key.v1'))).toBeNull()
     await page.keyboard.press('Escape')
-    await expect(page.getByRole('button', { name: '问 AI', exact: true })).toBeFocused()
+    await expect(page.getByRole('button', { name: '这一步没懂', exact: true })).toBeFocused()
     await expectProgressUnchanged(page)
   })
 }
@@ -241,7 +242,7 @@ for (const subject of subjects) {
     await expect(page.locator('.focus-section')).toContainText('页面不提供自动评分')
     await expect(page.locator('.focus-section .static-lesson-figure')).toHaveCount(0)
     const firstAnswer = page.locator('.focus-section .problem-card details').first()
-    await firstAnswer.locator('summary').focus()
+    await selectQuestionFor(page, firstAnswer); await firstAnswer.locator('summary').focus()
     await page.keyboard.press('Enter')
     await expect(firstAnswer).toHaveAttribute('open', '')
     await page.locator('.focus-directory > summary').click()

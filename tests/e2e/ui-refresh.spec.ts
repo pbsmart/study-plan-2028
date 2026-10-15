@@ -3,7 +3,7 @@ import { comesBefore, contrastAndType, keyboardFocusRing, noHorizontalOverflow, 
 
 const pages = [
   ['overview', '学习概览'], ['roadmap', '学习路线'], ['subjects', '六科学习路径'],
-  ['first', '首四周学习'], ['weekly', '学习周'], ['settings', '设置与备份'],
+  ['first', '首四周学习'], ['weekly', '学习周'], ['notebook', '笔记与错题'], ['settings', '设置与备份'],
 ] as const
 const themes = [['light', '浅色'], ['dark', '深色']] as const
 const api = 'https://api.deepseek.com/chat/completions'
@@ -47,8 +47,8 @@ for (const [theme, label] of themes) {
       await noHorizontalOverflow(page)
       await contrastAndType(page)
       if (id === 'overview') {
-        await comesBefore(page.locator('.hero'), page.locator('.stats-grid'))
-        await comesBefore(page.locator('.course-grid'), page.locator('.stats-grid'))
+        await comesBefore(page.locator('.hero'), page.locator('.overview-records'))
+        await comesBefore(page.locator('.course-grid'), page.locator('.overview-records'))
         await expect(page.locator('.hero .primary')).toHaveCount(1)
         await expect(page.locator('.hero .primary')).toContainText('继续第 1 周')
         await expect(page.locator('.coverage-details')).not.toHaveAttribute('open', '')
@@ -87,9 +87,9 @@ for (const [theme, label] of themes) {
       await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1)
       await expect(page.locator('.focus-section')).toHaveCount(1)
       await expect(page.locator('.sidebar, .record-section, .subject-tabs')).toHaveCount(0)
-      await expect(page.locator('.focus-directory')).not.toHaveAttribute('open', '')
+      await expect(page.locator('.focus-directory')).toHaveJSProperty('open', await page.evaluate(() => innerWidth >= 980))
       await expect(page.locator('.focus-source-details')).not.toHaveAttribute('open', '')
-      await expect(page.getByRole('button', { name: '问 AI', exact: true })).not.toHaveClass(/primary/)
+      await expect(page.getByRole('button', { name: '这一步没懂', exact: true })).not.toHaveClass(/primary/)
       await expect(page.locator('.focus-pagination .primary')).toHaveCount(1)
       await noHorizontalOverflow(page)
       await readableLesson(page)
@@ -106,12 +106,12 @@ for (const [theme, label] of themes) {
         await screenshot(page, info, `${theme}-${name}-solution`)
       }
     }
-    await keyboardFocusRing(page, page.getByRole('button', { name: '问 AI', exact: true }))
+    await keyboardFocusRing(page, page.getByRole('button', { name: '这一步没懂', exact: true }))
     await page.locator('.focus-directory > summary').focus(); await page.keyboard.press('Enter')
     await expect(page.locator('.focus-directory')).toHaveAttribute('open', '')
     await page.locator('.focus-directory button').first().focus(); await page.keyboard.press('Enter')
     await expect(page.locator('.focus-section-title')).toBeFocused()
-    await expect(page.locator('.focus-directory')).not.toHaveAttribute('open', '')
+    await expect(page.locator('.focus-directory')).toHaveJSProperty('open', await page.evaluate(() => innerWidth >= 980))
     await page.getByRole('button', { name: '← 退出专注', exact: true }).click()
     await expect(page.locator('.start-focus')).toBeFocused()
   })
@@ -126,7 +126,7 @@ for (const [theme, label] of themes) {
     await setTheme(page, label, theme)
     await page.goto('/#learn/13/math/knowledge')
     const studyBefore = await page.evaluate(() => localStorage.getItem('xunxu.gaokao.v1'))
-    await page.getByRole('button', { name: '问 AI', exact: true }).click()
+    await page.getByRole('button', { name: '这一步没懂', exact: true }).click()
     const dialog = page.getByRole('dialog', { name: 'AI 问答' })
     await expect(dialog).toBeVisible()
     const question = page.getByLabel('你的问题')
@@ -175,7 +175,7 @@ for (const [theme, label] of themes) {
     await screenshot(page, info, `${theme}-ai-answer`, false)
     await page.keyboard.press('Escape')
     await expect(dialog).toHaveCount(0)
-    await expect(page.getByRole('button', { name: '问 AI', exact: true })).toBeFocused()
+    await expect(page.getByRole('button', { name: '这一步没懂', exact: true })).toBeFocused()
     expect(await page.evaluate(() => localStorage.getItem('xunxu.gaokao.v1'))).toBe(studyBefore)
     expect(await page.evaluate(() => localStorage.getItem('xunxu.deepseek.api-key.v1'))).toBeNull()
   })
@@ -202,7 +202,7 @@ test('320 CSS px reflow retains the course, expanded answers, settings and AI co
     await expect.poll(() => figureViewport.evaluate(el => el.scrollLeft)).toBeGreaterThan(0)
     await noHorizontalOverflow(page)
     await screenshot(page, info, `${theme}-320-answer-figure`)
-    await page.getByRole('button', { name: '问 AI', exact: true }).click()
+    await page.getByRole('button', { name: '这一步没懂', exact: true }).click()
     await expect(page.getByRole('dialog', { name: 'AI 问答' })).toBeVisible()
     await noHorizontalOverflow(page)
     const innerOverflow = await page.locator('.learning-ai-dialog').evaluate(el => el.scrollWidth > el.clientWidth + 1)

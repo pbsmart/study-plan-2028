@@ -5,7 +5,7 @@ test.beforeEach(async({page})=>{await page.goto('/');await page.evaluate(()=>loc
 test('focus mode has one lesson, closed navigation and revealable answers',async({page})=>{
   await page.goto('/#learn/13/math/knowledge');await expect(page.locator('.focus-reader')).toBeVisible();await expect(page.locator('.focus-section-title')).toBeFocused()
   await expect(page.locator('.sidebar')).toHaveCount(0);await expect(page.locator('.subject-tabs')).toHaveCount(0);await expect(page.locator('.record-section')).toHaveCount(0)
-  await expect(page.locator('.focus-directory')).not.toHaveAttribute('open','');await expect(page.locator('.focus-source-details')).not.toHaveAttribute('open','')
+  await expect(page.locator('.focus-directory')).toHaveJSProperty('open', await page.evaluate(() => innerWidth >= 980));await expect(page.locator('.focus-source-details')).not.toHaveAttribute('open','')
   await expect(page.locator('.knowledge-block')).not.toHaveCount(0);await expect(page.locator('.problem-card')).toHaveCount(0)
   await page.getByRole('button',{name:'下一节 →',exact:true}).click();await expect(page).toHaveURL(/#learn\/13\/math\/examples$/)
   await expect(page.locator('.focus-section-title')).toBeFocused();const answer=page.locator('.focus-section .problem-card details').first();await expect(answer).not.toHaveAttribute('open','');await answer.locator('summary').click();await expect(answer).toHaveAttribute('open','')
@@ -30,7 +30,7 @@ test('focus checkoffs persist, reverse and remain isolated from other weeks and 
 
 test('directory and reading controls work with the keyboard',async({page})=>{
   await page.goto('/#learn/13/math/prepare');await expect(page.locator('.focus-reader')).toBeVisible();await page.locator('.skip-link').focus();await page.keyboard.press('Enter');await expect(page).toHaveURL(/#learn\/13\/math\/prepare$/);await expect(page.locator('#main')).toBeFocused();const summary=page.locator('.focus-directory > summary');await summary.focus();await page.keyboard.press('Enter');await expect(page.locator('.focus-directory')).toHaveAttribute('open','')
-  await page.locator('.focus-directory button').filter({hasText:'独立练习'}).focus();await page.keyboard.press('Enter');await expect(page.locator('.focus-directory')).not.toHaveAttribute('open','');await expect(page.locator('.focus-section-title')).toBeFocused();await summary.click();await page.locator('.focus-directory button[aria-current=step]').click();await expect(page.locator('.focus-section-title')).toBeFocused()
+  await page.locator('.focus-directory button').filter({hasText:'独立练习'}).focus();await page.keyboard.press('Enter');await expect(page.locator('.focus-directory')).toHaveJSProperty('open', await page.evaluate(() => innerWidth >= 980));await expect(page.locator('.focus-section-title')).toBeFocused();await summary.click();await page.locator('.focus-directory button[aria-current=step]').click();await expect(page.locator('.focus-section-title')).toBeFocused()
   await page.locator('.focus-section .problem-card details > summary').first().focus();await page.keyboard.press('Enter');await expect(page.locator('.focus-section .problem-card details').first()).toHaveAttribute('open','')
 })
 
@@ -40,7 +40,7 @@ test('focus layout stays readable in both themes without horizontal overflow',as
     const options=page.locator('.focus-options');if(!await options.getAttribute('open'))await options.locator('summary').click()
     await options.getByRole('button',{name:theme,exact:true}).click();await options.locator('summary').click()
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
-    const width=await page.locator('.focus-reader').evaluate(el=>el.getBoundingClientRect().width);expect(width).toBeLessThanOrEqual(760)
+    const width=await page.locator('.focus-content').evaluate(el=>el.getBoundingClientRect().width);expect(width).toBeLessThanOrEqual(760)
     await page.screenshot({path:`test-results/focus-${info.project.name}-${theme==='深色'?'dark':'light'}.png`,fullPage:true})
   }
 })

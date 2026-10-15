@@ -1,3 +1,4 @@
+import { selectQuestionFor } from './ui-audit'
 import { test, expect, type Page } from '@playwright/test'
 import { readFileSync } from 'node:fs'
 import type { EnrichedLesson } from '../../src/curriculum/enriched-types'
@@ -42,7 +43,7 @@ for (const fixture of figures) {
       const disclosure = page.locator('.focus-section .problem-card > details').filter({ has: figure })
       await expect(disclosure).not.toHaveAttribute('open', '')
       await expect(figure).not.toBeVisible()
-      await disclosure.locator('summary').focus()
+      await selectQuestionFor(page, disclosure); await disclosure.locator('summary').focus()
       await page.keyboard.press('Enter')
       await expect(disclosure).toHaveAttribute('open', '')
     }
@@ -93,7 +94,7 @@ test('week-three interval answers never leak into the linked teaching section or
   const figure = disclosure.locator(`[data-figure-id="${fixture.id}"]`)
   await expect(figure).toHaveCount(1)
   await expect(figure).not.toBeVisible()
-  await disclosure.locator('summary').focus()
+  await selectQuestionFor(page, disclosure); await disclosure.locator('summary').focus()
   await page.keyboard.press('Enter')
   await expect(figure).toBeVisible()
   await page.getByRole('button', { name: '下一节 →', exact: true }).click()
@@ -115,7 +116,7 @@ test('week-three physics quiz diagram stays inside its own closed answer and res
   await expect(disclosure.locator('[data-figure-id="w3-physics-fig-quiz2-given"]')).toHaveCount(1)
   await expect(page.locator('.focus-section .static-lesson-figure')).toHaveCount(1)
   await expect(figure).not.toBeVisible()
-  await disclosure.locator('summary').focus()
+  await selectQuestionFor(page, disclosure); await disclosure.locator('summary').focus()
   await page.keyboard.press('Space')
   await expect(figure).toBeVisible()
   await page.getByRole('button', { name: '下一节 →', exact: true }).click()
@@ -194,7 +195,7 @@ test('week-four teaching figures never spill into example or practice answers', 
       await page.goto(`/#learn/4/${subject}/${question.id}`)
       const answer = page.locator('.focus-section .problem-card > details')
       await expect(answer).not.toHaveAttribute('open', '')
-      await answer.locator('summary').click()
+      await selectQuestionFor(page, answer); await answer.locator('summary').click()
       await expect(page.locator('.static-lesson-figure')).toHaveCount(0)
     }
   }

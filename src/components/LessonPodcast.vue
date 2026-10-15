@@ -14,9 +14,9 @@ const title = (id: string) => {
 </script>
 <template>
   <section v-if="podcast" class="lesson-podcast" aria-label="路程与位移播客">
-    <p class="eyebrow">先听一段，再画图、动笔</p>
-    <h3>原创播客 · {{ podcast.title }}</h3>
-    <p class="help">{{ podcast.version }}。按已确认声线配置制作。</p>
+
+    <h3>课程音频 · {{ podcast.title }}</h3>
+    <p class="help podcast-version">{{ podcast.version }}</p>
     <PodcastControls :lesson="podcast"/>
     <template v-if="overview">
       <p class="help">仅在本浏览器保存每课断点和倍速。听完不勾选学习打卡，不自动播放下一课。</p>

@@ -1,3 +1,4 @@
+import { selectQuestionFor } from './ui-audit'
 import { test, expect, type Page } from '@playwright/test'
 import { readFileSync } from 'node:fs'
 import type { EnrichedLesson } from '../../src/curriculum/enriched-types'
@@ -35,7 +36,7 @@ for (const fixture of figures) {
       const disclosure = page.locator('.focus-section .problem-card > details').filter({ has: figure })
       await expect(disclosure).not.toHaveAttribute('open', '')
       await expect(figure).not.toBeVisible()
-      await disclosure.locator('summary').focus()
+      await selectQuestionFor(page, disclosure); await disclosure.locator('summary').focus()
       await page.keyboard.press('Enter')
       await expect(disclosure).toHaveAttribute('open', '')
     }
@@ -85,7 +86,7 @@ for (const fixture of [{ week: 9, questions: ['w9-physics-ex4', 'w9-physics-ex5'
       await expect(page.locator('.focus-section')).toHaveAttribute('aria-labelledby', `focus-step-${question}`)
       const answer = page.locator('.focus-section .problem-card > details'), figure = answer.locator(`[data-figure-id="${id}"]`)
       await expect(figure).toHaveCount(1); await expect(figure).not.toBeVisible()
-      await answer.locator('summary').focus(); await page.keyboard.press('Enter'); await expect(figure).toBeVisible()
+      await selectQuestionFor(page, answer); await answer.locator('summary').focus(); await page.keyboard.press('Enter'); await expect(figure).toBeVisible()
       await page.getByRole('button', { name: '下一节 →', exact: true }).click(); await page.goBack()
       await expect(page).toHaveURL(new RegExp(`#learn/${fixture.week}/physics/${question}$`))
       await expect(answer).not.toHaveAttribute('open', ''); await expect(figure).not.toBeVisible()
@@ -126,7 +127,7 @@ for (const week of [9, 10]) {
     let calls = 0, payload = ''
     await page.route('https://api.deepseek.com/chat/completions', async route => { calls++; payload = route.request().postData() || ''; await route.fulfill({ json: { choices: [{ message: { content: '先看图的纵轴与单位。' }, finish_reason: 'stop' }] } }) })
     await page.goto(`/#learn/${week}/physics/${question.id}`)
-    await page.getByRole('button', { name: '问 AI', exact: true }).click()
+    await page.getByRole('button', { name: '这一步没懂', exact: true }).click()
     const settings = page.locator('.ai-settings'); if (!await settings.evaluate(element => (element as HTMLDetailsElement).open)) await settings.locator('summary').click()
     await page.getByLabel('DeepSeek API Key', { exact: true }).fill(fakeKey)
     await page.getByLabel('你的问题').fill('请给我提示，先不要直接给答案。')
@@ -139,7 +140,7 @@ for (const week of [9, 10]) {
     await expect(page.locator('.ai-answer')).toContainText('纵轴与单位')
     expect(calls).toBe(1); expect(payload).toContain(JSON.stringify(preview).slice(1, -1)); expect(payload).not.toContain(fakeKey); expect(payload).not.toContain(JSON.stringify(question.answer).slice(1, -1))
     expect(await page.evaluate(() => localStorage.getItem('xunxu.deepseek.api-key.v1'))).toBeNull()
-    await page.keyboard.press('Escape'); await expect(page.getByRole('button', { name: '问 AI', exact: true })).toBeFocused()
+    await page.keyboard.press('Escape'); await expect(page.getByRole('button', { name: '这一步没懂', exact: true })).toBeFocused()
     await expectProgressUnchanged(page)
   })
 }

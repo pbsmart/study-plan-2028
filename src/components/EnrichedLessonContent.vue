@@ -2,6 +2,8 @@
 import { computed } from 'vue'
 import type { CumulativeReviewMap, EnrichedLesson, EnrichedQuestion, StaticLessonFigure } from '../curriculum/enriched-types'
 import OriginalProblem from './OriginalProblem.vue'
+import ProblemSequence from './ProblemSequence.vue'
+import { podcastLinks } from '../podcast/catalog'
 import LessonDiagram from './LessonDiagram.vue'
 import StaticLessonFigureView from './StaticLessonFigure.vue'
 const props = defineProps<{ lesson: EnrichedLesson; step: string; figures?: StaticLessonFigure[]; reviewMap?: CumulativeReviewMap }>()
@@ -19,6 +21,13 @@ const questionTitle = (id: string) => props.lesson.quiz.questions.find(question 
 const sectionTitle = (id: string) => props.lesson.sections.find(section => section.id === id)?.title || id
 const figuresForQuestion = (id: string) => (props.figures || []).filter(figure => figure.linkedQuestionIds.includes(id))
 const relevantFigures = computed(() => (props.figures || []).filter(figure => (!figure.answerOnly && figure.linkedSectionIds.includes(props.step)) || figure.linkedQuestionIds.includes(props.step)))
+const reviewStepsFor = (id: string) => {
+  const authored = props.lesson.quiz.remediation.filter(item => item.questionIds.includes(id)).flatMap(item => item.sectionIds)
+  const mapped = podcastLinks.filter(group => group.ids.includes(id)).flatMap(group => group.ids)
+  const ids = [...authored, ...mapped]
+  const sections = props.lesson.sections.filter(item => ids.includes(item.id))
+  return (sections.length ? sections : props.lesson.sections.filter(item => item.level === 'core').slice(0, 2)).map(item => ({ id: item.id, title: item.title }))
+}
 const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram => diagram.linkedSectionIds.includes(props.step) && !(props.figures || []).some(figure => figure.id === diagram.id)) || [])
 </script>
 <template>
@@ -32,7 +41,7 @@ const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram =>
       <details class="reading-detail"><summary>查看时间安排</summary><ul><li v-for="segment in lesson.budget.segments" :key="segment.id">{{ segment.title }} · {{ segment.minutes }} 分钟</li></ul><p class="help">可选拓展约 {{ lesson.budget.extensionMinutes }} 分钟，不计核心达标。</p></details>
     </template>
     <template v-else-if="step === 'diagnostic'">
-      <p class="lesson-instructions">{{ lesson.diagnostic.instructions }}</p><OriginalProblem hide-id v-for="item in lesson.diagnostic.questions" :key="item.id" :problem="problem(item)" label="原创课前自测 · 不计过关分" reveal-label="做完后核对答案与解析"><template #solution-media><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></OriginalProblem>
+      <p class="lesson-instructions">{{ lesson.diagnostic.instructions }}</p><ProblemSequence hide-id interactive :problems="lesson.diagnostic.questions.map(problem)" label="原创课前自测 · 不计过关分" reveal-label="做完后核对答案与解析" :review-steps="reviewStepsFor('diagnostic')" @navigate="emit('navigate', $event)"><template #solution-media="{ problem: item }"><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></ProblemSequence>
       <details class="reading-detail"><summary>核对后，看看该从哪里开始</summary><article v-for="route in lesson.diagnostic.routes" :key="route.when" class="remediation-item"><h3>{{ route.when }}</h3><p>{{ route.action }}</p><button v-for="id in route.sectionIds" :key="id" class="text-button" @click="emit('navigate', id)">回看：{{ sectionTitle(id) }} →</button></article></details>
     </template>
     <template v-else-if="section">
@@ -45,11 +54,11 @@ const relevantDiagrams = computed(() => props.lesson.diagrams?.filter(diagram =>
     </template>
     <template v-else-if="question">
       <p class="help">{{ example ? '先自己试做，再展开步骤，比较每一步的理由。' : '先独立作答，再展开答案订正。' }}{{ question.level === 'extension' ? '本题是可选拓展，不计核心达标。' : '' }}</p>
-      <OriginalProblem hide-id hide-title :problem="problem(question)" :label="example ? '原创例题（非历年真题）' : '原创独立练习（非历年真题）'" :reveal-label="example ? '展开例题解析' : '完成后核对答案与解析'"><template #solution-media><StaticLessonFigureView v-for="figure in relevantFigures" :key="figure.id" :figure="figure"/></template></OriginalProblem>
+      <OriginalProblem hide-id hide-title :problem="problem(question)" :interactive="!example" :review-steps="reviewStepsFor(question.id)" @navigate="emit('navigate', $event)" :label="example ? '原创例题（非历年真题）' : '原创独立练习（非历年真题）'" :reveal-label="example ? '展开例题解析' : '完成后核对答案与解析'"><template #solution-media><StaticLessonFigureView v-for="figure in relevantFigures" :key="figure.id" :figure="figure"/></template></OriginalProblem>
     </template>
     <template v-else-if="step === 'quiz'">
       <p class="lesson-instructions">{{ lesson.quiz.instructions }}</p><p class="help">共 {{ lesson.quiz.totalPoints }} 分。独立作答后按评分点自行核对，页面不提供自动评分。</p>
-      <OriginalProblem hide-id v-for="item in lesson.quiz.questions" :key="item.id" :problem="problem(item)" :label="reviewMap ? '原创累计诊断（非历年真题）' : '原创短测（非历年真题）'" :reveal-label="reviewMap ? '累计诊断完成后核对答案与评分点' : '短测完成后核对答案与评分点'"><template #solution-media><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></OriginalProblem>
+      <ProblemSequence hide-id interactive :problems="lesson.quiz.questions.map(problem)" :label="reviewMap ? '原创累计诊断（非历年真题）' : '原创短测（非历年真题）'" :reveal-label="reviewMap ? '累计诊断完成后核对答案与评分点' : '短测完成后核对答案与评分点'" :review-steps="reviewStepsFor('quiz')" @navigate="emit('navigate', $event)"><template #solution-media="{ problem: item }"><StaticLessonFigureView v-for="figure in figuresForQuestion(item.id)" :key="figure.id" :figure="figure"/></template></ProblemSequence>
     </template>
     <template v-else-if="step === 'review'">
       <h3>{{ lesson.reviewActivity?.title || '按错因订正' }}</h3><ul v-if="lesson.reviewActivity"><li v-for="item in lesson.reviewActivity.instructions" :key="item">{{ item }}</li></ul>

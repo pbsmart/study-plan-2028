@@ -163,7 +163,7 @@ async function send() {
 }
 
 .learning-ai-dialog h2 {
-  font-size:32px;
+  font-size:24px;
   line-height:1.2;
   font-weight:600;
   letter-spacing:0

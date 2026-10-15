@@ -9,6 +9,8 @@ import { statusNames } from './curriculum/types'
 import { sourceScope } from './curriculum/sources'
 import FocusLesson from './components/FocusLesson.vue'
 import PodcastHost from './components/PodcastHost.vue'
+import StudyNotebook from './components/StudyNotebook.vue'
+import { createNotebook, notebookKey } from './notebook'
 import { createPodcastPlayer, podcastPlayerKey } from './podcast/player'
 import { inlinePodcastSteps } from './podcast/catalog'
 import { learningHash, parseLearningRoute, lessonSteps } from './focus'
@@ -19,6 +21,7 @@ const pages = [
   { id: 'subjects', label: '六科学习路径', mark: '03', subtitle: '连接知识点、考点与独立练习。' },
   { id: 'first', label: '首四周学习', mark: '04', subtitle: '先把基础理解，再复测与订正。' },
   { id: 'weekly', label: '学习周', mark: '05', subtitle: '讲解、例题、练习与真实记录。' },
+  { id: 'notebook', label: '笔记与错题', mark: '07', subtitle: '记录理解与错因，回到对应课程继续。' },
   { id: 'settings', label: '设置与备份', mark: '06', subtitle: '保留记录，自主调整进度。' },
 ] as const
 type PageId = typeof pages[number]['id']
@@ -43,6 +46,7 @@ let podcastStorage: Storage | undefined
 try { podcastStorage = localStorage } catch { /* Playback remains usable without storage. */ }
 const podcastPlayer = createPodcastPlayer(podcastStorage)
 provide(podcastPlayerKey, podcastPlayer)
+provide(notebookKey, createNotebook(podcastStorage))
 const podcastInline = computed(() => focusActive.value && !!focusLesson.value && selectedWeek.value === 1 && lessonSubject.value === 'physics' && inlinePodcastSteps.includes(focusStep.value))
 const { course: loadedCourse, loading: courseLoading, error: courseError, retry: loadFocusedCourse } = useStudyWeek(focusActive, selectedWeek, { loadStudyWeek, peekStudyWeek })
 const focusLesson = computed(() => loadedCourse.value?.week === selectedWeek.value ? loadedCourse.value.subjects[lessonSubject.value] : undefined)
@@ -172,7 +176,7 @@ onBeforeUnmount(() => { clearInterval(interval); media?.removeEventListener('cha
   <PodcastHost :player="podcastPlayer" :inline="podcastInline"/>
   <a class="skip-link" href="#main" @click.prevent="skipToMain">跳至主要内容</a>
   <div v-if="focusActive" class="focus-layout">
-    <header class="focus-topbar"><button class="focus-exit" @click="exitFocus">← 退出专注</button><span v-if="timerOpen" class="focus-timer-status">{{ names[timerSubject] }} · {{ timerRunning ? '计时中' : '计时已暂停' }}</span><details class="focus-options"><summary>阅读设置</summary><div class="theme-group" aria-label="主题"><button v-for="(name,key) in {light:'浅色',dark:'深色',system:'跟随系统'}" :key="key" :aria-pressed="data.settings.theme === key" @click="setTheme(key)">{{ name }}</button></div></details></header>
+    <header class="focus-topbar"><button class="focus-exit" @click="exitFocus">← 退出专注</button><a class="focus-brand" href="#weekly" @click.prevent="choosePage('weekly')">2028 高考学习</a><button class="text-button focus-notebook-link" @click="choosePage('notebook')">笔记与错题</button><span v-if="timerOpen" class="focus-timer-status">{{ names[timerSubject] }} · {{ timerRunning ? '计时中' : '计时已暂停' }}</span><details class="focus-options"><summary>阅读设置</summary><div class="theme-group" aria-label="主题"><button v-for="(name,key) in {light:'浅色',dark:'深色',system:'跟随系统'}" :key="key" :aria-pressed="data.settings.theme === key" @click="setTheme(key)">{{ name }}</button></div></details></header>
     <main id="main" class="focus-main" tabindex="-1">
       <div v-if="warning" class="message" role="alert">{{ warning }}<button @click="exportRaw">导出原始存储</button></div>
       <div v-if="notice" class="message" role="status">{{ notice }}<button aria-label="关闭提示" @click="notice = ''">×</button></div>
@@ -183,10 +187,10 @@ onBeforeUnmount(() => { clearInterval(interval); media?.removeEventListener('cha
   </div>
   <div v-else class="layout">
     <aside class="sidebar">
-      <a class="brand" href="#overview" @click.prevent="choosePage('overview')"><span class="brand-icon" aria-hidden="true">循</span><span>循序<span class="brand-sub">学习是一段长路</span></span></a>
+      <a class="brand" href="#overview" @click.prevent="choosePage('overview')"><span class="brand-icon" aria-hidden="true">循</span><span>2028 高考学习</span></a>
       <p class="nav-caption">我的学习计划</p>
       <nav aria-label="主导航"><a v-for="item in pages" :key="item.id" :href="`#${item.id}`" :class="{ active: page === item.id }" :aria-current="page === item.id ? 'page' : undefined" @click.prevent="choosePage(item.id)"><span class="nav-number">{{ item.mark }}</span>{{ item.label }}<span class="nav-arrow" aria-hidden="true">↗</span></a></nav>
-      <div class="sidebar-bottom"><p class="small-label">当前 · 第 {{ data.currentWeek }} 周</p><p>未学完，就留在这一周。<br>进度由你手动决定。</p><div class="theme-group" aria-label="主题"><button :aria-pressed="data.settings.theme === 'light'" @click="setTheme('light')">浅色</button><button :aria-pressed="data.settings.theme === 'dark'" @click="setTheme('dark')">深色</button><button :aria-pressed="data.settings.theme === 'system'" @click="setTheme('system')">跟随系统</button></div><span class="local-label"><i></i>记录仅保存在此浏览器</span></div>
+      <div class="sidebar-bottom"><p class="small-label">当前 · 第 {{ data.currentWeek }} 周</p><p>学习周手动推进</p><div class="theme-group" aria-label="主题"><button :aria-pressed="data.settings.theme === 'light'" @click="setTheme('light')">浅色</button><button :aria-pressed="data.settings.theme === 'dark'" @click="setTheme('dark')">深色</button><button :aria-pressed="data.settings.theme === 'system'" @click="setTheme('system')">跟随系统</button></div><span class="local-label"><i></i>记录仅保存在此浏览器</span></div>
     </aside>
     <div class="workspace"><header class="topbar"><span>2028 高考弹性学习计划</span><span class="topbar-meta">手动进度 / 第 {{ data.currentWeek }} 周</span></header>
       <main id="main" :class="`page-${page}`" tabindex="-1">
@@ -199,15 +203,14 @@ onBeforeUnmount(() => { clearInterval(interval); media?.removeEventListener('cha
             <div class="hero-copy">
               <p class="eyebrow">当前任务 · 第 {{ data.currentWeek }} 周 · {{ label(lessonSubject) }}</p>
               <h2 id="current-course-title">{{ currentCourse.subjects[lessonSubject]?.enrichmentTitle || currentCourse.subjects[lessonSubject]?.title || '先打开本周课程' }}</h2>
-              <p>先理解知识，再独立练习。一次学一节，没学完可以继续留在这一周。</p>
+              <p>从讲解、例题到独立练习，按需要回看与订正。</p>
               <div class="hero-actions"><button class="primary" @click="openWeek(data.currentWeek, true)">继续第 {{ data.currentWeek }} 周 <span aria-hidden="true">→</span></button><button class="text-button" @click="openWeek(data.currentWeek)">选择本周其他科目</button></div>
             </div>
             <aside class="learning-progress"><span class="small-label">当前学习序号</span><strong>{{ data.currentWeek }}<small>/ {{ totalStudyWeeks }} 周</small></strong><p>{{ currentCourse.stage }}<br><span>{{ currentCourse.title }}</span></p><span class="small-label">手动推进 · 随时回看</span></aside>
           </section>
           <div class="section-title"><h2>第 {{ data.currentWeek }} 周学什么</h2><a href="#roadmap" @click.prevent="choosePage('roadmap')">浏览全部学习周 ↗</a></div>
           <div class="paths-grid course-grid"><article v-for="s in subjects" :key="s" class="panel week-preview"><div class="path-heading"><h3>{{ label(s) }}</h3><span class="outline-badge" :class="`status-${(currentCourse.subjects[s]?.status || 'pending')}`">{{ statusNames[(currentCourse.subjects[s]?.status || 'pending')] }}</span></div><p>{{ currentCourse.subjects[s]?.enrichmentTitle || currentCourse.subjects[s]?.title || '课程内容待补充' }}</p><button class="text-button" @click="lessonSubject = s; openWeek(data.currentWeek, true)">打开知识点与练习 →</button></article></div>
-          <div class="section-title section-spaced"><h2>学习记录</h2><span class="small-label">只记录你确认过的学习</span></div>
-          <div class="stats-grid"><article class="stat"><span class="small-label">当前学习周实际时长</span><strong>{{ fmtHours(totalSeconds) }}<small> 小时</small></strong><p>仅记录确认过的真实学习</p></article><article class="stat"><span class="small-label">当前学习周打卡</span><strong>{{ checkedCount }}<small> 项</small></strong><p>勾选不会增加时长或自动前进</p></article><article class="stat"><span class="small-label">累计记录（含旧日志）</span><strong>{{ fmtHours(totalRecordedSeconds) }}<small> 小时</small></strong><p>旧日历日志完整保留</p></article></div>
+          <details class="overview-records section-spaced"><summary>查看学习记录</summary><div class="stats-grid"><article class="stat"><span class="small-label">当前学习周实际时长</span><strong>{{ fmtHours(totalSeconds) }}<small> 小时</small></strong><p>仅记录确认过的真实学习</p></article><article class="stat"><span class="small-label">当前学习周打卡</span><strong>{{ checkedCount }}<small> 项</small></strong><p>勾选不会增加时长或自动前进</p></article><article class="stat"><span class="small-label">累计记录（含旧日志）</span><strong>{{ fmtHours(totalRecordedSeconds) }}<small> 小时</small></strong><p>旧日历日志完整保留</p></article></div></details>
           <details class="support-details coverage-details"><summary>内容范围与来源说明</summary><div><p>共 {{ totalStudyWeeks }} 个学习周，已有 {{ curriculumCoverage.completeWeeks.length }} 周八科内容齐全，{{ curriculumCoverage.completeLessons }} 个学科课次提供原创完整基础讲解，共 {{ curriculumCoverage.originalQuestions }} 道基础例题、练习与复测题<span v-if="curriculumCoverage.diagnosticQuestions">，另有 {{ curriculumCoverage.diagnosticQuestions }} 道诊断题</span><span v-if="curriculumCoverage.outlineLessons">；{{ curriculumCoverage.outlineLessons }} 个课次仅有周纲</span><span v-if="curriculumCoverage.pendingLessons">；{{ curriculumCoverage.pendingLessons }} 个课次待补充</span>。每科标注实际状态，未补充的题目不会被伪装为已提供。官方评析外链与原创题分开呈现。</p></div></details>
           <div class="overview-bottom"><article class="panel"><p class="eyebrow">自主进度</p><h3>这一周可以学很多次</h3><p>没有日历倒计时和固定月份安排。看过下一周不代表已学习；只有手动按钮会改变当前序号。</p><button class="text-button" @click="choosePage('roadmap')">查看 84 周路线 →</button></article><article class="panel"><p class="eyebrow">选科保持开放</p><h3>{{ thirdName }}</h3><p>语数英物化 + 待确认第三科。生物仅是参考，可改地理或思想政治；核对当地选科与目标专业要求。</p><button class="text-button" @click="choosePage('settings')">调整设置 →</button></article></div>
         </template>
@@ -242,12 +245,16 @@ onBeforeUnmount(() => { clearInterval(interval); media?.removeEventListener('cha
           </section>
         </template>
 
+        <template v-else-if="page === 'notebook'">
+          <StudyNotebook/>
+        </template>
+
         <template v-else-if="page === 'settings'">
-          <p class="settings-intro">设置更改后自动保存在此浏览器。更换设备前，先导出一份备份。</p><div class="settings-grid"><section class="panel"><p class="eyebrow">学习偏好</p><h2>计划设置</h2><p class="help">当前学习序号：第 {{ data.currentWeek }} 周。手动进入学习周推进，没有日历绑定或倒计时。</p><label class="field">第三科参考<select v-model="data.settings.third" :disabled="timerOpen"><option value="biology">生物（初始占位）</option><option value="geography">地理</option><option value="politics">思想政治</option></select></label><label class="check-row"><input v-model="data.settings.thirdConfirmed" type="checkbox"/><span>我已核对官方选科与专业要求，暂定这门第三科</span></label><p class="help">生物、地理和思想政治有各自课程，切换不会复用生物内容，历史记录保留。不能根据原科类直接认定选科或认为某科天然容易赋分。</p><label class="field">新学习周默认建议<select v-model="data.settings.workload"><option v-for="(name,key) in workloadNames" :key="key" :value="key">{{ name }} · {{ workloadHours[key] }} 小时建议</option></select></label><p class="help">已有学习周保留自己的方案；建议不决定进度，连续难以完成时按实际情况调整。</p></section><div><section class="panel"><p class="eyebrow">阅读体验</p><h2>显示主题</h2><div class="theme-options"><button v-for="(name,key) in {light:'浅色',dark:'深色',system:'跟随系统'}" :key="key" :aria-pressed="data.settings.theme === key" @click="setTheme(key)"><span class="theme-preview" :class="key" aria-hidden="true"></span>{{ name }}</button></div></section><section class="panel backup-panel"><p class="eyebrow">本地数据 · V2</p><h2>数据备份</h2><p>学习序号、打卡、时长、主题和旧日志都保存在此浏览器。v1 备份可兼容导入，v2 导出完整保留历史记录。</p><div class="button-row"><button class="primary" @click="exportData">导出 JSON 备份</button><button :disabled="timerOpen" @click="fileInput?.click()">导入 JSON 备份</button></div><input ref="fileInput" class="hidden-input" type="file" accept=".json,application/json" aria-label="选择 JSON 备份" @change="importFile"/><p class="help">导入限 5 MB，先校验再确认覆盖。未保存计时不在备份中。更换浏览器或清理站点前请导出。</p><p class="privacy-label">无本站后端 · 无分析埋点 · AI 仅主动提问联网</p></section></div></div>
+          <p class="settings-intro">设置更改后自动保存在此浏览器。更换设备前请导出计划备份；笔记与错题在笔记页独立导出。</p><div class="settings-grid"><section class="panel"><p class="eyebrow">学习偏好</p><h2>计划设置</h2><p class="help">当前学习序号：第 {{ data.currentWeek }} 周。手动进入学习周推进，没有日历绑定或倒计时。</p><label class="field">第三科参考<select v-model="data.settings.third" :disabled="timerOpen"><option value="biology">生物（初始占位）</option><option value="geography">地理</option><option value="politics">思想政治</option></select></label><label class="check-row"><input v-model="data.settings.thirdConfirmed" type="checkbox"/><span>我已核对官方选科与专业要求，暂定这门第三科</span></label><p class="help">生物、地理和思想政治有各自课程，切换不会复用生物内容，历史记录保留。不能根据原科类直接认定选科或认为某科天然容易赋分。</p><label class="field">新学习周默认建议<select v-model="data.settings.workload"><option v-for="(name,key) in workloadNames" :key="key" :value="key">{{ name }} · {{ workloadHours[key] }} 小时建议</option></select></label><p class="help">已有学习周保留自己的方案；建议不决定进度，连续难以完成时按实际情况调整。</p></section><div><section class="panel"><p class="eyebrow">阅读体验</p><h2>显示主题</h2><div class="theme-options"><button v-for="(name,key) in {light:'浅色',dark:'深色',system:'跟随系统'}" :key="key" :aria-pressed="data.settings.theme === key" @click="setTheme(key)"><span class="theme-preview" :class="key" aria-hidden="true"></span>{{ name }}</button></div></section><section class="panel backup-panel"><p class="eyebrow">本地数据 · V2</p><h2>数据备份</h2><p>学习序号、打卡、时长、主题和旧日志都保存在此浏览器。v1 备份可兼容导入，v2 导出完整保留历史记录。</p><div class="button-row"><button class="primary" @click="exportData">导出 JSON 备份</button><button :disabled="timerOpen" @click="fileInput?.click()">导入 JSON 备份</button></div><input ref="fileInput" class="hidden-input" type="file" accept=".json,application/json" aria-label="选择 JSON 备份" @change="importFile"/><p class="help">导入限 5 MB，先校验再确认覆盖。未保存计时不在备份中。更换浏览器或清理站点前请导出。</p><p class="privacy-label">无本站后端 · 无分析埋点 · AI 仅主动提问联网</p></section></div></div>
           <section class="panel legacy-panel"><h2>旧版日历周日志</h2><p class="help">已保留 {{ legacyEntries.length }} 个旧日历周和 {{ data.firstCompleted.length }} 项旧首四周打卡。旧日志不会被猜测分配到学习序号；可以展开回看或通过 v2 备份完整导出。</p><details v-for="[key,oldWeek] in legacyEntries" :key="key"><summary>历史日志 {{ key }} · {{ oldWeek.completed.length }} 项打卡 · {{ fmtHours(oldWeek.sessions.reduce((n,s)=>n+s.seconds,0)) }} 小时</summary><ul><li v-for="task in oldWeek.completed" :key="task">✓ {{ names[task.split('-')[0] as SubjectId] }} · {{ task.endsWith('core') ? '学习与练习' : '复习与订正' }}</li><li v-for="session in oldWeek.sessions" :key="session.id">{{ session.date }} · {{ names[session.subject] }} · {{ session.seconds }} 秒 · {{ session.source === 'manual' ? '手动补录' : '确认计时' }}</li></ul></details><p v-if="!legacyEntries.length" class="pending-copy">没有旧日历周日志。</p></section>
           <section class="note"><span class="note-symbol" aria-hidden="true">↳</span><div><h3>学习建议与来源的边界</h3><p>不保证考试成绩或录取，不把历史分数当未来保证线。没有智能评分和赋分预测；报考、选科与考试安排以当地当年官方发布为准。</p><p>第三方试题与官方评析不受 MIT 再授权。本站保存来源索引与短概述，原创题与往年来源明确区分。</p></div></section>
         </template>
-        <footer><span>循序 · 把这一周学明白。</span><span>按周计数 / 本地记录 / 手动推进</span></footer>
+        <footer><span>2028 高考学习</span><span>按周计数 / 本地记录 / 手动推进</span></footer>
       </main>
     </div>
   </div>

@@ -18,6 +18,16 @@ export async function comesBefore(first: Locator, second: Locator) {
   expect(firstBox!.y + firstBox!.height).toBeLessThanOrEqual(secondBox!.y + 1)
 }
 
+export async function selectQuestionFor(page: Page, target: Locator) {
+  if (await target.count() !== 1) return
+  const number = await target.evaluate(element => {
+    const card = element.closest('.problem-card')
+    if (!card?.parentElement?.classList.contains('problem-sequence')) return 0
+    return Array.from(card.parentElement.querySelectorAll(':scope > .problem-card')).indexOf(card) + 1
+  })
+  if (number) await page.getByRole('button', { name: `第 ${number} 题`, exact: true }).click()
+}
+
 // Measure rendered/composited colors, rather than assuming a token is used by a control.
 // Native checkboxes are covered by their existing keyboard/checkoff tests and screenshots;
 // text fields, selects, textareas and enabled primary buttons need a visible ≥3:1 boundary.
@@ -84,7 +94,7 @@ export async function readableLesson(page: Page) {
     expect(metric.lineHeight, metric.text).toBeGreaterThanOrEqual(1.65)
     expect(metric.weight, metric.text).toBeLessThanOrEqual(500)
   }
-  const width = await page.locator('.focus-reader').evaluate(el => el.getBoundingClientRect().width)
+  const width = await page.locator('.focus-content').evaluate(el => el.getBoundingClientRect().width)
   expect(width).toBeLessThanOrEqual(760)
 }
 

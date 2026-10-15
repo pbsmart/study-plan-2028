@@ -7,7 +7,7 @@ const keySlot = 'xunxu.deepseek.api-key.v1'
 const studySlot = 'xunxu.gaokao.v1'
 const success = { choices: [{ message: { content: '先观察条件，再分两种情况。\n<img src=x onerror="window.__aiXss=true">' }, finish_reason: 'stop' }] }
 
-async function open(page: Page) { await page.getByRole('button', { name: '问 AI', exact: true }).click(); await expect(page.getByRole('dialog', { name: 'AI 问答' })).toBeVisible() }
+async function open(page: Page) { await page.getByRole('button', { name: '这一步没懂', exact: true }).click(); await expect(page.getByRole('dialog', { name: 'AI 问答' })).toBeVisible() }
 async function fillKey(page: Page) { const details = page.locator('.ai-settings'); if (!await details.evaluate(el => (el as HTMLDetailsElement).open)) await details.locator('summary').click(); await page.getByLabel('DeepSeek API Key', { exact: true }).fill(fakeKey) }
 test.beforeEach(async ({ page }) => { await page.goto('/'); await page.evaluate(() => localStorage.clear()); await page.goto('/#learn/13/math/knowledge') })
 
@@ -40,7 +40,7 @@ test('does no API work until an explicit send; selected context and answer stay 
   expect(logs.join('\n')).not.toContain(fakeKey)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   await page.screenshot({ path: `test-results/deepseek-${info.project.name}-answer.png`, fullPage: true })
-  await page.keyboard.press('Escape'); await expect(page.getByRole('dialog')).toHaveCount(0); await expect(page.getByRole('button', { name: '问 AI', exact: true })).toBeFocused()
+  await page.keyboard.press('Escape'); await expect(page.getByRole('dialog')).toHaveCount(0); await expect(page.getByRole('button', { name: '这一步没懂', exact: true })).toBeFocused()
   await open(page); await expect(page.getByLabel('DeepSeek API Key', { exact: true })).toHaveValue(''); await expect(page.locator('.ai-answer')).toContainText('先观察条件')
   expect(requests).toHaveLength(1)
 })

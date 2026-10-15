@@ -1,0 +1,45 @@
+{
+  "baselineCommit": "b0b261df9280345ade2de70abc7878412c0fdf45",
+  "description": "Explicitly authorized course/practice UI redesign. Only listed presentation/integration modules change; curriculum, progress, AI transport/context, audio engine and workflow retain historical protection.",
+  "files": {
+    "src/App.vue": {
+      "bytes": 40461,
+      "sha256": "13acf55a0471b732cbde28f45d3b23c01b51c42fdb5390cba0d6b6c0ef14300a",
+      "scriptSha256": "d9fa8a9a23d0bdd259aadbbb6abc7e8617e25b0a9e702b84bb8efa0bd7c8f90b"
+    },
+    "src/components/FocusLesson.vue": {
+      "bytes": 9804,
+      "sha256": "434bd54cc9039cfb39ba7a8fc7bc722c8471e427c3dc8efdf5b8935f87a54586",
+      "scriptSha256": "02850c4d546f27829e718282374a3e33184f4157547076b587e0e13eef4fb525"
+    },
+    "src/components/EnrichedLessonContent.vue": {
+      "bytes": 10059,
+      "sha256": "cbce41f767d4dc9af3117410a9c1619cffcf585057bedb99af56092c155e4ed9",
+      "scriptSha256": "b5c516896b63c6fef432177ca739c05c3637086eb26cf4dece41ca66819679f4"
+    },
+    "src/components/OriginalProblem.vue": {
+      "bytes": 6639,
+      "sha256": "5eb27bb76aca64389586df089706a0df061e16782b1bc343574192d8030ea932",
+      "scriptSha256": "6eb97b118a59b4bf7006ecd5897380b48c39f5fc5b4dca5648f3a0ad3168533f"
+    },
+    "src/components/WeekLesson.vue": {
+      "bytes": 11648,
+      "sha256": "3750ee4063595ecedf6763c85d66d7bb4a3967683026e8e061509b39a0e7a16a",
+      "scriptSha256": "beaf573874e5fabd943d5c309f5d519063a2a674ad125e28d347b6a8633cd9b9"
+    },
+    "src/components/LearningAiDialog.vue": {
+      "bytes": 24951,
+      "sha256": "15a516b45e4f9a8a73da9d72fca7cab42dddbef6f09f32f87b0ec7ed16524a20",
+      "scriptSha256": "b0f1598308cfbf5aab50664eef9cc457e57a6b948d619e27e6b5eb200e9264b6"
+    },
+    "src/components/LessonPodcast.vue": {
+      "bytes": 2256,
+      "sha256": "390b00ab9a8cf4efcf429f072a58cc6b3e217742c77cfcc08b1a5f4805d91360",
+      "scriptSha256": "7ef7fb313bb7457e562eda9d795a21468b7325549a91371697355d05dce64ea2"
+    },
+    "src/style.css": {
+      "bytes": 155,
+      "sha256": "76a7916b9b8d3e50e30b68632269cce9dda582070d452eb52b18df34de496a83"
+    }
+  }
+}

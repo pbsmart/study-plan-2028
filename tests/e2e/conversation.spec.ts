@@ -5,7 +5,7 @@ const api = 'https://api.deepseek.com/chat/completions'
 const fakeKey = 'MOCK_DEEPSEEK_KEY_FOR_TESTS_ONLY'
 type Payload = { messages: { role: string; content: string }[] }
 const response = (answer: string) => ({ choices: [{ message: { content: answer }, finish_reason: 'stop' }] })
-async function open(page: Page) { await page.getByRole('button', { name: '问 AI', exact: true }).click(); await expect(page.getByRole('dialog', { name: 'AI 问答' })).toBeVisible() }
+async function open(page: Page) { await page.getByRole('button', { name: '这一步没懂', exact: true }).click(); await expect(page.getByRole('dialog', { name: 'AI 问答' })).toBeVisible() }
 async function fillKey(page: Page) { const details = page.locator('.ai-settings'); if (!await details.evaluate(el => (el as HTMLDetailsElement).open)) await details.locator('summary').click(); await page.getByLabel('DeepSeek API Key', { exact: true }).fill(fakeKey) }
 async function send(page: Page, question: string, answer: string) { await page.getByLabel('你的问题').fill(question); await page.getByRole('button', { name: '发送给 DeepSeek', exact: true }).click(); await expect(page.locator('.ai-answer')).toContainText(answer) }
 async function close(page: Page) { await page.getByRole('button', { name: '关闭 AI 问答', exact: true }).click(); await expect(page.getByRole('dialog')).toHaveCount(0) }

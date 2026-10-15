@@ -16,6 +16,7 @@ import FocusLesson from '../src/components/FocusLesson.vue'
 import integrity from './fixtures/weeks-eleven-twelve-integrity.json'
 import protectedFiles from './fixtures/weeks-eleven-twelve-protected.json'
 import podcastIntegrity from './fixtures/podcast-integration-integrity.json'
+import redesignIntegrity from './fixtures/ui-redesign-integrity.json'
 import { enrichmentConfigs } from '../src/curriculum/enrichment-config'
 const answerLinks = [
   {week:11,subject:'physics',figureId:'w11-physics-figure2',questionId:'w11-physics-ex3'},
@@ -43,7 +44,7 @@ const escaped = (text:string) => text.replaceAll('&','&amp;').replaceAll('<','&l
 describe('frozen weeks eleven and twelve integration',()=>{
   it('preserves the deployed UI, AI, progress, all earlier courses, workflow and prior enrichment configuration',async()=>{
     expect(protectedFiles.baselineCommit).toBe('dfac13acf18804f73abb1cceb5cda2ff147dfe84')
-    const podcastFiles: Record<string,{bytes:number;sha256:string}> = podcastIntegrity.files
+    const podcastFiles: Record<string,{bytes:number;sha256:string}> = { ...podcastIntegrity.files, ...redesignIntegrity.files }
     for(const file of protectedFiles.files){const expected=podcastFiles[file.path] || file;const bytes=await readFile(new URL(`../${file.path}`,import.meta.url));expect(bytes.length,file.path).toBe(expected.bytes);expect(createHash('sha256').update(bytes).digest('hex'),file.path).toBe(expected.sha256)}
     expect((await readFile(source('enrichment-config.ts'),'utf8')).startsWith(protectedFiles.priorConfigPrefix)).toBe(true)
     expect(enrichmentConfigs.map(config=>config.week)).toEqual([1,2,3,4,5,6,7,8,9,10,11,12])

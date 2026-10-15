@@ -1,3 +1,4 @@
+import { selectQuestionFor } from './ui-audit'
 import { test, expect, type Locator, type Page } from '@playwright/test'
 import { readFileSync } from 'node:fs'
 import { normalizeReviewMap } from '../../src/curriculum/review-map'
@@ -66,7 +67,7 @@ for (const fixture of figures) {
       const disclosure = page.locator('.focus-section .problem-card > details').filter({ has: figure })
       await expect(disclosure).not.toHaveAttribute('open', '')
       await expect(figure).not.toBeVisible()
-      await disclosure.locator('summary').focus()
+      await selectQuestionFor(page, disclosure); await disclosure.locator('summary').focus()
       await page.keyboard.press('Enter')
       await expect(disclosure).toHaveAttribute('open', '')
     }
@@ -136,13 +137,13 @@ for (const fixture of answerFigures) {
       for (let index = 0; index < lesson.quiz.questions.length; index++) {
         if (index === quizIndex) continue
         const other = cards.nth(index)
-        await other.locator('details > summary').click()
+        await selectQuestionFor(page, other); await other.locator('details > summary').click()
         await expect(other.locator('.static-lesson-figure')).toHaveCount(0)
         await expect(answer).not.toHaveAttribute('open', '')
         await expect(figure).not.toBeVisible()
       }
     }
-    await answer.locator('summary').focus()
+    await selectQuestionFor(page, answer); await answer.locator('summary').focus()
     await page.keyboard.press('Enter')
     await expectDecodedFigure(figure)
     await page.getByRole('button', { name: '下一节 →', exact: true }).click()
@@ -151,7 +152,7 @@ for (const fixture of answerFigures) {
     await expect(answer).not.toHaveAttribute('open', '')
     await expect(figure).not.toBeVisible()
     await expect(page.locator('.focus-section .problem-card > details[open]')).toHaveCount(0)
-    await answer.locator('summary').click()
+    await selectQuestionFor(page, answer); await answer.locator('summary').click()
     await expect(figure).toBeVisible()
     await page.reload()
     await expect(answer).not.toHaveAttribute('open', '')
@@ -279,7 +280,7 @@ for (const fixture of reviewCases) {
     await expect(page.locator('.focus-section .problem-card details[open]')).toHaveCount(0)
     await expect(page.locator('.focus-section .problem-card details > summary').filter({ hasText: /^累计诊断完成后核对答案与评分点$/ })).toHaveCount(4)
     const firstAnswer = page.locator('.focus-section .problem-card details').first()
-    await firstAnswer.locator('summary').focus()
+    await selectQuestionFor(page, firstAnswer); await firstAnswer.locator('summary').focus()
     await page.keyboard.press('Enter')
     await expect(firstAnswer).toHaveAttribute('open', '')
     await expect(map).toHaveCount(0)
@@ -349,7 +350,7 @@ for (const fixture of [answerFigures[0]!, answerFigures[2]!, answerFigures[5]!])
       await route.fulfill({ json: { choices: [{ message: { content: '先找题目给定的条件，再决定第一步。' }, finish_reason: 'stop' }] } })
     })
     await goToStep(page, fixture.week, fixture.subject, step)
-    await page.getByRole('button', { name: '问 AI', exact: true }).click()
+    await page.getByRole('button', { name: '这一步没懂', exact: true }).click()
     const settings = page.locator('.ai-settings')
     if (!await settings.evaluate(element => (element as HTMLDetailsElement).open)) await settings.locator('summary').click()
     await page.getByLabel('DeepSeek API Key', { exact: true }).fill(fakeKey)
@@ -379,7 +380,7 @@ for (const fixture of [answerFigures[0]!, answerFigures[2]!, answerFigures[5]!])
     for (const text of hiddenText) expect(payload).not.toContain(JSON.stringify(text).slice(1, -1))
     expect(await page.evaluate(() => localStorage.getItem('xunxu.deepseek.api-key.v1'))).toBeNull()
     await page.keyboard.press('Escape')
-    await expect(page.getByRole('button', { name: '问 AI', exact: true })).toBeFocused()
+    await expect(page.getByRole('button', { name: '这一步没懂', exact: true })).toBeFocused()
     await expect(page.locator('.focus-section .problem-card details[open]')).toHaveCount(0)
     await expectProgressUnchanged(page)
   })
